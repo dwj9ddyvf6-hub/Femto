@@ -1,0 +1,925 @@
+{
+ "generated_at_utc": "2026-09-29T17:01:41.185306+00:00",
+ "generated_at_et": "2026-09-29T13:01:41.185306-04:00",
+ "account": {
+  "equity": "99419.47",
+  "cash": "89689.27",
+  "buying_power": "378021.64",
+  "status": "ACTIVE",
+  "daytrade_count": null,
+  "known": true
+ },
+ "positions_known": true,
+ "last_scan": {
+  "ts": null,
+  "market_open": true,
+  "dry_run": false
+ },
+ "state_meta": {
+  "day_start_equity": 99916.9,
+  "day_start_date": "2026-09-29"
+ },
+ "kill_switch": {
+  "tripped": false,
+  "threshold_pct": 3.0
+ },
+ "positions": [
+  {
+   "symbol": "AVGO261023C00365000",
+   "qty": 3.0,
+   "avg_entry": 10.85,
+   "current": 9.5,
+   "unrealized_pl": -405.0,
+   "unrealized_pl_pct": -1244.2396313364056,
+   "market_value": "2850",
+   "side": "long",
+   "sector": null,
+   "phenotype": null,
+   "confidence": null,
+   "desk_stop": null,
+   "desk_target": null,
+   "entry_bar_t": null,
+   "entered_ts_utc": null
+  },
+  {
+   "symbol": "NVDA",
+   "qty": 30.0,
+   "avg_entry": 231.27,
+   "current": 229.34,
+   "unrealized_pl": -57.9,
+   "unrealized_pl_pct": -0.834522419682622,
+   "market_value": "6880.2",
+   "side": "long",
+   "sector": null,
+   "phenotype": null,
+   "confidence": null,
+   "desk_stop": 223.15,
+   "desk_target": null,
+   "entry_bar_t": null,
+   "entered_ts_utc": null
+  }
+ ],
+ "position_count": 2,
+ "max_positions": 10,
+ "sector_counts": {
+  "unknown": 2
+ },
+ "day_pl": -497.429999999993,
+ "day_pl_pct": -0.49784370812144196,
+ "journal_today": {
+  "scans": 7,
+  "trades": 0
+ },
+ "fresh_signals": [],
+ "ledger_tail": [
+  {
+   "ts": "2026-09-29T16:08:50Z",
+   "symbol": "IREN",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:08:50Z",
+   "symbol": "AG",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:08:50Z",
+   "symbol": "AXTI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:08:50Z",
+   "symbol": "LASR",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:08:50Z",
+   "event": "scan_end"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "event": "scan_start"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "AEHR",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "NBIS",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "SKYQ",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "SHAZ",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "LITE",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "SOXL",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "WYFI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "CRML",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "AAOI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "WDC",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "VELO",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "ANF",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "SATL",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "ASPI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "IREN",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "AG",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "AXTI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "symbol": "LASR",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-29T16:38:50Z",
+   "event": "scan_end"
+  }
+ ],
+ "outcome_stats": {
+  "closed_total": 0,
+  "open_total": 0,
+  "by_phenotype": {},
+  "by_confidence": {},
+  "by_symbol": {}
+ },
+ "latest_review": {
+  "file": "2026-09-28.md",
+  "excerpt": "# Desk review \u2014 2026-09-28\n\nOutcome updater: 0 updated, 0 closed, 0 errors\n\n## Performance (closed signal outcomes)\n\nClosed outcomes: 0 | Open (awaiting forward bars): 0\n\n### By phenotype\n_no closed outcomes yet_\n\n### By confidence\n_no closed outcomes yet_\n\n### By symbol\n_no closed outcomes yet_\n\n## Notable scans and decisions (last 7 days)\n\nScans: 32 | Trades planned: 0 | Watches: 0\n\n_no TRADE/WATCH decisions in window_\n\n## New lessons\n\n_none this cycle_\n\n## Proposals\n\n\n- No evidence-backed proposals this cycle \u2014 sample sizes too small or performance within expectations. No changes suggested."
+ },
+ "engine": {
+  "version": "v625",
+  "byte_exact": true,
+  "last_snapshot_seen": "2026-09-26-foliotend-production-v625",
+  "drift": false
+ },
+ "earnings_upcoming_7d": [
+  {
+   "symbol": "AEHR",
+   "date": "2026-10-05",
+   "in_days": 6,
+   "blackout": false
+  }
+ ],
+ "earnings_updated_ts": "2026-09-27T23:49:06Z",
+ "sleeves": {
+  "tensor": {
+   "name": "Tensor",
+   "strategy": "1H swing, byte-exact v625; 1D/1W confirmation",
+   "automation": "scan every 30 min, market hours",
+   "engine": {
+    "version": "v625",
+    "byte_exact": true,
+    "last_snapshot_seen": "2026-09-26-foliotend-production-v625",
+    "drift": false
+   },
+   "positions": [],
+   "protection": {
+    "unprotected": [],
+    "unknown": false
+   },
+   "last_scan": {
+    "ts": null,
+    "market_open": true,
+    "dry_run": false
+   },
+   "recent": [
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "CRML",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "AAOI",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "WDC",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "VELO",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "ANF",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "SATL",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "ASPI",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "IREN",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "AG",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "AXTI",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "symbol": "LASR",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-29T16:38:50Z",
+     "event": "scan_end"
+    }
+   ]
+  },
+  "phase": {
+   "name": "Phase",
+   "strategy": "Daily boxes, resting K5 buy-stop; EMA50 trail",
+   "automation": "premarket 08:46 ET daily; nowcast 5m; reconcile 2m",
+   "position": {
+    "symbol": "NVDA",
+    "qty": 30,
+    "entry_px": 231.27,
+    "entry_date": "2026-09-28",
+    "current": 229.34,
+    "unrealized_pl": -57.9,
+    "stop": 223.15,
+    "stop_pending": false,
+    "trail_applied": null
+   },
+   "protection": {
+    "stop_px": 223.15,
+    "stop_live": true,
+    "trail_applied": null,
+    "unknown": false
+   },
+   "recent": [
+    {
+     "ts": "2026-09-29T12:46:20.306010+00:00",
+     "event": "k5_box",
+     "symbol": "NFLX"
+    },
+    {
+     "ts": "2026-09-29T12:46:20.904597+00:00",
+     "event": "k5_dead",
+     "symbol": "NFLX",
+     "reason": "boxlow_touch"
+    },
+    {
+     "ts": "2026-09-29T12:46:20.924076+00:00",
+     "event": "k5_box",
+     "symbol": "ORCL"
+    },
+    {
+     "ts": "2026-09-29T12:46:21.542774+00:00",
+     "event": "k5_dead",
+     "symbol": "ORCL",
+     "reason": "boxlow_touch"
+    },
+    {
+     "ts": "2026-09-29T12:46:21.556448+00:00",
+     "event": "k5_box",
+     "symbol": "PLTR"
+    },
+    {
+     "ts": "2026-09-29T12:46:22.112007+00:00",
+     "event": "k5_dead",
+     "symbol": "PLTR",
+     "reason": "boxlow_touch"
+    },
+    {
+     "ts": "2026-09-29T12:46:22.120166+00:00",
+     "event": "k5_box",
+     "symbol": "AMD"
+    },
+    {
+     "ts": "2026-09-29T12:46:23.321986+00:00",
+     "event": "k5_rest_failed",
+     "symbol": "AMD"
+    },
+    {
+     "ts": "2026-09-29T12:46:23.342579+00:00",
+     "event": "k5_box",
+     "symbol": "UBER"
+    },
+    {
+     "ts": "2026-09-29T12:46:23.982102+00:00",
+     "event": "k5_dead",
+     "symbol": "UBER",
+     "reason": "boxlow_touch"
+    },
+    {
+     "ts": "2026-09-29T12:46:23.998167+00:00",
+     "event": "k5_box",
+     "symbol": "CAT"
+    },
+    {
+     "ts": "2026-09-29T12:46:25.188191+00:00",
+     "event": "k5_rest_failed",
+     "symbol": "CAT"
+    }
+   ]
+  },
+  "legends_ema": {
+   "name": "Legend's EMA",
+   "strategy": "15m EMA reversion on QQQ",
+   "automation": "every 15 min, market hours",
+   "enabled": true,
+   "setup": {
+    "date": "2026-09-29",
+    "trend_day": false,
+    "no_touch": false
+   },
+   "position": null,
+   "protection": {
+    "oco_live": false,
+    "oco_rev": null,
+    "unknown": false
+   },
+   "recent": [
+    {
+     "ts": "2026-09-28T16:23:11.264431+00:00",
+     "event": "setup_eval"
+    },
+    {
+     "ts": "2026-09-29T04:08:20.346753+00:00",
+     "event": "setup_eval"
+    }
+   ]
+  },
+  "morning_dip": {
+   "name": "Morning Dip",
+   "strategy": "Morning dip limit on QQQ",
+   "automation": "every 3 min, 09:30-10:30 ET",
+   "state_known": false,
+   "armed": false,
+   "position_qty": null,
+   "protection": {
+    "orders_live": false,
+    "unknown": false
+   },
+   "recent": [
+    {
+     "ts": "2026-09-29T16:45:36.467843+00:00",
+     "event": "entry_recovered",
+     "qty": 206
+    },
+    {
+     "ts": "2026-09-29T16:45:41.519370+00:00",
+     "event": "attribution_ambiguous"
+    },
+    {
+     "ts": "2026-09-29T16:48:35.582216+00:00",
+     "event": "entry_recovered",
+     "qty": 206
+    },
+    {
+     "ts": "2026-09-29T16:48:40.040617+00:00",
+     "event": "attribution_ambiguous"
+    },
+    {
+     "ts": "2026-09-29T16:51:41.264256+00:00",
+     "event": "entry_recovered",
+     "qty": 206
+    },
+    {
+     "ts": "2026-09-29T16:51:46.469169+00:00",
+     "event": "attribution_ambiguous"
+    },
+    {
+     "ts": "2026-09-29T16:54:37.548997+00:00",
+     "event": "entry_recovered",
+     "qty": 206
+    },
+    {
+     "ts": "2026-09-29T16:54:42.218201+00:00",
+     "event": "attribution_ambiguous"
+    },
+    {
+     "ts": "2026-09-29T16:57:35.791425+00:00",
+     "event": "entry_recovered",
+     "qty": 206
+    },
+    {
+     "ts": "2026-09-29T16:57:40.701369+00:00",
+     "event": "attribution_ambiguous"
+    },
+    {
+     "ts": "2026-09-29T17:00:39.545048+00:00",
+     "event": "entry_recovered",
+     "qty": 206
+    },
+    {
+     "ts": "2026-09-29T17:00:44.359298+00:00",
+     "event": "attribution_ambiguous"
+    }
+   ]
+  },
+  "bilbo_options": {
+   "name": "Bilbo Box Options",
+   "strategy": "Bilbo Box breakout calls",
+   "credit": "Milkman",
+   "automation": "entry hourly 10:22-15:22 ET weekdays; exits every 5 min RTH",
+   "state_known": true,
+   "open_positions": 1,
+   "positions": [
+    {
+     "occ": "AVGO261023C00365000",
+     "underlying": "AVGO",
+     "qty": 3,
+     "entry_spot": 359.6318,
+     "box_lo": 347.58,
+     "entry_ts": "2026-09-29T10:00:00-04:00",
+     "status": "open"
+    }
+   ],
+   "last_entry_scan": "2026-09-29T16:23:13.512841+00:00",
+   "last_exit_scan": "2026-09-29T17:00:08.714808+00:00",
+   "recent": [
+    {
+     "ts": "2026-09-29T16:35:03.887671+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-09-29T16:35:04.627391+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-09-29T16:40:03.985352+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-09-29T16:40:04.694918+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-09-29T16:45:04.404775+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-09-29T16:45:05.129182+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-09-29T16:50:04.218847+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-09-29T16:50:04.917068+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-09-29T16:55:04.153675+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-09-29T16:55:04.855011+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-09-29T17:00:07.930414+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-09-29T17:00:08.736813+00:00",
+     "event": "scan_done"
+    }
+   ]
+  }
+ },
+ "desk": {
+  "name": "Femto",
+  "paper_only": true,
+  "sleeve_order": [
+   "tensor",
+   "phase",
+   "legends_ema",
+   "morning_dip",
+   "bilbo_options"
+  ]
+ },
+ "context": {
+  "pv_shift": {
+   "status": "ok",
+   "stale": false,
+   "computed_at": "2026-09-29T13:39:22.389204+00:00",
+   "note": "research context only -- never a trading input; Faktor = -1*DELTA(CORR(HIGH,VOLUME,5),5)*RANK(STD(CLOSE,20))",
+   "readings": {
+    "AEHR": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 103.24,
+     "corr5": 0.1697615319114074,
+     "delta_corr": 0.5983645011003527,
+     "vol20": 8.347125912552174,
+     "rankVol": 0.7647058823529411,
+     "faktor": -0.4575728537826226
+    },
+    "NBIS": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 234.36,
+     "corr5": 0.6820622290959991,
+     "delta_corr": 0.8225892811428902,
+     "vol20": 13.191135858977423,
+     "rankVol": 0.8235294117647058,
+     "faktor": -0.6774264668235566
+    },
+    "SKYQ": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 2.48,
+     "corr5": 0.960295775769483,
+     "delta_corr": 0.4785080802400154,
+     "vol20": 0.21753505464637188,
+     "rankVol": 0.058823529411764705,
+     "faktor": -0.02814753413176561
+    },
+    "SHAZ": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 53.01,
+     "corr5": 0.27340435292429927,
+     "delta_corr": 0.4394444405118405,
+     "vol20": 3.0666384181217063,
+     "rankVol": 0.5294117647058824,
+     "faktor": -0.23264705674156264
+    },
+    "LITE": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 950.56,
+     "corr5": -0.013647593306179562,
+     "delta_corr": -0.004526442901233675,
+     "vol20": 43.53916647973409,
+     "rankVol": 1.0,
+     "faktor": 0.004526442901233675
+    },
+    "SOXL": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 147.13,
+     "corr5": -0.009732368304451556,
+     "delta_corr": 0.5389581908864166,
+     "vol20": 17.686490571902613,
+     "rankVol": 0.8823529411764706,
+     "faktor": -0.47555134489977935
+    },
+    "WYFI": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 18.61,
+     "corr5": 0.8341878302306289,
+     "delta_corr": 0.03240937099789809,
+     "vol20": 1.0671284775039973,
+     "rankVol": 0.4117647058823529,
+     "faktor": -0.013345035116781565
+    },
+    "CRML": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 7.59,
+     "corr5": 0.9325009438386318,
+     "delta_corr": 0.12632103170340614,
+     "vol20": 0.7453742348646081,
+     "rankVol": 0.29411764705882354,
+     "faktor": -0.03715324461864886
+    },
+    "AAOI": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 97.79,
+     "corr5": 0.8124102756723343,
+     "delta_corr": 0.837826418931426,
+     "vol20": 4.523175488525733,
+     "rankVol": 0.5882352941176471,
+     "faktor": -0.49283906995966237
+    },
+    "WDC": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 456.61,
+     "corr5": -0.042428083937229986,
+     "delta_corr": -0.399827800933836,
+     "vol20": 18.685410177461986,
+     "rankVol": 0.9411764705882353,
+     "faktor": 0.3763085185259633
+    },
+    "VELO": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 11.12,
+     "corr5": 0.7834197117215264,
+     "delta_corr": 0.5968461936575439,
+     "vol20": 0.5830233164291114,
+     "rankVol": 0.23529411764705882,
+     "faktor": -0.14043439850765738
+    },
+    "ANF": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 132.14,
+     "corr5": 0.9642735804629178,
+     "delta_corr": 0.1891110690632497,
+     "vol20": 5.950963047062214,
+     "rankVol": 0.6470588235294118,
+     "faktor": -0.1223659858644557
+    },
+    "SATL": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 6.04,
+     "corr5": 0.22290163419117073,
+     "delta_corr": -0.1496132886915089,
+     "vol20": 0.5207851644392341,
+     "rankVol": 0.17647058823529413,
+     "faktor": 0.026402345063207454
+    },
+    "ASPI": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 2.65,
+     "corr5": 0.22414296580980614,
+     "delta_corr": 0.0981020217296738,
+     "vol20": 0.4668832830590532,
+     "rankVol": 0.11764705882352941,
+     "faktor": -0.011541414321138095
+    },
+    "IREN": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 41.92,
+     "corr5": 0.5131856327010681,
+     "delta_corr": 0.8136917571963274,
+     "vol20": 2.8045254834820095,
+     "rankVol": 0.47058823529411764,
+     "faktor": -0.38291376809238936
+    },
+    "AG": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 17.94,
+     "corr5": 0.3897731085583363,
+     "delta_corr": 0.035529365410276625,
+     "vol20": 1.0604204354877362,
+     "rankVol": 0.35294117647058826,
+     "faktor": -0.012539776027156457
+    },
+    "AXTI": {
+     "date": "2026-09-29T04:00:00Z",
+     "close": 77.39,
+     "corr5": 0.4276934119713077,
+     "delta_corr": 0.10866638893112557,
+     "vol20": 7.985640018182638,
+     "rankVol": 0.7058823529411765,
+     "faktor": -0.07670568630432394
+    },
+    "LASR": {
+     "date": "2026-09-28T04:00:00Z",
+     "close": 39.51,
+     "corr5": 0.32992522523856327,
+     "delta_corr": 0.46946293911893144,
+     "vol20": 1.1477266660664471,
+     "rankVol": 0.4444444444444444,
+     "faktor": -0.20865019516396952
+    }
+   }
+  }
+ },
+ "desk_narrative": {
+  "updated_et": "2026-09-29T13:01:41.185306-04:00",
+  "stamp": "Tuesday, 1:01 PM ET",
+  "headline": "Femto is carrying 2 positions, down $497 on the day, no fresh Tensor signals.",
+  "sections": [
+   {
+    "heading": "Account",
+    "body": "Equity $99,419 \u00b7 buying power $378,022. Day P&L -$497 (-0.50%)."
+   },
+   {
+    "heading": "Positions (2 of 10)",
+    "body": "AVGO261023C00365000 \u2014 3 sh @ $11 \u2192 $10 \u00b7 -$405 (-1,244.24%). NVDA \u2014 30 sh @ $231 \u2192 $229 \u00b7 -$58 (-0.83%) \u00b7 stop $223."
+   },
+   {
+    "heading": "Tensor",
+    "body": "No fresh signals. Engine v625, byte-exact. No Tensor positions right now."
+   },
+   {
+    "heading": "Phase",
+    "body": "NVDA \u2014 30 sh @ $231, now $229 \u00b7 -$58. Stop $223 (live at broker). Last event 8:46 AM ET: k5_rest_failed CAT."
+   },
+   {
+    "heading": "Legend's EMA",
+    "body": "Flat. Setup: no trend day."
+   },
+   {
+    "heading": "Morning Dip",
+    "body": "Flat \u2014 outside the morning window."
+   },
+   {
+    "heading": "Bilbo Box Options",
+    "body": "1 call position open (AVGO)."
+   },
+   {
+    "heading": "Risk",
+    "body": "Kill switch armed at -3.0% of baseline equity; not tripped. Earnings within 7 days: AEHR (2026-10-05)."
+   },
+   {
+    "heading": "Next",
+    "body": "Next Tensor scan about 1:08 PM ET."
+   }
+  ]
+ },
+ "equity_curve": [
+  {
+   "ts_utc": "2026-09-26T13:00:00+00:00",
+   "equity": 100000,
+   "day_pl": null,
+   "day_pl_pct": null
+  },
+  {
+   "ts_utc": "2026-09-28T17:05:00+00:00",
+   "equity": 99974.5,
+   "day_pl": null,
+   "day_pl_pct": null
+  },
+  {
+   "ts_utc": "2026-09-28T19:01:13.825181+00:00",
+   "equity": 99956,
+   "day_pl": -44,
+   "day_pl_pct": -0.04
+  },
+  {
+   "ts_utc": "2026-09-28T19:13:16.404156+00:00",
+   "equity": "99967.9",
+   "day_pl": -32.10000000000582,
+   "day_pl_pct": -0.03210000000000582
+  },
+  {
+   "ts_utc": "2026-09-28T19:22:55.139734+00:00",
+   "equity": "99955.45",
+   "day_pl": -44.55000000000291,
+   "day_pl_pct": -0.04455000000000291
+  },
+  {
+   "ts_utc": "2026-09-28T19:39:21.252086+00:00",
+   "equity": "99915.1",
+   "day_pl": -84.89999999999418,
+   "day_pl_pct": -0.08489999999999417
+  },
+  {
+   "ts_utc": "2026-09-28T21:38:26.276461+00:00",
+   "equity": "99937.3",
+   "day_pl": -62.69999999999709,
+   "day_pl_pct": -0.06269999999999709
+  },
+  {
+   "ts_utc": "2026-09-28T21:41:50.088269+00:00",
+   "equity": "99936.4",
+   "day_pl": -63.60000000000582,
+   "day_pl_pct": -0.06360000000000582
+  },
+  {
+   "ts_utc": "2026-09-29T13:39:15.719992+00:00",
+   "equity": "99979",
+   "day_pl": 62.10000000000582,
+   "day_pl_pct": 0.062151648019510036
+  },
+  {
+   "ts_utc": "2026-09-29T14:09:16.627998+00:00",
+   "equity": "99949.6",
+   "day_pl": 32.70000000001164,
+   "day_pl_pct": 0.032727196300137054
+  },
+  {
+   "ts_utc": "2026-09-29T14:39:18.202839+00:00",
+   "equity": "99986.5",
+   "day_pl": 69.60000000000582,
+   "day_pl_pct": 0.06965788570302503
+  },
+  {
+   "ts_utc": "2026-09-29T14:59:20.356018+00:00",
+   "equity": "100001.5",
+   "day_pl": 84.60000000000582,
+   "day_pl_pct": 0.08467036107005504
+  },
+  {
+   "ts_utc": "2026-09-29T15:09:16.465062+00:00",
+   "equity": "99900.21",
+   "day_pl": -16.689999999987776,
+   "day_pl_pct": -0.016703880925036482
+  },
+  {
+   "ts_utc": "2026-09-29T15:39:21.221892+00:00",
+   "equity": "99673.58",
+   "day_pl": -243.31999999999243,
+   "day_pl_pct": -0.24352236708704175
+  },
+  {
+   "ts_utc": "2026-09-29T16:09:20.084271+00:00",
+   "equity": "99750.46",
+   "day_pl": -166.43999999998778,
+   "day_pl_pct": -0.16657842667255268
+  },
+  {
+   "ts_utc": "2026-09-29T16:39:16.987298+00:00",
+   "equity": "99657.67",
+   "day_pl": -259.2299999999959,
+   "day_pl_pct": -0.2594455992930084
+  },
+  {
+   "ts_utc": "2026-09-29T17:01:41.185306+00:00",
+   "equity": "99419.47",
+   "day_pl": -497.429999999993,
+   "day_pl_pct": -0.49784370812144196
+  }
+ ]
+}
