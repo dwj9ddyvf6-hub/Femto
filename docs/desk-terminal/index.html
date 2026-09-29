@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Femto — Live Desk Terminal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f4f8f7; --panel:#ffffff; --panel2:#eef5f3;
+    --line:#d7e3e0; --line2:#b8d4d0;
+    --teal:#087f72; --teal2:#05685f; --teal-bright:#20c7aa;
+    --text:#102a3a; --muted:#637983; --faint:#8aa0a8;
+    --up:#087f5b; --down:#c24134;
+    --amber:#a66509; --gold:#bd8e2f; --gold-soft:#fff2d3;
+    --nav:#0b2d42;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{background:var(--bg);}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding:26px 20px 70px; line-height:1.5;
+  }
+  .wrap{max-width:1060px; margin:0 auto;}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;}
+  .up{color:var(--up);} .down{color:var(--down);}
+  /* masthead */
+  .masthead{display:flex; align-items:center; justify-content:space-between;
+    border-bottom:2px solid var(--nav); padding-bottom:14px; margin-bottom:0;}
+  .brand{font-family:Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; font-size:20px;
+    letter-spacing:.22em; color:var(--teal); font-weight:800;}
+  .brand span{color:var(--text); font-weight:800;}
+  .mright{display:flex; gap:14px; align-items:center;}
+  .live{display:flex; align-items:center; gap:8px; font-size:11px; color:var(--muted);
+    letter-spacing:.14em; font-weight:700;}
+  .dot{width:8px; height:8px; border-radius:50%; background:var(--up);
+    box-shadow:0 0 8px rgba(8,127,91,.6); animation:pulse 2s infinite;}
+  .dot.stale{background:var(--amber); box-shadow:0 0 8px rgba(166,101,9,.6); animation:none;}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  .paper{font-size:10px; font-weight:800; letter-spacing:.2em; color:var(--teal);
+    border:1px solid var(--teal); padding:5px 11px; border-radius:0; background:#fff;}
+  /* readout strip */
+  .readout{display:flex; flex-wrap:wrap; align-items:center; row-gap:6px;
+    border:1px solid var(--line); border-top:none; background:#fff;
+    font-size:12px; letter-spacing:.05em; color:var(--muted); font-weight:600;
+    padding:10px 16px; margin-bottom:0;}
+  .readout b{color:var(--text); font-weight:700;}
+  .readout .sep{color:var(--line2); margin:0 12px;}
+  .cursor{display:inline-block; color:var(--teal); animation:blink 1.06s steps(1) infinite; font-weight:700;}
+  @keyframes blink{50%{opacity:0;}}
+  /* ticker tape */
+  .tape{overflow:hidden; border:1px solid var(--line); border-top:none;
+    background:var(--panel2); margin-bottom:26px;}
+  .tape-inner{display:inline-block; white-space:nowrap; padding:7px 0;
+    font-size:11px; letter-spacing:.08em; color:var(--muted); font-weight:600;
+    animation:tape 40s linear infinite;}
+  .tape-inner b{color:var(--teal2); font-weight:700;}
+  .tape-inner .tsep{color:var(--line2); margin:0 16px;}
+  @keyframes tape{to{transform:translateX(-50%);}}
+  /* panels + corner brackets */
+  .panel{position:relative; background:var(--panel); border:1px solid var(--line);
+    box-shadow:0 16px 35px rgba(8,127,114,.08); margin-bottom:26px;}
+  .brk{position:absolute; width:14px; height:14px; border:0 solid var(--teal); z-index:2;}
+  .brk.tl{top:-1px; left:-1px; border-top-width:3px; border-left-width:3px;}
+  .brk.tr{top:-1px; right:-1px; border-top-width:3px; border-right-width:3px;}
+  .brk.bl{bottom:-1px; left:-1px; border-bottom-width:3px; border-left-width:3px;}
+  .brk.br{bottom:-1px; right:-1px; border-bottom-width:3px; border-right-width:3px;}
+  .phead{display:flex; justify-content:space-between; align-items:center; gap:10px;
+    padding:10px 18px; border-bottom:1px solid var(--line);
+    font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    font-size:11px; letter-spacing:.20em; color:var(--teal2); font-weight:700;}
+  .phead .sub{color:var(--faint); letter-spacing:.12em; font-weight:700;}
+  /* hero note */
+  .boot{font-size:11px; line-height:1.75; color:var(--faint); letter-spacing:.05em;
+    margin:14px 18px 0; font-weight:600;}
+  .hero h1{font-family:Georgia,"Times New Roman",serif; font-weight:700;
+    font-size:38px; letter-spacing:-.01em; line-height:1.2;
+    color:var(--text); margin:12px 18px 12px; max-width:24em;}
+  #hero-sections{padding:2px 18px 16px;}
+  .hsec{display:flex; gap:16px; padding:8px 0; border-top:1px solid var(--line); font-size:14px;}
+  .hsec .hk{flex:0 0 178px; font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    font-size:10.5px; letter-spacing:.18em; color:var(--teal2); font-weight:700; padding-top:3px;}
+  .hsec .hb{color:var(--muted);}
+  .hsec .hb b{color:var(--text); font-weight:700;}
+  /* equity */
+  .eq-top{display:flex; align-items:flex-end; justify-content:space-between; gap:14px; flex-wrap:wrap;
+    padding:20px 18px 6px;}
+  .eq-num{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:46px; font-weight:700;
+    letter-spacing:-.01em; line-height:1; color:var(--text);}
+  .eq-sub{margin-top:8px; font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    font-size:12px; letter-spacing:.04em; color:var(--muted); font-weight:500;}
+  .eq-lab{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:10.5px;
+    letter-spacing:.22em; color:var(--faint); font-weight:700; margin-bottom:6px;}
+  .eq-day{text-align:right;}
+  .eq-day .v{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:26px; font-weight:700;}
+  .chart{width:100%; height:auto; display:block;}
+  .chart .grid{stroke:var(--line); stroke-width:1;}
+  .chart text{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;}
+  .chart .alab{fill:var(--faint); font-size:11px; letter-spacing:.08em; font-weight:600;}
+  .draw{stroke-dasharray:1; stroke-dashoffset:1; animation:draw 1.6s ease-out forwards;}
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  .fadein{opacity:0; animation:fadein 1.2s ease-out .3s forwards;}
+  @keyframes fadein{to{opacity:1;}}
+  .enddot{animation:pulse 2s infinite;}
+  @keyframes tickflash{0%{background:rgba(8,127,114,.18);}100%{background:transparent;}}
+  .flash{animation:tickflash 1.2s ease-out;}
+  /* panels */
+  .panel .psub{padding:10px 18px 0; font-size:13px; color:var(--muted);}
+  /* position cards */
+  .poscard{padding:20px 18px; border-bottom:1px solid var(--line);}
+  .poscard:last-child{border-bottom:none;}
+  .poshead{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:4px;}
+  .poshead .sym{font-family:Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; font-size:24px;
+    font-weight:800; letter-spacing:.04em; color:var(--text);}
+  .poshead .pnl{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:19px; font-weight:700;}
+  .posmeta{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:12px;
+    letter-spacing:.03em; color:var(--muted); font-weight:500; margin-bottom:14px;}
+  .bar-row{display:flex; align-items:center; gap:12px; margin:7px 0; font-size:12px;}
+  .bar-lab{flex:0 0 170px; font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    font-size:11px; letter-spacing:.10em; color:var(--faint); font-weight:700;}
+  .bar-track{flex:1; height:10px; background:var(--panel2); border-radius:0; position:relative; overflow:hidden;}
+  .bar-fill{position:absolute; top:0; bottom:0; border-radius:0; transition:all .8s ease;}
+  .bar-val{flex:0 0 110px; text-align:right; font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    color:var(--muted); font-weight:700;}
+  .anat{margin-top:14px;}
+  .anat svg{width:100%; height:auto; display:block;}
+  .anat text{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;}
+  /* strategy cards */
+  .strat-grid{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line);}
+  .strat{background:var(--panel); padding:20px 18px;}
+  .strat h4{font-family:Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; font-size:21px;
+    font-weight:800; letter-spacing:.03em; text-transform:uppercase; color:var(--text);}
+  .strat .by{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:11px;
+    color:var(--teal2); font-weight:700; letter-spacing:.05em; margin:4px 0 10px;}
+  .strat .desc{font-size:13.5px; color:var(--muted); margin-bottom:12px;}
+  .strat .status{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:12px;
+    letter-spacing:.02em; color:var(--text); font-weight:600;
+    border-top:1px solid var(--line); padding-top:10px;}
+  .strat .status .sl{font-size:10px; letter-spacing:.2em; color:var(--faint); font-weight:700; margin-bottom:4px;}
+  /* risk */
+  .riskrow{display:flex; gap:0;}
+  .riskcell{flex:1; padding:18px; border-right:1px solid var(--line);}
+  .riskcell:last-child{border-right:none;}
+  .riskcell .k{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:10.5px;
+    letter-spacing:.20em; color:var(--faint); font-weight:700; margin-bottom:8px;}
+  .riskcell .v{font-size:14px; font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-weight:600;}
+  .seg{display:inline-block; border:1px solid var(--teal); background:#fff; color:var(--teal2);
+    font-size:13px; font-weight:700; padding:3px 7px; margin-right:3px; letter-spacing:.04em;}
+  footer{margin-top:8px; padding-top:16px; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap;
+    font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    font-size:11px; color:var(--faint); font-weight:600; letter-spacing:.06em;}
+  .empty{padding:24px 18px; color:var(--muted); font-size:13.5px;}
+  @media(max-width:760px){
+    .strat-grid{grid-template-columns:1fr;}
+    .hero h1{font-size:28px; margin:10px 14px 12px;}
+    .boot{margin:12px 14px 0;}
+    #hero-sections{padding:0 14px 14px;}
+    .masthead{flex-wrap:wrap; gap:10px;}
+    .eq-num{font-size:34px;}
+    .eq-top{padding:16px 14px 6px;}
+    .eq-day{text-align:left;}
+    .eq-day .v{font-size:22px;}
+    .bar-row{flex-wrap:wrap; row-gap:6px;}
+    .bar-lab{flex:1 1 100%;}
+    .bar-track{flex:1 1 auto;}
+    .bar-val{flex:0 0 auto;}
+    .riskrow{flex-direction:column;}
+    .riskcell{border-right:none; border-bottom:1px solid var(--line);}
+    .readout{font-size:11px;}
+  }
+  @media(max-width:560px){
+    .hsec{flex-direction:column; gap:4px;}
+    .hsec .hk{flex:none; padding-top:0;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <div class="brand">FEMTO <span>DESK TERMINAL</span></div>
+    <div class="mright">
+      <span class="paper">PAPER TRADING</span>
+      <span class="live"><span class="dot" id="livedot"></span><span id="livetext">CONNECTING</span></span>
+    </div>
+  </div>
+
+  <div class="readout mono" id="readout"><span>AWAITING FEED…</span></div>
+  <div class="tape"><div class="tape-inner mono" id="tape"></div></div>
+
+  <section class="panel hero" id="hero" style="display:none;">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>NOTE · DESK NOTE</span><span class="sub" id="hero-stamp"></span></div>
+    <div class="boot mono">FEMTO/OS v2.4 ……… OK<br>FEED UPLINK ……… LINKED<br>5 SLEEVES ……… ARMED</div>
+    <h1 id="hero-headline"></h1>
+    <div id="hero-sections"></div>
+  </section>
+
+  <section class="panel eq">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>EQY · ACCOUNT EQUITY</span><span class="sub">1H SWING DESK</span></div>
+    <div class="eq-top">
+      <div>
+        <div class="eq-lab">ACCOUNT EQUITY</div>
+        <div class="eq-num" id="eq-num">—</div>
+        <div class="eq-sub" id="eq-sub"></div>
+      </div>
+      <div class="eq-day">
+        <div class="eq-lab">TODAY'S CHANGE</div>
+        <div class="v" id="daypnl">—</div>
+        <div class="eq-sub" id="daypnl-sub"></div>
+      </div>
+    </div>
+    <div id="eq-chart"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>POS · WHAT WE OWN</span><span class="sub" id="pos-count"></span></div>
+    <div class="psub">Every open position, its profit or loss, and exactly where the safety nets sit.</div>
+    <div id="positions"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>SLV · THE STRATEGIES</span><span class="sub">5 PLAYBOOKS</span></div>
+    <div class="psub">Five different playbooks run this desk — each with its own inventor, each doing one job.</div>
+    <div class="strat-grid" id="strats"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>RSK · RISK</span><span class="sub">GUARDRAILS</span></div>
+    <div class="riskrow" id="risk"></div>
+  </section>
+
+  <footer>
+    <span id="feedstamp">feed: —</span>
+    <span>refreshes itself every 60 seconds</span>
+  </footer>
+</div>
+
+<script>
+const FEED_URL = "https://raw.githubusercontent.com/dwj9ddyvf6-hub/InfinityBlade/main/docs/desk-terminal-feed.json";
+const POLL_MS = 60000;
+let lastGen = null, lastGood = null, firstPaint = true;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money0 = x => { if(x==null||isNaN(+x)) return "—";
+  const v=+x; return (v<0?"−":"")+"$"+Math.abs(Math.round(v)).toLocaleString("en-US"); };
+const money2 = x => { if(x==null||isNaN(+x)) return "—";
+  const v=+x; return (v<0?"−":"")+"$"+Math.abs(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2}); };
+const signed0 = x => { if(x==null||isNaN(+x)) return "—";
+  const v=+x; return (v>0?"+":v<0?"−":"")+"$"+Math.abs(Math.round(v)).toLocaleString("en-US"); };
+const pct = (x,d=2) => { if(x==null||isNaN(+x)) return "—";
+  const v=+x; return (v>0?"+":v<0?"−":"")+Math.abs(v).toFixed(d)+"%"; };
+const qty = x => (x==null||isNaN(+x)) ? "—" : String(+x);
+const cls = x => (x==null||isNaN(+x)) ? "" : (+x>0?"up":+x<0?"down":"");
+const etHM = iso => { try{ return new Date(iso).toLocaleString("en-US",
+  {timeZone:"America/New_York",hour:"numeric",minute:"2-digit",hour12:true}).toUpperCase(); }
+  catch(e){ return "—"; } };
+const etMD = iso => { try{ return new Date(iso).toLocaleString("en-US",
+  {timeZone:"America/New_York",month:"short",day:"numeric"}); }
+  catch(e){ return ""; } };
+
+/* ---------- hero note ---------- */
+function renderHero(n){
+  if(!n) return;
+  $("hero").style.display = "";
+  $("hero-stamp").textContent = (n.stamp||"").toUpperCase();
+  $("hero-headline").textContent = n.headline || "";
+  $("hero-sections").innerHTML = (n.sections||[]).map(s =>
+    `<div class="hsec"><div class="hk">${esc(s.heading).toUpperCase()}</div><div class="hb">${esc(s.body)}</div></div>`
+  ).join("");
+}
+
+/* ---------- readout + tape ---------- */
+function buildReadout(d){
+  const a=d.account||{}, k=d.kill_switch||{};
+  $("readout").innerHTML =
+    `EQUITY&nbsp;<b>${money0(a.equity)}</b><span class="sep">│</span>`+
+    `DAY&nbsp;<b class="${cls(d.day_pl)}">${signed0(d.day_pl)} (${pct(d.day_pl_pct)})</b><span class="sep">│</span>`+
+    `BP&nbsp;<b>${money0(a.buying_power)}</b><span class="sep">│</span>`+
+    `SLOTS&nbsp;<b>${d.position_count||0}/${d.max_positions||"—"}</b><span class="sep">│</span>`+
+    `KILL-SWITCH&nbsp;<b class="${k.tripped?"down":"up"}">${k.tripped?"TRIPPED":"ARMED"}</b><span class="sep">│</span>`+
+    `FEED&nbsp;<b>${etHM(d.generated_at_utc)} ET</b>&nbsp;<span class="cursor">▊</span>`;
+}
+function buildTape(d){
+  const s=d.sleeves||{}, items=[];
+  const fs=(d.fresh_signals||[]).map(x=>x.symbol||x);
+  items.push(`TENSOR <b>${fs.length?esc(fs.join(" ")).toUpperCase():"NO FRESH SIGNALS"}</b>`);
+  const ph=(s.phase||{}).position;
+  items.push(ph?`PHASE <b>${esc(ph.symbol)} ${qty(ph.qty)}SH @ ${money2(ph.entry_px)} → ${money2(ph.current)}</b>`:`PHASE <b>FLAT</b>`);
+  const le=(s.legends_ema||{}), lp=le.position;
+  items.push(lp&&lp.qty?`LEGEND'S EMA <b>QQQ ${esc(lp.side||"")} ${qty(lp.qty)}SH</b>`
+    :`LEGEND'S EMA <b>FLAT · ${(le.setup||{}).trend_day===false?"NO TREND DAY":"STANDBY"}</b>`);
+  const md=(s.morning_dip||{}), mq=md.position_qty;
+  items.push(mq?`MORNING DIP <b>QQQ ${qty(mq)}SH</b>`:`MORNING DIP <b>${md.armed?"ARMED":"FLAT"}</b>`);
+  const bo=(s.bilbo_options||{}), bn=bo.open_positions||0;
+  items.push(bn?`BILBO BOX OPTIONS <b>${bn} CALL${bn>1?"S":""}</b>`
+    :`BILBO BOX OPTIONS <b>${bo.state_known?"FLAT":"STANDBY"}</b>`);
+  const k=d.kill_switch||{};
+  items.push(`KILL-SWITCH <b>${k.tripped?"TRIPPED":"ARMED"}</b>`);
+  items.push(`DAY P/L <b>${signed0(d.day_pl)} (${pct(d.day_pl_pct)})</b>`);
+  const half=items.map(t=>`<span>${t}</span>`).join(`<span class="tsep">▸</span>`)+`<span class="tsep">▸</span>`;
+  $("tape").innerHTML = half+half;
+}
+
+/* ---------- equity ---------- */
+function countUp(el, target, fmt){
+  const dur = 1200, t0 = performance.now();
+  const from = target*0.985;
+  (function f(t){
+    const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3);
+    el.textContent = fmt(from+(target-from)*e);
+    if(k<1) requestAnimationFrame(f);
+  })(t0);
+}
+function equityChart(curve){
+  const el = $("eq-chart");
+  if(!curve || curve.length < 2){
+    el.innerHTML = `<div class="empty">The equity chart is collecting its first data points — check back as the desk trades through the day.</div>`;
+    return;
+  }
+  const W=640, H=230, P={l:8,r:8,t:14,b:26};
+  const vals = curve.map(p=>+p.equity);
+  let lo=Math.min(...vals), hi=Math.max(...vals);
+  if(hi-lo < 1){ hi+=50; lo-=50; }
+  const pad=(hi-lo)*0.12; lo-=pad; hi+=pad;
+  const X=i=>P.l+(W-P.l-P.r)*(i/(vals.length-1));
+  const Y=v=>P.t+(H-P.t-P.b)*(1-(v-lo)/(hi-lo));
+  const pts = vals.map((v,i)=>[X(i),Y(v)]);
+  const line = "M"+pts.map(p=>p[0].toFixed(1)+","+p[1].toFixed(1)).join(" L");
+  const area = line+` L${X(vals.length-1).toFixed(1)},${(H-P.b)} L${P.l},${(H-P.b)} Z`;
+  const up = vals[vals.length-1] >= vals[0];
+  const col = up ? "#087f5b" : "#c24134";
+  const t0=curve[0].ts_utc, t1=curve[curve.length-1].ts_utc;
+  const anim = firstPaint ? `class="draw" pathLength="1"` : ``;
+  el.innerHTML =
+  `<svg class="chart" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">`+
+  `<defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1">`+
+  `<stop offset="0" stop-color="${col}" stop-opacity=".28"/>`+
+  `<stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>`+
+  [0.25,0.5,0.75].map(f=>{const y=P.t+(H-P.t-P.b)*f;
+    return `<line class="grid" x1="${P.l}" y1="${y}" x2="${W-P.r}" y2="${y}"/>`;}).join("")+
+  `<path d="${area}" fill="url(#ag)" ${firstPaint?`class="fadein"`:``}/>`+
+  `<path d="${line}" fill="none" stroke="${col}" stroke-width="2.5" stroke-linecap="round" ${anim}/>`+
+  `<circle class="enddot" cx="${X(vals.length-1)}" cy="${Y(vals[vals.length-1])}" r="5" fill="${col}"/>`+
+  `<text class="alab" x="${P.l}" y="${H-8}">${esc(etMD(t0))} ${esc(etHM(t0))}</text>`+
+  `<text class="alab" x="${W-P.r}" y="${H-8}" text-anchor="end">${esc(etMD(t1))} ${esc(etHM(t1))}</text>`+
+  `<text class="alab" x="${W-P.r}" y="20" text-anchor="end">${money0(hi-pad)}</text>`+
+  `</svg>`;
+}
+function renderEquity(d){
+  const a=d.account||{}, eq=a.equity;
+  if(firstPaint && eq!=null) countUp($("eq-num"), +eq, money0);
+  else $("eq-num").textContent = money0(eq);
+  $("eq-sub").textContent = "Buying power " + money0(a.buying_power) +
+    "  ·  " + (d.position_count||0) + " of " + (d.max_positions||"—") + " slots used";
+  const dp=$("daypnl");
+  dp.innerHTML = `<span class="${cls(d.day_pl)}">${signed0(d.day_pl)} (${pct(d.day_pl_pct)})</span>`;
+  $("daypnl-sub").textContent = "since yesterday's close";
+  equityChart(d.equity_curve);
+}
+
+/* ---------- positions ---------- */
+function anatomySVG(p){
+  const vals=[p.desk_stop,p.avg_entry,p.current,p.desk_target].filter(v=>v!=null&&!isNaN(+v)).map(Number);
+  if(vals.length<2) return "";
+  let lo=Math.min(...vals), hi=Math.max(...vals);
+  const pad=(hi-lo)*0.18||1; lo-=pad; hi+=pad;
+  const W=600,H=64, x=v=>20+(W-40)*(v-lo)/(hi-lo);
+  const e=+p.avg_entry, c=+p.current, s=p.desk_stop!=null?+p.desk_stop:null, t=p.desk_target!=null?+p.desk_target:null;
+  const zcol = c>=e ? "#087f5b" : "#c24134";
+  let g=`<line x1="20" y1="30" x2="${W-20}" y2="30" stroke="#b8d4d0" stroke-width="2"/>`;
+  for(let dl=Math.ceil(lo); dl<=Math.floor(hi); dl++){ /* $1 tick ruler */
+    const tx=x(dl);
+    g+=`<line x1="${tx.toFixed(1)}" y1="27" x2="${tx.toFixed(1)}" y2="33" stroke="#b8d4d0" stroke-width="1" opacity=".7"/>`;
+  }
+  g+=`<rect x="${Math.min(x(e),x(c))}" y="24" width="${Math.abs(x(c)-x(e))}" height="12" fill="${zcol}" opacity=".3"/>`;
+  const tick=(v,col,lab,dy)=>{
+    const lx=Math.max(54,Math.min(W-54,x(v)));
+    return `<g><line x1="${x(v)}" y1="20" x2="${x(v)}" y2="40" stroke="${col}" stroke-width="2"/>`+
+    `<text x="${lx}" y="${dy}" text-anchor="middle" font-size="11" fill="${col}">${lab}</text></g>`;};
+  if(s!=null) g+=tick(s,"#c24134","STOP "+money2(s),58);
+  const eClash = Math.abs(x(e)-x(c))<95;
+  g+=tick(e,"#a66509","ENTRY "+money2(e), eClash?56:14);
+  if(t!=null) g+=tick(t,"#087f5b","TARGET "+money2(t),58);
+  const clx=Math.max(34,Math.min(W-34,x(c)));
+  g+=`<circle cx="${x(c)}" cy="30" r="6" fill="#ffffff" stroke="#102a3a" stroke-width="2"/>`+
+     `<text x="${clx}" y="14" text-anchor="middle" font-size="12" font-weight="600" fill="#102a3a">${money2(c)}</text>`;
+  return `<div class="anat"><svg viewBox="0 0 ${W} ${H}">${g}</svg></div>`;
+}
+function renderPositions(d){
+  const rows=d.positions||[];
+  $("pos-count").textContent = rows.length ? (rows.length+" OPEN") : "FLAT";
+  if(!rows.length){ $("positions").innerHTML=`<div class="empty">No open positions right now — the desk is in cash, waiting for its next setup.</div>`; return; }
+  const maxAbs=Math.max(...rows.map(r=>Math.abs(+r.unrealized_pl||0)),1);
+  $("positions").innerHTML = rows.map(r=>{
+    const u=+r.unrealized_pl||0, w=Math.max(4,Math.abs(u)/maxAbs*50);
+    const bar = u>=0
+      ? `<div class="bar-fill" style="left:50%;width:${w}%;background:#087f5b;opacity:.75"></div>`
+      : `<div class="bar-fill" style="right:50%;width:${w}%;background:#c24134;opacity:.75"></div>`;
+    return `<div class="poscard">
+      <div class="poshead"><span class="sym">${esc(r.symbol)}</span>
+        <span class="pnl ${cls(u)}">${signed0(u)} (${pct(r.unrealized_pl_pct)})</span></div>
+      <div class="posmeta">${qty(r.qty)} SHARES &nbsp;·&nbsp; ENTRY ${money2(r.avg_entry)} &nbsp;·&nbsp; NOW ${money2(r.current)}</div>
+      <div class="bar-row"><span class="bar-lab">PROFIT / LOSS</span>
+        <div class="bar-track">${bar}</div><span class="bar-val ${cls(u)}">${signed0(u)}</span></div>
+      ${anatomySVG(r)}
+    </div>`;
+  }).join("");
+}
+
+/* ---------- strategies ---------- */
+const STRATS=[
+ {key:"tensor", name:"Tensor",
+  by:"Devised by Galath — his own pattern engine, refined over months of research",
+  desc:"Reads one-hour price charts across the market hunting for swing setups. Eleven technical factors vote on every signal; the desk only trades when confidence runs high. Byte-exact, hash-pinned — the code that scores a chart today is bit-for-bit the code that scored it in testing."},
+ {key:"phase", name:"Phase",
+  by:"Devised by Milkman — adapted from his Daily Bilbo Boxes system",
+  desc:"Watches for stocks coiling into tight “compression boxes.” When a box forms, it parks a resting buy order at the top — and catches the breakout the instant price escapes. One trade per box, protected by the box low."},
+ {key:"legends_ema", name:"Legend's EMA",
+  by:"Devised by Milkman — from his legends-ema playbook",
+  desc:"Rides the Nasdaq-100's trend with an exponential moving average. When the trend points up it gets in; when the day shows no trend, it sits out. Entries are verified before a single protective order goes live."},
+ {key:"morning_dip", name:"Morning Dip",
+  by:"Devised by Milkman — from his Morning Dip Limit system",
+  desc:"Waits for the market's early-morning wobble. In a short window after the open, it buys the dip with a careful limit order — then it's done for the day."},
+ {key:"bilbo_options", name:"Bilbo Box Options",
+  by:"Devised by Milkman — his options sleeve: Bilbo Box breakout calls",
+  desc:"The options arm of the Bilbo Box system. When a compression box breaks out, it buys a call spread nearby — a small position with a big upside window, flattened before earnings and managed by strict exit rules."}
+];
+function stratStatus(key,s,d){
+  const t=s.tensor||{}, ph=s.phase||{}, le=s.legends_ema||{}, md=s.morning_dip||{};
+  const scan=d.last_scan||{};
+  if(key==="tensor"){
+    const prot=t.protection||{};
+    const tpos=t.positions||[];
+    let pline;
+    if(!tpos.length) pline = "NO OPEN TENSOR POSITIONS — THIS SLEEVE IS FLAT.";
+    else if(prot.unknown) pline = "PROTECTION STATE UNKNOWN.";
+    else if((prot.unprotected||[]).length) pline = `<span class="down">UNPROTECTED: ${esc(prot.unprotected.join(", "))}</span>`;
+    else pline = "EVERY TENSOR POSITION IS PROTECTED.";
+    const sig=(d.fresh_signals||[]).map(x=>esc(x.symbol||x)).join(", ");
+    return `ENGINE ${(d.engine||{}).version||"v625"} · LAST SCAN ${scan.ts?etHM(scan.ts)+" ET":"—"}. ${pline}`+
+      (sig?` FRESH: ${sig}.`:" NO FRESH SIGNALS.");
+  }
+  if(key==="phase"){
+    const p=ph.position;
+    return p ? `HOLDING ${esc(p.symbol)} — ${qty(p.qty)} SHARES @ ${money2(p.entry_px)}, STOP ${money2(p.stop)}${(ph.protection||{}).stop_live?' <span class="up">(LIVE AT BROKER)</span>':""}.`
+      : "FLAT — NO BOX HAS TRIGGERED TODAY.";
+  }
+  if(key==="legends_ema"){
+    const p=le.position, sd=(le.setup||{}).trend_day;
+    const tline = sd===true?"TREND DAY.":sd===false?"NO TREND DAY.":"TREND UNEVALUATED.";
+    return (p&&p.qty)?`HOLDING QQQ ${esc(p.side)} ${qty(p.qty)} SHARES. ${tline}`:`FLAT. ${tline}`;
+  }
+  if(key==="morning_dip"){
+    const q=md.position_qty;
+    if(q) return `HOLDING QQQ — ${qty(q)} SHARES FROM THE MORNING DIP.`;
+    return md.armed ? "ARMED FOR THE 09:30–10:30 ET WINDOW." : "FLAT — OUTSIDE THE MORNING WINDOW.";
+  }
+  if(key==="bilbo_options"){
+    const b=s.bilbo_options||{}, n=b.open_positions||0;
+    if(n){
+      const us=[...new Set((b.positions||[]).map(p=>p.underlying).filter(Boolean))];
+      return `HOLDING ${n} CALL${n>1?"S":""}${us.length?` ON ${esc(us.join(", "))}`:""}.`;
+    }
+    return b.state_known ? "FLAT — NO QUALIFYING BREAKOUTS." : "STANDBY — FIRST SCAN PENDING.";
+  }
+  return "—";
+}
+function renderStrats(d){
+  const s=d.sleeves||{};
+  $("strats").innerHTML = STRATS.map(st=>
+    `<div class="strat"><h4>${esc(st.name)}</h4><div class="by">${esc(st.by)}</div>`+
+    `<div class="desc">${esc(st.desc)}</div>`+
+    `<div class="status"><div class="sl">LIVE STATUS</div>${stratStatus(st.key,s,d)}</div></div>`
+  ).join("");
+}
+
+/* ---------- risk ---------- */
+function renderRisk(d){
+  const k=d.kill_switch||{}, earn=d.earnings_upcoming_7d||[];
+  const seg=s=>String(s).split("").map(ch=>`<span class="seg">${esc(ch)}</span>`).join("");
+  $("risk").innerHTML =
+   `<div class="riskcell"><div class="k">KILL SWITCH</div><div class="v">${
+     k.tripped?'<span class="down"><b>TRIPPED</b> — ALL ENTRIES HALTED</span>'
+     :`ARMED ${seg("−"+(k.threshold_pct||"—")+"%")} <span class="up">· NOT TRIPPED</span>`}</div></div>`+
+   `<div class="riskcell"><div class="k">EARNINGS IN NEXT 7 DAYS</div><div class="v" style="color:var(--dim)">${
+     earn.length?esc(earn.map(e=>e.symbol+" · "+e.date).join("   ")):"NONE ON THE CALENDAR"}</div></div>`;
+}
+
+/* ---------- main ---------- */
+function render(d){
+  lastGood=d; lastGen=d.generated_at_utc;
+  renderHero(d.desk_narrative); renderEquity(d); renderPositions(d);
+  renderStrats(d); renderRisk(d); buildReadout(d); buildTape(d);
+  $("feedstamp").textContent = "feed: " + (d.generated_at_et? etHM(d.generated_at_et)+" ET":"—");
+  $("livetext").textContent = "LIVE · " + etHM(d.generated_at_utc) + " ET";
+  $("livedot").classList.remove("stale");
+  if(!firstPaint){
+    for(const id of ["eq-num","daypnl"]){
+      const e=$(id); e.classList.remove("flash"); void e.offsetWidth; e.classList.add("flash");
+    }
+  }
+  firstPaint = false;
+}
+async function tick(){
+  try{
+    const r = await fetch(FEED_URL+"?t="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    if(d.generated_at_utc !== lastGen) render(d);
+    else { $("livetext").textContent="LIVE · "+etHM(d.generated_at_utc)+" ET";
+           $("livedot").classList.remove("stale"); }
+  }catch(e){
+    $("livedot").classList.add("stale");
+    $("livetext").textContent = lastGood ? "STALE · "+etHM(lastGen)+" ET" : "FEED UNREACHABLE";
+  }
+}
+tick();
+setInterval(tick, POLL_MS);
+</script>
+</body>
+</html>
