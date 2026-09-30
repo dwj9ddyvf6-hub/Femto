@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-09-30T14:39:18.298424+00:00",
- "generated_at_et": "2026-09-30T10:39:18.298424-04:00",
+ "generated_at_utc": "2026-09-30T15:09:17.268956+00:00",
+ "generated_at_et": "2026-09-30T11:09:17.268956-04:00",
  "account": {
-  "equity": "99152.39",
-  "cash": "-60620.31",
-  "buying_power": "191047.18",
+  "equity": "99139.84",
+  "cash": "10174.69",
+  "buying_power": "276050.04",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -28,10 +28,10 @@
    "symbol": "AVGO261023C00365000",
    "qty": 3.0,
    "avg_entry": 10.85,
-   "current": 8.35,
-   "unrealized_pl": -750.0,
-   "unrealized_pl_pct": -2304.1474654377885,
-   "market_value": "2505",
+   "current": 8.25,
+   "unrealized_pl": -780.0,
+   "unrealized_pl_pct": -2396.3133640552996,
+   "market_value": "2475",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -45,10 +45,10 @@
    "symbol": "LLY",
    "qty": 4.0,
    "avg_entry": 1199.4925,
-   "current": 1181.44,
-   "unrealized_pl": -72.21,
-   "unrealized_pl_pct": -1.5050114944445252,
-   "market_value": "4725.76",
+   "current": 1179.0,
+   "unrealized_pl": -81.97,
+   "unrealized_pl_pct": -1.7084308572166977,
+   "market_value": "4716",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -62,10 +62,10 @@
    "symbol": "NVDA",
    "qty": 30.0,
    "avg_entry": 231.27,
-   "current": 230.65,
-   "unrealized_pl": -18.6,
-   "unrealized_pl_pct": -0.268084922385091,
-   "market_value": "6919.5",
+   "current": 230.76,
+   "unrealized_pl": -15.3,
+   "unrealized_pl_pct": -0.22052146841354264,
+   "market_value": "6922.8",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -76,184 +76,187 @@
    "entered_ts_utc": null
   },
   {
-   "symbol": "QQQ",
-   "qty": 196.0,
-   "avg_entry": 742.37,
-   "current": 742.96,
-   "unrealized_pl": 115.64,
-   "unrealized_pl_pct": 0.0794751943101149,
-   "market_value": "145620.16",
+   "symbol": "VELO",
+   "qty": 6614.0,
+   "avg_entry": 11.33,
+   "current": 11.3177,
+   "unrealized_pl": -81.3522,
+   "unrealized_pl_pct": -0.10856134157105031,
+   "market_value": "74855.2678",
    "side": "long",
-   "sector": null,
-   "phenotype": null,
-   "confidence": null,
-   "desk_stop": null,
-   "desk_target": null,
-   "entry_bar_t": null,
-   "entered_ts_utc": null
+   "sector": "tech",
+   "phenotype": "TRANSITION",
+   "confidence": 8,
+   "desk_stop": 11.19,
+   "desk_target": 11.82,
+   "entry_bar_t": "2026-09-30T14:00:00Z",
+   "entered_ts_utc": "2026-09-30T15:08:51Z"
   }
  ],
  "position_count": 4,
  "max_positions": 10,
  "sector_counts": {
-  "unknown": 4
+  "unknown": 3,
+  "tech": 1
  },
- "day_pl": -167.33000000000175,
- "day_pl_pct": -0.16847610927618578,
+ "day_pl": -179.88000000000466,
+ "day_pl_pct": -0.18111206918425127,
  "journal_today": {
-  "scans": 2,
-  "trades": 0
+  "scans": 4,
+  "trades": 1
  },
  "fresh_signals": [
-  "AAOI WATCH conf=7 RECLAIM"
+  "VELO TRADE conf=8 TRANSITION"
  ],
  "ledger_tail": [
   {
-   "ts": "2026-09-30T13:38:51Z",
-   "symbol": "AG",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T13:38:51Z",
-   "symbol": "AXTI",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T13:38:51Z",
-   "symbol": "LASR",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 497 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T13:38:51Z",
-   "event": "scan_end"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "event": "scan_start"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "AEHR",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "NBIS",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "SKYQ",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "SHAZ",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "LITE",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "SOXL",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "WYFI",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "CRML",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "AAOI",
-   "decision": "WATCH",
-   "reason": "moderate confidence 7 (6-7): monitoring, no order [1D=-- 1W=--]"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "WDC",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "VELO",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 497 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "ANF",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "SATL",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
-   "symbol": "ASPI",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-09-30T14:08:50Z",
+   "ts": "2026-09-30T14:38:52Z",
    "symbol": "IREN",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-09-30T14:08:50Z",
+   "ts": "2026-09-30T14:38:52Z",
    "symbol": "AG",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-09-30T14:08:50Z",
+   "ts": "2026-09-30T14:38:52Z",
    "symbol": "AXTI",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-09-30T14:08:50Z",
+   "ts": "2026-09-30T14:38:52Z",
    "symbol": "LASR",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-09-30T14:08:50Z",
+   "ts": "2026-09-30T14:38:52Z",
    "event": "scan_end"
   },
   {
-   "ts": "2026-09-30T14:38:52Z",
+   "ts": "2026-09-30T15:08:51Z",
    "event": "scan_start"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "AEHR",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "NBIS",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "SKYQ",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 500 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "SHAZ",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "LITE",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "SOXL",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "WYFI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "CRML",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "AAOI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "WDC",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "VELO",
+   "decision": "TRADE",
+   "reason": "confidence 8 >= 8 (TRANSITION yellow-regime+1) [1D=-- 1W=--]: risking $992.21 (1% of $99220.52 equity), per-share risk $0.1500 -> qty 6614 @ $11.34 (TP $11.82 / SL $11.19)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "ANF",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "SATL",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "ASPI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "IREN",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "AG",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "AXTI",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "symbol": "LASR",
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+  },
+  {
+   "ts": "2026-09-30T15:08:51Z",
+   "event": "scan_end"
   }
  ],
  "outcome_stats": {
   "closed_total": 0,
-  "open_total": 1,
+  "open_total": 2,
   "by_phenotype": {},
   "by_confidence": {},
   "by_symbol": {}
@@ -288,9 +291,25 @@
     "last_snapshot_seen": "2026-09-26-foliotend-production-v625",
     "drift": false
    },
-   "positions": [],
+   "positions": [
+    {
+     "symbol": "VELO",
+     "qty": 6614.0,
+     "avg_entry": 11.33,
+     "current": 11.3177,
+     "unrealized_pl": -81.3522,
+     "unrealized_pl_pct": -0.10856134157105031,
+     "phenotype": "TRANSITION",
+     "confidence": 8,
+     "stop": 11.19,
+     "target": 11.82,
+     "protected": false
+    }
+   ],
    "protection": {
-    "unprotected": [],
+    "unprotected": [
+     "VELO"
+    ],
     "unknown": false
    },
    "last_scan": {
@@ -300,72 +319,74 @@
    },
    "recent": [
     {
-     "ts": "2026-09-30T14:08:50Z",
-     "symbol": "AAOI",
-     "decision": "WATCH",
-     "reason": "moderate confidence 7 (6-7): monitoring, no order [1D=-- 1W=--]"
+     "ts": "2026-09-30T15:08:51Z",
+     "symbol": "CRML",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
+     "symbol": "AAOI",
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
+    },
+    {
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "WDC",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "VELO",
-     "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 497 completed bars (tensor-exact)"
+     "decision": "TRADE",
+     "reason": "confidence 8 >= 8 (TRANSITION yellow-regime+1) [1D=-- 1W=--]: risking $992.21 (1% of $99220.52 equity), per-share risk $0.1500 -> qty 6614 @ $11.34 (TP $11.82 / SL $11.19)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "ANF",
      "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "SATL",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "ASPI",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "IREN",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "AG",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "AXTI",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "symbol": "LASR",
      "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-09-30T14:08:50Z",
+     "ts": "2026-09-30T15:08:51Z",
      "event": "scan_end"
-    },
-    {
-     "ts": "2026-09-30T14:38:52Z",
-     "event": "scan_start"
     }
    ]
   },
@@ -378,8 +399,8 @@
     "qty": 4,
     "entry_px": 1199.49,
     "entry_date": "2026-09-30",
-    "current": 1181.44,
-    "unrealized_pl": -72.21,
+    "current": 1179.0,
+    "unrealized_pl": -81.97,
     "stop": 1145.99,
     "stop_pending": false,
     "trail_applied": null
@@ -492,17 +513,13 @@
    "strategy": "Morning dip limit on QQQ",
    "automation": "every 3 min, 09:30-10:30 ET",
    "state_known": true,
-   "armed": true,
+   "armed": false,
    "position_qty": null,
    "protection": {
     "orders_live": false,
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-09-29T20:00:45.108811+00:00",
-     "event": "attribution_ambiguous"
-    },
     {
      "ts": "2026-09-29T20:03:37.435149+00:00",
      "event": "entry_recovered",
@@ -552,6 +569,10 @@
      "ts": "2026-09-30T14:36:40.481917+00:00",
      "event": "filled",
      "qty": 196
+    },
+    {
+     "ts": "2026-09-30T14:54:39.436453+00:00",
+     "event": "attribution_ambiguous"
     }
    ]
   },
@@ -574,62 +595,54 @@
     }
    ],
    "last_entry_scan": "2026-09-30T14:23:04.674473+00:00",
-   "last_exit_scan": "2026-09-30T14:35:06.861108+00:00",
+   "last_exit_scan": "2026-09-30T15:05:07.261630+00:00",
    "recent": [
     {
-     "ts": "2026-09-30T14:22:13.305976+00:00",
+     "ts": "2026-09-30T14:40:14.464113+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-09-30T14:22:23.525711+00:00",
-     "event": "entry_skipped",
-     "symbol": "GOOGL",
-     "reason": "time_gate"
-    },
-    {
-     "ts": "2026-09-30T14:22:51.564541+00:00",
-     "event": "entry_skipped",
-     "symbol": "BAC",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-09-30T14:22:53.205341+00:00",
-     "event": "entry_skipped",
-     "symbol": "DIS",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-09-30T14:22:56.233902+00:00",
-     "event": "entry_skipped",
-     "symbol": "META",
-     "reason": "time_gate"
-    },
-    {
-     "ts": "2026-09-30T14:23:04.695995+00:00",
+     "ts": "2026-09-30T14:40:15.194384+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-09-30T14:25:03.498285+00:00",
+     "ts": "2026-09-30T14:45:07.733037+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-09-30T14:25:04.159071+00:00",
+     "ts": "2026-09-30T14:45:08.397901+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-09-30T14:30:08.873477+00:00",
+     "ts": "2026-09-30T14:50:04.136093+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-09-30T14:30:09.783316+00:00",
+     "ts": "2026-09-30T14:50:04.818804+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-09-30T14:35:06.166031+00:00",
+     "ts": "2026-09-30T14:55:05.390997+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-09-30T14:35:06.946346+00:00",
+     "ts": "2026-09-30T14:55:06.114843+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-09-30T15:00:07.675483+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-09-30T15:00:08.452132+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-09-30T15:05:06.259228+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-09-30T15:05:07.284078+00:00",
      "event": "scan_done"
     }
    ]
@@ -819,7 +832,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-09-30T10:39:18.298424-04:00",
+  "updated_et": "2026-09-30T11:09:17.268956-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -979,6 +992,12 @@
    "equity": "99152.39",
    "day_pl": -167.33000000000175,
    "day_pl_pct": -0.16847610927618578
+  },
+  {
+   "ts_utc": "2026-09-30T15:09:17.268956+00:00",
+   "equity": "99139.84",
+   "day_pl": -179.88000000000466,
+   "day_pl_pct": -0.18111206918425127
   }
  ]
 }
