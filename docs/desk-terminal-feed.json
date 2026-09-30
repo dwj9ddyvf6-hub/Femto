@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-09-30T14:09:17.955005+00:00",
- "generated_at_et": "2026-09-30T10:09:17.955005-04:00",
+ "generated_at_utc": "2026-09-30T14:39:18.298424+00:00",
+ "generated_at_et": "2026-09-30T10:39:18.298424-04:00",
  "account": {
-  "equity": "99146.27",
-  "cash": "89682.18",
-  "buying_power": "366476.06",
+  "equity": "99152.39",
+  "cash": "-60620.31",
+  "buying_power": "191047.18",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -28,10 +28,10 @@
    "symbol": "AVGO261023C00365000",
    "qty": 3.0,
    "avg_entry": 10.85,
-   "current": 8.5,
-   "unrealized_pl": -705.0,
-   "unrealized_pl_pct": -2165.898617511521,
-   "market_value": "2550",
+   "current": 8.35,
+   "unrealized_pl": -750.0,
+   "unrealized_pl_pct": -2304.1474654377885,
+   "market_value": "2505",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -42,30 +42,64 @@
    "entered_ts_utc": null
   },
   {
-   "symbol": "NVDA",
-   "qty": 30.0,
-   "avg_entry": 231.27,
-   "current": 230.45,
-   "unrealized_pl": -24.6,
-   "unrealized_pl_pct": -0.3545639296060881,
-   "market_value": "6913.5",
+   "symbol": "LLY",
+   "qty": 4.0,
+   "avg_entry": 1199.4925,
+   "current": 1181.44,
+   "unrealized_pl": -72.21,
+   "unrealized_pl_pct": -1.5050114944445252,
+   "market_value": "4725.76",
    "side": "long",
    "sector": null,
    "phenotype": null,
    "confidence": null,
-   "desk_stop": 223.15,
+   "desk_stop": 1145.99,
+   "desk_target": null,
+   "entry_bar_t": null,
+   "entered_ts_utc": null
+  },
+  {
+   "symbol": "NVDA",
+   "qty": 30.0,
+   "avg_entry": 231.27,
+   "current": 230.65,
+   "unrealized_pl": -18.6,
+   "unrealized_pl_pct": -0.268084922385091,
+   "market_value": "6919.5",
+   "side": "long",
+   "sector": null,
+   "phenotype": null,
+   "confidence": null,
+   "desk_stop": null,
+   "desk_target": null,
+   "entry_bar_t": null,
+   "entered_ts_utc": null
+  },
+  {
+   "symbol": "QQQ",
+   "qty": 196.0,
+   "avg_entry": 742.37,
+   "current": 742.96,
+   "unrealized_pl": 115.64,
+   "unrealized_pl_pct": 0.0794751943101149,
+   "market_value": "145620.16",
+   "side": "long",
+   "sector": null,
+   "phenotype": null,
+   "confidence": null,
+   "desk_stop": null,
    "desk_target": null,
    "entry_bar_t": null,
    "entered_ts_utc": null
   }
  ],
- "position_count": 2,
+ "position_count": 4,
  "max_positions": 10,
  "sector_counts": {
-  "unknown": 2
+  "unknown": 4
  },
- "day_pl": -173.4499999999971,
- "day_pl_pct": -0.17463802757397734,
+ "day_pl": -167.33000000000175,
+ "day_pl_pct": -0.16847610927618578,
  "journal_today": {
   "scans": 2,
   "trades": 0
@@ -74,12 +108,6 @@
   "AAOI WATCH conf=7 RECLAIM"
  ],
  "ledger_tail": [
-  {
-   "ts": "2026-09-30T13:38:51Z",
-   "symbol": "IREN",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
   {
    "ts": "2026-09-30T13:38:51Z",
    "symbol": "AG",
@@ -217,6 +245,10 @@
   {
    "ts": "2026-09-30T14:08:50Z",
    "event": "scan_end"
+  },
+  {
+   "ts": "2026-09-30T14:38:52Z",
+   "event": "scan_start"
   }
  ],
  "outcome_stats": {
@@ -267,12 +299,6 @@
     "dry_run": false
    },
    "recent": [
-    {
-     "ts": "2026-09-30T14:08:50Z",
-     "symbol": "CRML",
-     "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-    },
     {
      "ts": "2026-09-30T14:08:50Z",
      "symbol": "AAOI",
@@ -336,6 +362,10 @@
     {
      "ts": "2026-09-30T14:08:50Z",
      "event": "scan_end"
+    },
+    {
+     "ts": "2026-09-30T14:38:52Z",
+     "event": "scan_start"
     }
    ]
   },
@@ -344,28 +374,23 @@
    "strategy": "Daily boxes, resting K5 buy-stop; EMA50 trail",
    "automation": "premarket 08:46 ET daily; nowcast 5m; reconcile 2m",
    "position": {
-    "symbol": "NVDA",
-    "qty": 30,
-    "entry_px": 231.27,
-    "entry_date": "2026-09-28",
-    "current": 230.45,
-    "unrealized_pl": -24.6,
-    "stop": 223.15,
+    "symbol": "LLY",
+    "qty": 4,
+    "entry_px": 1199.49,
+    "entry_date": "2026-09-30",
+    "current": 1181.44,
+    "unrealized_pl": -72.21,
+    "stop": 1145.99,
     "stop_pending": false,
     "trail_applied": null
    },
    "protection": {
-    "stop_px": 223.15,
-    "stop_live": true,
+    "stop_px": 1145.99,
+    "stop_live": false,
     "trail_applied": null,
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-09-30T12:46:33.459683+00:00",
-     "event": "k5_box",
-     "symbol": "TE"
-    },
     {
      "ts": "2026-09-30T12:46:34.027657+00:00",
      "event": "k5_dead",
@@ -422,6 +447,12 @@
      "ts": "2026-09-30T12:46:38.048958+00:00",
      "event": "k5_skip_earnings_unknown",
      "symbol": "CLS"
+    },
+    {
+     "ts": "2026-09-30T14:17:43.379034+00:00",
+     "event": "entered",
+     "symbol": "LLY",
+     "qty": 4
     }
    ]
   },
@@ -460,37 +491,14 @@
    "name": "Morning Dip",
    "strategy": "Morning dip limit on QQQ",
    "automation": "every 3 min, 09:30-10:30 ET",
-   "state_known": false,
-   "armed": false,
+   "state_known": true,
+   "armed": true,
    "position_qty": null,
    "protection": {
     "orders_live": false,
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-09-29T19:54:42.031220+00:00",
-     "event": "entry_recovered",
-     "qty": 206
-    },
-    {
-     "ts": "2026-09-29T19:54:47.058520+00:00",
-     "event": "attribution_ambiguous"
-    },
-    {
-     "ts": "2026-09-29T19:57:36.174916+00:00",
-     "event": "entry_recovered",
-     "qty": 206
-    },
-    {
-     "ts": "2026-09-29T19:57:41.726890+00:00",
-     "event": "attribution_ambiguous"
-    },
-    {
-     "ts": "2026-09-29T20:00:40.080751+00:00",
-     "event": "entry_recovered",
-     "qty": 206
-    },
     {
      "ts": "2026-09-29T20:00:45.108811+00:00",
      "event": "attribution_ambiguous"
@@ -521,6 +529,29 @@
     {
      "ts": "2026-09-29T20:09:41.517619+00:00",
      "event": "attribution_ambiguous"
+    },
+    {
+     "ts": "2026-09-30T14:18:39.431165+00:00",
+     "event": "armed",
+     "qty": 186
+    },
+    {
+     "ts": "2026-09-30T14:27:39.759766+00:00",
+     "event": "cancel"
+    },
+    {
+     "ts": "2026-09-30T14:27:39.778842+00:00",
+     "event": "arm_cancelled_9min"
+    },
+    {
+     "ts": "2026-09-30T14:27:42.074427+00:00",
+     "event": "armed",
+     "qty": 196
+    },
+    {
+     "ts": "2026-09-30T14:36:40.481917+00:00",
+     "event": "filled",
+     "qty": 196
     }
    ]
   },
@@ -542,55 +573,63 @@
      "status": "open"
     }
    ],
-   "last_entry_scan": "2026-09-29T19:23:05.716574+00:00",
-   "last_exit_scan": "2026-09-30T14:05:05.149315+00:00",
+   "last_entry_scan": "2026-09-30T14:23:04.674473+00:00",
+   "last_exit_scan": "2026-09-30T14:35:06.861108+00:00",
    "recent": [
     {
-     "ts": "2026-09-30T13:40:04.304749+00:00",
+     "ts": "2026-09-30T14:22:13.305976+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-09-30T13:40:05.187788+00:00",
+     "ts": "2026-09-30T14:22:23.525711+00:00",
+     "event": "entry_skipped",
+     "symbol": "GOOGL",
+     "reason": "time_gate"
+    },
+    {
+     "ts": "2026-09-30T14:22:51.564541+00:00",
+     "event": "entry_skipped",
+     "symbol": "BAC",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-09-30T14:22:53.205341+00:00",
+     "event": "entry_skipped",
+     "symbol": "DIS",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-09-30T14:22:56.233902+00:00",
+     "event": "entry_skipped",
+     "symbol": "META",
+     "reason": "time_gate"
+    },
+    {
+     "ts": "2026-09-30T14:23:04.695995+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-09-30T13:45:05.250378+00:00",
+     "ts": "2026-09-30T14:25:03.498285+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-09-30T13:45:05.929178+00:00",
+     "ts": "2026-09-30T14:25:04.159071+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-09-30T13:50:03.430964+00:00",
+     "ts": "2026-09-30T14:30:08.873477+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-09-30T13:50:04.196590+00:00",
+     "ts": "2026-09-30T14:30:09.783316+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-09-30T13:55:05.048993+00:00",
+     "ts": "2026-09-30T14:35:06.166031+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-09-30T13:55:05.876852+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-09-30T14:00:04.029282+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-09-30T14:00:05.055307+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-09-30T14:05:04.303545+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-09-30T14:05:05.172729+00:00",
+     "ts": "2026-09-30T14:35:06.946346+00:00",
      "event": "scan_done"
     }
    ]
@@ -780,7 +819,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-09-30T10:09:17.955005-04:00",
+  "updated_et": "2026-09-30T10:39:18.298424-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -934,6 +973,12 @@
    "equity": "99146.27",
    "day_pl": -173.4499999999971,
    "day_pl_pct": -0.17463802757397734
+  },
+  {
+   "ts_utc": "2026-09-30T14:39:18.298424+00:00",
+   "equity": "99152.39",
+   "day_pl": -167.33000000000175,
+   "day_pl_pct": -0.16847610927618578
   }
  ]
 }
