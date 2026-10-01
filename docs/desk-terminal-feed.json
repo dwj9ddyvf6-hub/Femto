@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-01T14:09:17.440565+00:00",
- "generated_at_et": "2026-10-01T10:09:17.440565-04:00",
+ "generated_at_utc": "2026-10-01T14:39:15.914101+00:00",
+ "generated_at_et": "2026-10-01T10:39:15.914101-04:00",
  "account": {
-  "equity": "97413.02",
-  "cash": "81850.42",
-  "buying_power": "346756.96",
+  "equity": "97087.75",
+  "cash": "83752.25",
+  "buying_power": "354358.4",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -25,30 +25,13 @@
  },
  "positions": [
   {
-   "symbol": "AVGO261023C00365000",
-   "qty": 3.0,
-   "avg_entry": 10.85,
-   "current": 6.25,
-   "unrealized_pl": -1380.0,
-   "unrealized_pl_pct": -4239.63133640553,
-   "market_value": "1875",
-   "side": "long",
-   "sector": null,
-   "phenotype": null,
-   "confidence": null,
-   "desk_stop": null,
-   "desk_target": null,
-   "entry_bar_t": null,
-   "entered_ts_utc": null
-  },
-  {
    "symbol": "INTC261023C00124000",
    "qty": 5.0,
    "avg_entry": 7.15,
-   "current": 6.4,
-   "unrealized_pl": -375.0,
-   "unrealized_pl_pct": -1048.951048951049,
-   "market_value": "3200",
+   "current": 6.85,
+   "unrealized_pl": -150.0,
+   "unrealized_pl_pct": -419.5804195804196,
+   "market_value": "3425",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -62,10 +45,10 @@
    "symbol": "NVDA",
    "qty": 30.0,
    "avg_entry": 231.27,
-   "current": 230.42,
-   "unrealized_pl": -25.5,
-   "unrealized_pl_pct": -0.3675357806892377,
-   "market_value": "6912.6",
+   "current": 230.35,
+   "unrealized_pl": -27.6,
+   "unrealized_pl_pct": -0.3978034332165867,
+   "market_value": "6910.5",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -79,10 +62,10 @@
    "symbol": "PLTR261023C00195000",
    "qty": 5.0,
    "avg_entry": 6.8,
-   "current": 7.15,
-   "unrealized_pl": 175.0,
-   "unrealized_pl_pct": 514.7058823529412,
-   "market_value": "3575",
+   "current": 6.0,
+   "unrealized_pl": -400.0,
+   "unrealized_pl_pct": -1176.4705882352941,
+   "market_value": "3000",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -93,15 +76,15 @@
    "entered_ts_utc": null
   }
  ],
- "position_count": 4,
+ "position_count": 3,
  "max_positions": 10,
  "sector_counts": {
-  "unknown": 4
+  "unknown": 3
  },
- "day_pl": 1.2400000000052387,
- "day_pl_pct": 0.0012729466600499843,
+ "day_pl": -324.02999999999884,
+ "day_pl_pct": -0.33263944052762284,
  "journal_today": {
-  "scans": 1,
+  "scans": 2,
   "trades": 0
  },
  "fresh_signals": [
@@ -109,149 +92,149 @@
  ],
  "ledger_tail": [
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "OUST",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "ALAB",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "CRDO",
+   "decision": "SKIP_EARNINGS_UNKNOWN",
+   "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
+  },
+  {
+   "ts": "2026-10-01T14:08:53Z",
+   "symbol": "FCEL",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
-   "symbol": "FCEL",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "HIVE",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "POET",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "SNDK",
    "decision": "SKIP_EARNINGS_UNKNOWN",
    "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "TEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "CORZ",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "HUT",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "TSEM",
    "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "ARM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "KEEL",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "FFIV",
    "decision": "SKIP_EARNINGS_UNKNOWN",
    "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "MU",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "CLS",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "TE",
    "decision": "SKIP_EARNINGS_UNKNOWN",
    "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "SIVEF",
    "decision": "SKIP_DATA_ERROR",
    "reason": "bar fetch failed: no bars returned for SIVEF"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "TTMI",
    "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "CVNA",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "VRT",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "OKLO",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "symbol": "USAR",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T13:38:51Z",
+   "ts": "2026-10-01T14:08:53Z",
    "event": "scan_end"
   },
   {
-   "ts": "2026-10-01T14:08:53Z",
+   "ts": "2026-10-01T14:38:52Z",
    "event": "scan_start"
   }
  ],
@@ -304,71 +287,71 @@
    },
    "recent": [
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "FFIV",
      "decision": "SKIP_EARNINGS_UNKNOWN",
      "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "MU",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "CLS",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "TE",
      "decision": "SKIP_EARNINGS_UNKNOWN",
      "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "SIVEF",
      "decision": "SKIP_DATA_ERROR",
      "reason": "bar fetch failed: no bars returned for SIVEF"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "TTMI",
      "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 498 completed bars (tensor-exact)"
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "CVNA",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "VRT",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "OKLO",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "symbol": "USAR",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T13:38:51Z",
+     "ts": "2026-10-01T14:08:53Z",
      "event": "scan_end"
     },
     {
-     "ts": "2026-10-01T14:08:53Z",
+     "ts": "2026-10-01T14:38:52Z",
      "event": "scan_start"
     }
    ]
@@ -382,8 +365,8 @@
     "qty": 30,
     "entry_px": 231.27,
     "entry_date": "2026-09-28",
-    "current": 230.42,
-    "unrealized_pl": -25.5,
+    "current": 230.35,
+    "unrealized_pl": -27.6,
     "stop": 223.15,
     "stop_pending": false,
     "trail_applied": null
@@ -500,22 +483,13 @@
    "strategy": "Morning dip limit on QQQ",
    "automation": "every 3 min, 09:30-10:30 ET",
    "state_known": true,
-   "armed": false,
+   "armed": true,
    "position_qty": null,
    "protection": {
     "orders_live": false,
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-09-30T14:18:39.431165+00:00",
-     "event": "armed",
-     "qty": 186
-    },
-    {
-     "ts": "2026-09-30T14:27:39.759766+00:00",
-     "event": "cancel"
-    },
     {
      "ts": "2026-09-30T14:27:39.778842+00:00",
      "event": "arm_cancelled_9min"
@@ -560,6 +534,16 @@
     {
      "ts": "2026-09-30T16:00:38.924282+00:00",
      "event": "attribution_ambiguous"
+    },
+    {
+     "ts": "2026-10-01T14:18:40.786205+00:00",
+     "event": "armed",
+     "qty": 116
+    },
+    {
+     "ts": "2026-10-01T14:24:37.156892+00:00",
+     "event": "filled",
+     "qty": 116
     }
    ]
   },
@@ -569,17 +553,8 @@
    "credit": "Milkman",
    "automation": "entry hourly 10:22-15:22 ET weekdays; exits every 5 min RTH",
    "state_known": true,
-   "open_positions": 3,
+   "open_positions": 2,
    "positions": [
-    {
-     "occ": "AVGO261023C00365000",
-     "underlying": "AVGO",
-     "qty": 3,
-     "entry_spot": 359.6318,
-     "box_lo": 347.58,
-     "entry_ts": "2026-09-29T10:00:00-04:00",
-     "status": "open"
-    },
     {
      "occ": "PLTR261023C00195000",
      "underlying": "PLTR",
@@ -599,55 +574,68 @@
      "status": "open"
     }
    ],
-   "last_entry_scan": "2026-09-30T19:23:10.244507+00:00",
-   "last_exit_scan": "2026-10-01T14:05:06.731409+00:00",
+   "last_entry_scan": "2026-10-01T14:23:05.071120+00:00",
+   "last_exit_scan": "2026-10-01T14:35:12.144167+00:00",
    "recent": [
     {
-     "ts": "2026-10-01T13:40:03.084617+00:00",
+     "ts": "2026-10-01T14:22:03.703175+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T13:40:06.282086+00:00",
+     "ts": "2026-10-01T14:22:14.304157+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMD",
+     "reason": "time_gate"
+    },
+    {
+     "ts": "2026-10-01T14:23:05.093899+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-01T13:45:09.620208+00:00",
+     "ts": "2026-10-01T14:25:06.357727+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T13:45:12.268397+00:00",
+     "ts": "2026-10-01T14:25:09.048750+00:00",
+     "event": "exit_order_submitted",
+     "symbol": "AVGO",
+     "occ": "AVGO261023C00365000",
+     "qty": 3,
+     "reason": "box_low"
+    },
+    {
+     "ts": "2026-10-01T14:25:10.729323+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-01T13:50:12.167100+00:00",
+     "ts": "2026-10-01T14:30:05.581686+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T13:50:14.694343+00:00",
+     "ts": "2026-10-01T14:30:08.449361+00:00",
+     "event": "exit_order_replaced",
+     "symbol": "AVGO",
+     "occ": "AVGO261023C00365000",
+     "qty": 3
+    },
+    {
+     "ts": "2026-10-01T14:30:10.000969+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-01T13:55:11.387178+00:00",
+     "ts": "2026-10-01T14:35:09.725151+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T13:55:13.780101+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-01T14:35:10.381699+00:00",
+     "event": "exit_fill_confirmed",
+     "symbol": "AVGO",
+     "occ": "AVGO261023C00365000",
+     "qty": 3,
+     "reason": "box_low"
     },
     {
-     "ts": "2026-10-01T14:00:06.912161+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-01T14:00:09.350458+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-01T14:05:04.358360+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-01T14:05:06.757916+00:00",
+     "ts": "2026-10-01T14:35:12.182719+00:00",
      "event": "scan_done"
     }
    ]
@@ -1044,7 +1032,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-01T10:09:17.440565-04:00",
+  "updated_et": "2026-10-01T10:39:15.914101-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -1276,6 +1264,12 @@
    "equity": "97413.02",
    "day_pl": 1.2400000000052387,
    "day_pl_pct": 0.0012729466600499843
+  },
+  {
+   "ts_utc": "2026-10-01T14:39:15.914101+00:00",
+   "equity": "97087.75",
+   "day_pl": -324.02999999999884,
+   "day_pl_pct": -0.33263944052762284
   }
  ]
 }
