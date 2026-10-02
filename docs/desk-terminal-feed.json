@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-01T19:39:17.923612+00:00",
- "generated_at_et": "2026-10-01T15:39:17.923612-04:00",
+ "generated_at_utc": "2026-10-02T13:39:27.909959+00:00",
+ "generated_at_et": "2026-10-02T09:39:27.909959-04:00",
  "account": {
-  "equity": "97835.5",
-  "cash": "84169.25",
-  "buying_power": "356112.5",
+  "equity": "98749.54",
+  "cash": "84162.49",
+  "buying_power": "356493.7",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -12,8 +12,8 @@
  "positions_known": true,
  "last_scan": {
   "ts": null,
-  "market_open": true,
-  "dry_run": false
+  "market_open": false,
+  "dry_run": true
  },
  "state_meta": {
   "day_start_equity": 97411.78,
@@ -28,10 +28,10 @@
    "symbol": "INTC261023C00124000",
    "qty": 5.0,
    "avg_entry": 7.15,
-   "current": 7.0,
-   "unrealized_pl": -75.0,
-   "unrealized_pl_pct": -209.7902097902098,
-   "market_value": "3500",
+   "current": 8.35,
+   "unrealized_pl": 600.0,
+   "unrealized_pl_pct": 1678.3216783216783,
+   "market_value": "4175",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -45,10 +45,10 @@
    "symbol": "NVDA",
    "qty": 30.0,
    "avg_entry": 231.27,
-   "current": 231.375,
-   "unrealized_pl": 3.15,
-   "unrealized_pl_pct": 0.04540147879102348,
-   "market_value": "6941.25",
+   "current": 236.24,
+   "unrealized_pl": 149.1,
+   "unrealized_pl_pct": 2.149003329441778,
+   "market_value": "7087.2",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -62,10 +62,10 @@
    "symbol": "PLTR261023C00195000",
    "qty": 5.0,
    "avg_entry": 6.8,
-   "current": 6.45,
-   "unrealized_pl": -175.0,
-   "unrealized_pl_pct": -514.7058823529412,
-   "market_value": "3225",
+   "current": 6.65,
+   "unrealized_pl": -75.0,
+   "unrealized_pl_pct": -220.58823529411765,
+   "market_value": "3325",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -81,160 +81,150 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": 423.72000000000116,
- "day_pl_pct": 0.4349781925758888,
+ "day_pl": 1337.7599999999948,
+ "day_pl_pct": 1.3733041322106985,
  "journal_today": {
-  "scans": 14,
+  "scans": 0,
   "trades": 0
  },
- "fresh_signals": [
-  "ANF WATCH conf=6 RECLAIM"
- ],
+ "fresh_signals": [],
  "ledger_tail": [
   {
-   "ts": "2026-10-01T19:08:51Z",
-   "symbol": "OUST",
-   "decision": "SKIP_EARNINGS_UNKNOWN",
-   "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
-  },
-  {
-   "ts": "2026-10-01T19:08:51Z",
-   "symbol": "ALAB",
-   "decision": "SKIP_EARNINGS_UNKNOWN",
-   "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
-  },
-  {
-   "ts": "2026-10-01T19:08:51Z",
-   "symbol": "CRDO",
-   "decision": "SKIP_EARNINGS_UNKNOWN",
-   "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
-  },
-  {
-   "ts": "2026-10-01T19:08:51Z",
-   "symbol": "FCEL",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-10-01T19:08:51Z",
-   "symbol": "HIVE",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
-  {
-   "ts": "2026-10-01T19:08:51Z",
-   "symbol": "POET",
-   "decision": "SKIP_EARNINGS_UNKNOWN",
-   "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
-  },
-  {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "SNDK",
    "decision": "SKIP_EARNINGS_UNKNOWN",
    "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "TEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "CORZ",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "HUT",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "TSEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "ARM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "KEEL",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "FFIV",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "MU",
    "decision": "SKIP_EARNINGS_UNKNOWN",
    "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "CLS",
    "decision": "SKIP_EARNINGS_UNKNOWN",
    "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "TE",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "SIVEF",
    "decision": "SKIP_DATA_ERROR",
    "reason": "bar fetch failed: no bars returned for SIVEF"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "TTMI",
    "decision": "SKIP_EARNINGS_UNKNOWN",
    "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "CVNA",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "VRT",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "OKLO",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "symbol": "USAR",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-01T19:08:51Z",
+   "ts": "2026-10-01T19:38:50Z",
    "event": "scan_end"
   },
   {
-   "ts": "2026-10-01T19:38:50Z",
+   "ts": "2026-10-01T22:31:52Z",
+   "event": "scan_start"
+  },
+  {
+   "ts": "2026-10-01T22:31:52Z",
+   "symbol": "CRDO",
+   "decision": "SKIP_OUT_OF_HOURS",
+   "reason": "outside market hours (18:31 ET); no data fetch, no orders"
+  },
+  {
+   "ts": "2026-10-01T22:31:52Z",
+   "symbol": "AEHR",
+   "decision": "SKIP_OUT_OF_HOURS",
+   "reason": "outside market hours (18:31 ET); no data fetch, no orders"
+  },
+  {
+   "ts": "2026-10-01T22:31:52Z",
+   "event": "scan_end"
+  },
+  {
+   "ts": "2026-10-02T04:01:38Z",
+   "event": "state_corrupt"
+  },
+  {
+   "ts": "2026-10-02T05:51:38Z",
+   "event": "state_corrupt"
+  },
+  {
+   "ts": "2026-10-02T13:38:49Z",
    "event": "scan_start"
   }
  ],
@@ -246,8 +236,8 @@
   "by_symbol": {}
  },
  "latest_review": {
-  "file": "2026-09-30.md",
-  "excerpt": "# Desk review \u2014 2026-09-30\n\nOutcome updater: 4 updated, 0 closed, 0 errors\n\n## Performance (closed signal outcomes)\n\nClosed outcomes: 0 | Open (awaiting forward bars): 4\n\n### By phenotype\n_no closed outcomes yet_\n\n### By confidence\n_no closed outcomes yet_\n\n### By symbol\n_no closed outcomes yet_\n\n## Scorecard (desk-level, risk-adjusted)\n\n- Period return: -2.59% (early data \u2014 n=3 daily points; treat as indicative, not verdict)\n- Sharpe (ann.): -14.44 | Sortino (ann.): -11.81\n- Max drawdown (window): 2.6%\n- SPY buy-and-hold (same window): -0.41% | desk excess: -2.18%\n- Per-sleeve realized P&L: n/a \u2014 ledgers do not yet record per-trade P&L (calibration queue: excursion/P&L fields). Sleeve activity counts are in the section above.\n- Risk-gate BLOCKs today: none\n\n## Notable scans and decisions (last 7 days)\n\nScans: 59 | Tensor trades planned: 1 | Watches: 18\n\n- 2026-09-30 12:08:56 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 12:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:09:01 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:39:15 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:09:03 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:38:49 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 15:08:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 15:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-29 13:08:52 ET AAOI   WATCH              conf=7 phen=RECLAIM \u2014 moderate confidence 7 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-29 13:38:50 ET AAOI   WATCH              conf=7 phen=RECLAIM \u2014 moderate confidence 7 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-29 14:08:50 ET AAOI   WATCH              conf=7 phen=RECLAIM \u2014 moderate confidence 7 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-29 14:38:56 ET AAOI   WATCH              conf=7 phen=RECLAIM \u2014 moderate confidence 7 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-29 15:08:53 ET AAOI   WATCH              conf=7 phen=RECLAIM \u2014 moderate confidence 7 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-29 15:38:52 ET AAOI   WATCH              conf=7 phen=RECLAIM \u2014 moderate confidence 7 (6-7): monitoring, no order [1D=-- 1W=--]"
+  "file": "2026-10-02.md",
+  "excerpt": "# Desk review \u2014 2026-10-02\n\nOutcome updater: 4 updated, 0 closed, 0 errors\n\n## Market context\n\n- Index trend: UPTREND -- QQQ $742.02 vs 50-day avg $715.65, 20-day slope +4.61% (SPY disagrees).\n- Sector rotation: leaders SOXX (+14.9% 20D), XLK (+7.8% 20D) (tailwind); laggards XLB (-8.3% 20D), XLF (-7.2% 20D) (headwind).\n- Event risk: none today (next: CPI release 2026-10-14 in 12 days).\n- News flow: quiet across the basket (72h heuristic scan).\n\n## Performance (closed signal outcomes)\n\nClosed outcomes: 0 | Open (awaiting forward bars): 4\n\n### By phenotype\n_no closed outcomes yet_\n\n### By confidence\n_no closed outcomes yet_\n\n### By symbol\n_no closed outcomes yet_\n\n## Scorecard (desk-level, risk-adjusted)\n\n- Period return: -2.54% (early data \u2014 n=5 daily points; treat as indicative, not verdict)\n- Sharpe (ann.): -9.18 | Sortino (ann.): -7.88\n- Max drawdown (window): 2.6%\n- SPY buy-and-hold (same window): -0.18% | desk excess: -2.36%\n- Per-sleeve realized P&L: n/a \u2014 ledgers do not yet record per-trade P&L (calibration queue: excursion/P&L fields). Sleeve activity counts are in the section above.\n- Risk-gate BLOCKs today: none\n\n## Notable scans and decisions (last 7 days)\n\nScans: 76 | Tensor trades planned: 1 | Watches: 21\n\n- 2026-09-30 12:08:56 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 12:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:09:01 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:39:15 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:09:03 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:38:49 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 15:08:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]"
  },
  "engine": {
   "version": "v625",
@@ -259,11 +249,11 @@
   {
    "symbol": "AEHR",
    "date": "2026-10-05",
-   "in_days": 4,
-   "blackout": false
+   "in_days": 3,
+   "blackout": true
   }
  ],
- "earnings_updated_ts": "2026-09-27T23:49:06Z",
+ "earnings_updated_ts": "2026-10-02T07:59:44Z",
  "sleeves": {
   "tensor": {
    "name": "Tensor",
@@ -282,76 +272,68 @@
    },
    "last_scan": {
     "ts": null,
-    "market_open": true,
-    "dry_run": false
+    "market_open": false,
+    "dry_run": true
    },
    "recent": [
     {
-     "ts": "2026-10-01T19:08:51Z",
-     "symbol": "FFIV",
-     "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-    },
-    {
-     "ts": "2026-10-01T19:08:51Z",
-     "symbol": "MU",
-     "decision": "SKIP_EARNINGS_UNKNOWN",
-     "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
-    },
-    {
-     "ts": "2026-10-01T19:08:51Z",
-     "symbol": "CLS",
-     "decision": "SKIP_EARNINGS_UNKNOWN",
-     "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
-    },
-    {
-     "ts": "2026-10-01T19:08:51Z",
-     "symbol": "TE",
-     "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-    },
-    {
-     "ts": "2026-10-01T19:08:51Z",
-     "symbol": "SIVEF",
-     "decision": "SKIP_DATA_ERROR",
-     "reason": "bar fetch failed: no bars returned for SIVEF"
-    },
-    {
-     "ts": "2026-10-01T19:08:51Z",
-     "symbol": "TTMI",
-     "decision": "SKIP_EARNINGS_UNKNOWN",
-     "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
-    },
-    {
-     "ts": "2026-10-01T19:08:51Z",
+     "ts": "2026-10-01T19:38:50Z",
      "symbol": "CVNA",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T19:08:51Z",
+     "ts": "2026-10-01T19:38:50Z",
      "symbol": "VRT",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T19:08:51Z",
+     "ts": "2026-10-01T19:38:50Z",
      "symbol": "OKLO",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T19:08:51Z",
+     "ts": "2026-10-01T19:38:50Z",
      "symbol": "USAR",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-01T19:08:51Z",
+     "ts": "2026-10-01T19:38:50Z",
      "event": "scan_end"
     },
     {
-     "ts": "2026-10-01T19:38:50Z",
+     "ts": "2026-10-01T22:31:52Z",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-01T22:31:52Z",
+     "symbol": "CRDO",
+     "decision": "SKIP_OUT_OF_HOURS",
+     "reason": "outside market hours (18:31 ET); no data fetch, no orders"
+    },
+    {
+     "ts": "2026-10-01T22:31:52Z",
+     "symbol": "AEHR",
+     "decision": "SKIP_OUT_OF_HOURS",
+     "reason": "outside market hours (18:31 ET); no data fetch, no orders"
+    },
+    {
+     "ts": "2026-10-01T22:31:52Z",
+     "event": "scan_end"
+    },
+    {
+     "ts": "2026-10-02T04:01:38Z",
+     "event": "state_corrupt"
+    },
+    {
+     "ts": "2026-10-02T05:51:38Z",
+     "event": "state_corrupt"
+    },
+    {
+     "ts": "2026-10-02T13:38:49Z",
      "event": "scan_start"
     }
    ]
@@ -365,8 +347,8 @@
     "qty": 30,
     "entry_px": 231.27,
     "entry_date": "2026-09-28",
-    "current": 231.375,
-    "unrealized_pl": 3.15,
+    "current": 236.24,
+    "unrealized_pl": 149.1,
     "stop": 223.15,
     "stop_pending": false,
     "trail_applied": null
@@ -379,67 +361,76 @@
    },
    "recent": [
     {
-     "ts": "2026-10-01T12:47:12.538742+00:00",
-     "event": "k5_box",
-     "symbol": "WMT"
-    },
-    {
-     "ts": "2026-10-01T12:47:15.052021+00:00",
-     "event": "k5_rest_failed",
-     "symbol": "AMD"
-    },
-    {
-     "ts": "2026-10-01T12:47:18.562820+00:00",
-     "event": "k5_skip_earnings_unknown",
-     "symbol": "MRVL"
-    },
-    {
-     "ts": "2026-10-01T12:47:19.533506+00:00",
-     "event": "k5_skip_earnings_unknown",
-     "symbol": "STX"
-    },
-    {
-     "ts": "2026-10-01T12:47:20.406578+00:00",
-     "event": "k5_skip_earnings_unknown",
-     "symbol": "SNDK"
-    },
-    {
-     "ts": "2026-10-01T12:47:21.223944+00:00",
-     "event": "k5_skip_earnings_unknown",
-     "symbol": "OUST"
-    },
-    {
-     "ts": "2026-10-01T12:47:21.234424+00:00",
-     "event": "k5_box",
-     "symbol": "FCEL"
-    },
-    {
-     "ts": "2026-10-01T12:47:23.864198+00:00",
-     "event": "k5_skip_earnings_unknown",
-     "symbol": "FFIV"
-    },
-    {
-     "ts": "2026-10-01T12:47:24.589972+00:00",
+     "ts": "2026-10-02T12:46:22.929024+00:00",
      "event": "k5_dead",
-     "symbol": "CORZ",
+     "symbol": "V",
      "reason": "boxlow_touch"
     },
     {
-     "ts": "2026-10-01T12:47:26.067095+00:00",
-     "event": "k5_skip_earnings_unknown",
-     "symbol": "TSEM"
+     "ts": "2026-10-02T12:46:24.456058+00:00",
+     "event": "k5_dead",
+     "symbol": "WMT",
+     "reason": "boxlow_touch"
     },
     {
-     "ts": "2026-10-01T12:47:26.924244+00:00",
-     "event": "k5_skip_earnings_unknown",
-     "symbol": "CLS"
+     "ts": "2026-10-02T12:46:25.121092+00:00",
+     "event": "k5_dead",
+     "symbol": "AMD",
+     "reason": "boxhi_breach"
     },
     {
-     "ts": "2026-10-01T13:33:55.891521+00:00",
-     "event": "position_closed",
-     "symbol": "LLY",
-     "qty": 4,
-     "reason": "stop"
+     "ts": "2026-10-02T12:46:25.919443+00:00",
+     "event": "k5_dead",
+     "symbol": "CAT",
+     "reason": "boxhi_breach"
+    },
+    {
+     "ts": "2026-10-02T12:46:26.611381+00:00",
+     "event": "k5_dead",
+     "symbol": "DIS",
+     "reason": "boxlow_touch"
+    },
+    {
+     "ts": "2026-10-02T12:46:27.288768+00:00",
+     "event": "k5_dead",
+     "symbol": "MRVL",
+     "reason": "boxhi_breach"
+    },
+    {
+     "ts": "2026-10-02T12:46:28.032307+00:00",
+     "event": "k5_dead",
+     "symbol": "STX",
+     "reason": "boxhi_breach"
+    },
+    {
+     "ts": "2026-10-02T12:46:28.769988+00:00",
+     "event": "k5_dead",
+     "symbol": "SNDK",
+     "reason": "boxhi_breach"
+    },
+    {
+     "ts": "2026-10-02T12:46:29.382673+00:00",
+     "event": "k5_dead",
+     "symbol": "OUST",
+     "reason": "boxhi_breach"
+    },
+    {
+     "ts": "2026-10-02T12:46:31.390351+00:00",
+     "event": "k5_dead",
+     "symbol": "FFIV",
+     "reason": "boxhi_breach"
+    },
+    {
+     "ts": "2026-10-02T12:46:32.102207+00:00",
+     "event": "k5_dead",
+     "symbol": "TSEM",
+     "reason": "boxhi_breach"
+    },
+    {
+     "ts": "2026-10-02T12:46:32.913830+00:00",
+     "event": "k5_dead",
+     "symbol": "CLS",
+     "reason": "boxhi_breach"
     }
    ]
   },
@@ -449,7 +440,7 @@
    "automation": "every 15 min, market hours",
    "enabled": true,
    "setup": {
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "trend_day": false,
     "no_touch": false
    },
@@ -475,6 +466,10 @@
     {
      "ts": "2026-10-01T04:08:20.832605+00:00",
      "event": "setup_eval"
+    },
+    {
+     "ts": "2026-10-02T04:08:22.065322+00:00",
+     "event": "setup_eval"
     }
    ]
   },
@@ -482,7 +477,7 @@
    "name": "Morning Dip",
    "strategy": "Morning dip limit on QQQ",
    "automation": "every 3 min, 09:30-10:30 ET",
-   "state_known": false,
+   "state_known": true,
    "armed": false,
    "position_qty": null,
    "protection": {
@@ -490,10 +485,6 @@
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-10-01T14:51:38.920363+00:00",
-     "event": "arm_cancelled_9min"
-    },
     {
      "ts": "2026-10-01T14:54:40.395202+00:00",
      "event": "armed",
@@ -543,6 +534,11 @@
     {
      "ts": "2026-10-01T16:00:38.879910+00:00",
      "event": "cancel"
+    },
+    {
+     "ts": "2026-10-02T04:00:34.655007+00:00",
+     "event": "trading_paused",
+     "reason": "paused 2026-10-02: author's NQ spec is 'research lead, not armed' (2010-2025 backtest -$48.6K, edge only in 2026 data); NQ not tradable on Alpaca; QQQ proxy has 7 paper trades over 3 days -- no validated configuration for Alpaca paper"
     }
    ]
   },
@@ -574,57 +570,140 @@
     }
    ],
    "last_entry_scan": "2026-10-01T19:23:12.466519+00:00",
-   "last_exit_scan": "2026-10-01T19:35:07.175520+00:00",
+   "last_exit_scan": "2026-10-02T13:35:08.469079+00:00",
    "recent": [
     {
-     "ts": "2026-10-01T19:15:07.275099+00:00",
+     "ts": "2026-10-01T20:00:07.200166+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T19:15:09.066038+00:00",
+     "ts": "2026-10-01T20:00:08.455061+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-01T19:20:06.222953+00:00",
+     "ts": "2026-10-01T20:05:12.801160+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T19:20:07.866784+00:00",
+     "ts": "2026-10-01T20:05:14.122407+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-01T19:22:07.905517+00:00",
+     "ts": "2026-10-02T04:01:14.496285+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T19:23:12.481374+00:00",
+     "ts": "2026-10-02T04:01:16.830490+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-01T19:25:10.318366+00:00",
+     "ts": "2026-10-02T04:01:28.413928+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T19:25:11.941698+00:00",
+     "ts": "2026-10-02T04:01:33.672175+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-01T19:30:03.303930+00:00",
+     "ts": "2026-10-02T13:30:05.556163+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T19:30:04.706337+00:00",
+     "ts": "2026-10-02T13:30:07.507595+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-01T19:35:05.543823+00:00",
+     "ts": "2026-10-02T13:35:06.462088+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-01T19:35:07.208408+00:00",
+     "ts": "2026-10-02T13:35:08.495555+00:00",
      "event": "scan_done"
     }
    ]
+  },
+  "spx_premium": {
+   "name": "SPX Premium",
+   "strategy": "Weekly SPXW -1 ATR put credit spread, 50-wide",
+   "credit": "Milkman",
+   "experimental": true,
+   "paper_only": true,
+   "automation": "entry first trading day >= 10:00 ET; settle at Friday 15:55 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "cooldown_until": null,
+   "last_entry_week": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-02T04:00:19.551263+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-02T04:00:30.337403+00:00",
+     "event": "entry_skipped",
+     "reason": "market_closed"
+    },
+    {
+     "ts": "2026-10-02T04:00:30.339740+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-02T04:00:32.670193+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-02T04:00:32.672766+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-02T04:00:34.167054+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-02T04:00:34.175802+00:00",
+     "event": "settle_scan",
+     "note": "nothing due for settlement"
+    },
+    {
+     "ts": "2026-10-02T04:00:34.187669+00:00",
+     "event": "scan_done"
+    }
+   ]
+  },
+  "phoenix": {
+   "name": "Phoenix Breakout",
+   "strategy": "20-day closing-high breakout in flat/down SPY regime; red-day entry overlay",
+   "credit": "research desk (Phoenix follow-up 2026-10-02)",
+   "paper_only": true,
+   "automation": "weekday EOD scan 16:35 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "universe": [
+    "MU",
+    "WDC",
+    "ANF",
+    "CLS",
+    "FFIV",
+    "AAOI",
+    "AXTI",
+    "SOXL",
+    "AEHR",
+    "FCEL",
+    "TTMI",
+    "SIMO",
+    "VICR",
+    "AG",
+    "SILJ",
+    "SPY",
+    "QQQ",
+    "NVDA",
+    "AAPL"
+   ],
+   "stats": {},
+   "recent": []
   }
  },
  "desk": {
@@ -635,392 +714,440 @@
    "phase",
    "legends_ema",
    "morning_dip",
-   "bilbo_options"
+   "bilbo_options",
+   "spx_premium",
+   "phoenix"
   ]
  },
  "context": {
   "pv_shift": {
    "status": "ok",
    "stale": false,
-   "computed_at": "2026-10-01T13:39:49.806755+00:00",
+   "computed_at": "2026-10-02T13:39:41.671914+00:00",
    "note": "research context only -- never a trading input; Faktor = -1*DELTA(CORR(HIGH,VOLUME,5),5)*RANK(STD(CLOSE,20))",
    "readings": {
     "AEHR": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 99.99,
-     "corr5": 0.5955764064733061,
-     "delta_corr": -0.11672849247570971,
-     "vol20": 7.3015305073662455,
-     "rankVol": 0.6341463414634146,
-     "faktor": 0.07402294644801104
+     "date": "2026-10-02T04:00:00Z",
+     "close": 105.5,
+     "corr5": -0.07352205398231122,
+     "delta_corr": -0.9510706797247601,
+     "vol20": 6.704682183929376,
+     "rankVol": 0.625,
+     "faktor": 0.594419174827975
     },
     "NBIS": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 236.29,
-     "corr5": 0.8409845721050782,
-     "delta_corr": 0.8422317255231064,
-     "vol20": 11.219774552102196,
-     "rankVol": 0.7073170731707317,
-     "faktor": -0.5957248790285387
+     "date": "2026-10-02T04:00:00Z",
+     "close": 242.58,
+     "corr5": 0.2346761209740726,
+     "delta_corr": 0.06938786282081114,
+     "vol20": 10.801357307648889,
+     "rankVol": 0.7,
+     "faktor": -0.04857150397456779
     },
     "SKYQ": {
      "date": "2026-10-01T04:00:00Z",
-     "close": 2.505,
-     "corr5": 0.7504136799747337,
-     "delta_corr": -0.22152349678749206,
-     "vol20": 0.2309776774928694,
+     "close": 2.555,
+     "corr5": 0.3388036067682341,
+     "delta_corr": -0.6331335699939917,
+     "vol20": 0.22841450807687325,
      "rankVol": 0.04878048780487805,
-     "faktor": 0.010806024233536198
+     "faktor": 0.030884564389950818
     },
     "SHAZ": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 53.815,
-     "corr5": 0.6762490589119226,
-     "delta_corr": 0.018924950230641002,
-     "vol20": 2.9736068586818942,
-     "rankVol": 0.4878048780487805,
-     "faktor": -0.009231683039337074
+     "date": "2026-10-02T04:00:00Z",
+     "close": 51.835,
+     "corr5": 0.9292612798297688,
+     "delta_corr": 0.8136277683823603,
+     "vol20": 3.3297628575470655,
+     "rankVol": 0.475,
+     "faktor": -0.3864731899816211
     },
     "LITE": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 982.445,
-     "corr5": -0.28443021359283366,
-     "delta_corr": -0.9077837401201183,
-     "vol20": 45.28224266406757,
-     "rankVol": 0.9512195121951219,
-     "faktor": 0.8635016064557223
+     "date": "2026-10-02T04:00:00Z",
+     "close": 1050.57,
+     "corr5": -0.20593542947607665,
+     "delta_corr": -1.0266700295653624,
+     "vol20": 53.61844548287465,
+     "rankVol": 0.95,
+     "faktor": 0.9753365280870941
     },
     "SOXL": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 149.73,
-     "corr5": 0.38150115789225525,
-     "delta_corr": -0.11947517244073413,
-     "vol20": 17.779627203628316,
-     "rankVol": 0.8048780487804879,
-     "faktor": 0.0961629436718104
+     "date": "2026-10-02T04:00:00Z",
+     "close": 166.03,
+     "corr5": -0.7737094446351561,
+     "delta_corr": 0.06936176786418913,
+     "vol20": 18.94351913419204,
+     "rankVol": 0.775,
+     "faktor": -0.053755370094746575
     },
     "WYFI": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 18.035,
-     "corr5": 0.4645111336509967,
-     "delta_corr": 0.15527048610619582,
-     "vol20": 1.003359949120952,
-     "rankVol": 0.2682926829268293,
-     "faktor": -0.04165793529678424
+     "date": "2026-10-02T04:00:00Z",
+     "close": 18.425,
+     "corr5": -0.43454663037048163,
+     "delta_corr": -0.8668753531322304,
+     "vol20": 1.034883417347094,
+     "rankVol": 0.3,
+     "faktor": 0.2600626059396691
     },
     "CRML": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 7.165,
-     "corr5": 0.991956514344657,
-     "delta_corr": 0.21329553065842222,
-     "vol20": 0.7386413202630894,
-     "rankVol": 0.21951219512195122,
-     "faktor": -0.04682097014453171
+     "date": "2026-10-02T04:00:00Z",
+     "close": 7.135,
+     "corr5": 0.3892579693493224,
+     "delta_corr": -0.4286119341584505,
+     "vol20": 0.7390392411773544,
+     "rankVol": 0.2,
+     "faktor": 0.0857223868316901
     },
     "AAOI": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 99.6,
-     "corr5": 0.7267315631380749,
-     "delta_corr": 0.515877055185733,
-     "vol20": 4.496087709053284,
-     "rankVol": 0.5365853658536586,
-     "faktor": -0.27681207839234456
+     "date": "2026-10-02T04:00:00Z",
+     "close": 108.68,
+     "corr5": -0.17562095311162632,
+     "delta_corr": -0.45767133520518444,
+     "vol20": 4.766503173186819,
+     "rankVol": 0.525,
+     "faktor": 0.24027745098272185
     },
     "WDC": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 451.72,
-     "corr5": 0.3400312887195639,
-     "delta_corr": 0.7542544128676636,
-     "vol20": 18.670871998583785,
-     "rankVol": 0.8292682926829268,
-     "faktor": -0.6254792692073308
+     "date": "2026-10-02T04:00:00Z",
+     "close": 415.445,
+     "corr5": 0.6414109799608658,
+     "delta_corr": 1.1786655197678728,
+     "vol20": 20.297383575229592,
+     "rankVol": 0.825,
+     "faktor": -0.972399053808495
     },
     "VELO": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 10.55,
-     "corr5": 0.9700884043340597,
-     "delta_corr": 0.46646657144076553,
-     "vol20": 0.559563445911185,
-     "rankVol": 0.1951219512195122,
-     "faktor": -0.09101786759819816
+     "date": "2026-10-02T04:00:00Z",
+     "close": 10.545,
+     "corr5": 0.16527821062608916,
+     "delta_corr": -0.4721029660560532,
+     "vol20": 0.5393479280575756,
+     "rankVol": 0.175,
+     "faktor": 0.0826180190598093
     },
     "ANF": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 134.32,
-     "corr5": 0.32439370819529423,
-     "delta_corr": 0.30481077977475934,
-     "vol20": 6.0446839195693265,
-     "rankVol": 0.6097560975609756,
-     "faktor": -0.1858602315699752
+     "date": "2026-10-02T04:00:00Z",
+     "close": 137.985,
+     "corr5": -0.6819297466441376,
+     "delta_corr": -0.6431180956907768,
+     "vol20": 5.90472404096923,
+     "rankVol": 0.6,
+     "faktor": 0.3858708574144661
     },
     "SATL": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 5.385,
-     "corr5": 0.9865626754314316,
-     "delta_corr": 0.5950095359925426,
-     "vol20": 0.46403629976543864,
-     "rankVol": 0.14634146341463414,
-     "faktor": -0.08707456624281111
+     "date": "2026-10-02T04:00:00Z",
+     "close": 5.52,
+     "corr5": 0.714007551340013,
+     "delta_corr": 0.22830883564878884,
+     "vol20": 0.43944538909857733,
+     "rankVol": 0.125,
+     "faktor": -0.028538604456098605
     },
     "ASPI": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 2.645,
-     "corr5": 0.643749104183445,
-     "delta_corr": 0.4166849613758986,
-     "vol20": 0.476075821167175,
-     "rankVol": 0.17073170731707318,
-     "faktor": -0.07114133486905587
+     "date": "2026-10-02T04:00:00Z",
+     "close": 2.815,
+     "corr5": -0.7476722140390828,
+     "delta_corr": -0.22745695769984098,
+     "vol20": 0.4543607459937533,
+     "rankVol": 0.15,
+     "faktor": 0.034118543654976144
     },
     "IREN": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 40.415,
-     "corr5": 0.8592262401473375,
-     "delta_corr": 1.662279946596738,
-     "vol20": 2.367369571380861,
-     "rankVol": 0.43902439024390244,
-     "faktor": -0.7297814399692996
+     "date": "2026-10-02T04:00:00Z",
+     "close": 42.84,
+     "corr5": -0.2397025275961323,
+     "delta_corr": 0.548349298898166,
+     "vol20": 2.2990213135158184,
+     "rankVol": 0.4,
+     "faktor": -0.2193397195592664
     },
     "AG": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 17.735,
-     "corr5": 0.15809158409760293,
-     "delta_corr": -0.25094081471363794,
-     "vol20": 1.127259952273654,
-     "rankVol": 0.34146341463414637,
-     "faktor": 0.08568710746319345
+     "date": "2026-10-02T04:00:00Z",
+     "close": 17.99,
+     "corr5": 0.18643727215282357,
+     "delta_corr": -0.35822159701229117,
+     "vol20": 1.065872412627328,
+     "rankVol": 0.325,
+     "faktor": 0.11642201902899463
     },
     "AXTI": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 78.62,
-     "corr5": 0.030482123568777462,
-     "delta_corr": -0.15431293318993108,
-     "vol20": 7.642646940033276,
-     "rankVol": 0.6585365853658537,
-     "faktor": 0.10162071210068632
+     "date": "2026-10-02T04:00:00Z",
+     "close": 82.63,
+     "corr5": -0.14457817871277814,
+     "delta_corr": -1.0929631600238678,
+     "vol20": 7.653478208468355,
+     "rankVol": 0.65,
+     "faktor": 0.7104260540155142
     },
     "LASR": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 39.115,
-     "corr5": 0.0005149405990348299,
-     "delta_corr": -0.1680944753288949,
-     "vol20": 1.0734633202862598,
-     "rankVol": 0.3170731707317073,
-     "faktor": 0.05329824827501546
+     "date": "2026-10-02T04:00:00Z",
+     "close": 40.59,
+     "corr5": -0.791418550868822,
+     "delta_corr": -1.0506736778617485,
+     "vol20": 1.0114930486661793,
+     "rankVol": 0.275,
+     "faktor": 0.28893526141198084
     },
     "ARQQ": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 23.88,
-     "corr5": 0.7647829809221877,
-     "delta_corr": 0.7086788902107198,
-     "vol20": 2.2551981481679166,
-     "rankVol": 0.4146341463414634,
-     "faktor": -0.2938424666727375
+     "date": "2026-10-02T04:00:00Z",
+     "close": 24.405,
+     "corr5": 0.011872583761776658,
+     "delta_corr": -0.8956301184151665,
+     "vol20": 2.3161233235732506,
+     "rankVol": 0.425,
+     "faktor": 0.38064280032644576
     },
     "OUST": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 39.81,
-     "corr5": 0.6904842455210136,
-     "delta_corr": 0.08095668542667311,
-     "vol20": 2.9719831236903076,
-     "rankVol": 0.4634146341463415,
-     "faktor": -0.03751651275870218
+     "date": "2026-10-02T04:00:00Z",
+     "close": 42.08,
+     "corr5": 0.1295087845957156,
+     "delta_corr": -0.29876387836998464,
+     "vol20": 3.142296930590742,
+     "rankVol": 0.45,
+     "faktor": 0.13444374526649308
     },
     "ALAB": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 356.51,
-     "corr5": 0.26153513141258244,
-     "delta_corr": -0.06532015026049837,
-     "vol20": 38.43131862410526,
-     "rankVol": 0.926829268292683,
-     "faktor": 0.06054062707070581
+     "date": "2026-10-02T04:00:00Z",
+     "close": 346.16,
+     "corr5": 0.8651882015993535,
+     "delta_corr": 1.238927603636504,
+     "vol20": 38.08314313446305,
+     "rankVol": 0.925,
+     "faktor": -1.1460080333637663
     },
     "CRDO": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 200.19,
-     "corr5": 0.49606799395952,
-     "delta_corr": 1.1832893610637243,
-     "vol20": 17.432132227584784,
-     "rankVol": 0.7804878048780488,
-     "faktor": -0.9235429159521751
+     "date": "2026-10-02T04:00:00Z",
+     "close": 217.615,
+     "corr5": -0.4984666169650066,
+     "delta_corr": -0.8842599560247613,
+     "vol20": 19.74982819387298,
+     "rankVol": 0.8,
+     "faktor": 0.707407964819809
     },
     "FCEL": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 16.3,
-     "corr5": 0.3093443951057824,
-     "delta_corr": -0.018990248404914256,
-     "vol20": 1.0326360382535564,
-     "rankVol": 0.2926829268292683,
-     "faktor": 0.005558121484365148
+     "date": "2026-10-02T04:00:00Z",
+     "close": 17.59,
+     "corr5": -0.6671624394395314,
+     "delta_corr": -1.1571505941065032,
+     "vol20": 0.9727141152466126,
+     "rankVol": 0.25,
+     "faktor": 0.2892876485266258
     },
     "HIVE": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 2.915,
-     "corr5": 0.9804870489963471,
-     "delta_corr": 1.2208283386913266,
-     "vol20": 0.18836069122829208,
-     "rankVol": 0.024390243902439025,
-     "faktor": -0.02977630094369089
+     "date": "2026-10-02T04:00:00Z",
+     "close": 3.07,
+     "corr5": 0.18018653626328465,
+     "delta_corr": 0.8167590579908405,
+     "vol20": 0.18719291519713022,
+     "rankVol": 0.025,
+     "faktor": -0.020418976449771014
     },
     "POET": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 7.54,
-     "corr5": 0.12133096622104617,
-     "delta_corr": -0.5771697722459601,
-     "vol20": 0.31839244651844373,
-     "rankVol": 0.0975609756097561,
-     "faktor": 0.0563092460727766
+     "date": "2026-10-02T04:00:00Z",
+     "close": 7.76,
+     "corr5": -0.5825785574627291,
+     "delta_corr": -1.2817778809990603,
+     "vol20": 0.3026710260332165,
+     "rankVol": 0.075,
+     "faktor": 0.09613334107492952
     },
     "SNDK": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 1747.0,
-     "corr5": 0.08072696816528514,
-     "delta_corr": 0.5809799264588767,
-     "vol20": 99.25681111389787,
+     "date": "2026-10-02T04:00:00Z",
+     "close": 1738.65,
+     "corr5": 0.15103365554141163,
+     "delta_corr": -0.008227244434651337,
+     "vol20": 94.7342334124787,
      "rankVol": 1.0,
-     "faktor": -0.5809799264588767
+     "faktor": 0.008227244434651337
     },
     "TEM": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 81.5,
-     "corr5": 0.5796378691287701,
-     "delta_corr": -0.18636666872810292,
-     "vol20": 9.076819569651034,
-     "rankVol": 0.6829268292682927,
-     "faktor": 0.1272747981557776
+     "date": "2026-10-02T04:00:00Z",
+     "close": 79.17,
+     "corr5": 0.2837432580975161,
+     "delta_corr": -0.6933352101451785,
+     "vol20": 8.798773920268664,
+     "rankVol": 0.675,
+     "faktor": 0.46800126684799553
     },
     "CORZ": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 15.96,
-     "corr5": 0.728675335812026,
-     "delta_corr": 0.6661468487458041,
-     "vol20": 0.882578997880643,
-     "rankVol": 0.24390243902439024,
-     "faktor": -0.16247484115751318
+     "date": "2026-10-02T04:00:00Z",
+     "close": 16.97,
+     "corr5": -0.3484270531200613,
+     "delta_corr": -0.6994841672334906,
+     "vol20": 0.8524587966582315,
+     "rankVol": 0.225,
+     "faktor": 0.1573839376275354
     },
     "HUT": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 85.45,
-     "corr5": 0.22132665610881244,
-     "delta_corr": 0.8580291747990084,
-     "vol20": 6.0085898928117905,
-     "rankVol": 0.5853658536585366,
-     "faktor": -0.5022609803701512
+     "date": "2026-10-02T04:00:00Z",
+     "close": 91.42,
+     "corr5": -0.006812120373838134,
+     "delta_corr": -0.6679011950272933,
+     "vol20": 5.797834180752327,
+     "rankVol": 0.575,
+     "faktor": 0.38404318714069363
     },
     "TSEM": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 239.515,
-     "corr5": -0.45805710468426264,
-     "delta_corr": 0.24264641329925218,
-     "vol20": 13.426983789649107,
-     "rankVol": 0.7317073170731707,
-     "faktor": -0.17754615607262356
+     "date": "2026-10-02T04:00:00Z",
+     "close": 245.71,
+     "corr5": -0.009192943086232844,
+     "delta_corr": 0.5062011246709663,
+     "vol20": 14.306677573339659,
+     "rankVol": 0.75,
+     "faktor": -0.37965084350322476
     },
     "ARM": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 291.75,
-     "corr5": 0.7562847851286054,
-     "delta_corr": 0.45135784222058606,
-     "vol20": 29.82991696267357,
-     "rankVol": 0.9024390243902439,
-     "faktor": -0.4073229307844313
+     "date": "2026-10-02T04:00:00Z",
+     "close": 306.03,
+     "corr5": -0.44379726442745715,
+     "delta_corr": 0.27519743639267535,
+     "vol20": 29.224324012712426,
+     "rankVol": 0.9,
+     "faktor": -0.2476776927534078
     },
     "KEEL": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 3.52,
-     "corr5": 0.9621363180894495,
-     "delta_corr": 1.0957962390645073,
-     "vol20": 0.2492452356615869,
-     "rankVol": 0.07317073170731707,
-     "faktor": -0.08018021261447614
+     "date": "2026-10-02T04:00:00Z",
+     "close": 3.67,
+     "corr5": -0.3289241733714488,
+     "delta_corr": -1.1163802333915522,
+     "vol20": 0.2409038968136464,
+     "rankVol": 0.05,
+     "faktor": 0.05581901166957762
     },
     "FFIV": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 442.28,
-     "corr5": -0.710226478055806,
-     "delta_corr": -0.3513002090234414,
-     "vol20": 21.559312581805568,
-     "rankVol": 0.8780487804878049,
-     "faktor": 0.3084587201181437
+     "date": "2026-10-02T04:00:00Z",
+     "close": 454.34,
+     "corr5": -0.8323249426363984,
+     "delta_corr": -0.4513478381798481,
+     "vol20": 20.854620859356324,
+     "rankVol": 0.85,
+     "faktor": 0.38364566245287085
     },
     "MU": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 1058.06,
-     "corr5": 0.5204723484374476,
-     "delta_corr": 1.43071559637453,
-     "vol20": 54.49644820765844,
-     "rankVol": 0.975609756097561,
-     "faktor": -1.3958200940239316
+     "date": "2026-10-02T04:00:00Z",
+     "close": 1096.71,
+     "corr5": -0.0713216386541821,
+     "delta_corr": 0.66736723501435,
+     "vol20": 57.24499124978097,
+     "rankVol": 0.975,
+     "faktor": -0.6506830541389913
     },
     "CLS": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 357.98,
-     "corr5": 0.6601995490451585,
-     "delta_corr": -0.2667807429959578,
-     "vol20": 19.849035121385622,
-     "rankVol": 0.8536585365853658,
-     "faktor": 0.2277396586550859
+     "date": "2026-10-02T04:00:00Z",
+     "close": 384.86,
+     "corr5": -0.807584431331075,
+     "delta_corr": -1.275804861597054,
+     "vol20": 21.430411992948244,
+     "rankVol": 0.875,
+     "faktor": 1.1163292538974223
     },
     "TE": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 3.77,
-     "corr5": -0.22209267306939307,
-     "delta_corr": 0.7388837599556357,
-     "vol20": 0.3970310913517983,
-     "rankVol": 0.12195121951219512,
-     "faktor": -0.09010777560434581
+     "date": "2026-10-02T04:00:00Z",
+     "close": 3.91,
+     "corr5": -0.7738190853050375,
+     "delta_corr": 0.06275472028118845,
+     "vol20": 0.40032923950168814,
+     "rankVol": 0.1,
+     "faktor": -0.006275472028118845
     },
     "TTMI": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 122.28,
-     "corr5": 0.2812584278046656,
-     "delta_corr": -0.4373249813027702,
-     "vol20": 5.34391885698127,
-     "rankVol": 0.5609756097560976,
-     "faktor": 0.2453286480478955
+     "date": "2026-10-02T04:00:00Z",
+     "close": 128.44,
+     "corr5": -0.8356870355400547,
+     "delta_corr": -0.546367498456718,
+     "vol20": 5.339468981087914,
+     "rankVol": 0.55,
+     "faktor": 0.30050212415119487
     },
     "CVNA": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 61.865,
-     "corr5": 0.39887825266527727,
-     "delta_corr": 1.0684944314408926,
-     "vol20": 4.238883844834628,
-     "rankVol": 0.5121951219512195,
-     "faktor": -0.547277635616067
+     "date": "2026-10-02T04:00:00Z",
+     "close": 64.52,
+     "corr5": -0.8014115094078055,
+     "delta_corr": -0.38270927108980857,
+     "vol20": 3.9598128980420286,
+     "rankVol": 0.5,
+     "faktor": 0.19135463554490428
     },
     "VRT": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 241.61,
-     "corr5": 0.8091232552381538,
-     "delta_corr": 1.1961549984972986,
-     "vol20": 13.940400630900102,
-     "rankVol": 0.7560975609756098,
-     "faktor": -0.9044098769125916
+     "date": "2026-10-02T04:00:00Z",
+     "close": 252.0,
+     "corr5": -0.31589539210868617,
+     "delta_corr": -0.2850547727862211,
+     "vol20": 13.26728117400095,
+     "rankVol": 0.725,
+     "faktor": 0.2066647102700103
     },
     "OKLO": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 36.98,
-     "corr5": 0.7583760675945413,
-     "delta_corr": 0.6573461801226687,
-     "vol20": 2.145115905959396,
-     "rankVol": 0.3902439024390244,
-     "faktor": -0.2565253385844561
+     "date": "2026-10-02T04:00:00Z",
+     "close": 36.4,
+     "corr5": 0.6675190532688233,
+     "delta_corr": 0.3834508841727409,
+     "vol20": 2.2137154712157567,
+     "rankVol": 0.375,
+     "faktor": -0.14379408156477785
     },
     "USAR": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 13.85,
-     "corr5": 0.6163401991606017,
-     "delta_corr": 1.2175669217454983,
-     "vol20": 1.1714084471267914,
-     "rankVol": 0.36585365853658536,
-     "faktor": -0.44545131283371886
+     "date": "2026-10-02T04:00:00Z",
+     "close": 13.78,
+     "corr5": 0.6575176545264003,
+     "delta_corr": 1.2825917989984637,
+     "vol20": 1.16330950309881,
+     "rankVol": 0.35,
+     "faktor": -0.4489071296494622
     }
    }
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-01T15:39:17.923612-04:00",
-  "headline": "\u2014",
-  "sections": []
+  "updated_et": "2026-10-02T09:39:27.909959-04:00",
+  "stamp": "Friday, 9:39 AM ET",
+  "headline": "Femto is carrying 3 positions, up $1,338 on the day, no fresh Tensor signals.",
+  "sections": [
+   {
+    "heading": "Account",
+    "body": "Equity $98,750 \u00b7 buying power $356,494. Day P&L $1,338 (+1.37%)."
+   },
+   {
+    "heading": "Positions (3 of 10)",
+    "body": "INTC261023C00124000 \u2014 5 sh @ $7 \u2192 $8 \u00b7 $600 (+1,678.32%). NVDA \u2014 30 sh @ $231 \u2192 $236 \u00b7 $149 (+2.15%) \u00b7 stop $223. PLTR261023C00195000 \u2014 5 sh @ $7 \u2192 $7 \u00b7 -$75 (-220.59%)."
+   },
+   {
+    "heading": "Tensor",
+    "body": "No fresh signals. Engine v625, byte-exact. No Tensor positions right now."
+   },
+   {
+    "heading": "Phase",
+    "body": "NVDA \u2014 30 sh @ $231, now $236 \u00b7 $149. Stop $223 (live at broker). Last event 8:46 AM ET: k5_dead CLS."
+   },
+   {
+    "heading": "Legend's EMA",
+    "body": "Flat. Setup: no trend day."
+   },
+   {
+    "heading": "Morning Dip",
+    "body": "Flat \u2014 outside the morning window."
+   },
+   {
+    "heading": "Bilbo Box Options",
+    "body": "2 call positions open (INTC, PLTR)."
+   },
+   {
+    "heading": "SPX Premium (experimental)",
+    "body": "Not yet run (experimental)."
+   },
+   {
+    "heading": "Phoenix Breakout",
+    "body": "Not yet run."
+   },
+   {
+    "heading": "Risk",
+    "body": "Kill switch armed at -3.0% of baseline equity; not tripped. Earnings within 7 days: AEHR (2026-10-05)."
+   },
+   {
+    "heading": "Next",
+    "body": "Next Tensor scan about 10:08 AM ET."
+   }
+  ]
  },
  "equity_curve": [
   {
@@ -1316,6 +1443,36 @@
    "equity": "97835.5",
    "day_pl": 423.72000000000116,
    "day_pl_pct": 0.4349781925758888
+  },
+  {
+   "ts_utc": "2026-10-02T04:00:40.673333+00:00",
+   "equity": "97469.65",
+   "day_pl": 57.86999999999534,
+   "day_pl_pct": 0.0594075993683673
+  },
+  {
+   "ts_utc": "2026-10-02T04:01:35.001778+00:00",
+   "equity": "97470.25",
+   "day_pl": 58.470000000001164,
+   "day_pl_pct": 0.06002354130065292
+  },
+  {
+   "ts_utc": "2026-10-02T04:08:04.763639+00:00",
+   "equity": "97460.95",
+   "day_pl": 49.169999999998254,
+   "day_pl_pct": 0.05047644135031539
+  },
+  {
+   "ts_utc": "2026-10-02T07:59:29.670116+00:00",
+   "equity": "97487.05",
+   "day_pl": 75.27000000000407,
+   "day_pl_pct": 0.07726991540448606
+  },
+  {
+   "ts_utc": "2026-10-02T13:39:27.909959+00:00",
+   "equity": "98749.54",
+   "day_pl": 1337.7599999999948,
+   "day_pl_pct": 1.3733041322106985
   }
  ]
 }
