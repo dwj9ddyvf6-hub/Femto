@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-02T16:09:23.386548+00:00",
- "generated_at_et": "2026-10-02T12:09:23.386548-04:00",
+ "generated_at_utc": "2026-10-02T16:39:22.026220+00:00",
+ "generated_at_et": "2026-10-02T12:39:22.026220-04:00",
  "account": {
-  "equity": "97192.23",
+  "equity": "96691.5",
   "cash": "55496.34",
-  "buying_power": "161695.65",
+  "buying_power": "161301.6",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -28,10 +28,10 @@
    "symbol": "INTC261023C00124000",
    "qty": 5.0,
    "avg_entry": 7.15,
-   "current": 7.6,
-   "unrealized_pl": 225.0,
-   "unrealized_pl_pct": 629.3706293706293,
-   "market_value": "3800",
+   "current": 7.15,
+   "unrealized_pl": 0.0,
+   "unrealized_pl_pct": 0.0,
+   "market_value": "3575",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -45,10 +45,10 @@
    "symbol": "NVDA",
    "qty": 30.0,
    "avg_entry": 231.27,
-   "current": 236.18,
-   "unrealized_pl": 147.3,
-   "unrealized_pl_pct": 2.1230596272754787,
-   "market_value": "7085.4",
+   "current": 235.995,
+   "unrealized_pl": 141.75,
+   "unrealized_pl_pct": 2.0430665455960564,
+   "market_value": "7079.85",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -62,10 +62,10 @@
    "symbol": "PLTR261023C00195000",
    "qty": 5.0,
    "avg_entry": 6.8,
-   "current": 5.65,
-   "unrealized_pl": -575.0,
-   "unrealized_pl_pct": -1691.1764705882351,
-   "market_value": "2825",
+   "current": 5.6,
+   "unrealized_pl": -600.0,
+   "unrealized_pl_pct": -1764.7058823529412,
+   "market_value": "2800",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -79,10 +79,10 @@
    "symbol": "TSLA261023C00380000",
    "qty": 2.0,
    "avg_entry": 13.85,
-   "current": 13.15,
-   "unrealized_pl": -140.0,
-   "unrealized_pl_pct": -505.4151624548736,
-   "market_value": "2630",
+   "current": 12.6,
+   "unrealized_pl": -250.0,
+   "unrealized_pl_pct": -902.5270758122745,
+   "market_value": "2520",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -96,10 +96,10 @@
    "symbol": "TTMI",
    "qty": 189.0,
    "avg_entry": 133.23,
-   "current": 134.16,
-   "unrealized_pl": 175.77,
-   "unrealized_pl_pct": 0.6980409817608647,
-   "market_value": "25356.24",
+   "current": 133.44,
+   "unrealized_pl": 39.69,
+   "unrealized_pl_pct": 0.15762215717180816,
+   "market_value": "25220.16",
    "side": "long",
    "sector": "semis",
    "phenotype": "TRANSITION",
@@ -116,175 +116,171 @@
   "unknown": 4,
   "semis": 1
  },
- "day_pl": -616.9199999999983,
- "day_pl_pct": -0.6307385351983923,
+ "day_pl": -1117.6499999999942,
+ "day_pl_pct": -1.1426845034436903,
  "journal_today": {
-  "scans": 5,
+  "scans": 6,
   "trades": 2
  },
  "fresh_signals": [
   "NBIS WATCH conf=7 RECLAIM",
   "ASPI WATCH conf=6 RECLAIM",
   "IREN WATCH conf=7 RECLAIM",
-  "LASR WATCH conf=7 TRANSITION",
   "ARQQ WATCH conf=7 TRANSITION",
-  "POET WATCH conf=7 RECLAIM",
   "CORZ WATCH conf=7 RECLAIM",
-  "ARM WATCH conf=7 RECLAIM",
-  "TE WATCH conf=7 RECLAIM",
-  "CVNA WATCH conf=6 RECLAIM"
+  "CVNA TRADE conf=8 RECLAIM"
  ],
  "ledger_tail": [
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "OUST",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "ALAB",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "CRDO",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "FCEL",
    "decision": "SKIP_DUPLICATE",
    "reason": "already acted on bar 2026-10-02T14:00:00Z"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "HIVE",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 6) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "POET",
-   "decision": "WATCH",
-   "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
+   "decision": "SKIP_CONCENTRATION",
+   "reason": "sector semis already holds 3 positions (max 3 per sector)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "SNDK",
-   "decision": "SKIP_LOW_CONF",
-   "reason": "production bearish-conflict veto (score 8) [1D=-- 1W=buy]"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "TEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "CORZ",
    "decision": "WATCH",
    "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "HUT",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 8) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "TSEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "ARM",
-   "decision": "WATCH",
-   "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=buy]"
+   "decision": "SKIP_CONCENTRATION",
+   "reason": "sector semis already holds 3 positions (max 3 per sector)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "KEEL",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "FFIV",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "MU",
    "decision": "SKIP_EARNINGS_UNKNOWN",
    "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "CLS",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "TE",
-   "decision": "WATCH",
-   "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
+   "decision": "SKIP_LOW_CONF",
+   "reason": "production bearish-conflict veto (score 6) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "SIVEF",
    "decision": "SKIP_DATA_ERROR",
    "reason": "bar fetch failed: no bars returned for SIVEF"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "TTMI",
    "decision": "SKIP_DUPLICATE",
    "reason": "already acted on bar 2026-10-02T14:00:00Z"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "CVNA",
-   "decision": "WATCH",
-   "reason": "moderate confidence 6 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
+   "decision": "TRADE",
+   "reason": "confidence 8 >= 8 (RECLAIM yellow-regime+1) [1D=-- 1W=--]: risking $971.58 (1% of $97158.13 equity), per-share risk $0.2550 -> qty 3810 @ $64.23 (TP $66.38 / SL $63.98) -- ORDER SUBMIT FAILED: alpaca_submit_order.py failed (exit 1): Traceback (most recent call last):\n  File \"/home/hatch/workspace/skills/alpaca-paper/bin/alpaca_submit_order.py\", line 122, in <module>\n    main()\n  File \"/home/hatch/workspace/skills/alpaca-paper/bin/alpaca_submit_order.py\", line 117, in main\n    result = api_request(\"POST\", f\"{trading_base()}/v2/orders\", payload=order)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hatch/workspace/skills/alpaca-paper/bin/alpaca_lib.py\", line 219, in api_request\n    raise AlpacaError(f\"Alpaca API error {resp.status_code}: {body}\")\nalpaca_lib.AlpacaError: Alpaca AP"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "VRT",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "OKLO",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "symbol": "USAR",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T15:38:52Z",
+   "ts": "2026-10-02T16:08:54Z",
    "event": "scan_end"
   },
   {
-   "ts": "2026-10-02T16:08:54Z",
+   "ts": "2026-10-02T16:38:54Z",
    "event": "scan_start"
   }
  ],
  "outcome_stats": {
   "closed_total": 0,
-  "open_total": 25,
+  "open_total": 32,
   "by_phenotype": {},
   "by_confidence": {},
   "by_symbol": {}
@@ -324,9 +320,9 @@
      "symbol": "TTMI",
      "qty": 189.0,
      "avg_entry": 133.23,
-     "current": 134.16,
-     "unrealized_pl": 175.77,
-     "unrealized_pl_pct": 0.6980409817608647,
+     "current": 133.44,
+     "unrealized_pl": 39.69,
+     "unrealized_pl_pct": 0.15762215717180816,
      "phenotype": "TRANSITION",
      "confidence": 8,
      "stop": 129.28,
@@ -347,71 +343,71 @@
    },
    "recent": [
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "FFIV",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "MU",
      "decision": "SKIP_EARNINGS_UNKNOWN",
      "reason": "no confirmed earnings date on file: cannot verify blackout window (fail closed)"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "CLS",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "TE",
-     "decision": "WATCH",
-     "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
+     "decision": "SKIP_LOW_CONF",
+     "reason": "production bearish-conflict veto (score 6) [1D=-- 1W=--]"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "SIVEF",
      "decision": "SKIP_DATA_ERROR",
      "reason": "bar fetch failed: no bars returned for SIVEF"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "TTMI",
      "decision": "SKIP_DUPLICATE",
      "reason": "already acted on bar 2026-10-02T14:00:00Z"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "CVNA",
-     "decision": "WATCH",
-     "reason": "moderate confidence 6 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
+     "decision": "TRADE",
+     "reason": "confidence 8 >= 8 (RECLAIM yellow-regime+1) [1D=-- 1W=--]: risking $971.58 (1% of $97158.13 equity), per-share risk $0.2550 -> qty 3810 @ $64.23 (TP $66.38 / SL $63.98) -- ORDER SUBMIT FAILED: alpaca_submit_order.py failed (exit 1): Traceback (most recent call last):\n  File \"/home/hatch/workspace/skills/alpaca-paper/bin/alpaca_submit_order.py\", line 122, in <module>\n    main()\n  File \"/home/hatch/workspace/skills/alpaca-paper/bin/alpaca_submit_order.py\", line 117, in main\n    result = api_request(\"POST\", f\"{trading_base()}/v2/orders\", payload=order)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hatch/workspace/skills/alpaca-paper/bin/alpaca_lib.py\", line 219, in api_request\n    raise AlpacaError(f\"Alpaca API error {resp.status_code}: {body}\")\nalpaca_lib.AlpacaError: Alpaca AP"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "VRT",
      "decision": "SKIP_LOW_CONF",
      "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "OKLO",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "symbol": "USAR",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T15:38:52Z",
+     "ts": "2026-10-02T16:08:54Z",
      "event": "scan_end"
     },
     {
-     "ts": "2026-10-02T16:08:54Z",
+     "ts": "2026-10-02T16:38:54Z",
      "event": "scan_start"
     }
    ]
@@ -425,8 +421,8 @@
     "qty": 30,
     "entry_px": 231.27,
     "entry_date": "2026-09-28",
-    "current": 236.18,
-    "unrealized_pl": 147.3,
+    "current": 235.995,
+    "unrealized_pl": 141.75,
     "stop": 223.15,
     "stop_pending": false,
     "trail_applied": null
@@ -656,55 +652,55 @@
      "status": "open"
     }
    ],
-   "last_entry_scan": "2026-10-02T15:23:23.112386+00:00",
-   "last_exit_scan": "2026-10-02T16:05:06.374317+00:00",
+   "last_entry_scan": "2026-10-02T16:23:21.662091+00:00",
+   "last_exit_scan": "2026-10-02T16:35:07.687409+00:00",
    "recent": [
     {
-     "ts": "2026-10-02T15:40:04.110221+00:00",
+     "ts": "2026-10-02T16:15:10.613040+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T15:40:07.006138+00:00",
+     "ts": "2026-10-02T16:15:13.015251+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T15:45:04.054677+00:00",
+     "ts": "2026-10-02T16:20:09.925823+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T15:45:06.731540+00:00",
+     "ts": "2026-10-02T16:20:12.535742+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T15:50:07.655505+00:00",
+     "ts": "2026-10-02T16:22:07.364570+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T15:50:10.027323+00:00",
+     "ts": "2026-10-02T16:23:21.692243+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T15:55:05.255334+00:00",
+     "ts": "2026-10-02T16:25:06.390113+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T15:55:07.610776+00:00",
+     "ts": "2026-10-02T16:25:09.049468+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T16:00:52.339570+00:00",
+     "ts": "2026-10-02T16:30:05.139032+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T16:00:54.712123+00:00",
+     "ts": "2026-10-02T16:30:08.267091+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T16:05:04.328771+00:00",
+     "ts": "2026-10-02T16:35:04.911710+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T16:05:06.395986+00:00",
+     "ts": "2026-10-02T16:35:07.711496+00:00",
      "event": "scan_done"
     }
    ]
@@ -1186,7 +1182,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-02T12:09:23.386548-04:00",
+  "updated_et": "2026-10-02T12:39:22.026220-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -1544,6 +1540,12 @@
    "equity": "97192.23",
    "day_pl": -616.9199999999983,
    "day_pl_pct": -0.6307385351983923
+  },
+  {
+   "ts_utc": "2026-10-02T16:39:22.026220+00:00",
+   "equity": "96691.5",
+   "day_pl": -1117.6499999999942,
+   "day_pl_pct": -1.1426845034436903
   }
  ]
 }
