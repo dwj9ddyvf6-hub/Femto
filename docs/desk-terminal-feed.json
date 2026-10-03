@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-02T19:39:20.048081+00:00",
- "generated_at_et": "2026-10-02T15:39:20.048081-04:00",
+ "generated_at_utc": "2026-10-03T02:04:33.002567+00:00",
+ "generated_at_et": "2026-10-02T22:04:33.002567-04:00",
  "account": {
-  "equity": "96176.79",
+  "equity": "95721.64",
   "cash": "-17498.01",
-  "buying_power": "233639.4",
+  "buying_power": "233512.98",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -28,10 +28,10 @@
    "symbol": "LASR",
    "qty": 1884.0,
    "avg_entry": 40.32,
-   "current": 40.55,
-   "unrealized_pl": 433.32,
-   "unrealized_pl_pct": 0.5704365079365079,
-   "market_value": "76396.2",
+   "current": 40.58,
+   "unrealized_pl": 489.84,
+   "unrealized_pl_pct": 0.6448412698412698,
+   "market_value": "76452.72",
    "side": "long",
    "sector": "semis",
    "phenotype": "TRANSITION",
@@ -45,10 +45,10 @@
    "symbol": "NVDA",
    "qty": 30.0,
    "avg_entry": 231.27,
-   "current": 234.31,
-   "unrealized_pl": 91.2,
-   "unrealized_pl_pct": 1.314480909759156,
-   "market_value": "7029.3",
+   "current": 233.95,
+   "unrealized_pl": 80.4,
+   "unrealized_pl_pct": 1.1588186967613612,
+   "market_value": "7018.5",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -62,10 +62,10 @@
    "symbol": "PLTR261023C00195000",
    "qty": 5.0,
    "avg_entry": 6.8,
-   "current": 4.95,
-   "unrealized_pl": -925.0,
-   "unrealized_pl_pct": -2720.5882352941176,
-   "market_value": "2475",
+   "current": 4.75,
+   "unrealized_pl": -1025.0,
+   "unrealized_pl_pct": -3014.7058823529414,
+   "market_value": "2375",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -79,10 +79,10 @@
    "symbol": "TSLA261023C00380000",
    "qty": 2.0,
    "avg_entry": 13.85,
-   "current": 13.8,
-   "unrealized_pl": -10.0,
-   "unrealized_pl_pct": -36.101083032490976,
-   "market_value": "2760",
+   "current": 12.25,
+   "unrealized_pl": -320.0,
+   "unrealized_pl_pct": -1155.2346570397112,
+   "market_value": "2450",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -96,10 +96,10 @@
    "symbol": "TTMI",
    "qty": 189.0,
    "avg_entry": 133.23,
-   "current": 132.35,
-   "unrealized_pl": -166.32,
-   "unrealized_pl_pct": -0.660511896719958,
-   "market_value": "25014.15",
+   "current": 131.87,
+   "unrealized_pl": -257.04,
+   "unrealized_pl_pct": -1.0207911131126626,
+   "market_value": "24923.43",
    "side": "long",
    "sector": "semis",
    "phenotype": "TRANSITION",
@@ -116,10 +116,10 @@
   "semis": 2,
   "unknown": 3
  },
- "day_pl": -1632.3600000000006,
- "day_pl_pct": -1.6689236129748604,
+ "day_pl": -2087.5099999999948,
+ "day_pl_pct": -2.134268624152234,
  "journal_today": {
-  "scans": 12,
+  "scans": 13,
   "trades": 4
  },
  "fresh_signals": [
@@ -133,162 +133,188 @@
  ],
  "ledger_tail": [
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
+   "symbol": "ARQQ",
+   "decision": "WATCH",
+   "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=buy]"
+  },
+  {
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "OUST",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "ALAB",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "CRDO",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "FCEL",
    "decision": "WATCH",
    "reason": "TRANSITION extension gate: entry +0.99 ATR vs signal-bar open, bar range 1.54 ATR (>0.5/>1.5): demoted, no chase of extended top"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "HIVE",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "POET",
    "decision": "SKIP_STOP_BREACHED",
    "reason": "latest 1H bar low $7.77 already through planned stop $7.89: bracket stop dead on arrival, no trade [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "SNDK",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "TEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "CORZ",
    "decision": "WATCH",
    "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "HUT",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 8) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "TSEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "ARM",
    "decision": "WATCH",
    "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=buy]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "KEEL",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "FFIV",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "MU",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "CLS",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "TE",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 6) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "SIVEF",
    "decision": "SKIP_DATA_ERROR",
    "reason": "bar fetch failed: no bars returned for SIVEF"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "TTMI",
    "decision": "SKIP_DUPLICATE",
    "reason": "already acted on bar 2026-10-02T14:00:00Z"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "CVNA",
    "decision": "WATCH",
    "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "VRT",
    "decision": "SKIP_LOW_CONF",
    "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "OKLO",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
+   "ts": "2026-10-02T19:38:51Z",
    "symbol": "USAR",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-02T19:08:51Z",
-   "event": "scan_end"
-  },
-  {
    "ts": "2026-10-02T19:38:51Z",
-   "event": "scan_start"
+   "event": "scan_end"
   }
  ],
  "outcome_stats": {
-  "closed_total": 0,
-  "open_total": 38,
-  "by_phenotype": {},
-  "by_confidence": {},
-  "by_symbol": {}
+  "closed_total": 1,
+  "open_total": 37,
+  "by_phenotype": {
+   "RECLAIM": {
+    "n": 1,
+    "hit_rate_20": 1.0,
+    "avg_ret_20": 0.13352620997401063,
+    "avg_max_adv": -0.053400676702790244,
+    "target_first_rate": 0.0
+   }
+  },
+  "by_confidence": {
+   "6-7": {
+    "n": 1,
+    "hit_rate_20": 1.0,
+    "avg_ret_20": 0.13352620997401063,
+    "avg_max_adv": -0.053400676702790244,
+    "target_first_rate": 0.0
+   }
+  },
+  "by_symbol": {
+   "AAOI": {
+    "n": 1,
+    "hit_rate_20": 1.0,
+    "avg_ret_20": 0.13352620997401063,
+    "avg_max_adv": -0.053400676702790244,
+    "target_first_rate": 0.0
+   }
+  }
  },
  "latest_review": {
   "file": "2026-10-02.md",
-  "excerpt": "# Desk review \u2014 2026-10-02\n\nOutcome updater: 4 updated, 0 closed, 0 errors\n\n## Market context\n\n- Index trend: UPTREND -- QQQ $742.02 vs 50-day avg $715.65, 20-day slope +4.61% (SPY disagrees).\n- Sector rotation: leaders SOXX (+14.9% 20D), XLK (+7.8% 20D) (tailwind); laggards XLB (-8.3% 20D), XLF (-7.2% 20D) (headwind).\n- Event risk: none today (next: CPI release 2026-10-14 in 12 days).\n- News flow: quiet across the basket (72h heuristic scan).\n\n## Performance (closed signal outcomes)\n\nClosed outcomes: 0 | Open (awaiting forward bars): 4\n\n### By phenotype\n_no closed outcomes yet_\n\n### By confidence\n_no closed outcomes yet_\n\n### By symbol\n_no closed outcomes yet_\n\n## Scorecard (desk-level, risk-adjusted)\n\n- Period return: -2.54% (early data \u2014 n=5 daily points; treat as indicative, not verdict)\n- Sharpe (ann.): -9.18 | Sortino (ann.): -7.88\n- Max drawdown (window): 2.6%\n- SPY buy-and-hold (same window): -0.18% | desk excess: -2.36%\n- Per-sleeve realized P&L: n/a \u2014 ledgers do not yet record per-trade P&L (calibration queue: excursion/P&L fields). Sleeve activity counts are in the section above.\n- Risk-gate BLOCKs today: none\n\n## Notable scans and decisions (last 7 days)\n\nScans: 76 | Tensor trades planned: 1 | Watches: 21\n\n- 2026-09-30 12:08:56 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 12:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:09:01 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:39:15 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:09:03 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:38:49 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 15:08:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]"
+  "excerpt": "# Desk review \u2014 2026-10-02\n\nOutcome updater: 38 updated, 1 closed, 0 errors\n\n## Market context\n\n- Index trend: UPTREND -- QQQ $742.02 vs 50-day avg $715.65, 20-day slope +4.61% (SPY disagrees).\n- Sector rotation: leaders SOXX (+14.9% 20D), XLK (+7.8% 20D) (tailwind); laggards XLB (-8.3% 20D), XLF (-7.2% 20D) (headwind).\n- Event risk: none today (next: CPI release 2026-10-14 in 12 days).\n- News flow: quiet across the basket (72h heuristic scan).\n\n## Performance (closed signal outcomes)\n\nClosed outcomes: 1 | Open (awaiting forward bars): 37\n\n### By phenotype\n- RECLAIM: n=1, hit_rate_20=100.0%, avg_ret_20=+13.35%, avg_max_adv=-5.34%, target_first=0.0%\n\n### By confidence\n- 6-7: n=1, hit_rate_20=100.0%, avg_ret_20=+13.35%, avg_max_adv=-5.34%, target_first=0.0%\n\n### By symbol\n- AAOI: n=1, hit_rate_20=100.0%, avg_ret_20=+13.35%, avg_max_adv=-5.34%, target_first=0.0%\n\n## Scorecard (desk-level, risk-adjusted)\n\n- Period return: -3.82% (early data \u2014 n=5 daily points; treat as indicative, not verdict)\n- Sharpe (ann.): -12.03 | Sortino (ann.): -9.30\n- Max drawdown (window): 3.8%\n- SPY buy-and-hold (same window): +0.54% | desk excess: -4.37%\n- Per-sleeve realized P&L: n/a \u2014 ledgers do not yet record per-trade P&L (calibration queue: excursion/P&L fields). Sleeve activity counts are in the section above.\n- Risk-gate BLOCKs today: none\n\n## Notable scans and decisions (last 7 days)\n\nScans: 89 | Tensor trades planned: 8 | Watches: 108\n\n- 2026-09-30 12:08:56 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 12:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:09:01 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:39:15 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:09:03 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:38:49 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 15:08:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]"
  },
  "engine": {
   "version": "v625",
@@ -321,9 +347,9 @@
      "symbol": "LASR",
      "qty": 1884.0,
      "avg_entry": 40.32,
-     "current": 40.55,
-     "unrealized_pl": 433.32,
-     "unrealized_pl_pct": 0.5704365079365079,
+     "current": 40.58,
+     "unrealized_pl": 489.84,
+     "unrealized_pl_pct": 0.6448412698412698,
      "phenotype": "TRANSITION",
      "confidence": 8,
      "stop": 40.09,
@@ -334,9 +360,9 @@
      "symbol": "TTMI",
      "qty": 189.0,
      "avg_entry": 133.23,
-     "current": 132.35,
-     "unrealized_pl": -166.32,
-     "unrealized_pl_pct": -0.660511896719958,
+     "current": 131.87,
+     "unrealized_pl": -257.04,
+     "unrealized_pl_pct": -1.0207911131126626,
      "phenotype": "TRANSITION",
      "confidence": 8,
      "stop": 129.28,
@@ -358,72 +384,74 @@
    },
    "recent": [
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
+     "symbol": "KEEL",
+     "decision": "SKIP_LOW_CONF",
+     "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
+    },
+    {
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "FFIV",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "MU",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "CLS",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "TE",
      "decision": "SKIP_LOW_CONF",
      "reason": "production bearish-conflict veto (score 6) [1D=-- 1W=--]"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "SIVEF",
      "decision": "SKIP_DATA_ERROR",
      "reason": "bar fetch failed: no bars returned for SIVEF"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "TTMI",
      "decision": "SKIP_DUPLICATE",
      "reason": "already acted on bar 2026-10-02T14:00:00Z"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "CVNA",
      "decision": "WATCH",
      "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "VRT",
      "decision": "SKIP_LOW_CONF",
      "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "OKLO",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
+     "ts": "2026-10-02T19:38:51Z",
      "symbol": "USAR",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-02T19:08:51Z",
-     "event": "scan_end"
-    },
-    {
      "ts": "2026-10-02T19:38:51Z",
-     "event": "scan_start"
+     "event": "scan_end"
     }
    ]
   },
@@ -436,8 +464,8 @@
     "qty": 30,
     "entry_px": 231.27,
     "entry_date": "2026-09-28",
-    "current": 234.31,
-    "unrealized_pl": 91.2,
+    "current": 233.95,
+    "unrealized_pl": 80.4,
     "stop": 223.15,
     "stop_pending": false,
     "trail_applied": null
@@ -529,9 +557,9 @@
    "automation": "every 15 min, market hours",
    "enabled": true,
    "setup": {
-    "date": "2026-10-02",
-    "trend_day": false,
-    "no_touch": false
+    "date": null,
+    "trend_day": null,
+    "no_touch": null
    },
    "position": null,
    "protection": {
@@ -659,54 +687,54 @@
     }
    ],
    "last_entry_scan": "2026-10-02T19:23:22.794175+00:00",
-   "last_exit_scan": "2026-10-02T19:35:07.293415+00:00",
+   "last_exit_scan": "2026-10-02T20:05:18.101694+00:00",
    "recent": [
     {
-     "ts": "2026-10-02T19:15:06.764338+00:00",
+     "ts": "2026-10-02T19:40:18.684288+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T19:15:08.516535+00:00",
+     "ts": "2026-10-02T19:40:21.067627+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T19:20:06.452084+00:00",
+     "ts": "2026-10-02T19:45:09.736707+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T19:20:08.705144+00:00",
+     "ts": "2026-10-02T19:45:13.192624+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T19:22:07.670739+00:00",
+     "ts": "2026-10-02T19:50:03.766625+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T19:23:22.810372+00:00",
+     "ts": "2026-10-02T19:50:06.161935+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T19:25:07.709067+00:00",
+     "ts": "2026-10-02T19:55:08.757986+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T19:25:11.019947+00:00",
+     "ts": "2026-10-02T19:55:12.139818+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T19:30:04.523107+00:00",
+     "ts": "2026-10-02T20:00:16.928684+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T19:30:06.309935+00:00",
+     "ts": "2026-10-02T20:00:18.665348+00:00",
      "event": "scan_done"
     },
     {
-     "ts": "2026-10-02T19:35:05.341050+00:00",
+     "ts": "2026-10-02T20:05:14.995066+00:00",
      "event": "scan_start"
     },
     {
-     "ts": "2026-10-02T19:35:07.329796+00:00",
+     "ts": "2026-10-02T20:05:18.122453+00:00",
      "event": "scan_done"
     }
    ]
@@ -758,6 +786,19 @@
     {
      "ts": "2026-10-02T04:00:34.187669+00:00",
      "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-02T19:57:05.972712+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-02T19:57:05.972985+00:00",
+     "event": "settle_scan",
+     "note": "nothing due for settlement"
+    },
+    {
+     "ts": "2026-10-02T19:57:05.973062+00:00",
+     "event": "scan_done"
     }
    ]
   },
@@ -792,7 +833,153 @@
     "AAPL"
    ],
    "stats": {},
-   "recent": []
+   "recent": [
+    {
+     "ts": "2026-10-02T19:55:11.196222+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "TTMI",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.196605+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "TTMI",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.216227+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "SILJ",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.232294+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "SPY",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.234729+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "SPY",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.234998+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "SPY",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.239464+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "QQQ",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.240197+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "QQQ",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.240850+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "QQQ",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.246738+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "NVDA",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T19:55:11.247029+00:00",
+     "event": "entry_skipped_no_red_day",
+     "symbol": "NVDA",
+     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-02T20:35:32.763954+00:00",
+     "event": "symbol_untradeable",
+     "symbol": "FCEL",
+     "note": "universe is frozen; no substitution"
+    }
+   ]
+  },
+  "momentum": {
+   "name": "Liquid Momentum",
+   "strategy": "126-session cross-sectional momentum, top tenth, 63-session reviews, 114-name swing basket",
+   "credit": "edge-lab 20-strategy write-up (2026-10-02), grade B",
+   "paper_only": true,
+   "automation": "weekday rank 16:05 ET + fill window 10:05 ET",
+   "state_known": true,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [
+     "MXL",
+     "ABCL",
+     "TWST",
+     "DELL",
+     "ALAB",
+     "PENG",
+     "MU",
+     "FCEL",
+     "OSCR",
+     "MRVL"
+    ],
+    "sells": []
+   },
+   "last_rank_date": "2026-10-02",
+   "stats": {
+    "fills": 0,
+    "breaker_closes": 0,
+    "gate_blocks": 0
+   },
+   "recent": [
+    {
+     "ts": "2026-10-02T21:28:52.992967-04:00",
+     "event": "momentum_rank",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "confluence": {
+   "name": "Winner Confluence",
+   "strategy": "9 validated winner confluences; weekly M2 qualifier, >=2 firing, 13-week time exits",
+   "credit": "winner-confluence study, sealed 2023+ holdout (9 HOLDS)",
+   "paper_only": true,
+   "automation": "Friday rank 16:05 ET + Monday fill window 10:05 ET",
+   "state_known": true,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "last_rank_monday": null,
+   "stats": {
+    "capacity_skips": 0,
+    "fills": 0,
+    "gate_blocks": 0,
+    "rank_waits": 0
+   },
+   "recent": [
+    {
+     "ts": "2026-10-02T21:52:12.883947-04:00",
+     "event": "confluence_rank",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-02T21:54:36.478225-04:00",
+     "event": "refused_live",
+     "symbol": "ALL",
+     "note": "ALPACA_ENV=live refused"
+    }
+   ]
   }
  },
  "desk": {
@@ -1188,7 +1375,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-02T15:39:20.048081-04:00",
+  "updated_et": "2026-10-02T22:04:33.002567-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -1588,6 +1775,30 @@
    "equity": "96176.79",
    "day_pl": -1632.3600000000006,
    "day_pl_pct": -1.6689236129748604
+  },
+  {
+   "ts_utc": "2026-10-03T01:26:58.350877+00:00",
+   "equity": "96229.57",
+   "day_pl": -1579.5799999999872,
+   "day_pl_pct": -1.6149613814249355
+  },
+  {
+   "ts_utc": "2026-10-03T01:29:49.763997+00:00",
+   "equity": "96229.57",
+   "day_pl": -1579.5799999999872,
+   "day_pl_pct": -1.6149613814249355
+  },
+  {
+   "ts_utc": "2026-10-03T01:54:03.619428+00:00",
+   "equity": "96229.57",
+   "day_pl": -1579.5799999999872,
+   "day_pl_pct": -1.6149613814249355
+  },
+  {
+   "ts_utc": "2026-10-03T02:04:33.002567+00:00",
+   "equity": "95721.64",
+   "day_pl": -2087.5099999999948,
+   "day_pl_pct": -2.134268624152234
   }
  ]
 }
