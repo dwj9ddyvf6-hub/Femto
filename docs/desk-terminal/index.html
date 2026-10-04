@@ -234,6 +234,13 @@
 
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>REG · REGIME SCORECARD</span><span class="sub" id="reg-cur">—</span></div>
+    <div class="psub">Which strategies thrive in which market weather. Closed-trade record by sleeve and regime.</div>
+    <div id="regime"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
     <div class="phead"><span>RSK · RISK</span><span class="sub">GUARDRAILS</span></div>
     <div class="riskrow" id="risk"></div>
   </section>
@@ -538,6 +545,35 @@ function renderStrats(d){
 }
 
 /* ---------- risk ---------- */
+function renderRegime(d){
+  const el = $("regime");
+  const sr = d.sleeve_regime || {};
+  const cur = sr.current_regime || "UNKNOWN";
+  $("reg-cur").textContent = cur;
+  const stats = sr.stats || {};
+  const keys = Object.keys(stats);
+  if(!keys.length){
+    el.innerHTML = `<div class="empty">No closed sleeve trades yet — the scorecard fills in as the 22 strategies trade.</div>`;
+    return;
+  }
+  const regs = ["UPTREND", "DOWNTREND", "CHOP"];
+  let rows = keys.sort().map(sl => {
+    const cells = regs.map(rg => {
+      const b = (stats[sl]||{})[rg];
+      if(!b || !b.n) return `<td class="neu">—</td>`;
+      const wr = b.win_rate!=null ? Math.round(b.win_rate*100)+"%" : "n/a";
+      const cls = b.avg_pnl>0 ? "up" : b.avg_pnl<0 ? "down" : "neu";
+      return `<td><span class="${cls}">n=${b.n} wr=${wr} avg=$${b.avg_pnl}</span></td>`;
+    }).join("");
+    return `<tr><td><b>${esc(sl)}</b></td>${cells}</tr>`;
+  }).join("");
+  const best = (sr.best_in_regime||[]).slice(0,5);
+  const bestLine = best.length
+    ? `<div class="psub" style="margin-top:8px">Best in ${esc(cur)}: ${best.map(b=>`<b>${esc(b[0])}</b> avg $${b[1]} (n=${b[2]})`).join(" · ")}</div>`
+    : "";
+  el.innerHTML = `<table><thead><tr><th>Sleeve</th><th>Uptrend</th><th>Downtrend</th><th>Chop</th></tr></thead><tbody>${rows}</tbody></table>${bestLine}`;
+}
+
 function renderRisk(d){
   const k=d.kill_switch||{}, earn=d.earnings_upcoming_7d||[];
   const seg=s=>String(s).split("").map(ch=>`<span class="seg">${esc(ch)}</span>`).join("");
@@ -553,7 +589,7 @@ function renderRisk(d){
 function render(d){
   lastGood=d; lastGen=d.generated_at_utc;
   renderHero(d.desk_narrative); renderEquity(d); renderPositions(d);
-  renderStrats(d); renderRisk(d); buildReadout(d); buildTape(d);
+  renderStrats(d); renderRegime(d); renderRisk(d); buildReadout(d); buildTape(d);
   $("feedstamp").textContent = "feed: " + (d.generated_at_et? etHM(d.generated_at_et)+" ET":"—");
   $("livetext").textContent = "LIVE · " + etHM(d.generated_at_utc) + " ET";
   $("livedot").classList.remove("stale");
