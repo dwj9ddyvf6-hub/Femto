@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-04T18:48:41.962922+00:00",
- "generated_at_et": "2026-10-04T14:48:41.962922-04:00",
+ "generated_at_utc": "2026-10-04T18:53:51.203744+00:00",
+ "generated_at_et": "2026-10-04T14:53:51.203744-04:00",
  "account": {
   "equity": "95715.48",
   "cash": "-17504.17",
@@ -470,30 +470,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-04T18:27:35.759201+00:00",
-     "event": "orphan_stop",
-     "symbol": "TEST",
-     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
-    },
-    {
-     "ts": "2026-10-04T18:27:35.759377+00:00",
-     "event": "orphan_stop",
-     "symbol": "TEST",
-     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
-    },
-    {
-     "ts": "2026-10-04T18:27:38.538030+00:00",
-     "event": "orphan_stop",
-     "symbol": "TEST",
-     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
-    },
-    {
-     "ts": "2026-10-04T18:27:38.538667+00:00",
-     "event": "orphan_stop",
-     "symbol": "TEST",
-     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
-    },
-    {
      "ts": "2026-10-04T18:27:47.167095+00:00",
      "event": "orphan_stop",
      "symbol": "TEST",
@@ -537,6 +513,30 @@
     },
     {
      "ts": "2026-10-04T18:29:01.946245+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-04T18:49:30.280391+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-04T18:49:30.282989+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-04T18:49:57.264303+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-04T18:49:57.264462+00:00",
      "event": "orphan_stop",
      "symbol": "TEST",
      "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
@@ -1628,8 +1628,100 @@
  },
  "sleeve_regime": {
   "current_regime": "UPTREND",
-  "stats": {},
+  "stats": {
+   "_watermarks": {}
+  },
   "best_in_regime": []
+ },
+ "market_context": {
+  "date": "2026-10-02",
+  "regime": "UPTREND",
+  "qqq_close": 742.02,
+  "qqq_sma50": 715.65,
+  "slope20_pct": 4.61,
+  "spy_agrees": false,
+  "sectors": {
+   "XLK": {
+    "ret20_pct": 7.77,
+    "tag": "TAILWIND"
+   },
+   "XLF": {
+    "ret20_pct": -7.24,
+    "tag": "HEADWIND"
+   },
+   "XLE": {
+    "ret20_pct": -3.67,
+    "tag": "NEUTRAL"
+   },
+   "XLV": {
+    "ret20_pct": -3.93,
+    "tag": "NEUTRAL"
+   },
+   "XLI": {
+    "ret20_pct": -2.38,
+    "tag": "TAILWIND"
+   },
+   "XLU": {
+    "ret20_pct": -6.99,
+    "tag": "HEADWIND"
+   },
+   "XLY": {
+    "ret20_pct": -5.27,
+    "tag": "NEUTRAL"
+   },
+   "XLP": {
+    "ret20_pct": -6.02,
+    "tag": "NEUTRAL"
+   },
+   "XLC": {
+    "ret20_pct": -2.18,
+    "tag": "TAILWIND"
+   },
+   "XLB": {
+    "ret20_pct": -8.35,
+    "tag": "HEADWIND"
+   },
+   "XLRE": {
+    "ret20_pct": -6.93,
+    "tag": "HEADWIND"
+   },
+   "SOXX": {
+    "ret20_pct": 14.93,
+    "tag": "TAILWIND"
+   },
+   "XRT": {
+    "ret20_pct": -4.4,
+    "tag": "NEUTRAL"
+   }
+  },
+  "event_risk": {
+   "is_event_risk": false,
+   "nearest": {
+    "name": "CPI release",
+    "date": "2026-10-14",
+    "days_away": 12
+   }
+  },
+  "news_active_symbols": 0
+ },
+ "spy_gamma": {
+  "date": "2026-10-04",
+  "stale": true,
+  "squeezemetrics": {
+   "gex_usd": 7693512554.45,
+   "dix": 0.4970775149296152,
+   "price": 7722.72
+  },
+  "unusual_whales": {
+   "spot": 762.63,
+   "gamma_flip": 757.42,
+   "net_gamma_oi": -15866000,
+   "net_gamma_volume": 705000,
+   "call_wall": 785,
+   "put_wall": 641,
+   "pct_gamma_0d": 51.3,
+   "regime": "positive-gamma (spot 762.63 above flip 757.42; narrow ledge, 51% of vol gamma 0d)"
+  }
  },
  "context": {
   "pv_shift": {
@@ -2011,8 +2103,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-04T14:48:41.962922-04:00",
-  "stamp": "Sunday, 2:48 PM ET",
+  "updated_et": "2026-10-04T14:53:51.203744-04:00",
+  "stamp": "Sunday, 2:53 PM ET",
   "headline": "Femto is carrying 5 positions, down $2,094 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -2029,7 +2121,7 @@
    },
    {
     "heading": "Phase",
-    "body": "NVDA \u2014 30 sh @ $231, now $234 \u00b7 $80. Stop $223 (live at broker). Last event 2:29 PM ET: orphan_stop TEST."
+    "body": "NVDA \u2014 30 sh @ $231, now $234 \u00b7 $80. Stop $223 (live at broker). Last event 2:49 PM ET: orphan_stop TEST."
    },
    {
     "heading": "Legend's EMA",
@@ -2526,6 +2618,12 @@
   },
   {
    "ts_utc": "2026-10-04T18:48:41.962922+00:00",
+   "equity": "95715.48",
+   "day_pl": -2093.6699999999983,
+   "day_pl_pct": -2.1405666034312723
+  },
+  {
+   "ts_utc": "2026-10-04T18:53:51.203744+00:00",
    "equity": "95715.48",
    "day_pl": -2093.6699999999983,
    "day_pl_pct": -2.1405666034312723
