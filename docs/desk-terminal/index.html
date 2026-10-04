@@ -227,8 +227,8 @@
 
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
-    <div class="phead"><span>SLV · THE STRATEGIES</span><span class="sub">5 PLAYBOOKS</span></div>
-    <div class="psub">Five different playbooks run this desk — each with its own inventor, each doing one job.</div>
+    <div class="phead"><span>SLV · THE STRATEGIES</span><span class="sub">22 STRATEGIES</span></div>
+    <div class="psub">Twenty-two strategies run this desk — each with its own edge, each doing one job.</div>
     <div class="strat-grid" id="strats"></div>
   </section>
 
@@ -289,6 +289,7 @@ function buildReadout(d){
     `BP&nbsp;<b>${money0(a.buying_power)}</b><span class="sep">│</span>`+
     `SLOTS&nbsp;<b>${d.position_count||0}/${d.max_positions||"—"}</b><span class="sep">│</span>`+
     `KILL-SWITCH&nbsp;<b class="${k.tripped?"down":"up"}">${k.tripped?"TRIPPED":"ARMED"}</b><span class="sep">│</span>`+
+    `EXPOSURE&nbsp;<b class="${(d.exposure||{}).gross_pct>150?"down":"up"}">${(d.exposure||{}).gross_pct!=null?(d.exposure.gross_pct+"% / 150%"):"—"}</b><span class="sep">│</span>`+
     `FEED&nbsp;<b>${etHM(d.generated_at_utc)} ET</b>&nbsp;<span class="cursor">▊</span>`;
 }
 function buildTape(d){
@@ -422,19 +423,70 @@ function renderPositions(d){
 const STRATS=[
  {key:"tensor", name:"Tensor",
   by:"Devised by Galath — his own pattern engine, refined over months of research",
-  desc:"Reads one-hour price charts across the market hunting for swing setups. Eleven technical factors vote on every signal; the desk only trades when confidence runs high. Byte-exact, hash-pinned — the code that scores a chart today is bit-for-bit the code that scored it in testing."},
+  desc:"Reads one-hour price charts across the market hunting for swing setups. Eleven technical factors vote on every signal; the desk only trades when confidence runs high. Byte-exact, hash-pinned."},
  {key:"phase", name:"Phase",
   by:"Devised by Milkman — adapted from his Daily Bilbo Boxes system",
-  desc:"Watches for stocks coiling into tight “compression boxes.” When a box forms, it parks a resting buy order at the top — and catches the breakout the instant price escapes. One trade per box, protected by the box low."},
+  desc:"Watches for stocks coiling into tight compression boxes. When a box forms, it parks a resting buy order at the top — and catches the breakout the instant price escapes."},
  {key:"legends_ema", name:"Legend's EMA",
   by:"Devised by Milkman — from his legends-ema playbook",
-  desc:"Rides the Nasdaq-100's trend with an exponential moving average. When the trend points up it gets in; when the day shows no trend, it sits out. Entries are verified before a single protective order goes live."},
+  desc:"Rides the Nasdaq-100 trend with an exponential moving average. When the trend points up it gets in; when the day shows no trend, it sits out."},
  {key:"morning_dip", name:"Morning Dip",
   by:"Devised by Milkman — from his Morning Dip Limit system",
-  desc:"Waits for the market's early-morning wobble. In a short window after the open, it buys the dip with a careful limit order — then it's done for the day."},
+  desc:"Waits for the market early-morning wobble. In a short window after the open, it buys the dip with a careful limit order — then done for the day."},
  {key:"bilbo_options", name:"Bilbo Box Options",
   by:"Devised by Milkman — his options sleeve: Bilbo Box breakout calls",
-  desc:"The options arm of the Bilbo Box system. When a compression box breaks out, it buys a call spread nearby — a small position with a big upside window, flattened before earnings and managed by strict exit rules."}
+  desc:"The options arm of the Bilbo Box system. When a compression box breaks out, it buys calls nearby — a small position with a big upside window."},
+ {key:"spx_premium", name:"SPX Premium",
+  by:"Devised by Milkman — SPX premium collection",
+  desc:"Sells weekly SPX put credit spreads, collecting premium from time decay. Defined risk, managed by strict exit rules."},
+ {key:"phoenix", name:"Phoenix Breakout",
+  by:"Desk research — breakout follow-up study",
+  desc:"Buys 20-day closing-high breakouts when the broad market is flat or weak. Enters on red days for a better price."},
+ {key:"momentum", name:"Liquid Momentum",
+  by:"Desk research — cross-sectional momentum study",
+  desc:"Ranks the liquid universe by 126-day momentum and holds the top tenth. Reviews positions every 63 sessions."},
+ {key:"confluence", name:"Winner Confluence",
+  by:"Desk research — winner confluence study",
+  desc:"Waits for multiple validated winner-patterns to fire on the same stock in the same week. Only trades when at least two agree."},
+ {key:"beatendown", name:"Beaten-Down",
+  by:"Desk research — beaten-down quality study",
+  desc:"Hunts quality stocks trading 20%+ below their 52-week high. Ranks candidates by a 9-rule confluence checklist."},
+ {key:"snapback", name:"Snapback",
+  by:"Desk research — small-cap snapback study",
+  desc:"Targets beaten-down microcaps with wide spreads. Holds for 13 weeks waiting for the snapback."},
+ {key:"blowoff_d", name:"Blowoff-D",
+  by:"Desk research — daily exhaustion study",
+  desc:"Fades daily blowoff tops (RSI/OBV exhaustion) when SPY is in a down-regime. Holds for 20 days."},
+ {key:"blowoff_1h", name:"Blowoff-1H",
+  by:"Desk research — hourly blowoff study",
+  desc:"Fades hourly blowoff moves on the 42-stock basket. Short 20-bar holds."},
+ {key:"leader_d", name:"Leader-D",
+  by:"Desk research — daily leader study",
+  desc:"Buys daily leadership signals (score 3+) when SPY is weak. Holds for 20 days."},
+ {key:"gate_1h", name:"Gate-1H",
+  by:"Desk research — gated continuation study",
+  desc:"After a daily gated event fires, rides the next 20 hourly bars for continuation."},
+ {key:"leader_sc", name:"Leader-SC",
+  by:"Desk research — small-cap leader study",
+  desc:"Applies the leader model to small-caps in the sub-M2 band. 20-day holds."},
+ {key:"daily_cyan_gbm", name:"Daily-Cyan-GBM",
+  by:"Devised by Galath — gradient-boosted cyan model (120 trees)",
+  desc:"Machine-learned model scoring daily cyan patterns. Enters at the next session close, holds for 21 sessions."},
+ {key:"rule_1w_cyan_mom_adx", name:"Rule-1W-Cyan-Mom-Adx",
+  by:"Desk research — rule-based weekly study",
+  desc:"Weekly cyan + strong 126-day momentum + high ADX trend strength. Holds for 126 days."},
+ {key:"rule_1d_cyan_smallcap", name:"Rule-1D-Cyan-Smallcap",
+  by:"Desk research — rule-based small-cap study",
+  desc:"Daily cyan on $5–$10 small-caps with directional-index confirmation. Holds for 21 days."},
+ {key:"rule_1d_green_tom", name:"Rule-1D-Green-Tom",
+  by:"Desk research — turn-of-month study",
+  desc:"Daily green + top-decile momentum + turn-of-month seasonality. Holds for 63 days."},
+ {key:"rule_1w_swing_beta_wt", name:"Rule-1W-Swing-Beta-Wt",
+  by:"Desk research — high-beta weekly study",
+  desc:"Weekly swing + high beta + strong WaveTrend momentum. Holds for 126 days."},
+ {key:"rule_1h_cyan_raw", name:"Rule-1H-Cyan-Raw",
+  by:"Desk research — raw hourly cyan study",
+  desc:"Hourly cyan with range expansion and WaveTrend confirmation. Short 7-bar holds."},
 ];
 function stratStatus(key,s,d){
   const t=s.tensor||{}, ph=s.phase||{}, le=s.legends_ema||{}, md=s.morning_dip||{};
