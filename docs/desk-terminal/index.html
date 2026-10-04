@@ -241,6 +241,27 @@
 
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>MKT · MARKET CONTEXT</span><span class="sub" id="mkt-regime">—</span></div>
+    <div class="psub">Trend regime, sector rotation, macro event risk, news flow.</div>
+    <div id="mktctx"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>GAM · SPY GAMMA</span><span class="sub" id="gam-date">—</span></div>
+    <div class="psub">SqueezeMetrics + Unusual Whales gamma positioning.</div>
+    <div id="gamma"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>EARN · EARNINGS CALENDAR</span><span class="sub" id="earn-count">—</span></div>
+    <div class="psub">Upcoming earnings with blackout flags (T−3d → event).</div>
+    <div id="earnings"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
     <div class="phead"><span>RSK · RISK</span><span class="sub">GUARDRAILS</span></div>
     <div class="riskrow" id="risk"></div>
   </section>
@@ -574,6 +595,74 @@ function renderRegime(d){
   el.innerHTML = `<table><thead><tr><th>Sleeve</th><th>Uptrend</th><th>Downtrend</th><th>Chop</th></tr></thead><tbody>${rows}</tbody></table>${bestLine}`;
 }
 
+function renderMktCtx(d){
+  const mc = d.market_context || {};
+  $("mkt-regime").textContent = mc.regime || "—";
+  const el = $("mktctx");
+  if(!mc.date){
+    el.innerHTML = `<div class="empty">No market context snapshot yet.</div>`;
+    return;
+  }
+  const trend = mc.regime || "UNKNOWN";
+  const tcls = trend==="UPTREND" ? "up" : trend==="DOWNTREND" ? "down" : "neu";
+  let h = `<div class="kv"><span class="k">Trend</span><span class="${tcls}"><b>${esc(trend)}</b></span></div>`;
+  if(mc.qqq_close) h += `<div class="kv"><span class="k">QQQ</span><span class="mono">$${mc.qqq_close} / SMA50 $${mc.qqq_sma50||"—"} (${mc.slope20_pct!=null?mc.slope20_pct+"% 20d":"—"})</span></div>`;
+  h += `<div class="kv"><span class="k">SPY agrees</span><span>${mc.spy_agrees?'<span class="up">yes</span>':'<span class="warn">no</span>'}</span></div>`;
+  const secs = mc.sectors || {};
+  const tails = [], heads = [];
+  for(const [etf, s] of Object.entries(secs)){
+    if(s.tag==="TAILWIND") tails.push(`${etf} ${s.ret20_pct}%`);
+    else if(s.tag==="HEADWIND") heads.push(`${etf} ${s.ret20_pct}%`);
+  }
+  if(tails.length) h += `<div class="kv"><span class="k">Tailwinds</span><span class="up">${esc(tails.join(" · "))}</span></div>`;
+  if(heads.length) h += `<div class="kv"><span class="k">Headwinds</span><span class="down">${esc(heads.join(" · "))}</span></div>`;
+  const er = mc.event_risk || {};
+  if(er.nearest) h += `<div class="kv"><span class="k">Next event</span><span>${esc(er.nearest.name)} ${esc(er.nearest.date)} (${er.nearest.days_away}d)</span></div>`;
+  h += `<div class="kv"><span class="k">Event risk</span><span>${er.is_event_risk?'<span class="down"><b>HALT</b></span>':'<span class="up">none</span>'}</span></div>`;
+  if(mc.news_active_symbols) h += `<div class="kv"><span class="k">Active news</span><span class="mono">${mc.news_active_symbols} symbols</span></div>`;
+  el.innerHTML = h;
+}
+
+function renderGamma(d){
+  const g = d.spy_gamma || {};
+  $("gam-date").textContent = g.date || "—";
+  const el = $("gamma");
+  if(!g.date){
+    el.innerHTML = `<div class="empty">No gamma snapshot yet.</div>`;
+    return;
+  }
+  const uw = g.unusual_whales || {}, sq = g.squeezemetrics || {};
+  let h = "";
+  if(uw.regime) h += `<div class="kv"><span class="k">Regime</span><span>${esc(uw.regime)}</span></div>`;
+  if(uw.spot) h += `<div class="kv"><span class="k">SPY spot / flip</span><span class="mono">${uw.spot} / ${uw.gamma_flip||"—"}</span></div>`;
+  if(uw.net_gamma_volume!=null){
+    const cls = uw.net_gamma_volume>0 ? "up" : "down";
+    h += `<div class="kv"><span class="k">Net gamma (vol)</span><span class="${cls} mono">${uw.net_gamma_volume>0?"+":""}${uw.net_gamma_volume.toLocaleString()}</span></div>`;
+  }
+  if(uw.net_gamma_oi!=null){
+    const cls = uw.net_gamma_oi>0 ? "up" : "down";
+    h += `<div class="kv"><span class="k">Net gamma (OI)</span><span class="${cls} mono">${uw.net_gamma_oi>0?"+":""}${uw.net_gamma_oi.toLocaleString()}</span></div>`;
+  }
+  if(uw.call_wall) h += `<div class="kv"><span class="k">Call wall / put wall</span><span class="mono">${uw.call_wall} / ${uw.put_wall||"—"}</span></div>`;
+  if(uw.pct_gamma_0d!=null) h += `<div class="kv"><span class="k">0D gamma</span><span class="mono">${uw.pct_gamma_0d}%</span></div>`;
+  if(sq.gex_usd) h += `<div class="kv"><span class="k">SPX GEX (SQM)</span><span class="mono">$${(sq.gex_usd/1e9).toFixed(1)}B</span></div>`;
+  if(g.stale) h += `<div class="note">carried forward — weekend, no fresh read</div>`;
+  el.innerHTML = h || `<div class="empty">No gamma data.</div>`;
+}
+
+function renderEarnings(d){
+  const er = d.earnings_upcoming_7d || [];
+  $("earn-count").textContent = er.length ? er.length + " upcoming" : "none";
+  const el = $("earnings");
+  if(!er.length){
+    el.innerHTML = `<div class="empty">No earnings in the next 7 days.</div>`;
+    return;
+  }
+  el.innerHTML = `<table><thead><tr><th>Symbol</th><th>Date</th><th>In</th><th>Blackout</th></tr></thead><tbody>` +
+    er.map(e=>`<tr><td><b>${esc(e.symbol)}</b></td><td class="mono">${esc(e.date)}</td><td class="mono">${e.in_days}d</td><td>${e.blackout?'<span class="down"><b>YES</b></span>':'<span class="neu">no</span>'}</td></tr>`).join("") +
+    `</tbody></table>`;
+}
+
 function renderRisk(d){
   const k=d.kill_switch||{}, earn=d.earnings_upcoming_7d||[];
   const seg=s=>String(s).split("").map(ch=>`<span class="seg">${esc(ch)}</span>`).join("");
@@ -589,7 +678,7 @@ function renderRisk(d){
 function render(d){
   lastGood=d; lastGen=d.generated_at_utc;
   renderHero(d.desk_narrative); renderEquity(d); renderPositions(d);
-  renderStrats(d); renderRegime(d); renderRisk(d); buildReadout(d); buildTape(d);
+  renderStrats(d); renderRegime(d); renderMktCtx(d); renderGamma(d); renderEarnings(d); renderRisk(d); buildReadout(d); buildTape(d);
   $("feedstamp").textContent = "feed: " + (d.generated_at_et? etHM(d.generated_at_et)+" ET":"—");
   $("livetext").textContent = "LIVE · " + etHM(d.generated_at_utc) + " ET";
   $("livedot").classList.remove("stale");
