@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Live paper-trading terminal for the Femto desk — 22 strategies, real signals, simulated money.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
 <title>Femto — Live Desk Terminal</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -173,6 +175,10 @@
     .riskcell{border-right:none; border-bottom:1px solid var(--line);}
     .readout{font-size:11px;}
   }
+  table{width:100%; border-collapse:collapse;}
+  th, td{padding:8px 10px; text-align:left; border-bottom:1px solid var(--line); font-size:12.5px;}
+  th{color:var(--muted); font-weight:700; letter-spacing:.08em; font-size:11px;}
+  .tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch;}
   @media(max-width:560px){
     .hsec{flex-direction:column; gap:4px;}
     .hsec .hk{flex:none; padding-top:0;}
@@ -234,16 +240,16 @@
 
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
-    <div class="phead"><span>REG · REGIME SCORECARD</span><span class="sub" id="reg-cur">—</span></div>
-    <div class="psub">Which strategies thrive in which market weather. Closed-trade record by sleeve and regime.</div>
-    <div id="regime"></div>
+    <div class="phead"><span>MKT · MARKET CONTEXT</span><span class="sub" id="mkt-regime">—</span></div>
+    <div class="psub">Trend regime, sector rotation, macro event risk, news flow.</div>
+    <div id="mktctx"></div>
   </section>
 
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
-    <div class="phead"><span>MKT · MARKET CONTEXT</span><span class="sub" id="mkt-regime">—</span></div>
-    <div class="psub">Trend regime, sector rotation, macro event risk, news flow.</div>
-    <div id="mktctx"></div>
+    <div class="phead"><span>REG · REGIME SCORECARD</span><span class="sub" id="reg-cur">—</span></div>
+    <div class="psub">Which strategies thrive in which market weather. Closed-trade record by sleeve and regime.</div>
+    <div id="regime"></div>
   </section>
 
   <section class="panel">
@@ -592,7 +598,7 @@ function renderRegime(d){
   const bestLine = best.length
     ? `<div class="psub" style="margin-top:8px">Best in ${esc(cur)}: ${best.map(b=>`<b>${esc(b[0])}</b> avg $${b[1]} (n=${b[2]})`).join(" · ")}</div>`
     : "";
-  el.innerHTML = `<table><thead><tr><th>Sleeve</th><th>Uptrend</th><th>Downtrend</th><th>Chop</th></tr></thead><tbody>${rows}</tbody></table>${bestLine}`;
+  el.innerHTML = `<div class="tbl-wrap"><table><thead><tr><th>Sleeve</th><th>Uptrend</th><th>Downtrend</th><th>Chop</th></tr></thead><tbody>${rows}</tbody></table></div>${bestLine}`;
 }
 
 function renderMktCtx(d){
@@ -658,9 +664,9 @@ function renderEarnings(d){
     el.innerHTML = `<div class="empty">No earnings in the next 7 days.</div>`;
     return;
   }
-  el.innerHTML = `<table><thead><tr><th>Symbol</th><th>Date</th><th>In</th><th>Blackout</th></tr></thead><tbody>` +
+  el.innerHTML = `<div class="tbl-wrap"><table><thead><tr><th>Symbol</th><th>Date</th><th>In</th><th>Blackout</th></tr></thead><tbody>` +
     er.map(e=>`<tr><td><b>${esc(e.symbol)}</b></td><td class="mono">${esc(e.date)}</td><td class="mono">${e.in_days}d</td><td>${e.blackout?'<span class="down"><b>YES</b></span>':'<span class="neu">no</span>'}</td></tr>`).join("") +
-    `</tbody></table>`;
+    `</tbody></table></div>`;
 }
 
 function renderRisk(d){
