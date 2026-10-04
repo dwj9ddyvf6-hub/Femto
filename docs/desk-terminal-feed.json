@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-03T02:09:17.068488+00:00",
- "generated_at_et": "2026-10-02T22:09:17.068488-04:00",
+ "generated_at_utc": "2026-10-04T18:33:37.260032+00:00",
+ "generated_at_et": "2026-10-04T14:33:37.260032-04:00",
  "account": {
-  "equity": "95721.64",
-  "cash": "-17498.01",
-  "buying_power": "233512.98",
+  "equity": "95715.48",
+  "cash": "-17504.17",
+  "buying_power": "233488.34",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -116,21 +116,13 @@
   "semis": 2,
   "unknown": 3
  },
- "day_pl": -2087.5099999999948,
- "day_pl_pct": -2.134268624152234,
+ "day_pl": -2093.6699999999983,
+ "day_pl_pct": -2.1405666034312723,
  "journal_today": {
-  "scans": 13,
-  "trades": 4
+  "scans": 0,
+  "trades": 0
  },
- "fresh_signals": [
-  "ASPI WATCH conf=7 RECLAIM",
-  "IREN WATCH conf=7 RECLAIM",
-  "ARQQ WATCH conf=7 TRANSITION",
-  "FCEL WATCH conf=8 TRANSITION",
-  "CORZ WATCH conf=7 RECLAIM",
-  "ARM WATCH conf=7 TRANSITION",
-  "CVNA WATCH conf=7 RECLAIM"
- ],
+ "fresh_signals": [],
  "ledger_tail": [
   {
    "ts": "2026-10-02T19:38:51Z",
@@ -313,8 +305,8 @@
   }
  },
  "latest_review": {
-  "file": "2026-10-02.md",
-  "excerpt": "# Desk review \u2014 2026-10-02\n\nOutcome updater: 38 updated, 1 closed, 0 errors\n\n## Market context\n\n- Index trend: UPTREND -- QQQ $742.02 vs 50-day avg $715.65, 20-day slope +4.61% (SPY disagrees).\n- Sector rotation: leaders SOXX (+14.9% 20D), XLK (+7.8% 20D) (tailwind); laggards XLB (-8.3% 20D), XLF (-7.2% 20D) (headwind).\n- Event risk: none today (next: CPI release 2026-10-14 in 12 days).\n- News flow: quiet across the basket (72h heuristic scan).\n\n## Performance (closed signal outcomes)\n\nClosed outcomes: 1 | Open (awaiting forward bars): 37\n\n### By phenotype\n- RECLAIM: n=1, hit_rate_20=100.0%, avg_ret_20=+13.35%, avg_max_adv=-5.34%, target_first=0.0%\n\n### By confidence\n- 6-7: n=1, hit_rate_20=100.0%, avg_ret_20=+13.35%, avg_max_adv=-5.34%, target_first=0.0%\n\n### By symbol\n- AAOI: n=1, hit_rate_20=100.0%, avg_ret_20=+13.35%, avg_max_adv=-5.34%, target_first=0.0%\n\n## Scorecard (desk-level, risk-adjusted)\n\n- Period return: -3.82% (early data \u2014 n=5 daily points; treat as indicative, not verdict)\n- Sharpe (ann.): -12.03 | Sortino (ann.): -9.30\n- Max drawdown (window): 3.8%\n- SPY buy-and-hold (same window): +0.54% | desk excess: -4.37%\n- Per-sleeve realized P&L: n/a \u2014 ledgers do not yet record per-trade P&L (calibration queue: excursion/P&L fields). Sleeve activity counts are in the section above.\n- Risk-gate BLOCKs today: none\n\n## Notable scans and decisions (last 7 days)\n\nScans: 89 | Tensor trades planned: 8 | Watches: 108\n\n- 2026-09-30 12:08:56 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 12:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:09:01 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:38:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 13:39:15 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:09:03 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 14:38:49 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]\n- 2026-09-30 15:08:50 ET ANF    WATCH              conf=6 phen=RECLAIM \u2014 moderate confidence 6 (6-7): monitoring, no order [1D=-- 1W=--]"
+  "file": "weekly-2026-10-02.md",
+  "excerpt": "# Weekly desk review \u2014 week ending Friday 2026-10-02\n\nThe desk's first full trading week (Mon 2026-09-28 \u2192 Fri 2026-10-02, 5 market days).\nPaper desk only; no orders placed by this review. Source of truth: Alpaca paper\nbroker fills (`GET /v2/orders?status=closed`, 78 terminal orders, FIFO-matched per\nsymbol, options \u00d7100 multiplier). Every number below comes from broker fills or\nmarket-data bars. Evidence scripts and raw data live in\n`desk/reviews/_scratch-weekly-2026-10-02/`.\n\n## 1. Market context (desk/context/2026-10-02.json)\n\n- Index trend: **UPTREND** \u2014 QQQ $742.02 vs 50-day avg $715.65, 20-day slope +4.61% (SPY disagrees).\n- Sector rotation: tailwind SOXX (+14.9% 20D), XLK (+7.8% 20D), industrials; headwind XLB (-8.3% 20D), XLF (-7.2% 20D), XLRE.\n- Event risk: none this week (next: CPI 2026-10-14). News flow: quiet across the basket \u2014 but the news fetch FAILED in the 10-02 context build, so that day's sentiment input is missing; treat 10-02 context as price/sector-only.\n\n## 2. Week P&L by sleeve\n\n| Sleeve | Closed n | Realized | Open MTM (EOW) | Open symbols |\n|---|---|---|---|---|\n| tensor | 4 | **-$2,114.07** | +$313.20 | NVDA 30 sh (+$80.40), LASR 1884 sh (+$489.84), TTMI 189 sh (-$257.04) |\n| bilbo_options | 2 | **-$1,730.00** | -$1,345.00 | PLTR Oct-23 $195 call \u00d75 (-$1,025), TSLA Oct-23 $380 call \u00d72 (-$320) |\n| phase | 1 | **-$222.36** | \u2014 | LLY K5 box trade, closed 10-01 (broker FIFO has it under client IDs `phsk5-LLY`; sleeve ledger classed it phoenix \u2014 reconciliation note below) |\n| morning_dip | 7 | **+$844.26** (6W/1L) | \u2014 | sleeve PAUSED 2026-10-02 (Decision #27) |\n| phoenix | 0 | $0 | \u2014 | no entries (all armed windows skipped, no red days) |\n| legends_ema | 0 | \u2014 | \u2014 | setup trend 0.06\u20130.44 all week, armed=false |\n| spx_premium | 0 | \u2014 | \u2014 | experimental; 11 dry-run rows, 1 `market_closed` veto |\n| momentum | 0 | \u2014 | \u2014 | no fills |\n| confluence | 0 | \u2014 | \u2014 | 0 selected; one refused_live guard event (see \u00a79) |\n| diagnostic (no sleeve) | 1 | -$0.01 | \u2014 | F 1-share market connectivity test |\n| **Desk total** | **15** | **-$3,222.18** | **-$1,031.80** | |\n\nCORRECTION vs coordinator scratch: the LLY K5 box breakout (-$222.36) is a **phase**\ntrade (postmortems.md entry 2026-10-01; phase nowcast pipeline), not phoenix.\nAttribution corrected here; sleeve ledgers still disagree \u2014 see \u00a79.\n\n## 3. Closed-trade table with grades\n\nGrade key: GOOD = profitable + process; BAD = unprofitable (or profitable by\nluck \u2014 stated); NEUTRAL = flat/small, or process-following stopped by normal\nvariance. Bar evidence cross-checked on ALAB, VELO, FCEL (1H bars); remaining\ntape evidence from the nightly strategist's tape-evidenced postmortem entries\n(10-01/10-02) + broker fills.\n\n| # | Date | Sleeve | Symbol | Dir | Qty | Entry \u2192 Exit | P&L | Grade | Why |\n|---|---|---|---|---|---|---|---|---|---|"
  },
  "engine": {
   "version": "v625",
@@ -326,7 +318,7 @@
   {
    "symbol": "AEHR",
    "date": "2026-10-05",
-   "in_days": 3,
+   "in_days": 1,
    "blackout": true
   }
  ],
@@ -478,76 +470,76 @@
    },
    "recent": [
     {
-     "ts": "2026-10-02T12:46:22.929024+00:00",
-     "event": "k5_dead",
-     "symbol": "V",
-     "reason": "boxlow_touch"
+     "ts": "2026-10-04T18:27:35.759201+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:24.456058+00:00",
-     "event": "k5_dead",
-     "symbol": "WMT",
-     "reason": "boxlow_touch"
+     "ts": "2026-10-04T18:27:35.759377+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:25.121092+00:00",
-     "event": "k5_dead",
-     "symbol": "AMD",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:27:38.538030+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:25.919443+00:00",
-     "event": "k5_dead",
-     "symbol": "CAT",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:27:38.538667+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:26.611381+00:00",
-     "event": "k5_dead",
-     "symbol": "DIS",
-     "reason": "boxlow_touch"
+     "ts": "2026-10-04T18:27:47.167095+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:27.288768+00:00",
-     "event": "k5_dead",
-     "symbol": "MRVL",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:27:47.168102+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:28.032307+00:00",
-     "event": "k5_dead",
-     "symbol": "STX",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:28:17.511978+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:28.769988+00:00",
-     "event": "k5_dead",
-     "symbol": "SNDK",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:28:17.515389+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:29.382673+00:00",
-     "event": "k5_dead",
-     "symbol": "OUST",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:28:45.021146+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:31.390351+00:00",
-     "event": "k5_dead",
-     "symbol": "FFIV",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:28:45.021313+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:32.102207+00:00",
-     "event": "k5_dead",
-     "symbol": "TSEM",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:29:01.946075+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     },
     {
-     "ts": "2026-10-02T12:46:32.913830+00:00",
-     "event": "k5_dead",
-     "symbol": "CLS",
-     "reason": "boxhi_breach"
+     "ts": "2026-10-04T18:29:01.946245+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     }
    ]
   },
@@ -687,16 +679,8 @@
     }
    ],
    "last_entry_scan": "2026-10-02T19:23:22.794175+00:00",
-   "last_exit_scan": "2026-10-02T20:05:18.101694+00:00",
+   "last_exit_scan": "2026-10-04T04:38:41.777720+00:00",
    "recent": [
-    {
-     "ts": "2026-10-02T19:40:18.684288+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-02T19:40:21.067627+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-02T19:45:09.736707+00:00",
      "event": "scan_start"
@@ -736,6 +720,14 @@
     {
      "ts": "2026-10-02T20:05:18.122453+00:00",
      "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-04T04:38:40.394956+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-04T04:38:41.812939+00:00",
+     "event": "scan_done"
     }
    ]
   },
@@ -754,51 +746,71 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-02T04:00:19.551263+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-04T18:11:10.076394+00:00",
+     "event": "settle_scan",
+     "note": "nothing due for settlement"
     },
     {
-     "ts": "2026-10-02T04:00:30.337403+00:00",
+     "ts": "2026-10-04T18:11:10.077570+00:00",
+     "event": "settled",
+     "pnl_usd": 293.0
+    },
+    {
+     "ts": "2026-10-04T18:11:10.080619+00:00",
+     "event": "settled",
+     "pnl_usd": -3697.0
+    },
+    {
+     "ts": "2026-10-04T18:11:19.454305+00:00",
+     "event": "settled",
+     "pnl_usd": -4697.0
+    },
+    {
+     "ts": "2026-10-04T18:11:32.067302+00:00",
      "event": "entry_skipped",
-     "reason": "market_closed"
+     "reason": "not_first_trading_day"
     },
     {
-     "ts": "2026-10-02T04:00:30.339740+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-05T14:30:00+00:00",
+     "event": "entry_skipped",
+     "reason": "insufficient_history"
     },
     {
-     "ts": "2026-10-02T04:00:32.670193+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-05T14:30:00+00:00",
+     "event": "entry_skipped",
+     "reason": "contracts_unavailable"
     },
     {
-     "ts": "2026-10-02T04:00:32.672766+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-05T14:30:00+00:00",
+     "event": "entry_skipped",
+     "short_occ": "SPXW261009P06385000",
+     "long_occ": "SPXW261009P06335000",
+     "reason": "no_positive_credit"
     },
     {
-     "ts": "2026-10-02T04:00:34.167054+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-05T14:30:00+00:00",
+     "event": "entry_leg_mismatch_flat",
+     "short_occ": "SPXW261009P06385000",
+     "long_occ": "SPXW261009P06335000"
     },
     {
-     "ts": "2026-10-02T04:00:34.175802+00:00",
-     "event": "settle_scan",
-     "note": "nothing due for settlement"
+     "ts": "2026-10-05T14:30:00+00:00",
+     "event": "entry_leg_mismatch_flat_failed",
+     "short_occ": "SPXW261009P06385000",
+     "long_occ": "SPXW261009P06335000",
+     "note": "a leg may STILL BE LIVE \u2014 the ledger must not claim flat; MANUAL REVIEW required before next entry"
     },
     {
-     "ts": "2026-10-02T04:00:34.187669+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-05T14:30:00+00:00",
+     "event": "entry_leg_mismatch_flat",
+     "short_occ": "SPXW261009P06385000",
+     "long_occ": "SPXW261009P06335000"
     },
     {
-     "ts": "2026-10-02T19:57:05.972712+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-02T19:57:05.972985+00:00",
-     "event": "settle_scan",
-     "note": "nothing due for settlement"
-    },
-    {
-     "ts": "2026-10-02T19:57:05.973062+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-05T14:30:00+00:00",
+     "event": "entry_filled",
+     "short_occ": "SPXW261009P06385000",
+     "long_occ": "SPXW261009P06335000"
     }
    ]
   },
@@ -834,18 +846,6 @@
    ],
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-02T19:55:11.196222+00:00",
-     "event": "entry_skipped_no_red_day",
-     "symbol": "TTMI",
-     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
-    },
-    {
-     "ts": "2026-10-02T19:55:11.196605+00:00",
-     "event": "entry_skipped_no_red_day",
-     "symbol": "TTMI",
-     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
-    },
     {
      "ts": "2026-10-02T19:55:11.216227+00:00",
      "event": "entry_skipped_no_red_day",
@@ -905,6 +905,18 @@
      "event": "symbol_untradeable",
      "symbol": "FCEL",
      "note": "universe is frozen; no substitution"
+    },
+    {
+     "ts": "2026-10-04T18:09:06.459771+00:00",
+     "event": "pending_entry_orphaned",
+     "symbol": "AAPL",
+     "note": "submit-intent persisted but the order never reached the broker (crash window); clearing so the symbol is not blocked forever"
+    },
+    {
+     "ts": "2026-10-04T18:09:06.459970+00:00",
+     "event": "exit_submitted_orphaned",
+     "symbol": "MU",
+     "note": "exit submit-intent persisted but the order never reached the broker (crash window); resetting so the exit is retried"
     }
    ]
   },
@@ -980,6 +992,600 @@
      "note": "ALPACA_ENV=live refused"
     }
    ]
+  },
+  "beatendown": {
+   "name": "Beaten-Down",
+   "strategy": "beaten-down M2 qualifiers (20%+ off 52wk high), ranked by 9-rule confluence count, 13-week time exits",
+   "credit": "beaten-down enrichment study, sealed 2023+ holdout (lift 1.86x, p=1.05e-13)",
+   "paper_only": true,
+   "automation": "Friday rank 16:20 ET + Monday fill window 10:20 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "last_rank_monday": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-03T10:01:56.267338-04:00",
+     "event": "beatendown_rank",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "snapback": {
+   "name": "Snapback",
+   "strategy": "T10 small-cap: wide-spread beaten-down microcaps, relative band, 13-week holds",
+   "credit": "T10 Phase 2 holdout (lift 1.76x, p=3.2e-05, 150bp)",
+   "paper_only": true,
+   "automation": "Friday rank 16:35 ET + Monday fill 10:35 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-03T19:26:56.548424-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:27:02.203930-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:27:41.000243-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:27:48.677127-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:29:33.731326-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:29:40.686530-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:29:43.703888-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:29:50.375528-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "blowoff_d": {
+   "name": "Blowoff-D",
+   "strategy": "R4 daily blowoff (RSI/OBV exhaustion) in SPY down-regime, 20-day holds",
+   "credit": "R4 down-regime leg (t=+5.97, regime-matched)",
+   "paper_only": true,
+   "automation": "Daily rank 16:30 ET + next-day fill 10:30 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-03T19:30:07.601724-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:30:08.800673-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:30:22.110573-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:30:23.510635-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:30:49.589902-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:30:50.803958-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:30:59.493830-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:31:00.721549-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:31:46.598265-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:32:03.639962-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:50:01.351441-04:00",
+     "event": "fill_skip",
+     "symbol": "ALL",
+     "note": "weekend"
+    },
+    {
+     "ts": "2026-10-04T14:00:24.073495-04:00",
+     "event": "fill_skip",
+     "symbol": "ALL",
+     "note": "weekend"
+    }
+   ]
+  },
+  "blowoff_1h": {
+   "name": "Blowoff-1H",
+   "strategy": "R4 1H blowoff transfer on the 42-basket, 20-bar holds",
+   "credit": "R4 1H transfer (t=+4.03)",
+   "paper_only": true,
+   "automation": "Intraday scan :10/:40 + fill :25/:55, 10:00-15:30 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-03T19:33:19.345651-04:00",
+     "event": "scan_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:33:24.611674-04:00",
+     "event": "scan_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:33:58.284230-04:00",
+     "event": "scan_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:34:04.736581-04:00",
+     "event": "scan_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "leader_d": {
+   "name": "Leader-D",
+   "strategy": "R6 leader-1d (score>=3+gate) in SPY down-regime, 20-day holds",
+   "credit": "R6 down-regime (t=2.13, +3.80% vs +2.98%)",
+   "paper_only": true,
+   "automation": "Daily rank 16:30 ET + next-day fill 10:30 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-03T19:34:29.263213-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:34:33.403818-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:34:42.316541-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:39:23.501197-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "gate_1h": {
+   "name": "Gate-1H",
+   "strategy": "R7 gated continuation: daily gated event -> 20 1H bars",
+   "credit": "R7 1H leg (t=+4.94, +4.36% vs +0.68%)",
+   "paper_only": true,
+   "automation": "Intraday scan :15/:45 + fill :30/:00, 10:00-15:30 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-03T19:36:52.535070-04:00",
+     "event": "scan_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:37:07.206064-04:00",
+     "event": "scan_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "leader_sc": {
+   "name": "Leader-SC",
+   "strategy": "T9 leader-1d on the point-in-time sub-M2 band, 20-day holds",
+   "credit": "T9 small-cap (t=2.07, +9.45% vs +4.22%, 150bp)",
+   "paper_only": true,
+   "automation": "Daily rank 16:30 ET + next-day fill 10:30 ET",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-03T19:39:33.921631-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-03T19:40:16.220643-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "daily_cyan_gbm": {
+   "name": "Daily-Cyan-GBM",
+   "strategy": "GBM on 1D cyan fires (120 trees, score>=90th pct), 21-day holds",
+   "credit": "V4-GBM-1D-CYAN-ALL (Sharpe 1.10, deflated 0.95)",
+   "paper_only": true,
+   "automation": "Daily rank 16:30 ET + next-day MOC fill (10:30 ET submit, close auction)",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-04T13:10:26.722561-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols"
+    },
+    {
+     "ts": "2026-10-04T13:10:26.866849-04:00",
+     "event": "scorer_failed",
+     "symbol": "ALL",
+     "note": "{\"ok\":false,\"error\":\"SyntaxError: Unexpected token 'N', ...\\\"readth\\\": [NaN, NaN, \\\"... is not valid JSON\\n    at JSON.parse (<anonymous>)\\n    at main (file:///home/hatch/workspace/alpaca-swing-desk/"
+    },
+    {
+     "ts": "2026-10-04T13:10:37.859485-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:10:40.053319-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols"
+    },
+    {
+     "ts": "2026-10-04T13:10:40.193021-04:00",
+     "event": "scorer_failed",
+     "symbol": "ALL",
+     "note": "{\"ok\":false,\"error\":\"SyntaxError: Unexpected token 'N', ...\\\"readth\\\": [NaN, NaN, \\\"... is not valid JSON\\n    at JSON.parse (<anonymous>)\\n    at main (file:///home/hatch/workspace/alpaca-swing-desk/dcg_scorer/dcg_score.mjs:399:22)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\"}\n | "
+    },
+    {
+     "ts": "2026-10-04T13:10:43.370675-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:10:45.298660-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols"
+    },
+    {
+     "ts": "2026-10-04T13:11:12.506409-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:11:20.077302-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:11:22.112978-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols"
+    },
+    {
+     "ts": "2026-10-04T13:11:48.794482-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:12:40.189358-04:00",
+     "event": "fill_skip",
+     "symbol": "ALL",
+     "note": "weekend"
+    }
+   ]
+  },
+  "rule_1w_cyan_mom_adx": {
+   "name": "Rule-1W-Cyan-Mom-Adx",
+   "strategy": "1W cyan + thin dv20 + strong 126d return + high ADX, 126-day holds",
+   "credit": "V2-1W-CYAN-RAW-H126-f10092bc (tier A)",
+   "paper_only": true,
+   "automation": "Daily rank 16:30 ET + next-day MOC fill (10:30 ET submit, close auction)",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-04T13:21:53.977639-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:21:56.324570-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1W, signal=cyan"
+    },
+    {
+     "ts": "2026-10-04T13:22:38.542945-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "rule_1d_cyan_smallcap": {
+   "name": "Rule-1D-Cyan-Smallcap",
+   "strategy": "1D cyan + $5-10 + DI spread band, 21-day holds (mcap filter omitted)",
+   "credit": "V4-1D-CYAN-RAW-H21-COV-bb707043 (tier A)",
+   "paper_only": true,
+   "automation": "Daily rank 16:30 ET + next-day MOC fill (10:30 ET submit, close auction)",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-04T13:22:45.835593-04:00",
+     "event": "rank_start",
+     "symbol": "ALL",
+     "note": "mcap filter omitted (no shares data); see SPEC"
+    },
+    {
+     "ts": "2026-10-04T13:22:47.968592-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1D, signal=cyan"
+    },
+    {
+     "ts": "2026-10-04T13:23:16.851067-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:40:01.783503-04:00",
+     "event": "rank_start",
+     "symbol": "ALL",
+     "note": "mcap via EDGAR public float (desk/mcap_edgar.py), fail-closed"
+    },
+    {
+     "ts": "2026-10-04T13:40:03.929622-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1D, signal=cyan"
+    },
+    {
+     "ts": "2026-10-04T13:40:34.050816-04:00",
+     "event": "mcap_check",
+     "symbol": "LWLG"
+    },
+    {
+     "ts": "2026-10-04T13:40:34.076697-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "rule_1d_green_tom": {
+   "name": "Rule-1D-Green-Tom",
+   "strategy": "1D green + top-decile 12-1 mom + dispersion band + turn-of-month, 63-day holds",
+   "credit": "V4-1D-GREEN-RAW-H63-ALL-c10e07a0 (tier A)",
+   "paper_only": true,
+   "automation": "Daily rank 16:30 ET + next-day MOC fill (10:30 ET submit, close auction)",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-04T13:23:22.262730-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:23:24.389202-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1D, signal=green"
+    },
+    {
+     "ts": "2026-10-04T13:23:50.980897-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "rule_1w_swing_beta_wt": {
+   "name": "Rule-1W-Swing-Beta-Wt",
+   "strategy": "1W swing + high beta + high WaveTrend + rising ribbon, 126-day holds",
+   "credit": "V2-1W-SWING-RAW-H126-727ea853 (tier A)",
+   "paper_only": true,
+   "automation": "Daily rank 16:30 ET + next-day MOC fill (10:30 ET submit, close auction)",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-04T13:23:52.670952-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:23:54.905171-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1W, signal=swing"
+    },
+    {
+     "ts": "2026-10-04T13:24:24.326710-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    }
+   ]
+  },
+  "rule_1h_cyan_raw": {
+   "name": "Rule-1H-Cyan-Raw",
+   "strategy": "1H cyan + range/ATR>=2.05 + WT spread>=6.88 + SMH weekly uptrend, 7-bar holds",
+   "credit": "V3-1H-CYAN-RAW-H7 (Cursor GBM track)",
+   "paper_only": true,
+   "automation": "Intraday scan hourly + fill hourly",
+   "state_known": false,
+   "open_positions": 0,
+   "positions": [],
+   "pending": {
+    "buys": [],
+    "sells": []
+   },
+   "last_rank_date": null,
+   "stats": {},
+   "recent": [
+    {
+     "ts": "2026-10-04T13:25:32.851013-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T13:25:33.809641-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "41 symbols"
+    },
+    {
+     "ts": "2026-10-04T13:25:37.243222-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T14:26:19.218170-04:00",
+     "event": "fill_skip",
+     "symbol": "ALL",
+     "note": "weekend"
+    },
+    {
+     "ts": "2026-10-04T14:26:19.851107-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-04T14:27:05.300893-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "41 symbols"
+    },
+    {
+     "ts": "2026-10-04T14:27:07.752052-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
+    }
+   ]
   }
  },
  "desk": {
@@ -994,392 +1600,475 @@
    "spx_premium",
    "phoenix",
    "momentum",
-   "confluence"
+   "confluence",
+   "beatendown",
+   "snapback",
+   "blowoff_d",
+   "blowoff_1h",
+   "leader_d",
+   "gate_1h",
+   "leader_sc",
+   "daily_cyan_gbm",
+   "rule_1w_cyan_mom_adx",
+   "rule_1d_cyan_smallcap",
+   "rule_1d_green_tom",
+   "rule_1w_swing_beta_wt",
+   "rule_1h_cyan_raw"
   ]
+ },
+ "exposure": {
+  "gross_notional": 1015.0,
+  "equity": 95715.48,
+  "gross_pct": 1.1,
+  "cap_pct": 150,
+  "headroom_pct": 148.9,
+  "status": "OK",
+  "position_count": 1,
+  "by_sleeve": {
+   "regression-test-sleeve": 1015.0
+  }
  },
  "context": {
   "pv_shift": {
    "status": "ok",
    "stale": false,
-   "computed_at": "2026-10-02T13:39:41.671914+00:00",
+   "computed_at": "2026-10-03T23:43:56.803834+00:00",
    "note": "research context only -- never a trading input; Faktor = -1*DELTA(CORR(HIGH,VOLUME,5),5)*RANK(STD(CLOSE,20))",
    "readings": {
     "AEHR": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 105.5,
-     "corr5": -0.07352205398231122,
-     "delta_corr": -0.9510706797247601,
-     "vol20": 6.704682183929376,
-     "rankVol": 0.625,
-     "faktor": 0.594419174827975
+     "close": 107.34,
+     "corr5": 0.3489253785312135,
+     "delta_corr": -0.5286232472112353,
+     "vol20": 6.860865629605348,
+     "rankVol": 0.6341463414634146,
+     "faktor": 0.33522449823151507
     },
     "NBIS": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 242.58,
-     "corr5": 0.2346761209740726,
-     "delta_corr": 0.06938786282081114,
-     "vol20": 10.801357307648889,
-     "rankVol": 0.7,
-     "faktor": -0.04857150397456779
+     "close": 242.72,
+     "corr5": -0.38635536254009034,
+     "delta_corr": -0.5516436206933518,
+     "vol20": 10.80987133075598,
+     "rankVol": 0.7073170731707317,
+     "faktor": 0.3901869512221269
     },
     "SKYQ": {
-     "date": "2026-10-01T04:00:00Z",
-     "close": 2.555,
-     "corr5": 0.3388036067682341,
-     "delta_corr": -0.6331335699939917,
-     "vol20": 0.22841450807687325,
+     "date": "2026-10-02T04:00:00Z",
+     "close": 2.45,
+     "corr5": 0.5597156647593949,
+     "delta_corr": -0.41986357260432094,
+     "vol20": 0.23845269446999331,
      "rankVol": 0.04878048780487805,
-     "faktor": 0.030884564389950818
+     "faktor": 0.02048114988313761
     },
     "SHAZ": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 51.835,
-     "corr5": 0.9292612798297688,
-     "delta_corr": 0.8136277683823603,
-     "vol20": 3.3297628575470655,
-     "rankVol": 0.475,
-     "faktor": -0.3864731899816211
+     "close": 50.765,
+     "corr5": 0.8568408216431421,
+     "delta_corr": 0.7412073101957336,
+     "vol20": 3.3963228185053316,
+     "rankVol": 0.4878048780487805,
+     "faktor": -0.36156454155889445
     },
     "LITE": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 1050.57,
-     "corr5": -0.20593542947607665,
-     "delta_corr": -1.0266700295653624,
-     "vol20": 53.61844548287465,
-     "rankVol": 0.95,
-     "faktor": 0.9753365280870941
+     "close": 1085.115,
+     "corr5": 0.027451772515960992,
+     "delta_corr": -0.7932828275733247,
+     "vol20": 57.563847883784675,
+     "rankVol": 0.975609756097561,
+     "faktor": 0.7739344659251948
     },
     "SOXL": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 166.03,
-     "corr5": -0.7737094446351561,
-     "delta_corr": 0.06936176786418913,
-     "vol20": 18.94351913419204,
-     "rankVol": 0.775,
-     "faktor": -0.053755370094746575
+     "close": 163.72,
+     "corr5": 0.5936661515058801,
+     "delta_corr": 1.4367373640052254,
+     "vol20": 18.742936621231475,
+     "rankVol": 0.7804878048780488,
+     "faktor": -1.1213559914187126
     },
     "WYFI": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 18.425,
-     "corr5": -0.43454663037048163,
-     "delta_corr": -0.8668753531322304,
-     "vol20": 1.034883417347094,
-     "rankVol": 0.3,
-     "faktor": 0.2600626059396691
+     "close": 17.94,
+     "corr5": -0.9769451742403206,
+     "delta_corr": -1.4092738970020693,
+     "vol20": 1.0486204031965045,
+     "rankVol": 0.3170731707317073,
+     "faktor": 0.44684294295187565
     },
     "CRML": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 7.135,
-     "corr5": 0.3892579693493224,
-     "delta_corr": -0.4286119341584505,
-     "vol20": 0.7390392411773544,
-     "rankVol": 0.2,
-     "faktor": 0.0857223868316901
+     "close": 7.03,
+     "corr5": -0.7556694342046965,
+     "delta_corr": -1.5735393377124693,
+     "vol20": 0.7405570116473139,
+     "rankVol": 0.21951219512195122,
+     "faktor": 0.34541107413200545
     },
     "AAOI": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 108.68,
-     "corr5": -0.17562095311162632,
-     "delta_corr": -0.45767133520518444,
-     "vol20": 4.766503173186819,
-     "rankVol": 0.525,
-     "faktor": 0.24027745098272185
+     "close": 115.53,
+     "corr5": 0.6677816306066481,
+     "delta_corr": 0.38573124851308993,
+     "vol20": 5.3804062346629555,
+     "rankVol": 0.5365853658536586,
+     "faktor": -0.20697774310458486
     },
     "WDC": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 415.445,
-     "corr5": 0.6414109799608658,
-     "delta_corr": 1.1786655197678728,
-     "vol20": 20.297383575229592,
-     "rankVol": 0.825,
-     "faktor": -0.972399053808495
+     "close": 415.37,
+     "corr5": -0.996835937658504,
+     "delta_corr": -0.4595813978514971,
+     "vol20": 20.303671704583383,
+     "rankVol": 0.8292682926829268,
+     "faktor": 0.3811162811451439
     },
     "VELO": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 10.545,
-     "corr5": 0.16527821062608916,
-     "delta_corr": -0.4721029660560532,
-     "vol20": 0.5393479280575756,
-     "rankVol": 0.175,
-     "faktor": 0.0826180190598093
+     "close": 11.18,
+     "corr5": -0.5332462257687308,
+     "delta_corr": -1.1706274024508732,
+     "vol20": 0.5417780911037283,
+     "rankVol": 0.1951219512195122,
+     "faktor": 0.22841510291724354
     },
     "ANF": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 137.985,
-     "corr5": -0.6819297466441376,
-     "delta_corr": -0.6431180956907768,
-     "vol20": 5.90472404096923,
-     "rankVol": 0.6,
-     "faktor": 0.3858708574144661
+     "close": 135.86,
+     "corr5": -0.5245773769532943,
+     "delta_corr": -0.4857657259999335,
+     "vol20": 5.944489733147833,
+     "rankVol": 0.6097560975609756,
+     "faktor": 0.2961986134145936
     },
     "SATL": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 5.52,
-     "corr5": 0.714007551340013,
-     "delta_corr": 0.22830883564878884,
-     "vol20": 0.43944538909857733,
-     "rankVol": 0.125,
-     "faktor": -0.028538604456098605
+     "close": 5.725,
+     "corr5": 0.26376042860870236,
+     "delta_corr": -0.22193828708252183,
+     "vol20": 0.4456497363400993,
+     "rankVol": 0.14634146341463414,
+     "faktor": 0.032478773719393436
     },
     "ASPI": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 2.815,
-     "corr5": -0.7476722140390828,
-     "delta_corr": -0.22745695769984098,
-     "vol20": 0.4543607459937533,
-     "rankVol": 0.15,
-     "faktor": 0.034118543654976144
+     "close": 2.92,
+     "corr5": -0.2666058284662485,
+     "delta_corr": 0.25360942787299334,
+     "vol20": 0.4507368966481444,
+     "rankVol": 0.17073170731707318,
+     "faktor": -0.04329917061246228
     },
     "IREN": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 42.84,
-     "corr5": -0.2397025275961323,
-     "delta_corr": 0.548349298898166,
-     "vol20": 2.2990213135158184,
-     "rankVol": 0.4,
-     "faktor": -0.2193397195592664
+     "close": 41.77,
+     "corr5": 0.3123434068740131,
+     "delta_corr": 1.1003952333683114,
+     "vol20": 2.3405167698608786,
+     "rankVol": 0.43902439024390244,
+     "faktor": -0.48310034635681964
     },
     "AG": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 17.99,
-     "corr5": 0.18643727215282357,
-     "delta_corr": -0.35822159701229117,
-     "vol20": 1.065872412627328,
-     "rankVol": 0.325,
-     "faktor": 0.11642201902899463
+     "close": 17.685,
+     "corr5": -0.3683164903667834,
+     "delta_corr": -0.9129753595318981,
+     "vol20": 1.0848171216845726,
+     "rankVol": 0.34146341463414637,
+     "faktor": 0.31174768374259937
     },
     "AXTI": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 82.63,
-     "corr5": -0.14457817871277814,
-     "delta_corr": -1.0929631600238678,
-     "vol20": 7.653478208468355,
-     "rankVol": 0.65,
-     "faktor": 0.7104260540155142
+     "close": 85.87,
+     "corr5": -0.20820690304174022,
+     "delta_corr": -1.15659188435283,
+     "vol20": 7.921964130662294,
+     "rankVol": 0.6585365853658537,
+     "faktor": 0.761658070183571
     },
     "LASR": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 40.59,
-     "corr5": -0.791418550868822,
-     "delta_corr": -1.0506736778617485,
-     "vol20": 1.0114930486661793,
-     "rankVol": 0.275,
-     "faktor": 0.28893526141198084
+     "close": 40.525,
+     "corr5": -0.21059787855909073,
+     "delta_corr": -0.46985300555201726,
+     "vol20": 1.0091419622629918,
+     "rankVol": 0.2682926829268293,
+     "faktor": 0.12605812344078512
     },
     "ARQQ": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 24.405,
-     "corr5": 0.011872583761776658,
-     "delta_corr": -0.8956301184151665,
-     "vol20": 2.3161233235732506,
-     "rankVol": 0.425,
-     "faktor": 0.38064280032644576
+     "close": 24.665,
+     "corr5": 0.11582587835571521,
+     "delta_corr": -0.791676823821228,
+     "vol20": 2.331106014320241,
+     "rankVol": 0.4146341463414634,
+     "faktor": 0.32825624402343595
     },
     "OUST": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 42.08,
-     "corr5": 0.1295087845957156,
-     "delta_corr": -0.29876387836998464,
-     "vol20": 3.142296930590742,
-     "rankVol": 0.45,
-     "faktor": 0.13444374526649308
+     "close": 44.365,
+     "corr5": 0.7814426493595482,
+     "delta_corr": 0.353169986393848,
+     "vol20": 3.328581257457898,
+     "rankVol": 0.4634146341463415,
+     "faktor": -0.16366414003617347
     },
     "ALAB": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 346.16,
-     "corr5": 0.8651882015993535,
-     "delta_corr": 1.238927603636504,
-     "vol20": 38.08314313446305,
-     "rankVol": 0.925,
-     "faktor": -1.1460080333637663
+     "close": 350.06,
+     "corr5": 0.4092481912131799,
+     "delta_corr": 0.7829875932503304,
+     "vol20": 38.224278227325634,
+     "rankVol": 0.926829268292683,
+     "faktor": -0.7256958181344526
     },
     "CRDO": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 217.615,
-     "corr5": -0.4984666169650066,
-     "delta_corr": -0.8842599560247613,
-     "vol20": 19.74982819387298,
-     "rankVol": 0.8,
-     "faktor": 0.707407964819809
+     "close": 218.65,
+     "corr5": 0.4936663229846331,
+     "delta_corr": 0.10787298392487848,
+     "vol20": 19.846447408793342,
+     "rankVol": 0.8048780487804879,
+     "faktor": -0.08682459681758513
     },
     "FCEL": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 17.59,
-     "corr5": -0.6671624394395314,
-     "delta_corr": -1.1571505941065032,
-     "vol20": 0.9727141152466126,
-     "rankVol": 0.25,
-     "faktor": 0.2892876485266258
+     "close": 18.485,
+     "corr5": 0.6667443967957034,
+     "delta_corr": 0.17675624212873148,
+     "vol20": 1.0356221258258245,
+     "rankVol": 0.2926829268292683,
+     "faktor": -0.051733534281579945
     },
     "HIVE": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 3.07,
-     "corr5": 0.18018653626328465,
-     "delta_corr": 0.8167590579908405,
-     "vol20": 0.18719291519713022,
-     "rankVol": 0.025,
-     "faktor": -0.020418976449771014
+     "close": 2.975,
+     "corr5": 0.5462505875888163,
+     "delta_corr": 1.1828231093163721,
+     "vol20": 0.1897728905824011,
+     "rankVol": 0.024390243902439025,
+     "faktor": -0.028849344129667612
     },
     "POET": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 7.76,
-     "corr5": -0.5825785574627291,
-     "delta_corr": -1.2817778809990603,
-     "vol20": 0.3026710260332165,
-     "rankVol": 0.075,
-     "faktor": 0.09613334107492952
+     "close": 7.795,
+     "corr5": -0.03982541116001042,
+     "delta_corr": -0.7390247346963414,
+     "vol20": 0.30282781824000254,
+     "rankVol": 0.0975609756097561,
+     "faktor": 0.07209997411671625
     },
     "SNDK": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 1738.65,
-     "corr5": 0.15103365554141163,
-     "delta_corr": -0.008227244434651337,
-     "vol20": 94.7342334124787,
+     "close": 1719.36,
+     "corr5": 0.6060363462127173,
+     "delta_corr": 0.44677544623665433,
+     "vol20": 94.57725566170757,
      "rankVol": 1.0,
-     "faktor": 0.008227244434651337
+     "faktor": -0.44677544623665433
     },
     "TEM": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 79.17,
-     "corr5": 0.2837432580975161,
-     "delta_corr": -0.6933352101451785,
-     "vol20": 8.798773920268664,
-     "rankVol": 0.675,
-     "faktor": 0.46800126684799553
+     "close": 76.66,
+     "corr5": -0.24476071116557616,
+     "delta_corr": -1.2218391794082708,
+     "vol20": 8.73560657596254,
+     "rankVol": 0.6829268292682927,
+     "faktor": 0.8344267566690631
     },
     "CORZ": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 16.97,
-     "corr5": -0.3484270531200613,
-     "delta_corr": -0.6994841672334906,
-     "vol20": 0.8524587966582315,
-     "rankVol": 0.225,
-     "faktor": 0.1573839376275354
+     "close": 16.45,
+     "corr5": -0.3451039068315125,
+     "delta_corr": -0.6961610209449418,
+     "vol20": 0.8727737392932948,
+     "rankVol": 0.24390243902439024,
+     "faktor": 0.16979537096218092
     },
     "HUT": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 91.42,
-     "corr5": -0.006812120373838134,
-     "delta_corr": -0.6679011950272933,
-     "vol20": 5.797834180752327,
-     "rankVol": 0.575,
-     "faktor": 0.38404318714069363
+     "close": 89.685,
+     "corr5": -0.17200657718166823,
+     "delta_corr": -0.8330956518351234,
+     "vol20": 5.860471056152398,
+     "rankVol": 0.5853658536585366,
+     "faktor": 0.4876657474156819
     },
     "TSEM": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 245.71,
-     "corr5": -0.009192943086232844,
-     "delta_corr": 0.5062011246709663,
-     "vol20": 14.306677573339659,
-     "rankVol": 0.75,
-     "faktor": -0.37965084350322476
+     "close": 240.74,
+     "corr5": 0.8350628743273223,
+     "delta_corr": 1.3504569420845214,
+     "vol20": 13.924881891330351,
+     "rankVol": 0.7560975609756098,
+     "faktor": -1.0210772001126869
     },
     "ARM": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 306.03,
-     "corr5": -0.44379726442745715,
-     "delta_corr": 0.27519743639267535,
-     "vol20": 29.224324012712426,
-     "rankVol": 0.9,
-     "faktor": -0.2476776927534078
+     "close": 307.39,
+     "corr5": 0.11172475624564294,
+     "delta_corr": 0.8307194570657754,
+     "vol20": 29.282534487301476,
+     "rankVol": 0.9024390243902439,
+     "faktor": -0.7496736563764315
     },
     "KEEL": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 3.67,
-     "corr5": -0.3289241733714488,
-     "delta_corr": -1.1163802333915522,
-     "vol20": 0.2409038968136464,
-     "rankVol": 0.05,
-     "faktor": 0.05581901166957762
+     "close": 3.61,
+     "corr5": -0.41252871686197856,
+     "delta_corr": -1.199984776882082,
+     "vol20": 0.24133625401087172,
+     "rankVol": 0.07317073170731707,
+     "faktor": 0.08780376416210355
     },
     "FFIV": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 454.34,
-     "corr5": -0.8323249426363984,
-     "delta_corr": -0.4513478381798481,
-     "vol20": 20.854620859356324,
-     "rankVol": 0.85,
-     "faktor": 0.38364566245287085
+     "close": 454.005,
+     "corr5": -0.6631440372101441,
+     "delta_corr": -0.2821669327535938,
+     "vol20": 20.834936788960988,
+     "rankVol": 0.8536585365853658,
+     "faktor": 0.2408742108872142
     },
     "MU": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 1096.71,
-     "corr5": -0.0713216386541821,
-     "delta_corr": 0.66736723501435,
-     "vol20": 57.24499124978097,
-     "rankVol": 0.975,
-     "faktor": -0.6506830541389913
+     "close": 1074.71,
+     "corr5": 0.46864559919937754,
+     "delta_corr": 1.2073344728679096,
+     "vol20": 56.077735093239106,
+     "rankVol": 0.9512195121951219,
+     "faktor": -1.1484401083377676
     },
     "CLS": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 384.86,
-     "corr5": -0.807584431331075,
-     "delta_corr": -1.275804861597054,
-     "vol20": 21.430411992948244,
-     "rankVol": 0.875,
-     "faktor": 1.1163292538974223
+     "close": 387.39,
+     "corr5": -0.5133413240243616,
+     "delta_corr": -0.9815617542903408,
+     "vol20": 21.668435007805705,
+     "rankVol": 0.8780487804878049,
+     "faktor": 0.8618591013281041
     },
     "TE": {
      "date": "2026-10-02T04:00:00Z",
      "close": 3.91,
-     "corr5": -0.7738190853050375,
-     "delta_corr": 0.06275472028118845,
+     "corr5": -0.7624863092898758,
+     "delta_corr": 0.07408749629635014,
      "vol20": 0.40032923950168814,
-     "rankVol": 0.1,
-     "faktor": -0.006275472028118845
+     "rankVol": 0.12195121951219512,
+     "faktor": -0.009035060523945138
     },
     "TTMI": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 128.44,
-     "corr5": -0.8356870355400547,
-     "delta_corr": -0.546367498456718,
-     "vol20": 5.339468981087914,
-     "rankVol": 0.55,
-     "faktor": 0.30050212415119487
+     "close": 131.805,
+     "corr5": -0.7906754930148382,
+     "delta_corr": -0.5013559559315013,
+     "vol20": 5.558614547483933,
+     "rankVol": 0.5609756097560976,
+     "faktor": 0.28124846308352514
     },
     "CVNA": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 64.52,
-     "corr5": -0.8014115094078055,
-     "delta_corr": -0.38270927108980857,
-     "vol20": 3.9598128980420286,
-     "rankVol": 0.5,
-     "faktor": 0.19135463554490428
+     "close": 63.76,
+     "corr5": -0.47515711335121297,
+     "delta_corr": -0.056454875033216056,
+     "vol20": 3.9851884757812908,
+     "rankVol": 0.5121951219512195,
+     "faktor": 0.028915911602378955
     },
     "VRT": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 252.0,
-     "corr5": -0.31589539210868617,
-     "delta_corr": -0.2850547727862211,
-     "vol20": 13.26728117400095,
-     "rankVol": 0.725,
-     "faktor": 0.2066647102700103
+     "close": 252.145,
+     "corr5": -0.10762630885787218,
+     "delta_corr": -0.0767856895354071,
+     "vol20": 13.267731105486726,
+     "rankVol": 0.7317073170731707,
+     "faktor": 0.056184650879566166
     },
     "OKLO": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 36.4,
-     "corr5": 0.6675190532688233,
-     "delta_corr": 0.3834508841727409,
-     "vol20": 2.2137154712157567,
-     "rankVol": 0.375,
-     "faktor": -0.14379408156477785
+     "close": 35.86,
+     "corr5": -0.7060857686874443,
+     "delta_corr": -0.9901539377835267,
+     "vol20": 2.2411857771055037,
+     "rankVol": 0.3902439024390244,
+     "faktor": 0.3864015366960104
     },
     "USAR": {
      "date": "2026-10-02T04:00:00Z",
-     "close": 13.78,
-     "corr5": 0.6575176545264003,
-     "delta_corr": 1.2825917989984637,
-     "vol20": 1.16330950309881,
-     "rankVol": 0.35,
-     "faktor": -0.4489071296494622
+     "close": 13.585,
+     "corr5": 0.31684522015196215,
+     "delta_corr": 0.9419193646240255,
+     "vol20": 1.1790157706748456,
+     "rankVol": 0.36585365853658536,
+     "faktor": -0.34460464559415566
     }
    }
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-02T22:09:17.068488-04:00",
-  "headline": "\u2014",
-  "sections": []
+  "updated_et": "2026-10-04T14:33:37.260032-04:00",
+  "stamp": "Sunday, 2:33 PM ET",
+  "headline": "Femto is carrying 5 positions, down $2,094 on the day, no fresh Tensor signals.",
+  "sections": [
+   {
+    "heading": "Account",
+    "body": "Equity $95,715 \u00b7 buying power $233,488. Day P&L -$2,094 (-2.14%)."
+   },
+   {
+    "heading": "Positions (5 of 10)",
+    "body": "LASR \u2014 1884 sh @ $40 \u2192 $41 \u00b7 $490 (+0.64%) \u00b7 stop $40, target $42, TRANSITION, conf 8. NVDA \u2014 30 sh @ $231 \u2192 $234 \u00b7 $80 (+1.16%) \u00b7 stop $223. PLTR261023C00195000 \u2014 5 sh @ $7 \u2192 $5 \u00b7 -$1,025 (-3,014.71%). TSLA261023C00380000 \u2014 2 sh @ $14 \u2192 $12 \u00b7 -$320 (-1,155.23%). TTMI \u2014 189 sh @ $133 \u2192 $132 \u00b7 -$257 (-1.02%) \u00b7 stop $129, target $145, TRANSITION, conf 8."
+   },
+   {
+    "heading": "Tensor",
+    "body": "No fresh signals. Engine v625, byte-exact. Unprotected: LASR, TTMI."
+   },
+   {
+    "heading": "Phase",
+    "body": "NVDA \u2014 30 sh @ $231, now $234 \u00b7 $80. Stop $223 (live at broker). Last event 2:29 PM ET: orphan_stop TEST."
+   },
+   {
+    "heading": "Legend's EMA",
+    "body": "Flat. Setup: not evaluated."
+   },
+   {
+    "heading": "Morning Dip",
+    "body": "Flat \u2014 outside the morning window."
+   },
+   {
+    "heading": "Bilbo Box Options",
+    "body": "2 call positions open (PLTR, TSLA)."
+   },
+   {
+    "heading": "SPX Premium (experimental)",
+    "body": "Not yet run (experimental)."
+   },
+   {
+    "heading": "Phoenix Breakout",
+    "body": "Not yet run."
+   },
+   {
+    "heading": "Momentum",
+    "body": "Flat \u2014 no qualifying momentum names."
+   },
+   {
+    "heading": "Winner Confluence",
+    "body": "Flat \u2014 no qualifying confluence names."
+   },
+   {
+    "heading": "Beaten-Down",
+    "body": "Not yet run."
+   },
+   {
+    "heading": "Risk",
+    "body": "Kill switch armed at -3.0% of baseline equity; not tripped. Earnings within 7 days: AEHR (2026-10-05)."
+   },
+   {
+    "heading": "Next",
+    "body": "Next Tensor scan about 2:38 PM ET."
+   }
+  ]
  },
  "equity_curve": [
   {
@@ -1807,6 +2496,24 @@
    "equity": "95721.64",
    "day_pl": -2087.5099999999948,
    "day_pl_pct": -2.134268624152234
+  },
+  {
+   "ts_utc": "2026-10-03T23:43:31.531046+00:00",
+   "equity": "95715.48",
+   "day_pl": -2093.6699999999983,
+   "day_pl_pct": -2.1405666034312723
+  },
+  {
+   "ts_utc": "2026-10-04T18:33:03.235336+00:00",
+   "equity": "95715.48",
+   "day_pl": -2093.6699999999983,
+   "day_pl_pct": -2.1405666034312723
+  },
+  {
+   "ts_utc": "2026-10-04T18:33:37.260032+00:00",
+   "equity": "95715.48",
+   "day_pl": -2093.6699999999983,
+   "day_pl_pct": -2.1405666034312723
   }
  ]
 }
