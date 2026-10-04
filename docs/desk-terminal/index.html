@@ -326,22 +326,64 @@ function buildReadout(d){
     `EXPOSURE&nbsp;<b class="${(d.exposure||{}).gross_pct>150?"down":"up"}">${(d.exposure||{}).gross_pct!=null?(d.exposure.gross_pct+"% / 150%"):"—"}</b><span class="sep">│</span>`+
     `FEED&nbsp;<b>${etHM(d.generated_at_utc)} ET</b>&nbsp;<span class="cursor">▊</span>`;
 }
+function sleeveTape(key, s, d){
+  const sl = s[key] || {};
+  const name = (sl.name || key).toUpperCase();
+  // Tensor: fresh signals
+  if(key==="tensor"){
+    const fs=(d.fresh_signals||[]).map(x=>x.symbol||x);
+    return `${name} <b>${fs.length?esc(fs.join(" ")).toUpperCase():"NO FRESH SIGNALS"}</b>`;
+  }
+  // Phase: single position
+  if(key==="phase"){
+    const p=sl.position;
+    return p?`${name} <b>${esc(p.symbol)} ${qty(p.qty)}SH @ ${money2(p.entry_px)} → ${money2(p.current)}</b>`:`${name} <b>FLAT</b>`;
+  }
+  // Legend's EMA
+  if(key==="legends_ema"){
+    const p=sl.position;
+    return (p&&p.qty)?`${name} <b>QQQ ${esc(p.side||"")} ${qty(p.qty)}SH</b>`
+      :`${name} <b>FLAT · ${(sl.setup||{}).trend_day===false?"NO TREND DAY":"STANDBY"}</b>`;
+  }
+  // Morning Dip
+  if(key==="morning_dip"){
+    const q=sl.position_qty;
+    return q?`${name} <b>QQQ ${qty(q)}SH</b>`:`${name} <b>${sl.armed?"ARMED":"FLAT"}</b>`;
+  }
+  // Bilbo options
+  if(key==="bilbo_options"){
+    const n=sl.open_positions||0;
+    return n?`${name} <b>${n} CALL${n>1?"S":""}</b>`:`${name} <b>${sl.state_known?"FLAT":"STANDBY"}</b>`;
+  }
+  // Generic: count open positions
+  const pos = sl.positions || sl.open_positions;
+  if(Array.isArray(pos) && pos.length){
+    const syms = pos.slice(0,3).map(p=>esc(p.symbol||p)).join(" ");
+    return `${name} <b>${pos.length} OPEN${pos.length>1?"":""} · ${syms}</b>`;
+  }
+  if(typeof pos === "number" && pos > 0){
+    return `${name} <b>${pos} OPEN</b>`;
+  }
+  if(sl.position && sl.position.symbol){
+    const p=sl.position;
+    return `${name} <b>${esc(p.symbol)} ${qty(p.qty||0)}SH</b>`;
+  }
+  return `${name} <b>${sl.state_known===false?"STANDBY":"FLAT"}</b>`;
+}
 function buildTape(d){
   const s=d.sleeves||{}, items=[];
-  const fs=(d.fresh_signals||[]).map(x=>x.symbol||x);
-  items.push(`TENSOR <b>${fs.length?esc(fs.join(" ")).toUpperCase():"NO FRESH SIGNALS"}</b>`);
-  const ph=(s.phase||{}).position;
-  items.push(ph?`PHASE <b>${esc(ph.symbol)} ${qty(ph.qty)}SH @ ${money2(ph.entry_px)} → ${money2(ph.current)}</b>`:`PHASE <b>FLAT</b>`);
-  const le=(s.legends_ema||{}), lp=le.position;
-  items.push(lp&&lp.qty?`LEGEND'S EMA <b>QQQ ${esc(lp.side||"")} ${qty(lp.qty)}SH</b>`
-    :`LEGEND'S EMA <b>FLAT · ${(le.setup||{}).trend_day===false?"NO TREND DAY":"STANDBY"}</b>`);
-  const md=(s.morning_dip||{}), mq=md.position_qty;
-  items.push(mq?`MORNING DIP <b>QQQ ${qty(mq)}SH</b>`:`MORNING DIP <b>${md.armed?"ARMED":"FLAT"}</b>`);
-  const bo=(s.bilbo_options||{}), bn=bo.open_positions||0;
-  items.push(bn?`BILBO BOX OPTIONS <b>${bn} CALL${bn>1?"S":""}</b>`
-    :`BILBO BOX OPTIONS <b>${bo.state_known?"FLAT":"STANDBY"}</b>`);
+  const order = ["tensor","phase","legends_ema","morning_dip","bilbo_options",
+    "spx_premium","phoenix","momentum","confluence","beatendown","snapback",
+    "blowoff_d","blowoff_1h","leader_d","gate_1h","leader_sc",
+    "daily_cyan_gbm","rule_1w_cyan_mom_adx","rule_1d_cyan_smallcap",
+    "rule_1d_green_tom","rule_1w_swing_beta_wt","rule_1h_cyan_raw"];
+  for(const key of order){
+    if(s[key]) items.push(sleeveTape(key, s, d));
+  }
   const k=d.kill_switch||{};
   items.push(`KILL-SWITCH <b>${k.tripped?"TRIPPED":"ARMED"}</b>`);
+  const ex=d.exposure||{};
+  if(ex.gross_pct!=null) items.push(`EXPOSURE <b>${ex.gross_pct}% / ${ex.cap_pct||150}%</b>`);
   items.push(`DAY P/L <b>${signed0(d.day_pl)} (${pct(d.day_pl_pct)})</b>`);
   const half=items.map(t=>`<span>${t}</span>`).join(`<span class="tsep">▸</span>`)+`<span class="tsep">▸</span>`;
   $("tape").innerHTML = half+half;
