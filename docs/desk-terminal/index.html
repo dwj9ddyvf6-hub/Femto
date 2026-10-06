@@ -183,6 +183,28 @@
     .hsec{flex-direction:column; gap:4px;}
     .hsec .hk{flex:none; padding-top:0;}
   }
+
+  /* ---- polish pass 2026-10-05 ---- */
+  tbody tr{transition:background .12s ease;}
+  tbody tr:hover{background:var(--panel2);}
+  th.num, td.num{text-align:right; font-variant-numeric:tabular-nums;}
+  .tbl-wrap::-webkit-scrollbar{height:8px;}
+  .tbl-wrap::-webkit-scrollbar-thumb{background:var(--line2); border-radius:4px;}
+  .tbl-wrap::-webkit-scrollbar-track{background:transparent;}
+  .tape:hover .tape-inner{animation-play-state:paused;}
+  .grave{padding:12px 18px; border-bottom:1px dashed var(--line);}
+  .grave:last-child{border-bottom:none;}
+  .grave-top{display:flex; gap:10px; align-items:baseline; flex-wrap:wrap;}
+  .grave-id{font-size:11px; font-weight:700; color:var(--teal2); background:var(--panel2);
+    border:1px solid var(--line); padding:2px 8px; letter-spacing:.08em; white-space:nowrap;}
+  .grave-title{font-size:13.5px;}
+  .grave-note{margin:7px 0 2px; padding:3px 0 3px 12px; border-left:3px solid var(--line2);
+    color:var(--muted); font-size:12.5px; line-height:1.6;}
+  .strat{transition:box-shadow .18s ease, transform .18s ease;}
+  .strat:hover{box-shadow:0 10px 24px rgba(8,127,114,.12); transform:translateY(-2px);}
+  .poscard{transition:box-shadow .18s ease;}
+  .poscard:hover{box-shadow:0 8px 20px rgba(8,127,114,.10);}
+  #graveyard{padding:2px 0 6px;}
 </style>
 </head>
 <body>
@@ -201,7 +223,7 @@
   <section class="panel hero" id="hero" style="display:none;">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
     <div class="phead"><span>NOTE · DESK NOTE</span><span class="sub" id="hero-stamp"></span></div>
-    <div class="boot mono">FEMTO/OS v2.4 ……… OK<br>FEED UPLINK ……… LINKED<br>5 SLEEVES ……… ARMED</div>
+    <div class="boot mono">FEMTO/OS v2.4 ……… OK<br>FEED UPLINK ……… LINKED<br><span id="boot-sleeves">… SLEEVES</span> ……… ARMED</div>
     <h1 id="hero-headline"></h1>
     <div id="hero-sections"></div>
   </section>
@@ -339,14 +361,18 @@ const etMD = iso => { try{ return new Date(iso).toLocaleString("en-US",
   catch(e){ return ""; } };
 
 /* ---------- hero note ---------- */
-function renderHero(n){
+function renderHero(n, d){
   if(!n) return;
   $("hero").style.display = "";
   $("hero-stamp").textContent = (n.stamp||"").toUpperCase();
-  $("hero-headline").textContent = n.headline || "";
+  const h1 = $("hero-headline"), hl = (n.headline||"").trim();
+  if(!hl || hl==="—"){ h1.style.display = "none"; }
+  else { h1.style.display = ""; h1.textContent = n.headline; }
   $("hero-sections").innerHTML = (n.sections||[]).map(s =>
     `<div class="hsec"><div class="hk">${esc(s.heading).toUpperCase()}</div><div class="hb">${esc(s.body)}</div></div>`
   ).join("");
+  const ns = d && d.sleeves ? Object.keys(d.sleeves).length : 0;
+  if(ns) $("boot-sleeves").textContent = ns + " SLEEVES";
 }
 
 /* ---------- readout + tape ---------- */
@@ -767,14 +793,18 @@ function renderOptions(d){
   }
   const pct = v => v==null ? "—" : Math.round(v)+"%";
   const zcls = z => z==="fast" ? "down" : "neu";
-  el.innerHTML = `<table><thead><tr><th>SYMBOL</th><th>30D IV</th><th>IV %ILE</th><th>25D SKEW</th><th>SKEW %ILE</th><th>ZONE</th></tr></thead><tbody>` +
+  const hasPct = rows.some(r => r.iv30_pctile_60d!=null || r.skew25_pctile_60d!=null);
+  el.innerHTML = `<table><thead><tr><th>SYMBOL</th><th class="num">30D IV</th>` +
+    (hasPct?`<th class="num">IV %ILE</th>`:"") +
+    `<th class="num">25D SKEW</th>` + (hasPct?`<th class="num">SKEW %ILE</th>`:"") +
+    `<th>ZONE</th></tr></thead><tbody>` +
     rows.map(r => `<tr><td><b>${esc(r.sym)}</b></td>` +
-      `<td class="mono">${(r.iv30*100).toFixed(1)}%</td>` +
-      `<td class="mono">${pct(r.iv30_pctile_60d)}</td>` +
-      `<td class="mono">${r.skew25!=null ? (r.skew25>=0?"+":"")+r.skew25.toFixed(3) : "—"}</td>` +
-      `<td class="mono">${pct(r.skew25_pctile_60d)}</td>` +
+      `<td class="mono num">${(r.iv30*100).toFixed(1)}%</td>` +
+      (hasPct?`<td class="mono num">${pct(r.iv30_pctile_60d)}</td>`:"") +
+      `<td class="mono num">${r.skew25!=null ? (r.skew25>=0?"+":"")+r.skew25.toFixed(3) : "—"}</td>` +
+      (hasPct?`<td class="mono num">${pct(r.skew25_pctile_60d)}</td>`:"") +
       `<td><span class="${zcls(r.zone)}">${esc((r.zone||"—").toUpperCase())}</span></td></tr>`).join("") +
-    `</tbody></table><div class="note">Percentiles vs each name's own trailing 60 trading days — they fill in as history accumulates. Fast = IV pricier than 75% of its history or up 20%+ in 5 days.</div>`;
+    `</tbody></table>` + (hasPct?``:`<div class="note">Percentiles vs each name's own trailing 60 trading days — they fill in as history accumulates. Fast = IV pricier than 75% of its history or up 20%+ in 5 days.</div>`);
 }
 
 function renderSentiment(d){
@@ -812,10 +842,10 @@ function renderTape(d){
   const t = d.signal_tape || [];
   const el = $("sigtape");
   if(!t.length){ el.innerHTML = `<div class="empty">No signals yet.</div>`; return; }
-  el.innerHTML = `<table><thead><tr><th>TIME</th><th>SYMBOL</th><th>SIGNAL</th><th>TYPE</th><th>CONF</th><th>WHY</th></tr></thead><tbody>` +
+  el.innerHTML = `<table><thead><tr><th>TIME</th><th>SYMBOL</th><th>SIGNAL</th><th>TYPE</th><th class="num">CONF</th><th>WHY</th></tr></thead><tbody>` +
     t.map(r => `<tr><td class="mono">${esc((r.ts||"").slice(0,16))}</td><td><b>${esc(r.symbol)}</b></td>` +
       `<td><span class="${r.decision==="TRADE"?"up":"neu"}">${esc(r.decision)}</span></td>` +
-      `<td>${esc(r.phenotype||"—")}</td><td class="mono">${r.confidence??"—"}</td>` +
+      `<td>${esc(r.phenotype||"—")}</td><td class="mono num">${r.confidence??"—"}</td>` +
       `<td class="muted">${esc(r.reason||"—")}</td></tr>`).join("") + `</tbody></table>`;
 }
 
@@ -823,9 +853,9 @@ function renderBoard(d){
   const b = d.closed_trade_board || [];
   const el = $("pnlboard");
   if(!b.length){ el.innerHTML = `<div class="empty">No closed trades yet.</div>`; return; }
-  el.innerHTML = `<table><thead><tr><th>DATE</th><th>SYMBOL</th><th>SLEEVE</th><th>P&amp;L</th></tr></thead><tbody>` +
+  el.innerHTML = `<table><thead><tr><th>DATE</th><th>SYMBOL</th><th>SLEEVE</th><th class="num">P&amp;L</th></tr></thead><tbody>` +
     b.map(r => `<tr><td class="mono">${esc(r.date)}</td><td><b>${esc(r.symbol)}</b></td>` +
-      `<td>${esc(r.sleeve)}</td><td class="mono ${String(r.pnl).startsWith("-")?"down":"up"}"><b>${esc(r.pnl)}</b></td></tr>`).join("") +
+      `<td>${esc(r.sleeve)}</td><td class="mono num ${String(r.pnl).startsWith("-")?"down":"up"}"><b>${esc(r.pnl)}</b></td></tr>`).join("") +
     `</tbody></table>`;
 }
 
@@ -835,8 +865,9 @@ function renderGraveyard(d){
   const el = $("graveyard");
   if(!g.length){ el.innerHTML = `<div class="empty">Nothing buried yet.</div>`; return; }
   el.innerHTML = g.map(x =>
-    `<div class="kv"><span class="k mono">${esc(x.id)}</span><span><b>${esc(x.idea)}</b>${x.scope?` <span class="muted">(${esc(x.scope)})</span>`:""}</span></div>` +
-    (x.killed_by ? `<div class="note" style="margin:-4px 0 8px 0">${esc(x.killed_by)}</div>` : "")
+    `<div class="grave"><div class="grave-top"><span class="grave-id mono">${esc(x.id)}</span>` +
+    `<span class="grave-title"><b>${esc(x.idea)}</b>${x.scope?` <span class="muted">(${esc(x.scope)})</span>`:""}</span></div>` +
+    (x.killed_by ? `<div class="grave-note">${esc(x.killed_by)}</div>` : "") + `</div>`
   ).join("");
 }
 
@@ -875,7 +906,7 @@ function renderRisk(d){
 /* ---------- main ---------- */
 function render(d){
   lastGood=d; lastGen=d.generated_at_utc;
-  renderHero(d.desk_narrative); renderEquity(d); renderPositions(d);
+  renderHero(d.desk_narrative, d); renderEquity(d); renderPositions(d);
   renderStrats(d); renderRegime(d); renderMktCtx(d); renderGamma(d); renderOptions(d); renderSentiment(d); renderTape(d); renderBoard(d); renderGraveyard(d); renderEarnings(d); renderRisk(d); buildReadout(d); buildTape(d);
   $("feedstamp").textContent = "feed: " + (d.generated_at_et? etHM(d.generated_at_et)+" ET":"—");
   $("livetext").textContent = "LIVE · " + etHM(d.generated_at_utc) + " ET";
