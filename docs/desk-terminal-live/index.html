@@ -169,6 +169,7 @@
       <section class="panel"><div class="panel-head"><div><h2>Options IV &amp; skew</h2><p id="ivNote"></p></div><span class="pill info" id="ivCount"></span></div><div class="table-wrap" id="ivTable"></div></section>
       <section class="panel"><div class="panel-head"><div><h2>PV-shift context</h2><p>Research context only</p></div><span class="pill" id="pvStatus"></span></div><div class="panel-body" id="pvIntro"></div><div class="table-wrap" id="pvTable"></div></section>
       <section class="panel"><div class="panel-head"><div><h2>Graveyard</h2><p>Killed research ideas and evidence</p></div><span class="pill bad" id="graveCount"></span></div><div id="graveyard"></div></section>
+      <section class="panel"><div class="panel-head"><div><h2>Lector Lab</h2><p>Experimental research replica &middot; @ChartsLector</p></div><span class="pill accent" id="lectorPill">Not in snapshot</span></div><div class="panel-body" id="lectorLab"></div></section>
     </section>
 
     <section class="tabpanel" role="tabpanel" id="tape" aria-labelledby="tab-tape" hidden>
@@ -5212,6 +5213,111 @@
     }
     function dialGauge(label,value,display){const v=Math.max(0,Math.min(100,Number(value))),angle=Math.PI+(v/100)*Math.PI,cx=90,cy=88,r=63,nx=cx+Math.cos(angle)*50,ny=cy+Math.sin(angle)*50;let ticks='';for(let i=0;i<=10;i++){const a=Math.PI+(i/10)*Math.PI,x1=cx+Math.cos(a)*55,y1=cy+Math.sin(a)*55,x2=cx+Math.cos(a)*63,y2=cy+Math.sin(a)*63;ticks+='<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="#aebbb5" stroke-width="1"/>'}return '<div class="dial"><svg role="img" aria-label="'+esc(label+' '+display)+'" viewBox="0 0 180 112"><path d="M27 88 A63 63 0 0 1 153 88" fill="none" stroke="#d9e0dc" stroke-width="8"/>'+ticks+'<line x1="90" y1="88" x2="'+nx+'" y2="'+ny+'" stroke="#0f5a48" stroke-width="2.5"/><circle cx="90" cy="88" r="4" fill="#0f5a48"/><text x="90" y="73" text-anchor="middle" fill="#1d2a25" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600">'+esc(display)+'</text><text x="90" y="106" text-anchor="middle" fill="#65716b" font-family="IBM Plex Sans, sans-serif" font-size="10">'+esc(label)+'</text></svg></div>'}
     function gammaVisual(g){const marks=[['Put wall',g.put_wall,'#963e3e'],['Flip',g.gamma_flip,'#835f17'],['Spot',g.spot,'#0f5a48'],['Call wall',g.call_wall,'#1d684c']].filter(x=>x[1]!=null),lo=Math.min(...marks.map(x=>Number(x[1]))),hi=Math.max(...marks.map(x=>Number(x[1]))),pad=Math.max((hi-lo)*.08,1),min=lo-pad,max=hi+pad,x=v=>35+(Number(v)-min)/(max-min)*430;return '<div class="gamma-viz"><div class="viz-head"><strong>Gamma levels</strong><span>Price scale</span></div><svg role="img" aria-label="SPY gamma levels" viewBox="0 0 500 92"><line x1="35" y1="43" x2="465" y2="43" stroke="#aebbb5" stroke-width="2"/>'+marks.map((m,i)=>'<line x1="'+x(m[1])+'" y1="27" x2="'+x(m[1])+'" y2="59" stroke="'+m[2]+'" stroke-width="2"/><text x="'+x(m[1])+'" y="'+(i%2?76:18)+'" text-anchor="middle" fill="'+m[2]+'" font-family="IBM Plex Mono, monospace" font-size="9">'+esc(m[0]+' '+num(m[1],2))+'</text>').join('')+'<text x="35" y="88" fill="#65716b" font-family="IBM Plex Mono, monospace" font-size="9">'+esc(num(min,0))+'</text><text x="465" y="88" text-anchor="end" fill="#65716b" font-family="IBM Plex Mono, monospace" font-size="9">'+esc(num(max,0))+'</text></svg></div>'}
+    /* Lector Lab visuals for the Femto desk-terminal-live page.
+   Hand-rolled inline SVG, matching the page's existing visual language
+   (FolioTend: --accent #0f5a48, IBM Plex Mono numerals, .viz/.viz-head,
+   .dial-grid, .chart-legend, .compact-summary, .section-note, .footnote).
+   Depends on page globals: d, esc, num, pct, fmtDate, horizontalBars, dialGauge. */
+function lectorLabVisual(){
+  var L=d.lector;
+  if(!L) return '<p class="quiet-state">The Lector Lab research replica did not ship in this snapshot.</p>';
+  var F='IBM Plex Mono, monospace';
+  var bandColor={'TOP 10%':'#0f5a48','TOP 25%':'#1d684c','TOP 50%':'#3f6071','LOWER 50%':'#aebbb5'};
+  var quadColor={Leading:'#0f5a48',Improving:'#1d684c',Weakening:'#835f17',Lagging:'#aebbb5'};
+  var stateColor={GREEN:'#1d684c',BLUE:'#3f6071',YELLOW:'#835f17',AMBER:'#b0611f',PURPLE:'#6b4fa1',RED:'#963e3e'};
+  var states=['GREEN','BLUE','YELLOW','AMBER','PURPLE','RED'];
+  var sw=function(label,color){return '<span class="legend-item"><span class="legend-line" style="background:'+color+';height:8px;border-radius:1px"></span>'+esc(label)+'</span>';};
+
+  function lectorScatter(pts){
+    if(!pts||!pts.length) return '<p class="quiet-state">Full-universe scatter not emitted in this snapshot.</p>';
+    var W=560,H=440,ml=48,mr=16,mt=16,mb=52,pw=W-ml-mr,ph=H-mt-mb;
+    var xs=pts.map(function(p){return Number(p.breakout);}),ys=pts.map(function(p){return Number(p.expansion);});
+    var x0=Math.min.apply(null,xs),x1=Math.max.apply(null,xs),y0=Math.min.apply(null,ys),y1=Math.max.apply(null,ys);
+    var med=function(a){var s=a.slice().sort(function(x,y){return x-y;}),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2;};
+    var mx=med(xs),my=med(ys);
+    var px0=x0-(x1-x0)*0.05,px1=x1+(x1-x0)*0.05,py0=y0-(y1-y0)*0.08,py1=y1+(y1-y0)*0.08;
+    var X=function(v){return ml+(v-px0)/(px1-px0)*pw;},Y=function(v){return mt+(py1-v)/(py1-py0)*ph;};
+    var s='<svg role="img" aria-label="Breakout versus expansion for the 55-stock universe" viewBox="0 0 '+W+' '+H+'">';
+    // quadrant shading, split at medians: high/high gets the accent wash
+    s+='<rect x="'+X(mx).toFixed(1)+'" y="'+mt+'" width="'+(X(px1)-X(mx)).toFixed(1)+'" height="'+(Y(my)-mt).toFixed(1)+'" fill="#eef5f3"/>';
+    s+='<rect x="'+ml+'" y="'+Y(my).toFixed(1)+'" width="'+(X(mx)-ml).toFixed(1)+'" height="'+(mt+ph-Y(my)).toFixed(1)+'" fill="#f8faf9"/>';
+    s+='<line x1="'+X(mx).toFixed(1)+'" y1="'+mt+'" x2="'+X(mx).toFixed(1)+'" y2="'+(mt+ph)+'" stroke="#aebbb5" stroke-width="1" stroke-dasharray="4 3"/>';
+    s+='<line x1="'+ml+'" y1="'+Y(my).toFixed(1)+'" x2="'+(ml+pw)+'" y2="'+Y(my).toFixed(1)+'" stroke="#aebbb5" stroke-width="1" stroke-dasharray="4 3"/>';
+    s+='<text x="'+(X(mx)+5).toFixed(1)+'" y="'+(mt+13)+'" fill="#65716b" font-family="'+F+'" font-size="9">median '+num(mx,1)+'</text>';
+    s+='<text x="'+(ml+pw-5)+'" y="'+(Y(my)-7).toFixed(1)+'" text-anchor="end" fill="#65716b" font-family="'+F+'" font-size="9">median '+num(my,1)+'</text>';
+    // axes
+    s+='<line x1="'+ml+'" y1="'+(mt+ph)+'" x2="'+(ml+pw)+'" y2="'+(mt+ph)+'" stroke="#aebbb5" stroke-width="1"/>';
+    s+='<line x1="'+ml+'" y1="'+mt+'" x2="'+ml+'" y2="'+(mt+ph)+'" stroke="#aebbb5" stroke-width="1"/>';
+    [x0,mx,x1].forEach(function(t){s+='<text x="'+X(t).toFixed(1)+'" y="'+(mt+ph+17)+'" text-anchor="middle" fill="#65716b" font-family="'+F+'" font-size="9">'+num(t,0)+'</text>';});
+    [y0,my,y1].forEach(function(t){s+='<text x="'+(ml-7)+'" y="'+(Y(t)+3).toFixed(1)+'" text-anchor="end" fill="#65716b" font-family="'+F+'" font-size="9">'+num(t,0)+'</text>';});
+    s+='<text x="'+(ml+pw/2)+'" y="'+(H-9)+'" text-anchor="middle" fill="#65716b" font-family="'+F+'" font-size="10">Breakout score \u2192</text>';
+    s+='<text x="15" y="'+(mt+ph/2)+'" text-anchor="middle" fill="#65716b" font-family="'+F+'" font-size="10" transform="rotate(-90 15 '+(mt+ph/2)+')">\u2191 Expansion score</text>';
+    // points, best ranks painted last (on top); tickers labeled for ranks 1-10
+    // with a greedy declutter (clashing labels drop below their dot)
+    var order=pts.slice().sort(function(a,b){return (b.rank||99)-(a.rank||99);});
+    var placed=[];
+    order.forEach(function(p){
+      var cx=X(Number(p.breakout)),cy=Y(Number(p.expansion)),c=bandColor[p.band]||'#0f5a48';
+      s+='<circle cx="'+cx.toFixed(1)+'" cy="'+cy.toFixed(1)+'" r="5" fill="'+c+'" stroke="#ffffff" stroke-width="1.2"><title>'+esc(p.ticker+' \u00b7 rank '+p.rank+' \u00b7 breakout '+p.breakout+' \u00b7 expansion '+p.expansion)+'</title></circle>';
+      if(Number(p.rank)<=10){
+        var w=String(p.ticker).length*6.2,lx=cx,ly=cy-9;
+        var clashes=function(){return placed.some(function(q){return Math.abs(lx-q.x)<(w+q.w)/2+2 && Math.abs(ly-q.y)<11;});};
+        if(clashes()){ ly=cy+18; }                    // drop below the dot
+        if(clashes()){ lx=cx+w/2+8; ly=cy+4; }        // nudge right
+        placed.push({x:lx,y:ly,w:w});
+        s+='<text x="'+lx.toFixed(1)+'" y="'+ly.toFixed(1)+'" text-anchor="middle" fill="#1d2a25" font-family="'+F+'" font-size="9.5" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="2.5">'+esc(p.ticker)+'</text>';
+      }
+    });
+    return s+'</svg>';
+  }
+
+  function lectorPulseGauge(state,rule){
+    var W=500,H=128,x0=24,segW=(W-48)/6,y=54,h=30;
+    var idx=states.indexOf(state);
+    var s='<svg role="img" aria-label="Market pulse state '+(state||'unknown')+'" viewBox="0 0 '+W+' '+H+'">';
+    states.forEach(function(st,i){
+      var x=x0+i*segW,on=i===idx;
+      s+='<rect x="'+x.toFixed(1)+'" y="'+y+'" width="'+(segW-4).toFixed(1)+'" height="'+h+'" fill="'+stateColor[st]+'" opacity="'+(on?1:0.3)+'" rx="2"/>';
+      s+='<text x="'+(x+(segW-4)/2).toFixed(1)+'" y="'+(y+h+17)+'" text-anchor="middle" fill="'+(on?'#1d2a25':'#65716b')+'" font-family="'+F+'" font-size="9" font-weight="'+(on?700:400)+'">'+st+'</text>';
+    });
+    if(idx>=0){
+      var cx=x0+idx*segW+(segW-4)/2;
+      s+='<path d="M'+(cx-7).toFixed(1)+' '+(y-5)+' L'+(cx+7).toFixed(1)+' '+(y-5)+' L'+cx.toFixed(1)+' '+(y-16)+' Z" fill="#1d2a25"/>';
+      s+='<text x="'+cx.toFixed(1)+'" y="26" text-anchor="middle" fill="#1d2a25" font-family="'+F+'" font-size="18" font-weight="700">'+esc(state)+'</text>';
+    } else {
+      s+='<text x="'+(W/2)+'" y="26" text-anchor="middle" fill="#65716b" font-family="'+F+'" font-size="14">state unavailable</text>';
+    }
+    s+='<text x="'+(W/2)+'" y="'+(H-5)+'" text-anchor="middle" fill="#65716b" font-family="'+F+'" font-size="9">Most defensive of QQQE / RSP \u00b7 exposure rule: '+esc(rule||'\u2014')+'</text>';
+    return s+'</svg>';
+  }
+
+  var out='';
+  // provenance
+  out+='<p class="muted" style="margin:0 0 16px;font-size:12px">As of '+esc(fmtDate(L.as_of))+(L.stale?' \u00b7 <span class="warning">stale \u2014 refresher over 3 days old</span>':'')+' \u00b7 '+esc(L.data_source||'')+'</p>';
+
+  // (a) top-15 by Opp Score, band colors
+  var top15=(L.ranker.top15||[]).map(function(r){return {label:r.ticker+'  #'+r.rank,value:r.opp_score,color:bandColor[r.band]||'#0f5a48'};});
+  out+='<div class="viz" style="padding-left:0;padding-right:0"><div class="viz-head"><strong>Top 15 by Opp Score</strong><span>'+esc(L.ranker.universe||'lector universe')+'</span></div><div class="chart-legend">'+['TOP 10%','TOP 25%','TOP 50%','LOWER 50%'].map(function(b){return sw(b,bandColor[b]);}).join('')+'</div>'+horizontalBars(top15,{label:'Top 15 stocks by opportunity score',format:function(v){return num(v,1);}})+'</div>';
+
+  // (b) breakout x expansion scatter, full universe
+  out+='<div class="viz" style="padding-left:0;padding-right:0"><div class="viz-head"><strong>Breakout \u00d7 Expansion</strong><span>All 55 names \u00b7 quadrants split at medians</span></div>'+lectorScatter(L.ranker.scatter)+'<p class="section-note">Each dot is a ticker (top 10 labeled). Upper-right quadrant: above-median breakout and expansion.</p></div>';
+
+  // (c) pulse gauge + RAM meter
+  out+='<div class="viz-head"><strong>Market Pulse &amp; RAM</strong><span>'+esc(fmtDate(L.as_of))+'</span></div><div class="dial-grid"><div class="dial">'+lectorPulseGauge(L.pulse.state,L.pulse.exposure_rule)+'</div>'+dialGauge('RAM \u00b7 correction-hazard',L.pulse.ram,num(L.pulse.ram,1)+' \u00b7 '+(L.pulse.ram_level||''))+'</div><p class="section-note">VMR family: '+(L.pulse.vmr_or_unavailable==='unavailable'?'unavailable \u2014 index feeds not carried':'recorded')+'. RAM is a 0\u2013100 deterministic correction-hazard score, not a calibrated probability.</p>';
+
+  // (d) theme leaders, rotation-quadrant colors
+  var leaders=(L.themes.leaders||[]).map(function(l){return {label:l.etf,value:l.score,color:quadColor[l.quadrant]||'#0f5a48'};});
+  out+='<div class="viz" style="padding-left:0;padding-right:0"><div class="viz-head"><strong>Theme leaders</strong><span>Top 8 of '+esc(L.themes.n_themes)+' rotation themes</span></div><div class="chart-legend">'+['Leading','Improving','Weakening','Lagging'].map(function(q){return sw(q,quadColor[q]);}).join('')+'</div>'+horizontalBars(leaders,{label:'Theme leaders by rotation score',format:function(v){return num(v,2);}})+'</div>';
+
+  // (e) one-line breadth summary
+  var oscs=String(L.breadth.mcclellan_note||'').match(/oscillator ([-\d.]+)/g)||[];
+  oscs=oscs.map(function(m){return Number(m.split(' ')[1]);});
+  var posture=oscs.length&&oscs.every(function(v){return v<0;})?'weak \u2014 all oscillators negative':(oscs.length&&oscs.every(function(v){return v>0;})?'firm \u2014 all oscillators positive':'mixed');
+  out+='<div class="compact-summary"><strong>Breadth</strong><span>A/D '+num(L.breadth.ad_ratio,3)+'</span><span>McClellan '+esc(posture)+'</span><span>'+esc(L.breadth.zweig_note)+'</span></div>';
+
+  out+='<p class="footnote">'+esc(L.credit)+' \u00b7 '+esc(L.label)+'. '+esc(L.fit_caveat)+'</p>';
+  return out;
+}
     function killSwitchVisual(){const base=Number(d.state_meta.day_start_equity),trip=base*(1-Number(d.kill_switch.threshold_pct)/100),current=Number(d.account.equity),max=Math.max(base,current),x=v=>36+(v-trip)/(max-trip)*428,cushion=current-trip;return '<div class="viz"><div class="viz-head"><strong>Kill-switch proximity</strong><span>'+money(cushion)+' cushion to trip</span></div><svg role="img" aria-label="Current equity compared with kill switch trip level" viewBox="0 0 500 84"><rect x="36" y="32" width="428" height="12" fill="#e5e9e7" rx="2"/><rect x="36" y="32" width="'+Math.max(0,x(current)-36)+'" height="12" fill="#0f5a48" rx="2"/><line x1="36" y1="23" x2="36" y2="55" stroke="#963e3e" stroke-width="2"/><line x1="'+x(base)+'" y1="26" x2="'+x(base)+'" y2="51" stroke="#835f17" stroke-width="1.5"/><circle cx="'+x(current)+'" cy="38" r="6" fill="#0f5a48" stroke="#fff" stroke-width="2"/><text x="36" y="15" fill="#963e3e" font-family="IBM Plex Mono, monospace" font-size="9">Trip '+esc(money(trip))+'</text><text x="'+x(base)+'" y="67" text-anchor="middle" fill="#835f17" font-family="IBM Plex Mono, monospace" font-size="9">Baseline '+esc(money(base))+'</text><text x="464" y="15" text-anchor="end" fill="#0f5a48" font-family="IBM Plex Mono, monospace" font-size="9">Now '+esc(money(current))+'</text></svg></div>'}
     const parsePnl=v=>Number(String(v||'0').replace(/[$,]/g,''))||0;
     function performanceStats(){
@@ -5360,6 +5466,8 @@
     const g=d.spy_gamma;$('gammaDate').textContent='As of '+fmtDate(g.date)+(g.stale?' · stale':' · current in snapshot');$('gamma').innerHTML='<div class="kv"><div>SqueezeMetrics GEX</div><div>'+money(g.squeezemetrics.gex_usd,0)+'</div><div>SqueezeMetrics DIX</div><div>'+num(g.squeezemetrics.dix,4)+'</div><div>SqueezeMetrics price</div><div>'+money(g.squeezemetrics.price)+'</div><div>UW spot</div><div>'+money(g.unusual_whales.spot)+'</div><div>Gamma flip</div><div>'+money(g.unusual_whales.gamma_flip)+'</div><div>Net gamma · OI</div><div class="'+cls(g.unusual_whales.net_gamma_oi)+'">'+num(g.unusual_whales.net_gamma_oi,0)+'</div><div>Net gamma · volume</div><div class="'+cls(g.unusual_whales.net_gamma_volume)+'">'+num(g.unusual_whales.net_gamma_volume,0)+'</div><div>Call wall / put wall</div><div>'+num(g.unusual_whales.call_wall,0)+' / '+num(g.unusual_whales.put_wall,0)+'</div><div>0D gamma</div><div>'+pct(g.unusual_whales.pct_gamma_0d,1)+'</div><div>UW regime</div><div>'+(g.unusual_whales.regime?esc(g.unusual_whales.regime):'Not available in this snapshot')+'</div></div>'+gammaVisual(g.unusual_whales);
     const sg=d.sentiment_gauges;$('sentiment').innerHTML='<div class="dial-grid">'+dialGauge('Fear & Greed',sg.fear_greed.value,num(sg.fear_greed.value,0))+dialGauge('Median short ratio',sg.short_volume.median_short_ratio*100,pct(sg.short_volume.median_short_ratio*100,1))+'</div><div style="height:14px"></div><div class="viz-head"><strong>Put / call readings</strong><span>'+esc(fmtDate(sg.put_call.date))+'</span></div>'+horizontalBars([{label:'Total',value:sg.put_call.total},{label:'Equity',value:sg.put_call.equity},{label:'Index',value:sg.put_call.index}],{label:'Put call readings',format:v=>num(v,2)})+'<div class="kv"><div>Fear &amp; Greed</div><div>'+esc(sg.fear_greed.value)+' · '+esc(sg.fear_greed.rating)+'</div><div>Previous close</div><div>'+esc(sg.fear_greed.previous_close)+'</div><div>Short-volume symbols</div><div>'+num(sg.short_volume.symbols,0)+'</div></div>';
 
+    if(d.lector){$('lectorPill').textContent='As of '+fmtDate(d.lector.as_of);if(d.lector.stale)$('lectorPill').classList.add('warn');}
+    $('lectorLab').innerHTML=lectorLabVisual();
     $('earningsUpdated').textContent='Updated '+fmtTime(d.earnings_updated_ts);const earningsRows=d.earnings_upcoming_7d.map(x=>row([{l:'Symbol',c:'symbol',v:esc(x.symbol)},{l:'Date',c:'mono',v:esc(fmtDate(x.date))},{l:'Days',c:'num',v:esc(x.in_days)},{l:'Blackout',v:'<span class="pill '+(x.blackout?'bad':'good')+'">'+esc(x.blackout?'BLACKOUT':'CLEAR')+'</span>'}]));$('earnings').innerHTML=d.earnings_upcoming_7d.length?'<div class="viz"><div class="viz-head"><strong>Earnings runway</strong><span>Next seven days</span></div><div class="stat-grid">'+d.earnings_upcoming_7d.map(x=>'<div class="stat"><span>'+esc(fmtDate(x.date))+'</span><strong>'+esc(x.symbol)+'</strong><small class="'+(x.blackout?'negative':'positive')+'">'+esc(x.blackout?'Blackout':'Clear')+'</small></div>').join('')+'</div></div>'+table([{t:'Symbol'},{t:'Date'},{t:'Days',c:'num'},{t:'Blackout'}],earningsRows):'<div class="empty">No earnings are recorded in the next seven days.</div>';
     const optionPositions=d.positions.filter(p=>parseOptionSymbol(p.symbol)),xsp=optionPositions.filter(p=>p.sleeve==='spx_premium'),calls=optionPositions.filter(p=>parseOptionSymbol(p.symbol).type==='C');$('optionPayoffs').innerHTML=optionPositions.length?'<div class="payoff-grid">'+(xsp.length?payoffCard('XSP put spread',xsp):'')+calls.map(p=>payoffCard(parseOptionSymbol(p.symbol).root+' long call',[p])).join('')+'</div>':'<div class="empty">No open option contracts are recorded in this snapshot.</div>';
     const iv=d.options_iv_skew,ivEntries=Object.entries(iv.symbols),allCalm=ivEntries.length&&ivEntries.every(([,v])=>String(v.zone).toLowerCase()==='calm');$('ivNote').textContent='Recorded options readings in this snapshot.';$('ivCount').textContent=ivEntries.length+' symbols';const ivFull=table([{t:'Symbol'},{t:'Underlying',c:'num'},{t:'IV30',c:'num'},{t:'Skew25',c:'num'},{t:'30D move',c:'num'},{t:'IV pctile',c:'num'},{t:'Skew pctile',c:'num'},{t:'Zone'}],ivEntries.map(([k,v])=>row([{l:'Symbol',c:'symbol',v:esc(k)},{l:'Underlying',c:'num',v:money(v.underlying)},{l:'IV30',c:'num',v:pct(v.iv30*100,2)},{l:'Skew25',c:'num '+cls(v.skew25),v:signPct(v.skew25*100,2)},{l:'30D move',c:'num',v:pct(v.expected_move_30d*100,2)},{l:'IV pctile',c:'num',v:v.iv30_pctile_60d==null?'—':pct(v.iv30_pctile_60d,1)},{l:'Skew pctile',c:'num',v:v.skew25_pctile_60d==null?'—':pct(v.skew25_pctile_60d,1)},{l:'Zone',v:'<span class="pill '+(v.zone==='calm'?'good':'warn')+'">'+esc(v.zone)+'</span>'}])));$('ivTable').innerHTML=allCalm?'<div class="compact-summary"><strong>'+ivEntries.length+' symbols scanned</strong><span>all CALM, no skew extremes</span></div><details><summary>Show all '+ivEntries.length+' readings</summary><div class="table-wrap">'+ivFull+'</div></details>':ivFull;
