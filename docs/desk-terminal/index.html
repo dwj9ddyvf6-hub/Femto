@@ -390,10 +390,21 @@ function sleeveTape(key, s, d){
     const n=sl.open_positions||0;
     return n?`${name} <b>${n} CALL${n>1?"S":""}</b>`:`${name} <b>${sl.state_known?"FLAT":"STANDBY"}</b>`;
   }
+  // SPX premium: spread legs have no plain symbol
+  if(key==="spx_premium"){
+    const ps=sl.positions||[];
+    if(ps.length){
+      const q=ps[0];
+      const legs=(q.short_strike&&q.long_strike)?` PUT SPREAD ${q.short_strike}/${q.long_strike}`:"";
+      return `${name} <b>${ps.length} OPEN${legs}</b>`;
+    }
+    return `${name} <b>${sl.state_known?"FLAT":"STANDBY"}</b>`;
+  }
   // Generic: count open positions
   const pos = sl.positions || sl.open_positions;
+  const plabel = x => (x&&(x.symbol||x.occ||x.underlying||x.short_occ)) || "";
   if(Array.isArray(pos) && pos.length){
-    const syms = pos.slice(0,3).map(p=>esc(p.symbol||p)).join(" ");
+    const syms = pos.slice(0,3).map(x=>esc(plabel(x))).filter(Boolean).join(" ");
     return `${name} <b>${pos.length} OPEN${pos.length>1?"":""} · ${syms}</b>`;
   }
   if(typeof pos === "number" && pos > 0){
@@ -638,7 +649,16 @@ function stratStatus(key,s,d){
     }
     return b.state_known ? "FLAT — NO QUALIFYING BREAKOUTS." : "STANDBY — FIRST SCAN PENDING.";
   }
-  return "—";
+  // Generic sleeves: report open positions or flat/standby
+  const gsl=s[key]||{}, gpos=gsl.positions||gsl.open_positions;
+  const glabel = x => (x&&(x.symbol||x.occ||x.underlying||x.short_occ)) || "";
+  if(Array.isArray(gpos)&&gpos.length){
+    const syms=gpos.slice(0,4).map(x=>esc(glabel(x))).filter(Boolean).join(", ");
+    return `HOLDING ${gpos.length} POSITION${gpos.length>1?"S":""}${syms?` — ${syms}`:""}.`;
+  }
+  if(typeof gpos==="number"&&gpos>0) return `HOLDING ${gpos} OPEN POSITION${gpos>1?"S":""}.`;
+  if(gsl.position&&gsl.position.symbol) return `HOLDING ${esc(gsl.position.symbol)}.`;
+  return gsl.state_known===false ? "STANDBY — FIRST SCAN PENDING." : "FLAT.";
 }
 function renderStrats(d){
   const s=d.sleeves||{};
