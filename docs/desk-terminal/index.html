@@ -268,6 +268,34 @@
 
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>SNT · SENTIMENT</span><span class="sub" id="snt-date">—</span></div>
+    <div class="psub">The market's mood, read three ways — crowd fear, options hedging, and who's short.</div>
+    <div id="snt"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>SIG · SIGNAL TAPE</span><span class="sub">LATEST 20</span></div>
+    <div class="psub">Every live signal as it fires — and whether it earned its keep.</div>
+    <div class="tbl-wrap" id="sigtape"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>P&amp;L · CLOSED TRADES</span><span class="sub">THE RECEIPTS</span></div>
+    <div class="psub">Every closed trade, win or lose. No cherry-picking.</div>
+    <div class="tbl-wrap" id="pnlboard"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>GRV · THE GRAVEYARD</span><span class="sub" id="grv-count">—</span></div>
+    <div class="psub">Every research idea this desk has killed — and the measurement that killed it. Dead ideas stay dead.</div>
+    <div id="graveyard"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
     <div class="phead"><span>EARN · EARNINGS CALENDAR</span><span class="sub" id="earn-count">—</span></div>
     <div class="psub">Upcoming earnings with blackout flags (T−3d → event).</div>
     <div id="earnings"></div>
@@ -495,6 +523,7 @@ function renderPositions(d){
       <div class="poshead"><span class="sym">${esc(r.symbol)}</span>
         <span class="pnl ${cls(u)}">${signed0(u)} (${pct(r.unrealized_pl_pct)})</span></div>
       <div class="posmeta">${qty(r.qty)} SHARES &nbsp;·&nbsp; ENTRY ${money2(r.avg_entry)} &nbsp;·&nbsp; NOW ${money2(r.current)}</div>
+      ${(r.entry_day||r.thesis)?`<div class="posmeta">TAKEN ${esc(r.entry_day||"—")}${r.thesis?` &nbsp;·&nbsp; WHY: ${esc(r.thesis)}`:""}</div>`:""}
       <div class="bar-row"><span class="bar-lab">PROFIT / LOSS</span>
         <div class="bar-track">${bar}</div><span class="bar-val ${cls(u)}">${signed0(u)}</span></div>
       ${anatomySVG(r)}
@@ -728,6 +757,69 @@ function renderOptions(d){
     `</tbody></table><div class="note">Percentiles vs each name's own trailing 60 trading days — they fill in as history accumulates. Fast = IV pricier than 75% of its history or up 20%+ in 5 days.</div>`;
 }
 
+function renderSentiment(d){
+  const s = d.sentiment_gauges || {};
+  $("snt-date").textContent = (s.fear_greed&&s.fear_greed.date)||(s.put_call&&s.put_call.date)||"—";
+  const el = $("snt");
+  if(!s.fear_greed && !s.put_call && !s.short_volume){
+    el.innerHTML = `<div class="empty">No sentiment snapshot yet.</div>`; return;
+  }
+  let h = "";
+  if(s.fear_greed){
+    const fg = s.fear_greed, v = +fg.value||0;
+    const fcls = v<25 ? "down" : v<45 ? "down" : v<55 ? "neu" : "up";
+    h += `<div class="kv"><span class="k">Fear &amp; Greed</span><span class="${fcls}"><b>${v}</b> · ${esc(fg.rating||"—")}</span></div>
+    <div class="bar-row"><span class="bar-lab">0 EXTREME FEAR / 100 EXTREME GREED</span>
+    <div class="bar-track"><div class="bar-fill" style="left:0;width:${v}%;background:var(--teal);opacity:.7"></div></div>
+    <span class="bar-val mono">${v}</span></div>
+    <div class="kv"><span class="k">Prev close</span><span class="mono">${fg.previous_close??"—"}</span></div>`;
+  }
+  if(s.put_call){
+    const pc = s.put_call;
+    const pcls = pc.total>1 ? "down" : "up";
+    h += `<div class="kv"><span class="k">Put/Call (total)</span><span class="${pcls} mono"><b>${pc.total??"—"}</b></span></div>
+    <div class="kv"><span class="k">Equity / Index</span><span class="mono">${pc.equity??"—"} / ${pc.index??"—"}</span></div>`;
+  }
+  if(s.short_volume){
+    const sv = s.short_volume;
+    h += `<div class="kv"><span class="k">Median short ratio</span><span class="mono">${sv.median_short_ratio!=null?(sv.median_short_ratio*100).toFixed(1)+"%":"—"}</span></div>
+    <div class="kv"><span class="k">FINRA coverage</span><span class="mono">${(sv.symbols||0).toLocaleString()} symbols</span></div>`;
+  }
+  el.innerHTML = h;
+}
+
+function renderTape(d){
+  const t = d.signal_tape || [];
+  const el = $("sigtape");
+  if(!t.length){ el.innerHTML = `<div class="empty">No signals yet.</div>`; return; }
+  el.innerHTML = `<table><thead><tr><th>TIME</th><th>SYMBOL</th><th>SIGNAL</th><th>TYPE</th><th>CONF</th><th>WHY</th></tr></thead><tbody>` +
+    t.map(r => `<tr><td class="mono">${esc((r.ts||"").slice(0,16))}</td><td><b>${esc(r.symbol)}</b></td>` +
+      `<td><span class="${r.decision==="TRADE"?"up":"neu"}">${esc(r.decision)}</span></td>` +
+      `<td>${esc(r.phenotype||"—")}</td><td class="mono">${r.confidence??"—"}</td>` +
+      `<td class="muted">${esc(r.reason||"—")}</td></tr>`).join("") + `</tbody></table>`;
+}
+
+function renderBoard(d){
+  const b = d.closed_trade_board || [];
+  const el = $("pnlboard");
+  if(!b.length){ el.innerHTML = `<div class="empty">No closed trades yet.</div>`; return; }
+  el.innerHTML = `<table><thead><tr><th>DATE</th><th>SYMBOL</th><th>SLEEVE</th><th>P&amp;L</th></tr></thead><tbody>` +
+    b.map(r => `<tr><td class="mono">${esc(r.date)}</td><td><b>${esc(r.symbol)}</b></td>` +
+      `<td>${esc(r.sleeve)}</td><td class="mono ${String(r.pnl).startsWith("-")?"down":"up"}"><b>${esc(r.pnl)}</b></td></tr>`).join("") +
+    `</tbody></table>`;
+}
+
+function renderGraveyard(d){
+  const g = d.graveyard || [];
+  $("grv-count").textContent = g.length ? g.length + " BURIED" : "—";
+  const el = $("graveyard");
+  if(!g.length){ el.innerHTML = `<div class="empty">Nothing buried yet.</div>`; return; }
+  el.innerHTML = g.map(x =>
+    `<div class="kv"><span class="k mono">${esc(x.id)}</span><span><b>${esc(x.idea)}</b>${x.scope?` <span class="muted">(${esc(x.scope)})</span>`:""}</span></div>` +
+    (x.killed_by ? `<div class="note" style="margin:-4px 0 8px 0">${esc(x.killed_by)}</div>` : "")
+  ).join("");
+}
+
 function renderEarnings(d){
   const er = d.earnings_upcoming_7d || [];
   $("earn-count").textContent = er.length ? er.length + " upcoming" : "none";
@@ -742,9 +834,17 @@ function renderEarnings(d){
 }
 
 function renderRisk(d){
-  const k=d.kill_switch||{}, earn=d.earnings_upcoming_7d||[];
+  const k=d.kill_switch||{}, earn=d.earnings_upcoming_7d||[], ex=d.exposure||{};
+  const gp=+ex.gross_pct||0, cap=+ex.cap_pct||150;
+  const w=Math.min(100, gp/2), hot = gp>cap;
+  const therm = `<div class="riskcell" style="grid-column:1/-1"><div class="k">GROSS EXPOSURE vs ${cap}% BREAKER</div>
+    <div class="bar-row"><span class="bar-lab">${gp.toFixed(0)}% OF EQUITY</span>
+    <div class="bar-track" style="position:relative"><div class="bar-fill" style="left:0;width:${w}%;background:${hot?"#c24134":"var(--teal)"};opacity:.75"></div>
+    <div style="position:absolute;left:${cap/2}%;top:-3px;bottom:-3px;width:2px;background:#102a3a"></div></div>
+    <span class="bar-val ${hot?"down":"up"} mono">${hot?"BREAKER TRIPPED":"OK"}</span></div>
+    <div class="v mono" style="margin-top:4px">gross $${Math.round(ex.gross_notional||0).toLocaleString()} on $${Math.round(ex.equity||0).toLocaleString()} equity · headroom ${ex.headroom_pct??"—"}%</div></div>`;
   const seg=s=>String(s).split("").map(ch=>`<span class="seg">${esc(ch)}</span>`).join("");
-  $("risk").innerHTML =
+  $("risk").innerHTML = therm +
    `<div class="riskcell"><div class="k">KILL SWITCH</div><div class="v">${
      k.tripped?'<span class="down"><b>TRIPPED</b> — ALL ENTRIES HALTED</span>'
      :`ARMED ${seg("−"+(k.threshold_pct||"—")+"%")} <span class="up">· NOT TRIPPED</span>`}</div></div>`+
@@ -756,7 +856,7 @@ function renderRisk(d){
 function render(d){
   lastGood=d; lastGen=d.generated_at_utc;
   renderHero(d.desk_narrative); renderEquity(d); renderPositions(d);
-  renderStrats(d); renderRegime(d); renderMktCtx(d); renderGamma(d); renderOptions(d); renderEarnings(d); renderRisk(d); buildReadout(d); buildTape(d);
+  renderStrats(d); renderRegime(d); renderMktCtx(d); renderGamma(d); renderOptions(d); renderSentiment(d); renderTape(d); renderBoard(d); renderGraveyard(d); renderEarnings(d); renderRisk(d); buildReadout(d); buildTape(d);
   $("feedstamp").textContent = "feed: " + (d.generated_at_et? etHM(d.generated_at_et)+" ET":"—");
   $("livetext").textContent = "LIVE · " + etHM(d.generated_at_utc) + " ET";
   $("livedot").classList.remove("stale");
