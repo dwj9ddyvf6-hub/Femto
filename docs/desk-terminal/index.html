@@ -261,6 +261,13 @@
 
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>OPT · OPTIONS PRICING</span><span class="sub" id="opt-date">—</span></div>
+    <div class="psub">How expensive options are per name versus their own history — and whether downside protection is bid.</div>
+    <div class="tbl-wrap" id="opttbl"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
     <div class="phead"><span>EARN · EARNINGS CALENDAR</span><span class="sub" id="earn-count">—</span></div>
     <div class="psub">Upcoming earnings with blackout flags (T−3d → event).</div>
     <div id="earnings"></div>
@@ -698,6 +705,29 @@ function renderGamma(d){
   el.innerHTML = h || `<div class="empty">No gamma data.</div>`;
 }
 
+function renderOptions(d){
+  const o = d.options_iv_skew || {};
+  $("opt-date").textContent = o.date || "—";
+  const el = $("opttbl");
+  const syms = o.symbols || {};
+  const rows = Object.keys(syms).map(k => Object.assign({sym:k}, syms[k]))
+    .sort((a,b) => (b.iv30||0) - (a.iv30||0));
+  if(!rows.length){
+    el.innerHTML = `<div class="empty">No options snapshot yet — first read lands after the close.</div>`;
+    return;
+  }
+  const pct = v => v==null ? "—" : Math.round(v)+"%";
+  const zcls = z => z==="fast" ? "down" : "neu";
+  el.innerHTML = `<table><thead><tr><th>SYMBOL</th><th>30D IV</th><th>IV %ILE</th><th>25D SKEW</th><th>SKEW %ILE</th><th>ZONE</th></tr></thead><tbody>` +
+    rows.map(r => `<tr><td><b>${esc(r.sym)}</b></td>` +
+      `<td class="mono">${(r.iv30*100).toFixed(1)}%</td>` +
+      `<td class="mono">${pct(r.iv30_pctile_60d)}</td>` +
+      `<td class="mono">${r.skew25!=null ? (r.skew25>=0?"+":"")+r.skew25.toFixed(3) : "—"}</td>` +
+      `<td class="mono">${pct(r.skew25_pctile_60d)}</td>` +
+      `<td><span class="${zcls(r.zone)}">${esc((r.zone||"—").toUpperCase())}</span></td></tr>`).join("") +
+    `</tbody></table><div class="note">Percentiles vs each name's own trailing 60 trading days — they fill in as history accumulates. Fast = IV pricier than 75% of its history or up 20%+ in 5 days.</div>`;
+}
+
 function renderEarnings(d){
   const er = d.earnings_upcoming_7d || [];
   $("earn-count").textContent = er.length ? er.length + " upcoming" : "none";
@@ -726,7 +756,7 @@ function renderRisk(d){
 function render(d){
   lastGood=d; lastGen=d.generated_at_utc;
   renderHero(d.desk_narrative); renderEquity(d); renderPositions(d);
-  renderStrats(d); renderRegime(d); renderMktCtx(d); renderGamma(d); renderEarnings(d); renderRisk(d); buildReadout(d); buildTape(d);
+  renderStrats(d); renderRegime(d); renderMktCtx(d); renderGamma(d); renderOptions(d); renderEarnings(d); renderRisk(d); buildReadout(d); buildTape(d);
   $("feedstamp").textContent = "feed: " + (d.generated_at_et? etHM(d.generated_at_et)+" ET":"—");
   $("livetext").textContent = "LIVE · " + etHM(d.generated_at_utc) + " ET";
   $("livedot").classList.remove("stale");
