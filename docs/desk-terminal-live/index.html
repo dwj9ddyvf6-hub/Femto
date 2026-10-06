@@ -90,7 +90,7 @@
       </div>
       <div class="mast-tools">
         <a class="live-link" href="https://dwj9ddyvf6-hub.github.io/Femto/docs/desk-terminal-live/" target="_blank" rel="noopener noreferrer" aria-label="Open the auto-refreshing live desk terminal">LIVE · Auto-refreshing terminal</a>
-        <div class="snapshot"><span>Snapshot</span><strong id="snapshotTime">—</strong><span>Static desk record</span></div>
+        <div class="snapshot"><span>Snapshot</span><strong id="snapshotTime">—</strong><span>Live &middot; auto-refreshing</span></div>
       </div>
     </header>
 
@@ -182,7 +182,7 @@
       <section class="panel"><div class="panel-head"><div><h2>Desk narrative</h2><p id="narrativeUpdated"></p></div></div><div class="panel-body" id="narrative"></div></section>
     </section>
 
-    <p class="footnote">Paper-trading snapshot. Values are fixed at the timestamp shown and do not update while this page is open.</p>
+    <p class="footnote">Paper-trading terminal. Figures refresh automatically from the desk feed — about every minute during market hours.</p>
   </main>
 
   <script id="snapshot-data" type="application/json">{
@@ -5274,7 +5274,7 @@
     $('exposure').innerHTML='<div class="kv"><div>Gross notional</div><div>'+money(d.exposure.gross_notional)+'</div><div>Gross exposure</div><div>'+pct(d.exposure.gross_pct,1)+'</div><div>Desk cap</div><div>'+pct(d.exposure.cap_pct,0)+'</div><div>Headroom</div><div>'+pct(d.exposure.headroom_pct,1)+'</div><div>Open positions</div><div>'+esc(d.exposure.position_count)+'</div></div><div class="exposure-meter" aria-label="Gross exposure '+pct(d.exposure.gross_pct,1)+' of '+pct(d.exposure.cap_pct,0)+' cap"><span style="width:'+Math.min(100,d.exposure.gross_pct/d.exposure.cap_pct*100)+'%"></span><i></i><i></i><i></i></div><div class="metric-sub">'+pct(d.exposure.gross_pct,1)+' of '+pct(d.exposure.cap_pct,0)+' capacity</div><div class="viz" style="padding-left:0;padding-right:0"><div class="viz-head"><strong>Recorded notional by sleeve</strong><span>'+sleeveExposure.length+' sleeves with notional</span></div>'+horizontalBars(sleeveExposure,{label:'Recorded notional by sleeve',format:v=>money(v,0)})+'<p class="footnote">Notional is recorded for '+sleeveExposure.length+' of 22 sleeves; the allocation treemap below renders those recorded sleeves only.</p></div>';
 
     const knownSectorCounts=Object.entries(d.sector_counts).filter(([k])=>k.toLowerCase()!=='unknown'),sectorCoverage=d.positions.filter(p=>p.sector).length,sectorExposure=Object.entries(d.positions.filter(p=>p.sector).reduce((a,p)=>(a[p.sector]=(a[p.sector]||0)+Math.abs(Number(p.market_value)),a),{})).map(([label,value])=>({label,value})).sort((a,b)=>b.value-a.value);
-    $('riskRail').innerHTML='<div class="notice '+(d.kill_switch.tripped?'bad':'good')+'"><strong>Kill switch '+(d.kill_switch.tripped?'TRIPPED':'ARMED · NOT TRIPPED')+'</strong><p>Threshold '+pct(d.kill_switch.threshold_pct,1)+' versus prior-day last-seen equity.</p></div><div class="notice '+(d.last_scan.market_open?'good':'')+'"><strong>Last scan</strong><p>'+(d.last_scan.ts?'As of '+esc(fmtTime(d.last_scan.ts)):'No scan timestamp in this snapshot')+' · Market open: '+esc(d.last_scan.market_open?'yes':'no')+' · Dry run: '+esc(d.last_scan.dry_run?'yes':'no')+'</p></div><div class="notice"><strong>Sector concentration</strong><p>'+knownSectorCounts.map(([k,v])=>esc(k)+' <span class="mono">'+esc(v)+'</span>').join(' · ')+'<span class="coverage-note">Sector on file for '+esc(sectorCoverage)+' of '+esc(d.positions.length)+' positions.</span></p>'+horizontalBars(sectorExposure,{label:'Known sector exposure',format:v=>money(v,0)})+'</div><div class="notice"><strong>Day-start baseline</strong><p><span class="mono">'+money(d.state_meta.day_start_equity)+'</span> on '+esc(fmtDate(d.state_meta.day_start_date))+'</p></div>';
+    $('riskRail').innerHTML='<div class="notice '+(d.kill_switch.tripped?'bad':'good')+'"><strong>Kill switch '+(d.kill_switch.tripped?'TRIPPED':'ARMED · NOT TRIPPED')+'</strong><p>Threshold '+pct(d.kill_switch.threshold_pct,1)+' versus prior-day last-seen equity.</p></div><div class="notice '+(d.last_scan.market_open?'good':'')+'"><strong>Last scan</strong><p>'+(d.last_scan.ts?'As of '+esc(fmtTime(d.last_scan.ts)):'No scan timestamp in this snapshot')+' · Market open: '+esc(d.last_scan.market_open?'yes':'no')+' · Dry run: '+esc(d.last_scan.dry_run?'yes':'no')+'</p></div><div class="notice"><strong>Sector concentration</strong><p>'+knownSectorCounts.map(([k,v])=>esc(k)+'&nbsp;<span class="mono">'+esc(v)+'</span>').join(' · ')+'<span class="coverage-note">Sector on file for '+esc(sectorCoverage)+' of '+esc(d.positions.length)+' positions.</span></p>'+horizontalBars(sectorExposure,{label:'Known sector exposure',format:v=>money(v,0)})+'</div><div class="notice"><strong>Day-start baseline</strong><p><span class="mono">'+money(d.state_meta.day_start_equity)+'</span>&nbsp;on '+esc(fmtDate(d.state_meta.day_start_date))+'</p></div>';
 
     $('positionCount').textContent=d.position_count+' open positions · '+d.positions.filter(p=>String(p.symbol).length>8).length+' option contracts / legs';
     const posRows=d.positions.map(p=>row([
