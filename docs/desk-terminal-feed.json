@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T16:17:51.988519+00:00",
- "generated_at_et": "2026-10-12T12:17:51.988519-04:00",
+ "generated_at_utc": "2026-10-12T16:22:48.194399+00:00",
+ "generated_at_et": "2026-10-12T12:22:48.194399-04:00",
  "account": {
   "equity": "100100.5",
   "cash": "99309.5",
@@ -65,10 +65,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.24,
-   "unrealized_pl": 6.0,
-   "unrealized_pl_pct": 20.0,
-   "market_value": "-24",
+   "current": 0.25,
+   "unrealized_pl": 5.0,
+   "unrealized_pl_pct": 16.666666666666664,
+   "market_value": "-25",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -373,35 +373,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-09T19:52:53.046451+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 1.03% vs prior close 107.08 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T19:57:57.198447+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-09T19:58:01.303678+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 0.68% vs prior close 110.59 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-10T11:46:22.822728+00:00",
-     "event": "orphan_stop",
-     "symbol": "TEST",
-     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
-    },
-    {
-     "ts": "2026-10-10T11:46:22.826920+00:00",
-     "event": "orphan_stop",
-     "symbol": "TEST",
-     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
-    },
-    {
      "ts": "2026-10-11T11:46:33.534877+00:00",
      "event": "orphan_stop",
      "symbol": "TEST",
@@ -439,6 +410,36 @@
     },
     {
      "ts": "2026-10-12T16:13:09.327174+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "DIS",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:18:11.174324+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "V",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:18:12.702584+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "XOM",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:18:13.664812+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "WMT",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:18:14.538048+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "MA",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:18:17.979936+00:00",
      "event": "deferred_circuit_breaker",
      "symbol": "DIS",
      "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
@@ -577,55 +578,79 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T15:26:00.709404+00:00",
-   "last_exit_scan": "2026-10-12T16:15:38.833266+00:00",
+   "last_exit_scan": "2026-10-12T16:20:15.799198+00:00",
    "recent": [
     {
-     "ts": "2026-10-09T19:55:21.407851+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-12T16:22:50.722640+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-09T19:55:24.450514+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-12T16:22:50.725243+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-09T20:00:17.781216+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-12T16:22:50.725901+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-09T20:00:19.584254+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-12T16:22:50.727263+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-09T20:05:23.413254+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-12T16:22:50.727881+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-09T20:05:26.242183+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-12T16:22:50.728579+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T16:10:27.118811+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-12T16:22:50.730148+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T16:10:27.121764+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-12T16:22:50.730559+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T16:10:27.145169+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-12T16:22:50.730847+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T16:15:38.827020+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-12T16:22:50.731118+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T16:15:38.833186+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-12T16:22:50.732933+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T16:15:38.848112+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-12T16:22:50.733303+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     }
    ]
   },
@@ -4482,7 +4507,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T12:17:51.988519-04:00",
+  "updated_et": "2026-10-12T12:22:48.194399-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4549,6 +4574,12 @@
   },
   {
    "ts_utc": "2026-10-12T16:17:51.988519+00:00",
+   "equity": "100100.5",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-12T16:22:48.194399+00:00",
    "equity": "100100.5",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
@@ -4650,7 +4681,7 @@
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 6.0
+    "day_pl": 5.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -4662,7 +4693,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 80.0,
+    "day_pl": 81.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
