@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T16:53:03.107462+00:00",
- "generated_at_et": "2026-10-12T12:53:03.107462-04:00",
+ "generated_at_utc": "2026-10-12T16:57:59.541045+00:00",
+ "generated_at_et": "2026-10-12T12:57:59.541045-04:00",
  "account": {
   "equity": "100098.5",
   "cash": "99309.5",
@@ -65,10 +65,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.28,
-   "unrealized_pl": 2.0,
-   "unrealized_pl_pct": 6.666666666666667,
-   "market_value": "-28",
+   "current": 0.27,
+   "unrealized_pl": 3.0,
+   "unrealized_pl_pct": 10.0,
+   "market_value": "-27",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -373,36 +373,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T16:38:13.278973+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "MA",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:38:17.013820+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "DIS",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:44:47.884149+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "V",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:44:49.269612+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "XOM",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:44:49.981081+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "WMT",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
      "ts": "2026-10-12T16:44:50.668367+00:00",
      "event": "deferred_circuit_breaker",
      "symbol": "MA",
@@ -440,6 +410,36 @@
     },
     {
      "ts": "2026-10-12T16:50:27.487136+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "DIS",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:54:33.134413+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "V",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:54:34.452789+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "XOM",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:54:35.231640+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "WMT",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:54:36.017657+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "MA",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:54:39.037473+00:00",
      "event": "deferred_circuit_breaker",
      "symbol": "DIS",
      "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
@@ -578,20 +578,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T16:23:55.055414+00:00",
-   "last_exit_scan": "2026-10-12T16:50:24.781553+00:00",
+   "last_exit_scan": "2026-10-12T16:55:45.672718+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T16:36:18.802906+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T16:36:18.807673+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T16:36:18.830464+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T16:40:37.758739+00:00",
      "event": "scan_start"
@@ -626,6 +614,18 @@
     },
     {
      "ts": "2026-10-12T16:50:24.797965+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T16:55:45.668493+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T16:55:45.672632+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T16:55:45.684316+00:00",
      "event": "scan_done"
     }
    ]
@@ -2232,11 +2232,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T12:49:39.318365+00:00",
-     "event": "entry_staged_chart_gate",
-     "symbol": "VXX"
-    },
-    {
      "ts": "2026-10-12T13:49:13.204632+00:00",
      "event": "vix_read"
     },
@@ -2286,6 +2281,12 @@
     },
     {
      "ts": "2026-10-12T16:49:31.814092+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 8.0,
+     "note": "manual review; not auto-adopted"
+    },
+    {
+     "ts": "2026-10-12T16:54:47.837601+00:00",
      "event": "unknown_broker_leg",
      "qty": 8.0,
      "note": "manual review; not auto-adopted"
@@ -2913,24 +2914,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-09T19:56:11.184083+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 5.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-09T19:56:11.184337+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 2.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-09T19:56:11.184389+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 1.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
      "ts": "2026-10-09T19:56:11.184485+00:00",
      "event": "unknown_broker_leg",
      "qty": -1.0,
@@ -2977,6 +2960,24 @@
     {
      "ts": "2026-10-09T21:55:51.069670+00:00",
      "event": "universe_reranked"
+    },
+    {
+     "ts": "2026-10-12T16:57:18.577808+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 8.0,
+     "note": "manual review; not auto-adopted (spread legs need pairing)"
+    },
+    {
+     "ts": "2026-10-12T16:57:18.584066+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 1.0,
+     "note": "manual review; not auto-adopted (spread legs need pairing)"
+    },
+    {
+     "ts": "2026-10-12T16:57:18.584217+00:00",
+     "event": "unknown_broker_leg",
+     "qty": -1.0,
+     "note": "manual review; not auto-adopted (spread legs need pairing)"
     }
    ]
   },
@@ -4499,7 +4500,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T12:53:03.107462-04:00",
+  "updated_et": "2026-10-12T12:57:59.541045-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4611,6 +4612,12 @@
    "equity": "100098.5",
    "day_pl": -2.0,
    "day_pl_pct": -0.001997992018021888
+  },
+  {
+   "ts_utc": "2026-10-12T16:57:59.541045+00:00",
+   "equity": "100098.5",
+   "day_pl": -2.0,
+   "day_pl_pct": -0.001997992018021888
   }
  ],
  "regime_history": [
@@ -4709,7 +4716,7 @@
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 2.0
+    "day_pl": 3.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -4721,7 +4728,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 80.0,
+    "day_pl": 79.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
