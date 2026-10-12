@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-12T16:33:29.646927+00:00",
- "generated_at_et": "2026-10-12T12:33:29.646927-04:00",
+ "generated_at_utc": "2026-10-12T16:38:04.261333+00:00",
+ "generated_at_et": "2026-10-12T12:38:04.261333-04:00",
  "account": {
-  "equity": "100099.5",
+  "equity": "100100.5",
   "cash": "99309.5",
   "buying_power": "395238",
   "status": "ACTIVE",
@@ -87,8 +87,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -1.0,
- "day_pl_pct": -0.000998996009010944,
+ "day_pl": 0.0,
+ "day_pl_pct": 0.0,
  "journal_today": {
   "scans": 6,
   "trades": 0
@@ -577,26 +577,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T16:23:55.055414+00:00",
-   "last_exit_scan": "2026-10-12T16:30:09.241974+00:00",
+   "last_exit_scan": "2026-10-12T16:36:18.807755+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T16:23:55.055233+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-12T16:23:55.055277+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-12T16:23:55.055316+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
     {
      "ts": "2026-10-12T16:23:55.055352+00:00",
      "event": "entry_skipped",
@@ -635,6 +617,18 @@
     },
     {
      "ts": "2026-10-12T16:30:09.258960+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T16:36:18.802906+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T16:36:18.807673+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T16:36:18.830464+00:00",
      "event": "scan_done"
     }
    ]
@@ -2075,63 +2069,64 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-11T14:31:46.276924+00:00",
+     "ts": "2026-10-12T16:33:55.161616+00:00",
+     "event": "iv_rank",
+     "symbol": "CORZ"
+    },
+    {
+     "ts": "2026-10-12T16:33:55.167272+00:00",
+     "event": "iv_rank_signal",
+     "symbol": "CORZ"
+    },
+    {
+     "ts": "2026-10-12T16:33:55.167589+00:00",
+     "event": "earnings_within_window_skip",
+     "symbol": "CORZ"
+    },
+    {
+     "ts": "2026-10-12T16:34:03.008578+00:00",
+     "event": "iv_rank",
+     "symbol": "ARM"
+    },
+    {
+     "ts": "2026-10-12T16:34:03.008888+00:00",
+     "event": "iv_rank_signal",
+     "symbol": "ARM"
+    },
+    {
+     "ts": "2026-10-12T16:34:03.016410+00:00",
+     "event": "earnings_within_window_skip",
+     "symbol": "ARM"
+    },
+    {
+     "ts": "2026-10-12T16:34:10.523293+00:00",
+     "event": "iv_rank",
+     "symbol": "AXTI"
+    },
+    {
+     "ts": "2026-10-12T16:34:16.100497+00:00",
+     "event": "iv_rank",
+     "symbol": "DGXX"
+    },
+    {
+     "ts": "2026-10-12T16:34:16.100803+00:00",
+     "event": "iv_rank_signal",
+     "symbol": "DGXX"
+    },
+    {
+     "ts": "2026-10-12T16:34:16.102015+00:00",
+     "event": "earnings_unknown_skip",
+     "symbol": "DGXX",
+     "note": "symbol absent from calendar"
+    },
+    {
+     "ts": "2026-10-12T16:34:19.617349+00:00",
      "event": "iv_rank",
      "symbol": "VELO"
     },
     {
-     "ts": "2026-10-11T14:31:46.298756+00:00",
+     "ts": "2026-10-12T16:34:19.644275+00:00",
      "event": "scan_complete"
-    },
-    {
-     "ts": "2026-10-12T16:32:54.295404+00:00",
-     "event": "iv_rank",
-     "symbol": "ARQQ"
-    },
-    {
-     "ts": "2026-10-12T16:32:54.298605+00:00",
-     "event": "iv_rank_signal",
-     "symbol": "ARQQ"
-    },
-    {
-     "ts": "2026-10-12T16:33:02.715309+00:00",
-     "event": "condor_spread_gate_fail",
-     "symbol": "ARQQ"
-    },
-    {
-     "ts": "2026-10-12T16:33:10.383676+00:00",
-     "event": "iv_rank",
-     "symbol": "NBIS"
-    },
-    {
-     "ts": "2026-10-12T16:33:15.776282+00:00",
-     "event": "iv_rank",
-     "symbol": "WYFI"
-    },
-    {
-     "ts": "2026-10-12T16:33:22.781217+00:00",
-     "event": "iv_rank",
-     "symbol": "AEHR"
-    },
-    {
-     "ts": "2026-10-12T16:33:28.262349+00:00",
-     "event": "iv_rank",
-     "symbol": "POET"
-    },
-    {
-     "ts": "2026-10-12T16:33:33.564097+00:00",
-     "event": "iv_rank",
-     "symbol": "HIVE"
-    },
-    {
-     "ts": "2026-10-12T16:33:33.564365+00:00",
-     "event": "iv_rank_signal",
-     "symbol": "HIVE"
-    },
-    {
-     "ts": "2026-10-12T16:33:33.564649+00:00",
-     "event": "earnings_within_window_skip",
-     "symbol": "HIVE"
     }
    ]
   },
@@ -2152,26 +2147,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-11T12:37:17.702167+00:00",
-     "event": "momentum_book_empty",
-     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
-    },
-    {
-     "ts": "2026-10-11T13:37:04.062172+00:00",
-     "event": "momentum_book_empty",
-     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
-    },
-    {
-     "ts": "2026-10-11T13:37:13.865041+00:00",
-     "event": "momentum_book_empty",
-     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
-    },
-    {
-     "ts": "2026-10-11T14:37:16.461712+00:00",
-     "event": "momentum_book_empty",
-     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
-    },
     {
      "ts": "2026-10-12T13:37:03.830110+00:00",
      "event": "momentum_book_empty",
@@ -2213,6 +2188,29 @@
     },
     {
      "ts": "2026-10-12T15:37:09.834775+00:00",
+     "event": "unknown_broker_leg",
+     "qty": -1.0,
+     "note": "manual review; not auto-adopted"
+    },
+    {
+     "ts": "2026-10-12T16:37:44.544428+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-12T16:37:46.784771+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 8.0,
+     "note": "manual review; not auto-adopted"
+    },
+    {
+     "ts": "2026-10-12T16:37:46.785017+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 1.0,
+     "note": "manual review; not auto-adopted"
+    },
+    {
+     "ts": "2026-10-12T16:37:46.785158+00:00",
      "event": "unknown_broker_leg",
      "qty": -1.0,
      "note": "manual review; not auto-adopted"
@@ -2833,36 +2831,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-09T22:27:31.243063+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T22:57:37.753293+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T23:27:31.534004+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T23:57:43.601638+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-10T00:29:02.998932+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-10T00:57:45.549178+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
      "ts": "2026-10-10T01:27:45.383362+00:00",
      "event": "no_fear_day",
      "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
@@ -2891,6 +2859,42 @@
      "ts": "2026-10-10T03:57:35.715958+00:00",
      "event": "no_fear_day",
      "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T16:35:29.540583+00:00",
+     "event": "orphan_adopted",
+     "symbol": "VXX261218C00020000",
+     "qty": 8,
+     "note": "broker held SYM with no state record; adopted at broker avg entry, managed normally"
+    },
+    {
+     "ts": "2026-10-12T16:35:29.544188+00:00",
+     "event": "orphan_adopted",
+     "symbol": "XSP261016P00756000",
+     "qty": 1,
+     "note": "broker held SYM with no state record; adopted at broker avg entry, managed normally"
+    },
+    {
+     "ts": "2026-10-12T16:35:32.058199+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "VXX261218C00020000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-12T16:35:33.031701+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "XSP261016P00756000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-12T16:35:34.016692+00:00",
+     "event": "release_deferred_circuit_breaker",
+     "note": "circuit breaker halted at release; sweep deferred, verdicts stay queued: loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:35:35.970251+00:00",
+     "event": "no_fear_day",
+     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.56% vs prior close 751.27 (bar 2026-10-12T16:00:00Z))"
     }
    ]
   },
@@ -3262,7 +3266,7 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 100099.5,
+  "equity": 100100.5,
   "gross_pct": 0.0,
   "cap_pct": 150,
   "headroom_pct": 150.0,
@@ -4498,7 +4502,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T12:33:29.646927-04:00",
+  "updated_et": "2026-10-12T12:38:04.261333-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4586,6 +4590,12 @@
    "equity": "100099.5",
    "day_pl": -1.0,
    "day_pl_pct": -0.000998996009010944
+  },
+  {
+   "ts_utc": "2026-10-12T16:38:04.261333+00:00",
+   "equity": "100100.5",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
   }
  ],
  "regime_history": [
@@ -4680,7 +4690,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -1.0,
+  "day_pl": 0.0,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
@@ -4696,7 +4706,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 79.0,
+    "day_pl": 80.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
