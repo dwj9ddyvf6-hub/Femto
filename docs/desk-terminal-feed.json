@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T13:57:45.757849+00:00",
- "generated_at_et": "2026-10-12T09:57:45.757849-04:00",
+ "generated_at_utc": "2026-10-12T14:03:08.735309+00:00",
+ "generated_at_et": "2026-10-12T10:03:08.735309-04:00",
  "account": {
   "equity": "100000",
   "cash": "100000",
@@ -311,24 +311,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T13:33:02.921024+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "XOM",
-     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T13:33:03.597629+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "MA",
-     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T13:37:51.307415+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "XOM",
-     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
      "ts": "2026-10-12T13:37:51.907549+00:00",
      "event": "deferred_circuit_breaker",
      "symbol": "MA",
@@ -381,6 +363,24 @@
      "event": "deferred_red_day",
      "symbol": "DIS",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.07% vs prior close 108.05 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:58:07.699316+00:00",
+     "event": "deferred_red_day",
+     "symbol": "XOM",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.78% vs prior close 168.94 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:58:09.863101+00:00",
+     "event": "deferred_red_day",
+     "symbol": "MA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 0.48% vs prior close 589.14 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:58:14.438294+00:00",
+     "event": "deferred_red_day",
+     "symbol": "DIS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.12% vs prior close 108.05 (bar 2026-10-12T13:00:00Z))"
     }
    ]
   },
@@ -516,20 +516,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": null,
-   "last_exit_scan": "2026-10-12T13:55:04.403701+00:00",
+   "last_exit_scan": "2026-10-12T14:00:40.389515+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T13:40:19.860130+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T13:40:19.867230+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T13:40:19.880121+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T13:45:57.029943+00:00",
      "event": "scan_start"
@@ -564,6 +552,18 @@
     },
     {
      "ts": "2026-10-12T13:55:04.423889+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T14:00:40.378356+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T14:00:40.389420+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T14:00:40.405872+00:00",
      "event": "scan_done"
     }
    ]
@@ -832,7 +832,7 @@
    "credit": "desk research (Oct 2026)",
    "paper_only": true,
    "automation": "Friday rank 16:05 ET + Monday fill window 10:05 ET",
-   "state_known": false,
+   "state_known": true,
    "open_positions": 0,
    "positions": [],
    "pending": {
@@ -841,7 +841,12 @@
    },
    "last_rank_date": null,
    "last_rank_monday": null,
-   "stats": {},
+   "stats": {
+    "fills": 0,
+    "gate_blocks": 0,
+    "rank_waits": 0,
+    "capacity_skips": 0
+   },
    "recent": [
     {
      "ts": "2026-10-02T21:52:12.883947-04:00",
@@ -862,6 +867,11 @@
     {
      "ts": "2026-10-09T16:15:08.683257-04:00",
      "event": "confluence_rank",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T10:02:19.194848-04:00",
+     "event": "fill_pass",
      "symbol": "ALL"
     }
    ]
@@ -1240,7 +1250,7 @@
    "paper_only": true,
    "stage": "live",
    "automation": "intraday",
-   "state_known": false,
+   "state_known": true,
    "open_positions": 0,
    "positions": [],
    "pending": {
@@ -1248,13 +1258,13 @@
     "sells": []
    },
    "last_rank_date": null,
-   "stats": {},
+   "stats": {
+    "fills": 0,
+    "gate_blocks": 0,
+    "rank_waits": 0,
+    "capacity_skips": 0
+   },
    "recent": [
-    {
-     "ts": "2026-10-09T12:11:42.815907-04:00",
-     "event": "scan_start",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-09T12:12:00.452876-04:00",
      "event": "scan_pass",
@@ -1307,6 +1317,11 @@
     },
     {
      "ts": "2026-10-09T15:42:34.824406-04:00",
+     "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T10:01:59.399173-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
     }
@@ -2540,76 +2555,76 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T12:57:33.533233+00:00",
-     "event": "staged_entry_expired",
-     "symbol": "IREN",
-     "note": "no PASS verdict; freeing slot"
-    },
-    {
-     "ts": "2026-10-12T12:57:33.533281+00:00",
-     "event": "staged_entry_expired",
-     "symbol": "AXTI",
-     "note": "no PASS verdict; freeing slot"
-    },
-    {
-     "ts": "2026-10-12T12:57:33.533322+00:00",
-     "event": "staged_entry_expired",
+     "ts": "2026-10-12T13:58:46.664052+00:00",
+     "event": "deferred_red_day",
      "symbol": "ARQQ",
-     "note": "no PASS verdict; freeing slot"
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (ARQQ day-so-far 0.52% vs prior close 17.23 (bar 2026-10-12T13:00:00Z))"
     },
     {
-     "ts": "2026-10-12T12:57:33.533364+00:00",
-     "event": "staged_entry_expired",
+     "ts": "2026-10-12T13:58:53.091612+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "HIVE",
-     "note": "no PASS verdict; freeing slot"
+     "note": "buy-delay: conditions met for HIVE; buy queued, may execute in 5 days (2026-10-12)"
     },
     {
-     "ts": "2026-10-12T12:57:33.533421+00:00",
-     "event": "staged_entry_expired",
+     "ts": "2026-10-12T13:58:59.068454+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "POET",
-     "note": "no PASS verdict; freeing slot"
+     "note": "buy-delay: conditions met for POET; buy queued, may execute in 5 days (2026-10-12)"
     },
     {
-     "ts": "2026-10-12T12:57:33.533480+00:00",
-     "event": "staged_entry_expired",
+     "ts": "2026-10-12T13:59:04.825231+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "SNDK",
-     "note": "no PASS verdict; freeing slot"
+     "note": "buy-delay: conditions met for SNDK; buy queued, may execute in 5 days (2026-10-12)"
     },
     {
-     "ts": "2026-10-12T12:57:33.533520+00:00",
-     "event": "staged_entry_expired",
+     "ts": "2026-10-12T13:59:11.034241+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "TEM",
+     "note": "buy-delay: conditions met for TEM; buy queued, may execute in 5 days (2026-10-12)"
+    },
+    {
+     "ts": "2026-10-12T13:59:18.080543+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "CORZ",
+     "note": "buy-delay: conditions met for CORZ; buy queued, may execute in 5 days (2026-10-12)"
+    },
+    {
+     "ts": "2026-10-12T13:59:19.544785+00:00",
+     "event": "deferred_red_day",
+     "symbol": "HUT",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (HUT day-so-far 1.74% vs prior close 84.27 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:59:25.300588+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "ARM",
-     "note": "no PASS verdict; freeing slot"
+     "note": "buy-delay: conditions met for ARM; buy queued, may execute in 5 days (2026-10-12)"
     },
     {
-     "ts": "2026-10-12T12:57:33.533568+00:00",
-     "event": "staged_entry_expired",
+     "ts": "2026-10-12T13:59:32.172353+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "KEEL",
-     "note": "no PASS verdict; freeing slot"
+     "note": "buy-delay: conditions met for KEEL; buy queued, may execute in 5 days (2026-10-12)"
     },
     {
-     "ts": "2026-10-12T12:57:33.533608+00:00",
-     "event": "staged_entry_expired",
+     "ts": "2026-10-12T13:59:38.561596+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "TE",
-     "note": "no PASS verdict; freeing slot"
+     "note": "buy-delay: conditions met for TE; buy queued, may execute in 5 days (2026-10-12)"
     },
     {
-     "ts": "2026-10-12T12:57:33.533648+00:00",
-     "event": "staged_entry_expired",
+     "ts": "2026-10-12T13:59:44.605557+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "OKLO",
+     "note": "buy-delay: conditions met for OKLO; buy queued, may execute in 5 days (2026-10-12)"
+    },
+    {
+     "ts": "2026-10-12T13:59:51.244043+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "USAR",
-     "note": "no PASS verdict; freeing slot"
-    },
-    {
-     "ts": "2026-10-12T13:57:40.756896+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "AEHR",
-     "note": "buy-delay: conditions met for AEHR; buy queued, may execute in 5 days (2026-10-12)"
-    },
-    {
-     "ts": "2026-10-12T13:57:46.650977+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "NBIS",
-     "note": "buy-delay: conditions met for NBIS; buy queued, may execute in 5 days (2026-10-12)"
+     "note": "buy-delay: conditions met for USAR; buy queued, may execute in 5 days (2026-10-12)"
     }
    ]
   },
@@ -4370,7 +4385,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T09:57:45.757849-04:00",
+  "updated_et": "2026-10-12T10:03:08.735309-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4461,6 +4476,12 @@
   },
   {
    "ts_utc": "2026-10-12T13:57:45.757849+00:00",
+   "equity": "100000",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-12T14:03:08.735309+00:00",
    "equity": "100000",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
