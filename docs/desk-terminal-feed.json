@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T13:52:58.579837+00:00",
- "generated_at_et": "2026-10-12T09:52:58.579837-04:00",
+ "generated_at_utc": "2026-10-12T13:57:45.757849+00:00",
+ "generated_at_et": "2026-10-12T09:57:45.757849-04:00",
  "account": {
   "equity": "100000",
   "cash": "100000",
@@ -311,23 +311,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T12:46:40.435216+00:00",
-     "event": "k5_dead",
-     "symbol": "TSEM",
-     "reason": "boxhi_breach"
-    },
-    {
-     "ts": "2026-10-12T12:46:40.512395+00:00",
-     "event": "k5_box",
-     "symbol": "CLS"
-    },
-    {
-     "ts": "2026-10-12T12:46:42.393564+00:00",
-     "event": "k5_dead",
-     "symbol": "CLS",
-     "reason": "boxhi_breach"
-    },
-    {
      "ts": "2026-10-12T13:33:02.921024+00:00",
      "event": "deferred_circuit_breaker",
      "symbol": "XOM",
@@ -377,6 +360,24 @@
     },
     {
      "ts": "2026-10-12T13:48:23.697126+00:00",
+     "event": "deferred_red_day",
+     "symbol": "DIS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.07% vs prior close 108.05 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:53:18.413684+00:00",
+     "event": "deferred_red_day",
+     "symbol": "XOM",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 2.02% vs prior close 168.94 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:53:20.294344+00:00",
+     "event": "deferred_red_day",
+     "symbol": "MA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 0.43% vs prior close 589.14 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:53:24.177458+00:00",
      "event": "deferred_red_day",
      "symbol": "DIS",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.07% vs prior close 108.05 (bar 2026-10-12T13:00:00Z))"
@@ -515,20 +516,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": null,
-   "last_exit_scan": "2026-10-12T13:50:06.091487+00:00",
+   "last_exit_scan": "2026-10-12T13:55:04.403701+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T13:35:06.551740+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T13:35:06.558713+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T13:35:06.600630+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T13:40:19.860130+00:00",
      "event": "scan_start"
@@ -563,6 +552,18 @@
     },
     {
      "ts": "2026-10-12T13:50:06.106028+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T13:55:04.400797+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T13:55:04.403643+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T13:55:04.423889+00:00",
      "event": "scan_done"
     }
    ]
@@ -2539,18 +2540,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T12:57:33.533151+00:00",
-     "event": "staged_entry_expired",
-     "symbol": "WYFI",
-     "note": "no PASS verdict; freeing slot"
-    },
-    {
-     "ts": "2026-10-12T12:57:33.533192+00:00",
-     "event": "staged_entry_expired",
-     "symbol": "VELO",
-     "note": "no PASS verdict; freeing slot"
-    },
-    {
      "ts": "2026-10-12T12:57:33.533233+00:00",
      "event": "staged_entry_expired",
      "symbol": "IREN",
@@ -2609,6 +2598,18 @@
      "event": "staged_entry_expired",
      "symbol": "USAR",
      "note": "no PASS verdict; freeing slot"
+    },
+    {
+     "ts": "2026-10-12T13:57:40.756896+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "AEHR",
+     "note": "buy-delay: conditions met for AEHR; buy queued, may execute in 5 days (2026-10-12)"
+    },
+    {
+     "ts": "2026-10-12T13:57:46.650977+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "NBIS",
+     "note": "buy-delay: conditions met for NBIS; buy queued, may execute in 5 days (2026-10-12)"
     }
    ]
   },
@@ -4369,7 +4370,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T09:52:58.579837-04:00",
+  "updated_et": "2026-10-12T09:57:45.757849-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4454,6 +4455,12 @@
   },
   {
    "ts_utc": "2026-10-12T13:52:58.579837+00:00",
+   "equity": "100000",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-12T13:57:45.757849+00:00",
    "equity": "100000",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
