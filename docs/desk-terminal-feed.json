@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T13:32:47.107572+00:00",
- "generated_at_et": "2026-10-12T09:32:47.107572-04:00",
+ "generated_at_utc": "2026-10-12T13:37:52.456813+00:00",
+ "generated_at_et": "2026-10-12T09:37:52.456813-04:00",
  "account": {
   "equity": "100000",
   "cash": "100000",
@@ -309,28 +309,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T12:46:35.859207+00:00",
-     "event": "k5_box",
-     "symbol": "KEEL"
-    },
-    {
-     "ts": "2026-10-12T12:46:36.938078+00:00",
-     "event": "k5_dead",
-     "symbol": "KEEL",
-     "reason": "boxlow_touch"
-    },
-    {
-     "ts": "2026-10-12T12:46:36.961824+00:00",
-     "event": "k5_box",
-     "symbol": "FFIV"
-    },
-    {
-     "ts": "2026-10-12T12:46:37.844095+00:00",
-     "event": "k5_dead",
-     "symbol": "FFIV",
-     "reason": "boxhi_breach"
-    },
-    {
      "ts": "2026-10-12T12:46:37.868715+00:00",
      "event": "k5_box",
      "symbol": "CORZ"
@@ -373,6 +351,30 @@
      "event": "k5_dead",
      "symbol": "CLS",
      "reason": "boxhi_breach"
+    },
+    {
+     "ts": "2026-10-12T13:33:02.921024+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "XOM",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T13:33:03.597629+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "MA",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T13:37:51.307415+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "XOM",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T13:37:51.907549+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "MA",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
     }
    ]
   },
@@ -508,20 +510,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": null,
-   "last_exit_scan": "2026-10-12T13:30:33.489394+00:00",
+   "last_exit_scan": "2026-10-12T13:35:06.558814+00:00",
    "recent": [
-    {
-     "ts": "2026-10-09T19:50:08.527329+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-09T19:50:10.244049+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-09T19:55:21.407851+00:00",
-     "event": "scan_start"
-    },
     {
      "ts": "2026-10-09T19:55:24.450514+00:00",
      "event": "scan_done"
@@ -556,6 +546,18 @@
     },
     {
      "ts": "2026-10-12T13:30:33.498296+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T13:35:06.551740+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T13:35:06.558713+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T13:35:06.600630+00:00",
      "event": "scan_done"
     }
    ]
@@ -2006,12 +2008,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-11T12:01:41.787463+00:00",
-     "event": "risk_gate_unavailable",
-     "symbol": "AAA",
-     "note": "fail closed"
-    },
-    {
      "ts": "2026-10-11T12:01:50.849914+00:00",
      "event": "risk_gate_unavailable",
      "symbol": "AAA",
@@ -2069,6 +2065,11 @@
     },
     {
      "ts": "2026-10-11T14:37:16.461712+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-12T13:37:03.830110+00:00",
      "event": "momentum_book_empty",
      "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
     }
@@ -2694,7 +2695,7 @@
    "paper_only": true,
    "stage": "live",
    "automation": "weekly",
-   "state_known": false,
+   "state_known": true,
    "open_positions": 0,
    "positions": [],
    "pending": {
@@ -2704,36 +2705,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-11T11:46:27.910562+00:00",
-     "event": "risk_gate_unavailable",
-     "note": "fail closed: entries blocked"
-    },
-    {
-     "ts": "2026-10-11T11:49:19.729600+00:00",
-     "event": "risk_gate_unavailable",
-     "note": "fail closed: entries blocked"
-    },
-    {
-     "ts": "2026-10-11T11:55:42.448476+00:00",
-     "event": "risk_gate_unavailable",
-     "note": "fail closed: entries blocked"
-    },
-    {
-     "ts": "2026-10-11T11:59:28.427944+00:00",
-     "event": "risk_gate_unavailable",
-     "note": "fail closed: entries blocked"
-    },
-    {
-     "ts": "2026-10-11T11:59:39.159253+00:00",
-     "event": "risk_gate_unavailable",
-     "note": "fail closed: entries blocked"
-    },
-    {
-     "ts": "2026-10-11T12:01:41.792995+00:00",
-     "event": "risk_gate_unavailable",
-     "note": "fail closed: entries blocked"
-    },
     {
      "ts": "2026-10-11T12:01:50.855194+00:00",
      "event": "risk_gate_unavailable",
@@ -2763,6 +2734,40 @@
      "ts": "2026-10-11T13:39:41.720322+00:00",
      "event": "risk_gate_unavailable",
      "note": "fail closed: entries blocked"
+    },
+    {
+     "ts": "2026-10-12T13:35:18.303738+00:00",
+     "event": "rebalance_start"
+    },
+    {
+     "ts": "2026-10-12T13:35:18.350446+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "LITE",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T13:35:18.370615+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "AXTI",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T13:35:18.376825+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "ANF",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T13:35:18.381733+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "SATL",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T13:35:18.390397+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "TEM",
+     "note": "loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
     }
    ]
   },
@@ -2783,16 +2788,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-09T22:57:37.753293+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T23:27:31.534004+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
     {
      "ts": "2026-10-09T23:57:43.601638+00:00",
      "event": "no_fear_day",
@@ -2842,6 +2837,16 @@
      "ts": "2026-10-12T13:05:12.881210+00:00",
      "event": "no_fear_day",
      "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.14% vs prior close 751.27 (bar 2026-10-12T12:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:35:13.019254+00:00",
+     "event": "release_deferred_circuit_breaker",
+     "note": "circuit breaker halted at release; sweep deferred, verdicts stay queued: loss streak 148 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T13:35:17.015851+00:00",
+     "event": "no_fear_day",
+     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.51% vs prior close 751.27 (bar 2026-10-12T13:00:00Z))"
     }
    ]
   },
@@ -4353,8 +4358,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T09:32:47.107572-04:00",
-  "stamp": "Monday, 9:32 AM ET",
+  "updated_et": "2026-10-12T09:37:52.456813-04:00",
+  "stamp": "Monday, 9:37 AM ET",
   "headline": "The desk is flat, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4371,7 +4376,7 @@
    },
    {
     "heading": "Phase",
-    "body": "No position. Last event 8:46 AM ET: k5_dead CLS."
+    "body": "No position. Last event 9:37 AM ET: deferred_circuit_breaker MA."
    },
    {
     "heading": "Legend's EMA",
@@ -4468,6 +4473,12 @@
   },
   {
    "ts_utc": "2026-10-12T13:32:47.107572+00:00",
+   "equity": "100000",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-12T13:37:52.456813+00:00",
    "equity": "100000",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
