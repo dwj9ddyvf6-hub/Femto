@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T13:47:57.999920+00:00",
- "generated_at_et": "2026-10-12T09:47:57.999920-04:00",
+ "generated_at_utc": "2026-10-12T13:52:58.579837+00:00",
+ "generated_at_et": "2026-10-12T09:52:58.579837-04:00",
  "account": {
   "equity": "100000",
   "cash": "100000",
@@ -311,22 +311,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T12:46:38.647263+00:00",
-     "event": "k5_box",
-     "symbol": "HUT"
-    },
-    {
-     "ts": "2026-10-12T12:46:39.408544+00:00",
-     "event": "k5_dead",
-     "symbol": "HUT",
-     "reason": "boxlow_touch"
-    },
-    {
-     "ts": "2026-10-12T12:46:39.419599+00:00",
-     "event": "k5_box",
-     "symbol": "TSEM"
-    },
-    {
      "ts": "2026-10-12T12:46:40.435216+00:00",
      "event": "k5_dead",
      "symbol": "TSEM",
@@ -378,6 +362,24 @@
      "event": "deferred_red_day",
      "symbol": "MA",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 0.85% vs prior close 589.14 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:48:16.141871+00:00",
+     "event": "deferred_red_day",
+     "symbol": "XOM",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.81% vs prior close 168.94 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:48:18.536938+00:00",
+     "event": "deferred_red_day",
+     "symbol": "MA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 0.52% vs prior close 589.14 (bar 2026-10-12T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T13:48:23.697126+00:00",
+     "event": "deferred_red_day",
+     "symbol": "DIS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.07% vs prior close 108.05 (bar 2026-10-12T13:00:00Z))"
     }
    ]
   },
@@ -513,20 +515,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": null,
-   "last_exit_scan": "2026-10-12T13:45:57.033507+00:00",
+   "last_exit_scan": "2026-10-12T13:50:06.091487+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T13:30:32.644935+00:00",
-     "event": "state_missing"
-    },
-    {
-     "ts": "2026-10-12T13:30:33.489208+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T13:30:33.498296+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T13:35:06.551740+00:00",
      "event": "scan_start"
@@ -561,6 +551,18 @@
     },
     {
      "ts": "2026-10-12T13:45:57.048881+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T13:50:06.088862+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T13:50:06.091399+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T13:50:06.106028+00:00",
      "event": "scan_done"
     }
    ]
@@ -2096,12 +2098,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-11T13:39:29.299219+00:00",
-     "event": "risk_gate_unavailable",
-     "symbol": "AAA",
-     "note": "fail closed"
-    },
-    {
      "ts": "2026-10-11T13:39:41.713792+00:00",
      "event": "risk_gate_unavailable",
      "symbol": "AAA",
@@ -2159,6 +2155,10 @@
      "ts": "2026-10-12T12:49:39.318365+00:00",
      "event": "entry_staged_chart_gate",
      "symbol": "VXX"
+    },
+    {
+     "ts": "2026-10-12T13:49:13.204632+00:00",
+     "event": "vix_read"
     }
    ]
   },
@@ -4369,7 +4369,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T09:47:57.999920-04:00",
+  "updated_et": "2026-10-12T09:52:58.579837-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4448,6 +4448,12 @@
   },
   {
    "ts_utc": "2026-10-12T13:47:57.999920+00:00",
+   "equity": "100000",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-12T13:52:58.579837+00:00",
    "equity": "100000",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
