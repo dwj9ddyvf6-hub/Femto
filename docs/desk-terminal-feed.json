@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-12T19:43:06.972622+00:00",
- "generated_at_et": "2026-10-12T15:43:06.972622-04:00",
+ "generated_at_utc": "2026-10-12T19:47:51.729087+00:00",
+ "generated_at_et": "2026-10-12T15:47:51.729087-04:00",
  "account": {
-  "equity": "100098.5",
+  "equity": "100099.5",
   "cash": "99309.5",
   "buying_power": "395238",
   "status": "ACTIVE",
@@ -65,10 +65,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.28,
-   "unrealized_pl": 2.0,
-   "unrealized_pl_pct": 6.666666666666667,
-   "market_value": "-28",
+   "current": 0.27,
+   "unrealized_pl": 3.0,
+   "unrealized_pl_pct": 10.0,
+   "market_value": "-27",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -87,8 +87,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": 8.0,
- "day_pl_pct": 0.00799276654627562,
+ "day_pl": 9.0,
+ "day_pl_pct": 0.008991862364560073,
  "journal_today": {
   "scans": 13,
   "trades": 0
@@ -579,20 +579,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T19:23:38.169749+00:00",
-   "last_exit_scan": "2026-10-12T19:40:16.128026+00:00",
+   "last_exit_scan": "2026-10-12T19:45:08.130452+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T19:25:08.910310+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T19:25:08.910529+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T19:25:08.931653+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T19:30:19.215258+00:00",
      "event": "scan_start"
@@ -627,6 +615,18 @@
     },
     {
      "ts": "2026-10-12T19:40:16.149607+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T19:45:08.117486+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T19:45:08.130375+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T19:45:08.147057+00:00",
      "event": "scan_done"
     }
    ]
@@ -3039,30 +3039,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T16:45:03.453920+00:00",
-     "event": "washout_signal",
-     "symbol": "AXTI",
-     "ref_px": 68.46
-    },
-    {
-     "ts": "2026-10-12T16:45:03.459910+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "AXTI",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:45:17.087783+00:00",
-     "event": "washout_signal",
-     "symbol": "ARM",
-     "ref_px": 266.28
-    },
-    {
-     "ts": "2026-10-12T16:45:17.089521+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "ARM",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
      "ts": "2026-10-12T17:44:05.151619+00:00",
      "event": "washout_signal",
      "symbol": "AXTI",
@@ -3106,6 +3082,30 @@
     },
     {
      "ts": "2026-10-12T18:43:50.143981+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "ARM",
+     "note": "buy-delay: ARM approved 2026-10-12, 0 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-12T19:43:24.606255+00:00",
+     "event": "washout_signal",
+     "symbol": "AXTI",
+     "ref_px": 68.46
+    },
+    {
+     "ts": "2026-10-12T19:43:31.158806+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "AXTI",
+     "note": "buy-delay: AXTI approved 2026-10-12, 0 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-12T19:43:42.926930+00:00",
+     "event": "washout_signal",
+     "symbol": "ARM",
+     "ref_px": 266.28
+    },
+    {
+     "ts": "2026-10-12T19:43:48.703453+00:00",
      "event": "deferred_buy_delay",
      "symbol": "ARM",
      "note": "buy-delay: ARM approved 2026-10-12, 0 of 5 days elapsed"
@@ -3304,7 +3304,7 @@
  },
  "exposure": {
   "gross_notional": 931.0,
-  "equity": 100098.5,
+  "equity": 100099.5,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4542,7 +4542,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T15:43:06.972622-04:00",
+  "updated_et": "2026-10-12T15:47:51.729087-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -5056,6 +5056,12 @@
    "equity": "100098.5",
    "day_pl": 8.0,
    "day_pl_pct": 0.00799276654627562
+  },
+  {
+   "ts_utc": "2026-10-12T19:47:51.729087+00:00",
+   "equity": "100099.5",
+   "day_pl": 9.0,
+   "day_pl_pct": 0.008991862364560073
   }
  ],
  "regime_history": [
@@ -5183,11 +5189,11 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": 8.0,
+  "day_pl": 9.0,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 2.0
+    "day_pl": 3.0
    },
    {
     "symbol": "XSP261016P00756000",
