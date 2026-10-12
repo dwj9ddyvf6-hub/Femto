@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T13:37:52.456813+00:00",
- "generated_at_et": "2026-10-12T09:37:52.456813-04:00",
+ "generated_at_utc": "2026-10-12T13:42:46.691550+00:00",
+ "generated_at_et": "2026-10-12T09:42:46.691550-04:00",
  "account": {
   "equity": "100000",
   "cash": "100000",
@@ -13,7 +13,7 @@
  "last_scan": {
   "ts": null,
   "market_open": true,
-  "dry_run": null
+  "dry_run": false
  },
  "kill_switch": {
   "tripped": false,
@@ -30,163 +30,165 @@
  "day_pl": 0.0,
  "day_pl_pct": 0.0,
  "journal_today": {
-  "scans": 0,
+  "scans": 1,
   "trades": 0
  },
- "fresh_signals": [],
+ "fresh_signals": [
+  "IREN WATCH conf=7 RECLAIM"
+ ],
  "ledger_tail": [
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "LASR",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "ARQQ",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "OUST",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "ALAB",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "CRDO",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "FCEL",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "HIVE",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "POET",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "SNDK",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "TEM",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "CORZ",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "HUT",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "TSEM",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "ARM",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "KEEL",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "FFIV",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "MU",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "CLS",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "TE",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "TTMI",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "CVNA",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "VRT",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "OKLO",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "symbol": "USAR",
-   "decision": "SKIP_PROTECTION_HALT",
-   "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-09T19:38:52Z",
+   "ts": "2026-10-12T13:38:57Z",
    "event": "scan_end"
   }
  ],
  "outcome_stats": {
   "closed_total": 0,
-  "open_total": 0,
+  "open_total": 1,
   "by_phenotype": {},
   "by_confidence": {},
   "by_symbol": {}
@@ -222,77 +224,77 @@
    "last_scan": {
     "ts": null,
     "market_open": true,
-    "dry_run": null
+    "dry_run": false
    },
    "recent": [
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "ARM",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "KEEL",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "FFIV",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "MU",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "CLS",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "TE",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "TTMI",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "CVNA",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "VRT",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "OKLO",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "symbol": "USAR",
-     "decision": "SKIP_PROTECTION_HALT",
-     "reason": "protection gate: 2 held position(s) without stop evidence: ARM, WMT (new entries blocked; exits continue)"
+     "decision": "SKIP_NO_SIGNAL",
+     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-09T19:38:52Z",
+     "ts": "2026-10-12T13:38:57Z",
      "event": "scan_end"
     }
    ]
@@ -510,20 +512,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": null,
-   "last_exit_scan": "2026-10-12T13:35:06.558814+00:00",
+   "last_exit_scan": "2026-10-12T13:40:19.867412+00:00",
    "recent": [
-    {
-     "ts": "2026-10-09T19:55:24.450514+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-09T20:00:17.781216+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-09T20:00:19.584254+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-09T20:05:23.413254+00:00",
      "event": "scan_start"
@@ -558,6 +548,18 @@
     },
     {
      "ts": "2026-10-12T13:35:06.600630+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T13:40:19.860130+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T13:40:19.867230+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T13:40:19.880121+00:00",
      "event": "scan_done"
     }
    ]
@@ -3828,6 +3830,14 @@
  ],
  "signal_tape": [
   {
+   "ts": "2026-10-12 09:38:57 ET",
+   "symbol": "IREN",
+   "decision": "WATCH",
+   "phenotype": "RECLAIM",
+   "confidence": 7,
+   "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
+  },
+  {
    "ts": "2026-10-09 11:08:52 ET",
    "symbol": "SKYQ",
    "decision": "WATCH",
@@ -4358,63 +4368,9 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T09:37:52.456813-04:00",
-  "stamp": "Monday, 9:37 AM ET",
-  "headline": "The desk is flat, up $0 on the day, no fresh Tensor signals.",
-  "sections": [
-   {
-    "heading": "Account",
-    "body": "Equity $100,000 \u00b7 buying power $400,000. Day P&L $0 (0.00%)."
-   },
-   {
-    "heading": "Positions",
-    "body": "No open positions."
-   },
-   {
-    "heading": "Tensor",
-    "body": "No fresh signals. Engine v625, byte-exact. No Tensor positions right now."
-   },
-   {
-    "heading": "Phase",
-    "body": "No position. Last event 9:37 AM ET: deferred_circuit_breaker MA."
-   },
-   {
-    "heading": "Legend's EMA",
-    "body": "Flat. Setup: no trend day."
-   },
-   {
-    "heading": "Morning Dip",
-    "body": "Flat \u2014 outside the morning window."
-   },
-   {
-    "heading": "Bilbo Box Options",
-    "body": "Flat \u2014 no qualifying breakouts."
-   },
-   {
-    "heading": "SPX Premium (experimental)",
-    "body": "Not yet run (experimental)."
-   },
-   {
-    "heading": "Phoenix Breakout",
-    "body": "Not yet run."
-   },
-   {
-    "heading": "Momentum",
-    "body": "Not yet run."
-   },
-   {
-    "heading": "Winner Confluence",
-    "body": "Not yet run."
-   },
-   {
-    "heading": "Beaten-Down",
-    "body": "Flat \u2014 no qualifying beaten-down names."
-   },
-   {
-    "heading": "Risk",
-    "body": "Kill switch armed at -3.0% of baseline equity; not tripped."
-   }
-  ]
+  "updated_et": "2026-10-12T09:42:46.691550-04:00",
+  "headline": "\u2014",
+  "sections": []
  },
  "equity_curve": [
   {
@@ -4482,6 +4438,12 @@
    "equity": "100000",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-12T13:42:46.691550+00:00",
+   "equity": "100000",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
   }
  ],
  "regime_history": [
@@ -4526,7 +4488,19 @@
    "regime": "UPTREND"
   }
  ],
- "signal_history": null,
+ "signal_history": [
+  {
+   "date": "2026-10-12",
+   "ts": "2026-10-12T11:00:00Z",
+   "symbol": "IREN",
+   "signal_type": "WATCH",
+   "phenotype": "RECLAIM",
+   "confidence": 7,
+   "outcome": {
+    "result": "open"
+   }
+  }
+ ],
  "trade_anatomy": {
   "symbol": "VELO",
   "sleeve": "Tensor (TRANSITION, conf 8)",
