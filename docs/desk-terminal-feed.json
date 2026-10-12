@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-12T19:47:51.729087+00:00",
- "generated_at_et": "2026-10-12T15:47:51.729087-04:00",
+ "generated_at_utc": "2026-10-12T19:52:53.220711+00:00",
+ "generated_at_et": "2026-10-12T15:52:53.220711-04:00",
  "account": {
-  "equity": "100099.5",
+  "equity": "100098.5",
   "cash": "99309.5",
   "buying_power": "395238",
   "status": "ACTIVE",
@@ -45,10 +45,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.17,
-   "unrealized_pl": -4.0,
-   "unrealized_pl_pct": -19.047619047619047,
-   "market_value": "17",
+   "current": 0.16,
+   "unrealized_pl": -5.0,
+   "unrealized_pl_pct": -23.809523809523807,
+   "market_value": "16",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -87,8 +87,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": 9.0,
- "day_pl_pct": 0.008991862364560073,
+ "day_pl": 8.0,
+ "day_pl_pct": 0.00799276654627562,
  "journal_today": {
   "scans": 13,
   "trades": 0
@@ -371,41 +371,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T19:33:19.732737+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.68% vs prior close 108.04 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:37:54.244081+00:00",
-     "event": "deferred_red_day",
-     "symbol": "V",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (V day-so-far 0.90% vs prior close 385.48 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:37:58.619280+00:00",
-     "event": "deferred_red_day",
-     "symbol": "XOM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.76% vs prior close 169.01 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:38:00.948161+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-12T19:38:01.484213+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 1.14% vs prior close 111.36 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:38:04.101644+00:00",
-     "event": "deferred_red_day",
-     "symbol": "MA",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 1.11% vs prior close 589.17 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
      "ts": "2026-10-12T19:38:09.559078+00:00",
      "event": "deferred_red_day",
      "symbol": "DIS",
@@ -440,6 +405,41 @@
      "event": "deferred_red_day",
      "symbol": "DIS",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.73% vs prior close 108.04 (bar 2026-10-12T19:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T19:47:55.768315+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-12T19:47:58.768274+00:00",
+     "event": "deferred_red_day",
+     "symbol": "V",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (V day-so-far 1.14% vs prior close 385.48 (bar 2026-10-12T19:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T19:48:01.618889+00:00",
+     "event": "deferred_red_day",
+     "symbol": "XOM",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.77% vs prior close 169.01 (bar 2026-10-12T19:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T19:48:03.726233+00:00",
+     "event": "deferred_red_day",
+     "symbol": "WMT",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 1.20% vs prior close 111.36 (bar 2026-10-12T19:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T19:48:05.793267+00:00",
+     "event": "deferred_red_day",
+     "symbol": "MA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 1.33% vs prior close 589.17 (bar 2026-10-12T19:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T19:48:10.405762+00:00",
+     "event": "deferred_red_day",
+     "symbol": "DIS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.74% vs prior close 108.04 (bar 2026-10-12T19:00:00Z))"
     }
    ]
   },
@@ -579,20 +579,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T19:23:38.169749+00:00",
-   "last_exit_scan": "2026-10-12T19:45:08.130452+00:00",
+   "last_exit_scan": "2026-10-12T19:50:07.305856+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T19:30:19.215258+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T19:30:19.221375+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T19:30:19.240273+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T19:35:21.047755+00:00",
      "event": "scan_start"
@@ -627,6 +615,18 @@
     },
     {
      "ts": "2026-10-12T19:45:08.147057+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T19:50:07.300304+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T19:50:07.305282+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T19:50:07.316750+00:00",
      "event": "scan_done"
     }
    ]
@@ -2251,16 +2251,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T16:49:18.405167+00:00",
-     "event": "vix_read"
-    },
-    {
-     "ts": "2026-10-12T16:49:20.850317+00:00",
-     "event": "hedge_signal",
-     "symbol": "VXX",
-     "note": "complacency hedge"
-    },
-    {
      "ts": "2026-10-12T16:49:20.854219+00:00",
      "event": "deferred_circuit_breaker",
      "symbol": "VXX",
@@ -2308,6 +2298,15 @@
     },
     {
      "ts": "2026-10-12T18:49:25.943734+00:00",
+     "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-12T19:49:19.354274+00:00",
+     "event": "chart_gate_release_deferred",
+     "note": "at max hedges; sweep deferred, verdicts stay queued"
+    },
+    {
+     "ts": "2026-10-12T19:49:20.172026+00:00",
      "event": "vix_read"
     }
    ]
@@ -3304,7 +3303,7 @@
  },
  "exposure": {
   "gross_notional": 931.0,
-  "equity": 100099.5,
+  "equity": 100098.5,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4542,7 +4541,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T15:47:51.729087-04:00",
+  "updated_et": "2026-10-12T15:52:53.220711-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -5062,6 +5061,12 @@
    "equity": "100099.5",
    "day_pl": 9.0,
    "day_pl_pct": 0.008991862364560073
+  },
+  {
+   "ts_utc": "2026-10-12T19:52:53.220711+00:00",
+   "equity": "100098.5",
+   "day_pl": 8.0,
+   "day_pl_pct": 0.00799276654627562
   }
  ],
  "regime_history": [
@@ -5189,7 +5194,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": 9.0,
+  "day_pl": 8.0,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
@@ -5197,7 +5202,7 @@
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -4.0
+    "day_pl": -5.0
    },
    {
     "symbol": "VXX261218C00020000",
