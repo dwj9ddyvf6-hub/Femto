@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T16:02:50.711873+00:00",
- "generated_at_et": "2026-10-12T12:02:50.711873-04:00",
+ "generated_at_utc": "2026-10-12T16:07:59.210388+00:00",
+ "generated_at_et": "2026-10-12T12:07:59.210388-04:00",
  "account": {
   "equity": "100100.5",
   "cash": "99309.5",
@@ -45,10 +45,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.16,
-   "unrealized_pl": -5.0,
-   "unrealized_pl_pct": -23.809523809523807,
-   "market_value": "16",
+   "current": 0.15,
+   "unrealized_pl": -6.0,
+   "unrealized_pl_pct": -28.57142857142857,
+   "market_value": "15",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -65,10 +65,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.25,
-   "unrealized_pl": 5.0,
-   "unrealized_pl_pct": 16.666666666666664,
-   "market_value": "-25",
+   "current": 0.24,
+   "unrealized_pl": 6.0,
+   "unrealized_pl_pct": 20.0,
+   "market_value": "-24",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -373,41 +373,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-09T19:42:53.152604+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 1.02% vs prior close 107.08 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T19:47:51.875238+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 0.60% vs prior close 110.59 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T19:47:55.521378+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 1.04% vs prior close 107.08 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T19:47:56.211527+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-09T19:52:49.393309+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 0.58% vs prior close 110.59 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T19:52:53.046451+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 1.03% vs prior close 107.08 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
      "ts": "2026-10-09T19:57:57.198447+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
@@ -441,6 +406,41 @@
      "event": "orphan_stop",
      "symbol": "TEST",
      "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-12T16:03:19.386511+00:00",
+     "event": "deferred_red_day",
+     "symbol": "V",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (V day-so-far 1.49% vs prior close 385.45 (bar 2026-10-12T15:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T16:03:22.796318+00:00",
+     "event": "deferred_red_day",
+     "symbol": "XOM",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.91% vs prior close 168.94 (bar 2026-10-12T15:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T16:03:26.137250+00:00",
+     "event": "deferred_red_day",
+     "symbol": "WMT",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 0.90% vs prior close 111.35 (bar 2026-10-12T15:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T16:03:28.948376+00:00",
+     "event": "deferred_red_day",
+     "symbol": "MA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 1.50% vs prior close 589.14 (bar 2026-10-12T15:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T16:03:38.903355+00:00",
+     "event": "deferred_red_day",
+     "symbol": "DIS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.28% vs prior close 108.05 (bar 2026-10-12T15:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T16:07:59.290369+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
     }
    ]
   },
@@ -576,20 +576,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T15:26:00.709404+00:00",
-   "last_exit_scan": "2026-10-12T16:00:08.597335+00:00",
+   "last_exit_scan": "2026-10-12T16:05:10.769659+00:00",
    "recent": [
-    {
-     "ts": "2026-10-09T19:45:13.304962+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-09T19:50:08.527329+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-09T19:50:10.244049+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-09T19:55:21.407851+00:00",
      "event": "scan_start"
@@ -624,6 +612,18 @@
     },
     {
      "ts": "2026-10-12T16:00:08.613885+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T16:05:10.768779+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T16:05:10.769555+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T16:05:10.796125+00:00",
      "event": "scan_done"
     }
    ]
@@ -1979,11 +1979,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-11T08:26:17.661703-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-11T08:26:34.548633-04:00",
      "event": "scoring_start",
      "symbol": "ALL",
@@ -2043,6 +2038,11 @@
      "event": "fill_skip",
      "symbol": "ALL",
      "note": "weekend"
+    },
+    {
+     "ts": "2026-10-12T12:04:10.779250-04:00",
+     "event": "fill_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -2656,66 +2656,64 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-10T03:58:39.426573+00:00",
+     "ts": "2026-10-12T16:03:59.505987+00:00",
      "event": "entry_skipped_below_ma200",
-     "symbol": "VELO"
+     "symbol": "BLDP"
     },
     {
-     "ts": "2026-10-10T03:58:44.020158+00:00",
+     "ts": "2026-10-12T16:04:03.490586+00:00",
      "event": "entry_skipped_below_ma200",
-     "symbol": "IREN"
+     "symbol": "PLUG"
     },
     {
-     "ts": "2026-10-10T03:59:05.869842+00:00",
-     "event": "staged_chart_gate",
-     "symbol": "AXTI",
-     "note": "awaiting Midna's chart read"
-    },
-    {
-     "ts": "2026-10-10T03:59:07.787788+00:00",
+     "ts": "2026-10-12T16:04:11.253527+00:00",
      "event": "entry_skipped_below_ma200",
-     "symbol": "ARQQ"
+     "symbol": "LUNR"
     },
     {
-     "ts": "2026-10-10T03:59:12.647027+00:00",
+     "ts": "2026-10-12T16:04:12.281675+00:00",
      "event": "entry_skipped_below_ma200",
-     "symbol": "HIVE"
+     "symbol": "MPT"
     },
     {
-     "ts": "2026-10-10T03:59:13.595186+00:00",
+     "ts": "2026-10-12T16:04:13.124627+00:00",
      "event": "entry_skipped_below_ma200",
-     "symbol": "POET"
+     "symbol": "MVIS"
     },
     {
-     "ts": "2026-10-10T03:59:16.131746+00:00",
+     "ts": "2026-10-12T16:04:14.604943+00:00",
      "event": "entry_skipped_below_ma200",
-     "symbol": "CORZ"
+     "symbol": "BHF"
     },
     {
-     "ts": "2026-10-10T03:59:16.811251+00:00",
-     "event": "entry_skipped_below_ma200",
-     "symbol": "HUT"
-    },
-    {
-     "ts": "2026-10-10T03:59:39.018471+00:00",
-     "event": "staged_chart_gate",
-     "symbol": "ARM",
-     "note": "awaiting Midna's chart read"
-    },
-    {
-     "ts": "2026-10-10T03:59:39.803981+00:00",
-     "event": "entry_skipped_below_ma200",
-     "symbol": "KEEL"
-    },
-    {
-     "ts": "2026-10-10T03:59:44.095559+00:00",
-     "event": "entry_skipped_below_ma200",
-     "symbol": "TTMI"
-    },
-    {
-     "ts": "2026-10-10T03:59:47.450501+00:00",
+     "ts": "2026-10-12T16:04:18.260590+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "USAR"
+    },
+    {
+     "ts": "2026-10-12T16:04:19.109983+00:00",
+     "event": "entry_skipped_below_ma200",
+     "symbol": "AIRJ"
+    },
+    {
+     "ts": "2026-10-12T16:04:19.888566+00:00",
+     "event": "entry_skipped_below_ma200",
+     "symbol": "DRNZ"
+    },
+    {
+     "ts": "2026-10-12T16:04:23.745766+00:00",
+     "event": "entry_skipped_below_ma200",
+     "symbol": "IMSR"
+    },
+    {
+     "ts": "2026-10-12T16:04:28.952650+00:00",
+     "event": "entry_skipped_below_ma200",
+     "symbol": "SIDU"
+    },
+    {
+     "ts": "2026-10-12T16:04:35.390355+00:00",
+     "event": "entry_skipped_below_ma200",
+     "symbol": "WINA"
     }
    ]
   },
@@ -2816,31 +2814,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-09T22:27:31.243063+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T22:57:37.753293+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T23:27:31.534004+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T23:57:43.601638+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
-     "ts": "2026-10-10T00:29:02.998932+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
-    },
-    {
      "ts": "2026-10-10T00:57:45.549178+00:00",
      "event": "no_fear_day",
      "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
@@ -2874,6 +2847,37 @@
      "ts": "2026-10-10T03:57:35.715958+00:00",
      "event": "no_fear_day",
      "note": "QQQ above -1.5%; not a fear day (QQQ 0.58% vs prior 747.50 (bar 2026-10-09T20:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T16:05:42.633805+00:00",
+     "event": "orphan_adopted",
+     "symbol": "VXX261218C00020000",
+     "qty": 8,
+     "note": "broker held SYM with no state record; adopted at broker avg entry, managed normally"
+    },
+    {
+     "ts": "2026-10-12T16:05:42.634139+00:00",
+     "event": "orphan_adopted",
+     "symbol": "XSP261016P00756000",
+     "qty": 1,
+     "note": "broker held SYM with no state record; adopted at broker avg entry, managed normally"
+    },
+    {
+     "ts": "2026-10-12T16:05:45.189701+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "VXX261218C00020000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-12T16:05:45.962671+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "XSP261016P00756000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-12T16:05:48.537838+00:00",
+     "event": "no_fear_day",
+     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.50% vs prior close 751.27 (bar 2026-10-12T15:00:00Z))"
     }
    ]
   },
@@ -4481,7 +4485,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T12:02:50.711873-04:00",
+  "updated_et": "2026-10-12T12:07:59.210388-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4542,6 +4546,12 @@
   },
   {
    "ts_utc": "2026-10-12T16:02:50.711873+00:00",
+   "equity": "100100.5",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-12T16:07:59.210388+00:00",
    "equity": "100100.5",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
@@ -4609,11 +4619,11 @@
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 5.0
+    "day_pl": 6.0
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -5.0
+    "day_pl": -6.0
    },
    {
     "symbol": "VXX261218C00020000",
