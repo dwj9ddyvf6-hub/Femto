@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T18:43:12.305280+00:00",
- "generated_at_et": "2026-10-12T14:43:12.305280-04:00",
+ "generated_at_utc": "2026-10-12T18:47:56.227161+00:00",
+ "generated_at_et": "2026-10-12T14:47:56.227161-04:00",
  "account": {
   "equity": "100098.5",
   "cash": "99309.5",
@@ -45,10 +45,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.16,
-   "unrealized_pl": -5.0,
-   "unrealized_pl_pct": -23.809523809523807,
-   "market_value": "16",
+   "current": 0.15,
+   "unrealized_pl": -6.0,
+   "unrealized_pl_pct": -28.57142857142857,
+   "market_value": "15",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -65,10 +65,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.27,
-   "unrealized_pl": 3.0,
-   "unrealized_pl_pct": 10.0,
-   "market_value": "-27",
+   "current": 0.26,
+   "unrealized_pl": 4.0,
+   "unrealized_pl_pct": 13.333333333333334,
+   "market_value": "-26",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -371,24 +371,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T18:33:09.691663+00:00",
-     "event": "deferred_red_day",
-     "symbol": "XOM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.77% vs prior close 168.94 (bar 2026-10-12T18:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T18:33:12.006172+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 1.27% vs prior close 111.35 (bar 2026-10-12T18:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T18:33:14.074132+00:00",
-     "event": "deferred_red_day",
-     "symbol": "MA",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 1.56% vs prior close 589.14 (bar 2026-10-12T18:00:00Z))"
-    },
-    {
      "ts": "2026-10-12T18:33:18.471513+00:00",
      "event": "deferred_red_day",
      "symbol": "DIS",
@@ -440,6 +422,24 @@
      "event": "deferred_red_day",
      "symbol": "XOM",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.70% vs prior close 168.94 (bar 2026-10-12T18:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T18:43:16.651569+00:00",
+     "event": "deferred_red_day",
+     "symbol": "WMT",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 1.24% vs prior close 111.35 (bar 2026-10-12T18:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T18:43:18.948113+00:00",
+     "event": "deferred_red_day",
+     "symbol": "MA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 1.56% vs prior close 589.14 (bar 2026-10-12T18:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T18:43:23.537632+00:00",
+     "event": "deferred_red_day",
+     "symbol": "DIS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.57% vs prior close 108.05 (bar 2026-10-12T18:00:00Z))"
     }
    ]
   },
@@ -579,20 +579,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T18:24:03.700712+00:00",
-   "last_exit_scan": "2026-10-12T18:40:09.873084+00:00",
+   "last_exit_scan": "2026-10-12T18:45:14.573599+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T18:25:10.306207+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T18:25:10.312093+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T18:25:10.339420+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T18:30:09.440260+00:00",
      "event": "scan_start"
@@ -627,6 +615,18 @@
     },
     {
      "ts": "2026-10-12T18:40:09.908142+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T18:45:14.569296+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T18:45:14.573512+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T18:45:14.592036+00:00",
      "event": "scan_done"
     }
    ]
@@ -3037,30 +3037,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T15:43:30.961278+00:00",
-     "event": "washout_signal",
-     "symbol": "AXTI",
-     "ref_px": 68.46
-    },
-    {
-     "ts": "2026-10-12T15:43:37.752816+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "AXTI",
-     "note": "buy-delay: AXTI approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-12T15:43:50.890497+00:00",
-     "event": "washout_signal",
-     "symbol": "ARM",
-     "ref_px": 266.28
-    },
-    {
-     "ts": "2026-10-12T15:43:58.749606+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "ARM",
-     "note": "buy-delay: ARM approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
      "ts": "2026-10-12T16:45:03.453920+00:00",
      "event": "washout_signal",
      "symbol": "AXTI",
@@ -3107,6 +3083,30 @@
      "event": "deferred_buy_delay",
      "symbol": "ARM",
      "note": "buy-delay: conditions met for ARM; buy queued, may execute in 5 days (2026-10-12)"
+    },
+    {
+     "ts": "2026-10-12T18:43:26.397895+00:00",
+     "event": "washout_signal",
+     "symbol": "AXTI",
+     "ref_px": 68.46
+    },
+    {
+     "ts": "2026-10-12T18:43:32.727948+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "AXTI",
+     "note": "buy-delay: AXTI approved 2026-10-12, 0 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-12T18:43:43.487102+00:00",
+     "event": "washout_signal",
+     "symbol": "ARM",
+     "ref_px": 266.28
+    },
+    {
+     "ts": "2026-10-12T18:43:50.143981+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "ARM",
+     "note": "buy-delay: ARM approved 2026-10-12, 0 of 5 days elapsed"
     }
    ]
   },
@@ -4540,7 +4540,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T14:43:12.305280-04:00",
+  "updated_et": "2026-10-12T14:47:56.227161-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4982,6 +4982,12 @@
    "equity": "100098.5",
    "day_pl": 8.0,
    "day_pl_pct": 0.00799276654627562
+  },
+  {
+   "ts_utc": "2026-10-12T18:47:56.227161+00:00",
+   "equity": "100098.5",
+   "day_pl": 8.0,
+   "day_pl_pct": 0.00799276654627562
   }
  ],
  "regime_history": [
@@ -5113,11 +5119,11 @@
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 3.0
+    "day_pl": 4.0
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -5.0
+    "day_pl": -6.0
    },
    {
     "symbol": "VXX261218C00020000",
