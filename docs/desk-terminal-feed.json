@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-12T14:22:53.751987+00:00",
- "generated_at_et": "2026-10-12T10:22:53.751987-04:00",
+ "generated_at_utc": "2026-10-12T14:27:48.563137+00:00",
+ "generated_at_et": "2026-10-12T10:27:48.563137-04:00",
  "account": {
-  "equity": "99995.95",
-  "cash": "100007.95",
-  "buying_power": "398031.8",
+  "equity": "100057.75",
+  "cash": "-45344.65",
+  "buying_power": "223784.52",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -24,6 +24,23 @@
   "day_start_date": "2026-10-12"
  },
  "positions": [
+  {
+   "symbol": "QQQ",
+   "qty": 195.0,
+   "avg_entry": 745.397948,
+   "current": 745.69,
+   "unrealized_pl": 56.95014,
+   "unrealized_pl_pct": 0.039180682048241974,
+   "market_value": "145409.55",
+   "side": "long",
+   "sector": null,
+   "phenotype": null,
+   "confidence": null,
+   "desk_stop": null,
+   "desk_target": null,
+   "entry_bar_t": null,
+   "entered_ts_utc": null
+  },
   {
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
@@ -48,10 +65,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.32,
-   "unrealized_pl": -2.0,
-   "unrealized_pl_pct": -6.666666666666667,
-   "market_value": "-32",
+   "current": 0.33,
+   "unrealized_pl": -3.0,
+   "unrealized_pl_pct": -10.0,
+   "market_value": "-33",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -65,13 +82,13 @@
    "sleeve": "spx_premium"
   }
  ],
- "position_count": 2,
+ "position_count": 3,
  "max_positions": 10,
  "sector_counts": {
-  "unknown": 2
+  "unknown": 3
  },
- "day_pl": -4.05000000000291,
- "day_pl_pct": -0.004050000000002911,
+ "day_pl": 57.75,
+ "day_pl_pct": 0.05775,
  "journal_today": {
   "scans": 2,
   "trades": 0
@@ -356,24 +373,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T14:03:24.375567+00:00",
-     "event": "deferred_red_day",
-     "symbol": "XOM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.93% vs prior close 168.94 (bar 2026-10-12T13:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T14:03:26.930248+00:00",
-     "event": "deferred_red_day",
-     "symbol": "MA",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 0.40% vs prior close 589.14 (bar 2026-10-12T13:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T14:03:32.284605+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.13% vs prior close 108.05 (bar 2026-10-12T13:00:00Z))"
-    },
-    {
      "ts": "2026-10-12T14:08:23.657864+00:00",
      "event": "deferred_red_day",
      "symbol": "XOM",
@@ -426,6 +425,24 @@
      "event": "deferred_buy_delay",
      "symbol": "DIS",
      "note": "buy-delay: conditions met for DIS; buy queued, may execute in 5 days (2026-10-12)"
+    },
+    {
+     "ts": "2026-10-12T14:22:58.866896+00:00",
+     "event": "deferred_red_day",
+     "symbol": "XOM",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.91% vs prior close 168.94 (bar 2026-10-12T14:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T14:23:01.015598+00:00",
+     "event": "deferred_red_day",
+     "symbol": "MA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 0.80% vs prior close 589.14 (bar 2026-10-12T14:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T14:23:05.530977+00:00",
+     "event": "deferred_red_day",
+     "symbol": "DIS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.26% vs prior close 108.05 (bar 2026-10-12T14:00:00Z))"
     }
    ]
   },
@@ -496,20 +513,12 @@
    "strategy": "Morning dip limit on QQQ",
    "automation": "every 3 min, 10:00-12:00 ET",
    "state_known": true,
-   "armed": false,
+   "armed": true,
    "position_qty": null,
    "protection": {
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-10-09T15:43:09.628923+00:00",
-     "event": "d75_not_proceed"
-    },
-    {
-     "ts": "2026-10-09T15:46:14.924265+00:00",
-     "event": "deferred_red_day"
-    },
     {
      "ts": "2026-10-09T15:46:14.927013+00:00",
      "event": "d75_not_proceed"
@@ -549,6 +558,15 @@
     {
      "ts": "2026-10-12T14:22:30.732559+00:00",
      "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-12T14:25:30.670995+00:00",
+     "event": "chart_gate_released"
+    },
+    {
+     "ts": "2026-10-12T14:25:33.556835+00:00",
+     "event": "chart_release_armed",
+     "qty": 195
     }
    ]
   },
@@ -560,80 +578,72 @@
    "state_known": true,
    "open_positions": 0,
    "positions": [],
-   "last_entry_scan": null,
-   "last_exit_scan": "2026-10-12T14:20:39.978153+00:00",
+   "last_entry_scan": "2026-10-12T14:23:18.682548+00:00",
+   "last_exit_scan": "2026-10-12T14:25:42.210353+00:00",
    "recent": [
     {
-     "ts": "2026-10-12T14:22:52.989192+00:00",
+     "ts": "2026-10-12T14:23:16.207390+00:00",
      "event": "entry_skipped",
-     "symbol": "MU",
+     "symbol": "HOOD",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T14:22:52.989463+00:00",
+     "ts": "2026-10-12T14:23:18.681877+00:00",
      "event": "entry_skipped",
-     "symbol": "MU",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T14:22:52.989527+00:00",
+     "ts": "2026-10-12T14:23:18.682163+00:00",
      "event": "entry_skipped",
-     "symbol": "MU",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T14:22:52.989584+00:00",
+     "ts": "2026-10-12T14:23:18.682257+00:00",
      "event": "entry_skipped",
-     "symbol": "MU",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T14:22:52.989625+00:00",
+     "ts": "2026-10-12T14:23:18.682300+00:00",
      "event": "entry_skipped",
-     "symbol": "MU",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T14:22:52.989662+00:00",
+     "ts": "2026-10-12T14:23:18.682343+00:00",
      "event": "entry_skipped",
-     "symbol": "MU",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T14:22:52.989699+00:00",
+     "ts": "2026-10-12T14:23:18.682381+00:00",
      "event": "entry_skipped",
-     "symbol": "MU",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T14:22:55.593629+00:00",
+     "ts": "2026-10-12T14:23:18.682430+00:00",
      "event": "entry_skipped",
-     "symbol": "JPM",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-12T14:22:55.593860+00:00",
-     "event": "entry_skipped",
-     "symbol": "JPM",
-     "reason": "stale_episode"
+     "ts": "2026-10-12T14:23:18.700593+00:00",
+     "event": "scan_done"
     },
     {
-     "ts": "2026-10-12T14:22:55.593922+00:00",
-     "event": "entry_skipped",
-     "symbol": "JPM",
-     "reason": "stale_episode"
+     "ts": "2026-10-12T14:25:42.204398+00:00",
+     "event": "scan_start"
     },
     {
-     "ts": "2026-10-12T14:22:55.593966+00:00",
-     "event": "entry_skipped",
-     "symbol": "JPM",
-     "reason": "stale_episode"
+     "ts": "2026-10-12T14:25:42.210280+00:00",
+     "event": "exit_scan"
     },
     {
-     "ts": "2026-10-12T14:22:55.594030+00:00",
-     "event": "entry_skipped",
-     "symbol": "JPM",
-     "reason": "stale_episode"
+     "ts": "2026-10-12T14:25:42.222218+00:00",
+     "event": "scan_done"
     }
    ]
   },
@@ -655,7 +665,7 @@
      "long_strike": 756,
      "credit_pts": 0.08,
      "entry_ts": "2026-10-12T14:20:46.548598+00:00",
-     "status": "pending_unverified"
+     "status": "open"
     }
    ],
    "cooldown_until": null,
@@ -668,20 +678,6 @@
     "total_pnl": 0.0
    },
    "recent": [
-    {
-     "ts": "2026-10-09T20:02:56.929582+00:00",
-     "event": "settle_submit_failed",
-     "note": "close-leg quotes not two-sided; position kept for retry"
-    },
-    {
-     "ts": "2026-10-09T20:02:56.929786+00:00",
-     "event": "settle_scan",
-     "note": "nothing due for settlement"
-    },
-    {
-     "ts": "2026-10-09T20:02:56.929840+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T14:07:06.177489+00:00",
      "event": "scan_start"
@@ -719,6 +715,18 @@
     },
     {
      "ts": "2026-10-12T14:20:52.983851+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T14:25:07.267828+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T14:25:07.966073+00:00",
+     "event": "pending_verified_open"
+    },
+    {
+     "ts": "2026-10-12T14:25:07.998337+00:00",
      "event": "scan_done"
     }
    ]
@@ -1972,23 +1980,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-11T09:26:35.709241-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "41 symbols"
-    },
-    {
-     "ts": "2026-10-11T09:26:39.920046-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-11T09:31:19.699469-04:00",
-     "event": "fill_skip",
-     "symbol": "ALL",
-     "note": "weekend"
-    },
-    {
      "ts": "2026-10-11T10:26:23.571452-04:00",
      "event": "rank_start",
      "symbol": "ALL"
@@ -2034,6 +2025,22 @@
     {
      "ts": "2026-10-12T10:04:10.598660-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T10:26:23.465974-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T10:26:39.164112-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "41 symbols"
+    },
+    {
+     "ts": "2026-10-12T10:26:43.677741-04:00",
+     "event": "rank_pass",
      "symbol": "ALL"
     }
    ]
@@ -2302,24 +2309,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-11T11:59:28.408326+00:00",
-     "event": "risk_gate_unavailable",
-     "symbol": "AAA",
-     "note": "fail closed"
-    },
-    {
-     "ts": "2026-10-11T11:59:39.151584+00:00",
-     "event": "risk_gate_unavailable",
-     "symbol": "AAA",
-     "note": "fail closed"
-    },
-    {
-     "ts": "2026-10-11T12:01:41.783911+00:00",
-     "event": "risk_gate_unavailable",
-     "symbol": "AAA",
-     "note": "fail closed"
-    },
-    {
      "ts": "2026-10-11T12:01:50.847012+00:00",
      "event": "risk_gate_unavailable",
      "symbol": "AAA",
@@ -2364,6 +2353,22 @@
     {
      "ts": "2026-10-12T13:25:17.788526+00:00",
      "event": "no_buyback_signals"
+    },
+    {
+     "ts": "2026-10-12T14:25:04.559264+00:00",
+     "event": "no_buyback_signals"
+    },
+    {
+     "ts": "2026-10-12T14:25:24.537719+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 1.0,
+     "note": "manual review; not auto-adopted"
+    },
+    {
+     "ts": "2026-10-12T14:25:24.537932+00:00",
+     "event": "unknown_broker_leg",
+     "qty": -1.0,
+     "note": "manual review; not auto-adopted"
     }
    ]
   },
@@ -3342,14 +3347,16 @@
   ]
  },
  "exposure": {
-  "gross_notional": 0.0,
-  "equity": 99995.95,
-  "gross_pct": 0.0,
+  "gross_notional": 56.0,
+  "equity": 100057.75,
+  "gross_pct": 0.1,
   "cap_pct": 150,
-  "headroom_pct": 150.0,
+  "headroom_pct": 149.9,
   "status": "OK",
-  "position_count": 0,
-  "by_sleeve": {}
+  "position_count": 2,
+  "by_sleeve": {
+   "spx_premium": 56.0
+  }
  },
  "sleeve_regime": {
   "current_regime": "UPTREND",
@@ -4515,7 +4522,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T10:22:53.751987-04:00",
+  "updated_et": "2026-10-12T10:27:48.563137-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4639,6 +4646,12 @@
    "equity": "99995.95",
    "day_pl": -4.05000000000291,
    "day_pl_pct": -0.004050000000002911
+  },
+  {
+   "ts_utc": "2026-10-12T14:27:48.563137+00:00",
+   "equity": "100057.75",
+   "day_pl": 57.75,
+   "day_pl_pct": 0.05775
   }
  ],
  "regime_history": [
@@ -4733,19 +4746,23 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -4.05,
+  "day_pl": 57.75,
   "contributors": [
+   {
+    "symbol": "QQQ",
+    "day_pl": 56.95
+   },
    {
     "symbol": "XSP261016P00756000",
     "day_pl": -1.0
    },
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -2.0
+    "day_pl": -3.0
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": -1.05,
+    "day_pl": 4.8,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -4782,7 +4799,14 @@
    "in_days": 59
   }
  ],
- "sleeve_treemap": null,
+ "sleeve_treemap": [
+  {
+   "sleeve": "spx_premium",
+   "notional": 56.0,
+   "unrealized_pl": -4.0,
+   "position_count": 2
+  }
+ ],
  "lector": {
   "credit": "@ChartsLector",
   "label": "experimental research replica",
