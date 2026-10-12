@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T16:49:06.395638+00:00",
- "generated_at_et": "2026-10-12T12:49:06.395638-04:00",
+ "generated_at_utc": "2026-10-12T16:53:03.107462+00:00",
+ "generated_at_et": "2026-10-12T12:53:03.107462-04:00",
  "account": {
   "equity": "100098.5",
   "cash": "99309.5",
@@ -45,10 +45,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.16,
-   "unrealized_pl": -5.0,
-   "unrealized_pl_pct": -23.809523809523807,
-   "market_value": "16",
+   "current": 0.17,
+   "unrealized_pl": -4.0,
+   "unrealized_pl_pct": -19.047619047619047,
+   "market_value": "17",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -65,10 +65,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.26,
-   "unrealized_pl": 4.0,
-   "unrealized_pl_pct": 13.333333333333334,
-   "market_value": "-26",
+   "current": 0.28,
+   "unrealized_pl": 2.0,
+   "unrealized_pl_pct": 6.666666666666667,
+   "market_value": "-28",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -373,36 +373,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T16:33:14.802575+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "MA",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:33:20.497150+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "DIS",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:38:10.036513+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "V",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:38:11.585419+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "XOM",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:38:12.421812+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "WMT",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
      "ts": "2026-10-12T16:38:13.278973+00:00",
      "event": "deferred_circuit_breaker",
      "symbol": "MA",
@@ -440,6 +410,36 @@
     },
     {
      "ts": "2026-10-12T16:44:54.407892+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "DIS",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:50:20.625904+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "V",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:50:22.279927+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "XOM",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:50:23.203734+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "WMT",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:50:23.989694+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "MA",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:50:27.487136+00:00",
      "event": "deferred_circuit_breaker",
      "symbol": "DIS",
      "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
@@ -578,20 +578,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T16:23:55.055414+00:00",
-   "last_exit_scan": "2026-10-12T16:45:44.294480+00:00",
+   "last_exit_scan": "2026-10-12T16:50:24.781553+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T16:30:09.227605+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T16:30:09.241738+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T16:30:09.258960+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T16:36:18.802906+00:00",
      "event": "scan_start"
@@ -626,6 +614,18 @@
     },
     {
      "ts": "2026-10-12T16:45:44.307622+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T16:50:24.777104+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T16:50:24.781475+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T16:50:24.797965+00:00",
      "event": "scan_done"
     }
    ]
@@ -2232,28 +2232,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-11T14:49:13.782444+00:00",
-     "event": "deferred_red_day",
-     "symbol": "VXX",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for VXX on 2026-10-11 yet (deferring))"
-    },
-    {
-     "ts": "2026-10-12T12:49:05.756778+00:00",
-     "event": "vix_read"
-    },
-    {
-     "ts": "2026-10-12T12:49:09.395805+00:00",
-     "event": "hedge_signal",
-     "symbol": "VXX",
-     "note": "complacency hedge"
-    },
-    {
-     "ts": "2026-10-12T12:49:39.314842+00:00",
-     "event": "staged_chart_gate",
-     "symbol": "VXX",
-     "note": "awaiting Midna's chart read"
-    },
-    {
      "ts": "2026-10-12T12:49:39.318365+00:00",
      "event": "entry_staged_chart_gate",
      "symbol": "VXX"
@@ -2289,6 +2267,28 @@
     {
      "ts": "2026-10-12T15:49:07.760400+00:00",
      "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-12T16:49:18.405167+00:00",
+     "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-12T16:49:20.850317+00:00",
+     "event": "hedge_signal",
+     "symbol": "VXX",
+     "note": "complacency hedge"
+    },
+    {
+     "ts": "2026-10-12T16:49:20.854219+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "VXX",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:49:31.814092+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 8.0,
+     "note": "manual review; not auto-adopted"
     }
    ]
   },
@@ -4499,7 +4499,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T12:49:06.395638-04:00",
+  "updated_et": "2026-10-12T12:53:03.107462-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4605,6 +4605,12 @@
    "equity": "100098.5",
    "day_pl": -2.0,
    "day_pl_pct": -0.001997992018021888
+  },
+  {
+   "ts_utc": "2026-10-12T16:53:03.107462+00:00",
+   "equity": "100098.5",
+   "day_pl": -2.0,
+   "day_pl_pct": -0.001997992018021888
   }
  ],
  "regime_history": [
@@ -4703,11 +4709,11 @@
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 4.0
+    "day_pl": 2.0
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -5.0
+    "day_pl": -4.0
    },
    {
     "symbol": "VXX261218C00020000",
@@ -4715,7 +4721,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 79.0,
+    "day_pl": 80.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
