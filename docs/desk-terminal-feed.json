@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T16:12:45.975529+00:00",
- "generated_at_et": "2026-10-12T12:12:45.975529-04:00",
+ "generated_at_utc": "2026-10-12T16:17:51.988519+00:00",
+ "generated_at_et": "2026-10-12T12:17:51.988519-04:00",
  "account": {
   "equity": "100100.5",
   "cash": "99309.5",
@@ -373,35 +373,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-09T19:42:53.152604+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 1.02% vs prior close 107.08 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T19:47:51.875238+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 0.60% vs prior close 110.59 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T19:47:55.521378+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 1.04% vs prior close 107.08 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-09T19:47:56.211527+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-09T19:52:49.393309+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 0.58% vs prior close 110.59 (bar 2026-10-09T19:00:00Z))"
-    },
-    {
      "ts": "2026-10-09T19:52:53.046451+00:00",
      "event": "deferred_red_day",
      "symbol": "DIS",
@@ -441,6 +412,36 @@
      "event": "orphan_stop",
      "symbol": "TEST",
      "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-12T16:13:02.353241+00:00",
+     "event": "deferred_red_day",
+     "symbol": "V",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (V day-so-far 1.49% vs prior close 385.45 (bar 2026-10-12T15:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T16:13:03.863904+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "XOM",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:13:04.504438+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "WMT",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:13:05.169837+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "MA",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
+    },
+    {
+     "ts": "2026-10-12T16:13:09.327174+00:00",
+     "event": "deferred_circuit_breaker",
+     "symbol": "DIS",
+     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
     }
    ]
   },
@@ -450,9 +451,9 @@
    "automation": "every 15 min, market hours",
    "enabled": true,
    "setup": {
-    "date": null,
-    "trend_day": null,
-    "no_touch": null
+    "date": "2026-10-12",
+    "trend_day": false,
+    "no_touch": false
    },
    "position": null,
    "protection": {
@@ -498,6 +499,10 @@
     },
     {
      "ts": "2026-10-09T04:08:29.713939+00:00",
+     "event": "setup_eval"
+    },
+    {
+     "ts": "2026-10-12T16:17:08.242547+00:00",
      "event": "setup_eval"
     }
    ]
@@ -572,20 +577,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T15:26:00.709404+00:00",
-   "last_exit_scan": "2026-10-12T16:10:27.121853+00:00",
+   "last_exit_scan": "2026-10-12T16:15:38.833266+00:00",
    "recent": [
-    {
-     "ts": "2026-10-09T19:45:13.304962+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-09T19:50:08.527329+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-09T19:50:10.244049+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-09T19:55:21.407851+00:00",
      "event": "scan_start"
@@ -620,6 +613,18 @@
     },
     {
      "ts": "2026-10-12T16:10:27.145169+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T16:15:38.827020+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T16:15:38.833186+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T16:15:38.848112+00:00",
      "event": "scan_done"
     }
    ]
@@ -4477,7 +4482,7 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T12:12:45.975529-04:00",
+  "updated_et": "2026-10-12T12:17:51.988519-04:00",
   "headline": "\u2014",
   "sections": []
  },
@@ -4538,6 +4543,12 @@
   },
   {
    "ts_utc": "2026-10-12T16:12:45.975529+00:00",
+   "equity": "100100.5",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-12T16:17:51.988519+00:00",
    "equity": "100100.5",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
