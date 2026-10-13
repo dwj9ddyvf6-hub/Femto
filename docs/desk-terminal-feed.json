@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T14:22:52.331982+00:00",
- "generated_at_et": "2026-10-13T10:22:52.331982-04:00",
+ "generated_at_utc": "2026-10-13T14:27:53.684250+00:00",
+ "generated_at_et": "2026-10-13T10:27:53.684250-04:00",
  "account": {
-  "equity": "100009.31",
+  "equity": "100026.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -28,10 +28,10 @@
    "symbol": "VXX261218C00020000",
    "qty": 8.0,
    "avg_entry": 1.1,
-   "current": 0.89,
-   "unrealized_pl": -168.0,
-   "unrealized_pl_pct": -19.090909090909093,
-   "market_value": "712",
+   "current": 0.91,
+   "unrealized_pl": -152.0,
+   "unrealized_pl_pct": -17.272727272727273,
+   "market_value": "728",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -46,10 +46,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.15,
-   "unrealized_pl": -6.0,
-   "unrealized_pl_pct": -28.57142857142857,
-   "market_value": "15",
+   "current": 0.14,
+   "unrealized_pl": -7.0,
+   "unrealized_pl_pct": -33.33333333333333,
+   "market_value": "14",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.24,
-   "unrealized_pl": 6.0,
-   "unrealized_pl_pct": 20.0,
-   "market_value": "-24",
+   "current": 0.22,
+   "unrealized_pl": 8.0,
+   "unrealized_pl_pct": 26.666666666666668,
+   "market_value": "-22",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -89.19000000000233,
- "day_pl_pct": -0.0891022342992176,
+ "day_pl": -72.19000000000233,
+ "day_pl_pct": -0.07211896282162303,
  "journal_today": {
   "scans": 2,
   "trades": 0
@@ -526,18 +526,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T15:22:13.145186+00:00",
-     "event": "chart_stage_skipped_pending"
-    },
-    {
-     "ts": "2026-10-12T15:25:22.835885+00:00",
-     "event": "chart_stage_skipped_pending"
-    },
-    {
-     "ts": "2026-10-12T15:28:19.772279+00:00",
-     "event": "chart_stage_skipped_pending"
-    },
-    {
      "ts": "2026-10-12T15:31:19.108455+00:00",
      "event": "chart_stage_skipped_pending"
     },
@@ -572,6 +560,18 @@
     {
      "ts": "2026-10-12T15:55:21.521589+00:00",
      "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-13T14:25:08.723765+00:00",
+     "event": "chart_staged_stale_cleared"
+    },
+    {
+     "ts": "2026-10-13T14:25:37.992830+00:00",
+     "event": "staged_chart_gate"
+    },
+    {
+     "ts": "2026-10-13T14:25:38.015517+00:00",
+     "event": "chart_staged"
     }
    ]
   },
@@ -583,80 +583,72 @@
    "state_known": true,
    "open_positions": 0,
    "positions": [],
-   "last_entry_scan": "2026-10-12T19:23:38.169749+00:00",
-   "last_exit_scan": "2026-10-13T14:20:38.948591+00:00",
+   "last_entry_scan": "2026-10-13T14:23:32.033358+00:00",
+   "last_exit_scan": "2026-10-13T14:25:11.634550+00:00",
    "recent": [
     {
-     "ts": "2026-10-13T14:22:45.277546+00:00",
+     "ts": "2026-10-13T14:23:27.414809+00:00",
      "event": "entry_skipped",
-     "symbol": "MSFT",
+     "symbol": "HOOD",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T14:22:45.277628+00:00",
+     "ts": "2026-10-13T14:23:32.028985+00:00",
      "event": "entry_skipped",
-     "symbol": "MSFT",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T14:22:45.277693+00:00",
+     "ts": "2026-10-13T14:23:32.031189+00:00",
      "event": "entry_skipped",
-     "symbol": "MSFT",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T14:22:48.806988+00:00",
+     "ts": "2026-10-13T14:23:32.031630+00:00",
      "event": "entry_skipped",
-     "symbol": "AVGO",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T14:22:48.813667+00:00",
+     "ts": "2026-10-13T14:23:32.031943+00:00",
      "event": "entry_skipped",
-     "symbol": "AVGO",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T14:22:48.813844+00:00",
+     "ts": "2026-10-13T14:23:32.032419+00:00",
      "event": "entry_skipped",
-     "symbol": "AVGO",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T14:22:52.336743+00:00",
+     "ts": "2026-10-13T14:23:32.032735+00:00",
      "event": "entry_skipped",
-     "symbol": "TSLA",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T14:22:52.336999+00:00",
+     "ts": "2026-10-13T14:23:32.032990+00:00",
      "event": "entry_skipped",
-     "symbol": "TSLA",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T14:22:52.337061+00:00",
-     "event": "entry_skipped",
-     "symbol": "TSLA",
-     "reason": "stale_episode"
+     "ts": "2026-10-13T14:23:32.045883+00:00",
+     "event": "scan_done"
     },
     {
-     "ts": "2026-10-13T14:22:52.337103+00:00",
-     "event": "entry_skipped",
-     "symbol": "TSLA",
-     "reason": "stale_episode"
+     "ts": "2026-10-13T14:25:11.631568+00:00",
+     "event": "scan_start"
     },
     {
-     "ts": "2026-10-13T14:22:52.337142+00:00",
-     "event": "entry_skipped",
-     "symbol": "TSLA",
-     "reason": "stale_episode"
+     "ts": "2026-10-13T14:25:11.634415+00:00",
+     "event": "exit_scan"
     },
     {
-     "ts": "2026-10-13T14:22:52.337180+00:00",
-     "event": "entry_skipped",
-     "symbol": "TSLA",
-     "reason": "stale_episode"
+     "ts": "2026-10-13T14:25:11.679564+00:00",
+     "event": "scan_done"
     }
    ]
   },
@@ -2064,22 +2056,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T13:26:59.294300-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "41 symbols"
-    },
-    {
-     "ts": "2026-10-12T13:27:03.417943-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-12T14:04:29.095996-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-12T14:26:25.396860-04:00",
      "event": "rank_start",
      "symbol": "ALL"
@@ -2124,6 +2100,22 @@
     {
      "ts": "2026-10-13T10:04:16.053655-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T10:26:50.727570-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T10:27:08.894929-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "41 symbols"
+    },
+    {
+     "ts": "2026-10-13T10:27:13.107750-04:00",
+     "event": "rank_pass",
      "symbol": "ALL"
     }
    ]
@@ -2377,28 +2369,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T11:25:08.151720+00:00",
-     "event": "no_buyback_signals"
-    },
-    {
-     "ts": "2026-10-13T11:25:10.784037+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-13T11:25:10.787851+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 1.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-13T11:25:10.788167+00:00",
-     "event": "unknown_broker_leg",
-     "qty": -1.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
      "ts": "2026-10-13T12:25:21.905054+00:00",
      "event": "no_buyback_signals"
     },
@@ -2438,6 +2408,28 @@
     },
     {
      "ts": "2026-10-13T13:25:17.509986+00:00",
+     "event": "unknown_broker_leg",
+     "qty": -1.0,
+     "note": "manual review; not auto-adopted"
+    },
+    {
+     "ts": "2026-10-13T14:25:10.676962+00:00",
+     "event": "no_buyback_signals"
+    },
+    {
+     "ts": "2026-10-13T14:25:20.556729+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 8.0,
+     "note": "manual review; not auto-adopted"
+    },
+    {
+     "ts": "2026-10-13T14:25:20.558537+00:00",
+     "event": "unknown_broker_leg",
+     "qty": 1.0,
+     "note": "manual review; not auto-adopted"
+    },
+    {
+     "ts": "2026-10-13T14:25:20.558833+00:00",
      "event": "unknown_broker_leg",
      "qty": -1.0,
      "note": "manual review; not auto-adopted"
@@ -3290,7 +3282,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100009.31,
+  "equity": 100026.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4524,17 +4516,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T10:22:52.331982-04:00",
+  "updated_et": "2026-10-13T10:27:53.684250-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-10T02:35:27.496318+00:00",
-   "equity": "100000",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-10T02:36:27.407331+00:00",
    "equity": "100000",
@@ -5248,6 +5234,12 @@
    "equity": "100009.31",
    "day_pl": -89.19000000000233,
    "day_pl_pct": -0.0891022342992176
+  },
+  {
+   "ts_utc": "2026-10-13T14:27:53.684250+00:00",
+   "equity": "100026.31",
+   "day_pl": -72.19000000000233,
+   "day_pl_pct": -0.07211896282162303
   }
  ],
  "benchmark_series": {
@@ -5262,8 +5254,8 @@
    },
    {
     "date": "2026-10-13",
-    "equity": 99.91,
-    "spy": 99.91,
+    "equity": 99.93,
+    "spy": 99.96,
     "qqq": 99.56
    }
   ]
@@ -5408,19 +5400,19 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -89.19,
+  "day_pl": -72.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 0.0
+    "day_pl": 2.0
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -4.0
+    "day_pl": -5.0
    },
    {
     "symbol": "VXX261218C00020000",
-    "day_pl": -120.0
+    "day_pl": -104.0
    },
    {
     "symbol": "BASELINE_DIFF",
@@ -5465,13 +5457,13 @@
   {
    "sleeve": "vix_hedge",
    "notional": 880.0,
-   "unrealized_pl": -168.0,
+   "unrealized_pl": -152.0,
    "position_count": 1
   },
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": 0.0,
+   "unrealized_pl": 1.0,
    "position_count": 2
   }
  ],
