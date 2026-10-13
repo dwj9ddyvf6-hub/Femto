@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T18:17:57.361786+00:00",
- "generated_at_et": "2026-10-13T14:17:57.361786-04:00",
+ "generated_at_utc": "2026-10-13T18:23:12.324952+00:00",
+ "generated_at_et": "2026-10-13T14:23:12.324952-04:00",
  "account": {
   "equity": "100073.31",
   "cash": "99306.31",
@@ -381,11 +381,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T17:08:08.241355+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
      "ts": "2026-10-13T17:08:52.128879+00:00",
      "event": "bars_5min_failed",
      "symbol": "PANW"
@@ -437,6 +432,11 @@
     },
     {
      "ts": "2026-10-13T18:08:13.985841+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T18:18:19.850139+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -578,55 +578,79 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T17:28:28.462508+00:00",
-   "last_exit_scan": "2026-10-13T18:15:27.038328+00:00",
+   "last_exit_scan": "2026-10-13T18:20:22.868322+00:00",
    "recent": [
     {
-     "ts": "2026-10-13T18:00:15.935657+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-13T18:23:00.814621+00:00",
+     "event": "entry_skipped",
+     "symbol": "NFLX",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:00:15.940789+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-13T18:23:00.814683+00:00",
+     "event": "entry_skipped",
+     "symbol": "NFLX",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:00:15.957127+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-13T18:23:00.814727+00:00",
+     "event": "entry_skipped",
+     "symbol": "NFLX",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:05:23.648545+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-13T18:23:00.814787+00:00",
+     "event": "entry_skipped",
+     "symbol": "NFLX",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:05:23.659716+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-13T18:23:00.814826+00:00",
+     "event": "entry_skipped",
+     "symbol": "NFLX",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:05:23.693583+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-13T18:23:15.059716+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMD",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:10:24.717973+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-13T18:23:15.062872+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMD",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:10:24.727938+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-13T18:23:15.063979+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMD",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:10:24.751826+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-13T18:23:15.065833+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMD",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:15:27.026870+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-13T18:23:15.066799+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMD",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:15:27.038236+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-13T18:23:15.068548+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMD",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:15:27.054961+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-13T18:23:15.068813+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMD",
+     "reason": "stale_episode"
     }
    ]
   },
@@ -2651,12 +2675,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T18:11:29.192228+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "HIVE",
-     "note": "buy-delay: HIVE approved 2026-10-12, 1 of 5 days elapsed"
-    },
-    {
      "ts": "2026-10-13T18:12:18.451988+00:00",
      "event": "deferred_buy_delay",
      "symbol": "SNDK",
@@ -2720,6 +2738,12 @@
      "event": "deferred_buy_delay",
      "symbol": "OKLO",
      "note": "buy-delay: OKLO approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T18:18:40.422955+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "USAR",
+     "note": "buy-delay: USAR approved 2026-10-12, 1 of 5 days elapsed"
     }
    ]
   },
@@ -4668,17 +4692,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T14:17:57.361786-04:00",
+  "updated_et": "2026-10-13T14:23:12.324952-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T14:08:00.231950+00:00",
-   "equity": "100000",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-12T14:47:51.374600+00:00",
    "equity": "100177.7",
@@ -5392,6 +5410,12 @@
    "equity": "100073.31",
    "day_pl": -25.19000000000233,
    "day_pl_pct": -0.025165212265920396
+  },
+  {
+   "ts_utc": "2026-10-13T18:23:12.324952+00:00",
+   "equity": "100073.31",
+   "day_pl": -25.19000000000233,
+   "day_pl_pct": -0.025165212265920396
   }
  ],
  "benchmark_series": {
@@ -5407,8 +5431,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.97,
-    "spy": 99.95,
-    "qqq": 99.55
+    "spy": 99.97,
+    "qqq": 99.59
    }
   ]
  },
