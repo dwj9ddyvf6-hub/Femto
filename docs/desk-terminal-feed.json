@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T14:42:51.973091+00:00",
- "generated_at_et": "2026-10-13T10:42:51.973091-04:00",
+ "generated_at_utc": "2026-10-13T14:47:49.647864+00:00",
+ "generated_at_et": "2026-10-13T10:47:49.647864-04:00",
  "account": {
   "equity": "100025.31",
   "cash": "99306.31",
@@ -526,14 +526,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T15:46:27.452908+00:00",
-     "event": "chart_stage_skipped_pending"
-    },
-    {
-     "ts": "2026-10-12T15:49:18.156881+00:00",
-     "event": "chart_stage_skipped_pending"
-    },
-    {
      "ts": "2026-10-12T15:52:09.880310+00:00",
      "event": "chart_stage_skipped_pending"
     },
@@ -572,6 +564,14 @@
     {
      "ts": "2026-10-13T14:40:10.646029+00:00",
      "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-13T14:43:12.590209+00:00",
+     "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-13T14:46:12.731511+00:00",
+     "event": "chart_stage_skipped_pending"
     }
    ]
   },
@@ -584,20 +584,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T14:23:32.033358+00:00",
-   "last_exit_scan": "2026-10-13T14:40:27.126162+00:00",
+   "last_exit_scan": "2026-10-13T14:45:07.651502+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T14:25:11.631568+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-13T14:25:11.634415+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-13T14:25:11.679564+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T14:30:08.704258+00:00",
      "event": "scan_start"
@@ -632,6 +620,18 @@
     },
     {
      "ts": "2026-10-13T14:40:27.152682+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T14:45:07.647791+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T14:45:07.651402+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T14:45:07.666146+00:00",
      "event": "scan_done"
     }
    ]
@@ -1948,12 +1948,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-08T16:31:09.940305-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols, lane=1W, signal=swing"
-    },
-    {
      "ts": "2026-10-08T16:33:45.775362-04:00",
      "event": "rank_pass",
      "symbol": "ALL"
@@ -2009,6 +2003,11 @@
     {
      "ts": "2026-10-12T16:43:07.167497-04:00",
      "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T10:42:57.098868-04:00",
+     "event": "fill_pass",
      "symbol": "ALL"
     }
    ]
@@ -2999,73 +2998,73 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T13:44:19.977937+00:00",
+     "ts": "2026-10-13T14:43:43.116944+00:00",
      "event": "washout_signal",
      "symbol": "OUST",
      "ref_px": 37.27
     },
     {
-     "ts": "2026-10-13T13:44:31.254913+00:00",
+     "ts": "2026-10-13T14:43:49.151072+00:00",
      "event": "deferred_buy_delay",
      "symbol": "OUST",
-     "note": "buy-delay: conditions met for OUST; buy queued, may execute in 5 days (2026-10-13)"
+     "note": "buy-delay: OUST approved 2026-10-13, 0 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-13T13:44:32.104096+00:00",
+     "ts": "2026-10-13T14:43:49.912210+00:00",
      "event": "washout_signal",
      "symbol": "ALAB",
      "ref_px": 324.11
     },
     {
-     "ts": "2026-10-13T13:44:42.492188+00:00",
+     "ts": "2026-10-13T14:43:55.700391+00:00",
      "event": "deferred_buy_delay",
      "symbol": "ALAB",
-     "note": "buy-delay: conditions met for ALAB; buy queued, may execute in 5 days (2026-10-13)"
+     "note": "buy-delay: ALAB approved 2026-10-13, 0 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-13T13:44:51.683146+00:00",
+     "ts": "2026-10-13T14:43:59.579560+00:00",
      "event": "washout_signal",
      "symbol": "SNDK",
      "ref_px": 1487.33
     },
     {
-     "ts": "2026-10-13T13:45:04.963423+00:00",
+     "ts": "2026-10-13T14:44:06.145255+00:00",
      "event": "deferred_buy_delay",
      "symbol": "SNDK",
-     "note": "buy-delay: conditions met for SNDK; buy queued, may execute in 5 days (2026-10-13)"
+     "note": "buy-delay: SNDK approved 2026-10-13, 0 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-13T13:45:09.050580+00:00",
+     "ts": "2026-10-13T14:44:14.998953+00:00",
      "event": "washout_signal",
      "symbol": "TSEM",
      "ref_px": 216.5
     },
     {
-     "ts": "2026-10-13T13:45:21.999567+00:00",
+     "ts": "2026-10-13T14:44:21.566640+00:00",
      "event": "deferred_buy_delay",
      "symbol": "TSEM",
-     "note": "buy-delay: conditions met for TSEM; buy queued, may execute in 5 days (2026-10-13)"
+     "note": "buy-delay: TSEM approved 2026-10-13, 0 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-13T13:45:23.416186+00:00",
+     "ts": "2026-10-13T14:44:22.363163+00:00",
      "event": "washout_signal",
      "symbol": "ARM",
      "ref_px": 255.24
     },
     {
-     "ts": "2026-10-13T13:45:33.263276+00:00",
+     "ts": "2026-10-13T14:44:28.879735+00:00",
      "event": "deferred_buy_delay",
      "symbol": "ARM",
      "note": "buy-delay: ARM approved 2026-10-12, 1 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-13T13:45:37.981109+00:00",
+     "ts": "2026-10-13T14:44:30.995985+00:00",
      "event": "washout_signal",
      "symbol": "MU",
      "ref_px": 989.04
     },
     {
-     "ts": "2026-10-13T13:45:37.985562+00:00",
+     "ts": "2026-10-13T14:44:30.996391+00:00",
      "event": "earnings_unknown_skip",
      "symbol": "MU"
     }
@@ -4497,17 +4496,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T10:42:51.973091-04:00",
+  "updated_et": "2026-10-13T10:47:49.647864-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-10T11:46:05.461038+00:00",
-   "equity": "100000",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-11T11:46:08.264434+00:00",
    "equity": "100000",
@@ -5221,6 +5214,12 @@
    "equity": "100025.31",
    "day_pl": -73.19000000000233,
    "day_pl_pct": -0.0731179787908933
+  },
+  {
+   "ts_utc": "2026-10-13T14:47:49.647864+00:00",
+   "equity": "100025.31",
+   "day_pl": -73.19000000000233,
+   "day_pl_pct": -0.0731179787908933
   }
  ],
  "benchmark_series": {
@@ -5236,8 +5235,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.93,
-    "spy": 99.97,
-    "qqq": 99.68
+    "spy": 99.93,
+    "qqq": 99.54
    }
   ]
  },
