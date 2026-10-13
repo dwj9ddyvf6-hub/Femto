@@ -254,7 +254,7 @@
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
     <div class="phead"><span>SET · BEST SETUPS</span><span class="sub" id="setups-sub"></span></div>
-    <div class="psub">The day's highest-conviction setups, in the order the desk vets them — fresh swing signals first, then the desk's own trade decisions, then the Universe ranker's top names. Nothing appears here that the desk's own records didn't produce.</div>
+    <div class="psub">The desk's orders for today. Every order here already passed the full gauntlet before it was placed — red-day rule, a human-style chart read, regime and event checks, and the risk rails — so the day's order flow is the day's conviction list.</div>
     <div id="setups"></div>
   </section>
 
@@ -567,6 +567,7 @@ function renderSetups(d){
         <span class="kindchip">${esc(r.kind||"")}</span>
         ${r.score?`<span class="setupscore">${esc(r.score)}</span>`:""}</div>
       <div class="posmeta">${esc(r.detail||"")}</div>
+      ${r.read?`<div class="posmeta">READ · ${esc(r.read)}</div>`:""}
     </div>`).join("");
 }
 
