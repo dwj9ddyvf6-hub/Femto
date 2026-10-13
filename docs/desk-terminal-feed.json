@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T19:12:51.407422+00:00",
- "generated_at_et": "2026-10-13T15:12:51.407422-04:00",
+ "generated_at_utc": "2026-10-13T19:17:48.226126+00:00",
+ "generated_at_et": "2026-10-13T15:17:48.226126-04:00",
  "account": {
   "equity": "100073.31",
   "cash": "99306.31",
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.21,
-   "unrealized_pl": 9.0,
-   "unrealized_pl_pct": 30.0,
-   "market_value": "-21",
+   "current": 0.2,
+   "unrealized_pl": 10.0,
+   "unrealized_pl_pct": 33.33333333333333,
+   "market_value": "-20",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -581,20 +581,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T18:36:33.016142+00:00",
-   "last_exit_scan": "2026-10-13T19:10:16.709113+00:00",
+   "last_exit_scan": "2026-10-13T19:15:09.093280+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T18:55:32.061586+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-13T18:55:32.067006+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-13T18:55:32.089178+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T19:00:37.824464+00:00",
      "event": "scan_start"
@@ -629,6 +617,18 @@
     },
     {
      "ts": "2026-10-13T19:10:16.724338+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T19:15:09.092857+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T19:15:09.093225+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T19:15:09.105082+00:00",
      "event": "scan_done"
     }
    ]
@@ -717,7 +717,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": 0.0
+   "unrealized_pl": 1.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -4702,17 +4702,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T15:12:51.407422-04:00",
+  "updated_et": "2026-10-13T15:17:48.226126-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T17:48:20.644853+00:00",
-   "equity": "100091.5",
-   "day_pl": 1.0,
-   "day_pl_pct": 0.0009990958182844525
-  },
   {
    "ts_utc": "2026-10-12T17:53:10.836424+00:00",
    "equity": "100091.5",
@@ -5426,6 +5420,12 @@
    "equity": "100073.31",
    "day_pl": -25.19000000000233,
    "day_pl_pct": -0.025165212265920396
+  },
+  {
+   "ts_utc": "2026-10-13T19:17:48.226126+00:00",
+   "equity": "100073.31",
+   "day_pl": -25.19000000000233,
+   "day_pl_pct": -0.025165212265920396
   }
  ],
  "benchmark_series": {
@@ -5441,7 +5441,7 @@
    {
     "date": "2026-10-13",
     "equity": 99.97,
-    "spy": 100.03,
+    "spy": 100.04,
     "qqq": 99.57
    }
   ]
@@ -5645,7 +5645,7 @@
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 3.0
+    "day_pl": 4.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -5657,7 +5657,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 34.81,
+    "day_pl": 33.81,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -5704,7 +5704,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": 0.0,
+   "unrealized_pl": 1.0,
    "position_count": 2
   }
  ],
