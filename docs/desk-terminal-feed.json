@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T20:42:49.993906+00:00",
- "generated_at_et": "2026-10-13T16:42:49.993906-04:00",
+ "generated_at_utc": "2026-10-13T20:47:51.221734+00:00",
+ "generated_at_et": "2026-10-13T16:47:51.221734-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -1926,7 +1926,7 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": "2026-10-12",
+   "last_rank_date": "2026-10-13",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
@@ -1936,11 +1936,6 @@
     "last_scored": 1833
    },
    "recent": [
-    {
-     "ts": "2026-10-09T16:30:07.706739-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-09T16:31:06.733124-04:00",
      "event": "scoring_start",
@@ -1999,6 +1994,11 @@
      "event": "scoring_start",
      "symbol": "ALL",
      "note": "1833 symbols, lane=1W, signal=swing"
+    },
+    {
+     "ts": "2026-10-13T16:44:02.306975-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -3075,59 +3075,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T19:44:58.700041+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "SNDK",
-     "note": "buy-delay: SNDK approved 2026-10-13, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T19:45:04.316747+00:00",
-     "event": "washout_signal",
-     "symbol": "TSEM",
-     "ref_px": 216.5
-    },
-    {
-     "ts": "2026-10-13T19:45:06.998748+00:00",
-     "event": "deferred_red_day",
-     "symbol": "TSEM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (TSEM day-so-far 2.29% vs prior close 216.56 (bar 2026-10-13T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-13T19:45:08.697268+00:00",
-     "event": "washout_signal",
-     "symbol": "ARM",
-     "ref_px": 255.24
-    },
-    {
-     "ts": "2026-10-13T19:45:27.506152+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "ARM",
-     "note": "buy-delay: ARM approved 2026-10-12, 1 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T19:45:29.427558+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "KEEL",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-13T19:45:33.433607+00:00",
-     "event": "washout_signal",
-     "symbol": "MU",
-     "ref_px": 989.04
-    },
-    {
-     "ts": "2026-10-13T19:45:33.443282+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "MU"
-    },
-    {
-     "ts": "2026-10-13T19:45:36.518631+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "TE",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
      "ts": "2026-10-13T19:45:40.185623+00:00",
      "event": "shadow_below_200dma",
      "symbol": "CVNA",
@@ -3141,6 +3088,59 @@
     },
     {
      "ts": "2026-10-13T19:45:44.878590+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "USAR",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T20:43:28.497994+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "CRML",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T20:43:33.658970+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "VELO",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T20:43:36.309478+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "SATL",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T20:43:38.144099+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "ASPI",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T20:43:48.840823+00:00",
+     "event": "washout_signal",
+     "symbol": "OUST",
+     "ref_px": 35.33
+    },
+    {
+     "ts": "2026-10-13T20:43:48.920554+00:00",
+     "event": "entry_deferred_after_hours",
+     "symbol": "OUST",
+     "note": "RTH entries only; signal stays eligible"
+    },
+    {
+     "ts": "2026-10-13T20:44:08.755210+00:00",
+     "event": "washout_signal",
+     "symbol": "MU",
+     "ref_px": 953.19
+    },
+    {
+     "ts": "2026-10-13T20:44:08.755633+00:00",
+     "event": "earnings_unknown_skip",
+     "symbol": "MU"
+    },
+    {
+     "ts": "2026-10-13T20:44:16.852192+00:00",
      "event": "shadow_below_200dma",
      "symbol": "USAR",
      "note": "shadow candidate only; 200DMA filter kept the entry"
@@ -4689,17 +4689,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T16:42:49.993906-04:00",
+  "updated_et": "2026-10-13T16:47:51.221734-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T18:53:09.203573+00:00",
-   "equity": "100098.5",
-   "day_pl": 8.0,
-   "day_pl_pct": 0.00799276654627562
-  },
   {
    "ts_utc": "2026-10-12T18:57:58.632599+00:00",
    "equity": "100098.5",
@@ -5410,6 +5404,12 @@
   },
   {
    "ts_utc": "2026-10-13T20:42:49.993906+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-13T20:47:51.221734+00:00",
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
