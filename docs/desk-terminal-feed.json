@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T19:27:51.661492+00:00",
- "generated_at_et": "2026-10-13T15:27:51.661492-04:00",
+ "generated_at_utc": "2026-10-13T19:37:21.455629+00:00",
+ "generated_at_et": "2026-10-13T15:37:21.455629-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -384,11 +384,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T18:34:32.614050+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
      "ts": "2026-10-13T18:34:43.959926+00:00",
      "event": "bars_5min_failed",
      "symbol": "POET"
@@ -440,6 +435,11 @@
     },
     {
      "ts": "2026-10-13T19:08:05.237172+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T19:28:09.104522+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -581,44 +581,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T19:24:07.326595+00:00",
-   "last_exit_scan": "2026-10-13T19:25:29.214152+00:00",
+   "last_exit_scan": "2026-10-13T19:36:19.170495+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T19:24:02.565053+00:00",
-     "event": "entry_skipped",
-     "symbol": "HOOD",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T19:24:07.324588+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T19:24:07.325085+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T19:24:07.325384+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T19:24:07.326110+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T19:24:07.326265+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
     {
      "ts": "2026-10-13T19:24:07.326356+00:00",
      "event": "entry_skipped",
@@ -645,6 +609,30 @@
     },
     {
      "ts": "2026-10-13T19:25:29.246115+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T19:30:27.558599+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T19:30:27.560896+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T19:30:27.584651+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T19:36:19.168105+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T19:36:19.170428+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T19:36:19.189334+00:00",
      "event": "scan_done"
     }
    ]
@@ -2135,71 +2123,73 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T18:34:10.684016+00:00",
+     "ts": "2026-10-13T19:32:43.456553+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "WYFI",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:34:32.969381+00:00",
+     "ts": "2026-10-13T19:32:49.492432+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "AEHR",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:34:58.339414+00:00",
+     "ts": "2026-10-13T19:32:56.550915+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "POET",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:35:18.455393+00:00",
+     "ts": "2026-10-13T19:33:04.160624+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "HIVE",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:35:39.614428+00:00",
+     "ts": "2026-10-13T19:33:10.769013+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "SNDK",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:36:01.054457+00:00",
+     "ts": "2026-10-13T19:33:16.441998+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "IREN",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:36:27.578198+00:00",
+     "ts": "2026-10-13T19:33:23.886634+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "CORZ",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:36:53.147635+00:00",
+     "ts": "2026-10-13T19:33:28.592428+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "ARM",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:37:09.256857+00:00",
+     "ts": "2026-10-13T19:33:33.297859+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "AXTI",
      "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:37:34.786956+00:00",
-     "event": "iv_rank_bars_failed",
-     "symbol": "DGXX"
+     "ts": "2026-10-13T19:33:38.948387+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "DGXX",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:38:04.010022+00:00",
-     "event": "iv_rank_bars_failed",
-     "symbol": "VELO"
+     "ts": "2026-10-13T19:33:44.886314+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "VELO",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     },
     {
-     "ts": "2026-10-13T18:38:04.061488+00:00",
+     "ts": "2026-10-13T19:33:44.909191+00:00",
      "event": "scan_complete"
     }
    ]
@@ -2221,11 +2211,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-13T07:37:10.896709+00:00",
-     "event": "momentum_book_empty",
-     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
-    },
     {
      "ts": "2026-10-13T08:37:10.271998+00:00",
      "event": "momentum_book_empty",
@@ -2278,6 +2263,11 @@
     },
     {
      "ts": "2026-10-13T18:37:39.012593+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T19:37:13.923703+00:00",
      "event": "momentum_book_empty",
      "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
     }
@@ -2927,23 +2917,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T17:35:19.815485+00:00",
-     "event": "exit_price_unknown",
-     "symbol": "VXX261218C00020000",
-     "note": "no intraday bar; exit check deferred"
-    },
-    {
-     "ts": "2026-10-13T17:35:22.948260+00:00",
-     "event": "exit_price_unknown",
-     "symbol": "XSP261016P00756000",
-     "note": "no intraday bar; exit check deferred"
-    },
-    {
-     "ts": "2026-10-13T17:35:33.845323+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.59% vs prior close 746.00 (bar 2026-10-13T17:00:00Z))"
-    },
-    {
      "ts": "2026-10-13T18:05:59.973266+00:00",
      "event": "exit_price_unknown",
      "symbol": "VXX261218C00020000",
@@ -2993,6 +2966,23 @@
      "ts": "2026-10-13T19:05:41.499007+00:00",
      "event": "no_fear_day",
      "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.50% vs prior close 746.00 (bar 2026-10-13T19:00:00Z))"
+    },
+    {
+     "ts": "2026-10-13T19:35:23.121090+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "VXX261218C00020000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-13T19:35:24.638628+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "XSP261016P00756000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-13T19:35:32.423265+00:00",
+     "event": "no_fear_day",
+     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.32% vs prior close 746.00 (bar 2026-10-13T19:00:00Z))"
     }
    ]
   },
@@ -3210,15 +3200,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-10T17:54:01.834321+00:00",
-     "event": "lock_busy"
-    },
-    {
-     "ts": "2026-10-13T17:31:48.061415+00:00",
-     "event": "state_fresh_start",
-     "note": "no state file yet; starting from empty state"
-    },
-    {
      "ts": "2026-10-13T17:34:33.663393+00:00",
      "event": "bars_failed",
      "symbol": "AXTI"
@@ -3263,6 +3244,14 @@
     {
      "ts": "2026-10-13T18:37:41.078696+00:00",
      "event": "reconcile_complete"
+    },
+    {
+     "ts": "2026-10-13T19:32:32.749504+00:00",
+     "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-13T19:32:37.014047+00:00",
+     "event": "reconcile_complete"
     }
    ]
   },
@@ -3284,73 +3273,69 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T17:36:51.628088+00:00",
+     "ts": "2026-10-13T19:36:00.854435+00:00",
      "event": "spread_select_none",
-     "symbol": "POET",
+     "symbol": "CLS",
      "note": "no liquid 14-30 DTE spread passed the module gates"
     },
     {
-     "ts": "2026-10-13T18:33:58.280599+00:00",
+     "ts": "2026-10-13T19:36:06.062583+00:00",
      "event": "spread_select_none",
-     "symbol": "AEHR",
+     "symbol": "TE",
      "note": "no liquid 14-30 DTE spread passed the module gates"
     },
     {
-     "ts": "2026-10-13T18:34:39.251441+00:00",
+     "ts": "2026-10-13T19:36:07.566219+00:00",
      "event": "spread_select_none",
-     "symbol": "NBIS",
+     "symbol": "TTMI",
      "note": "no liquid 14-30 DTE spread passed the module gates"
     },
     {
-     "ts": "2026-10-13T18:34:44.438075+00:00",
-     "event": "spread_select_none",
-     "symbol": "SKYQ",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
+     "ts": "2026-10-13T19:36:11.137205+00:00",
+     "event": "spread_signal",
+     "symbol": "CVNA"
     },
     {
-     "ts": "2026-10-13T18:34:50.815022+00:00",
-     "event": "spread_select_none",
-     "symbol": "SHAZ",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
+     "ts": "2026-10-13T19:36:13.997755+00:00",
+     "event": "deferred_red_day",
+     "symbol": "CVNA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (CVNA day-so-far 2.18% vs prior close 59.53 (bar 2026-10-13T19:00:00Z))"
     },
     {
-     "ts": "2026-10-13T18:35:11.810526+00:00",
+     "ts": "2026-10-13T19:36:14.033589+00:00",
+     "event": "spread_deferred",
+     "symbol": "CVNA"
+    },
+    {
+     "ts": "2026-10-13T19:36:18.225383+00:00",
      "event": "entry_skipped_sizing",
-     "symbol": "SOXL"
+     "symbol": "VRT"
     },
     {
-     "ts": "2026-10-13T18:35:18.874491+00:00",
+     "ts": "2026-10-13T19:36:22.548822+00:00",
+     "event": "spread_signal",
+     "symbol": "OKLO"
+    },
+    {
+     "ts": "2026-10-13T19:36:59.645141+00:00",
+     "event": "staged_chart_gate",
+     "symbol": "OKLO",
+     "note": "awaiting Midna's chart read"
+    },
+    {
+     "ts": "2026-10-13T19:36:59.678440+00:00",
+     "event": "spread_staged_chart_gate",
+     "symbol": "OKLO"
+    },
+    {
+     "ts": "2026-10-13T19:37:04.302681+00:00",
      "event": "spread_select_none",
-     "symbol": "WYFI",
+     "symbol": "USAR",
      "note": "no liquid 14-30 DTE spread passed the module gates"
     },
     {
-     "ts": "2026-10-13T18:35:18.875380+00:00",
-     "event": "entry_skipped_earnings",
-     "symbol": "CRML"
-    },
-    {
-     "ts": "2026-10-13T18:35:40.368343+00:00",
-     "event": "spread_select_none",
-     "symbol": "AAOI",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-13T18:36:05.200098+00:00",
-     "event": "entry_skipped_sizing",
-     "symbol": "WDC"
-    },
-    {
-     "ts": "2026-10-13T18:36:09.529959+00:00",
-     "event": "spread_select_none",
-     "symbol": "VELO",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-13T18:36:16.763917+00:00",
-     "event": "spread_select_none",
-     "symbol": "SATL",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
+     "ts": "2026-10-13T19:37:04.321606+00:00",
+     "event": "scan_complete"
     }
    ]
   },
@@ -4716,17 +4701,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T15:27:51.661492-04:00",
+  "updated_et": "2026-10-13T15:37:21.455629-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T18:03:50.967725+00:00",
-   "equity": "100099.5",
-   "day_pl": 9.0,
-   "day_pl_pct": 0.008991862364560073
-  },
   {
    "ts_utc": "2026-10-12T18:08:40.760641+00:00",
    "equity": "100098.5",
@@ -5440,6 +5419,12 @@
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-13T19:37:21.455629+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
   }
  ],
  "benchmark_series": {
@@ -5456,7 +5441,7 @@
     "date": "2026-10-13",
     "equity": 99.98,
     "spy": 100.03,
-    "qqq": 99.61
+    "qqq": 99.65
    }
   ]
  },
