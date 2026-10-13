@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T17:28:04.363581+00:00",
- "generated_at_et": "2026-10-13T13:28:04.363581-04:00",
+ "generated_at_utc": "2026-10-13T17:33:01.741591+00:00",
+ "generated_at_et": "2026-10-13T13:33:01.741591-04:00",
  "account": {
-  "equity": "100040.31",
+  "equity": "100039.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.25,
-   "unrealized_pl": 5.0,
-   "unrealized_pl_pct": 16.666666666666664,
-   "market_value": "-25",
+   "current": 0.24,
+   "unrealized_pl": 6.0,
+   "unrealized_pl_pct": 20.0,
+   "market_value": "-24",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -58.19000000000233,
- "day_pl_pct": -0.05813273925183927,
+ "day_pl": -59.19000000000233,
+ "day_pl_pct": -0.059131755221109535,
  "journal_today": {
   "scans": 8,
   "trades": 0
@@ -380,11 +380,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T15:38:08.150670+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
      "ts": "2026-10-13T15:58:18.373498+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
@@ -436,6 +431,11 @@
     },
     {
      "ts": "2026-10-13T17:24:02.456878+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T17:28:16.889219+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -576,80 +576,72 @@
    "state_known": true,
    "open_positions": 0,
    "positions": [],
-   "last_entry_scan": "2026-10-13T16:24:45.626125+00:00",
-   "last_exit_scan": "2026-10-13T17:20:14.123102+00:00",
+   "last_entry_scan": "2026-10-13T17:28:28.462508+00:00",
+   "last_exit_scan": "2026-10-13T17:30:28.663365+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T17:27:29.687952+00:00",
-     "event": "entry_skipped",
-     "symbol": "META",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:29.688089+00:00",
-     "event": "entry_skipped",
-     "symbol": "META",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:29.688146+00:00",
-     "event": "entry_skipped",
-     "symbol": "META",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:29.688191+00:00",
-     "event": "entry_skipped",
-     "symbol": "META",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:29.688231+00:00",
-     "event": "entry_skipped",
-     "symbol": "META",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:29.688269+00:00",
-     "event": "entry_skipped",
-     "symbol": "META",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:29.688306+00:00",
-     "event": "entry_skipped",
-     "symbol": "META",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:49.440938+00:00",
-     "event": "entry_skipped",
-     "symbol": "SMCI",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:49.441287+00:00",
-     "event": "entry_skipped",
-     "symbol": "SMCI",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:27:49.441572+00:00",
-     "event": "entry_skipped",
-     "symbol": "SMCI",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T17:28:13.548711+00:00",
-     "event": "entry_skipped",
-     "symbol": "HOOD",
-     "reason": "stale_episode"
-    },
     {
      "ts": "2026-10-13T17:28:13.562073+00:00",
      "event": "entry_skipped",
      "symbol": "HOOD",
      "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-10-13T17:28:28.461940+00:00",
+     "event": "entry_skipped",
+     "symbol": "COIN",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-10-13T17:28:28.462178+00:00",
+     "event": "entry_skipped",
+     "symbol": "COIN",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-10-13T17:28:28.462318+00:00",
+     "event": "entry_skipped",
+     "symbol": "COIN",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-10-13T17:28:28.462368+00:00",
+     "event": "entry_skipped",
+     "symbol": "COIN",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-10-13T17:28:28.462407+00:00",
+     "event": "entry_skipped",
+     "symbol": "COIN",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-10-13T17:28:28.462444+00:00",
+     "event": "entry_skipped",
+     "symbol": "COIN",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-10-13T17:28:28.462482+00:00",
+     "event": "entry_skipped",
+     "symbol": "COIN",
+     "reason": "stale_episode"
+    },
+    {
+     "ts": "2026-10-13T17:28:28.522118+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T17:30:28.656945+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T17:30:28.663205+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T17:30:28.677682+00:00",
+     "event": "scan_done"
     }
    ]
   },
@@ -737,7 +729,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -2.0
+   "unrealized_pl": -1.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -2057,17 +2049,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T10:27:08.894929-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "41 symbols"
-    },
-    {
-     "ts": "2026-10-13T10:27:13.107750-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T11:04:15.862671-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
@@ -2118,6 +2099,17 @@
      "ts": "2026-10-13T13:26:31.201973-04:00",
      "event": "rank_start",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T13:28:19.265035-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "41 symbols"
+    },
+    {
+     "ts": "2026-10-13T13:28:34.514828-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -2138,16 +2130,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-13T16:33:46.170389+00:00",
-     "event": "iv_rank",
-     "symbol": "SNDK"
-    },
-    {
-     "ts": "2026-10-13T16:33:53.430393+00:00",
-     "event": "iv_rank",
-     "symbol": "IREN"
-    },
     {
      "ts": "2026-10-13T16:34:01.722159+00:00",
      "event": "iv_rank",
@@ -2196,6 +2178,16 @@
     {
      "ts": "2026-10-13T16:34:42.172663+00:00",
      "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-13T17:32:33.844147+00:00",
+     "event": "iv_rank",
+     "symbol": "ARQQ"
+    },
+    {
+     "ts": "2026-10-13T17:32:50.679446+00:00",
+     "event": "iv_rank",
+     "symbol": "NBIS"
     }
    ]
   },
@@ -2456,12 +2448,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-11T14:43:48.703635+00:00",
-     "event": "tranche2_expired",
-     "symbol": "AMD",
-     "note": "no 5/20 EMA turn within 5 sessions; holding tranche 1"
-    },
-    {
      "ts": "2026-10-11T14:44:01.382757+00:00",
      "event": "tranche2_staged",
      "symbol": "AMD",
@@ -2529,6 +2515,11 @@
     {
      "ts": "2026-10-12T13:27:40.330669+00:00",
      "event": "state_corrupt"
+    },
+    {
+     "ts": "2026-10-13T17:30:31.338650+00:00",
+     "event": "bars_failed",
+     "symbol": "HIVE"
     }
    ]
   },
@@ -3211,6 +3202,11 @@
     {
      "ts": "2026-10-10T17:54:01.834321+00:00",
      "event": "lock_busy"
+    },
+    {
+     "ts": "2026-10-13T17:31:48.061415+00:00",
+     "event": "state_fresh_start",
+     "note": "no state file yet; starting from empty state"
     }
    ]
   },
@@ -3365,7 +3361,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100040.31,
+  "equity": 100039.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4599,17 +4595,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T13:28:04.363581-04:00",
+  "updated_et": "2026-10-13T13:33:01.741591-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T15:07:50.052864+00:00",
-   "equity": "100179.7",
-   "day_pl": 179.6999999999971,
-   "day_pl_pct": 0.17969999999999708
-  },
   {
    "ts_utc": "2026-10-12T15:47:47.820793+00:00",
    "equity": "100100.5",
@@ -5323,6 +5313,12 @@
    "equity": "100040.31",
    "day_pl": -58.19000000000233,
    "day_pl_pct": -0.05813273925183927
+  },
+  {
+   "ts_utc": "2026-10-13T17:33:01.741591+00:00",
+   "equity": "100039.31",
+   "day_pl": -59.19000000000233,
+   "day_pl_pct": -0.059131755221109535
   }
  ],
  "benchmark_series": {
@@ -5338,8 +5334,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.94,
-    "spy": 99.86,
-    "qqq": 99.4
+    "spy": 99.87,
+    "qqq": 99.39
    }
   ]
  },
@@ -5483,11 +5479,11 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -58.19,
+  "day_pl": -59.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -1.0
+    "day_pl": 0.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -5499,7 +5495,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 35.81,
+    "day_pl": 33.81,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -5546,7 +5542,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -2.0,
+   "unrealized_pl": -1.0,
    "position_count": 2
   }
  ],
