@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-12T19:57:56.208228+00:00",
- "generated_at_et": "2026-10-12T15:57:56.208228-04:00",
+ "generated_at_utc": "2026-10-13T11:46:11.294201+00:00",
+ "generated_at_et": "2026-10-13T07:46:11.294201-04:00",
  "account": {
-  "equity": "100099.5",
-  "cash": "99309.5",
-  "buying_power": "395238",
+  "equity": "100095.31",
+  "cash": "99306.31",
+  "buying_power": "395225.24",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -12,7 +12,7 @@
  "positions_known": true,
  "last_scan": {
   "ts": null,
-  "market_open": true,
+  "market_open": false,
   "dry_run": false
  },
  "kill_switch": {
@@ -20,8 +20,8 @@
   "threshold_pct": 3.0
  },
  "state_meta": {
-  "day_start_equity": 100090.5,
-  "day_start_date": "2026-10-12"
+  "day_start_equity": 100098.5,
+  "day_start_date": "2026-10-13"
  },
  "positions": [
   {
@@ -45,10 +45,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.16,
-   "unrealized_pl": -5.0,
-   "unrealized_pl_pct": -23.809523809523807,
-   "market_value": "16",
+   "current": 0.15,
+   "unrealized_pl": -6.0,
+   "unrealized_pl_pct": -28.57142857142857,
+   "market_value": "15",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -87,15 +87,13 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": 9.0,
- "day_pl_pct": 0.008991862364560073,
+ "day_pl": -3.1900000000023283,
+ "day_pl_pct": -0.0031868609419744834,
  "journal_today": {
-  "scans": 13,
+  "scans": 0,
   "trades": 0
  },
- "fresh_signals": [
-  "SKYQ WATCH conf=7 RECLAIM"
- ],
+ "fresh_signals": [],
  "ledger_tail": [
   {
    "ts": "2026-10-12T19:39:39Z",
@@ -263,8 +261,15 @@
   "last_snapshot_seen": "2026-09-26-foliotend-production-v625",
   "drift": false
  },
- "earnings_upcoming_7d": [],
- "earnings_updated_ts": "2026-10-04T23:54:29Z",
+ "earnings_upcoming_7d": [
+  {
+   "symbol": "VICR",
+   "date": "2026-10-20",
+   "in_days": 7,
+   "blackout": false
+  }
+ ],
+ "earnings_updated_ts": "2026-10-12T21:57:32Z",
  "sleeves": {
   "tensor": {
    "name": "Tensor",
@@ -283,7 +288,7 @@
    },
    "last_scan": {
     "ts": null,
-    "market_open": true,
+    "market_open": false,
     "dry_run": false
    },
    "recent": [
@@ -364,54 +369,13 @@
    "strategy": "Daily range boxes: buys the breakout, trails with a moving average",
    "automation": "premarket 08:46 ET daily; nowcast 5m; reconcile 2m",
    "position": null,
+   "positions": [],
    "protection": {
     "stop_px": null,
     "trail_applied": null,
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-10-12T19:48:03.726233+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 1.20% vs prior close 111.36 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:48:05.793267+00:00",
-     "event": "deferred_red_day",
-     "symbol": "MA",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 1.33% vs prior close 589.17 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:48:10.405762+00:00",
-     "event": "deferred_red_day",
-     "symbol": "DIS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (DIS day-so-far 0.74% vs prior close 108.04 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:52:55.623428+00:00",
-     "event": "deferred_red_day",
-     "symbol": "V",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (V day-so-far 0.99% vs prior close 385.48 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:52:58.406231+00:00",
-     "event": "deferred_red_day",
-     "symbol": "XOM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (XOM day-so-far 1.69% vs prior close 169.01 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:53:00.517237+00:00",
-     "event": "deferred_red_day",
-     "symbol": "WMT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (WMT day-so-far 1.41% vs prior close 111.36 (bar 2026-10-12T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-12T19:53:02.714052+00:00",
-     "event": "deferred_red_day",
-     "symbol": "MA",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 1.19% vs prior close 589.17 (bar 2026-10-12T19:00:00Z))"
-    },
     {
      "ts": "2026-10-12T19:53:07.042502+00:00",
      "event": "deferred_red_day",
@@ -441,6 +405,47 @@
      "event": "deferred_red_day",
      "symbol": "MA",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (MA day-so-far 1.04% vs prior close 589.17 (bar 2026-10-12T19:00:00Z))"
+    },
+    {
+     "ts": "2026-10-12T19:58:01.466104+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T03:40:17.530703+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-13T03:40:17.531828+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-13T03:40:37.636043+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-13T03:40:37.636200+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-13T03:40:57.371418+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-13T03:40:57.371599+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     }
    ]
   },
@@ -450,7 +455,7 @@
    "automation": "every 15 min, market hours",
    "enabled": true,
    "setup": {
-    "date": "2026-10-12",
+    "date": "2026-10-13",
     "trend_day": false,
     "no_touch": false
    },
@@ -460,10 +465,6 @@
     "all_protected": false
    },
    "recent": [
-    {
-     "ts": "2026-09-29T04:08:20.346753+00:00",
-     "event": "setup_eval"
-    },
     {
      "ts": "2026-09-30T04:08:24.561853+00:00",
      "event": "setup_eval"
@@ -506,6 +507,10 @@
     },
     {
      "ts": "2026-10-12T16:17:08.242547+00:00",
+     "event": "setup_eval"
+    },
+    {
+     "ts": "2026-10-13T04:02:11.609674+00:00",
      "event": "setup_eval"
     }
    ]
@@ -580,32 +585,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T19:23:38.169749+00:00",
-   "last_exit_scan": "2026-10-12T19:55:25.523524+00:00",
+   "last_exit_scan": "2026-10-12T20:05:14.587314+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T19:40:16.123115+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T19:40:16.127960+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T19:40:16.149607+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-12T19:45:08.117486+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T19:45:08.130375+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T19:45:08.147057+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-12T19:50:07.300304+00:00",
      "event": "scan_start"
@@ -628,6 +609,30 @@
     },
     {
      "ts": "2026-10-12T19:55:25.534125+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T20:00:07.643571+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T20:00:07.655191+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T20:00:07.680024+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T20:05:14.583579+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T20:05:14.587240+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-12T20:05:14.604493+00:00",
      "event": "scan_done"
     }
    ]
@@ -663,18 +668,6 @@
     "total_pnl": 0.0
    },
    "recent": [
-    {
-     "ts": "2026-10-12T14:07:38.595254+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-12T14:20:41.898077+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T14:20:41.943807+00:00",
-     "event": "chart_gate_released"
-    },
     {
      "ts": "2026-10-12T14:20:46.564644+00:00",
      "event": "chart_gate_released_submitted"
@@ -712,6 +705,19 @@
     {
      "ts": "2026-10-12T17:46:58.523764+00:00",
      "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-12T21:46:54.764276+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-12T21:46:54.775204+00:00",
+     "event": "settle_scan",
+     "note": "nothing due for settlement"
+    },
+    {
+     "ts": "2026-10-12T21:46:54.775389+00:00",
+     "event": "scan_done"
     }
    ]
   },
@@ -747,12 +753,6 @@
    ],
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-12T19:55:54.015964+00:00",
-     "event": "entry_skipped_no_red_day",
-     "symbol": "AEHR",
-     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
-    },
     {
      "ts": "2026-10-12T19:55:54.016128+00:00",
      "event": "entry_skipped_no_red_day",
@@ -818,6 +818,12 @@
      "event": "entry_skipped_no_red_day",
      "symbol": "NVDA",
      "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
+    },
+    {
+     "ts": "2026-10-12T20:35:21.144254+00:00",
+     "event": "chart_releases_off_window",
+     "symbol": "ALL",
+     "note": "replay gated to 15:50-16:05 ET entry window"
     }
    ]
   },
@@ -831,23 +837,27 @@
    "open_positions": 0,
    "positions": [],
    "pending": {
-    "buys": [],
+    "buys": [
+     "MXL",
+     "ABCL",
+     "PENG",
+     "DELL",
+     "TWST",
+     "P",
+     "FCEL",
+     "MU",
+     "OSCR",
+     "ZETA"
+    ],
     "sells": []
    },
-   "last_rank_date": null,
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "breaker_closes": 0,
     "gate_blocks": 0
    },
    "recent": [
-    {
-     "ts": "2026-10-05T10:06:07.107938-04:00",
-     "event": "momentum_buy_submitted",
-     "symbol": "OSCR",
-     "qty": 86,
-     "ref_px": 33.33
-    },
     {
      "ts": "2026-10-05T10:06:09.111111-04:00",
      "event": "momentum_buy_submitted",
@@ -903,6 +913,11 @@
     {
      "ts": "2026-10-12T10:05:07.440918-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:05:37.609190-04:00",
+     "event": "momentum_rank",
      "symbol": "ALL"
     }
    ]
@@ -1121,24 +1136,16 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": null,
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
     "rank_waits": 0,
-    "capacity_skips": 0
+    "capacity_skips": 0,
+    "last_signals": 0,
+    "spy_down_regime": false
    },
    "recent": [
-    {
-     "ts": "2026-10-06T18:39:27.892461-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-07T10:30:08.201732-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-07T16:30:05.263679-04:00",
      "event": "rank_start",
@@ -1187,6 +1194,16 @@
     {
      "ts": "2026-10-12T10:30:08.046077-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:30:18.298055-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:30:33.324172-04:00",
+     "event": "rank_pass",
      "symbol": "ALL"
     }
    ]
@@ -1290,25 +1307,16 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": null,
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
     "rank_waits": 0,
-    "capacity_skips": 0
+    "capacity_skips": 0,
+    "last_signals": 0,
+    "spy_down_regime": false
    },
    "recent": [
-    {
-     "ts": "2026-10-06T18:06:35.636539-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-06T18:20:51.037600-04:00",
-     "event": "fetch_errs",
-     "symbol": "ALL",
-     "note": "6 symbols failed top-up"
-    },
     {
      "ts": "2026-10-06T18:20:51.138452-04:00",
      "event": "rank_pass",
@@ -1357,6 +1365,16 @@
     {
      "ts": "2026-10-12T10:40:12.758116-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:40:17.107242-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:40:23.058280-04:00",
+     "event": "rank_pass",
      "symbol": "ALL"
     }
    ]
@@ -1457,28 +1475,22 @@
    "open_positions": 0,
    "positions": [],
    "pending": {
-    "buys": [],
+    "buys": [
+     "BMBL",
+     "USPH"
+    ],
     "sells": []
    },
-   "last_rank_date": null,
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
     "rank_waits": 0,
-    "capacity_skips": 0
+    "capacity_skips": 0,
+    "last_signals": 2,
+    "band_size": 175
    },
    "recent": [
-    {
-     "ts": "2026-10-06T18:48:42.345545-04:00",
-     "event": "fetch_errs",
-     "symbol": "ALL",
-     "note": "11w/0d failed"
-    },
-    {
-     "ts": "2026-10-06T18:48:49.668269-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-07T10:50:08.179635-04:00",
      "event": "blocked_by_desk_cap",
@@ -1529,6 +1541,16 @@
      "ts": "2026-10-12T10:50:18.811788-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:50:09.745444-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:59:40.600140-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -1546,30 +1568,16 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": null,
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
     "rank_waits": 0,
-    "capacity_skips": 0
+    "capacity_skips": 0,
+    "last_signals": 0,
+    "last_scored": 1833
    },
    "recent": [
-    {
-     "ts": "2026-10-07T16:31:08.319715-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols"
-    },
-    {
-     "ts": "2026-10-07T16:34:26.366385-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-08T16:30:05.459599-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-08T16:31:08.664720-04:00",
      "event": "scoring_start",
@@ -1617,6 +1625,22 @@
      "ts": "2026-10-12T10:32:17.807868-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:32:13.938156-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:32:28.218660-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols"
+    },
+    {
+     "ts": "2026-10-12T16:33:27.456349-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -1634,30 +1658,16 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": null,
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
     "rank_waits": 0,
-    "capacity_skips": 0
+    "capacity_skips": 0,
+    "last_signals": 0,
+    "last_scored": 1833
    },
    "recent": [
-    {
-     "ts": "2026-10-07T16:31:24.744474-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols, lane=1W, signal=cyan"
-    },
-    {
-     "ts": "2026-10-07T16:34:30.685997-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-08T16:30:09.563493-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-08T16:31:04.079651-04:00",
      "event": "scoring_start",
@@ -1705,6 +1715,22 @@
      "ts": "2026-10-12T10:38:09.119323-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:38:08.086540-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:38:23.455559-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1W, signal=cyan"
+    },
+    {
+     "ts": "2026-10-12T16:39:43.239436-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -1722,42 +1748,16 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": null,
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
     "rank_waits": 0,
-    "capacity_skips": 0
+    "capacity_skips": 0,
+    "last_signals": 0,
+    "last_scored": 1833
    },
    "recent": [
-    {
-     "ts": "2026-10-07T16:31:14.493551-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols, lane=1D, signal=cyan"
-    },
-    {
-     "ts": "2026-10-07T16:34:31.497163-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-08T16:30:05.468873-04:00",
-     "event": "rank_start",
-     "symbol": "ALL",
-     "note": "mcap via EDGAR public float ([internal path] fail-closed"
-    },
-    {
-     "ts": "2026-10-08T16:31:01.564061-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols, lane=1D, signal=cyan"
-    },
-    {
-     "ts": "2026-10-08T16:33:40.489981-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-09T10:30:11.554157-04:00",
      "event": "fill_pass",
@@ -1796,6 +1796,35 @@
      "ts": "2026-10-12T10:34:27.943191-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:34:18.278587-04:00",
+     "event": "rank_start",
+     "symbol": "ALL",
+     "note": "mcap via EDGAR public float ([internal path] fail-closed"
+    },
+    {
+     "ts": "2026-10-12T16:34:27.484178-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1D, signal=cyan"
+    },
+    {
+     "ts": "2026-10-12T18:26:10.794497-04:00",
+     "event": "rank_start",
+     "symbol": "ALL",
+     "note": "mcap via EDGAR public float ([internal path] fail-closed"
+    },
+    {
+     "ts": "2026-10-12T18:26:20.089097-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1D, signal=cyan"
+    },
+    {
+     "ts": "2026-10-12T18:27:11.681968-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -1813,7 +1842,7 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": "2026-10-11",
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
@@ -1823,33 +1852,6 @@
     "last_scored": 1833
    },
    "recent": [
-    {
-     "ts": "2026-10-07T16:31:08.968806-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols, lane=1D, signal=green"
-    },
-    {
-     "ts": "2026-10-07T16:34:20.761992-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-08T16:30:07.064577-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-08T16:31:01.766773-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols, lane=1D, signal=green"
-    },
-    {
-     "ts": "2026-10-08T16:33:37.254345-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-09T10:30:12.827000-04:00",
      "event": "fill_pass",
@@ -1886,6 +1888,33 @@
      "ts": "2026-10-12T10:36:26.231154-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:36:18.644446-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:36:29.046878-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1D, signal=green"
+    },
+    {
+     "ts": "2026-10-12T16:38:10.738892-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:38:26.832116-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1D, signal=green"
+    },
+    {
+     "ts": "2026-10-12T16:39:41.642457-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -1903,7 +1932,7 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": "2026-10-11",
+   "last_rank_date": "2026-10-12",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
@@ -1913,22 +1942,6 @@
     "last_scored": 1833
    },
    "recent": [
-    {
-     "ts": "2026-10-07T16:31:25.756834-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols, lane=1W, signal=swing"
-    },
-    {
-     "ts": "2026-10-07T16:34:36.074350-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-08T16:30:05.463393-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-08T16:31:09.940305-04:00",
      "event": "scoring_start",
@@ -1976,6 +1989,22 @@
      "ts": "2026-10-12T10:42:20.416483-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:42:11.068378-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:42:19.246040-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "1833 symbols, lane=1W, signal=swing"
+    },
+    {
+     "ts": "2026-10-12T16:43:07.167497-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -2003,11 +2032,6 @@
     "last_scored": 41
    },
    "recent": [
-    {
-     "ts": "2026-10-12T13:04:42.257362-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-12T13:26:41.444035-04:00",
      "event": "rank_start",
@@ -2065,6 +2089,11 @@
      "ts": "2026-10-12T15:26:47.545836-04:00",
      "event": "rank_pass",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-12T16:04:19.442447-04:00",
+     "event": "fill_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -2086,63 +2115,62 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T19:32:46.295063+00:00",
+     "ts": "2026-10-13T11:33:05.033956+00:00",
+     "event": "iv_rank",
+     "symbol": "SNDK"
+    },
+    {
+     "ts": "2026-10-13T11:33:07.941176+00:00",
+     "event": "iv_rank",
+     "symbol": "IREN"
+    },
+    {
+     "ts": "2026-10-13T11:33:11.232545+00:00",
      "event": "iv_rank",
      "symbol": "CORZ"
     },
     {
-     "ts": "2026-10-12T19:32:46.295417+00:00",
+     "ts": "2026-10-13T11:33:11.232867+00:00",
      "event": "iv_rank_signal",
      "symbol": "CORZ"
     },
     {
-     "ts": "2026-10-12T19:32:46.302472+00:00",
+     "ts": "2026-10-13T11:33:11.234121+00:00",
      "event": "earnings_within_window_skip",
      "symbol": "CORZ"
     },
     {
-     "ts": "2026-10-12T19:32:49.937967+00:00",
+     "ts": "2026-10-13T11:33:14.211424+00:00",
      "event": "iv_rank",
      "symbol": "ARM"
     },
     {
-     "ts": "2026-10-12T19:32:49.938301+00:00",
+     "ts": "2026-10-13T11:33:14.211755+00:00",
      "event": "iv_rank_signal",
      "symbol": "ARM"
     },
     {
-     "ts": "2026-10-12T19:32:49.939158+00:00",
+     "ts": "2026-10-13T11:33:14.212166+00:00",
      "event": "earnings_within_window_skip",
      "symbol": "ARM"
     },
     {
-     "ts": "2026-10-12T19:32:55.145757+00:00",
+     "ts": "2026-10-13T11:33:16.940304+00:00",
      "event": "iv_rank",
      "symbol": "AXTI"
     },
     {
-     "ts": "2026-10-12T19:32:59.816510+00:00",
+     "ts": "2026-10-13T11:33:20.535918+00:00",
      "event": "iv_rank",
      "symbol": "DGXX"
     },
     {
-     "ts": "2026-10-12T19:32:59.816822+00:00",
-     "event": "iv_rank_signal",
-     "symbol": "DGXX"
-    },
-    {
-     "ts": "2026-10-12T19:32:59.817177+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "DGXX",
-     "note": "symbol absent from calendar"
-    },
-    {
-     "ts": "2026-10-12T19:33:03.378997+00:00",
+     "ts": "2026-10-13T11:33:23.628364+00:00",
      "event": "iv_rank",
      "symbol": "VELO"
     },
     {
-     "ts": "2026-10-12T19:33:03.393789+00:00",
+     "ts": "2026-10-13T11:33:23.646177+00:00",
      "event": "scan_complete"
     }
    ]
@@ -2165,71 +2193,62 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T17:37:14.946587+00:00",
+     "ts": "2026-10-13T00:37:30.768594+00:00",
      "event": "momentum_book_empty",
      "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
     },
     {
-     "ts": "2026-10-12T17:37:16.871018+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:37:16.871243+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 1.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:37:16.871296+00:00",
-     "event": "unknown_broker_leg",
-     "qty": -1.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:47:36.850481+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:47:36.850650+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 1.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:47:36.850702+00:00",
-     "event": "unknown_broker_leg",
-     "qty": -1.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:50:11.357561+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:50:11.361494+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 1.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:50:11.361565+00:00",
-     "event": "unknown_broker_leg",
-     "qty": -1.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T18:37:13.253969+00:00",
+     "ts": "2026-10-13T01:37:13.047617+00:00",
      "event": "momentum_book_empty",
      "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
     },
     {
-     "ts": "2026-10-12T19:37:05.902863+00:00",
+     "ts": "2026-10-13T02:37:07.929209+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T03:37:10.697027+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T04:37:10.356486+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T05:37:07.872873+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T06:37:13.000796+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T07:37:10.896709+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T08:37:10.271998+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T09:37:20.814017+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T10:37:11.596715+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-13T11:37:18.318750+00:00",
      "event": "momentum_book_empty",
      "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
     }
@@ -2253,62 +2272,57 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T16:49:20.854219+00:00",
-     "event": "deferred_circuit_breaker",
-     "symbol": "VXX",
-     "note": "loss streak 6 >= 6 consecutive losses \u2014 entries paused until a winning trade breaks the streak"
-    },
-    {
-     "ts": "2026-10-12T16:49:31.814092+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T16:54:47.837601+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted"
-    },
-    {
-     "ts": "2026-10-12T17:00:20.194704+00:00",
-     "event": "hedge_readopted",
-     "note": "state record lost; re-adopted from sleeve ledger open record, broker qty verified"
-    },
-    {
-     "ts": "2026-10-12T17:04:43.541809+00:00",
+     "ts": "2026-10-13T05:49:06.673660+00:00",
      "event": "chart_gate_release_deferred",
      "note": "at max hedges; sweep deferred, verdicts stay queued"
     },
     {
-     "ts": "2026-10-12T17:04:45.241477+00:00",
+     "ts": "2026-10-13T05:49:07.432795+00:00",
      "event": "vix_read"
     },
     {
-     "ts": "2026-10-12T17:49:13.836101+00:00",
+     "ts": "2026-10-13T06:49:11.881693+00:00",
      "event": "chart_gate_release_deferred",
      "note": "at max hedges; sweep deferred, verdicts stay queued"
     },
     {
-     "ts": "2026-10-12T17:49:14.941249+00:00",
+     "ts": "2026-10-13T06:49:12.632569+00:00",
      "event": "vix_read"
     },
     {
-     "ts": "2026-10-12T18:49:25.007357+00:00",
+     "ts": "2026-10-13T07:49:09.484694+00:00",
      "event": "chart_gate_release_deferred",
      "note": "at max hedges; sweep deferred, verdicts stay queued"
     },
     {
-     "ts": "2026-10-12T18:49:25.943734+00:00",
+     "ts": "2026-10-13T07:49:10.288399+00:00",
      "event": "vix_read"
     },
     {
-     "ts": "2026-10-12T19:49:19.354274+00:00",
+     "ts": "2026-10-13T08:49:05.771624+00:00",
      "event": "chart_gate_release_deferred",
      "note": "at max hedges; sweep deferred, verdicts stay queued"
     },
     {
-     "ts": "2026-10-12T19:49:20.172026+00:00",
+     "ts": "2026-10-13T08:49:06.813930+00:00",
+     "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-13T09:49:09.035844+00:00",
+     "event": "chart_gate_release_deferred",
+     "note": "at max hedges; sweep deferred, verdicts stay queued"
+    },
+    {
+     "ts": "2026-10-13T09:49:09.986571+00:00",
+     "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-13T10:49:13.551261+00:00",
+     "event": "chart_gate_release_deferred",
+     "note": "at max hedges; sweep deferred, verdicts stay queued"
+    },
+    {
+     "ts": "2026-10-13T10:49:14.779042+00:00",
      "event": "vix_read"
     }
    ]
@@ -2331,67 +2345,67 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T17:25:46.206785+00:00",
+     "ts": "2026-10-13T09:25:07.248373+00:00",
      "event": "no_buyback_signals"
     },
     {
-     "ts": "2026-10-12T17:26:17.492866+00:00",
+     "ts": "2026-10-13T09:25:08.333662+00:00",
      "event": "unknown_broker_leg",
      "qty": 8.0,
      "note": "manual review; not auto-adopted"
     },
     {
-     "ts": "2026-10-12T17:26:17.494591+00:00",
+     "ts": "2026-10-13T09:25:08.334231+00:00",
      "event": "unknown_broker_leg",
      "qty": 1.0,
      "note": "manual review; not auto-adopted"
     },
     {
-     "ts": "2026-10-12T17:26:17.495586+00:00",
+     "ts": "2026-10-13T09:25:08.335024+00:00",
      "event": "unknown_broker_leg",
      "qty": -1.0,
      "note": "manual review; not auto-adopted"
     },
     {
-     "ts": "2026-10-12T18:25:34.001635+00:00",
+     "ts": "2026-10-13T10:25:09.700594+00:00",
      "event": "no_buyback_signals"
     },
     {
-     "ts": "2026-10-12T18:25:52.597654+00:00",
+     "ts": "2026-10-13T10:25:18.548123+00:00",
      "event": "unknown_broker_leg",
      "qty": 8.0,
      "note": "manual review; not auto-adopted"
     },
     {
-     "ts": "2026-10-12T18:25:52.597902+00:00",
+     "ts": "2026-10-13T10:25:18.548334+00:00",
      "event": "unknown_broker_leg",
      "qty": 1.0,
      "note": "manual review; not auto-adopted"
     },
     {
-     "ts": "2026-10-12T18:25:52.597960+00:00",
+     "ts": "2026-10-13T10:25:18.548398+00:00",
      "event": "unknown_broker_leg",
      "qty": -1.0,
      "note": "manual review; not auto-adopted"
     },
     {
-     "ts": "2026-10-12T19:25:34.209361+00:00",
+     "ts": "2026-10-13T11:25:08.151720+00:00",
      "event": "no_buyback_signals"
     },
     {
-     "ts": "2026-10-12T19:25:44.429460+00:00",
+     "ts": "2026-10-13T11:25:10.784037+00:00",
      "event": "unknown_broker_leg",
      "qty": 8.0,
      "note": "manual review; not auto-adopted"
     },
     {
-     "ts": "2026-10-12T19:25:44.429677+00:00",
+     "ts": "2026-10-13T11:25:10.787851+00:00",
      "event": "unknown_broker_leg",
      "qty": 1.0,
      "note": "manual review; not auto-adopted"
     },
     {
-     "ts": "2026-10-12T19:25:44.429724+00:00",
+     "ts": "2026-10-13T11:25:10.788167+00:00",
      "event": "unknown_broker_leg",
      "qty": -1.0,
      "note": "manual review; not auto-adopted"
@@ -2414,83 +2428,7 @@
    },
    "last_rank_date": null,
    "stats": {},
-   "recent": [
-    {
-     "ts": "2026-10-11T14:43:48.703635+00:00",
-     "event": "tranche2_expired",
-     "symbol": "AMD",
-     "note": "no 5/20 EMA turn within 5 sessions; holding tranche 1"
-    },
-    {
-     "ts": "2026-10-11T14:44:01.382757+00:00",
-     "event": "tranche2_staged",
-     "symbol": "AMD",
-     "qty": 5,
-     "note": "awaiting Midna's verdict on the add"
-    },
-    {
-     "ts": "2026-10-11T14:44:01.393517+00:00",
-     "event": "tranche2_expired",
-     "symbol": "AMD",
-     "note": "no 5/20 EMA turn within 5 sessions; holding tranche 1"
-    },
-    {
-     "ts": "2026-10-11T14:44:06.218012+00:00",
-     "event": "tranche2_staged",
-     "symbol": "AMD",
-     "qty": 5,
-     "note": "awaiting Midna's verdict on the add"
-    },
-    {
-     "ts": "2026-10-11T14:44:06.229253+00:00",
-     "event": "tranche2_expired",
-     "symbol": "AMD",
-     "note": "no 5/20 EMA turn within 5 sessions; holding tranche 1"
-    },
-    {
-     "ts": "2026-10-11T14:44:27.761180+00:00",
-     "event": "tranche2_staged",
-     "symbol": "AMD",
-     "qty": 5,
-     "note": "awaiting Midna's verdict on the add"
-    },
-    {
-     "ts": "2026-10-11T14:44:27.764709+00:00",
-     "event": "tranche2_expired",
-     "symbol": "AMD",
-     "note": "no 5/20 EMA turn within 5 sessions; holding tranche 1"
-    },
-    {
-     "ts": "2026-10-11T14:44:27.769200+00:00",
-     "event": "tranche2_staged",
-     "symbol": "AMD",
-     "qty": 5,
-     "note": "awaiting Midna's verdict on the add"
-    },
-    {
-     "ts": "2026-10-11T14:44:27.798143+00:00",
-     "event": "tranche2_expired",
-     "symbol": "AMD",
-     "note": "no 5/20 EMA turn within 5 sessions; holding tranche 1"
-    },
-    {
-     "ts": "2026-10-11T14:45:02.522759+00:00",
-     "event": "tranche2_staged",
-     "symbol": "AMD",
-     "qty": 5,
-     "note": "awaiting Midna's verdict on the add"
-    },
-    {
-     "ts": "2026-10-11T14:45:02.552505+00:00",
-     "event": "tranche2_expired",
-     "symbol": "AMD",
-     "note": "no 5/20 EMA turn within 5 sessions; holding tranche 1"
-    },
-    {
-     "ts": "2026-10-12T13:27:40.330669+00:00",
-     "event": "state_corrupt"
-    }
-   ]
+   "recent": []
   },
   "donchian": {
    "name": "Donchian",
@@ -2539,22 +2477,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-09T17:30:59.992482+00:00",
-     "event": "state_init",
-     "note": "fresh sleeve, no state file yet"
-    },
-    {
-     "ts": "2026-10-09T21:45:59.644952+00:00",
-     "event": "state_init",
-     "note": "fresh sleeve, no state file yet"
-    },
-    {
-     "ts": "2026-10-10T01:16:41.562949+00:00",
-     "event": "deferred_red_day",
-     "symbol": "SOLUSD",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (SOLUSD trailing-24h 0.03% (kraken))"
-    },
-    {
      "ts": "2026-10-10T02:01:50.474014+00:00",
      "event": "deferred_red_day",
      "symbol": "SOLUSD",
@@ -2588,6 +2510,42 @@
      "event": "deferred_red_day",
      "symbol": "SOLUSD",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (SOLUSD trailing-24h 0.29% (kraken))"
+    },
+    {
+     "ts": "2026-10-13T03:49:30.864428+00:00",
+     "event": "staged_chart_gate",
+     "symbol": "SOLUSD",
+     "note": "awaiting Midna's chart read"
+    },
+    {
+     "ts": "2026-10-13T03:49:30.864539+00:00",
+     "event": "entry_staged_chart_gate",
+     "symbol": "SOLUSD",
+     "qty": 166.108172
+    },
+    {
+     "ts": "2026-10-13T04:49:03.540169+00:00",
+     "event": "chart_gate_dropped",
+     "symbol": "SOLUSD",
+     "note": "Midna FAIL: Chart read 2026-10-13 (Midna, manual Kraken-bar renders; staged artifacts degraded - Pass A cannot source crypto bars): daily is in a corr"
+    },
+    {
+     "ts": "2026-10-13T04:49:03.540377+00:00",
+     "event": "chart_gate_dropped",
+     "symbol": "SOLUSD",
+     "note": "queue item dropped (FAIL/ABSTAIN/expired) with no release; pending entry dropped"
+    },
+    {
+     "ts": "2026-10-13T04:49:11.376356+00:00",
+     "event": "deferred_green_market",
+     "symbol": "SOLUSD",
+     "note": "market-green gate: QQQ/SPY data unavailable (deferring): day-return: no intraday bar for QQQ on 2026-10-13 yet (deferring) | day-return: no intraday bar for SPY on 2026-10-13 yet (deferring)"
+    },
+    {
+     "ts": "2026-10-13T05:19:10.125391+00:00",
+     "event": "deferred_green_market",
+     "symbol": "SOLUSD",
+     "note": "market-green gate: QQQ/SPY data unavailable (deferring): day-return: no intraday bar for QQQ on 2026-10-13 yet (deferring) | day-return: no intraday bar for SPY on 2026-10-13 yet (deferring)"
     }
    ]
   },
@@ -2609,76 +2567,75 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T18:59:27.866251+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "POET",
-     "note": "buy-delay: POET approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-12T18:59:33.488346+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "SNDK",
-     "note": "buy-delay: SNDK approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-12T18:59:39.136058+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "TEM",
-     "note": "buy-delay: TEM approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-12T18:59:45.845677+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "CORZ",
-     "note": "buy-delay: CORZ approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-12T18:59:47.182264+00:00",
+     "ts": "2026-10-13T10:58:08.434544+00:00",
      "event": "deferred_red_day",
      "symbol": "HUT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (HUT day-so-far 0.30% vs prior close 84.28 (bar 2026-10-12T18:00:00Z))"
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for HUT on 2026-10-13 yet (deferring))"
     },
     {
-     "ts": "2026-10-12T18:59:52.852177+00:00",
-     "event": "deferred_buy_delay",
+     "ts": "2026-10-13T10:58:10.116136+00:00",
+     "event": "deferred_red_day",
+     "symbol": "TSEM",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for TSEM on 2026-10-13 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-13T10:58:11.647790+00:00",
+     "event": "deferred_red_day",
      "symbol": "ARM",
-     "note": "buy-delay: ARM approved 2026-10-12, 0 of 5 days elapsed"
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for ARM on 2026-10-13 yet (deferring))"
     },
     {
-     "ts": "2026-10-12T18:59:58.702130+00:00",
-     "event": "deferred_buy_delay",
+     "ts": "2026-10-13T10:58:13.374878+00:00",
+     "event": "deferred_red_day",
      "symbol": "KEEL",
-     "note": "buy-delay: KEEL approved 2026-10-12, 0 of 5 days elapsed"
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for KEEL on 2026-10-13 yet (deferring))"
     },
     {
-     "ts": "2026-10-12T19:00:05.295165+00:00",
-     "event": "deferred_buy_delay",
+     "ts": "2026-10-13T10:58:13.387178+00:00",
+     "event": "entry_skipped_earnings",
+     "symbol": "MU"
+    },
+    {
+     "ts": "2026-10-13T10:58:14.779394+00:00",
+     "event": "deferred_red_day",
+     "symbol": "CLS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for CLS on 2026-10-13 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-13T10:58:16.350142+00:00",
+     "event": "deferred_red_day",
      "symbol": "TE",
-     "note": "buy-delay: TE approved 2026-10-12, 0 of 5 days elapsed"
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for TE on 2026-10-13 yet (deferring))"
     },
     {
-     "ts": "2026-10-12T19:00:11.489314+00:00",
-     "event": "deferred_buy_delay",
+     "ts": "2026-10-13T10:58:17.730479+00:00",
+     "event": "deferred_red_day",
+     "symbol": "TTMI",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for TTMI on 2026-10-13 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-13T10:58:19.347335+00:00",
+     "event": "deferred_red_day",
+     "symbol": "CVNA",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for CVNA on 2026-10-13 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-13T10:58:21.005242+00:00",
+     "event": "deferred_red_day",
+     "symbol": "VRT",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for VRT on 2026-10-13 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-13T10:58:22.527803+00:00",
+     "event": "deferred_red_day",
      "symbol": "OKLO",
-     "note": "buy-delay: OKLO approved 2026-10-12, 0 of 5 days elapsed"
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for OKLO on 2026-10-13 yet (deferring))"
     },
     {
-     "ts": "2026-10-12T19:00:17.973083+00:00",
-     "event": "deferred_buy_delay",
+     "ts": "2026-10-13T10:58:24.112137+00:00",
+     "event": "deferred_red_day",
      "symbol": "USAR",
-     "note": "buy-delay: USAR approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-12T19:57:47.964663+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "AEHR",
-     "note": "buy-delay: AEHR approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-12T19:57:54.796663+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "NBIS",
-     "note": "buy-delay: NBIS approved 2026-10-12, 0 of 5 days elapsed"
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for USAR on 2026-10-13 yet (deferring))"
     }
    ]
   },
@@ -2700,64 +2657,64 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T19:03:35.499869+00:00",
-     "event": "entry_skipped_below_ma200",
-     "symbol": "BLDP"
-    },
-    {
-     "ts": "2026-10-12T19:03:37.185928+00:00",
-     "event": "entry_skipped_below_ma200",
-     "symbol": "PLUG"
-    },
-    {
-     "ts": "2026-10-12T19:03:42.205344+00:00",
+     "ts": "2026-10-13T11:03:32.466229+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "LUNR"
     },
     {
-     "ts": "2026-10-12T19:03:43.089180+00:00",
+     "ts": "2026-10-13T11:03:33.154956+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "MPT"
     },
     {
-     "ts": "2026-10-12T19:03:43.824631+00:00",
+     "ts": "2026-10-13T11:03:33.880657+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "MVIS"
     },
     {
-     "ts": "2026-10-12T19:03:44.516995+00:00",
+     "ts": "2026-10-13T11:03:34.546031+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "BHF"
     },
     {
-     "ts": "2026-10-12T19:03:47.360550+00:00",
+     "ts": "2026-10-13T11:03:36.108734+00:00",
+     "event": "entry_skipped_below_ma200",
+     "symbol": "SARO"
+    },
+    {
+     "ts": "2026-10-13T11:03:36.864236+00:00",
+     "event": "entry_skipped_below_ma200",
+     "symbol": "STWD"
+    },
+    {
+     "ts": "2026-10-13T11:03:37.453209+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "USAR"
     },
     {
-     "ts": "2026-10-12T19:03:48.046520+00:00",
+     "ts": "2026-10-13T11:03:38.138146+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "AIRJ"
     },
     {
-     "ts": "2026-10-12T19:03:48.714050+00:00",
+     "ts": "2026-10-13T11:03:38.767203+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "DRNZ"
     },
     {
-     "ts": "2026-10-12T19:03:51.403123+00:00",
+     "ts": "2026-10-13T11:03:41.575569+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "IMSR"
     },
     {
-     "ts": "2026-10-12T19:03:53.951985+00:00",
+     "ts": "2026-10-13T11:03:43.585283+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "SIDU"
     },
     {
-     "ts": "2026-10-12T19:03:57.821340+00:00",
+     "ts": "2026-10-13T11:03:55.362091+00:00",
      "event": "entry_skipped_below_ma200",
-     "symbol": "WINA"
+     "symbol": "MP"
     }
    ]
   },
@@ -2862,72 +2819,72 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T18:05:14.715257+00:00",
+     "ts": "2026-10-13T10:05:07.944444+00:00",
      "event": "exit_price_unknown",
      "symbol": "VXX261218C00020000",
      "note": "no intraday bar; exit check deferred"
     },
     {
-     "ts": "2026-10-12T18:05:15.650996+00:00",
+     "ts": "2026-10-13T10:05:08.570208+00:00",
      "event": "exit_price_unknown",
      "symbol": "XSP261016P00756000",
      "note": "no intraday bar; exit check deferred"
     },
     {
-     "ts": "2026-10-12T18:05:19.020837+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.75% vs prior close 751.27 (bar 2026-10-12T17:00:00Z))"
+     "ts": "2026-10-13T10:05:11.311007+00:00",
+     "event": "fear_gate_unknown",
+     "note": "QQQ day return unknown; no entries (day-return: no intraday bar for QQQ on 2026-10-13 yet (deferring))"
     },
     {
-     "ts": "2026-10-12T18:35:14.601232+00:00",
+     "ts": "2026-10-13T10:35:12.885466+00:00",
      "event": "exit_price_unknown",
      "symbol": "VXX261218C00020000",
      "note": "no intraday bar; exit check deferred"
     },
     {
-     "ts": "2026-10-12T18:35:15.288734+00:00",
+     "ts": "2026-10-13T10:35:13.599183+00:00",
      "event": "exit_price_unknown",
      "symbol": "XSP261016P00756000",
      "note": "no intraday bar; exit check deferred"
     },
     {
-     "ts": "2026-10-12T18:35:17.534141+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.76% vs prior close 751.27 (bar 2026-10-12T18:00:00Z))"
+     "ts": "2026-10-13T10:35:16.656158+00:00",
+     "event": "fear_gate_unknown",
+     "note": "QQQ day return unknown; no entries (day-return: no intraday bar for QQQ on 2026-10-13 yet (deferring))"
     },
     {
-     "ts": "2026-10-12T19:05:12.695395+00:00",
+     "ts": "2026-10-13T11:05:06.784025+00:00",
      "event": "exit_price_unknown",
      "symbol": "VXX261218C00020000",
      "note": "no intraday bar; exit check deferred"
     },
     {
-     "ts": "2026-10-12T19:05:13.443085+00:00",
+     "ts": "2026-10-13T11:05:07.427519+00:00",
      "event": "exit_price_unknown",
      "symbol": "XSP261016P00756000",
      "note": "no intraday bar; exit check deferred"
     },
     {
-     "ts": "2026-10-12T19:05:16.305910+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.81% vs prior close 751.26 (bar 2026-10-12T19:00:00Z))"
+     "ts": "2026-10-13T11:05:10.053006+00:00",
+     "event": "fear_gate_unknown",
+     "note": "QQQ day return unknown; no entries (day-return: no intraday bar for QQQ on 2026-10-13 yet (deferring))"
     },
     {
-     "ts": "2026-10-12T19:35:14.527423+00:00",
+     "ts": "2026-10-13T11:35:13.539856+00:00",
      "event": "exit_price_unknown",
      "symbol": "VXX261218C00020000",
      "note": "no intraday bar; exit check deferred"
     },
     {
-     "ts": "2026-10-12T19:35:15.248848+00:00",
+     "ts": "2026-10-13T11:35:14.234114+00:00",
      "event": "exit_price_unknown",
      "symbol": "XSP261016P00756000",
      "note": "no intraday bar; exit check deferred"
     },
     {
-     "ts": "2026-10-12T19:35:17.584672+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.71% vs prior close 751.26 (bar 2026-10-12T19:00:00Z))"
+     "ts": "2026-10-13T11:35:17.456253+00:00",
+     "event": "fear_gate_unknown",
+     "note": "QQQ day return unknown; no entries (day-return: no intraday bar for QQQ on 2026-10-13 yet (deferring))"
     }
    ]
   },
@@ -2949,73 +2906,70 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T16:57:18.577808+00:00",
+     "ts": "2026-10-13T10:55:36.288633+00:00",
+     "event": "spread_gate_fail",
+     "symbol": "NBIS"
+    },
+    {
+     "ts": "2026-10-13T10:55:36.293277+00:00",
+     "event": "red_day_signal",
+     "symbol": "SHAZ",
+     "ref_px": 35.21
+    },
+    {
+     "ts": "2026-10-13T10:55:36.982612+00:00",
+     "event": "chain_empty",
+     "symbol": "SHAZ",
+     "note": "no put contracts in the DTE window"
+    },
+    {
+     "ts": "2026-10-13T10:55:36.991947+00:00",
+     "event": "red_day_signal",
+     "symbol": "VELO",
+     "ref_px": 8.08
+    },
+    {
+     "ts": "2026-10-13T10:55:37.563350+00:00",
+     "event": "chain_empty",
+     "symbol": "VELO",
+     "note": "no put contracts in the DTE window"
+    },
+    {
+     "ts": "2026-10-13T10:55:37.567676+00:00",
+     "event": "red_day_signal",
+     "symbol": "ALAB",
+     "ref_px": 318.0
+    },
+    {
+     "ts": "2026-10-13T10:55:39.108006+00:00",
+     "event": "spread_gate_fail",
+     "symbol": "ALAB"
+    },
+    {
+     "ts": "2026-10-13T10:55:39.114088+00:00",
+     "event": "red_day_signal",
+     "symbol": "TE",
+     "ref_px": 3.21
+    },
+    {
+     "ts": "2026-10-13T10:55:40.418042+00:00",
+     "event": "spread_gate_fail",
+     "symbol": "TE"
+    },
+    {
+     "ts": "2026-10-13T10:55:41.399018+00:00",
      "event": "unknown_broker_leg",
      "qty": 8.0,
      "note": "manual review; not auto-adopted (spread legs need pairing)"
     },
     {
-     "ts": "2026-10-12T16:57:18.584066+00:00",
+     "ts": "2026-10-13T10:55:41.399245+00:00",
      "event": "unknown_broker_leg",
      "qty": 1.0,
      "note": "manual review; not auto-adopted (spread legs need pairing)"
     },
     {
-     "ts": "2026-10-12T16:57:18.584217+00:00",
-     "event": "unknown_broker_leg",
-     "qty": -1.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T17:55:25.338426+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T17:55:25.342131+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 1.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T17:55:25.342267+00:00",
-     "event": "unknown_broker_leg",
-     "qty": -1.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T18:59:14.521062+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T18:59:14.521306+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 1.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T18:59:14.521448+00:00",
-     "event": "unknown_broker_leg",
-     "qty": -1.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T19:55:17.651018+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 8.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T19:55:17.657322+00:00",
-     "event": "unknown_broker_leg",
-     "qty": 1.0,
-     "note": "manual review; not auto-adopted (spread legs need pairing)"
-    },
-    {
-     "ts": "2026-10-12T19:55:17.657439+00:00",
+     "ts": "2026-10-13T10:55:41.399292+00:00",
      "event": "unknown_broker_leg",
      "qty": -1.0,
      "note": "manual review; not auto-adopted (spread legs need pairing)"
@@ -3040,76 +2994,74 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T17:44:05.151619+00:00",
-     "event": "washout_signal",
-     "symbol": "AXTI",
-     "ref_px": 68.46
-    },
-    {
-     "ts": "2026-10-12T17:44:15.135687+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "AXTI",
-     "note": "buy-delay: conditions met for AXTI; buy queued, may execute in 5 days (2026-10-12)"
-    },
-    {
-     "ts": "2026-10-12T17:44:31.205461+00:00",
-     "event": "washout_signal",
+     "ts": "2026-10-13T10:43:52.706600+00:00",
+     "event": "entry_deferred_after_hours",
      "symbol": "ARM",
-     "ref_px": 266.28
+     "note": "RTH entries only; signal stays eligible"
     },
     {
-     "ts": "2026-10-12T17:44:39.323125+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "ARM",
-     "note": "buy-delay: conditions met for ARM; buy queued, may execute in 5 days (2026-10-12)"
-    },
-    {
-     "ts": "2026-10-12T18:43:26.397895+00:00",
+     "ts": "2026-10-13T10:43:54.686888+00:00",
      "event": "washout_signal",
-     "symbol": "AXTI",
-     "ref_px": 68.46
+     "symbol": "MU",
+     "ref_px": 989.04
     },
     {
-     "ts": "2026-10-12T18:43:32.727948+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "AXTI",
-     "note": "buy-delay: AXTI approved 2026-10-12, 0 of 5 days elapsed"
+     "ts": "2026-10-13T10:43:54.687281+00:00",
+     "event": "earnings_unknown_skip",
+     "symbol": "MU"
     },
     {
-     "ts": "2026-10-12T18:43:43.487102+00:00",
+     "ts": "2026-10-13T11:43:12.112718+00:00",
      "event": "washout_signal",
-     "symbol": "ARM",
-     "ref_px": 266.28
+     "symbol": "AEHR",
+     "ref_px": 78.18
     },
     {
-     "ts": "2026-10-12T18:43:50.143981+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "ARM",
-     "note": "buy-delay: ARM approved 2026-10-12, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-12T19:43:24.606255+00:00",
+     "ts": "2026-10-13T11:43:16.205806+00:00",
      "event": "washout_signal",
-     "symbol": "AXTI",
-     "ref_px": 68.46
+     "symbol": "SOXL",
+     "ref_px": 128.4
     },
     {
-     "ts": "2026-10-12T19:43:31.158806+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "AXTI",
-     "note": "buy-delay: AXTI approved 2026-10-12, 0 of 5 days elapsed"
+     "ts": "2026-10-13T11:43:27.000043+00:00",
+     "event": "washout_signal",
+     "symbol": "OUST",
+     "ref_px": 37.27
     },
     {
-     "ts": "2026-10-12T19:43:42.926930+00:00",
+     "ts": "2026-10-13T11:43:27.721059+00:00",
+     "event": "washout_signal",
+     "symbol": "ALAB",
+     "ref_px": 324.11
+    },
+    {
+     "ts": "2026-10-13T11:43:31.895764+00:00",
+     "event": "washout_signal",
+     "symbol": "SNDK",
+     "ref_px": 1487.33
+    },
+    {
+     "ts": "2026-10-13T11:43:34.994075+00:00",
+     "event": "washout_signal",
+     "symbol": "TSEM",
+     "ref_px": 216.5
+    },
+    {
+     "ts": "2026-10-13T11:43:35.970750+00:00",
      "event": "washout_signal",
      "symbol": "ARM",
-     "ref_px": 266.28
+     "ref_px": 255.24
     },
     {
-     "ts": "2026-10-12T19:43:48.703453+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "ARM",
-     "note": "buy-delay: ARM approved 2026-10-12, 0 of 5 days elapsed"
+     "ts": "2026-10-13T11:43:38.359472+00:00",
+     "event": "washout_signal",
+     "symbol": "MU",
+     "ref_px": 989.04
+    },
+    {
+     "ts": "2026-10-13T11:43:38.359923+00:00",
+     "event": "earnings_unknown_skip",
+     "symbol": "MU"
     }
    ]
   },
@@ -3304,84 +3256,83 @@
   ]
  },
  "exposure": {
-  "gross_notional": 931.0,
-  "equity": 100099.5,
+  "gross_notional": 936.0,
+  "equity": 100095.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
   "status": "OK",
   "position_count": 3,
   "by_sleeve": {
-   "broker-sync": 931.0
+   "spx_premium": 56.0,
+   "vix_hedge": 880.0
   }
  },
  "sleeve_regime": {
   "current_regime": "UPTREND",
-  "stats": {
-   "_watermarks": {}
-  },
+  "stats": {},
   "best_in_regime": []
  },
  "market_context": {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "stale": false,
   "age_days": 0,
   "regime": "UPTREND",
-  "qqq_close": 745.75,
+  "qqq_close": 746.04,
   "qqq_sma50": 725.68,
-  "slope20_pct": 5.16,
+  "slope20_pct": 5.2,
   "spy_agrees": true,
   "sectors": {
    "XLK": {
-    "ret20_pct": 6.41,
+    "ret20_pct": 6.56,
     "tag": "TAILWIND"
    },
    "XLF": {
-    "ret20_pct": -3.39,
+    "ret20_pct": -3.47,
     "tag": "HEADWIND"
    },
    "XLE": {
-    "ret20_pct": 2.25,
+    "ret20_pct": 2.29,
     "tag": "TAILWIND"
    },
    "XLV": {
-    "ret20_pct": 2.14,
+    "ret20_pct": 2.53,
     "tag": "TAILWIND"
    },
    "XLI": {
-    "ret20_pct": -0.21,
+    "ret20_pct": -0.46,
     "tag": "NEUTRAL"
    },
    "XLU": {
-    "ret20_pct": -0.65,
+    "ret20_pct": -0.45,
     "tag": "NEUTRAL"
    },
    "XLY": {
-    "ret20_pct": -0.48,
+    "ret20_pct": -0.51,
     "tag": "NEUTRAL"
    },
    "XLP": {
-    "ret20_pct": -0.32,
+    "ret20_pct": -0.01,
     "tag": "NEUTRAL"
    },
    "XLC": {
-    "ret20_pct": -3.09,
+    "ret20_pct": -3.15,
     "tag": "HEADWIND"
    },
    "XLB": {
-    "ret20_pct": -1.79,
+    "ret20_pct": -2.08,
     "tag": "HEADWIND"
    },
    "XLRE": {
-    "ret20_pct": -2.96,
+    "ret20_pct": -2.78,
     "tag": "HEADWIND"
    },
    "SOXX": {
-    "ret20_pct": 9.56,
+    "ret20_pct": 9.54,
     "tag": "TAILWIND"
    },
    "XRT": {
-    "ret20_pct": -1.76,
+    "ret20_pct": -1.6,
     "tag": "NEUTRAL"
    }
   },
@@ -3390,7 +3341,7 @@
    "nearest": {
     "name": "CPI release",
     "date": "2026-10-14",
-    "days_away": 2
+    "days_away": 1
    }
   },
   "news_active_symbols": 2
@@ -3415,388 +3366,379 @@
   }
  },
  "options_iv_skew": {
-  "date": "2026-10-09",
+  "date": "2026-10-12",
   "zone_definition": "fast = iv30_pctile_60d >= 75 or 5-day iv30 ROC > +20%; else calm",
   "symbols": {
    "AEHR": {
-    "iv30": 1.0707,
-    "skew25": 0.0147,
-    "expected_move_30d": 0.307,
+    "iv30": 1.0973,
+    "skew25": -0.0188,
+    "expected_move_30d": 0.3146,
     "iv30_pctile_60d": null,
     "skew25_pctile_60d": null,
     "zone": "calm",
-    "underlying": 84.73
+    "underlying": 78.69
    },
    "NBIS": {
-    "iv30": 0.719,
-    "skew25": -0.0293,
-    "expected_move_30d": 0.2061,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 220.81
+    "iv30": 0.75,
+    "skew25": -0.0245,
+    "expected_move_30d": 0.215,
+    "iv30_pctile_60d": 80.0,
+    "skew25_pctile_60d": 40.0,
+    "zone": "fast",
+    "underlying": 208.72
    },
    "SHAZ": {
-    "iv30": 1.0447,
-    "skew25": 0.0352,
-    "expected_move_30d": 0.2995,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 38.77
+    "iv30": 1.112,
+    "skew25": 0.0374,
+    "expected_move_30d": 0.3188,
+    "iv30_pctile_60d": 100.0,
+    "skew25_pctile_60d": 80.0,
+    "zone": "fast",
+    "underlying": 30.96
    },
    "LITE": {
-    "iv30": 0.7553,
-    "skew25": -0.002,
-    "expected_move_30d": 0.2165,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.7708,
+    "skew25": -0.0011,
+    "expected_move_30d": 0.221,
+    "iv30_pctile_60d": 40.0,
+    "skew25_pctile_60d": 40.0,
     "zone": "calm",
-    "underlying": 1115.15
+    "underlying": 985.5
    },
    "SOXL": {
-    "iv30": 1.0604,
-    "skew25": 0.0455,
-    "expected_move_30d": 0.304,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 1.0705,
+    "skew25": -0.0033,
+    "expected_move_30d": 0.3069,
+    "iv30_pctile_60d": 40.0,
+    "skew25_pctile_60d": 0.0,
     "zone": "calm",
-    "underlying": 139.66
+    "underlying": 128.13
    },
    "WYFI": {
-    "iv30": 0.9974,
-    "skew25": 0.0183,
-    "expected_move_30d": 0.2859,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 13.44
+    "iv30": 1.1424,
+    "skew25": -0.0168,
+    "expected_move_30d": 0.3275,
+    "iv30_pctile_60d": 100.0,
+    "skew25_pctile_60d": 40.0,
+    "zone": "fast",
+    "underlying": 12.84
    },
    "CRML": {
-    "iv30": 0.8817,
-    "skew25": 0.0637,
-    "expected_move_30d": 0.2528,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 5.77
+    "iv30": 1.0252,
+    "skew25": 0.1094,
+    "expected_move_30d": 0.2939,
+    "iv30_pctile_60d": 100.0,
+    "skew25_pctile_60d": 80.0,
+    "zone": "fast",
+    "underlying": 6.83
    },
    "AAOI": {
-    "iv30": 1.0114,
-    "skew25": -0.0213,
-    "expected_move_30d": 0.29,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.9604,
+    "skew25": 0.0252,
+    "expected_move_30d": 0.2753,
+    "iv30_pctile_60d": 0.0,
+    "skew25_pctile_60d": 60.0,
     "zone": "calm",
-    "underlying": 109.18
+    "underlying": 94.71
    },
    "WDC": {
-    "iv30": 0.6251,
-    "skew25": -0.0111,
-    "expected_move_30d": 0.1792,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.6,
+    "skew25": -0.0411,
+    "expected_move_30d": 0.172,
+    "iv30_pctile_60d": 0.0,
+    "skew25_pctile_60d": 0.0,
     "zone": "calm",
-    "underlying": 397.65
+    "underlying": 391.06
    },
    "VELO": {
-    "iv30": 1.0121,
-    "skew25": -0.0108,
-    "expected_move_30d": 0.2902,
+    "iv30": 0.9739,
+    "skew25": -0.3159,
+    "expected_move_30d": 0.2792,
     "iv30_pctile_60d": null,
     "skew25_pctile_60d": null,
     "zone": "calm",
-    "underlying": 8.64
+    "underlying": 8.03
    },
    "ANF": {
-    "iv30": 0.4672,
-    "skew25": -0.0078,
-    "expected_move_30d": 0.1339,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.475,
+    "skew25": 0.0067,
+    "expected_move_30d": 0.1362,
+    "iv30_pctile_60d": 20.0,
+    "skew25_pctile_60d": 60.0,
     "zone": "calm",
-    "underlying": 140.88
+    "underlying": 146.38
    },
    "SATL": {
-    "iv30": 0.9396,
-    "skew25": 0.0191,
-    "expected_move_30d": 0.2694,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.9886,
+    "skew25": -0.0359,
+    "expected_move_30d": 0.2834,
+    "iv30_pctile_60d": 60.0,
+    "skew25_pctile_60d": 60.0,
     "zone": "calm",
-    "underlying": 5.16
+    "underlying": 4.03
    },
    "ASPI": {
-    "iv30": 0.8538,
-    "skew25": -0.2477,
-    "expected_move_30d": 0.2448,
-    "iv30_pctile_60d": null,
+    "iv30": 1.1529,
+    "skew25": null,
+    "expected_move_30d": 0.3305,
+    "iv30_pctile_60d": 100.0,
     "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 2.69
+    "zone": "fast",
+    "underlying": 2.1
    },
    "IREN": {
-    "iv30": 0.7422,
-    "skew25": 0.0271,
-    "expected_move_30d": 0.2128,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 34.84
+    "iv30": 0.7971,
+    "skew25": 0.0022,
+    "expected_move_30d": 0.2285,
+    "iv30_pctile_60d": 100.0,
+    "skew25_pctile_60d": 40.0,
+    "zone": "fast",
+    "underlying": 34.71
    },
    "AG": {
-    "iv30": 0.5821,
-    "skew25": 0.0115,
-    "expected_move_30d": 0.1669,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.5398,
+    "skew25": -0.079,
+    "expected_move_30d": 0.1548,
+    "iv30_pctile_60d": 0.0,
+    "skew25_pctile_60d": 0.0,
     "zone": "calm",
-    "underlying": 17.29
+    "underlying": 17.06
    },
    "AXTI": {
-    "iv30": 1.1001,
-    "skew25": 0.0057,
-    "expected_move_30d": 0.3154,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 1.1476,
+    "skew25": 0.0032,
+    "expected_move_30d": 0.329,
+    "iv30_pctile_60d": 20.0,
+    "skew25_pctile_60d": 40.0,
     "zone": "calm",
-    "underlying": 58.95
+    "underlying": 62.11
    },
    "LASR": {
-    "iv30": 0.8057,
-    "skew25": -0.1547,
-    "expected_move_30d": 0.231,
+    "iv30": 0.8428,
+    "skew25": 0.0185,
+    "expected_move_30d": 0.2416,
     "iv30_pctile_60d": null,
     "skew25_pctile_60d": null,
     "zone": "calm",
-    "underlying": 38.61
+    "underlying": 33.07
    },
    "ARQQ": {
-    "iv30": 0.9687,
-    "skew25": 0.0586,
-    "expected_move_30d": 0.2777,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.9708,
+    "skew25": -0.1221,
+    "expected_move_30d": 0.2783,
+    "iv30_pctile_60d": 60.0,
+    "skew25_pctile_60d": 20.0,
     "zone": "calm",
-    "underlying": 14.31
+    "underlying": 16.8
    },
    "OUST": {
-    "iv30": 0.9977,
-    "skew25": -0.0016,
-    "expected_move_30d": 0.286,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 39.97
+    "iv30": 1.003,
+    "skew25": -0.0059,
+    "expected_move_30d": 0.2876,
+    "iv30_pctile_60d": 80.0,
+    "skew25_pctile_60d": 40.0,
+    "zone": "fast",
+    "underlying": 37.3
    },
    "ALAB": {
-    "iv30": 0.8586,
-    "skew25": -0.0372,
-    "expected_move_30d": 0.2461,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.8697,
+    "skew25": -0.079,
+    "expected_move_30d": 0.2493,
+    "iv30_pctile_60d": 60.0,
+    "skew25_pctile_60d": 0.0,
     "zone": "calm",
-    "underlying": 340.18
+    "underlying": 323.87
    },
    "CRDO": {
-    "iv30": 0.7708,
-    "skew25": -0.0212,
-    "expected_move_30d": 0.221,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.7702,
+    "skew25": -0.0245,
+    "expected_move_30d": 0.2208,
+    "iv30_pctile_60d": 40.0,
+    "skew25_pctile_60d": 20.0,
     "zone": "calm",
-    "underlying": 213.37
+    "underlying": 202.64
    },
    "FCEL": {
-    "iv30": 0.9529,
-    "skew25": -0.0062,
-    "expected_move_30d": 0.2732,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 17.79
-   },
-   "HIVE": {
-    "iv30": 0.9277,
-    "skew25": -0.2466,
-    "expected_move_30d": 0.266,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 2.17
+    "iv30": 0.927,
+    "skew25": -0.0058,
+    "expected_move_30d": 0.2658,
+    "iv30_pctile_60d": 20.0,
+    "skew25_pctile_60d": 80.0,
+    "zone": "fast",
+    "underlying": 15.21
    },
    "POET": {
-    "iv30": 0.7789,
-    "skew25": -0.0422,
-    "expected_move_30d": 0.2233,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 6.97
+    "iv30": 0.819,
+    "skew25": -0.0376,
+    "expected_move_30d": 0.2348,
+    "iv30_pctile_60d": 100.0,
+    "skew25_pctile_60d": 40.0,
+    "zone": "fast",
+    "underlying": 6.46
    },
    "SNDK": {
-    "iv30": 0.6432,
-    "skew25": 0.0037,
-    "expected_move_30d": 0.1844,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 1517.39
+    "iv30": 0.6554,
+    "skew25": -0.048,
+    "expected_move_30d": 0.1879,
+    "iv30_pctile_60d": 80.0,
+    "skew25_pctile_60d": 0.0,
+    "zone": "fast",
+    "underlying": 1477.95
    },
    "TEM": {
-    "iv30": 0.8333,
-    "skew25": -0.0444,
-    "expected_move_30d": 0.2389,
+    "iv30": 0.8339,
+    "skew25": -0.0416,
+    "expected_move_30d": 0.2391,
     "iv30_pctile_60d": null,
     "skew25_pctile_60d": null,
     "zone": "calm",
-    "underlying": 71.72
+    "underlying": 67.86
    },
    "CORZ": {
-    "iv30": 0.7147,
-    "skew25": -0.0307,
-    "expected_move_30d": 0.2049,
+    "iv30": 0.7108,
+    "skew25": 0.0567,
+    "expected_move_30d": 0.2038,
     "iv30_pctile_60d": null,
     "skew25_pctile_60d": null,
     "zone": "calm",
-    "underlying": 15.28
+    "underlying": 15.02
    },
    "HUT": {
-    "iv30": 0.9149,
-    "skew25": -0.0006,
-    "expected_move_30d": 0.2623,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.9181,
+    "skew25": 0.0634,
+    "expected_move_30d": 0.2632,
+    "iv30_pctile_60d": 40.0,
+    "skew25_pctile_60d": 100.0,
     "zone": "calm",
-    "underlying": 71.36
+    "underlying": 85.25
    },
    "TSEM": {
-    "iv30": 0.7422,
-    "skew25": -0.1872,
-    "expected_move_30d": 0.2128,
-    "iv30_pctile_60d": null,
+    "iv30": 0.7516,
+    "skew25": -0.0375,
+    "expected_move_30d": 0.2155,
+    "iv30_pctile_60d": 100.0,
     "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 197.18
+    "zone": "fast",
+    "underlying": 216.21
    },
    "ARM": {
-    "iv30": 0.6977,
-    "skew25": -0.023,
-    "expected_move_30d": 0.2,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.6993,
+    "skew25": -0.0365,
+    "expected_move_30d": 0.2005,
+    "iv30_pctile_60d": 20.0,
+    "skew25_pctile_60d": 0.0,
     "zone": "calm",
-    "underlying": 229.01
+    "underlying": 254.06
    },
    "KEEL": {
-    "iv30": 0.8661,
-    "skew25": -0.0715,
-    "expected_move_30d": 0.2483,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 3.06
+    "iv30": 0.9277,
+    "skew25": 0.0398,
+    "expected_move_30d": 0.266,
+    "iv30_pctile_60d": 100.0,
+    "skew25_pctile_60d": 80.0,
+    "zone": "fast",
+    "underlying": 2.96
    },
    "FFIV": {
-    "iv30": 0.4632,
-    "skew25": 0.0323,
-    "expected_move_30d": 0.1328,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 481.15
+    "iv30": 0.4839,
+    "skew25": 0.0088,
+    "expected_move_30d": 0.1387,
+    "iv30_pctile_60d": 100.0,
+    "skew25_pctile_60d": 20.0,
+    "zone": "fast",
+    "underlying": 477.04
    },
    "MU": {
-    "iv30": 0.4536,
-    "skew25": 0.0014,
-    "expected_move_30d": 0.13,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 1032.72
+    "iv30": 0.475,
+    "skew25": -0.0534,
+    "expected_move_30d": 0.1362,
+    "iv30_pctile_60d": 80.0,
+    "skew25_pctile_60d": 0.0,
+    "zone": "fast",
+    "underlying": 932.52
    },
    "CLS": {
-    "iv30": 0.7182,
-    "skew25": 0.0104,
-    "expected_move_30d": 0.2059,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 359.06
+    "iv30": 0.7458,
+    "skew25": -0.0392,
+    "expected_move_30d": 0.2138,
+    "iv30_pctile_60d": 100.0,
+    "skew25_pctile_60d": 0.0,
+    "zone": "fast",
+    "underlying": 350.23
    },
    "TE": {
-    "iv30": 0.9952,
-    "skew25": -0.1025,
-    "expected_move_30d": 0.2853,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.9826,
+    "skew25": 0.0075,
+    "expected_move_30d": 0.2817,
+    "iv30_pctile_60d": 40.0,
+    "skew25_pctile_60d": 80.0,
     "zone": "calm",
-    "underlying": 3.41
+    "underlying": 3.54
    },
    "TTMI": {
-    "iv30": 0.8489,
-    "skew25": 0.0259,
-    "expected_move_30d": 0.2434,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.8278,
+    "skew25": 0.0372,
+    "expected_move_30d": 0.2373,
+    "iv30_pctile_60d": 40.0,
+    "skew25_pctile_60d": 80.0,
     "zone": "calm",
-    "underlying": 121.88
+    "underlying": 109.39
    },
    "CVNA": {
-    "iv30": 0.761,
-    "skew25": 0.0065,
-    "expected_move_30d": 0.2182,
+    "iv30": 0.7835,
+    "skew25": 0.0171,
+    "expected_move_30d": 0.2246,
     "iv30_pctile_60d": null,
     "skew25_pctile_60d": null,
     "zone": "calm",
-    "underlying": 60.5
+    "underlying": 60.34
    },
    "VRT": {
-    "iv30": 0.6115,
-    "skew25": 0.0023,
-    "expected_move_30d": 0.1753,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.625,
+    "skew25": -0.0083,
+    "expected_move_30d": 0.1792,
+    "iv30_pctile_60d": 40.0,
+    "skew25_pctile_60d": 0.0,
     "zone": "calm",
-    "underlying": 245.56
+    "underlying": 227.67
    },
    "OKLO": {
-    "iv30": 0.6734,
-    "skew25": -0.0047,
-    "expected_move_30d": 0.1931,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
+    "iv30": 0.6625,
+    "skew25": -0.0076,
+    "expected_move_30d": 0.1899,
+    "iv30_pctile_60d": 0.0,
+    "skew25_pctile_60d": 40.0,
     "zone": "calm",
-    "underlying": 34.36
+    "underlying": 30.88
    },
    "USAR": {
-    "iv30": 0.6949,
-    "skew25": -0.006,
-    "expected_move_30d": 0.1992,
-    "iv30_pctile_60d": null,
-    "skew25_pctile_60d": null,
-    "zone": "calm",
-    "underlying": 12.59
+    "iv30": 0.7083,
+    "skew25": -0.0156,
+    "expected_move_30d": 0.2031,
+    "iv30_pctile_60d": 80.0,
+    "skew25_pctile_60d": 60.0,
+    "zone": "fast",
+    "underlying": 11.86
    }
   }
  },
  "sentiment_gauges": {
   "fear_greed": {
-   "date": "2026-10-11",
-   "value": 45,
+   "date": "2026-10-12",
+   "value": 46,
    "rating": "Neutral",
-   "previous_close": 37
+   "previous_close": 45
   },
   "put_call": {
-   "date": "2026-10-09",
-   "total": 0.83,
-   "equity": 0.66,
-   "index": 1.13
+   "date": "2026-10-12",
+   "total": 0.87,
+   "equity": 0.79,
+   "index": 0.98
   },
   "short_volume": {
-   "date": "2026-10-09",
-   "symbols": 12278,
-   "median_short_ratio": 0.5
+   "date": "2026-10-12",
+   "symbols": 12318,
+   "median_short_ratio": 0.4972
   }
  },
  "graveyard": [
@@ -4078,6 +4020,12 @@
   }
  ],
  "closed_trade_board": [
+  {
+   "date": "2026-10-12",
+   "symbol": "QQQ",
+   "sleeve": "Morning Dip",
+   "pnl": "+$181.75"
+  },
   {
    "date": "2026-10-09",
    "symbol": "NBIS",
@@ -4543,9 +4491,63 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-12T15:57:56.208228-04:00",
-  "headline": "\u2014",
-  "sections": []
+  "updated_et": "2026-10-13T07:46:11.294201-04:00",
+  "stamp": "Tuesday, 7:46 AM ET",
+  "headline": "The desk is carrying 3 positions, down $3 on the day, no fresh Tensor signals.",
+  "sections": [
+   {
+    "heading": "Account",
+    "body": "Equity $100,095 \u00b7 buying power $395,225. Day P&L -$3 (-0.00%)."
+   },
+   {
+    "heading": "Positions (3)",
+    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$80 (-9.09%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$6 (-28.57%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 $4 (+13.33%)."
+   },
+   {
+    "heading": "Tensor",
+    "body": "No fresh signals. Engine v625, byte-exact. No Tensor positions right now."
+   },
+   {
+    "heading": "Phase",
+    "body": "No position. Last event 11:40 PM ET: orphan_stop TEST."
+   },
+   {
+    "heading": "Legend's EMA",
+    "body": "Flat. Setup: no trend day."
+   },
+   {
+    "heading": "Morning Dip",
+    "body": "Flat \u2014 outside the morning window."
+   },
+   {
+    "heading": "Bilbo Box Options",
+    "body": "Flat \u2014 no qualifying breakouts."
+   },
+   {
+    "heading": "SPX Premium (experimental)",
+    "body": "1 spread open (2026-10-16 761/756)."
+   },
+   {
+    "heading": "Phoenix Breakout",
+    "body": "Not yet run."
+   },
+   {
+    "heading": "Momentum",
+    "body": "Flat \u2014 no qualifying momentum names."
+   },
+   {
+    "heading": "Winner Confluence",
+    "body": "Flat \u2014 no qualifying confluence names."
+   },
+   {
+    "heading": "Beaten-Down",
+    "body": "Flat \u2014 no qualifying beaten-down names."
+   },
+   {
+    "heading": "Risk",
+    "body": "Kill switch armed at -3.0% of baseline equity; not tripped. Earnings within 7 days: VICR (2026-10-20)."
+   }
+  ]
  },
  "equity_curve": [
   {
@@ -5075,6 +5077,36 @@
    "equity": "100099.5",
    "day_pl": 9.0,
    "day_pl_pct": 0.008991862364560073
+  },
+  {
+   "ts_utc": "2026-10-13T00:15:00.859555+00:00",
+   "equity": "100098.5",
+   "day_pl": 8.0,
+   "day_pl_pct": 0.00799276654627562
+  },
+  {
+   "ts_utc": "2026-10-13T03:40:08.496841+00:00",
+   "equity": "100098.5",
+   "day_pl": 8.0,
+   "day_pl_pct": 0.00799276654627562
+  },
+  {
+   "ts_utc": "2026-10-13T03:40:29.563301+00:00",
+   "equity": "100098.5",
+   "day_pl": 8.0,
+   "day_pl_pct": 0.00799276654627562
+  },
+  {
+   "ts_utc": "2026-10-13T03:40:49.461081+00:00",
+   "equity": "100098.5",
+   "day_pl": 8.0,
+   "day_pl_pct": 0.00799276654627562
+  },
+  {
+   "ts_utc": "2026-10-13T11:46:11.294201+00:00",
+   "equity": "100095.31",
+   "day_pl": -3.1900000000023283,
+   "day_pl_pct": -0.0031868609419744834
   }
  ],
  "regime_history": [
@@ -5116,6 +5148,10 @@
   },
   {
    "date": "2026-10-12",
+   "regime": "UPTREND"
+  },
+  {
+   "date": "2026-10-13",
    "regime": "UPTREND"
   }
  ],
@@ -5202,23 +5238,23 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": 9.0,
+  "day_pl": -3.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 4.0
+    "day_pl": -2.0
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -5.0
+    "day_pl": -4.0
    },
    {
     "symbol": "VXX261218C00020000",
-    "day_pl": -80.0
+    "day_pl": -32.0
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 90.0,
+    "day_pl": 34.81,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -5228,39 +5264,45 @@
    "date": "2026-10-14",
    "type": "CPI",
    "name": "CPI release",
-   "in_days": 2
+   "in_days": 1
   },
   {
    "date": "2026-10-28",
    "type": "FOMC",
    "name": "FOMC decision",
-   "in_days": 16
+   "in_days": 15
   },
   {
    "date": "2026-11-10",
    "type": "CPI",
    "name": "CPI release",
-   "in_days": 29
+   "in_days": 28
   },
   {
    "date": "2026-12-09",
    "type": "FOMC",
    "name": "FOMC decision",
-   "in_days": 58
+   "in_days": 57
   },
   {
    "date": "2026-12-10",
    "type": "CPI",
    "name": "CPI release",
-   "in_days": 59
+   "in_days": 58
   }
  ],
  "sleeve_treemap": [
   {
-   "sleeve": "other",
-   "notional": 931.0,
+   "sleeve": "vix_hedge",
+   "notional": 880.0,
    "unrealized_pl": 0.0,
    "position_count": 0
+  },
+  {
+   "sleeve": "spx_premium",
+   "notional": 56.0,
+   "unrealized_pl": -2.0,
+   "position_count": 2
   }
  ],
  "lector": {
