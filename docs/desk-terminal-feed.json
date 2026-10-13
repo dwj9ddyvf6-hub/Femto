@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T16:52:55.322390+00:00",
- "generated_at_et": "2026-10-13T12:52:55.322390-04:00",
+ "generated_at_utc": "2026-10-13T16:57:52.907522+00:00",
+ "generated_at_et": "2026-10-13T12:57:52.907522-04:00",
  "account": {
   "equity": "100040.31",
   "cash": "99306.31",
@@ -578,20 +578,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T16:24:45.626125+00:00",
-   "last_exit_scan": "2026-10-13T16:50:07.770490+00:00",
+   "last_exit_scan": "2026-10-13T16:55:25.916957+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T16:35:17.126840+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-13T16:35:17.131074+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-13T16:35:17.161284+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T16:40:22.302046+00:00",
      "event": "scan_start"
@@ -626,6 +614,18 @@
     },
     {
      "ts": "2026-10-13T16:50:07.783013+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T16:55:25.903896+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T16:55:25.916854+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T16:55:25.950700+00:00",
      "event": "scan_done"
     }
    ]
@@ -2991,73 +2991,72 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T15:55:29.444165+00:00",
+     "ts": "2026-10-13T16:55:23.318725+00:00",
+     "event": "red_day_signal",
+     "symbol": "AXTI",
+     "ref_px": 61.08
+    },
+    {
+     "ts": "2026-10-13T16:55:26.712335+00:00",
+     "event": "spread_gate_fail",
+     "symbol": "AXTI"
+    },
+    {
+     "ts": "2026-10-13T16:55:26.728391+00:00",
+     "event": "red_day_signal",
+     "symbol": "NBIS",
+     "ref_px": 207.4
+    },
+    {
+     "ts": "2026-10-13T16:55:29.470612+00:00",
      "event": "spread_gate_fail",
      "symbol": "NBIS"
     },
     {
-     "ts": "2026-10-13T15:55:29.451466+00:00",
+     "ts": "2026-10-13T16:55:29.474419+00:00",
      "event": "red_day_signal",
      "symbol": "SHAZ",
      "ref_px": 35.21
     },
     {
-     "ts": "2026-10-13T15:55:30.811372+00:00",
+     "ts": "2026-10-13T16:55:31.045511+00:00",
      "event": "chain_empty",
      "symbol": "SHAZ",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T15:55:30.823072+00:00",
+     "ts": "2026-10-13T16:55:31.064236+00:00",
      "event": "red_day_signal",
      "symbol": "VELO",
      "ref_px": 8.08
     },
     {
-     "ts": "2026-10-13T15:55:32.072396+00:00",
+     "ts": "2026-10-13T16:55:33.079037+00:00",
      "event": "chain_empty",
      "symbol": "VELO",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T15:55:32.080512+00:00",
+     "ts": "2026-10-13T16:55:33.082486+00:00",
      "event": "red_day_signal",
      "symbol": "ALAB",
      "ref_px": 318.0
     },
     {
-     "ts": "2026-10-13T15:55:35.369986+00:00",
+     "ts": "2026-10-13T16:55:36.962452+00:00",
      "event": "spread_gate_fail",
      "symbol": "ALAB"
     },
     {
-     "ts": "2026-10-13T15:55:35.379590+00:00",
+     "ts": "2026-10-13T16:55:36.976124+00:00",
      "event": "red_day_signal",
      "symbol": "TE",
      "ref_px": 3.21
     },
     {
-     "ts": "2026-10-13T15:55:38.393355+00:00",
+     "ts": "2026-10-13T16:55:41.098938+00:00",
      "event": "spread_gate_fail",
      "symbol": "TE"
-    },
-    {
-     "ts": "2026-10-13T15:55:48.858910+00:00",
-     "event": "known_sibling_leg",
-     "qty": 8.0,
-     "note": "booked to another sleeve in the desk exposure ledger; not this sleeve's leg"
-    },
-    {
-     "ts": "2026-10-13T15:55:48.859174+00:00",
-     "event": "known_sibling_leg",
-     "qty": 1.0,
-     "note": "booked to another sleeve in the desk exposure ledger; not this sleeve's leg"
-    },
-    {
-     "ts": "2026-10-13T15:55:48.859259+00:00",
-     "event": "known_sibling_leg",
-     "qty": -1.0,
-     "note": "booked to another sleeve in the desk exposure ledger; not this sleeve's leg"
     }
    ]
   },
@@ -4577,17 +4576,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T12:52:55.322390-04:00",
+  "updated_et": "2026-10-13T12:57:52.907522-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T15:18:00.020006+00:00",
-   "equity": "100178.7",
-   "day_pl": 178.6999999999971,
-   "day_pl_pct": 0.17869999999999708
-  },
   {
    "ts_utc": "2026-10-12T14:17:51.263872+00:00",
    "equity": "100000",
@@ -5301,6 +5294,12 @@
    "equity": "100040.31",
    "day_pl": -58.19000000000233,
    "day_pl_pct": -0.05813273925183927
+  },
+  {
+   "ts_utc": "2026-10-13T16:57:52.907522+00:00",
+   "equity": "100040.31",
+   "day_pl": -58.19000000000233,
+   "day_pl_pct": -0.05813273925183927
   }
  ],
  "benchmark_series": {
@@ -5316,8 +5315,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.94,
-    "spy": 99.94,
-    "qqq": 99.61
+    "spy": 99.93,
+    "qqq": 99.59
    }
   ]
  },
