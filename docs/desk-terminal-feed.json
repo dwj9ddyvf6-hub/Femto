@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T19:17:48.226126+00:00",
- "generated_at_et": "2026-10-13T15:17:48.226126-04:00",
+ "generated_at_utc": "2026-10-13T19:22:54.402753+00:00",
+ "generated_at_et": "2026-10-13T15:22:54.402753-04:00",
  "account": {
-  "equity": "100073.31",
+  "equity": "100074.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -25.19000000000233,
- "day_pl_pct": -0.025165212265920396,
+ "day_pl": -24.19000000000233,
+ "day_pl_pct": -0.02416619629665013,
  "journal_today": {
   "scans": 12,
   "trades": 0
@@ -581,55 +581,79 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T18:36:33.016142+00:00",
-   "last_exit_scan": "2026-10-13T19:15:09.093280+00:00",
+   "last_exit_scan": "2026-10-13T19:20:13.655189+00:00",
    "recent": [
     {
-     "ts": "2026-10-13T19:00:37.824464+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-13T19:22:50.416181+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:00:37.830046+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-13T19:22:50.416216+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:00:37.854247+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-13T19:22:50.416250+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:05:20.583125+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-13T19:22:50.416297+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:05:20.594019+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-13T19:22:50.416344+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:05:20.619204+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-13T19:22:50.416379+00:00",
+     "event": "entry_skipped",
+     "symbol": "AAPL",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:10:16.697367+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-13T19:22:56.420373+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMZN",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:10:16.709022+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-13T19:22:56.420641+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMZN",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:10:16.724338+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-13T19:22:56.420704+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMZN",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:15:09.092857+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-13T19:22:56.420794+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMZN",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:15:09.093225+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-13T19:22:56.420834+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMZN",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T19:15:09.105082+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-13T19:22:56.420870+00:00",
+     "event": "entry_skipped",
+     "symbol": "AMZN",
+     "reason": "stale_episode"
     }
    ]
   },
@@ -3468,7 +3492,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100073.31,
+  "equity": 100074.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4702,17 +4726,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T15:17:48.226126-04:00",
+  "updated_et": "2026-10-13T15:22:54.402753-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T17:53:10.836424+00:00",
-   "equity": "100091.5",
-   "day_pl": 1.0,
-   "day_pl_pct": 0.0009990958182844525
-  },
   {
    "ts_utc": "2026-10-12T17:57:51.064942+00:00",
    "equity": "100099.5",
@@ -5426,6 +5444,12 @@
    "equity": "100073.31",
    "day_pl": -25.19000000000233,
    "day_pl_pct": -0.025165212265920396
+  },
+  {
+   "ts_utc": "2026-10-13T19:22:54.402753+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
   }
  ],
  "benchmark_series": {
@@ -5440,9 +5464,9 @@
    },
    {
     "date": "2026-10-13",
-    "equity": 99.97,
-    "spy": 100.04,
-    "qqq": 99.57
+    "equity": 99.98,
+    "spy": 100.03,
+    "qqq": 99.61
    }
   ]
  },
@@ -5641,7 +5665,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -25.19,
+  "day_pl": -24.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
@@ -5657,7 +5681,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 33.81,
+    "day_pl": 34.81,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
