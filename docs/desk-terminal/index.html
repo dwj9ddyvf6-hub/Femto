@@ -254,7 +254,7 @@
   <section class="panel">
     <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
     <div class="phead"><span>SET · BEST SETUPS</span><span class="sub" id="setups-sub"></span></div>
-    <div class="psub">The desk's orders for today. Every order here already passed the full gauntlet before it was placed — red-day rule, a human-style chart read, regime and event checks, and the risk rails — so the day's order flow is the day's conviction list.</div>
+    <div class="psub">Setups are born at the desk's chart gate, not picked from a scoreboard. A card appears here only when a staged candidate has passed a full chart read — thesis, entry plan, and the read itself, all on the record. No read, no card.</div>
     <div id="setups"></div>
   </section>
 
@@ -561,14 +561,18 @@ function anatomySVG(p){
 function renderSetups(d){
   const rows=d.best_setups||[];
   $("setups-sub").textContent = rows.length ? (rows.length+" ON THE BOARD") : "NONE TODAY";
-  if(!rows.length){ $("setups").innerHTML=`<div class="empty">No high-conviction setups on the board right now — the desk is waiting, not forcing it.</div>`; return; }
-  $("setups").innerHTML = rows.map(r=>`<div class="poscard">
+  if(!rows.length){ $("setups").innerHTML=`<div class="empty">No passed setups on the board right now — candidates only appear here after a chart read says yes.</div>`; return; }
+  const lv=(lab,v)=>v==null||v===""?"":` ${lab} ${esc(v)} ·`;
+  $("setups").innerHTML = rows.map(r=>{
+    const levels=(lv("ENTRY",r.entry)+lv("STOP",r.stop)+lv("TARGET",r.target)+(r.qty?` QTY ${esc(r.qty)}`:"")).replace(/ ·$/,"");
+    return `<div class="poscard">
       <div class="poshead"><span class="sym">${esc(r.symbol)}</span>
-        <span class="kindchip">${esc(r.kind||"")}</span>
-        ${r.score?`<span class="setupscore">${esc(r.score)}</span>`:""}</div>
-      <div class="posmeta">${esc(r.detail||"")}</div>
+        <span class="kindchip">${esc(r.sleeve||"")}</span>
+        <span class="setupscore">${esc(r.status||"")}</span></div>
+      ${r.thesis?`<div class="posmeta">${esc(r.thesis)}</div>`:""}
+      ${levels?`<div class="posmeta">${levels}</div>`:""}
       ${r.read?`<div class="posmeta">READ · ${esc(r.read)}</div>`:""}
-    </div>`).join("");
+    </div>`;}).join("");
 }
 
 function renderPositions(d){
