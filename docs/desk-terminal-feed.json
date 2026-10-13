@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T16:37:53.292605+00:00",
- "generated_at_et": "2026-10-13T12:37:53.292605-04:00",
+ "generated_at_utc": "2026-10-13T16:42:55.932208+00:00",
+ "generated_at_et": "2026-10-13T12:42:55.932208-04:00",
  "account": {
   "equity": "100040.31",
   "cash": "99306.31",
@@ -98,12 +98,6 @@
   "LASR WATCH conf=8 RECLAIM"
  ],
  "ledger_tail": [
-  {
-   "ts": "2026-10-13T16:09:01Z",
-   "symbol": "LASR",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 500 completed bars (tensor-exact)"
-  },
   {
    "ts": "2026-10-13T16:09:01Z",
    "symbol": "ARQQ",
@@ -245,6 +239,10 @@
   {
    "ts": "2026-10-13T16:09:01Z",
    "event": "scan_end"
+  },
+  {
+   "ts": "2026-10-13T16:39:34Z",
+   "event": "scan_start"
   }
  ],
  "outcome_stats": {
@@ -295,12 +293,6 @@
     "dry_run": false
    },
    "recent": [
-    {
-     "ts": "2026-10-13T16:09:01Z",
-     "symbol": "ARM",
-     "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 500 completed bars (tensor-exact)"
-    },
     {
      "ts": "2026-10-13T16:09:01Z",
      "symbol": "KEEL",
@@ -364,6 +356,10 @@
     {
      "ts": "2026-10-13T16:09:01Z",
      "event": "scan_end"
+    },
+    {
+     "ts": "2026-10-13T16:39:34Z",
+     "event": "scan_start"
     }
    ]
   },
@@ -379,12 +375,6 @@
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-10-13T13:43:42.207562+00:00",
-     "event": "orphan_stop",
-     "symbol": "TEST",
-     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
-    },
     {
      "ts": "2026-10-13T13:45:12.218318+00:00",
      "event": "orphan_stop",
@@ -439,6 +429,11 @@
     },
     {
      "ts": "2026-10-13T16:28:04.717533+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T16:38:11.483655+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -580,24 +575,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T16:24:45.626125+00:00",
-   "last_exit_scan": "2026-10-13T16:35:17.131172+00:00",
+   "last_exit_scan": "2026-10-13T16:40:22.305851+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T16:24:45.625947+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T16:24:45.626062+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T16:24:45.650869+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T16:25:13.324436+00:00",
      "event": "scan_start"
@@ -632,6 +611,18 @@
     },
     {
      "ts": "2026-10-13T16:35:17.161284+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T16:40:22.302046+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T16:40:22.305566+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T16:40:22.330859+00:00",
      "event": "scan_done"
     }
    ]
@@ -1241,11 +1232,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T14:40:18.210273-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-12T15:10:19.948222-04:00",
      "event": "scan_start",
      "symbol": "ALL"
@@ -1298,6 +1284,11 @@
     {
      "ts": "2026-10-13T12:17:22.522141-04:00",
      "event": "scan_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T12:41:28.792301-04:00",
+     "event": "fill_pass",
      "symbol": "ALL"
     }
    ]
@@ -4507,17 +4498,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T12:37:53.292605-04:00",
+  "updated_et": "2026-10-13T12:42:55.932208-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T15:27:48.305678+00:00",
-   "equity": "100106.5",
-   "day_pl": 106.5,
-   "day_pl_pct": 0.1065
-  },
   {
    "ts_utc": "2026-10-12T13:42:46.691550+00:00",
    "equity": "100000",
@@ -5231,6 +5216,12 @@
    "equity": "100040.31",
    "day_pl": -58.19000000000233,
    "day_pl_pct": -0.05813273925183927
+  },
+  {
+   "ts_utc": "2026-10-13T16:42:55.932208+00:00",
+   "equity": "100040.31",
+   "day_pl": -58.19000000000233,
+   "day_pl_pct": -0.05813273925183927
   }
  ],
  "benchmark_series": {
@@ -5246,8 +5237,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.94,
-    "spy": 99.93,
-    "qqq": 99.67
+    "spy": 99.97,
+    "qqq": 99.65
    }
   ]
  },
