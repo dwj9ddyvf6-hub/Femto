@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T13:38:28.679785+00:00",
- "generated_at_et": "2026-10-13T09:38:28.679785-04:00",
+ "generated_at_utc": "2026-10-13T13:47:50.418100+00:00",
+ "generated_at_et": "2026-10-13T09:47:50.418100-04:00",
  "account": {
-  "equity": "99977.31",
+  "equity": "99986.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -28,10 +28,10 @@
    "symbol": "VXX261218C00020000",
    "qty": 8.0,
    "avg_entry": 1.1,
-   "current": 0.85,
-   "unrealized_pl": -200.0,
-   "unrealized_pl_pct": -22.727272727272727,
-   "market_value": "680",
+   "current": 0.86,
+   "unrealized_pl": -192.0,
+   "unrealized_pl_pct": -21.818181818181817,
+   "market_value": "688",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.23,
-   "unrealized_pl": 7.0,
-   "unrealized_pl_pct": 23.333333333333332,
-   "market_value": "-23",
+   "current": 0.22,
+   "unrealized_pl": 8.0,
+   "unrealized_pl_pct": 26.666666666666668,
+   "market_value": "-22",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,166 +88,168 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -121.19000000000233,
- "day_pl_pct": -0.1210707453158662,
+ "day_pl": -112.19000000000233,
+ "day_pl_pct": -0.11207960159243378,
  "journal_today": {
-  "scans": 0,
+  "scans": 1,
   "trades": 0
  },
- "fresh_signals": [],
+ "fresh_signals": [
+  "LASR WATCH conf=8 RECLAIM"
+ ],
  "ledger_tail": [
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "LASR",
-   "decision": "SKIP_LOW_CONF",
-   "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
+   "decision": "WATCH",
+   "reason": "stale signal: bar 2026-10-12T20:00:00Z is 17.7 clock-hours old (> 6h): demoted to watch, no trade on dead prices"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "ARQQ",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "OUST",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "ALAB",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "CRDO",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "FCEL",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "HIVE",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "POET",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "SNDK",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "TEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "CORZ",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "HUT",
-   "decision": "SKIP_LOW_CONF",
-   "reason": "production bearish-conflict veto (score 7) [1D=-- 1W=--]"
+   "decision": "SKIP_NO_SIGNAL",
+   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "TSEM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "ARM",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "KEEL",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "FFIV",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "MU",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "CLS",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "TE",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "TTMI",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "CVNA",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "VRT",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "OKLO",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "symbol": "USAR",
    "decision": "SKIP_NO_SIGNAL",
    "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
   },
   {
-   "ts": "2026-10-12T19:39:39Z",
+   "ts": "2026-10-13T13:39:00Z",
    "event": "scan_end"
   }
  ],
  "outcome_stats": {
   "closed_total": 0,
-  "open_total": 6,
+  "open_total": 7,
   "by_phenotype": {},
   "by_confidence": {},
   "by_symbol": {}
@@ -294,73 +296,73 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "ARM",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "KEEL",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "FFIV",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "MU",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "CLS",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "TE",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "TTMI",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "CVNA",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "VRT",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "OKLO",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "symbol": "USAR",
      "decision": "SKIP_NO_SIGNAL",
      "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
     },
     {
-     "ts": "2026-10-12T19:39:39Z",
+     "ts": "2026-10-13T13:39:00Z",
      "event": "scan_end"
     }
    ]
@@ -377,28 +379,6 @@
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-10-13T12:46:48.471533+00:00",
-     "event": "k5_box",
-     "symbol": "ASML"
-    },
-    {
-     "ts": "2026-10-13T12:46:49.554202+00:00",
-     "event": "k5_dead",
-     "symbol": "ASML",
-     "reason": "boxhi_breach"
-    },
-    {
-     "ts": "2026-10-13T12:46:49.586554+00:00",
-     "event": "k5_box",
-     "symbol": "MSTR"
-    },
-    {
-     "ts": "2026-10-13T12:46:50.647753+00:00",
-     "event": "k5_dead",
-     "symbol": "MSTR",
-     "reason": "boxhi_breach"
-    },
     {
      "ts": "2026-10-13T12:46:50.728589+00:00",
      "event": "k5_box",
@@ -442,6 +422,30 @@
      "event": "k5_dead",
      "symbol": "TSEM",
      "reason": "boxlow_touch"
+    },
+    {
+     "ts": "2026-10-13T13:43:42.200760+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-13T13:43:42.207562+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-13T13:45:12.218318+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-13T13:45:12.226462+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     }
    ]
   },
@@ -581,32 +585,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-12T19:23:38.169749+00:00",
-   "last_exit_scan": "2026-10-13T13:35:32.923555+00:00",
+   "last_exit_scan": "2026-10-13T13:45:23.144050+00:00",
    "recent": [
-    {
-     "ts": "2026-10-12T20:00:07.643571+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T20:00:07.655191+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T20:00:07.680024+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-12T20:05:14.583579+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T20:05:14.587240+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-12T20:05:14.604493+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T13:30:14.197008+00:00",
      "event": "scan_start"
@@ -629,6 +609,30 @@
     },
     {
      "ts": "2026-10-13T13:35:32.942326+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T13:40:24.429213+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T13:40:24.458913+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T13:40:24.491472+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T13:45:23.134117+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T13:45:23.142743+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T13:45:23.439008+00:00",
      "event": "scan_done"
     }
    ]
@@ -2991,72 +2995,73 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T11:43:35.970750+00:00",
-     "event": "washout_signal",
-     "symbol": "ARM",
-     "ref_px": 255.24
-    },
-    {
-     "ts": "2026-10-13T11:43:38.359472+00:00",
-     "event": "washout_signal",
-     "symbol": "MU",
-     "ref_px": 989.04
-    },
-    {
-     "ts": "2026-10-13T11:43:38.359923+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "MU"
-    },
-    {
-     "ts": "2026-10-13T12:43:23.753121+00:00",
-     "event": "washout_signal",
-     "symbol": "AEHR",
-     "ref_px": 78.18
-    },
-    {
-     "ts": "2026-10-13T12:43:28.906959+00:00",
-     "event": "washout_signal",
-     "symbol": "SOXL",
-     "ref_px": 128.4
-    },
-    {
-     "ts": "2026-10-13T12:43:49.360056+00:00",
+     "ts": "2026-10-13T13:44:19.977937+00:00",
      "event": "washout_signal",
      "symbol": "OUST",
      "ref_px": 37.27
     },
     {
-     "ts": "2026-10-13T12:43:50.499196+00:00",
+     "ts": "2026-10-13T13:44:31.254913+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "OUST",
+     "note": "buy-delay: conditions met for OUST; buy queued, may execute in 5 days (2026-10-13)"
+    },
+    {
+     "ts": "2026-10-13T13:44:32.104096+00:00",
      "event": "washout_signal",
      "symbol": "ALAB",
      "ref_px": 324.11
     },
     {
-     "ts": "2026-10-13T12:43:58.621057+00:00",
+     "ts": "2026-10-13T13:44:42.492188+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "ALAB",
+     "note": "buy-delay: conditions met for ALAB; buy queued, may execute in 5 days (2026-10-13)"
+    },
+    {
+     "ts": "2026-10-13T13:44:51.683146+00:00",
      "event": "washout_signal",
      "symbol": "SNDK",
      "ref_px": 1487.33
     },
     {
-     "ts": "2026-10-13T12:44:03.596747+00:00",
+     "ts": "2026-10-13T13:45:04.963423+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "SNDK",
+     "note": "buy-delay: conditions met for SNDK; buy queued, may execute in 5 days (2026-10-13)"
+    },
+    {
+     "ts": "2026-10-13T13:45:09.050580+00:00",
      "event": "washout_signal",
      "symbol": "TSEM",
      "ref_px": 216.5
     },
     {
-     "ts": "2026-10-13T12:44:04.618443+00:00",
+     "ts": "2026-10-13T13:45:21.999567+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "TSEM",
+     "note": "buy-delay: conditions met for TSEM; buy queued, may execute in 5 days (2026-10-13)"
+    },
+    {
+     "ts": "2026-10-13T13:45:23.416186+00:00",
      "event": "washout_signal",
      "symbol": "ARM",
      "ref_px": 255.24
     },
     {
-     "ts": "2026-10-13T12:44:08.083633+00:00",
+     "ts": "2026-10-13T13:45:33.263276+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "ARM",
+     "note": "buy-delay: ARM approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T13:45:37.981109+00:00",
      "event": "washout_signal",
      "symbol": "MU",
      "ref_px": 989.04
     },
     {
-     "ts": "2026-10-13T12:44:08.087642+00:00",
+     "ts": "2026-10-13T13:45:37.985562+00:00",
      "event": "earnings_unknown_skip",
      "symbol": "MU"
     }
@@ -3254,7 +3259,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 99977.31,
+  "equity": 99986.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -3856,6 +3861,14 @@
  ],
  "signal_tape": [
   {
+   "ts": "2026-10-13 09:39:00 ET",
+   "symbol": "LASR",
+   "decision": "WATCH",
+   "phenotype": "RECLAIM",
+   "confidence": 8,
+   "reason": "stale signal: bar 2026-10-12T20:00:00Z is 17.7 clock-hours old (> 6h): demoted to watch, no trade on dead prices"
+  },
+  {
    "ts": "2026-10-12 14:39:05 ET",
    "symbol": "SKYQ",
    "decision": "WATCH",
@@ -4002,14 +4015,6 @@
   {
    "ts": "2026-10-12 10:38:58 ET",
    "symbol": "SKYQ",
-   "decision": "WATCH",
-   "phenotype": "RECLAIM",
-   "confidence": 7,
-   "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
-  },
-  {
-   "ts": "2026-10-12 10:38:58 ET",
-   "symbol": "IREN",
    "decision": "WATCH",
    "phenotype": "RECLAIM",
    "confidence": 7,
@@ -4488,63 +4493,9 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T09:38:28.679785-04:00",
-  "stamp": "Tuesday, 9:38 AM ET",
-  "headline": "The desk is carrying 3 positions, down $121 on the day, no fresh Tensor signals.",
-  "sections": [
-   {
-    "heading": "Account",
-    "body": "Equity $99,977 \u00b7 buying power $395,225. Day P&L -$121 (-0.12%)."
-   },
-   {
-    "heading": "Positions (3)",
-    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$200 (-22.73%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$7 (-33.33%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 $7 (+23.33%)."
-   },
-   {
-    "heading": "Tensor",
-    "body": "No fresh signals. Engine v625, byte-exact. No Tensor positions right now."
-   },
-   {
-    "heading": "Phase",
-    "body": "No position. Last event 8:46 AM ET: k5_dead TSEM."
-   },
-   {
-    "heading": "Legend's EMA",
-    "body": "Flat. Setup: no trend day."
-   },
-   {
-    "heading": "Morning Dip",
-    "body": "Flat \u2014 outside the morning window."
-   },
-   {
-    "heading": "Bilbo Box Options",
-    "body": "Flat \u2014 no qualifying breakouts."
-   },
-   {
-    "heading": "SPX Premium (experimental)",
-    "body": "1 spread open (2026-10-16 761/756)."
-   },
-   {
-    "heading": "Phoenix Breakout",
-    "body": "Not yet run."
-   },
-   {
-    "heading": "Momentum",
-    "body": "Flat \u2014 no qualifying momentum names."
-   },
-   {
-    "heading": "Winner Confluence",
-    "body": "Flat \u2014 no qualifying confluence names."
-   },
-   {
-    "heading": "Beaten-Down",
-    "body": "Flat \u2014 no qualifying beaten-down names."
-   },
-   {
-    "heading": "Risk",
-    "body": "Kill switch armed at -3.0% of baseline equity; not tripped. Earnings within 7 days: VICR (2026-10-20)."
-   }
-  ]
+  "updated_et": "2026-10-13T09:47:50.418100-04:00",
+  "headline": "\u2014",
+  "sections": []
  },
  "equity_curve": [
   {
@@ -5230,6 +5181,18 @@
    "equity": "99977.31",
    "day_pl": -121.19000000000233,
    "day_pl_pct": -0.1210707453158662
+  },
+  {
+   "ts_utc": "2026-10-13T13:43:15.895027+00:00",
+   "equity": "99986.31",
+   "day_pl": -112.19000000000233,
+   "day_pl_pct": -0.11207960159243378
+  },
+  {
+   "ts_utc": "2026-10-13T13:47:50.418100+00:00",
+   "equity": "99986.31",
+   "day_pl": -112.19000000000233,
+   "day_pl_pct": -0.11207960159243378
   }
  ],
  "benchmark_series": {
@@ -5244,9 +5207,9 @@
    },
    {
     "date": "2026-10-13",
-    "equity": 99.88,
-    "spy": 100.01,
-    "qqq": 99.4
+    "equity": 99.89,
+    "spy": 100.03,
+    "qqq": 99.61
    }
   ]
  },
@@ -5297,6 +5260,17 @@
   }
  ],
  "signal_history": [
+  {
+   "date": "2026-10-12",
+   "ts": "2026-10-12T20:00:00Z",
+   "symbol": "LASR",
+   "signal_type": "WATCH",
+   "phenotype": "RECLAIM",
+   "confidence": 8,
+   "outcome": {
+    "result": "open"
+   }
+  },
   {
    "date": "2026-10-12",
    "ts": "2026-10-12T13:00:00Z",
@@ -5379,11 +5353,11 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -121.19,
+  "day_pl": -112.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 1.0
+    "day_pl": 2.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -5391,7 +5365,7 @@
    },
    {
     "symbol": "VXX261218C00020000",
-    "day_pl": -152.0
+    "day_pl": -144.0
    },
    {
     "symbol": "BASELINE_DIFF",
@@ -5436,13 +5410,13 @@
   {
    "sleeve": "vix_hedge",
    "notional": 880.0,
-   "unrealized_pl": -200.0,
+   "unrealized_pl": -192.0,
    "position_count": 1
   },
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": 0.0,
+   "unrealized_pl": 1.0,
    "position_count": 2
   }
  ],
