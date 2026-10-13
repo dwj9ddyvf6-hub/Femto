@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T14:27:53.684250+00:00",
- "generated_at_et": "2026-10-13T10:27:53.684250-04:00",
+ "generated_at_utc": "2026-10-13T14:32:56.190825+00:00",
+ "generated_at_et": "2026-10-13T10:32:56.190825-04:00",
  "account": {
-  "equity": "100026.31",
+  "equity": "100024.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.22,
-   "unrealized_pl": 8.0,
-   "unrealized_pl_pct": 26.666666666666668,
-   "market_value": "-22",
+   "current": 0.24,
+   "unrealized_pl": 6.0,
+   "unrealized_pl_pct": 20.0,
+   "market_value": "-24",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -72.19000000000233,
- "day_pl_pct": -0.07211896282162303,
+ "day_pl": -74.19000000000233,
+ "day_pl_pct": -0.07411699476016356,
  "journal_today": {
   "scans": 2,
   "trades": 0
@@ -526,14 +526,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T15:31:19.108455+00:00",
-     "event": "chart_stage_skipped_pending"
-    },
-    {
-     "ts": "2026-10-12T15:34:10.264536+00:00",
-     "event": "chart_stage_skipped_pending"
-    },
-    {
      "ts": "2026-10-12T15:37:07.843041+00:00",
      "event": "chart_stage_skipped_pending"
     },
@@ -572,6 +564,14 @@
     {
      "ts": "2026-10-13T14:25:38.015517+00:00",
      "event": "chart_staged"
+    },
+    {
+     "ts": "2026-10-13T14:28:16.318899+00:00",
+     "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-13T14:31:09.302672+00:00",
+     "event": "chart_stage_skipped_pending"
     }
    ]
   },
@@ -584,26 +584,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T14:23:32.033358+00:00",
-   "last_exit_scan": "2026-10-13T14:25:11.634550+00:00",
+   "last_exit_scan": "2026-10-13T14:30:08.704561+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T14:23:27.414809+00:00",
-     "event": "entry_skipped",
-     "symbol": "HOOD",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T14:23:32.028985+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T14:23:32.031189+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
     {
      "ts": "2026-10-13T14:23:32.031630+00:00",
      "event": "entry_skipped",
@@ -648,6 +630,18 @@
     },
     {
      "ts": "2026-10-13T14:25:11.679564+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T14:30:08.704258+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T14:30:08.704512+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T14:30:08.730135+00:00",
      "event": "scan_done"
     }
    ]
@@ -1170,11 +1164,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-07T16:30:05.263679-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-07T16:31:11.129206-04:00",
      "event": "rank_pass",
      "symbol": "ALL"
@@ -1227,6 +1216,11 @@
     {
      "ts": "2026-10-12T16:30:33.324172-04:00",
      "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T10:30:15.661903-04:00",
+     "event": "fill_pass",
      "symbol": "ALL"
     }
    ]
@@ -1602,12 +1596,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-08T16:31:08.664720-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols"
-    },
-    {
      "ts": "2026-10-08T16:33:44.304012-04:00",
      "event": "rank_pass",
      "symbol": "ALL"
@@ -1663,6 +1651,11 @@
     {
      "ts": "2026-10-12T16:33:27.456349-04:00",
      "event": "rank_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T10:32:16.669466-04:00",
+     "event": "fill_pass",
      "symbol": "ALL"
     }
    ]
@@ -2138,64 +2131,64 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T13:32:44.709344+00:00",
+     "ts": "2026-10-13T14:32:27.361048+00:00",
      "event": "iv_rank",
-     "symbol": "CORZ"
+     "symbol": "WYFI"
     },
     {
-     "ts": "2026-10-13T13:32:44.709648+00:00",
+     "ts": "2026-10-13T14:32:30.207665+00:00",
+     "event": "iv_rank",
+     "symbol": "AEHR"
+    },
+    {
+     "ts": "2026-10-13T14:32:32.800594+00:00",
+     "event": "iv_rank",
+     "symbol": "POET"
+    },
+    {
+     "ts": "2026-10-13T14:32:35.649287+00:00",
+     "event": "iv_rank",
+     "symbol": "HIVE"
+    },
+    {
+     "ts": "2026-10-13T14:32:35.650010+00:00",
      "event": "iv_rank_signal",
-     "symbol": "CORZ"
+     "symbol": "HIVE"
     },
     {
-     "ts": "2026-10-13T13:32:44.710027+00:00",
+     "ts": "2026-10-13T14:32:35.650748+00:00",
      "event": "earnings_within_window_skip",
+     "symbol": "HIVE"
+    },
+    {
+     "ts": "2026-10-13T14:32:39.002249+00:00",
+     "event": "iv_rank",
+     "symbol": "SNDK"
+    },
+    {
+     "ts": "2026-10-13T14:32:42.500747+00:00",
+     "event": "iv_rank",
+     "symbol": "IREN"
+    },
+    {
+     "ts": "2026-10-13T14:32:45.936775+00:00",
+     "event": "iv_rank",
      "symbol": "CORZ"
     },
     {
-     "ts": "2026-10-13T13:32:47.544696+00:00",
+     "ts": "2026-10-13T14:32:58.882835+00:00",
      "event": "iv_rank",
      "symbol": "ARM"
     },
     {
-     "ts": "2026-10-13T13:32:47.545072+00:00",
+     "ts": "2026-10-13T14:32:58.884033+00:00",
      "event": "iv_rank_signal",
      "symbol": "ARM"
     },
     {
-     "ts": "2026-10-13T13:32:47.545453+00:00",
+     "ts": "2026-10-13T14:32:58.884639+00:00",
      "event": "earnings_within_window_skip",
      "symbol": "ARM"
-    },
-    {
-     "ts": "2026-10-13T13:32:51.897559+00:00",
-     "event": "iv_rank",
-     "symbol": "AXTI"
-    },
-    {
-     "ts": "2026-10-13T13:32:55.563390+00:00",
-     "event": "iv_rank",
-     "symbol": "DGXX"
-    },
-    {
-     "ts": "2026-10-13T13:32:55.565079+00:00",
-     "event": "iv_rank_signal",
-     "symbol": "DGXX"
-    },
-    {
-     "ts": "2026-10-13T13:32:55.567264+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "DGXX",
-     "note": "symbol absent from calendar"
-    },
-    {
-     "ts": "2026-10-13T13:32:59.087573+00:00",
-     "event": "iv_rank",
-     "symbol": "VELO"
-    },
-    {
-     "ts": "2026-10-13T13:32:59.103732+00:00",
-     "event": "scan_complete"
     }
    ]
   },
@@ -3282,7 +3275,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100026.31,
+  "equity": 100024.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4516,17 +4509,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T10:27:53.684250-04:00",
+  "updated_et": "2026-10-13T10:32:56.190825-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-10T02:36:27.407331+00:00",
-   "equity": "100000",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-10T02:47:57.696832+00:00",
    "equity": "100000",
@@ -5240,6 +5227,12 @@
    "equity": "100026.31",
    "day_pl": -72.19000000000233,
    "day_pl_pct": -0.07211896282162303
+  },
+  {
+   "ts_utc": "2026-10-13T14:32:56.190825+00:00",
+   "equity": "100024.31",
+   "day_pl": -74.19000000000233,
+   "day_pl_pct": -0.07411699476016356
   }
  ],
  "benchmark_series": {
@@ -5255,8 +5248,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.93,
-    "spy": 99.96,
-    "qqq": 99.56
+    "spy": 99.91,
+    "qqq": 99.54
    }
   ]
  },
@@ -5400,11 +5393,11 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -72.19,
+  "day_pl": -74.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 2.0
+    "day_pl": 0.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -5463,7 +5456,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": 1.0,
+   "unrealized_pl": -1.0,
    "position_count": 2
   }
  ],
