@@ -157,6 +157,11 @@
     font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
     font-size:11px; color:var(--faint); font-weight:600; letter-spacing:.06em;}
   .empty{padding:24px 18px; color:var(--muted); font-size:13.5px;}
+  .kindchip{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:10.5px;
+    letter-spacing:.08em; padding:3px 8px; border:1px solid var(--line); border-radius:3px;
+    color:var(--muted); white-space:nowrap;}
+  .setupscore{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:12px;
+    color:var(--ink); white-space:nowrap;}
   @media(max-width:760px){
     .strat-grid{grid-template-columns:1fr;}
     .hero h1{font-size:28px; margin:10px 14px 12px;}
@@ -244,6 +249,13 @@
       </div>
     </div>
     <div id="eq-chart"></div>
+  </section>
+
+  <section class="panel">
+    <b class="brk tl"></b><b class="brk tr"></b><b class="brk bl"></b><b class="brk br"></b>
+    <div class="phead"><span>SET · BEST SETUPS</span><span class="sub" id="setups-sub"></span></div>
+    <div class="psub">The day's highest-conviction setups, in the order the desk vets them — fresh swing signals first, then the desk's own trade decisions, then the Universe ranker's top names. Nothing appears here that the desk's own records didn't produce.</div>
+    <div id="setups"></div>
   </section>
 
   <section class="panel">
@@ -546,6 +558,18 @@ function anatomySVG(p){
      `<text x="${clx}" y="14" text-anchor="middle" font-size="12" font-weight="600" fill="#102a3a">${money2(c)}</text>`;
   return `<div class="anat"><svg viewBox="0 0 ${W} ${H}">${g}</svg></div>`;
 }
+function renderSetups(d){
+  const rows=d.best_setups||[];
+  $("setups-sub").textContent = rows.length ? (rows.length+" ON THE BOARD") : "NONE TODAY";
+  if(!rows.length){ $("setups").innerHTML=`<div class="empty">No high-conviction setups on the board right now — the desk is waiting, not forcing it.</div>`; return; }
+  $("setups").innerHTML = rows.map(r=>`<div class="poscard">
+      <div class="poshead"><span class="sym">${esc(r.symbol)}</span>
+        <span class="kindchip">${esc(r.kind||"")}</span>
+        ${r.score?`<span class="setupscore">${esc(r.score)}</span>`:""}</div>
+      <div class="posmeta">${esc(r.detail||"")}</div>
+    </div>`).join("");
+}
+
 function renderPositions(d){
   const rows=d.positions||[];
   $("pos-count").textContent = rows.length ? (rows.length+" OPEN") : "FLAT";
@@ -906,7 +930,7 @@ function renderRisk(d){
 /* ---------- main ---------- */
 function render(d){
   lastGood=d; lastGen=d.generated_at_utc;
-  renderHero(d.desk_narrative, d); renderEquity(d); renderPositions(d);
+  renderHero(d.desk_narrative, d); renderEquity(d); renderSetups(d); renderPositions(d);
   renderStrats(d); renderRegime(d); renderMktCtx(d); renderGamma(d); renderOptions(d); renderSentiment(d); renderTape(d); renderBoard(d); renderGraveyard(d); renderEarnings(d); renderRisk(d); buildReadout(d); buildTape(d);
   $("feedstamp").textContent = "feed: " + (d.generated_at_et? etHM(d.generated_at_et)+" ET":"—");
   $("livetext").textContent = "LIVE · " + etHM(d.generated_at_utc) + " ET";
