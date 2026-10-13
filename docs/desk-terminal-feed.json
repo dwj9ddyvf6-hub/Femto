@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T23:52:59.869622+00:00",
- "generated_at_et": "2026-10-13T19:52:59.869622-04:00",
+ "generated_at_utc": "2026-10-13T23:57:50.879878+00:00",
+ "generated_at_et": "2026-10-13T19:57:50.879878-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -2684,12 +2684,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T23:00:39.864163+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "HUT",
-     "note": "buy-delay: HUT approved 2026-10-13, 0 of 5 days elapsed"
-    },
-    {
      "ts": "2026-10-13T23:00:41.386552+00:00",
      "event": "deferred_red_day",
      "symbol": "TSEM",
@@ -2753,6 +2747,12 @@
      "event": "deferred_buy_delay",
      "symbol": "USAR",
      "note": "buy-delay: USAR approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T23:57:51.473310+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "AEHR",
+     "note": "buy-delay: AEHR approved 2026-10-12, 1 of 5 days elapsed"
     }
    ]
   },
@@ -3023,69 +3023,72 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T22:55:38.152297+00:00",
+     "ts": "2026-10-13T23:55:40.760927+00:00",
+     "event": "red_day_signal",
+     "symbol": "AXTI",
+     "ref_px": 61.08
+    },
+    {
+     "ts": "2026-10-13T23:55:42.172323+00:00",
+     "event": "spread_gate_fail",
+     "symbol": "AXTI"
+    },
+    {
+     "ts": "2026-10-13T23:55:42.189712+00:00",
      "event": "red_day_signal",
      "symbol": "NBIS",
      "ref_px": 207.4
     },
     {
-     "ts": "2026-10-13T22:55:40.020652+00:00",
+     "ts": "2026-10-13T23:55:43.549343+00:00",
      "event": "spread_gate_fail",
      "symbol": "NBIS"
     },
     {
-     "ts": "2026-10-13T22:55:40.027172+00:00",
+     "ts": "2026-10-13T23:55:43.557652+00:00",
      "event": "red_day_signal",
      "symbol": "SHAZ",
      "ref_px": 35.21
     },
     {
-     "ts": "2026-10-13T22:55:40.779718+00:00",
+     "ts": "2026-10-13T23:55:44.556136+00:00",
      "event": "chain_empty",
      "symbol": "SHAZ",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T22:55:40.786562+00:00",
+     "ts": "2026-10-13T23:55:44.567635+00:00",
      "event": "red_day_signal",
      "symbol": "VELO",
      "ref_px": 8.08
     },
     {
-     "ts": "2026-10-13T22:55:41.485149+00:00",
+     "ts": "2026-10-13T23:55:45.376874+00:00",
      "event": "chain_empty",
      "symbol": "VELO",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T22:55:41.491085+00:00",
+     "ts": "2026-10-13T23:55:45.389957+00:00",
      "event": "red_day_signal",
      "symbol": "ALAB",
      "ref_px": 318.0
     },
     {
-     "ts": "2026-10-13T22:55:43.089310+00:00",
+     "ts": "2026-10-13T23:55:46.872784+00:00",
      "event": "spread_gate_fail",
      "symbol": "ALAB"
     },
     {
-     "ts": "2026-10-13T22:55:43.095412+00:00",
+     "ts": "2026-10-13T23:55:46.878424+00:00",
      "event": "red_day_signal",
      "symbol": "TE",
      "ref_px": 3.21
     },
     {
-     "ts": "2026-10-13T22:55:44.400511+00:00",
+     "ts": "2026-10-13T23:55:48.219795+00:00",
      "event": "spread_quote_onesided",
      "symbol": "TE"
-    },
-    {
-     "ts": "2026-10-13T22:55:59.894464+00:00",
-     "event": "lock_busy"
-    },
-    {
-     "ts": "2026-10-13T22:56:36.612910+00:00",
-     "event": "lock_busy"
     }
    ]
   },
@@ -4727,17 +4730,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T19:52:59.869622-04:00",
+  "updated_et": "2026-10-13T19:57:50.879878-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T13:32:53.298196+00:00",
-   "equity": "99976.31",
-   "day_pl": -122.19000000000233,
-   "day_pl_pct": -0.12206976128513647
-  },
   {
    "ts_utc": "2026-10-13T13:38:28.679785+00:00",
    "equity": "99977.31",
@@ -5448,6 +5445,12 @@
   },
   {
    "ts_utc": "2026-10-13T23:52:59.869622+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-13T23:57:50.879878+00:00",
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
