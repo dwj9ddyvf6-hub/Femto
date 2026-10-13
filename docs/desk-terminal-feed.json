@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T18:28:07.791703+00:00",
- "generated_at_et": "2026-10-13T14:28:07.791703-04:00",
+ "generated_at_utc": "2026-10-13T18:33:16.707357+00:00",
+ "generated_at_et": "2026-10-13T14:33:16.707357-04:00",
  "account": {
   "equity": "100073.31",
   "cash": "99306.31",
@@ -381,11 +381,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T17:08:52.128879+00:00",
-     "event": "bars_5min_failed",
-     "symbol": "PANW"
-    },
-    {
      "ts": "2026-10-13T17:18:18.526354+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
@@ -437,6 +432,11 @@
     },
     {
      "ts": "2026-10-13T18:18:19.850139+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T18:28:33.615463+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -581,75 +581,75 @@
    "last_exit_scan": "2026-10-13T18:20:22.868322+00:00",
    "recent": [
     {
-     "ts": "2026-10-13T18:26:31.072195+00:00",
+     "ts": "2026-10-13T18:32:32.203544+00:00",
      "event": "entry_skipped",
-     "symbol": "JPM",
+     "symbol": "PLTR",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:31.166359+00:00",
+     "ts": "2026-10-13T18:32:32.203586+00:00",
      "event": "entry_skipped",
-     "symbol": "JPM",
+     "symbol": "PLTR",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:31.166461+00:00",
+     "ts": "2026-10-13T18:32:32.203625+00:00",
      "event": "entry_skipped",
-     "symbol": "JPM",
+     "symbol": "PLTR",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:31.167097+00:00",
+     "ts": "2026-10-13T18:32:32.203662+00:00",
      "event": "entry_skipped",
-     "symbol": "JPM",
+     "symbol": "PLTR",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:44.291034+00:00",
+     "ts": "2026-10-13T18:32:32.203698+00:00",
      "event": "entry_skipped",
-     "symbol": "UBER",
+     "symbol": "PLTR",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:44.291266+00:00",
+     "ts": "2026-10-13T18:33:18.089320+00:00",
      "event": "entry_skipped",
-     "symbol": "UBER",
+     "symbol": "INTC",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:44.291329+00:00",
+     "ts": "2026-10-13T18:33:18.091868+00:00",
      "event": "entry_skipped",
-     "symbol": "UBER",
+     "symbol": "INTC",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:44.291382+00:00",
+     "ts": "2026-10-13T18:33:18.091958+00:00",
      "event": "entry_skipped",
-     "symbol": "UBER",
+     "symbol": "INTC",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:44.291421+00:00",
+     "ts": "2026-10-13T18:33:18.092002+00:00",
      "event": "entry_skipped",
-     "symbol": "UBER",
+     "symbol": "INTC",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:44.291460+00:00",
+     "ts": "2026-10-13T18:33:18.092042+00:00",
      "event": "entry_skipped",
-     "symbol": "UBER",
+     "symbol": "INTC",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:44.291498+00:00",
+     "ts": "2026-10-13T18:33:18.092080+00:00",
      "event": "entry_skipped",
-     "symbol": "UBER",
+     "symbol": "INTC",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T18:26:44.291534+00:00",
+     "ts": "2026-10-13T18:33:18.092118+00:00",
      "event": "entry_skipped",
-     "symbol": "UBER",
+     "symbol": "INTC",
      "reason": "stale_episode"
     }
    ]
@@ -773,12 +773,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-12T19:55:54.016128+00:00",
-     "event": "entry_skipped_no_red_day",
-     "symbol": "AEHR",
-     "note": "window fully elapsed before first evaluation; close_d entry unrepeatable"
-    },
-    {
      "ts": "2026-10-12T19:55:54.016286+00:00",
      "event": "entry_skipped_no_red_day",
      "symbol": "AEHR",
@@ -843,6 +837,12 @@
      "event": "chart_releases_off_window",
      "symbol": "ALL",
      "note": "replay gated to 15:50-16:05 ET entry window"
+    },
+    {
+     "ts": "2026-10-13T18:31:40.591466+00:00",
+     "event": "chart_gate_release_deferred_red",
+     "symbol": "MU",
+     "note": "PASS verdict held: not an Arm B red day (close < open) at release; verdict NOT consumed, re-checked next pass within TTL"
     }
    ]
   },
@@ -2058,17 +2058,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T11:27:11.185519-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "41 symbols"
-    },
-    {
-     "ts": "2026-10-13T11:27:24.369316-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T12:04:16.560457-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
@@ -2119,6 +2108,17 @@
      "ts": "2026-10-13T14:26:55.205319-04:00",
      "event": "rank_start",
      "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T14:29:11.263716-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "41 symbols"
+    },
+    {
+     "ts": "2026-10-13T14:29:43.248157-04:00",
+     "event": "rank_pass",
+     "symbol": "ALL"
     }
    ]
   },
@@ -2139,11 +2139,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-13T17:34:28.193999+00:00",
-     "event": "iv_rank",
-     "symbol": "SNDK"
-    },
     {
      "ts": "2026-10-13T17:34:55.496187+00:00",
      "event": "iv_rank",
@@ -2197,6 +2192,12 @@
     {
      "ts": "2026-10-13T17:35:33.111858+00:00",
      "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-13T18:33:13.614822+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "ARQQ",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     }
    ]
   },
@@ -4690,17 +4691,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T14:28:07.791703-04:00",
+  "updated_et": "2026-10-13T14:33:16.707357-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T13:37:52.456813+00:00",
-   "equity": "100000",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-12T15:37:47.600351+00:00",
    "equity": "100107.5",
@@ -5414,6 +5409,12 @@
    "equity": "100073.31",
    "day_pl": -25.19000000000233,
    "day_pl_pct": -0.025165212265920396
+  },
+  {
+   "ts_utc": "2026-10-13T18:33:16.707357+00:00",
+   "equity": "100073.31",
+   "day_pl": -25.19000000000233,
+   "day_pl_pct": -0.025165212265920396
   }
  ],
  "benchmark_series": {
@@ -5429,8 +5430,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.97,
-    "spy": 99.97,
-    "qqq": 99.61
+    "spy": 99.96,
+    "qqq": 99.57
    }
   ]
  },
