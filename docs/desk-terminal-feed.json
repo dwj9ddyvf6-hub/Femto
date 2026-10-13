@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T22:07:57.247023+00:00",
- "generated_at_et": "2026-10-13T18:07:57.247023-04:00",
+ "generated_at_utc": "2026-10-13T22:12:49.373356+00:00",
+ "generated_at_et": "2026-10-13T18:12:49.373356-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -252,11 +252,49 @@
   }
  ],
  "outcome_stats": {
-  "closed_total": 0,
-  "open_total": 12,
-  "by_phenotype": {},
-  "by_confidence": {},
-  "by_symbol": {}
+  "closed_total": 6,
+  "open_total": 6,
+  "by_phenotype": {
+   "RECLAIM": {
+    "n": 6,
+    "hit_rate_20": 0.0,
+    "avg_ret_20": -0.06619989485957765,
+    "avg_max_adv": -0.09872434400572393,
+    "target_first_rate": 0.0
+   }
+  },
+  "by_confidence": {
+   "6-7": {
+    "n": 6,
+    "hit_rate_20": 0.0,
+    "avg_ret_20": -0.06619989485957765,
+    "avg_max_adv": -0.09872434400572393,
+    "target_first_rate": 0.0
+   }
+  },
+  "by_symbol": {
+   "HUT": {
+    "n": 2,
+    "hit_rate_20": 0.0,
+    "avg_ret_20": -0.021303991572047376,
+    "avg_max_adv": -0.07877794685707601,
+    "target_first_rate": 0.0
+   },
+   "IREN": {
+    "n": 2,
+    "hit_rate_20": 0.0,
+    "avg_ret_20": -0.07255261000273312,
+    "avg_max_adv": -0.10672314840120253,
+    "target_first_rate": 0.0
+   },
+   "SKYQ": {
+    "n": 2,
+    "hit_rate_20": 0.0,
+    "avg_ret_20": -0.10474308300395245,
+    "avg_max_adv": -0.11067193675889321,
+    "target_first_rate": 0.0
+   }
+  }
  },
  "latest_review": {
   "file": "weekly-2026-10-09.md",
@@ -1397,16 +1435,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T12:01:17.317462-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-13T12:11:32.468916-04:00",
-     "event": "scan_start",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T12:12:19.455238-04:00",
      "event": "scan_pass",
      "symbol": "ALL"
@@ -1453,6 +1481,16 @@
     },
     {
      "ts": "2026-10-13T15:11:34.601417-04:00",
+     "event": "scan_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T18:11:16.789934-04:00",
+     "event": "scan_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T18:11:49.268683-04:00",
      "event": "scan_pass",
      "symbol": "ALL"
     }
@@ -4697,17 +4735,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T18:07:57.247023-04:00",
+  "updated_et": "2026-10-13T18:12:49.373356-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T03:40:49.461081+00:00",
-   "equity": "100098.5",
-   "day_pl": 8.0,
-   "day_pl_pct": 0.00799276654627562
-  },
   {
    "ts_utc": "2026-10-13T11:46:11.294201+00:00",
    "equity": "100095.31",
@@ -5421,6 +5453,12 @@
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-13T22:12:49.373356+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
   }
  ],
  "regime_history": [
@@ -5544,7 +5582,9 @@
    "phenotype": "RECLAIM",
    "confidence": 7,
    "outcome": {
-    "result": "open"
+    "result": "closed",
+    "return_20bar": -0.0213,
+    "first_hit": "stop"
    }
   },
   {
@@ -5555,7 +5595,9 @@
    "phenotype": "RECLAIM",
    "confidence": 7,
    "outcome": {
-    "result": "open"
+    "result": "closed",
+    "return_20bar": -0.1047,
+    "first_hit": "stop"
    }
   },
   {
@@ -5566,7 +5608,9 @@
    "phenotype": "RECLAIM",
    "confidence": 7,
    "outcome": {
-    "result": "open"
+    "result": "closed",
+    "return_20bar": -0.1047,
+    "first_hit": "stop"
    }
   },
   {
@@ -5577,7 +5621,9 @@
    "phenotype": "RECLAIM",
    "confidence": 7,
    "outcome": {
-    "result": "open"
+    "result": "closed",
+    "return_20bar": -0.0213,
+    "first_hit": "stop"
    }
   },
   {
@@ -5588,7 +5634,9 @@
    "phenotype": "RECLAIM",
    "confidence": 7,
    "outcome": {
-    "result": "open"
+    "result": "closed",
+    "return_20bar": -0.0726,
+    "first_hit": "stop"
    }
   },
   {
@@ -5599,7 +5647,9 @@
    "phenotype": "RECLAIM",
    "confidence": 7,
    "outcome": {
-    "result": "open"
+    "result": "closed",
+    "return_20bar": -0.0726,
+    "first_hit": "stop"
    }
   }
  ],
