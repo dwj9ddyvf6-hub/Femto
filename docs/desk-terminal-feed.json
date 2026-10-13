@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T18:57:55.204631+00:00",
- "generated_at_et": "2026-10-13T14:57:55.204631-04:00",
+ "generated_at_utc": "2026-10-13T19:02:50.773221+00:00",
+ "generated_at_et": "2026-10-13T15:02:50.773221-04:00",
  "account": {
-  "equity": "100072.31",
+  "equity": "100073.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -46,10 +46,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.12,
-   "unrealized_pl": -9.0,
-   "unrealized_pl_pct": -42.857142857142854,
-   "market_value": "12",
+   "current": 0.13,
+   "unrealized_pl": -8.0,
+   "unrealized_pl_pct": -38.095238095238095,
+   "market_value": "13",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -26.19000000000233,
- "day_pl_pct": -0.026164228235190663,
+ "day_pl": -25.19000000000233,
+ "day_pl_pct": -0.025165212265920396,
  "journal_today": {
   "scans": 11,
   "trades": 0
@@ -578,20 +578,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T18:36:33.016142+00:00",
-   "last_exit_scan": "2026-10-13T18:55:32.067076+00:00",
+   "last_exit_scan": "2026-10-13T19:00:37.830492+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T18:40:40.965797+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-13T18:40:40.993204+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-13T18:40:41.050448+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T18:45:48.052165+00:00",
      "event": "scan_start"
@@ -626,6 +614,18 @@
     },
     {
      "ts": "2026-10-13T18:55:32.089178+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T19:00:37.824464+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T19:00:37.830046+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T19:00:37.854247+00:00",
      "event": "scan_done"
     }
    ]
@@ -714,7 +714,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -1.0
+   "unrealized_pl": 0.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -1406,11 +1406,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T11:01:26.753043-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T11:11:02.891048-04:00",
      "event": "scan_start",
      "symbol": "ALL"
@@ -1463,6 +1458,11 @@
     {
      "ts": "2026-10-13T14:13:04.535464-04:00",
      "event": "scan_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T15:01:40.849275-04:00",
+     "event": "fill_pass",
      "symbol": "ALL"
     }
    ]
@@ -2658,53 +2658,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T18:12:18.451988+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "SNDK",
-     "note": "buy-delay: SNDK approved 2026-10-12, 1 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T18:12:54.124157+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "TEM",
-     "note": "buy-delay: TEM approved 2026-10-12, 1 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T18:13:05.334103+00:00",
-     "event": "deferred_red_day",
-     "symbol": "CORZ",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (CORZ day-so-far 2.17% vs prior close 15.01 (bar 2026-10-13T17:00:00Z))"
-    },
-    {
-     "ts": "2026-10-13T18:14:01.205813+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "HUT",
-     "note": "buy-delay: HUT approved 2026-10-13, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T18:14:12.048536+00:00",
-     "event": "deferred_red_day",
-     "symbol": "TSEM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (TSEM day-so-far 0.31% vs prior close 216.56 (bar 2026-10-13T17:00:00Z))"
-    },
-    {
-     "ts": "2026-10-13T18:14:46.860094+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "ARM",
-     "note": "buy-delay: ARM approved 2026-10-12, 1 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T18:15:57.681404+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "KEEL",
-     "note": "buy-delay: KEEL approved 2026-10-12, 1 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T18:15:57.828421+00:00",
-     "event": "entry_skipped_earnings",
-     "symbol": "MU"
-    },
-    {
      "ts": "2026-10-13T18:16:14.631728+00:00",
      "event": "deferred_red_day",
      "symbol": "CVNA",
@@ -2727,6 +2680,53 @@
      "event": "deferred_buy_delay",
      "symbol": "USAR",
      "note": "buy-delay: USAR approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T18:59:35.826010+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "AEHR",
+     "note": "buy-delay: AEHR approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T19:00:00.211392+00:00",
+     "event": "deferred_green_day",
+     "symbol": "NBIS",
+     "note": "green-day block: NBIS is not red \u2014 no buy (day-return: no prior close for NBIS (deferring))"
+    },
+    {
+     "ts": "2026-10-13T19:00:44.361077+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "SKYQ",
+     "note": "buy-delay: SKYQ approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T19:01:57.303134+00:00",
+     "event": "deferred_green_market",
+     "symbol": "SHAZ",
+     "note": "market-green gate: QQQ/SPY data unavailable (deferring): day-return: no prior close for QQQ (deferring) | SPY day-so-far -0.03% vs prior close 778.03 (bar 2026-10-13T18:00:00Z)"
+    },
+    {
+     "ts": "2026-10-13T19:02:15.299963+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "SOXL",
+     "note": "buy-delay: SOXL approved 2026-10-13, 0 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T19:02:37.829027+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "WYFI",
+     "note": "buy-delay: WYFI approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T19:02:37.854669+00:00",
+     "event": "entry_skipped_earnings",
+     "symbol": "CRML"
+    },
+    {
+     "ts": "2026-10-13T19:02:59.564045+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "AAOI",
+     "note": "buy-delay: AAOI approved 2026-10-13, 0 of 5 days elapsed"
     }
    ]
   },
@@ -3463,7 +3463,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100072.31,
+  "equity": 100073.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4697,17 +4697,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T14:57:55.204631-04:00",
+  "updated_et": "2026-10-13T15:02:50.773221-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T17:32:48.725853+00:00",
-   "equity": "100090.5",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-12T17:38:04.506044+00:00",
    "equity": "100090.5",
@@ -5421,6 +5415,12 @@
    "equity": "100072.31",
    "day_pl": -26.19000000000233,
    "day_pl_pct": -0.026164228235190663
+  },
+  {
+   "ts_utc": "2026-10-13T19:02:50.773221+00:00",
+   "equity": "100073.31",
+   "day_pl": -25.19000000000233,
+   "day_pl_pct": -0.025165212265920396
   }
  ],
  "benchmark_series": {
@@ -5437,7 +5437,7 @@
     "date": "2026-10-13",
     "equity": 99.97,
     "spy": 99.94,
-    "qqq": 99.51
+    "qqq": 99.5
    }
   ]
  },
@@ -5603,7 +5603,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -26.19,
+  "day_pl": -25.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
@@ -5611,7 +5611,7 @@
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -7.0
+    "day_pl": -6.0
    },
    {
     "symbol": "VXX261218C00020000",
@@ -5666,7 +5666,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -1.0,
+   "unrealized_pl": 0.0,
    "position_count": 2
   }
  ],
