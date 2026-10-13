@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T12:27:23.391394+00:00",
- "generated_at_et": "2026-10-13T08:27:23.391394-04:00",
+ "generated_at_utc": "2026-10-13T12:32:54.121171+00:00",
+ "generated_at_et": "2026-10-13T08:32:54.121171-04:00",
  "account": {
   "equity": "100095.31",
   "cash": "99306.31",
@@ -2115,31 +2115,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T11:33:05.033956+00:00",
-     "event": "iv_rank",
-     "symbol": "SNDK"
-    },
-    {
-     "ts": "2026-10-13T11:33:07.941176+00:00",
-     "event": "iv_rank",
-     "symbol": "IREN"
-    },
-    {
-     "ts": "2026-10-13T11:33:11.232545+00:00",
-     "event": "iv_rank",
-     "symbol": "CORZ"
-    },
-    {
-     "ts": "2026-10-13T11:33:11.232867+00:00",
-     "event": "iv_rank_signal",
-     "symbol": "CORZ"
-    },
-    {
-     "ts": "2026-10-13T11:33:11.234121+00:00",
-     "event": "earnings_within_window_skip",
-     "symbol": "CORZ"
-    },
-    {
      "ts": "2026-10-13T11:33:14.211424+00:00",
      "event": "iv_rank",
      "symbol": "ARM"
@@ -2172,6 +2147,31 @@
     {
      "ts": "2026-10-13T11:33:23.646177+00:00",
      "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-13T12:32:24.522310+00:00",
+     "event": "iv_rank",
+     "symbol": "ARQQ"
+    },
+    {
+     "ts": "2026-10-13T12:32:30.776163+00:00",
+     "event": "iv_rank",
+     "symbol": "NBIS"
+    },
+    {
+     "ts": "2026-10-13T12:32:40.950531+00:00",
+     "event": "iv_rank",
+     "symbol": "WYFI"
+    },
+    {
+     "ts": "2026-10-13T12:32:48.850297+00:00",
+     "event": "iv_rank",
+     "symbol": "AEHR"
+    },
+    {
+     "ts": "2026-10-13T12:32:58.108624+00:00",
+     "event": "iv_rank",
+     "symbol": "POET"
     }
    ]
   },
@@ -3347,22 +3347,22 @@
   "news_active_symbols": 2
  },
  "spy_gamma": {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "stale": false,
   "squeezemetrics": {
-   "gex_usd": 12842271164.299997,
-   "dix": 0.4732004838521244,
-   "price": 7811.54
+   "gex_usd": 7337355421.6900015,
+   "dix": 0.4531153374327204,
+   "price": 7807.24
   },
   "unusual_whales": {
-   "spot": 777.22,
-   "gamma_flip": 145.93,
-   "net_gamma_oi": -1105,
-   "net_gamma_volume": 10726,
+   "spot": 773.93,
+   "gamma_flip": 773.26,
+   "net_gamma_oi": -10334,
+   "net_gamma_volume": -14862,
    "call_wall": 785,
    "put_wall": 641,
-   "pct_gamma_0d": 56.8,
-   "regime": "mixed (vol positive, OI negative)"
+   "pct_gamma_0d": 65.2,
+   "regime": "negative-gamma (both UW views negative; spot 773.93 just above flip 773.26 - pinned at flip; 65.2% of vol gamma 0d)"
   }
  },
  "options_iv_skew": {
@@ -4491,8 +4491,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T08:27:23.391394-04:00",
-  "stamp": "Tuesday, 8:27 AM ET",
+  "updated_et": "2026-10-13T08:32:54.121171-04:00",
+  "stamp": "Tuesday, 8:32 AM ET",
   "headline": "The desk is carrying 3 positions, down $3 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -5146,6 +5146,12 @@
   },
   {
    "ts_utc": "2026-10-13T12:27:23.391394+00:00",
+   "equity": "100095.31",
+   "day_pl": -3.1900000000023283,
+   "day_pl_pct": -0.0031868609419744834
+  },
+  {
+   "ts_utc": "2026-10-13T12:32:54.121171+00:00",
    "equity": "100095.31",
    "day_pl": -3.1900000000023283,
    "day_pl_pct": -0.0031868609419744834
@@ -5925,6 +5931,5 @@
    "mcclellan_note": "NYSE (NYMO/NYSI): oscillator 29.5, summation -2456.3; Nasdaq (NAMO/NASI): oscillator -13.5, summation -3672.3.",
    "zweig_note": "Zweig breadth thrust (10d): 0.47 \u2014 no thrust signal."
   }
- },
- "best_setups": []
+ }
 }
