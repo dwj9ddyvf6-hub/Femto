@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T14:52:55.765029+00:00",
- "generated_at_et": "2026-10-13T10:52:55.765029-04:00",
+ "generated_at_utc": "2026-10-13T14:57:50.512283+00:00",
+ "generated_at_et": "2026-10-13T10:57:50.512283-04:00",
  "account": {
   "equity": "100024.31",
   "cash": "99306.31",
@@ -584,20 +584,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T14:23:32.033358+00:00",
-   "last_exit_scan": "2026-10-13T14:50:08.412845+00:00",
+   "last_exit_scan": "2026-10-13T14:55:14.610461+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T14:35:10.995268+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-13T14:35:11.007701+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-13T14:35:11.019485+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T14:40:27.116633+00:00",
      "event": "scan_start"
@@ -632,6 +620,18 @@
     },
     {
      "ts": "2026-10-13T14:50:08.436465+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T14:55:14.600268+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T14:55:14.609302+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T14:55:14.663796+00:00",
      "event": "scan_done"
     }
    ]
@@ -2572,12 +2572,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T14:00:30.068898+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "HUT",
-     "note": "buy-delay: conditions met for HUT; buy queued, may execute in 5 days (2026-10-13)"
-    },
-    {
      "ts": "2026-10-13T14:00:37.653188+00:00",
      "event": "deferred_buy_delay",
      "symbol": "TSEM",
@@ -2641,6 +2635,12 @@
      "event": "deferred_buy_delay",
      "symbol": "USAR",
      "note": "buy-delay: USAR approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T14:57:49.870680+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "AEHR",
+     "note": "buy-delay: AEHR approved 2026-10-12, 1 of 5 days elapsed"
     }
    ]
   },
@@ -2911,70 +2911,70 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T13:55:35.570672+00:00",
+     "ts": "2026-10-13T14:55:43.965752+00:00",
      "event": "spread_gate_fail",
      "symbol": "NBIS"
     },
     {
-     "ts": "2026-10-13T13:55:35.574544+00:00",
+     "ts": "2026-10-13T14:55:43.972116+00:00",
      "event": "red_day_signal",
      "symbol": "SHAZ",
      "ref_px": 35.21
     },
     {
-     "ts": "2026-10-13T13:55:36.355817+00:00",
+     "ts": "2026-10-13T14:55:44.841044+00:00",
      "event": "chain_empty",
      "symbol": "SHAZ",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T13:55:36.362730+00:00",
+     "ts": "2026-10-13T14:55:44.854587+00:00",
      "event": "red_day_signal",
      "symbol": "VELO",
      "ref_px": 8.08
     },
     {
-     "ts": "2026-10-13T13:55:37.452656+00:00",
+     "ts": "2026-10-13T14:55:45.738442+00:00",
      "event": "chain_empty",
      "symbol": "VELO",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T13:55:37.460701+00:00",
+     "ts": "2026-10-13T14:55:45.746787+00:00",
      "event": "red_day_signal",
      "symbol": "ALAB",
      "ref_px": 318.0
     },
     {
-     "ts": "2026-10-13T13:55:38.928016+00:00",
+     "ts": "2026-10-13T14:55:47.129161+00:00",
      "event": "spread_gate_fail",
      "symbol": "ALAB"
     },
     {
-     "ts": "2026-10-13T13:55:38.933263+00:00",
+     "ts": "2026-10-13T14:55:47.133831+00:00",
      "event": "red_day_signal",
      "symbol": "TE",
      "ref_px": 3.21
     },
     {
-     "ts": "2026-10-13T13:55:40.474636+00:00",
-     "event": "spread_quote_onesided",
+     "ts": "2026-10-13T14:55:48.492444+00:00",
+     "event": "spread_gate_fail",
      "symbol": "TE"
     },
     {
-     "ts": "2026-10-13T13:55:41.615218+00:00",
+     "ts": "2026-10-13T14:55:49.490844+00:00",
      "event": "unknown_broker_leg",
      "qty": 8.0,
      "note": "manual review; not auto-adopted (spread legs need pairing)"
     },
     {
-     "ts": "2026-10-13T13:55:41.617237+00:00",
+     "ts": "2026-10-13T14:55:49.491057+00:00",
      "event": "unknown_broker_leg",
      "qty": 1.0,
      "note": "manual review; not auto-adopted (spread legs need pairing)"
     },
     {
-     "ts": "2026-10-13T13:55:41.617573+00:00",
+     "ts": "2026-10-13T14:55:49.491103+00:00",
      "event": "unknown_broker_leg",
      "qty": -1.0,
      "note": "manual review; not auto-adopted (spread legs need pairing)"
@@ -4497,17 +4497,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T10:52:55.765029-04:00",
+  "updated_et": "2026-10-13T10:57:50.512283-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T16:12:45.975529+00:00",
-   "equity": "100100.5",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-12T16:17:51.988519+00:00",
    "equity": "100100.5",
@@ -5221,6 +5215,12 @@
    "equity": "100024.31",
    "day_pl": -74.19000000000233,
    "day_pl_pct": -0.07411699476016356
+  },
+  {
+   "ts_utc": "2026-10-13T14:57:50.512283+00:00",
+   "equity": "100024.31",
+   "day_pl": -74.19000000000233,
+   "day_pl_pct": -0.07411699476016356
   }
  ],
  "benchmark_series": {
@@ -5236,8 +5236,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.93,
-    "spy": 99.9,
-    "qqq": 99.46
+    "spy": 99.87,
+    "qqq": 99.41
    }
   ]
  },
@@ -6027,5 +6027,17 @@
    "zweig_note": "Zweig breadth thrust (10d): 0.47 \u2014 no thrust signal."
   }
  },
- "best_setups": []
+ "best_setups": [
+  {
+   "symbol": "QQQ",
+   "sleeve": "Morning Dip",
+   "status": "STAGED",
+   "thesis": "MORNING_DIP swing signal \u2014 morning dip bracket",
+   "entry": null,
+   "stop": null,
+   "target": null,
+   "qty": null,
+   "read": "PASS \u2014 PASS B (Midna, 2026-10-13): Morning Dip validated form. Daily uptrend intact, price testing rising 20DMA (~740) from above after a ~3% pullback from the 762 high; weekly stance higher, above MA10/MA40. Opening fl\u2026"
+  }
+ ]
 }
