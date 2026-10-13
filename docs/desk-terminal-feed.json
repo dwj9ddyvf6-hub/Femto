@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T17:52:48.398250+00:00",
- "generated_at_et": "2026-10-13T13:52:48.398250-04:00",
+ "generated_at_utc": "2026-10-13T17:57:56.934152+00:00",
+ "generated_at_et": "2026-10-13T13:57:56.934152-04:00",
  "account": {
-  "equity": "100038.31",
+  "equity": "100039.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -46,10 +46,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.15,
-   "unrealized_pl": -6.0,
-   "unrealized_pl_pct": -28.57142857142857,
-   "market_value": "15",
+   "current": 0.14,
+   "unrealized_pl": -7.0,
+   "unrealized_pl_pct": -33.33333333333333,
+   "market_value": "14",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.26,
-   "unrealized_pl": 4.0,
-   "unrealized_pl_pct": 13.333333333333334,
-   "market_value": "-26",
+   "current": 0.25,
+   "unrealized_pl": 5.0,
+   "unrealized_pl_pct": 16.666666666666664,
+   "market_value": "-25",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -60.19000000000233,
- "day_pl_pct": -0.0601307711903798,
+ "day_pl": -59.19000000000233,
+ "day_pl_pct": -0.059131755221109535,
  "journal_today": {
   "scans": 9,
   "trades": 0
@@ -380,21 +380,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T16:28:04.717533+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-13T16:38:11.483655+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-13T16:48:12.013516+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
      "ts": "2026-10-13T17:04:05.199515+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
@@ -436,6 +421,21 @@
     },
     {
      "ts": "2026-10-13T17:48:11.758595+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T17:54:03.629908+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T17:54:13.452643+00:00",
+     "event": "bars_5min_failed",
+     "symbol": "POET"
+    },
+    {
+     "ts": "2026-10-13T17:58:09.624943+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -577,20 +577,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T17:28:28.462508+00:00",
-   "last_exit_scan": "2026-10-13T17:50:14.309832+00:00",
+   "last_exit_scan": "2026-10-13T17:55:08.722090+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T17:36:07.414266+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-13T17:36:07.425732+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-13T17:36:07.499949+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T17:40:25.267528+00:00",
      "event": "scan_start"
@@ -625,6 +613,18 @@
     },
     {
      "ts": "2026-10-13T17:50:14.327241+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T17:55:08.716122+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T17:55:08.721964+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T17:55:08.772656+00:00",
      "event": "scan_done"
     }
    ]
@@ -2989,70 +2989,70 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T16:55:23.318725+00:00",
+     "ts": "2026-10-13T17:55:23.980050+00:00",
      "event": "red_day_signal",
      "symbol": "AXTI",
      "ref_px": 61.08
     },
     {
-     "ts": "2026-10-13T16:55:26.712335+00:00",
+     "ts": "2026-10-13T17:55:28.092346+00:00",
      "event": "spread_gate_fail",
      "symbol": "AXTI"
     },
     {
-     "ts": "2026-10-13T16:55:26.728391+00:00",
+     "ts": "2026-10-13T17:55:28.105089+00:00",
      "event": "red_day_signal",
      "symbol": "NBIS",
      "ref_px": 207.4
     },
     {
-     "ts": "2026-10-13T16:55:29.470612+00:00",
+     "ts": "2026-10-13T17:55:32.708033+00:00",
      "event": "spread_gate_fail",
      "symbol": "NBIS"
     },
     {
-     "ts": "2026-10-13T16:55:29.474419+00:00",
+     "ts": "2026-10-13T17:55:32.734447+00:00",
      "event": "red_day_signal",
      "symbol": "SHAZ",
      "ref_px": 35.21
     },
     {
-     "ts": "2026-10-13T16:55:31.045511+00:00",
+     "ts": "2026-10-13T17:55:35.074385+00:00",
      "event": "chain_empty",
      "symbol": "SHAZ",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T16:55:31.064236+00:00",
+     "ts": "2026-10-13T17:55:35.082732+00:00",
      "event": "red_day_signal",
      "symbol": "VELO",
      "ref_px": 8.08
     },
     {
-     "ts": "2026-10-13T16:55:33.079037+00:00",
+     "ts": "2026-10-13T17:55:37.645086+00:00",
      "event": "chain_empty",
      "symbol": "VELO",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T16:55:33.082486+00:00",
+     "ts": "2026-10-13T17:55:37.659249+00:00",
      "event": "red_day_signal",
      "symbol": "ALAB",
      "ref_px": 318.0
     },
     {
-     "ts": "2026-10-13T16:55:36.962452+00:00",
+     "ts": "2026-10-13T17:55:43.000976+00:00",
      "event": "spread_gate_fail",
      "symbol": "ALAB"
     },
     {
-     "ts": "2026-10-13T16:55:36.976124+00:00",
+     "ts": "2026-10-13T17:55:43.018594+00:00",
      "event": "red_day_signal",
      "symbol": "TE",
      "ref_px": 3.21
     },
     {
-     "ts": "2026-10-13T16:55:41.098938+00:00",
+     "ts": "2026-10-13T17:55:46.649091+00:00",
      "event": "spread_gate_fail",
      "symbol": "TE"
     }
@@ -3433,7 +3433,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100038.31,
+  "equity": 100039.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4667,17 +4667,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T13:52:48.398250-04:00",
+  "updated_et": "2026-10-13T13:57:56.934152-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T15:57:55.239058+00:00",
-   "equity": "100100.5",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-12T15:22:48.895153+00:00",
    "equity": "100107.5",
@@ -5391,8 +5385,32 @@
    "equity": "100038.31",
    "day_pl": -60.19000000000233,
    "day_pl_pct": -0.0601307711903798
+  },
+  {
+   "ts_utc": "2026-10-13T17:57:56.934152+00:00",
+   "equity": "100039.31",
+   "day_pl": -59.19000000000233,
+   "day_pl_pct": -0.059131755221109535
   }
  ],
+ "benchmark_series": {
+  "start_date": "2026-10-12",
+  "normalized_start": 100.0,
+  "points": [
+   {
+    "date": "2026-10-12",
+    "equity": 100.0,
+    "spy": 100.0,
+    "qqq": 100.0
+   },
+   {
+    "date": "2026-10-13",
+    "equity": 99.94,
+    "spy": 99.85,
+    "qqq": 99.42
+   }
+  ]
+ },
  "regime_history": [
   {
    "date": "2026-10-01",
@@ -5533,15 +5551,15 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -60.19,
+  "day_pl": -59.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -2.0
+    "day_pl": -1.0
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -4.0
+    "day_pl": -5.0
    },
    {
     "symbol": "VXX261218C00020000",
@@ -5549,7 +5567,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 33.81,
+    "day_pl": 34.81,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
