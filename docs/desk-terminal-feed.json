@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T16:12:51.475846+00:00",
- "generated_at_et": "2026-10-13T12:12:51.475846-04:00",
+ "generated_at_utc": "2026-10-13T16:17:52.070894+00:00",
+ "generated_at_et": "2026-10-13T12:17:52.070894-04:00",
  "account": {
-  "equity": "100039.31",
+  "equity": "100040.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.25,
-   "unrealized_pl": 5.0,
-   "unrealized_pl_pct": 16.666666666666664,
-   "market_value": "-25",
+   "current": 0.24,
+   "unrealized_pl": 6.0,
+   "unrealized_pl_pct": 20.0,
+   "market_value": "-24",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -59.19000000000233,
- "day_pl_pct": -0.059131755221109535,
+ "day_pl": -58.19000000000233,
+ "day_pl_pct": -0.05813273925183927,
  "journal_today": {
   "scans": 6,
   "trades": 0
@@ -582,20 +582,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T15:24:50.515566+00:00",
-   "last_exit_scan": "2026-10-13T16:10:37.119507+00:00",
+   "last_exit_scan": "2026-10-13T16:15:19.600093+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T15:55:36.311033+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-13T15:55:36.314092+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-13T15:55:36.342550+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T16:00:14.786390+00:00",
      "event": "scan_start"
@@ -630,6 +618,18 @@
     },
     {
      "ts": "2026-10-13T16:10:37.142900+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T16:15:19.596446+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T16:15:19.599914+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T16:15:19.637619+00:00",
      "event": "scan_done"
     }
    ]
@@ -718,7 +718,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -2.0
+   "unrealized_pl": -1.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -1239,16 +1239,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T14:10:12.626863-04:00",
-     "event": "scan_start",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-12T14:10:26.774747-04:00",
-     "event": "scan_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-12T14:40:18.210273-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
@@ -1296,6 +1286,16 @@
     {
      "ts": "2026-10-13T11:40:39.922078-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T12:16:43.055437-04:00",
+     "event": "scan_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T12:17:22.522141-04:00",
+     "event": "scan_pass",
      "symbol": "ALL"
     }
    ]
@@ -3267,7 +3267,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100039.31,
+  "equity": 100040.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4501,17 +4501,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T12:12:51.475846-04:00",
+  "updated_et": "2026-10-13T12:17:52.070894-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T15:52:48.558293+00:00",
-   "equity": "100100.5",
-   "day_pl": 100.5,
-   "day_pl_pct": 0.1005
-  },
   {
    "ts_utc": "2026-10-12T15:55:18.145269+00:00",
    "equity": "100100.5",
@@ -5225,6 +5219,12 @@
    "equity": "100039.31",
    "day_pl": -59.19000000000233,
    "day_pl_pct": -0.059131755221109535
+  },
+  {
+   "ts_utc": "2026-10-13T16:17:52.070894+00:00",
+   "equity": "100040.31",
+   "day_pl": -58.19000000000233,
+   "day_pl_pct": -0.05813273925183927
   }
  ],
  "benchmark_series": {
@@ -5240,8 +5240,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.94,
-    "spy": 99.85,
-    "qqq": 99.51
+    "spy": 99.87,
+    "qqq": 99.57
    }
   ]
  },
@@ -5385,11 +5385,11 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -59.19,
+  "day_pl": -58.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -1.0
+    "day_pl": 0.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -5448,7 +5448,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -2.0,
+   "unrealized_pl": -1.0,
    "position_count": 2
   }
  ],
