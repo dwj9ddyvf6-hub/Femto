@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T18:38:07.039184+00:00",
- "generated_at_et": "2026-10-13T14:38:07.039184-04:00",
+ "generated_at_utc": "2026-10-13T18:43:10.332915+00:00",
+ "generated_at_et": "2026-10-13T14:43:10.332915-04:00",
  "account": {
   "equity": "100073.31",
   "cash": "99306.31",
@@ -99,12 +99,6 @@
   "ARM WATCH conf=7 RECLAIM"
  ],
  "ledger_tail": [
-  {
-   "ts": "2026-10-13T18:09:01Z",
-   "symbol": "LASR",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 500 completed bars (tensor-exact)"
-  },
   {
    "ts": "2026-10-13T18:09:01Z",
    "symbol": "ARQQ",
@@ -246,6 +240,10 @@
   {
    "ts": "2026-10-13T18:09:01Z",
    "event": "scan_end"
+  },
+  {
+   "ts": "2026-10-13T18:39:38Z",
+   "event": "scan_start"
   }
  ],
  "outcome_stats": {
@@ -296,12 +294,6 @@
     "dry_run": false
    },
    "recent": [
-    {
-     "ts": "2026-10-13T18:09:01Z",
-     "symbol": "ARM",
-     "decision": "WATCH",
-     "reason": "moderate confidence 7 (watch 6-7): monitoring, no order [1D=-- 1W=--]"
-    },
     {
      "ts": "2026-10-13T18:09:01Z",
      "symbol": "KEEL",
@@ -365,6 +357,10 @@
     {
      "ts": "2026-10-13T18:09:01Z",
      "event": "scan_end"
+    },
+    {
+     "ts": "2026-10-13T18:39:38Z",
+     "event": "scan_start"
     }
    ]
   },
@@ -380,16 +376,6 @@
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-10-13T17:28:16.889219+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-13T17:38:14.134844+00:00",
-     "event": "bars_5min_failed",
-     "symbol": "TSLA"
-    },
     {
      "ts": "2026-10-13T17:38:36.077338+00:00",
      "event": "lock_busy",
@@ -439,6 +425,16 @@
      "ts": "2026-10-13T18:34:43.959926+00:00",
      "event": "bars_5min_failed",
      "symbol": "POET"
+    },
+    {
+     "ts": "2026-10-13T18:38:28.144932+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T18:43:00.900238+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
     }
    ]
   },
@@ -578,26 +574,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T18:36:33.016142+00:00",
-   "last_exit_scan": "2026-10-13T18:20:22.868322+00:00",
+   "last_exit_scan": "2026-10-13T18:40:40.995060+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T18:36:01.996866+00:00",
-     "event": "entry_skipped",
-     "symbol": "SMCI",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T18:36:01.996965+00:00",
-     "event": "entry_skipped",
-     "symbol": "SMCI",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T18:36:18.668455+00:00",
-     "event": "entry_skipped",
-     "symbol": "HOOD",
-     "reason": "stale_episode"
-    },
     {
      "ts": "2026-10-13T18:36:18.668677+00:00",
      "event": "entry_skipped",
@@ -648,6 +626,18 @@
     },
     {
      "ts": "2026-10-13T18:36:33.109896+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T18:40:40.965797+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T18:40:40.993204+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T18:40:41.050448+00:00",
      "event": "scan_done"
     }
    ]
@@ -1257,11 +1247,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T10:40:26.127294-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T11:10:18.038498-04:00",
      "event": "scan_start",
      "symbol": "ALL"
@@ -1314,6 +1299,11 @@
     {
      "ts": "2026-10-13T14:12:19.190550-04:00",
      "event": "scan_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T14:41:24.240831-04:00",
+     "event": "fill_pass",
      "symbol": "ALL"
     }
    ]
@@ -3106,12 +3096,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T17:48:07.608555+00:00",
-     "event": "washout_signal",
-     "symbol": "OUST",
-     "ref_px": 37.27
-    },
-    {
      "ts": "2026-10-13T17:48:38.626929+00:00",
      "event": "deferred_buy_delay",
      "symbol": "OUST",
@@ -3175,6 +3159,12 @@
      "ts": "2026-10-13T17:51:07.325110+00:00",
      "event": "earnings_unknown_skip",
      "symbol": "MU"
+    },
+    {
+     "ts": "2026-10-13T18:43:23.161351+00:00",
+     "event": "washout_signal",
+     "symbol": "AEHR",
+     "ref_px": 78.18
     }
    ]
   },
@@ -4720,17 +4710,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T14:38:07.039184-04:00",
+  "updated_et": "2026-10-13T14:43:10.332915-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T17:13:00.633926+00:00",
-   "equity": "100099.5",
-   "day_pl": -1.0,
-   "day_pl_pct": -0.000998996009010944
-  },
   {
    "ts_utc": "2026-10-12T17:17:49.510743+00:00",
    "equity": "100099.5",
@@ -5444,6 +5428,12 @@
    "equity": "100073.31",
    "day_pl": -25.19000000000233,
    "day_pl_pct": -0.025165212265920396
+  },
+  {
+   "ts_utc": "2026-10-13T18:43:10.332915+00:00",
+   "equity": "100073.31",
+   "day_pl": -25.19000000000233,
+   "day_pl_pct": -0.025165212265920396
   }
  ],
  "benchmark_series": {
@@ -5459,7 +5449,7 @@
    {
     "date": "2026-10-13",
     "equity": 99.97,
-    "spy": 99.94,
+    "spy": 99.96,
     "qqq": 99.51
    }
   ]
