@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-13T18:48:02.545974+00:00",
- "generated_at_et": "2026-10-13T14:48:02.545974-04:00",
+ "generated_at_utc": "2026-10-13T18:52:52.975427+00:00",
+ "generated_at_et": "2026-10-13T14:52:52.975427-04:00",
  "account": {
-  "equity": "100073.31",
+  "equity": "100072.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.23,
-   "unrealized_pl": 7.0,
-   "unrealized_pl_pct": 23.333333333333332,
-   "market_value": "-23",
+   "current": 0.22,
+   "unrealized_pl": 8.0,
+   "unrealized_pl_pct": 26.666666666666668,
+   "market_value": "-22",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -25.19000000000233,
- "day_pl_pct": -0.025165212265920396,
+ "day_pl": -26.19000000000233,
+ "day_pl_pct": -0.026164228235190663,
  "journal_today": {
   "scans": 10,
   "trades": 0
@@ -373,16 +373,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T17:48:11.758595+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-13T17:54:03.629908+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
      "ts": "2026-10-13T17:54:13.452643+00:00",
      "event": "bars_5min_failed",
      "symbol": "POET"
@@ -431,6 +421,16 @@
      "ts": "2026-10-13T18:44:19.285426+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T18:48:32.683796+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T18:49:22.161344+00:00",
+     "event": "bars_5min_failed",
+     "symbol": "ORCL"
     }
    ]
   },
@@ -570,26 +570,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T18:36:33.016142+00:00",
-   "last_exit_scan": "2026-10-13T18:45:48.058810+00:00",
+   "last_exit_scan": "2026-10-13T18:50:53.371962+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T18:36:33.015905+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T18:36:33.015992+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-13T18:36:33.016039+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
     {
      "ts": "2026-10-13T18:36:33.016079+00:00",
      "event": "entry_skipped",
@@ -628,6 +610,18 @@
     },
     {
      "ts": "2026-10-13T18:45:48.110112+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T18:50:53.365954+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T18:50:53.371877+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T18:50:53.413111+00:00",
      "event": "scan_done"
     }
    ]
@@ -716,7 +710,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -1.0
+   "unrealized_pl": 0.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -2284,15 +2278,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T12:49:14.634754+00:00",
-     "event": "chart_gate_release_deferred",
-     "note": "at max hedges; sweep deferred, verdicts stay queued"
-    },
-    {
-     "ts": "2026-10-13T12:49:15.941669+00:00",
-     "event": "vix_read"
-    },
-    {
      "ts": "2026-10-13T13:49:13.173593+00:00",
      "event": "chart_gate_release_deferred",
      "note": "at max hedges; sweep deferred, verdicts stay queued"
@@ -2335,6 +2320,15 @@
     },
     {
      "ts": "2026-10-13T17:49:39.111729+00:00",
+     "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-13T18:49:25.852939+00:00",
+     "event": "chart_gate_release_deferred",
+     "note": "at max hedges; sweep deferred, verdicts stay queued"
+    },
+    {
+     "ts": "2026-10-13T18:49:30.626690+00:00",
      "event": "vix_read"
     }
    ],
@@ -3086,71 +3080,76 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T17:51:07.325110+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "MU"
-    },
-    {
-     "ts": "2026-10-13T18:43:23.161351+00:00",
-     "event": "washout_signal",
-     "symbol": "AEHR",
-     "ref_px": 78.18
-    },
-    {
-     "ts": "2026-10-13T18:44:33.340994+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "AEHR",
-     "note": "buy-delay: AEHR approved 2026-10-13, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T18:44:40.658209+00:00",
-     "event": "lock_busy"
-    },
-    {
-     "ts": "2026-10-13T18:45:08.746297+00:00",
-     "event": "bars_failed",
-     "symbol": "SKYQ"
-    },
-    {
-     "ts": "2026-10-13T18:45:36.121711+00:00",
-     "event": "bars_failed",
-     "symbol": "SHAZ"
-    },
-    {
-     "ts": "2026-10-13T18:45:47.076296+00:00",
-     "event": "washout_signal",
-     "symbol": "SOXL",
-     "ref_px": 128.4
-    },
-    {
-     "ts": "2026-10-13T18:46:51.076470+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "SOXL",
-     "note": "buy-delay: SOXL approved 2026-10-13, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-13T18:46:56.997903+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "WYFI",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-13T18:47:32.440457+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "VELO",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-13T18:47:57.933286+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "SATL",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
      "ts": "2026-10-13T18:48:09.140115+00:00",
      "event": "shadow_below_200dma",
      "symbol": "ASPI",
      "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T18:48:23.750495+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "AXTI",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T18:48:34.414697+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "ARQQ",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T18:48:37.793249+00:00",
+     "event": "washout_signal",
+     "symbol": "OUST",
+     "ref_px": 37.27
+    },
+    {
+     "ts": "2026-10-13T18:49:26.717075+00:00",
+     "event": "deferred_green_market",
+     "symbol": "OUST",
+     "note": "market-green gate: QQQ/SPY data unavailable (deferring): QQQ day-so-far -0.55% vs prior close 746.00 (bar 2026-10-13T18:00:00Z) | day-return: no prior close for SPY (deferring)"
+    },
+    {
+     "ts": "2026-10-13T18:49:47.387829+00:00",
+     "event": "washout_signal",
+     "symbol": "ALAB",
+     "ref_px": 324.11
+    },
+    {
+     "ts": "2026-10-13T18:50:49.029000+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "ALAB",
+     "note": "buy-delay: ALAB approved 2026-10-13, 0 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T18:51:08.330039+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "HIVE",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T18:51:17.370927+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "POET",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-13T18:51:23.203693+00:00",
+     "event": "washout_signal",
+     "symbol": "SNDK",
+     "ref_px": 1487.33
+    },
+    {
+     "ts": "2026-10-13T18:52:32.468455+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "SNDK",
+     "note": "buy-delay: SNDK approved 2026-10-13, 0 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-13T18:53:10.181370+00:00",
+     "event": "washout_signal",
+     "symbol": "TSEM",
+     "ref_px": 216.5
     }
    ]
   },
@@ -3462,7 +3461,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100073.31,
+  "equity": 100072.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4696,17 +4695,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T14:48:02.545974-04:00",
+  "updated_et": "2026-10-13T14:52:52.975427-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T17:22:56.401542+00:00",
-   "equity": "100090.5",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-12T17:28:25.456043+00:00",
    "equity": "100090.5",
@@ -5420,26 +5413,14 @@
    "equity": "100073.31",
    "day_pl": -25.19000000000233,
    "day_pl_pct": -0.025165212265920396
+  },
+  {
+   "ts_utc": "2026-10-13T18:52:52.975427+00:00",
+   "equity": "100072.31",
+   "day_pl": -26.19000000000233,
+   "day_pl_pct": -0.026164228235190663
   }
  ],
- "benchmark_series": {
-  "start_date": "2026-10-12",
-  "normalized_start": 100.0,
-  "points": [
-   {
-    "date": "2026-10-12",
-    "equity": 100.0,
-    "spy": 100.0,
-    "qqq": 100.0
-   },
-   {
-    "date": "2026-10-13",
-    "equity": 99.97,
-    "spy": 99.9,
-    "qqq": 99.44
-   }
-  ]
- },
  "regime_history": [
   {
    "date": "2026-10-01",
@@ -5602,11 +5583,11 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -25.19,
+  "day_pl": -26.19,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 1.0
+    "day_pl": 2.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -5618,7 +5599,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 35.81,
+    "day_pl": 33.81,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -5665,7 +5646,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -1.0,
+   "unrealized_pl": 0.0,
    "position_count": 2
   }
  ],
