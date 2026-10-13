@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T17:07:53.459403+00:00",
- "generated_at_et": "2026-10-13T13:07:53.459403-04:00",
+ "generated_at_utc": "2026-10-13T17:12:53.514706+00:00",
+ "generated_at_et": "2026-10-13T13:12:53.514706-04:00",
  "account": {
   "equity": "100040.31",
   "cash": "99306.31",
@@ -98,12 +98,6 @@
   "LASR WATCH conf=8 RECLAIM"
  ],
  "ledger_tail": [
-  {
-   "ts": "2026-10-13T16:39:34Z",
-   "symbol": "LASR",
-   "decision": "SKIP_NO_SIGNAL",
-   "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-  },
   {
    "ts": "2026-10-13T16:39:34Z",
    "symbol": "ARQQ",
@@ -245,6 +239,10 @@
   {
    "ts": "2026-10-13T16:39:34Z",
    "event": "scan_end"
+  },
+  {
+   "ts": "2026-10-13T17:09:10Z",
+   "event": "scan_start"
   }
  ],
  "outcome_stats": {
@@ -295,12 +293,6 @@
     "dry_run": false
    },
    "recent": [
-    {
-     "ts": "2026-10-13T16:39:34Z",
-     "symbol": "ARM",
-     "decision": "SKIP_NO_SIGNAL",
-     "reason": "no swing_confirmed bar among 499 completed bars (tensor-exact)"
-    },
     {
      "ts": "2026-10-13T16:39:34Z",
      "symbol": "KEEL",
@@ -364,6 +356,10 @@
     {
      "ts": "2026-10-13T16:39:34Z",
      "event": "scan_end"
+    },
+    {
+     "ts": "2026-10-13T17:09:10Z",
+     "event": "scan_start"
     }
    ]
   },
@@ -379,16 +375,6 @@
     "unknown": false
    },
    "recent": [
-    {
-     "ts": "2026-10-13T13:48:02.187237+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-13T13:58:07.371548+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
     {
      "ts": "2026-10-13T15:08:03.888883+00:00",
      "event": "lock_busy",
@@ -438,6 +424,16 @@
      "ts": "2026-10-13T17:04:05.199515+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T17:08:08.241355+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T17:08:52.128879+00:00",
+     "event": "bars_5min_failed",
+     "symbol": "PANW"
     }
    ]
   },
@@ -577,20 +573,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T16:24:45.626125+00:00",
-   "last_exit_scan": "2026-10-13T17:05:17.179389+00:00",
+   "last_exit_scan": "2026-10-13T17:11:06.370816+00:00",
    "recent": [
-    {
-     "ts": "2026-10-13T16:50:07.765981+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-13T16:50:07.770359+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-13T16:50:07.783013+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-13T16:55:25.903896+00:00",
      "event": "scan_start"
@@ -625,6 +609,18 @@
     },
     {
      "ts": "2026-10-13T17:05:17.365470+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-13T17:11:06.358799+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-13T17:11:06.369149+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-13T17:11:06.426974+00:00",
      "event": "scan_done"
     }
    ]
@@ -1234,16 +1230,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T15:10:19.948222-04:00",
-     "event": "scan_start",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-12T15:10:32.532364-04:00",
-     "event": "scan_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-12T15:40:25.582371-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
@@ -1291,6 +1277,16 @@
     {
      "ts": "2026-10-13T12:41:28.792301-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T13:10:27.685218-04:00",
+     "event": "scan_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T13:12:10.320449-04:00",
+     "event": "scan_pass",
      "symbol": "ALL"
     }
    ]
@@ -1405,16 +1401,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T15:11:14.518234-04:00",
-     "event": "scan_start",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-12T15:11:31.950422-04:00",
-     "event": "scan_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T10:01:16.101083-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
@@ -1462,6 +1448,16 @@
     {
      "ts": "2026-10-13T13:02:18.164371-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T13:11:06.161128-04:00",
+     "event": "scan_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T13:12:43.621392-04:00",
+     "event": "scan_pass",
      "symbol": "ALL"
     }
    ]
@@ -4575,17 +4571,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T13:07:53.459403-04:00",
+  "updated_et": "2026-10-13T13:12:53.514706-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T13:47:57.999920+00:00",
-   "equity": "100000",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-12T14:03:08.735309+00:00",
    "equity": "100000",
@@ -5299,6 +5289,12 @@
    "equity": "100040.31",
    "day_pl": -58.19000000000233,
    "day_pl_pct": -0.05813273925183927
+  },
+  {
+   "ts_utc": "2026-10-13T17:12:53.514706+00:00",
+   "equity": "100040.31",
+   "day_pl": -58.19000000000233,
+   "day_pl_pct": -0.05813273925183927
   }
  ],
  "benchmark_series": {
@@ -5315,7 +5311,7 @@
     "date": "2026-10-13",
     "equity": 99.94,
     "spy": 99.9,
-    "qqq": 99.51
+    "qqq": 99.49
    }
   ]
  },
