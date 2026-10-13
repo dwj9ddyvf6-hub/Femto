@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-13T17:22:51.236349+00:00",
- "generated_at_et": "2026-10-13T13:22:51.236349-04:00",
+ "generated_at_utc": "2026-10-13T17:28:04.363581+00:00",
+ "generated_at_et": "2026-10-13T13:28:04.363581-04:00",
  "account": {
   "equity": "100040.31",
   "cash": "99306.31",
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.24,
-   "unrealized_pl": 6.0,
-   "unrealized_pl_pct": 20.0,
-   "market_value": "-24",
+   "current": 0.25,
+   "unrealized_pl": 5.0,
+   "unrealized_pl_pct": 16.666666666666664,
+   "market_value": "-25",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -380,11 +380,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T15:28:05.947567+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
      "ts": "2026-10-13T15:38:08.150670+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
@@ -436,6 +431,11 @@
     },
     {
      "ts": "2026-10-13T17:18:18.526354+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-13T17:24:02.456878+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -580,75 +580,75 @@
    "last_exit_scan": "2026-10-13T17:20:14.123102+00:00",
    "recent": [
     {
-     "ts": "2026-10-13T17:22:33.077546+00:00",
+     "ts": "2026-10-13T17:27:29.687952+00:00",
      "event": "entry_skipped",
-     "symbol": "NVDA",
+     "symbol": "META",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:33.084055+00:00",
+     "ts": "2026-10-13T17:27:29.688089+00:00",
      "event": "entry_skipped",
-     "symbol": "NVDA",
+     "symbol": "META",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:33.084329+00:00",
+     "ts": "2026-10-13T17:27:29.688146+00:00",
      "event": "entry_skipped",
-     "symbol": "NVDA",
+     "symbol": "META",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:33.084396+00:00",
+     "ts": "2026-10-13T17:27:29.688191+00:00",
      "event": "entry_skipped",
-     "symbol": "NVDA",
+     "symbol": "META",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:33.084481+00:00",
+     "ts": "2026-10-13T17:27:29.688231+00:00",
      "event": "entry_skipped",
-     "symbol": "NVDA",
+     "symbol": "META",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:33.084527+00:00",
+     "ts": "2026-10-13T17:27:29.688269+00:00",
      "event": "entry_skipped",
-     "symbol": "NVDA",
+     "symbol": "META",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:50.208391+00:00",
+     "ts": "2026-10-13T17:27:29.688306+00:00",
      "event": "entry_skipped",
-     "symbol": "NFLX",
+     "symbol": "META",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:50.219694+00:00",
+     "ts": "2026-10-13T17:27:49.440938+00:00",
      "event": "entry_skipped",
-     "symbol": "NFLX",
+     "symbol": "SMCI",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:50.219875+00:00",
+     "ts": "2026-10-13T17:27:49.441287+00:00",
      "event": "entry_skipped",
-     "symbol": "NFLX",
+     "symbol": "SMCI",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:50.219956+00:00",
+     "ts": "2026-10-13T17:27:49.441572+00:00",
      "event": "entry_skipped",
-     "symbol": "NFLX",
+     "symbol": "SMCI",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:50.220000+00:00",
+     "ts": "2026-10-13T17:28:13.548711+00:00",
      "event": "entry_skipped",
-     "symbol": "NFLX",
+     "symbol": "HOOD",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-13T17:22:50.220042+00:00",
+     "ts": "2026-10-13T17:28:13.562073+00:00",
      "event": "entry_skipped",
-     "symbol": "NFLX",
+     "symbol": "HOOD",
      "reason": "stale_episode"
     }
    ]
@@ -737,7 +737,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -1.0
+   "unrealized_pl": -2.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -2057,11 +2057,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T10:26:50.727570-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T10:27:08.894929-04:00",
      "event": "scoring_start",
      "symbol": "ALL",
@@ -2117,6 +2112,11 @@
     {
      "ts": "2026-10-13T13:04:35.161150-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-13T13:26:31.201973-04:00",
+     "event": "rank_start",
      "symbol": "ALL"
     }
    ]
@@ -2371,10 +2371,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T14:25:10.676962+00:00",
-     "event": "no_buyback_signals"
-    },
-    {
      "ts": "2026-10-13T14:25:20.556729+00:00",
      "event": "unknown_broker_leg",
      "qty": 8.0,
@@ -2435,6 +2431,10 @@
      "event": "known_sibling_leg",
      "qty": -1.0,
      "note": "booked to another sleeve in the desk exposure ledger; not this sleeve's leg"
+    },
+    {
+     "ts": "2026-10-13T17:25:17.319428+00:00",
+     "event": "no_buyback_signals"
     }
    ]
   },
@@ -4599,17 +4599,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T13:22:51.236349-04:00",
+  "updated_et": "2026-10-13T13:28:04.363581-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-12T13:52:58.579837+00:00",
-   "equity": "100000",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-12T15:07:50.052864+00:00",
    "equity": "100179.7",
@@ -5323,6 +5317,12 @@
    "equity": "100040.31",
    "day_pl": -58.19000000000233,
    "day_pl_pct": -0.05813273925183927
+  },
+  {
+   "ts_utc": "2026-10-13T17:28:04.363581+00:00",
+   "equity": "100040.31",
+   "day_pl": -58.19000000000233,
+   "day_pl_pct": -0.05813273925183927
   }
  ],
  "benchmark_series": {
@@ -5338,8 +5338,8 @@
    {
     "date": "2026-10-13",
     "equity": 99.94,
-    "spy": 99.88,
-    "qqq": 99.46
+    "spy": 99.86,
+    "qqq": 99.4
    }
   ]
  },
@@ -5487,7 +5487,7 @@
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": 0.0
+    "day_pl": -1.0
    },
    {
     "symbol": "XSP261016P00756000",
@@ -5499,7 +5499,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 34.81,
+    "day_pl": 35.81,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -5546,7 +5546,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -1.0,
+   "unrealized_pl": -2.0,
    "position_count": 2
   }
  ],
