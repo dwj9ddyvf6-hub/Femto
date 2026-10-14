@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T12:42:54.021096+00:00",
- "generated_at_et": "2026-10-14T08:42:54.021096-04:00",
+ "generated_at_utc": "2026-10-14T12:47:55.511006+00:00",
+ "generated_at_et": "2026-10-14T08:47:55.511006-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -416,26 +416,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T18:49:22.161344+00:00",
-     "event": "bars_5min_failed",
-     "symbol": "ORCL"
-    },
-    {
-     "ts": "2026-10-13T18:53:37.684806+00:00",
-     "event": "bars_5min_failed",
-     "symbol": "AVGO"
-    },
-    {
-     "ts": "2026-10-13T18:54:14.807584+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-13T18:54:16.477033+00:00",
-     "event": "bars_5min_failed",
-     "symbol": "FCEL"
-    },
-    {
      "ts": "2026-10-13T18:58:08.235889+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
@@ -476,6 +456,29 @@
      "event": "orphan_stop",
      "symbol": "TEST",
      "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-14T12:46:58.389678+00:00",
+     "event": "k5_box",
+     "symbol": "AAPL"
+    },
+    {
+     "ts": "2026-10-14T12:47:10.509043+00:00",
+     "event": "deferred_red_day",
+     "symbol": "AAPL",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (AAPL day-so-far 0.78% vs prior close 341.33 (bar 2026-10-14T12:00:00Z))"
+    },
+    {
+     "ts": "2026-10-14T12:47:22.575481+00:00",
+     "event": "deferred_red_day",
+     "symbol": "UBER",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for UBER on 2026-10-14 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-14T12:47:24.795380+00:00",
+     "event": "k5_dead",
+     "symbol": "ABT",
+     "reason": "boxhi_breach"
     }
    ]
   },
@@ -699,12 +702,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-14T12:04:46.543021+00:00",
-     "event": "state_position_quarantined",
-     "reason": "missing_occ_legs",
-     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
-    },
-    {
      "ts": "2026-10-14T12:05:37.777163+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
@@ -766,6 +763,12 @@
     },
     {
      "ts": "2026-10-14T12:39:52.074641+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T12:44:09.308623+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
      "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
@@ -3117,51 +3120,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T10:43:39.120249+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "MU"
-    },
-    {
-     "ts": "2026-10-14T10:43:45.118338+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "USAR",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T11:43:19.558972+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "CRML",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T11:43:22.292264+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "VELO",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T11:43:24.130201+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "SATL",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T11:43:25.095888+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "ASPI",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T11:43:27.428661+00:00",
-     "event": "lock_busy"
-    },
-    {
-     "ts": "2026-10-14T11:43:30.609170+00:00",
-     "event": "washout_signal",
-     "symbol": "OUST",
-     "ref_px": 35.33
-    },
-    {
      "ts": "2026-10-14T11:43:38.405843+00:00",
      "event": "lock_busy"
     },
@@ -3178,6 +3136,53 @@
     },
     {
      "ts": "2026-10-14T11:43:49.516314+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "USAR",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T12:43:44.386797+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "CRML",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T12:43:52.894772+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "VELO",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T12:43:56.749749+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "SATL",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T12:43:59.494509+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "ASPI",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T12:44:14.733740+00:00",
+     "event": "washout_signal",
+     "symbol": "OUST",
+     "ref_px": 35.33
+    },
+    {
+     "ts": "2026-10-14T12:44:52.019066+00:00",
+     "event": "washout_signal",
+     "symbol": "MU",
+     "ref_px": 953.19
+    },
+    {
+     "ts": "2026-10-14T12:44:52.019653+00:00",
+     "event": "earnings_unknown_skip",
+     "symbol": "MU"
+    },
+    {
+     "ts": "2026-10-14T12:45:08.342495+00:00",
      "event": "shadow_below_200dma",
      "symbol": "USAR",
      "note": "shadow candidate only; 200DMA filter kept the entry"
@@ -4728,8 +4733,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T08:42:54.021096-04:00",
-  "stamp": "Wednesday, 8:42 AM ET",
+  "updated_et": "2026-10-14T08:47:55.511006-04:00",
+  "stamp": "Wednesday, 8:47 AM ET",
   "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4746,7 +4751,7 @@
    },
    {
     "heading": "Phase",
-    "body": "No position. Last event 7:46 AM ET: orphan_stop TEST."
+    "body": "No position. Last event 8:47 AM ET: k5_dead ABT."
    },
    {
     "heading": "Legend's EMA",
@@ -4787,12 +4792,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T02:53:12.353938+00:00",
-   "equity": "100074.31",
-   "day_pl": -24.19000000000233,
-   "day_pl_pct": -0.02416619629665013
-  },
   {
    "ts_utc": "2026-10-14T02:57:55.217526+00:00",
    "equity": "100074.31",
@@ -5503,6 +5502,12 @@
   },
   {
    "ts_utc": "2026-10-14T12:42:54.021096+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T12:47:55.511006+00:00",
    "equity": "100074.31",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
