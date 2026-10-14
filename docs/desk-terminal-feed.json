@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T11:22:50.642442+00:00",
- "generated_at_et": "2026-10-14T07:22:50.642442-04:00",
+ "generated_at_utc": "2026-10-14T11:27:45.413058+00:00",
+ "generated_at_et": "2026-10-14T07:27:45.413058-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -697,10 +697,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T21:46:54.764276+00:00",
-     "event": "scan_start"
-    },
-    {
      "ts": "2026-10-12T21:46:54.775204+00:00",
      "event": "settle_scan",
      "note": "nothing due for settlement"
@@ -754,6 +750,12 @@
     },
     {
      "ts": "2026-10-14T05:14:11.624426+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T11:24:06.346073+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
      "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
@@ -2396,12 +2398,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T00:25:27.473842+00:00",
-     "event": "known_sibling_leg",
-     "qty": 1.0,
-     "note": "booked to another sleeve in the desk exposure ledger; not this sleeve's leg"
-    },
-    {
      "ts": "2026-10-14T00:25:27.473884+00:00",
      "event": "known_sibling_leg",
      "qty": -1.0,
@@ -2445,6 +2441,10 @@
     },
     {
      "ts": "2026-10-14T10:25:08.578825+00:00",
+     "event": "no_buyback_signals"
+    },
+    {
+     "ts": "2026-10-14T11:25:21.575985+00:00",
      "event": "no_buyback_signals"
     }
    ]
@@ -4724,8 +4724,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T07:22:50.642442-04:00",
-  "stamp": "Wednesday, 7:22 AM ET",
+  "updated_et": "2026-10-14T07:27:45.413058-04:00",
+  "stamp": "Wednesday, 7:27 AM ET",
   "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4783,12 +4783,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T01:32:54.364953+00:00",
-   "equity": "100074.31",
-   "day_pl": -24.19000000000233,
-   "day_pl_pct": -0.02416619629665013
-  },
   {
    "ts_utc": "2026-10-14T01:34:45.920154+00:00",
    "equity": "100074.31",
@@ -5499,6 +5493,12 @@
   },
   {
    "ts_utc": "2026-10-14T11:22:50.642442+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T11:27:45.413058+00:00",
    "equity": "100074.31",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
