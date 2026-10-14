@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-14T18:42:51.229074+00:00",
- "generated_at_et": "2026-10-14T14:42:51.229074-04:00",
+ "generated_at_utc": "2026-10-14T18:47:50.765955+00:00",
+ "generated_at_et": "2026-10-14T14:47:50.765955-04:00",
  "account": {
-  "equity": "100153.31",
+  "equity": "100157.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -46,10 +46,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.53,
-   "unrealized_pl": 32.0,
-   "unrealized_pl_pct": 152.38095238095238,
-   "market_value": "53",
+   "current": 0.48,
+   "unrealized_pl": 27.0,
+   "unrealized_pl_pct": 128.57142857142858,
+   "market_value": "48",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 1.02,
-   "unrealized_pl": -72.0,
-   "unrealized_pl_pct": -240.0,
-   "market_value": "-102",
+   "current": 0.93,
+   "unrealized_pl": -63.0,
+   "unrealized_pl_pct": -210.0,
+   "market_value": "-93",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": 79.0,
- "day_pl_pct": 0.07894133869121855,
+ "day_pl": 83.0,
+ "day_pl_pct": 0.08293836849836886,
  "journal_today": {
   "scans": 11,
   "trades": 0
@@ -613,20 +613,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-14T18:24:17.020956+00:00",
-   "last_exit_scan": "2026-10-14T18:40:49.902695+00:00",
+   "last_exit_scan": "2026-10-14T18:45:32.174344+00:00",
    "recent": [
-    {
-     "ts": "2026-10-14T18:25:55.990903+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-14T18:25:55.994777+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-14T18:25:56.015207+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-14T18:30:09.478186+00:00",
      "event": "scan_start"
@@ -661,6 +649,18 @@
     },
     {
      "ts": "2026-10-14T18:40:49.929791+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-14T18:45:32.168630+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-14T18:45:32.174255+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-14T18:45:32.193425+00:00",
      "event": "scan_done"
     }
    ]
@@ -770,7 +770,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -40.0
+   "unrealized_pl": -36.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -3117,59 +3117,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T16:47:29.731604+00:00",
-     "event": "washout_signal",
-     "symbol": "MU",
-     "ref_px": 953.19
-    },
-    {
-     "ts": "2026-10-14T16:47:29.732047+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "MU"
-    },
-    {
-     "ts": "2026-10-14T16:47:41.902714+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "USAR",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T17:44:20.489006+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "CRML",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T17:44:26.914663+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "VELO",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T17:44:29.048206+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "SATL",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T17:44:30.511401+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "ASPI",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T17:44:38.132400+00:00",
-     "event": "washout_signal",
-     "symbol": "OUST",
-     "ref_px": 35.33
-    },
-    {
-     "ts": "2026-10-14T17:44:46.492827+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "OUST",
-     "note": "buy-delay: OUST approved 2026-10-13, 1 of 5 days elapsed"
-    },
-    {
      "ts": "2026-10-14T17:45:08.367959+00:00",
      "event": "washout_signal",
      "symbol": "MU",
@@ -3182,6 +3129,59 @@
     },
     {
      "ts": "2026-10-14T17:45:21.451980+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "USAR",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T18:44:14.318507+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "CRML",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T18:44:17.615988+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "VELO",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T18:44:19.344189+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "SATL",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T18:44:20.257742+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "ASPI",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T18:44:25.038672+00:00",
+     "event": "washout_signal",
+     "symbol": "OUST",
+     "ref_px": 35.33
+    },
+    {
+     "ts": "2026-10-14T18:44:32.949515+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "OUST",
+     "note": "buy-delay: OUST approved 2026-10-13, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T18:44:45.674670+00:00",
+     "event": "washout_signal",
+     "symbol": "MU",
+     "ref_px": 953.19
+    },
+    {
+     "ts": "2026-10-14T18:44:45.675199+00:00",
+     "event": "earnings_unknown_skip",
+     "symbol": "MU"
+    },
+    {
+     "ts": "2026-10-14T18:44:51.564585+00:00",
      "event": "shadow_below_200dma",
      "symbol": "USAR",
      "note": "shadow candidate only; 200DMA filter kept the entry"
@@ -3523,7 +3523,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100153.31,
+  "equity": 100157.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4758,17 +4758,17 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T14:42:51.229074-04:00",
-  "stamp": "Wednesday, 2:42 PM ET",
-  "headline": "The desk is carrying 3 positions, up $79 on the day, no fresh Tensor signals.",
+  "updated_et": "2026-10-14T14:47:50.765955-04:00",
+  "stamp": "Wednesday, 2:47 PM ET",
+  "headline": "The desk is carrying 3 positions, up $83 on the day, no fresh Tensor signals.",
   "sections": [
    {
     "heading": "Account",
-    "body": "Equity $100,153 \u00b7 buying power $395,225. Day P&L $79 (+0.08%)."
+    "body": "Equity $100,157 \u00b7 buying power $395,225. Day P&L $83 (+0.08%)."
    },
    {
     "heading": "Positions (3)",
-    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 $16 (+1.82%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $1 \u00b7 $32 (+152.38%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $1 \u00b7 -$72 (-240.00%)."
+    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 $16 (+1.82%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 $27 (+128.57%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $1 \u00b7 -$63 (-210.00%)."
    },
    {
     "heading": "Tensor",
@@ -4817,12 +4817,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T08:52:48.568828+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T08:57:49.274346+00:00",
    "equity": "100074.31",
@@ -5536,6 +5530,12 @@
    "equity": "100153.31",
    "day_pl": 79.0,
    "day_pl_pct": 0.07894133869121855
+  },
+  {
+   "ts_utc": "2026-10-14T18:47:50.765955+00:00",
+   "equity": "100157.31",
+   "day_pl": 83.0,
+   "day_pl_pct": 0.08293836849836886
   }
  ],
  "regime_history": [
@@ -5749,7 +5749,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": 79.0,
+  "day_pl": 83.0,
   "contributors": [
    {
     "symbol": "VXX261218C00020000",
@@ -5757,11 +5757,11 @@
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": 37.0
+    "day_pl": 32.0
    },
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -82.0
+    "day_pl": -73.0
    },
    {
     "symbol": "BASELINE_DIFF",
@@ -5812,7 +5812,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -40.0,
+   "unrealized_pl": -36.0,
    "position_count": 2
   }
  ],
