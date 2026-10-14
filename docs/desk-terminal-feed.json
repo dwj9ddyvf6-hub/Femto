@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T03:58:02.374117+00:00",
- "generated_at_et": "2026-10-13T23:58:02.374117-04:00",
+ "generated_at_utc": "2026-10-14T04:02:55.360575+00:00",
+ "generated_at_et": "2026-10-14T00:02:55.360575-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -20,8 +20,8 @@
   "threshold_pct": 3.0
  },
  "state_meta": {
-  "day_start_equity": 100098.5,
-  "day_start_date": "2026-10-13"
+  "day_start_equity": 100074.31,
+  "day_start_date": "2026-10-14"
  },
  "positions": [
   {
@@ -88,19 +88,13 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -24.19000000000233,
- "day_pl_pct": -0.02416619629665013,
+ "day_pl": 0.0,
+ "day_pl_pct": 0.0,
  "journal_today": {
-  "scans": 14,
+  "scans": 0,
   "trades": 0
  },
- "fresh_signals": [
-  "TEM WATCH conf=7 RECLAIM",
-  "CORZ WATCH conf=7 RECLAIM",
-  "HUT WATCH conf=7 RECLAIM",
-  "ARM WATCH conf=7 RECLAIM",
-  "CVNA WATCH conf=7 RECLAIM"
- ],
+ "fresh_signals": [],
  "ledger_tail": [
   {
    "ts": "2026-10-12T19:39:39Z",
@@ -310,7 +304,7 @@
   {
    "symbol": "VICR",
    "date": "2026-10-20",
-   "in_days": 7,
+   "in_days": 6,
    "blackout": false
   }
  ],
@@ -489,9 +483,9 @@
    "automation": "every 15 min, market hours",
    "enabled": true,
    "setup": {
-    "date": null,
-    "trend_day": null,
-    "no_touch": null
+    "date": "2026-10-14",
+    "trend_day": false,
+    "no_touch": false
    },
    "position": null,
    "protection": {
@@ -499,10 +493,6 @@
     "all_protected": false
    },
    "recent": [
-    {
-     "ts": "2026-09-30T04:08:24.561853+00:00",
-     "event": "setup_eval"
-    },
     {
      "ts": "2026-10-01T04:08:20.832605+00:00",
      "event": "setup_eval"
@@ -545,6 +535,10 @@
     },
     {
      "ts": "2026-10-13T04:02:11.609674+00:00",
+     "event": "setup_eval"
+    },
+    {
+     "ts": "2026-10-14T04:02:21.171270+00:00",
      "event": "setup_eval"
     }
    ]
@@ -2682,75 +2676,76 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T03:03:17.647186+00:00",
+     "ts": "2026-10-14T04:00:27.422183+00:00",
      "event": "deferred_buy_delay",
-     "symbol": "HUT",
-     "note": "buy-delay: HUT approved 2026-10-13, 0 of 5 days elapsed"
+     "symbol": "AAOI",
+     "note": "buy-delay: AAOI approved 2026-10-13, 0 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T03:03:22.929288+00:00",
+     "ts": "2026-10-14T04:00:44.177827+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "WDC",
+     "note": "buy-delay: WDC approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T04:00:59.107871+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "VELO",
+     "note": "buy-delay: VELO approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T04:01:15.569779+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "SATL",
+     "note": "buy-delay: SATL approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T04:01:30.661144+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "ASPI",
+     "note": "buy-delay: ASPI approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T04:01:48.350644+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "IREN",
+     "note": "buy-delay: IREN approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T04:02:09.433933+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "AG",
+     "note": "buy-delay: AG approved 2026-10-12, 1 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T04:02:16.545983+00:00",
      "event": "deferred_red_day",
-     "symbol": "TSEM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (TSEM day-so-far 2.58% vs prior close 216.56 (bar 2026-10-13T19:00:00Z))"
+     "symbol": "AXTI",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (AXTI day-so-far 4.32% vs prior close 62.00 (bar 2026-10-13T19:00:00Z))"
     },
     {
-     "ts": "2026-10-14T03:03:29.232335+00:00",
+     "ts": "2026-10-14T04:02:21.874183+00:00",
      "event": "deferred_red_day",
-     "symbol": "ARM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (ARM day-so-far 0.11% vs prior close 255.19 (bar 2026-10-13T19:00:00Z))"
+     "symbol": "LASR",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (LASR day-so-far 0.63% vs prior close 38.36 (bar 2026-10-13T19:00:00Z))"
     },
     {
-     "ts": "2026-10-14T03:03:44.418057+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "KEEL",
-     "note": "buy-delay: KEEL approved 2026-10-12, 1 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-14T03:03:44.469134+00:00",
-     "event": "entry_skipped_earnings",
-     "symbol": "MU"
-    },
-    {
-     "ts": "2026-10-14T03:03:47.298445+00:00",
+     "ts": "2026-10-14T04:02:28.402227+00:00",
      "event": "deferred_red_day",
-     "symbol": "CLS",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (CLS day-so-far 2.86% vs prior close 347.52 (bar 2026-10-13T19:00:00Z))"
+     "symbol": "ARQQ",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (ARQQ day-so-far 0.57% vs prior close 16.75 (bar 2026-10-13T19:00:00Z))"
     },
     {
-     "ts": "2026-10-14T03:03:58.530752+00:00",
+     "ts": "2026-10-14T04:02:53.973857+00:00",
      "event": "deferred_buy_delay",
-     "symbol": "TE",
-     "note": "buy-delay: TE approved 2026-10-12, 1 of 5 days elapsed"
+     "symbol": "OUST",
+     "note": "buy-delay: OUST approved 2026-10-13, 0 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T03:04:02.114220+00:00",
+     "ts": "2026-10-14T04:02:58.950532+00:00",
      "event": "deferred_red_day",
-     "symbol": "TTMI",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (TTMI day-so-far 5.08% vs prior close 110.42 (bar 2026-10-13T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-14T03:04:05.864304+00:00",
-     "event": "deferred_red_day",
-     "symbol": "CVNA",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (CVNA day-so-far 1.39% vs prior close 59.53 (bar 2026-10-13T19:00:00Z))"
-    },
-    {
-     "ts": "2026-10-14T03:04:21.901698+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "VRT",
-     "note": "buy-delay: VRT approved 2026-10-13, 0 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-14T03:04:37.812789+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "OKLO",
-     "note": "buy-delay: OKLO approved 2026-10-12, 1 of 5 days elapsed"
-    },
-    {
-     "ts": "2026-10-14T03:04:56.047858+00:00",
-     "event": "deferred_buy_delay",
-     "symbol": "USAR",
-     "note": "buy-delay: USAR approved 2026-10-12, 1 of 5 days elapsed"
+     "symbol": "ALAB",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (ALAB day-so-far 0.39% vs prior close 324.04 (bar 2026-10-13T19:00:00Z))"
     }
    ]
   },
@@ -3499,65 +3494,65 @@
   "best_in_regime": []
  },
  "market_context": {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "stale": false,
   "age_days": 0,
   "regime": "UPTREND",
-  "qqq_close": 746.04,
-  "qqq_sma50": 725.68,
-  "slope20_pct": 5.2,
+  "qqq_close": 743.57,
+  "qqq_sma50": 726.55,
+  "slope20_pct": 5.54,
   "spy_agrees": true,
   "sectors": {
    "XLK": {
-    "ret20_pct": 6.56,
+    "ret20_pct": 6.82,
     "tag": "TAILWIND"
    },
    "XLF": {
-    "ret20_pct": -3.47,
+    "ret20_pct": -3.57,
     "tag": "HEADWIND"
    },
    "XLE": {
-    "ret20_pct": 2.29,
+    "ret20_pct": 1.93,
     "tag": "TAILWIND"
    },
    "XLV": {
-    "ret20_pct": 2.53,
-    "tag": "TAILWIND"
+    "ret20_pct": 1.19,
+    "tag": "NEUTRAL"
    },
    "XLI": {
-    "ret20_pct": -0.46,
+    "ret20_pct": -0.11,
     "tag": "NEUTRAL"
    },
    "XLU": {
-    "ret20_pct": -0.45,
+    "ret20_pct": 1.33,
     "tag": "NEUTRAL"
    },
    "XLY": {
-    "ret20_pct": -0.51,
-    "tag": "NEUTRAL"
+    "ret20_pct": 1.33,
+    "tag": "TAILWIND"
    },
    "XLP": {
-    "ret20_pct": -0.01,
+    "ret20_pct": 0.55,
     "tag": "NEUTRAL"
    },
    "XLC": {
-    "ret20_pct": -3.15,
+    "ret20_pct": -1.53,
     "tag": "HEADWIND"
    },
    "XLB": {
-    "ret20_pct": -2.08,
+    "ret20_pct": -1.99,
     "tag": "HEADWIND"
    },
    "XLRE": {
-    "ret20_pct": -2.78,
+    "ret20_pct": -2.88,
     "tag": "HEADWIND"
    },
    "SOXX": {
-    "ret20_pct": 9.54,
+    "ret20_pct": 9.03,
     "tag": "TAILWIND"
    },
    "XRT": {
-    "ret20_pct": -1.6,
+    "ret20_pct": 1.33,
     "tag": "NEUTRAL"
    }
   },
@@ -3566,14 +3561,14 @@
    "nearest": {
     "name": "CPI release",
     "date": "2026-10-14",
-    "days_away": 1
+    "days_away": 0
    }
   },
-  "news_active_symbols": 2
+  "news_active_symbols": 3
  },
  "spy_gamma": {
   "date": "2026-10-13",
-  "stale": false,
+  "stale": true,
   "squeezemetrics": {
    "gex_usd": 7337355421.6900015,
    "dix": 0.4531153374327204,
@@ -4725,17 +4720,65 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T23:58:02.374117-04:00",
-  "headline": "\u2014",
-  "sections": []
+  "updated_et": "2026-10-14T00:02:55.360575-04:00",
+  "stamp": "Wednesday, 12:02 AM ET",
+  "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
+  "sections": [
+   {
+    "heading": "Account",
+    "body": "Equity $100,074 \u00b7 buying power $395,225. Day P&L $0 (0.00%)."
+   },
+   {
+    "heading": "Positions (3)",
+    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$104 (-11.82%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$9 (-42.86%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 $10 (+33.33%)."
+   },
+   {
+    "heading": "Tensor",
+    "body": "No fresh signals. Engine v625, byte-exact. No Tensor positions right now."
+   },
+   {
+    "heading": "Phase",
+    "body": "No position. Last event 3:58 PM ET: lock_busy."
+   },
+   {
+    "heading": "Legend's EMA",
+    "body": "Flat. Setup: no trend day."
+   },
+   {
+    "heading": "Morning Dip",
+    "body": "Flat \u2014 outside the morning window."
+   },
+   {
+    "heading": "Bilbo Box Options",
+    "body": "Flat \u2014 no qualifying breakouts."
+   },
+   {
+    "heading": "SPX Premium (experimental)",
+    "body": "1 spread open (2026-10-16 761/756)."
+   },
+   {
+    "heading": "Phoenix Breakout",
+    "body": "Flat \u2014 no qualifying breakouts."
+   },
+   {
+    "heading": "Momentum",
+    "body": "Flat \u2014 no qualifying momentum names."
+   },
+   {
+    "heading": "Winner Confluence",
+    "body": "Flat \u2014 no qualifying confluence names."
+   },
+   {
+    "heading": "Beaten-Down",
+    "body": "Flat \u2014 no qualifying beaten-down names."
+   },
+   {
+    "heading": "Risk",
+    "body": "Kill switch armed at -3.0% of baseline equity; not tripped. Earnings within 7 days: VICR (2026-10-20)."
+   }
+  ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T17:43:00.280962+00:00",
-   "equity": "100040.31",
-   "day_pl": -58.19000000000233,
-   "day_pl_pct": -0.05813273925183927
-  },
   {
    "ts_utc": "2026-10-13T17:47:55.726446+00:00",
    "equity": "100040.31",
@@ -5449,6 +5492,12 @@
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-14T04:02:55.360575+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
   }
  ],
  "regime_history": [
@@ -5494,6 +5543,10 @@
   },
   {
    "date": "2026-10-13",
+   "regime": "UPTREND"
+  },
+  {
+   "date": "2026-10-14",
    "regime": "UPTREND"
   }
  ],
@@ -5658,7 +5711,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -24.19,
+  "day_pl": 0.0,
   "contributors": [
    {
     "symbol": "XSP261016P00761000",
@@ -5674,7 +5727,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 34.81,
+    "day_pl": 59.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -5684,31 +5737,31 @@
    "date": "2026-10-14",
    "type": "CPI",
    "name": "CPI release",
-   "in_days": 1
+   "in_days": 0
   },
   {
    "date": "2026-10-28",
    "type": "FOMC",
    "name": "FOMC decision",
-   "in_days": 15
+   "in_days": 14
   },
   {
    "date": "2026-11-10",
    "type": "CPI",
    "name": "CPI release",
-   "in_days": 28
+   "in_days": 27
   },
   {
    "date": "2026-12-09",
    "type": "FOMC",
    "name": "FOMC decision",
-   "in_days": 57
+   "in_days": 56
   },
   {
    "date": "2026-12-10",
    "type": "CPI",
    "name": "CPI release",
-   "in_days": 58
+   "in_days": 57
   }
  ],
  "sleeve_treemap": [
@@ -6304,17 +6357,5 @@
    "zweig_note": "Zweig breadth thrust (10d): 0.47 \u2014 no thrust signal."
   }
  },
- "best_setups": [
-  {
-   "symbol": "TEM",
-   "sleeve": "EMA-VWAP-Options",
-   "status": "RELEASED",
-   "thesis": "VWAP_DEVIATION swing signal \u2014 close -11.49% below 20-day VWAP",
-   "entry": null,
-   "stop": null,
-   "target": null,
-   "qty": null,
-   "read": "PASS \u2014"
-  }
- ]
+ "best_setups": []
 }
