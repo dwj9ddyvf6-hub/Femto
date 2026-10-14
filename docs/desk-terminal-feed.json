@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T12:37:53.902665+00:00",
- "generated_at_et": "2026-10-14T08:37:53.902665-04:00",
+ "generated_at_utc": "2026-10-14T12:42:54.021096+00:00",
+ "generated_at_et": "2026-10-14T08:42:54.021096-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -699,12 +699,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-14T12:04:35.947070+00:00",
-     "event": "state_position_quarantined",
-     "reason": "missing_occ_legs",
-     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
-    },
-    {
      "ts": "2026-10-14T12:04:46.543021+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
@@ -766,6 +760,12 @@
     },
     {
      "ts": "2026-10-14T12:21:33.797729+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T12:39:52.074641+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
      "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
@@ -4728,8 +4728,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T08:37:53.902665-04:00",
-  "stamp": "Wednesday, 8:37 AM ET",
+  "updated_et": "2026-10-14T08:42:54.021096-04:00",
+  "stamp": "Wednesday, 8:42 AM ET",
   "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4787,12 +4787,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T02:47:53.367123+00:00",
-   "equity": "100074.31",
-   "day_pl": -24.19000000000233,
-   "day_pl_pct": -0.02416619629665013
-  },
   {
    "ts_utc": "2026-10-14T02:53:12.353938+00:00",
    "equity": "100074.31",
@@ -5503,6 +5497,12 @@
   },
   {
    "ts_utc": "2026-10-14T12:37:53.902665+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T12:42:54.021096+00:00",
    "equity": "100074.31",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
