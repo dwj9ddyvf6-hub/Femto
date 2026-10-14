@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-14T13:57:50.105938+00:00",
- "generated_at_et": "2026-10-14T09:57:50.105938-04:00",
+ "generated_at_utc": "2026-10-14T14:02:51.217206+00:00",
+ "generated_at_et": "2026-10-14T10:02:51.217206-04:00",
  "account": {
-  "equity": "99979.31",
+  "equity": "99981.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -46,10 +46,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.15,
-   "unrealized_pl": -6.0,
-   "unrealized_pl_pct": -28.57142857142857,
-   "market_value": "15",
+   "current": 0.14,
+   "unrealized_pl": -7.0,
+   "unrealized_pl_pct": -33.33333333333333,
+   "market_value": "14",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.3,
-   "unrealized_pl": 0.0,
-   "unrealized_pl_pct": 0.0,
-   "market_value": "-30",
+   "current": 0.28,
+   "unrealized_pl": 2.0,
+   "unrealized_pl_pct": 6.666666666666667,
+   "market_value": "-28",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -95.0,
- "day_pl_pct": -0.09492945791981978,
+ "day_pl": -93.0,
+ "day_pl_pct": -0.09293094301624463,
  "journal_today": {
   "scans": 1,
   "trades": 0
@@ -416,11 +416,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T19:58:09.074715+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
      "ts": "2026-10-14T11:46:21.288784+00:00",
      "event": "orphan_stop",
      "symbol": "TEST",
@@ -478,6 +473,11 @@
     },
     {
      "ts": "2026-10-14T13:53:04.217331+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-14T13:58:01.927520+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -619,20 +619,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-13T19:24:07.326595+00:00",
-   "last_exit_scan": "2026-10-14T13:55:07.938393+00:00",
+   "last_exit_scan": "2026-10-14T14:00:19.965052+00:00",
    "recent": [
-    {
-     "ts": "2026-10-14T13:40:28.619665+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-14T13:40:28.621523+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-14T13:40:31.901024+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-14T13:45:22.376205+00:00",
      "event": "scan_start"
@@ -667,6 +655,18 @@
     },
     {
      "ts": "2026-10-14T13:55:07.962348+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-14T14:00:19.957370+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-14T14:00:19.964955+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-14T14:00:19.983111+00:00",
      "event": "scan_done"
     }
    ]
@@ -776,7 +776,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -6.0
+   "unrealized_pl": -5.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -1456,11 +1456,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T13:02:18.164371-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T13:11:06.161128-04:00",
      "event": "scan_start",
      "symbol": "ALL"
@@ -1512,6 +1507,11 @@
     },
     {
      "ts": "2026-10-13T19:01:20.238353-04:00",
+     "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-14T10:01:55.695333-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
     }
@@ -2697,75 +2697,75 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T13:01:11.051570+00:00",
+     "ts": "2026-10-14T14:01:17.007564+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "POET",
+     "note": "buy-delay: POET approved 2026-10-12, 2 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T14:01:24.930240+00:00",
+     "event": "deferred_buy_delay",
+     "symbol": "SNDK",
+     "note": "buy-delay: SNDK approved 2026-10-12, 2 of 5 days elapsed"
+    },
+    {
+     "ts": "2026-10-14T14:01:26.697274+00:00",
      "event": "deferred_red_day",
+     "symbol": "TEM",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (TEM day-so-far 1.63% vs prior close 68.24 (bar 2026-10-14T13:00:00Z))"
+    },
+    {
+     "ts": "2026-10-14T14:01:33.644867+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "CORZ",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for CORZ on 2026-10-14 yet (deferring))"
+     "note": "buy-delay: CORZ approved 2026-10-12, 2 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T13:01:16.177925+00:00",
-     "event": "deferred_red_day",
+     "ts": "2026-10-14T14:01:41.291735+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "HUT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for HUT on 2026-10-14 yet (deferring))"
+     "note": "buy-delay: HUT approved 2026-10-13, 1 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T13:01:22.455523+00:00",
-     "event": "deferred_red_day",
+     "ts": "2026-10-14T14:01:50.921588+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "TSEM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for TSEM on 2026-10-14 yet (deferring))"
+     "note": "buy-delay: TSEM approved 2026-10-13, 1 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T13:01:30.344023+00:00",
-     "event": "deferred_red_day",
+     "ts": "2026-10-14T14:01:59.905648+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "ARM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for ARM on 2026-10-14 yet (deferring))"
+     "note": "buy-delay: ARM approved 2026-10-12, 2 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T13:01:35.061586+00:00",
-     "event": "deferred_red_day",
+     "ts": "2026-10-14T14:02:08.846644+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "KEEL",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for KEEL on 2026-10-14 yet (deferring))"
+     "note": "buy-delay: KEEL approved 2026-10-12, 2 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T13:01:35.129061+00:00",
+     "ts": "2026-10-14T14:02:08.866805+00:00",
      "event": "entry_skipped_earnings",
      "symbol": "MU"
     },
     {
-     "ts": "2026-10-14T13:01:40.862647+00:00",
-     "event": "deferred_red_day",
+     "ts": "2026-10-14T14:02:23.656010+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "TE",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for TE on 2026-10-14 yet (deferring))"
+     "note": "buy-delay: TE approved 2026-10-12, 2 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T13:01:46.087702+00:00",
-     "event": "deferred_red_day",
+     "ts": "2026-10-14T14:02:35.099702+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "TTMI",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for TTMI on 2026-10-14 yet (deferring))"
+     "note": "buy-delay: TTMI approved 2026-10-13, 1 of 5 days elapsed"
     },
     {
-     "ts": "2026-10-14T13:01:53.232128+00:00",
-     "event": "deferred_red_day",
+     "ts": "2026-10-14T14:02:48.246206+00:00",
+     "event": "deferred_buy_delay",
      "symbol": "CVNA",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for CVNA on 2026-10-14 yet (deferring))"
-    },
-    {
-     "ts": "2026-10-14T13:01:59.830318+00:00",
-     "event": "deferred_red_day",
-     "symbol": "VRT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for VRT on 2026-10-14 yet (deferring))"
-    },
-    {
-     "ts": "2026-10-14T13:02:04.629553+00:00",
-     "event": "deferred_red_day",
-     "symbol": "OKLO",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for OKLO on 2026-10-14 yet (deferring))"
-    },
-    {
-     "ts": "2026-10-14T13:02:10.034459+00:00",
-     "event": "deferred_red_day",
-     "symbol": "USAR",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for USAR on 2026-10-14 yet (deferring))"
+     "note": "buy-delay: CVNA approved 2026-10-13, 1 of 5 days elapsed"
     }
    ]
   },
@@ -3493,7 +3493,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 99979.31,
+  "equity": 99981.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4728,17 +4728,17 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T09:57:50.105938-04:00",
-  "stamp": "Wednesday, 9:57 AM ET",
-  "headline": "The desk is carrying 3 positions, down $95 on the day, no fresh Tensor signals.",
+  "updated_et": "2026-10-14T10:02:51.217206-04:00",
+  "stamp": "Wednesday, 10:02 AM ET",
+  "headline": "The desk is carrying 3 positions, down $93 on the day, no fresh Tensor signals.",
   "sections": [
    {
     "heading": "Account",
-    "body": "Equity $99,979 \u00b7 buying power $395,225. Day P&L -$95 (-0.09%)."
+    "body": "Equity $99,981 \u00b7 buying power $395,225. Day P&L -$93 (-0.09%)."
    },
    {
     "heading": "Positions (3)",
-    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$192 (-21.82%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$6 (-28.57%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 $0 (0.00%)."
+    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$192 (-21.82%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$7 (-33.33%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 $2 (+6.67%)."
    },
    {
     "heading": "Tensor",
@@ -4746,7 +4746,7 @@
    },
    {
     "heading": "Phase",
-    "body": "No position. Last event 9:53 AM ET: lock_busy."
+    "body": "No position. Last event 9:58 AM ET: lock_busy."
    },
    {
     "heading": "Legend's EMA",
@@ -4787,12 +4787,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T04:07:57.154438+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T04:12:51.268273+00:00",
    "equity": "100074.31",
@@ -5506,6 +5500,12 @@
    "equity": "99979.31",
    "day_pl": -95.0,
    "day_pl_pct": -0.09492945791981978
+  },
+  {
+   "ts_utc": "2026-10-14T14:02:51.217206+00:00",
+   "equity": "99981.31",
+   "day_pl": -93.0,
+   "day_pl_pct": -0.09293094301624463
   }
  ],
  "regime_history": [
@@ -5719,15 +5719,15 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -95.0,
+  "day_pl": -93.0,
   "contributors": [
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": -1.0
+    "day_pl": -2.0
    },
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -10.0
+    "day_pl": -8.0
    },
    {
     "symbol": "VXX261218C00020000",
@@ -5735,7 +5735,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 20.0,
+    "day_pl": 21.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -5782,7 +5782,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -6.0,
+   "unrealized_pl": -5.0,
    "position_count": 2
   }
  ],
