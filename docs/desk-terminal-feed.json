@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T20:27:51.070125+00:00",
- "generated_at_et": "2026-10-14T16:27:51.070125-04:00",
+ "generated_at_utc": "2026-10-14T20:32:54.953187+00:00",
+ "generated_at_et": "2026-10-14T16:32:54.953187-04:00",
  "account": {
   "equity": "100157.31",
   "cash": "99306.31",
@@ -555,14 +555,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-14T19:40:17.427643+00:00",
-     "event": "state_container_coerced"
-    },
-    {
-     "ts": "2026-10-14T19:40:17.431730+00:00",
-     "event": "state_container_coerced"
-    },
-    {
      "ts": "2026-10-14T19:41:02.819282+00:00",
      "event": "state_container_coerced"
     },
@@ -600,6 +592,14 @@
     },
     {
      "ts": "2026-10-14T20:14:50.761533+00:00",
+     "event": "state_container_coerced"
+    },
+    {
+     "ts": "2026-10-14T20:30:55.018093+00:00",
+     "event": "state_container_coerced"
+    },
+    {
+     "ts": "2026-10-14T20:30:55.018209+00:00",
      "event": "state_container_coerced"
     }
    ]
@@ -697,12 +697,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-14T14:46:03.837061+00:00",
-     "event": "state_position_quarantined",
-     "reason": "missing_occ_legs",
-     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
-    },
-    {
      "ts": "2026-10-14T14:51:34.408934+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
@@ -764,6 +758,12 @@
     },
     {
      "ts": "2026-10-14T19:44:22.095718+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T20:30:53.792364+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
      "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
@@ -1180,7 +1180,7 @@
     "buys": [],
     "sells": []
    },
-   "last_rank_date": "2026-10-13",
+   "last_rank_date": "2026-10-14",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
@@ -1190,16 +1190,6 @@
     "spy_down_regime": false
    },
    "recent": [
-    {
-     "ts": "2026-10-09T09:02:34.831345-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-09T09:02:36.061814-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-09T10:30:12.942346-04:00",
      "event": "fill_pass",
@@ -1248,6 +1238,16 @@
     {
      "ts": "2026-10-14T10:30:14.652647-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-14T16:30:29.265482-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-14T16:30:46.009190-04:00",
+     "event": "rank_pass",
      "symbol": "ALL"
     }
    ]
@@ -1628,12 +1628,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-09T16:32:59.225535-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "1833 symbols"
-    },
-    {
      "ts": "2026-10-09T16:35:14.348595-04:00",
      "event": "rank_pass",
      "symbol": "ALL"
@@ -1688,6 +1682,11 @@
     {
      "ts": "2026-10-14T16:19:22.056582-04:00",
      "event": "fill_dry_run",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-14T16:32:40.424992-04:00",
+     "event": "rank_start",
      "symbol": "ALL"
     }
    ]
@@ -2158,42 +2157,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T19:32:28.193500+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "WYFI",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T19:32:31.163541+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "AEHR",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T19:32:34.232668+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "POET",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T19:32:37.095205+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "HIVE",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T19:32:40.688789+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "SNDK",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T19:32:44.163840+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "IREN",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
      "ts": "2026-10-14T19:32:48.097689+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "CORZ",
@@ -2226,6 +2189,42 @@
     {
      "ts": "2026-10-14T19:33:06.846252+00:00",
      "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-14T20:32:23.183757+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "ARQQ",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T20:32:29.043986+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "NBIS",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T20:32:34.448662+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "WYFI",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T20:32:40.282616+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "AEHR",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T20:32:49.953776+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "POET",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T20:32:57.854551+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "HIVE",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     }
    ]
   },
@@ -3257,11 +3256,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T15:31:59.241662+00:00",
-     "event": "capitulation_signal",
-     "symbol": "OUST"
-    },
-    {
      "ts": "2026-10-14T15:31:59.256030+00:00",
      "event": "deferred_fear_gate",
      "symbol": "OUST",
@@ -3306,6 +3300,10 @@
     {
      "ts": "2026-10-14T19:32:00.806862+00:00",
      "event": "reconcile_complete"
+    },
+    {
+     "ts": "2026-10-14T20:32:07.681344+00:00",
+     "event": "reconcile_complete"
     }
    ]
   },
@@ -3326,11 +3324,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-14T15:34:24.040417+00:00",
-     "event": "entry_skipped_earnings",
-     "symbol": "MU"
-    },
     {
      "ts": "2026-10-14T15:34:24.042046+00:00",
      "event": "entry_skipped_max_positions",
@@ -3385,6 +3378,10 @@
     },
     {
      "ts": "2026-10-14T19:32:04.424853+00:00",
+     "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-14T20:31:51.955243+00:00",
      "event": "scan_complete"
     }
    ]
@@ -4752,8 +4749,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T16:27:51.070125-04:00",
-  "stamp": "Wednesday, 4:27 PM ET",
+  "updated_et": "2026-10-14T16:32:54.953187-04:00",
+  "stamp": "Wednesday, 4:32 PM ET",
   "headline": "The desk is carrying 3 positions, up $83 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4811,12 +4808,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T10:37:45.955508+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T10:42:50.645589+00:00",
    "equity": "100074.31",
@@ -5527,6 +5518,12 @@
   },
   {
    "ts_utc": "2026-10-14T20:27:51.070125+00:00",
+   "equity": "100157.31",
+   "day_pl": 83.0,
+   "day_pl_pct": 0.08293836849836886
+  },
+  {
+   "ts_utc": "2026-10-14T20:32:54.953187+00:00",
    "equity": "100157.31",
    "day_pl": 83.0,
    "day_pl_pct": 0.08293836849836886
