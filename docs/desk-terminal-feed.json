@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T11:42:50.974475+00:00",
- "generated_at_et": "2026-10-14T07:42:50.974475-04:00",
+ "generated_at_utc": "2026-10-14T11:47:47.941832+00:00",
+ "generated_at_et": "2026-10-14T07:47:47.941832-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -416,16 +416,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T18:44:19.285426+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
-     "ts": "2026-10-13T18:48:32.683796+00:00",
-     "event": "lock_busy",
-     "note": "another phase pass is running; exiting"
-    },
-    {
      "ts": "2026-10-13T18:49:22.161344+00:00",
      "event": "bars_5min_failed",
      "symbol": "ORCL"
@@ -474,6 +464,18 @@
      "ts": "2026-10-13T19:58:09.074715+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-14T11:46:21.288784+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
+    },
+    {
+     "ts": "2026-10-14T11:46:21.292204+00:00",
+     "event": "orphan_stop",
+     "symbol": "TEST",
+     "note": "stop cancel unverified after market exit; reconcile sweep will retry the cancel"
     }
    ]
   },
@@ -697,10 +699,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T21:46:54.775389+00:00",
-     "event": "scan_done"
-    },
-    {
      "ts": "2026-10-13T14:07:11.377199+00:00",
      "event": "scan_start"
     },
@@ -757,6 +755,12 @@
     },
     {
      "ts": "2026-10-14T11:41:05.775670+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T11:45:22.830246+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
      "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
@@ -3110,71 +3114,67 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T09:43:35.743185+00:00",
-     "event": "washout_signal",
-     "symbol": "MU",
-     "ref_px": 953.19
-    },
-    {
-     "ts": "2026-10-14T09:43:35.743769+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "MU"
-    },
-    {
-     "ts": "2026-10-14T09:43:40.708378+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "USAR",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T10:43:18.441140+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "CRML",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T10:43:20.713856+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "VELO",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T10:43:22.403894+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "SATL",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T10:43:23.337555+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "ASPI",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T10:43:27.891612+00:00",
-     "event": "washout_signal",
-     "symbol": "OUST",
-     "ref_px": 35.33
-    },
-    {
-     "ts": "2026-10-14T10:43:27.936121+00:00",
-     "event": "entry_deferred_after_hours",
-     "symbol": "OUST",
-     "note": "RTH entries only; signal stays eligible"
-    },
-    {
-     "ts": "2026-10-14T10:43:39.119642+00:00",
-     "event": "washout_signal",
-     "symbol": "MU",
-     "ref_px": 953.19
-    },
-    {
      "ts": "2026-10-14T10:43:39.120249+00:00",
      "event": "earnings_unknown_skip",
      "symbol": "MU"
     },
     {
      "ts": "2026-10-14T10:43:45.118338+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "USAR",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T11:43:19.558972+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "CRML",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T11:43:22.292264+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "VELO",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T11:43:24.130201+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "SATL",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T11:43:25.095888+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "ASPI",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T11:43:27.428661+00:00",
+     "event": "lock_busy"
+    },
+    {
+     "ts": "2026-10-14T11:43:30.609170+00:00",
+     "event": "washout_signal",
+     "symbol": "OUST",
+     "ref_px": 35.33
+    },
+    {
+     "ts": "2026-10-14T11:43:38.405843+00:00",
+     "event": "lock_busy"
+    },
+    {
+     "ts": "2026-10-14T11:43:43.333621+00:00",
+     "event": "washout_signal",
+     "symbol": "MU",
+     "ref_px": 953.19
+    },
+    {
+     "ts": "2026-10-14T11:43:43.336136+00:00",
+     "event": "earnings_unknown_skip",
+     "symbol": "MU"
+    },
+    {
+     "ts": "2026-10-14T11:43:49.516314+00:00",
      "event": "shadow_below_200dma",
      "symbol": "USAR",
      "note": "shadow candidate only; 200DMA filter kept the entry"
@@ -4725,8 +4725,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T07:42:50.974475-04:00",
-  "stamp": "Wednesday, 7:42 AM ET",
+  "updated_et": "2026-10-14T07:47:47.941832-04:00",
+  "stamp": "Wednesday, 7:47 AM ET",
   "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4743,7 +4743,7 @@
    },
    {
     "heading": "Phase",
-    "body": "No position. Last event 3:58 PM ET: lock_busy."
+    "body": "No position. Last event 7:46 AM ET: orphan_stop TEST."
    },
    {
     "heading": "Legend's EMA",
@@ -4784,18 +4784,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T01:47:50.958752+00:00",
-   "equity": "100074.31",
-   "day_pl": -24.19000000000233,
-   "day_pl_pct": -0.02416619629665013
-  },
-  {
-   "ts_utc": "2026-10-14T01:52:52.977086+00:00",
-   "equity": "100074.31",
-   "day_pl": -24.19000000000233,
-   "day_pl_pct": -0.02416619629665013
-  },
   {
    "ts_utc": "2026-10-14T01:57:46.463636+00:00",
    "equity": "100074.31",
@@ -5500,6 +5488,18 @@
   },
   {
    "ts_utc": "2026-10-14T11:42:50.974475+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T11:46:13.592065+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T11:47:47.941832+00:00",
    "equity": "100074.31",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
