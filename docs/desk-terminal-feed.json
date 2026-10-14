@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T12:02:52.800061+00:00",
- "generated_at_et": "2026-10-14T08:02:52.800061-04:00",
+ "generated_at_utc": "2026-10-14T12:07:54.201558+00:00",
+ "generated_at_et": "2026-10-14T08:07:54.201558-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -699,21 +699,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T14:07:50.372925+00:00",
-     "event": "entry_skipped",
-     "reason": "not_first_trading_day"
-    },
-    {
-     "ts": "2026-10-13T14:07:50.375527+00:00",
-     "event": "scan_done"
-    },
-    {
-     "ts": "2026-10-14T04:24:50.093049+00:00",
-     "event": "state_position_quarantined",
-     "reason": "missing_occ_legs",
-     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
-    },
-    {
      "ts": "2026-10-14T04:25:47.807910+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
@@ -763,6 +748,24 @@
     },
     {
      "ts": "2026-10-14T11:52:08.684846+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T12:04:35.947070+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T12:04:46.543021+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T12:05:37.777163+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
      "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
@@ -2782,62 +2785,62 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T11:03:38.488587+00:00",
+     "ts": "2026-10-14T12:03:47.906621+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "LUNR"
     },
     {
-     "ts": "2026-10-14T11:03:39.307932+00:00",
+     "ts": "2026-10-14T12:03:49.283563+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "MPT"
     },
     {
-     "ts": "2026-10-14T11:03:40.047134+00:00",
+     "ts": "2026-10-14T12:03:50.565342+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "MVIS"
     },
     {
-     "ts": "2026-10-14T11:03:40.781287+00:00",
+     "ts": "2026-10-14T12:03:52.323515+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "BHF"
     },
     {
-     "ts": "2026-10-14T11:03:42.246875+00:00",
+     "ts": "2026-10-14T12:03:54.316849+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "SARO"
     },
     {
-     "ts": "2026-10-14T11:03:42.903799+00:00",
+     "ts": "2026-10-14T12:03:55.472765+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "STWD"
     },
     {
-     "ts": "2026-10-14T11:03:43.636258+00:00",
+     "ts": "2026-10-14T12:03:56.496114+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "USAR"
     },
     {
-     "ts": "2026-10-14T11:03:45.153414+00:00",
+     "ts": "2026-10-14T12:03:58.347031+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "DRNZ"
     },
     {
-     "ts": "2026-10-14T11:03:45.871442+00:00",
+     "ts": "2026-10-14T12:03:59.541456+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "FLG"
     },
     {
-     "ts": "2026-10-14T11:03:50.447639+00:00",
+     "ts": "2026-10-14T12:04:07.635003+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "SIDU"
     },
     {
-     "ts": "2026-10-14T11:03:54.183958+00:00",
+     "ts": "2026-10-14T12:04:13.176122+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "WINA"
     },
     {
-     "ts": "2026-10-14T11:04:02.739795+00:00",
+     "ts": "2026-10-14T12:04:26.169403+00:00",
      "event": "entry_skipped_below_ma200",
      "symbol": "MP"
     }
@@ -2944,23 +2947,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T10:05:14.382573+00:00",
-     "event": "exit_price_unknown",
-     "symbol": "VXX261218C00020000",
-     "note": "no intraday bar; exit check deferred"
-    },
-    {
-     "ts": "2026-10-14T10:05:15.106394+00:00",
-     "event": "exit_price_unknown",
-     "symbol": "XSP261016P00756000",
-     "note": "no intraday bar; exit check deferred"
-    },
-    {
-     "ts": "2026-10-14T10:05:18.318375+00:00",
-     "event": "fear_gate_unknown",
-     "note": "QQQ day return unknown; no entries (day-return: no intraday bar for QQQ on 2026-10-14 yet (deferring))"
-    },
-    {
      "ts": "2026-10-14T10:35:10.669672+00:00",
      "event": "exit_price_unknown",
      "symbol": "VXX261218C00020000",
@@ -3008,6 +2994,23 @@
     },
     {
      "ts": "2026-10-14T11:35:17.554180+00:00",
+     "event": "fear_gate_unknown",
+     "note": "QQQ day return unknown; no entries (day-return: no intraday bar for QQQ on 2026-10-14 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-14T12:05:15.771144+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "VXX261218C00020000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-14T12:05:17.002091+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "XSP261016P00756000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-14T12:05:21.767046+00:00",
      "event": "fear_gate_unknown",
      "note": "QQQ day return unknown; no entries (day-return: no intraday bar for QQQ on 2026-10-14 yet (deferring))"
     }
@@ -4727,8 +4730,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T08:02:52.800061-04:00",
-  "stamp": "Wednesday, 8:02 AM ET",
+  "updated_et": "2026-10-14T08:07:54.201558-04:00",
+  "stamp": "Wednesday, 8:07 AM ET",
   "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4786,12 +4789,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T02:12:49.523388+00:00",
-   "equity": "100074.31",
-   "day_pl": -24.19000000000233,
-   "day_pl_pct": -0.02416619629665013
-  },
   {
    "ts_utc": "2026-10-14T02:17:47.710834+00:00",
    "equity": "100074.31",
@@ -5502,6 +5499,12 @@
   },
   {
    "ts_utc": "2026-10-14T12:02:52.800061+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T12:07:54.201558+00:00",
    "equity": "100074.31",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
