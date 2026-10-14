@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T20:48:15.087491+00:00",
- "generated_at_et": "2026-10-14T16:48:15.087491-04:00",
+ "generated_at_utc": "2026-10-14T20:52:51.269075+00:00",
+ "generated_at_et": "2026-10-14T16:52:51.269075-04:00",
  "account": {
   "equity": "100157.31",
   "cash": "99306.31",
@@ -1537,11 +1537,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T10:50:18.811788-04:00",
-     "event": "fill_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-12T16:50:09.745444-04:00",
      "event": "rank_start",
      "symbol": "ALL"
@@ -1599,6 +1594,11 @@
     {
      "ts": "2026-10-14T10:50:49.285338-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-14T16:50:20.467205-04:00",
+     "event": "rank_start",
      "symbol": "ALL"
     }
    ]
@@ -2326,15 +2326,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T14:49:22.981357+00:00",
-     "event": "chart_gate_release_deferred",
-     "note": "at max hedges; sweep deferred, verdicts stay queued"
-    },
-    {
-     "ts": "2026-10-14T14:49:23.730050+00:00",
-     "event": "vix_read"
-    },
-    {
      "ts": "2026-10-14T15:49:38.110137+00:00",
      "event": "chart_gate_release_deferred",
      "note": "at max hedges; sweep deferred, verdicts stay queued"
@@ -2377,6 +2368,15 @@
     },
     {
      "ts": "2026-10-14T19:49:33.790345+00:00",
+     "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-14T20:49:34.991657+00:00",
+     "event": "chart_gate_release_deferred",
+     "note": "at max hedges; sweep deferred, verdicts stay queued"
+    },
+    {
+     "ts": "2026-10-14T20:49:35.870917+00:00",
      "event": "vix_read"
     }
    ],
@@ -4750,8 +4750,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T16:48:15.087491-04:00",
-  "stamp": "Wednesday, 4:48 PM ET",
+  "updated_et": "2026-10-14T16:52:51.269075-04:00",
+  "stamp": "Wednesday, 4:52 PM ET",
   "headline": "The desk is carrying 3 positions, up $83 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4809,12 +4809,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T11:07:49.633385+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T11:12:53.499684+00:00",
    "equity": "100074.31",
@@ -5525,6 +5519,12 @@
   },
   {
    "ts_utc": "2026-10-14T20:48:15.087491+00:00",
+   "equity": "100157.31",
+   "day_pl": 83.0,
+   "day_pl_pct": 0.08293836849836886
+  },
+  {
+   "ts_utc": "2026-10-14T20:52:51.269075+00:00",
    "equity": "100157.31",
    "day_pl": 83.0,
    "day_pl_pct": 0.08293836849836886
