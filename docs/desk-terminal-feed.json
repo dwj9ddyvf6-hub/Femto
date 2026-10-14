@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-14T16:28:08.588886+00:00",
- "generated_at_et": "2026-10-14T12:28:08.588886-04:00",
+ "generated_at_utc": "2026-10-14T16:32:54.424204+00:00",
+ "generated_at_et": "2026-10-14T12:32:54.424204-04:00",
  "account": {
-  "equity": "100105.31",
+  "equity": "100104.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -46,10 +46,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.35,
-   "unrealized_pl": 14.0,
-   "unrealized_pl_pct": 66.66666666666666,
-   "market_value": "35",
+   "current": 0.36,
+   "unrealized_pl": 15.0,
+   "unrealized_pl_pct": 71.42857142857143,
+   "market_value": "36",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.69,
-   "unrealized_pl": -39.0,
-   "unrealized_pl_pct": -130.0,
-   "market_value": "-69",
+   "current": 0.7,
+   "unrealized_pl": -40.0,
+   "unrealized_pl_pct": -133.33333333333331,
+   "market_value": "-70",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": 31.0,
- "day_pl_pct": 0.030976981005414874,
+ "day_pl": 30.0,
+ "day_pl_pct": 0.029977723553627298,
  "journal_today": {
   "scans": 6,
   "trades": 0
@@ -613,26 +613,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-14T16:24:47.608834+00:00",
-   "last_exit_scan": "2026-10-14T16:25:33.124788+00:00",
+   "last_exit_scan": "2026-10-14T16:30:12.949002+00:00",
    "recent": [
-    {
-     "ts": "2026-10-14T16:24:43.424769+00:00",
-     "event": "entry_skipped",
-     "symbol": "HOOD",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-14T16:24:47.606893+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
-    {
-     "ts": "2026-10-14T16:24:47.607121+00:00",
-     "event": "entry_skipped",
-     "symbol": "COIN",
-     "reason": "stale_episode"
-    },
     {
      "ts": "2026-10-14T16:24:47.607196+00:00",
      "event": "entry_skipped",
@@ -677,6 +659,18 @@
     },
     {
      "ts": "2026-10-14T16:25:33.158852+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-14T16:30:12.934497+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-14T16:30:12.948881+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-14T16:30:12.994410+00:00",
      "event": "scan_done"
     }
    ]
@@ -2176,42 +2170,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T15:32:44.950426+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "WYFI",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T15:32:54.976406+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "AEHR",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T15:33:02.946881+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "POET",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T15:33:12.108548+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "HIVE",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T15:33:21.375326+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "SNDK",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
-     "ts": "2026-10-14T15:33:31.992297+00:00",
-     "event": "iv_rank_cold_start",
-     "symbol": "IREN",
-     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
-    },
-    {
      "ts": "2026-10-14T15:33:39.181454+00:00",
      "event": "iv_rank_cold_start",
      "symbol": "CORZ",
@@ -2244,6 +2202,42 @@
     {
      "ts": "2026-10-14T15:34:10.950312+00:00",
      "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-14T16:32:20.946816+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "ARQQ",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T16:32:27.646881+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "NBIS",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T16:32:34.105020+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "WYFI",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T16:32:40.439137+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "AEHR",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T16:32:51.803113+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "POET",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
+    },
+    {
+     "ts": "2026-10-14T16:33:04.732614+00:00",
+     "event": "iv_rank_cold_start",
+     "symbol": "HIVE",
+     "note": "entries paused until the IV history store reaches the cold-start floor (fail-closed on the measurement)"
     }
    ]
   },
@@ -3246,14 +3240,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T09:31:53.761006+00:00",
-     "event": "reconcile_complete"
-    },
-    {
-     "ts": "2026-10-14T10:32:04.083131+00:00",
-     "event": "reconcile_complete"
-    },
-    {
      "ts": "2026-10-14T11:31:49.877275+00:00",
      "event": "reconcile_complete"
     },
@@ -3295,6 +3281,14 @@
     {
      "ts": "2026-10-14T15:32:09.437596+00:00",
      "event": "reconcile_complete"
+    },
+    {
+     "ts": "2026-10-14T16:32:04.942764+00:00",
+     "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-14T16:32:11.903218+00:00",
+     "event": "reconcile_complete"
     }
    ]
   },
@@ -3315,18 +3309,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-14T15:34:24.032357+00:00",
-     "event": "entry_skipped_max_positions",
-     "symbol": "CORZ",
-     "note": "cap 5 reached"
-    },
-    {
-     "ts": "2026-10-14T15:34:24.033145+00:00",
-     "event": "entry_skipped_max_positions",
-     "symbol": "HUT",
-     "note": "cap 5 reached"
-    },
     {
      "ts": "2026-10-14T15:34:24.035570+00:00",
      "event": "entry_skipped_max_positions",
@@ -3382,6 +3364,16 @@
     },
     {
      "ts": "2026-10-14T15:34:24.069352+00:00",
+     "event": "scan_complete"
+    },
+    {
+     "ts": "2026-10-14T16:31:53.390770+00:00",
+     "event": "chart_gate_dropped",
+     "symbol": "AG",
+     "note": "Midna FAIL: no reason"
+    },
+    {
+     "ts": "2026-10-14T16:31:53.461773+00:00",
      "event": "scan_complete"
     }
    ]
@@ -3514,7 +3506,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100105.31,
+  "equity": 100104.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4749,17 +4741,17 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T12:28:08.588886-04:00",
-  "stamp": "Wednesday, 12:28 PM ET",
-  "headline": "The desk is carrying 3 positions, up $31 on the day, no fresh Tensor signals.",
+  "updated_et": "2026-10-14T12:32:54.424204-04:00",
+  "stamp": "Wednesday, 12:32 PM ET",
+  "headline": "The desk is carrying 3 positions, up $30 on the day, no fresh Tensor signals.",
   "sections": [
    {
     "heading": "Account",
-    "body": "Equity $100,105 \u00b7 buying power $395,225. Day P&L $31 (+0.03%)."
+    "body": "Equity $100,104 \u00b7 buying power $395,225. Day P&L $30 (+0.03%)."
    },
    {
     "heading": "Positions (3)",
-    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$48 (-5.45%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 $14 (+66.67%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $1 \u00b7 -$39 (-130.00%)."
+    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$48 (-5.45%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 $15 (+71.43%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $1 \u00b7 -$40 (-133.33%)."
    },
    {
     "heading": "Tensor",
@@ -4808,12 +4800,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T06:37:56.409309+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T06:42:46.778946+00:00",
    "equity": "100074.31",
@@ -5527,6 +5513,12 @@
    "equity": "100105.31",
    "day_pl": 31.0,
    "day_pl_pct": 0.030976981005414874
+  },
+  {
+   "ts_utc": "2026-10-14T16:32:54.424204+00:00",
+   "equity": "100104.31",
+   "day_pl": 30.0,
+   "day_pl_pct": 0.029977723553627298
   }
  ],
  "regime_history": [
@@ -5740,7 +5732,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": 31.0,
+  "day_pl": 30.0,
   "contributors": [
    {
     "symbol": "VXX261218C00020000",
@@ -5748,15 +5740,15 @@
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": 19.0
+    "day_pl": 20.0
    },
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -49.0
+    "day_pl": -50.0
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 21.0,
+    "day_pl": 20.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
