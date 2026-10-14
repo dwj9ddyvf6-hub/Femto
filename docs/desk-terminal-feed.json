@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T08:52:48.568828+00:00",
- "generated_at_et": "2026-10-14T04:52:48.568828-04:00",
+ "generated_at_utc": "2026-10-14T08:57:49.274346+00:00",
+ "generated_at_et": "2026-10-14T04:57:49.274346-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -2687,24 +2687,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T07:58:23.467413+00:00",
-     "event": "deferred_red_day",
-     "symbol": "CORZ",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for CORZ on 2026-10-14 yet (deferring))"
-    },
-    {
-     "ts": "2026-10-14T07:58:24.902129+00:00",
-     "event": "deferred_red_day",
-     "symbol": "HUT",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for HUT on 2026-10-14 yet (deferring))"
-    },
-    {
-     "ts": "2026-10-14T07:58:26.559512+00:00",
-     "event": "deferred_red_day",
-     "symbol": "TSEM",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for TSEM on 2026-10-14 yet (deferring))"
-    },
-    {
      "ts": "2026-10-14T07:58:27.955644+00:00",
      "event": "deferred_red_day",
      "symbol": "ARM",
@@ -2756,6 +2738,24 @@
      "event": "deferred_red_day",
      "symbol": "USAR",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for USAR on 2026-10-14 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-14T08:57:47.710044+00:00",
+     "event": "deferred_red_day",
+     "symbol": "AEHR",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for AEHR on 2026-10-14 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-14T08:57:49.249810+00:00",
+     "event": "deferred_red_day",
+     "symbol": "NBIS",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for NBIS on 2026-10-14 yet (deferring))"
+    },
+    {
+     "ts": "2026-10-14T08:57:50.880649+00:00",
+     "event": "deferred_red_day",
+     "symbol": "SKYQ",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for SKYQ on 2026-10-14 yet (deferring))"
     }
    ]
   },
@@ -3026,51 +3026,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T06:55:26.937561+00:00",
-     "event": "red_day_signal",
-     "symbol": "NBIS",
-     "ref_px": 207.4
-    },
-    {
-     "ts": "2026-10-14T06:55:28.336020+00:00",
-     "event": "spread_gate_fail",
-     "symbol": "NBIS"
-    },
-    {
-     "ts": "2026-10-14T06:55:28.344035+00:00",
-     "event": "red_day_signal",
-     "symbol": "VELO",
-     "ref_px": 8.08
-    },
-    {
-     "ts": "2026-10-14T06:55:29.069712+00:00",
-     "event": "chain_empty",
-     "symbol": "VELO",
-     "note": "no put contracts in the DTE window"
-    },
-    {
-     "ts": "2026-10-14T07:55:15.172956+00:00",
-     "event": "red_day_signal",
-     "symbol": "AEHR",
-     "ref_px": 77.05
-    },
-    {
-     "ts": "2026-10-14T07:55:16.655416+00:00",
-     "event": "spread_gate_fail",
-     "symbol": "AEHR"
-    },
-    {
-     "ts": "2026-10-14T07:55:16.660751+00:00",
-     "event": "red_day_signal",
-     "symbol": "AXTI",
-     "ref_px": 61.08
-    },
-    {
-     "ts": "2026-10-14T07:55:18.058361+00:00",
-     "event": "spread_gate_fail",
-     "symbol": "AXTI"
-    },
-    {
      "ts": "2026-10-14T07:55:18.074892+00:00",
      "event": "red_day_signal",
      "symbol": "NBIS",
@@ -3089,6 +3044,51 @@
     },
     {
      "ts": "2026-10-14T07:55:20.028101+00:00",
+     "event": "chain_empty",
+     "symbol": "VELO",
+     "note": "no put contracts in the DTE window"
+    },
+    {
+     "ts": "2026-10-14T08:55:14.681019+00:00",
+     "event": "red_day_signal",
+     "symbol": "AEHR",
+     "ref_px": 77.05
+    },
+    {
+     "ts": "2026-10-14T08:55:16.154824+00:00",
+     "event": "spread_gate_fail",
+     "symbol": "AEHR"
+    },
+    {
+     "ts": "2026-10-14T08:55:16.162288+00:00",
+     "event": "red_day_signal",
+     "symbol": "AXTI",
+     "ref_px": 61.08
+    },
+    {
+     "ts": "2026-10-14T08:55:17.319310+00:00",
+     "event": "spread_gate_fail",
+     "symbol": "AXTI"
+    },
+    {
+     "ts": "2026-10-14T08:55:17.335101+00:00",
+     "event": "red_day_signal",
+     "symbol": "NBIS",
+     "ref_px": 207.4
+    },
+    {
+     "ts": "2026-10-14T08:55:18.484544+00:00",
+     "event": "spread_gate_fail",
+     "symbol": "NBIS"
+    },
+    {
+     "ts": "2026-10-14T08:55:18.495744+00:00",
+     "event": "red_day_signal",
+     "symbol": "VELO",
+     "ref_px": 8.08
+    },
+    {
+     "ts": "2026-10-14T08:55:19.074918+00:00",
      "event": "chain_empty",
      "symbol": "VELO",
      "note": "no put contracts in the DTE window"
@@ -4726,8 +4726,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T04:52:48.568828-04:00",
-  "stamp": "Wednesday, 4:52 AM ET",
+  "updated_et": "2026-10-14T04:57:49.274346-04:00",
+  "stamp": "Wednesday, 4:57 AM ET",
   "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4785,12 +4785,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T23:02:48.553080+00:00",
-   "equity": "100074.31",
-   "day_pl": -24.19000000000233,
-   "day_pl_pct": -0.02416619629665013
-  },
   {
    "ts_utc": "2026-10-13T23:07:49.232593+00:00",
    "equity": "100074.31",
@@ -5501,6 +5495,12 @@
   },
   {
    "ts_utc": "2026-10-14T08:52:48.568828+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T08:57:49.274346+00:00",
    "equity": "100074.31",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
