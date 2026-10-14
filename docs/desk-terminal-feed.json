@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T22:47:53.104796+00:00",
- "generated_at_et": "2026-10-14T18:47:53.104796-04:00",
+ "generated_at_utc": "2026-10-14T22:52:55.565299+00:00",
+ "generated_at_et": "2026-10-14T18:52:55.565299-04:00",
  "account": {
   "equity": "100157.31",
   "cash": "99306.31",
@@ -2326,15 +2326,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T16:49:11.707171+00:00",
-     "event": "chart_gate_release_deferred",
-     "note": "at max hedges; sweep deferred, verdicts stay queued"
-    },
-    {
-     "ts": "2026-10-14T16:49:12.561200+00:00",
-     "event": "vix_read"
-    },
-    {
      "ts": "2026-10-14T17:49:34.476531+00:00",
      "event": "chart_gate_release_deferred",
      "note": "at max hedges; sweep deferred, verdicts stay queued"
@@ -2377,6 +2368,15 @@
     },
     {
      "ts": "2026-10-14T21:49:28.020570+00:00",
+     "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-14T22:49:13.532990+00:00",
+     "event": "chart_gate_release_deferred",
+     "note": "at max hedges; sweep deferred, verdicts stay queued"
+    },
+    {
+     "ts": "2026-10-14T22:49:14.377237+00:00",
      "event": "vix_read"
     }
    ],
@@ -4735,8 +4735,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T18:47:53.104796-04:00",
-  "stamp": "Wednesday, 6:47 PM ET",
+  "updated_et": "2026-10-14T18:52:55.565299-04:00",
+  "stamp": "Wednesday, 6:52 PM ET",
   "headline": "The desk is carrying 3 positions, up $83 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4794,12 +4794,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T13:12:48.335946+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T13:17:47.980750+00:00",
    "equity": "100074.31",
@@ -5510,6 +5504,12 @@
   },
   {
    "ts_utc": "2026-10-14T22:47:53.104796+00:00",
+   "equity": "100157.31",
+   "day_pl": 83.0,
+   "day_pl_pct": 0.08293836849836886
+  },
+  {
+   "ts_utc": "2026-10-14T22:52:55.565299+00:00",
    "equity": "100157.31",
    "day_pl": 83.0,
    "day_pl_pct": 0.08293836849836886
@@ -6372,17 +6372,5 @@
    "zweig_note": "Zweig breadth thrust (10d): 0.49 \u2014 no thrust signal."
   }
  },
- "best_setups": [
-  {
-   "symbol": "AXTI",
-   "sleeve": "EMA-VWAP-Options",
-   "status": "RELEASED",
-   "thesis": "VWAP_DEVIATION swing signal \u2014 close -12.7% below 20-day VWAP",
-   "entry": null,
-   "stop": null,
-   "target": null,
-   "qty": null,
-   "read": "PASS \u2014"
-  }
- ]
+ "best_setups": []
 }
