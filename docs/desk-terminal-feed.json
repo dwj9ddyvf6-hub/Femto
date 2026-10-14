@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T11:37:47.841960+00:00",
- "generated_at_et": "2026-10-14T07:37:47.841960-04:00",
+ "generated_at_utc": "2026-10-14T11:42:50.974475+00:00",
+ "generated_at_et": "2026-10-14T07:42:50.974475-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -697,11 +697,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T21:46:54.775204+00:00",
-     "event": "settle_scan",
-     "note": "nothing due for settlement"
-    },
-    {
      "ts": "2026-10-12T21:46:54.775389+00:00",
      "event": "scan_done"
     },
@@ -756,6 +751,12 @@
     },
     {
      "ts": "2026-10-14T11:24:06.346073+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T11:41:05.775670+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
      "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
@@ -4724,8 +4725,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T07:37:47.841960-04:00",
-  "stamp": "Wednesday, 7:37 AM ET",
+  "updated_et": "2026-10-14T07:42:50.974475-04:00",
+  "stamp": "Wednesday, 7:42 AM ET",
   "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4783,12 +4784,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T01:43:03.682308+00:00",
-   "equity": "100074.31",
-   "day_pl": -24.19000000000233,
-   "day_pl_pct": -0.02416619629665013
-  },
   {
    "ts_utc": "2026-10-14T01:47:50.958752+00:00",
    "equity": "100074.31",
@@ -5499,6 +5494,12 @@
   },
   {
    "ts_utc": "2026-10-14T11:37:47.841960+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T11:42:50.974475+00:00",
    "equity": "100074.31",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
