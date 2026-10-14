@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T03:42:54.441752+00:00",
- "generated_at_et": "2026-10-13T23:42:54.441752-04:00",
+ "generated_at_utc": "2026-10-14T03:47:52.895511+00:00",
+ "generated_at_et": "2026-10-13T23:47:52.895511-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -3108,59 +3108,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T01:44:05.334040+00:00",
-     "event": "washout_signal",
-     "symbol": "OUST",
-     "ref_px": 35.33
-    },
-    {
-     "ts": "2026-10-14T01:44:40.175017+00:00",
-     "event": "washout_signal",
-     "symbol": "MU",
-     "ref_px": 953.19
-    },
-    {
-     "ts": "2026-10-14T01:44:40.183209+00:00",
-     "event": "earnings_unknown_skip",
-     "symbol": "MU"
-    },
-    {
-     "ts": "2026-10-14T01:44:57.340630+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "USAR",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T02:43:23.730856+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "CRML",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T02:43:27.122536+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "VELO",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T02:43:29.816725+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "SATL",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T02:43:30.880446+00:00",
-     "event": "shadow_below_200dma",
-     "symbol": "ASPI",
-     "note": "shadow candidate only; 200DMA filter kept the entry"
-    },
-    {
-     "ts": "2026-10-14T02:43:36.450017+00:00",
-     "event": "washout_signal",
-     "symbol": "OUST",
-     "ref_px": 35.33
-    },
-    {
      "ts": "2026-10-14T02:43:50.040554+00:00",
      "event": "washout_signal",
      "symbol": "MU",
@@ -3173,6 +3120,59 @@
     },
     {
      "ts": "2026-10-14T02:43:56.956138+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "USAR",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T03:43:37.358715+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "CRML",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T03:43:45.458439+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "VELO",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T03:43:51.419980+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "SATL",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T03:43:53.930566+00:00",
+     "event": "shadow_below_200dma",
+     "symbol": "ASPI",
+     "note": "shadow candidate only; 200DMA filter kept the entry"
+    },
+    {
+     "ts": "2026-10-14T03:44:10.870300+00:00",
+     "event": "washout_signal",
+     "symbol": "OUST",
+     "ref_px": 35.33
+    },
+    {
+     "ts": "2026-10-14T03:44:10.949569+00:00",
+     "event": "entry_deferred_after_hours",
+     "symbol": "OUST",
+     "note": "RTH entries only; signal stays eligible"
+    },
+    {
+     "ts": "2026-10-14T03:44:45.086421+00:00",
+     "event": "washout_signal",
+     "symbol": "MU",
+     "ref_px": 953.19
+    },
+    {
+     "ts": "2026-10-14T03:44:45.099152+00:00",
+     "event": "earnings_unknown_skip",
+     "symbol": "MU"
+    },
+    {
+     "ts": "2026-10-14T03:45:02.917120+00:00",
      "event": "shadow_below_200dma",
      "symbol": "USAR",
      "note": "shadow candidate only; 200DMA filter kept the entry"
@@ -4725,17 +4725,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T23:42:54.441752-04:00",
+  "updated_et": "2026-10-13T23:47:52.895511-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T17:28:04.363581+00:00",
-   "equity": "100040.31",
-   "day_pl": -58.19000000000233,
-   "day_pl_pct": -0.05813273925183927
-  },
   {
    "ts_utc": "2026-10-13T17:33:01.741591+00:00",
    "equity": "100039.31",
@@ -5446,6 +5440,12 @@
   },
   {
    "ts_utc": "2026-10-14T03:42:54.441752+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-14T03:47:52.895511+00:00",
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
