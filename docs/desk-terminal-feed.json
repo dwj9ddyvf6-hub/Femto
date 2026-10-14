@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T00:52:52.492661+00:00",
- "generated_at_et": "2026-10-13T20:52:52.492661-04:00",
+ "generated_at_utc": "2026-10-14T00:57:49.327880+00:00",
+ "generated_at_et": "2026-10-13T20:57:49.327880-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -3023,72 +3023,73 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T23:55:40.760927+00:00",
-     "event": "red_day_signal",
-     "symbol": "AXTI",
-     "ref_px": 61.08
-    },
-    {
-     "ts": "2026-10-13T23:55:42.172323+00:00",
-     "event": "spread_gate_fail",
-     "symbol": "AXTI"
-    },
-    {
-     "ts": "2026-10-13T23:55:42.189712+00:00",
-     "event": "red_day_signal",
-     "symbol": "NBIS",
-     "ref_px": 207.4
-    },
-    {
-     "ts": "2026-10-13T23:55:43.549343+00:00",
+     "ts": "2026-10-14T00:55:37.769498+00:00",
      "event": "spread_gate_fail",
      "symbol": "NBIS"
     },
     {
-     "ts": "2026-10-13T23:55:43.557652+00:00",
+     "ts": "2026-10-14T00:55:37.777015+00:00",
      "event": "red_day_signal",
      "symbol": "SHAZ",
      "ref_px": 35.21
     },
     {
-     "ts": "2026-10-13T23:55:44.556136+00:00",
+     "ts": "2026-10-14T00:55:38.562915+00:00",
      "event": "chain_empty",
      "symbol": "SHAZ",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T23:55:44.567635+00:00",
+     "ts": "2026-10-14T00:55:38.573599+00:00",
      "event": "red_day_signal",
      "symbol": "VELO",
      "ref_px": 8.08
     },
     {
-     "ts": "2026-10-13T23:55:45.376874+00:00",
+     "ts": "2026-10-14T00:55:39.363965+00:00",
      "event": "chain_empty",
      "symbol": "VELO",
      "note": "no put contracts in the DTE window"
     },
     {
-     "ts": "2026-10-13T23:55:45.389957+00:00",
+     "ts": "2026-10-14T00:55:39.375900+00:00",
      "event": "red_day_signal",
      "symbol": "ALAB",
      "ref_px": 318.0
     },
     {
-     "ts": "2026-10-13T23:55:46.872784+00:00",
+     "ts": "2026-10-14T00:55:40.789040+00:00",
      "event": "spread_gate_fail",
      "symbol": "ALAB"
     },
     {
-     "ts": "2026-10-13T23:55:46.878424+00:00",
+     "ts": "2026-10-14T00:55:40.799684+00:00",
      "event": "red_day_signal",
      "symbol": "TE",
      "ref_px": 3.21
     },
     {
-     "ts": "2026-10-13T23:55:48.219795+00:00",
+     "ts": "2026-10-14T00:55:42.101181+00:00",
      "event": "spread_quote_onesided",
      "symbol": "TE"
+    },
+    {
+     "ts": "2026-10-14T00:55:53.030431+00:00",
+     "event": "known_sibling_leg",
+     "qty": 8.0,
+     "note": "booked to another sleeve in the desk exposure ledger; not this sleeve's leg"
+    },
+    {
+     "ts": "2026-10-14T00:55:53.030566+00:00",
+     "event": "known_sibling_leg",
+     "qty": 1.0,
+     "note": "booked to another sleeve in the desk exposure ledger; not this sleeve's leg"
+    },
+    {
+     "ts": "2026-10-14T00:55:53.030631+00:00",
+     "event": "known_sibling_leg",
+     "qty": -1.0,
+     "note": "booked to another sleeve in the desk exposure ledger; not this sleeve's leg"
     }
    ]
   },
@@ -4730,17 +4731,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T20:52:52.492661-04:00",
+  "updated_et": "2026-10-13T20:57:49.327880-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T14:32:56.190825+00:00",
-   "equity": "100024.31",
-   "day_pl": -74.19000000000233,
-   "day_pl_pct": -0.07411699476016356
-  },
   {
    "ts_utc": "2026-10-13T14:37:59.509993+00:00",
    "equity": "100024.31",
@@ -5451,6 +5446,12 @@
   },
   {
    "ts_utc": "2026-10-14T00:52:52.492661+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-14T00:57:49.327880+00:00",
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
