@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T02:33:39.088125+00:00",
- "generated_at_et": "2026-10-13T22:33:39.088125-04:00",
+ "generated_at_utc": "2026-10-14T02:37:55.172554+00:00",
+ "generated_at_et": "2026-10-13T22:37:55.172554-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -2237,11 +2237,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T14:37:15.730549+00:00",
-     "event": "momentum_book_empty",
-     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
-    },
-    {
      "ts": "2026-10-13T15:37:20.335226+00:00",
      "event": "momentum_book_empty",
      "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
@@ -2293,6 +2288,11 @@
     },
     {
      "ts": "2026-10-14T01:37:18.914103+00:00",
+     "event": "momentum_book_empty",
+     "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
+    },
+    {
+     "ts": "2026-10-14T02:37:10.417820+00:00",
      "event": "momentum_book_empty",
      "note": "momentum book missing/empty (post-reset); no entries or rotation exits this pass"
     }
@@ -2934,23 +2934,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T00:35:14.189559+00:00",
-     "event": "exit_price_unknown",
-     "symbol": "VXX261218C00020000",
-     "note": "no intraday bar; exit check deferred"
-    },
-    {
-     "ts": "2026-10-14T00:35:14.827609+00:00",
-     "event": "exit_price_unknown",
-     "symbol": "XSP261016P00756000",
-     "note": "no intraday bar; exit check deferred"
-    },
-    {
-     "ts": "2026-10-14T00:35:17.866088+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.34% vs prior close 746.00 (bar 2026-10-13T20:00:00Z))"
-    },
-    {
      "ts": "2026-10-14T01:05:31.898350+00:00",
      "event": "exit_price_unknown",
      "symbol": "VXX261218C00020000",
@@ -2998,6 +2981,23 @@
     },
     {
      "ts": "2026-10-14T02:05:25.944888+00:00",
+     "event": "no_fear_day",
+     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.34% vs prior close 746.00 (bar 2026-10-13T20:00:00Z))"
+    },
+    {
+     "ts": "2026-10-14T02:35:22.530827+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "VXX261218C00020000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-14T02:35:24.199354+00:00",
+     "event": "exit_price_unknown",
+     "symbol": "XSP261016P00756000",
+     "note": "no intraday bar; exit check deferred"
+    },
+    {
+     "ts": "2026-10-14T02:35:30.984475+00:00",
      "event": "no_fear_day",
      "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -0.34% vs prior close 746.00 (bar 2026-10-13T20:00:00Z))"
     }
@@ -3285,75 +3285,73 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T02:32:53.962830+00:00",
-     "event": "spread_select_none",
-     "symbol": "AXTI",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:32:57.985130+00:00",
-     "event": "spread_select_none",
-     "symbol": "LASR",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:32:59.756779+00:00",
-     "event": "spread_select_none",
-     "symbol": "ARQQ",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:33:04.431442+00:00",
-     "event": "spread_select_none",
-     "symbol": "OUST",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:33:08.832329+00:00",
-     "event": "spread_select_none",
-     "symbol": "ALAB",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:33:13.644936+00:00",
-     "event": "spread_select_none",
-     "symbol": "FCEL",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:33:17.979075+00:00",
-     "event": "spread_select_none",
-     "symbol": "HIVE",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:33:24.255089+00:00",
-     "event": "spread_select_none",
-     "symbol": "POET",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:33:29.911063+00:00",
-     "event": "entry_skipped_sizing",
-     "symbol": "SNDK"
-    },
-    {
-     "ts": "2026-10-14T02:33:34.712981+00:00",
-     "event": "spread_select_none",
-     "symbol": "TEM",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
-     "ts": "2026-10-14T02:33:39.325973+00:00",
-     "event": "spread_select_none",
-     "symbol": "CORZ",
-     "note": "no liquid 14-30 DTE spread passed the module gates"
-    },
-    {
      "ts": "2026-10-14T02:33:44.106925+00:00",
      "event": "spread_select_none",
      "symbol": "HUT",
      "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:33:49.113875+00:00",
+     "event": "spread_select_none",
+     "symbol": "TSEM",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:33:54.542051+00:00",
+     "event": "spread_select_none",
+     "symbol": "ARM",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:34:02.100065+00:00",
+     "event": "spread_select_none",
+     "symbol": "KEEL",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:34:02.113178+00:00",
+     "event": "entry_skipped_earnings",
+     "symbol": "MU"
+    },
+    {
+     "ts": "2026-10-14T02:34:06.286349+00:00",
+     "event": "spread_select_none",
+     "symbol": "CLS",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:34:11.124915+00:00",
+     "event": "spread_select_none",
+     "symbol": "TE",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:34:12.679463+00:00",
+     "event": "spread_select_none",
+     "symbol": "TTMI",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:34:16.155821+00:00",
+     "event": "spread_select_none",
+     "symbol": "CVNA",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:34:18.751252+00:00",
+     "event": "spread_select_none",
+     "symbol": "VRT",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:34:21.902055+00:00",
+     "event": "spread_select_none",
+     "symbol": "USAR",
+     "note": "no liquid 14-30 DTE spread passed the module gates"
+    },
+    {
+     "ts": "2026-10-14T02:34:21.952622+00:00",
+     "event": "scan_complete"
     }
    ]
   },
@@ -4728,17 +4726,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T22:33:39.088125-04:00",
+  "updated_et": "2026-10-13T22:37:55.172554-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T16:17:52.070894+00:00",
-   "equity": "100040.31",
-   "day_pl": -58.19000000000233,
-   "day_pl_pct": -0.05813273925183927
-  },
   {
    "ts_utc": "2026-10-13T16:22:52.537294+00:00",
    "equity": "100040.31",
@@ -5449,6 +5441,12 @@
   },
   {
    "ts_utc": "2026-10-14T02:33:39.088125+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-14T02:37:55.172554+00:00",
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
