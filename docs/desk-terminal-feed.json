@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T21:03:34.015763+00:00",
- "generated_at_et": "2026-10-14T17:03:34.015763-04:00",
+ "generated_at_utc": "2026-10-14T21:11:33.754537+00:00",
+ "generated_at_et": "2026-10-14T17:11:33.754537-04:00",
  "account": {
   "equity": "100157.31",
   "cash": "99306.31",
@@ -1526,21 +1526,16 @@
     ],
     "sells": []
    },
-   "last_rank_date": "2026-10-13",
+   "last_rank_date": "2026-10-14",
    "stats": {
     "fills": 0,
     "gate_blocks": 0,
     "rank_waits": 0,
     "capacity_skips": 0,
-    "last_signals": 1,
+    "last_signals": 0,
     "band_size": 175
    },
    "recent": [
-    {
-     "ts": "2026-10-12T16:59:40.600140-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
     {
      "ts": "2026-10-13T10:50:29.638222-04:00",
      "event": "deferred_red_day",
@@ -1599,6 +1594,11 @@
     {
      "ts": "2026-10-14T17:00:27.685487-04:00",
      "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-14T17:10:09.759355-04:00",
+     "event": "rank_pass",
      "symbol": "ALL"
     }
    ]
@@ -2604,30 +2604,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T03:49:30.864428+00:00",
-     "event": "staged_chart_gate",
-     "symbol": "SOLUSD",
-     "note": "awaiting Midna's chart read"
-    },
-    {
-     "ts": "2026-10-13T03:49:30.864539+00:00",
-     "event": "entry_staged_chart_gate",
-     "symbol": "SOLUSD",
-     "qty": 166.108172
-    },
-    {
-     "ts": "2026-10-13T04:49:03.540169+00:00",
-     "event": "chart_gate_dropped",
-     "symbol": "SOLUSD",
-     "note": "Midna FAIL: Chart read 2026-10-13 (Midna, manual Kraken-bar renders; staged artifacts degraded - Pass A cannot source crypto bars): daily is in a corr"
-    },
-    {
-     "ts": "2026-10-13T04:49:03.540377+00:00",
-     "event": "chart_gate_dropped",
-     "symbol": "SOLUSD",
-     "note": "queue item dropped (FAIL/ABSTAIN/expired) with no release; pending entry dropped"
-    },
-    {
      "ts": "2026-10-13T04:49:11.376356+00:00",
      "event": "deferred_green_market",
      "symbol": "SOLUSD",
@@ -2674,6 +2650,24 @@
      "event": "deferred_red_day",
      "symbol": "SOLUSD",
      "note": "red-day gate: DEFERRED_RED_DAY, no buy today (SOLUSD trailing-24h 0.97% (kraken))"
+    },
+    {
+     "ts": "2026-10-14T21:05:33.752324+00:00",
+     "event": "equity_unknown"
+    },
+    {
+     "ts": "2026-10-14T21:05:35.133852+00:00",
+     "event": "adopt_orders_lookup_failed",
+     "symbol": "SOLUSD"
+    },
+    {
+     "ts": "2026-10-14T21:05:36.394705+00:00",
+     "event": "equity_unknown"
+    },
+    {
+     "ts": "2026-10-14T21:05:42.862215+00:00",
+     "event": "no_entries_equity_unknown",
+     "note": "exits still managed; entries deferred"
     }
    ]
   },
@@ -2947,27 +2941,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-14T15:35:50.287049+00:00",
-     "event": "exit_price_unknown",
-     "symbol": "XSP261016P00756000",
-     "note": "no intraday bar; exit check deferred"
-    },
-    {
-     "ts": "2026-10-14T15:35:57.668205+00:00",
-     "event": "no_fear_day",
-     "note": "QQQ above -1.5%; not a fear day (QQQ day-so-far -1.33% vs prior close 743.64 (bar 2026-10-14T15:00:00Z))"
-    },
-    {
-     "ts": "2026-10-14T16:05:59.490816+00:00",
-     "event": "fear_day",
-     "note": "QQQ day-so-far -1.57% vs prior close 743.64 (bar 2026-10-14T16:00:00Z)"
-    },
-    {
-     "ts": "2026-10-14T16:36:20.338730+00:00",
-     "event": "fear_day",
-     "note": "QQQ day-so-far -1.78% vs prior close 743.64 (bar 2026-10-14T16:00:00Z)"
-    },
-    {
      "ts": "2026-10-14T17:06:34.975765+00:00",
      "event": "fear_day",
      "note": "QQQ day-so-far -1.73% vs prior close 743.64 (bar 2026-10-14T17:00:00Z)"
@@ -3006,6 +2979,24 @@
      "ts": "2026-10-14T20:35:34.030149+00:00",
      "event": "fear_day",
      "note": "QQQ day-so-far -2.08% vs prior close 743.64 (bar 2026-10-14T20:00:00Z)"
+    },
+    {
+     "ts": "2026-10-14T21:05:28.936448+00:00",
+     "event": "exits_deferred_orders_unknown",
+     "note": "open-order book unreadable (orders_unknown); all exits deferred fail-closed"
+    },
+    {
+     "ts": "2026-10-14T21:05:30.858436+00:00",
+     "event": "equity_unknown"
+    },
+    {
+     "ts": "2026-10-14T21:05:30.858927+00:00",
+     "event": "no_entries_equity_unknown"
+    },
+    {
+     "ts": "2026-10-14T21:05:30.859207+00:00",
+     "event": "release_deferred_equity_unknown",
+     "note": "verdicts stay queued; retry next pass"
     }
    ]
   },
@@ -4750,8 +4741,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T17:03:34.015763-04:00",
-  "stamp": "Wednesday, 5:03 PM ET",
+  "updated_et": "2026-10-14T17:11:33.754537-04:00",
+  "stamp": "Wednesday, 5:11 PM ET",
   "headline": "The desk is carrying 3 positions, up $83 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4809,12 +4800,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T11:22:50.642442+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T11:27:45.413058+00:00",
    "equity": "100074.31",
@@ -5525,6 +5510,12 @@
   },
   {
    "ts_utc": "2026-10-14T21:03:34.015763+00:00",
+   "equity": "100157.31",
+   "day_pl": 83.0,
+   "day_pl_pct": 0.08293836849836886
+  },
+  {
+   "ts_utc": "2026-10-14T21:11:33.754537+00:00",
    "equity": "100157.31",
    "day_pl": 83.0,
    "day_pl_pct": 0.08293836849836886
