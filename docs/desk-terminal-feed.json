@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T22:52:55.565299+00:00",
- "generated_at_et": "2026-10-14T18:52:55.565299-04:00",
+ "generated_at_utc": "2026-10-14T22:58:05.836735+00:00",
+ "generated_at_et": "2026-10-14T18:58:05.836735-04:00",
  "account": {
   "equity": "100157.31",
   "cash": "99306.31",
@@ -246,11 +246,11 @@
   }
  ],
  "outcome_stats": {
-  "closed_total": 6,
+  "closed_total": 3,
   "open_total": 6,
   "by_phenotype": {
    "RECLAIM": {
-    "n": 6,
+    "n": 3,
     "hit_rate_20": 0.0,
     "avg_ret_20": -0.06619989485957765,
     "avg_max_adv": -0.09872434400572393,
@@ -259,7 +259,7 @@
   },
   "by_confidence": {
    "6-7": {
-    "n": 6,
+    "n": 3,
     "hit_rate_20": 0.0,
     "avg_ret_20": -0.06619989485957765,
     "avg_max_adv": -0.09872434400572393,
@@ -268,21 +268,21 @@
   },
   "by_symbol": {
    "HUT": {
-    "n": 2,
+    "n": 1,
     "hit_rate_20": 0.0,
     "avg_ret_20": -0.021303991572047376,
     "avg_max_adv": -0.07877794685707601,
     "target_first_rate": 0.0
    },
    "IREN": {
-    "n": 2,
+    "n": 1,
     "hit_rate_20": 0.0,
     "avg_ret_20": -0.07255261000273312,
     "avg_max_adv": -0.10672314840120253,
     "target_first_rate": 0.0
    },
    "SKYQ": {
-    "n": 2,
+    "n": 1,
     "hit_rate_20": 0.0,
     "avg_ret_20": -0.10474308300395245,
     "avg_max_adv": -0.11067193675889321,
@@ -602,7 +602,9 @@
      "ts": "2026-10-14T22:21:46.920855+00:00",
      "event": "state_container_coerced"
     }
-   ]
+   ],
+   "realized_pl": 181.75,
+   "unrealized_pl": 0.0
   },
   "bilbo_options": {
    "name": "Bilbo Box Options",
@@ -4735,8 +4737,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T18:52:55.565299-04:00",
-  "stamp": "Wednesday, 6:52 PM ET",
+  "updated_et": "2026-10-14T18:58:05.836735-04:00",
+  "stamp": "Wednesday, 6:58 PM ET",
   "headline": "The desk is carrying 3 positions, up $83 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4794,12 +4796,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T13:17:47.980750+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T13:23:11.393328+00:00",
    "equity": "100074.31",
@@ -5513,6 +5509,12 @@
    "equity": "100157.31",
    "day_pl": 83.0,
    "day_pl_pct": 0.08293836849836886
+  },
+  {
+   "ts_utc": "2026-10-14T22:58:05.836735+00:00",
+   "equity": "100157.31",
+   "day_pl": 83.0,
+   "day_pl_pct": 0.08293836849836886
   }
  ],
  "regime_history": [
@@ -5655,45 +5657,6 @@
    "outcome": {
     "result": "closed",
     "return_20bar": -0.1047,
-    "first_hit": "stop"
-   }
-  },
-  {
-   "date": "2026-10-12",
-   "ts": "2026-10-12T13:00:00Z",
-   "symbol": "SKYQ",
-   "signal_type": "WATCH",
-   "phenotype": "RECLAIM",
-   "confidence": 7,
-   "outcome": {
-    "result": "closed",
-    "return_20bar": -0.1047,
-    "first_hit": "stop"
-   }
-  },
-  {
-   "date": "2026-10-12",
-   "ts": "2026-10-12T13:00:00Z",
-   "symbol": "HUT",
-   "signal_type": "WATCH",
-   "phenotype": "RECLAIM",
-   "confidence": 7,
-   "outcome": {
-    "result": "closed",
-    "return_20bar": -0.0213,
-    "first_hit": "stop"
-   }
-  },
-  {
-   "date": "2026-10-12",
-   "ts": "2026-10-12T11:00:00Z",
-   "symbol": "IREN",
-   "signal_type": "WATCH",
-   "phenotype": "RECLAIM",
-   "confidence": 7,
-   "outcome": {
-    "result": "closed",
-    "return_20bar": -0.0726,
     "first_hit": "stop"
    }
   },
