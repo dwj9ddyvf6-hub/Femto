@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-14T15:17:50.408194+00:00",
- "generated_at_et": "2026-10-14T11:17:50.408194-04:00",
+ "generated_at_utc": "2026-10-14T15:22:56.749520+00:00",
+ "generated_at_et": "2026-10-14T11:22:56.749520-04:00",
  "account": {
-  "equity": "100033.31",
+  "equity": "100032.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -41.0,
- "day_pl_pct": -0.040969555523290645,
+ "day_pl": -42.0,
+ "day_pl_pct": -0.04196881297507822,
  "journal_today": {
   "scans": 4,
   "trades": 0
@@ -416,12 +416,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-14T12:47:22.575481+00:00",
-     "event": "deferred_red_day",
-     "symbol": "UBER",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (day-return: no intraday bar for UBER on 2026-10-14 yet (deferring))"
-    },
-    {
      "ts": "2026-10-14T12:47:24.795380+00:00",
      "event": "k5_dead",
      "symbol": "ABT",
@@ -475,6 +469,11 @@
     },
     {
      "ts": "2026-10-14T15:08:06.062267+00:00",
+     "event": "lock_busy",
+     "note": "another phase pass is running; exiting"
+    },
+    {
+     "ts": "2026-10-14T15:18:14.921941+00:00",
      "event": "lock_busy",
      "note": "another phase pass is running; exiting"
     }
@@ -558,14 +557,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-14T14:58:33.263697+00:00",
-     "event": "chart_staged_stale_cleared"
-    },
-    {
-     "ts": "2026-10-14T15:00:05.150673+00:00",
-     "event": "staged_chart_gate"
-    },
-    {
      "ts": "2026-10-14T15:00:05.178449+00:00",
      "event": "chart_staged"
     },
@@ -604,6 +595,14 @@
     {
      "ts": "2026-10-14T15:16:14.220264+00:00",
      "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-14T15:19:22.144291+00:00",
+     "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-14T15:22:20.685166+00:00",
+     "event": "chart_stage_skipped_pending"
     }
    ]
   },
@@ -616,55 +615,79 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-14T14:23:53.889288+00:00",
-   "last_exit_scan": "2026-10-14T15:15:11.921439+00:00",
+   "last_exit_scan": "2026-10-14T15:20:32.054521+00:00",
    "recent": [
     {
-     "ts": "2026-10-14T15:00:41.847007+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-14T15:22:51.063249+00:00",
+     "event": "entry_skipped",
+     "symbol": "MSFT",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:00:41.849966+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-14T15:22:51.063288+00:00",
+     "event": "entry_skipped",
+     "symbol": "MSFT",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:00:41.892267+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-14T15:22:51.063339+00:00",
+     "event": "entry_skipped",
+     "symbol": "MSFT",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:05:26.481474+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-14T15:22:56.356707+00:00",
+     "event": "entry_skipped",
+     "symbol": "AVGO",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:05:26.494482+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-14T15:22:56.356940+00:00",
+     "event": "entry_skipped",
+     "symbol": "AVGO",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:05:26.610082+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-14T15:22:56.357002+00:00",
+     "event": "entry_skipped",
+     "symbol": "AVGO",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:10:16.589413+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-14T15:23:02.519674+00:00",
+     "event": "entry_skipped",
+     "symbol": "TSLA",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:10:16.592028+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-14T15:23:02.519892+00:00",
+     "event": "entry_skipped",
+     "symbol": "TSLA",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:10:16.610174+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-14T15:23:02.519956+00:00",
+     "event": "entry_skipped",
+     "symbol": "TSLA",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:15:11.915726+00:00",
-     "event": "scan_start"
+     "ts": "2026-10-14T15:23:02.520003+00:00",
+     "event": "entry_skipped",
+     "symbol": "TSLA",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:15:11.921327+00:00",
-     "event": "exit_scan"
+     "ts": "2026-10-14T15:23:02.520046+00:00",
+     "event": "entry_skipped",
+     "symbol": "TSLA",
+     "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:15:11.951876+00:00",
-     "event": "scan_done"
+     "ts": "2026-10-14T15:23:02.520086+00:00",
+     "event": "entry_skipped",
+     "symbol": "TSLA",
+     "reason": "stale_episode"
     }
    ]
   },
@@ -699,18 +722,6 @@
     "total_pnl": 0.0
    },
    "recent": [
-    {
-     "ts": "2026-10-14T12:51:19.500560+00:00",
-     "event": "state_position_quarantined",
-     "reason": "missing_occ_legs",
-     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
-    },
-    {
-     "ts": "2026-10-14T13:01:55.440531+00:00",
-     "event": "state_position_quarantined",
-     "reason": "missing_occ_legs",
-     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
-    },
     {
      "ts": "2026-10-14T13:11:54.397939+00:00",
      "event": "state_position_quarantined",
@@ -767,6 +778,18 @@
     },
     {
      "ts": "2026-10-14T15:12:02.690552+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T15:19:49.686998+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T15:21:44.306021+00:00",
      "event": "state_position_quarantined",
      "reason": "missing_occ_legs",
      "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
@@ -3501,7 +3524,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100033.31,
+  "equity": 100032.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4736,13 +4759,13 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T11:17:50.408194-04:00",
-  "stamp": "Wednesday, 11:17 AM ET",
-  "headline": "The desk is carrying 3 positions, down $41 on the day, no fresh Tensor signals.",
+  "updated_et": "2026-10-14T11:22:56.749520-04:00",
+  "stamp": "Wednesday, 11:22 AM ET",
+  "headline": "The desk is carrying 3 positions, down $42 on the day, no fresh Tensor signals.",
   "sections": [
    {
     "heading": "Account",
-    "body": "Equity $100,033 \u00b7 buying power $395,225. Day P&L -$41 (-0.04%)."
+    "body": "Equity $100,032 \u00b7 buying power $395,225. Day P&L -$42 (-0.04%)."
    },
    {
     "heading": "Positions (3)",
@@ -4754,7 +4777,7 @@
    },
    {
     "heading": "Phase",
-    "body": "No position. Last event 11:08 AM ET: lock_busy."
+    "body": "No position. Last event 11:18 AM ET: lock_busy."
    },
    {
     "heading": "Legend's EMA",
@@ -4795,12 +4818,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T05:27:44.166410+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T05:32:44.209803+00:00",
    "equity": "100074.31",
@@ -5514,6 +5531,12 @@
    "equity": "100033.31",
    "day_pl": -41.0,
    "day_pl_pct": -0.040969555523290645
+  },
+  {
+   "ts_utc": "2026-10-14T15:22:56.749520+00:00",
+   "equity": "100032.31",
+   "day_pl": -42.0,
+   "day_pl_pct": -0.04196881297507822
   }
  ],
  "regime_history": [
@@ -5727,7 +5750,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -41.0,
+  "day_pl": -42.0,
   "contributors": [
    {
     "symbol": "XSP261016P00756000",
@@ -5743,7 +5766,7 @@
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 21.0,
+    "day_pl": 20.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
