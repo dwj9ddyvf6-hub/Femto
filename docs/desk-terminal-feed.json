@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-14T15:22:56.749520+00:00",
- "generated_at_et": "2026-10-14T11:22:56.749520-04:00",
+ "generated_at_utc": "2026-10-14T15:27:54.289801+00:00",
+ "generated_at_et": "2026-10-14T11:27:54.289801-04:00",
  "account": {
-  "equity": "100032.31",
+  "equity": "100120.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -28,10 +28,10 @@
    "symbol": "VXX261218C00020000",
    "qty": 8.0,
    "avg_entry": 1.1,
-   "current": 0.93,
-   "unrealized_pl": -136.0,
-   "unrealized_pl_pct": -15.454545454545453,
-   "market_value": "744",
+   "current": 1.04,
+   "unrealized_pl": -48.0,
+   "unrealized_pl_pct": -5.454545454545454,
+   "market_value": "832",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -42.0,
- "day_pl_pct": -0.04196881297507822,
+ "day_pl": 46.0,
+ "day_pl_pct": 0.045965842782228525,
  "journal_today": {
   "scans": 4,
   "trades": 0
@@ -557,14 +557,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-14T15:00:05.178449+00:00",
-     "event": "chart_staged"
-    },
-    {
-     "ts": "2026-10-14T15:01:25.365490+00:00",
-     "event": "chart_stage_skipped_pending"
-    },
-    {
      "ts": "2026-10-14T15:04:34.456971+00:00",
      "event": "chart_stage_skipped_pending"
     },
@@ -603,6 +595,14 @@
     {
      "ts": "2026-10-14T15:22:20.685166+00:00",
      "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-14T15:25:11.706222+00:00",
+     "event": "chart_gate_dropped"
+    },
+    {
+     "ts": "2026-10-14T15:25:26.153539+00:00",
+     "event": "chart_stage_skipped_pending"
     }
    ]
   },
@@ -614,80 +614,72 @@
    "state_known": true,
    "open_positions": 0,
    "positions": [],
-   "last_entry_scan": "2026-10-14T14:23:53.889288+00:00",
-   "last_exit_scan": "2026-10-14T15:20:32.054521+00:00",
+   "last_entry_scan": "2026-10-14T15:24:22.965369+00:00",
+   "last_exit_scan": "2026-10-14T15:25:52.100472+00:00",
    "recent": [
     {
-     "ts": "2026-10-14T15:22:51.063249+00:00",
+     "ts": "2026-10-14T15:24:17.060348+00:00",
      "event": "entry_skipped",
-     "symbol": "MSFT",
+     "symbol": "HOOD",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:22:51.063288+00:00",
+     "ts": "2026-10-14T15:24:22.958414+00:00",
      "event": "entry_skipped",
-     "symbol": "MSFT",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:22:51.063339+00:00",
+     "ts": "2026-10-14T15:24:22.958640+00:00",
      "event": "entry_skipped",
-     "symbol": "MSFT",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:22:56.356707+00:00",
+     "ts": "2026-10-14T15:24:22.958703+00:00",
      "event": "entry_skipped",
-     "symbol": "AVGO",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:22:56.356940+00:00",
+     "ts": "2026-10-14T15:24:22.958788+00:00",
      "event": "entry_skipped",
-     "symbol": "AVGO",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:22:56.357002+00:00",
+     "ts": "2026-10-14T15:24:22.965089+00:00",
      "event": "entry_skipped",
-     "symbol": "AVGO",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:23:02.519674+00:00",
+     "ts": "2026-10-14T15:24:22.965278+00:00",
      "event": "entry_skipped",
-     "symbol": "TSLA",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:23:02.519892+00:00",
+     "ts": "2026-10-14T15:24:22.965339+00:00",
      "event": "entry_skipped",
-     "symbol": "TSLA",
+     "symbol": "COIN",
      "reason": "stale_episode"
     },
     {
-     "ts": "2026-10-14T15:23:02.519956+00:00",
-     "event": "entry_skipped",
-     "symbol": "TSLA",
-     "reason": "stale_episode"
+     "ts": "2026-10-14T15:24:22.993583+00:00",
+     "event": "scan_done"
     },
     {
-     "ts": "2026-10-14T15:23:02.520003+00:00",
-     "event": "entry_skipped",
-     "symbol": "TSLA",
-     "reason": "stale_episode"
+     "ts": "2026-10-14T15:25:52.077467+00:00",
+     "event": "scan_start"
     },
     {
-     "ts": "2026-10-14T15:23:02.520046+00:00",
-     "event": "entry_skipped",
-     "symbol": "TSLA",
-     "reason": "stale_episode"
+     "ts": "2026-10-14T15:25:52.100369+00:00",
+     "event": "exit_scan"
     },
     {
-     "ts": "2026-10-14T15:23:02.520086+00:00",
-     "event": "entry_skipped",
-     "symbol": "TSLA",
-     "reason": "stale_episode"
+     "ts": "2026-10-14T15:25:52.125954+00:00",
+     "event": "scan_done"
     }
    ]
   },
@@ -2104,22 +2096,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-13T14:26:55.205319-04:00",
-     "event": "rank_start",
-     "symbol": "ALL"
-    },
-    {
-     "ts": "2026-10-13T14:29:11.263716-04:00",
-     "event": "scoring_start",
-     "symbol": "ALL",
-     "note": "41 symbols"
-    },
-    {
-     "ts": "2026-10-13T14:29:43.248157-04:00",
-     "event": "rank_pass",
-     "symbol": "ALL"
-    },
-    {
      "ts": "2026-10-13T15:04:26.839953-04:00",
      "event": "fill_pass",
      "symbol": "ALL"
@@ -2164,6 +2140,22 @@
     {
      "ts": "2026-10-14T11:04:37.976820-04:00",
      "event": "fill_pass",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-14T11:26:26.734150-04:00",
+     "event": "rank_start",
+     "symbol": "ALL"
+    },
+    {
+     "ts": "2026-10-14T11:27:05.025985-04:00",
+     "event": "scoring_start",
+     "symbol": "ALL",
+     "note": "41 symbols"
+    },
+    {
+     "ts": "2026-10-14T11:27:18.204661-04:00",
+     "event": "rank_pass",
      "symbol": "ALL"
     }
    ]
@@ -2409,7 +2401,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -136.0
+   "unrealized_pl": -48.0
   },
   "earnings_buyback": {
    "name": "Earnings-Buyback",
@@ -2428,10 +2420,6 @@
    "last_rank_date": null,
    "stats": {},
    "recent": [
-    {
-     "ts": "2026-10-14T03:25:20.560912+00:00",
-     "event": "no_buyback_signals"
-    },
     {
      "ts": "2026-10-14T04:25:45.792783+00:00",
      "event": "no_buyback_signals"
@@ -2474,6 +2462,10 @@
     },
     {
      "ts": "2026-10-14T14:25:22.109965+00:00",
+     "event": "no_buyback_signals"
+    },
+    {
+     "ts": "2026-10-14T15:25:29.066420+00:00",
      "event": "no_buyback_signals"
     }
    ]
@@ -3524,7 +3516,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100032.31,
+  "equity": 100120.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4759,17 +4751,17 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T11:22:56.749520-04:00",
-  "stamp": "Wednesday, 11:22 AM ET",
-  "headline": "The desk is carrying 3 positions, down $42 on the day, no fresh Tensor signals.",
+  "updated_et": "2026-10-14T11:27:54.289801-04:00",
+  "stamp": "Wednesday, 11:27 AM ET",
+  "headline": "The desk is carrying 3 positions, up $46 on the day, no fresh Tensor signals.",
   "sections": [
    {
     "heading": "Account",
-    "body": "Equity $100,032 \u00b7 buying power $395,225. Day P&L -$42 (-0.04%)."
+    "body": "Equity $100,120 \u00b7 buying power $395,225. Day P&L $46 (+0.05%)."
    },
    {
     "heading": "Positions (3)",
-    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$136 (-15.45%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$3 (-14.29%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 -$6 (-20.00%)."
+    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$48 (-5.45%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$3 (-14.29%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 -$6 (-20.00%)."
    },
    {
     "heading": "Tensor",
@@ -4818,12 +4810,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T05:32:44.209803+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T05:37:50.223186+00:00",
    "equity": "100074.31",
@@ -5537,6 +5523,12 @@
    "equity": "100032.31",
    "day_pl": -42.0,
    "day_pl_pct": -0.04196881297507822
+  },
+  {
+   "ts_utc": "2026-10-14T15:27:54.289801+00:00",
+   "equity": "100120.31",
+   "day_pl": 46.0,
+   "day_pl_pct": 0.045965842782228525
   }
  ],
  "regime_history": [
@@ -5750,8 +5742,12 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -42.0,
+  "day_pl": 46.0,
   "contributors": [
+   {
+    "symbol": "VXX261218C00020000",
+    "day_pl": 40.0
+   },
    {
     "symbol": "XSP261016P00756000",
     "day_pl": 2.0
@@ -5759,10 +5755,6 @@
    {
     "symbol": "XSP261016P00761000",
     "day_pl": -16.0
-   },
-   {
-    "symbol": "VXX261218C00020000",
-    "day_pl": -48.0
    },
    {
     "symbol": "BASELINE_DIFF",
@@ -5807,7 +5799,7 @@
   {
    "sleeve": "vix_hedge",
    "notional": 880.0,
-   "unrealized_pl": -136.0,
+   "unrealized_pl": -48.0,
    "position_count": 1
   },
   {
