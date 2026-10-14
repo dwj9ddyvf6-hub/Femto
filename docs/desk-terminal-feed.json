@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T04:22:49.368491+00:00",
- "generated_at_et": "2026-10-14T00:22:49.368491-04:00",
+ "generated_at_utc": "2026-10-14T04:27:50.164359+00:00",
+ "generated_at_et": "2026-10-14T00:27:50.164359-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -697,18 +697,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-12T14:25:07.267828+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-12T14:25:07.966073+00:00",
-     "event": "pending_verified_open"
-    },
-    {
-     "ts": "2026-10-12T14:25:07.998337+00:00",
-     "event": "scan_done"
-    },
-    {
      "ts": "2026-10-12T17:46:56.879193+00:00",
      "event": "scan_start"
     },
@@ -746,6 +734,24 @@
     {
      "ts": "2026-10-13T14:07:50.375527+00:00",
      "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-14T04:24:50.093049+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T04:25:47.807910+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
+    },
+    {
+     "ts": "2026-10-14T04:26:48.644705+00:00",
+     "event": "state_position_quarantined",
+     "reason": "missing_occ_legs",
+     "note": "position row missing short_occ/long_occ removed; broker sync will re-materialize any real spread"
     }
    ],
    "realized_pl": 0.0,
@@ -2385,10 +2391,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T19:25:21.336157+00:00",
-     "event": "no_buyback_signals"
-    },
-    {
      "ts": "2026-10-13T20:25:12.838646+00:00",
      "event": "no_buyback_signals"
     },
@@ -2436,6 +2438,10 @@
     },
     {
      "ts": "2026-10-14T03:25:20.560912+00:00",
+     "event": "no_buyback_signals"
+    },
+    {
+     "ts": "2026-10-14T04:25:45.792783+00:00",
      "event": "no_buyback_signals"
     }
    ]
@@ -4719,8 +4725,8 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T00:22:49.368491-04:00",
-  "stamp": "Wednesday, 12:22 AM ET",
+  "updated_et": "2026-10-14T00:27:50.164359-04:00",
+  "stamp": "Wednesday, 12:27 AM ET",
   "headline": "The desk is carrying 3 positions, up $0 on the day, no fresh Tensor signals.",
   "sections": [
    {
@@ -4778,12 +4784,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T18:07:49.340522+00:00",
-   "equity": "100056.31",
-   "day_pl": -42.19000000000233,
-   "day_pl_pct": -0.042148483743514965
-  },
   {
    "ts_utc": "2026-10-13T18:12:53.956450+00:00",
    "equity": "100058.31",
@@ -5494,6 +5494,12 @@
   },
   {
    "ts_utc": "2026-10-14T04:22:49.368491+00:00",
+   "equity": "100074.31",
+   "day_pl": 0.0,
+   "day_pl_pct": 0.0
+  },
+  {
+   "ts_utc": "2026-10-14T04:27:50.164359+00:00",
    "equity": "100074.31",
    "day_pl": 0.0,
    "day_pl_pct": 0.0
