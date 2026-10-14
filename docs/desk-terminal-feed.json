@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-14T00:47:56.128494+00:00",
- "generated_at_et": "2026-10-13T20:47:56.128494-04:00",
+ "generated_at_utc": "2026-10-14T00:52:52.492661+00:00",
+ "generated_at_et": "2026-10-13T20:52:52.492661-04:00",
  "account": {
   "equity": "100074.31",
   "cash": "99306.31",
@@ -2316,15 +2316,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-13T18:49:25.852939+00:00",
-     "event": "chart_gate_release_deferred",
-     "note": "at max hedges; sweep deferred, verdicts stay queued"
-    },
-    {
-     "ts": "2026-10-13T18:49:30.626690+00:00",
-     "event": "vix_read"
-    },
-    {
      "ts": "2026-10-13T19:49:12.618145+00:00",
      "event": "chart_gate_release_deferred",
      "note": "at max hedges; sweep deferred, verdicts stay queued"
@@ -2367,6 +2358,15 @@
     },
     {
      "ts": "2026-10-13T23:49:13.784808+00:00",
+     "event": "vix_read"
+    },
+    {
+     "ts": "2026-10-14T00:49:14.786179+00:00",
+     "event": "chart_gate_release_deferred",
+     "note": "at max hedges; sweep deferred, verdicts stay queued"
+    },
+    {
+     "ts": "2026-10-14T00:49:15.616757+00:00",
      "event": "vix_read"
     }
    ],
@@ -2593,12 +2593,6 @@
    "stats": {},
    "recent": [
     {
-     "ts": "2026-10-10T14:31:09.334024+00:00",
-     "event": "deferred_red_day",
-     "symbol": "SOLUSD",
-     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (SOLUSD trailing-24h 0.29% (kraken))"
-    },
-    {
      "ts": "2026-10-10T14:46:03.606796+00:00",
      "event": "deferred_red_day",
      "symbol": "SOLUSD",
@@ -2663,6 +2657,12 @@
      "event": "chart_gate_dropped",
      "symbol": "SOLUSD",
      "note": "queue item dropped (FAIL/ABSTAIN/expired) with no release; pending entry dropped"
+    },
+    {
+     "ts": "2026-10-14T00:49:08.842818+00:00",
+     "event": "deferred_red_day",
+     "symbol": "SOLUSD",
+     "note": "red-day gate: DEFERRED_RED_DAY, no buy today (SOLUSD trailing-24h 1.05% (kraken))"
     }
    ]
   },
@@ -4730,17 +4730,11 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-13T20:47:56.128494-04:00",
+  "updated_et": "2026-10-13T20:52:52.492661-04:00",
   "headline": "\u2014",
   "sections": []
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-13T14:27:53.684250+00:00",
-   "equity": "100026.31",
-   "day_pl": -72.19000000000233,
-   "day_pl_pct": -0.07211896282162303
-  },
   {
    "ts_utc": "2026-10-13T14:32:56.190825+00:00",
    "equity": "100024.31",
@@ -5451,6 +5445,12 @@
   },
   {
    "ts_utc": "2026-10-14T00:47:56.128494+00:00",
+   "equity": "100074.31",
+   "day_pl": -24.19000000000233,
+   "day_pl_pct": -0.02416619629665013
+  },
+  {
+   "ts_utc": "2026-10-14T00:52:52.492661+00:00",
    "equity": "100074.31",
    "day_pl": -24.19000000000233,
    "day_pl_pct": -0.02416619629665013
