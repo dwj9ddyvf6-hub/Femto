@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-14T18:13:24.143865+00:00",
- "generated_at_et": "2026-10-14T14:13:24.143865-04:00",
+ "generated_at_utc": "2026-10-14T18:17:49.666800+00:00",
+ "generated_at_et": "2026-10-14T14:17:49.666800-04:00",
  "account": {
-  "equity": "100154.31",
+  "equity": "100158.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -46,10 +46,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.53,
-   "unrealized_pl": 32.0,
-   "unrealized_pl_pct": 152.38095238095238,
-   "market_value": "53",
+   "current": 0.48,
+   "unrealized_pl": 27.0,
+   "unrealized_pl_pct": 128.57142857142858,
+   "market_value": "48",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 1.01,
-   "unrealized_pl": -71.0,
-   "unrealized_pl_pct": -236.66666666666666,
-   "market_value": "-101",
+   "current": 0.92,
+   "unrealized_pl": -62.0,
+   "unrealized_pl_pct": -206.66666666666669,
+   "market_value": "-92",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": 80.0,
- "day_pl_pct": 0.07994059614300614,
+ "day_pl": 84.0,
+ "day_pl_pct": 0.08393762595015644,
  "journal_today": {
   "scans": 10,
   "trades": 0
@@ -613,20 +613,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-14T17:27:12.695045+00:00",
-   "last_exit_scan": "2026-10-14T18:11:11.136003+00:00",
+   "last_exit_scan": "2026-10-14T18:15:15.956862+00:00",
    "recent": [
-    {
-     "ts": "2026-10-14T17:55:29.715041+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-14T17:55:29.720889+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-14T17:55:29.735717+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-14T18:00:22.504258+00:00",
      "event": "scan_start"
@@ -661,6 +649,18 @@
     },
     {
      "ts": "2026-10-14T18:11:11.168007+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-14T18:15:15.949948+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-14T18:15:15.956597+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-14T18:15:15.980470+00:00",
      "event": "scan_done"
     }
    ]
@@ -770,7 +770,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -39.0
+   "unrealized_pl": -35.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -3525,7 +3525,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 100154.31,
+  "equity": 100158.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4760,17 +4760,17 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T14:13:24.143865-04:00",
-  "stamp": "Wednesday, 2:13 PM ET",
-  "headline": "The desk is carrying 3 positions, up $80 on the day, no fresh Tensor signals.",
+  "updated_et": "2026-10-14T14:17:49.666800-04:00",
+  "stamp": "Wednesday, 2:17 PM ET",
+  "headline": "The desk is carrying 3 positions, up $84 on the day, no fresh Tensor signals.",
   "sections": [
    {
     "heading": "Account",
-    "body": "Equity $100,154 \u00b7 buying power $395,225. Day P&L $80 (+0.08%)."
+    "body": "Equity $100,158 \u00b7 buying power $395,225. Day P&L $84 (+0.08%)."
    },
    {
     "heading": "Positions (3)",
-    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 $16 (+1.82%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $1 \u00b7 $32 (+152.38%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $1 \u00b7 -$71 (-236.67%)."
+    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 $16 (+1.82%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 $27 (+128.57%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $1 \u00b7 -$62 (-206.67%)."
    },
    {
     "heading": "Tensor",
@@ -4819,12 +4819,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T08:22:45.865420+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T08:27:45.435623+00:00",
    "equity": "100074.31",
@@ -5538,6 +5532,12 @@
    "equity": "100154.31",
    "day_pl": 80.0,
    "day_pl_pct": 0.07994059614300614
+  },
+  {
+   "ts_utc": "2026-10-14T18:17:49.666800+00:00",
+   "equity": "100158.31",
+   "day_pl": 84.0,
+   "day_pl_pct": 0.08393762595015644
   }
  ],
  "regime_history": [
@@ -5751,7 +5751,7 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": 80.0,
+  "day_pl": 84.0,
   "contributors": [
    {
     "symbol": "VXX261218C00020000",
@@ -5759,11 +5759,11 @@
    },
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": 37.0
+    "day_pl": 32.0
    },
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -81.0
+    "day_pl": -72.0
    },
    {
     "symbol": "BASELINE_DIFF",
@@ -5814,7 +5814,7 @@
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -39.0,
+   "unrealized_pl": -35.0,
    "position_count": 2
   }
  ],
