@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-14T14:52:54.595527+00:00",
- "generated_at_et": "2026-10-14T10:52:54.595527-04:00",
+ "generated_at_utc": "2026-10-14T14:58:04.755038+00:00",
+ "generated_at_et": "2026-10-14T10:58:04.755038-04:00",
  "account": {
-  "equity": "99999.31",
+  "equity": "100025.31",
   "cash": "99306.31",
   "buying_power": "395225.24",
   "status": "ACTIVE",
@@ -28,10 +28,10 @@
    "symbol": "VXX261218C00020000",
    "qty": 8.0,
    "avg_entry": 1.1,
-   "current": 0.89,
-   "unrealized_pl": -168.0,
-   "unrealized_pl_pct": -19.090909090909093,
-   "market_value": "712",
+   "current": 0.92,
+   "unrealized_pl": -144.0,
+   "unrealized_pl_pct": -16.363636363636363,
+   "market_value": "736",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -46,10 +46,10 @@
    "symbol": "XSP261016P00756000",
    "qty": 1.0,
    "avg_entry": 0.21,
-   "current": 0.2,
-   "unrealized_pl": -1.0,
-   "unrealized_pl_pct": -4.761904761904762,
-   "market_value": "20",
+   "current": 0.18,
+   "unrealized_pl": -3.0,
+   "unrealized_pl_pct": -14.285714285714285,
+   "market_value": "18",
    "side": "long",
    "sector": null,
    "phenotype": null,
@@ -66,10 +66,10 @@
    "symbol": "XSP261016P00761000",
    "qty": -1.0,
    "avg_entry": 0.3,
-   "current": 0.39,
-   "unrealized_pl": -9.0,
-   "unrealized_pl_pct": -30.0,
-   "market_value": "-39",
+   "current": 0.34,
+   "unrealized_pl": -4.0,
+   "unrealized_pl_pct": -13.333333333333334,
+   "market_value": "-34",
    "side": "short",
    "sector": null,
    "phenotype": null,
@@ -88,8 +88,8 @@
  "sector_counts": {
   "unknown": 3
  },
- "day_pl": -75.0,
- "day_pl_pct": -0.07494430888406825,
+ "day_pl": -49.0,
+ "day_pl_pct": -0.04896361513759126,
  "journal_today": {
   "scans": 3,
   "trades": 0
@@ -559,10 +559,6 @@
    },
    "recent": [
     {
-     "ts": "2026-10-14T14:20:25.699253+00:00",
-     "event": "chart_staged"
-    },
-    {
      "ts": "2026-10-14T14:22:11.730404+00:00",
      "event": "chart_stage_skipped_pending"
     },
@@ -605,6 +601,10 @@
     {
      "ts": "2026-10-14T14:52:34.226694+00:00",
      "event": "chart_stage_skipped_pending"
+    },
+    {
+     "ts": "2026-10-14T14:55:24.097152+00:00",
+     "event": "chart_stage_skipped_pending"
     }
    ]
   },
@@ -617,20 +617,8 @@
    "open_positions": 0,
    "positions": [],
    "last_entry_scan": "2026-10-14T14:23:53.889288+00:00",
-   "last_exit_scan": "2026-10-14T14:50:40.304698+00:00",
+   "last_exit_scan": "2026-10-14T14:55:19.874775+00:00",
    "recent": [
-    {
-     "ts": "2026-10-14T14:36:05.171215+00:00",
-     "event": "scan_start"
-    },
-    {
-     "ts": "2026-10-14T14:36:05.172036+00:00",
-     "event": "exit_scan"
-    },
-    {
-     "ts": "2026-10-14T14:36:05.192636+00:00",
-     "event": "scan_done"
-    },
     {
      "ts": "2026-10-14T14:40:14.544788+00:00",
      "event": "scan_start"
@@ -665,6 +653,18 @@
     },
     {
      "ts": "2026-10-14T14:50:40.338478+00:00",
+     "event": "scan_done"
+    },
+    {
+     "ts": "2026-10-14T14:55:19.865616+00:00",
+     "event": "scan_start"
+    },
+    {
+     "ts": "2026-10-14T14:55:19.874686+00:00",
+     "event": "exit_scan"
+    },
+    {
+     "ts": "2026-10-14T14:55:19.905630+00:00",
      "event": "scan_done"
     }
    ]
@@ -774,7 +774,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -10.0
+   "unrealized_pl": -7.0
   },
   "phoenix": {
    "name": "Phoenix Breakout",
@@ -2387,7 +2387,7 @@
     }
    ],
    "realized_pl": 0.0,
-   "unrealized_pl": -168.0
+   "unrealized_pl": -144.0
   },
   "earnings_buyback": {
    "name": "Earnings-Buyback",
@@ -3502,7 +3502,7 @@
  },
  "exposure": {
   "gross_notional": 936.0,
-  "equity": 99999.31,
+  "equity": 100025.31,
   "gross_pct": 0.9,
   "cap_pct": 150,
   "headroom_pct": 149.1,
@@ -4737,17 +4737,17 @@
   }
  },
  "desk_narrative": {
-  "updated_et": "2026-10-14T10:52:54.595527-04:00",
-  "stamp": "Wednesday, 10:52 AM ET",
-  "headline": "The desk is carrying 3 positions, down $75 on the day, no fresh Tensor signals.",
+  "updated_et": "2026-10-14T10:58:04.755038-04:00",
+  "stamp": "Wednesday, 10:58 AM ET",
+  "headline": "The desk is carrying 3 positions, down $49 on the day, no fresh Tensor signals.",
   "sections": [
    {
     "heading": "Account",
-    "body": "Equity $99,999 \u00b7 buying power $395,225. Day P&L -$75 (-0.07%)."
+    "body": "Equity $100,025 \u00b7 buying power $395,225. Day P&L -$49 (-0.05%)."
    },
    {
     "heading": "Positions (3)",
-    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$168 (-19.09%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$1 (-4.76%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 -$9 (-30.00%)."
+    "body": "VXX261218C00020000 \u2014 8 sh @ $1 \u2192 $1 \u00b7 -$144 (-16.36%). XSP261016P00756000 \u2014 1 sh @ $0 \u2192 $0 \u00b7 -$3 (-14.29%). XSP261016P00761000 \u2014 -1 sh @ $0 \u2192 $0 \u00b7 -$4 (-13.33%)."
    },
    {
     "heading": "Tensor",
@@ -4796,12 +4796,6 @@
   ]
  },
  "equity_curve": [
-  {
-   "ts_utc": "2026-10-14T05:02:51.181834+00:00",
-   "equity": "100074.31",
-   "day_pl": 0.0,
-   "day_pl_pct": 0.0
-  },
   {
    "ts_utc": "2026-10-14T05:08:31.946069+00:00",
    "equity": "100074.31",
@@ -5515,6 +5509,12 @@
    "equity": "99999.31",
    "day_pl": -75.0,
    "day_pl_pct": -0.07494430888406825
+  },
+  {
+   "ts_utc": "2026-10-14T14:58:04.755038+00:00",
+   "equity": "100025.31",
+   "day_pl": -49.0,
+   "day_pl_pct": -0.04896361513759126
   }
  ],
  "regime_history": [
@@ -5728,23 +5728,23 @@
   "pick_criterion": "largest absolute P&L among logged closed trades"
  },
  "day_pl_waterfall": {
-  "day_pl": -75.0,
+  "day_pl": -49.0,
   "contributors": [
    {
     "symbol": "XSP261016P00756000",
-    "day_pl": 4.0
+    "day_pl": 2.0
    },
    {
     "symbol": "XSP261016P00761000",
-    "day_pl": -19.0
+    "day_pl": -14.0
    },
    {
     "symbol": "VXX261218C00020000",
-    "day_pl": -80.0
+    "day_pl": -56.0
    },
    {
     "symbol": "BASELINE_DIFF",
-    "day_pl": 20.0,
+    "day_pl": 19.0,
     "note": "gap between the broker's previous-close baseline and the desk's day-start equity baseline (incl. any realized P&L/fees)"
    }
   ]
@@ -5785,13 +5785,13 @@
   {
    "sleeve": "vix_hedge",
    "notional": 880.0,
-   "unrealized_pl": -168.0,
+   "unrealized_pl": -144.0,
    "position_count": 1
   },
   {
    "sleeve": "spx_premium",
    "notional": 56.0,
-   "unrealized_pl": -10.0,
+   "unrealized_pl": -7.0,
    "position_count": 2
   }
  ],
@@ -6374,5 +6374,17 @@
    "zweig_note": "Zweig breadth thrust (10d): 0.47 \u2014 no thrust signal."
   }
  },
- "best_setups": []
+ "best_setups": [
+  {
+   "symbol": "AXTI",
+   "sleeve": "EMA-VWAP-Options",
+   "status": "STAGED",
+   "thesis": "VWAP_DEVIATION swing signal \u2014 close -12.7% below 20-day VWAP",
+   "entry": null,
+   "stop": null,
+   "target": null,
+   "qty": null,
+   "read": "PASS \u2014"
+  }
+ ]
 }
