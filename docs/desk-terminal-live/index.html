@@ -84,6 +84,25 @@
     .glossary ul{margin:0;padding:0;list-style:none;columns:2;column-gap:32px}
     .glossary li{margin:0 0 7px;font-size:13.5px;line-height:1.5;break-inside:avoid}
     @media (max-width:700px){.glossary ul{columns:1}}
+
+    .strat-tools{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:flex-end;padding:16px 20px;border-bottom:1px solid var(--line);background:var(--panel)}
+    .tool-field{display:flex;flex-direction:column;gap:5px;flex:1 1 220px;min-width:0}
+    .tool-field label{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+    .tool-field input,.tool-field select{font:inherit;font-size:14px;padding:9px 10px;border:1px solid var(--line-strong);border-radius:3px;background:var(--panel);color:var(--ink);width:100%}
+    .tool-field input:focus-visible,.tool-field select:focus-visible,.tool-btn:focus-visible,.back-top:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+    .tool-actions{display:flex;flex-wrap:wrap;gap:8px}
+    .tool-btn{appearance:none;border:1px solid var(--line-strong);border-radius:3px;background:var(--panel-2);color:var(--ink);padding:9px 13px;font-size:13px;font-weight:600;cursor:pointer}
+    .tool-btn:hover{background:var(--accent-pale)}
+    .strat-count{flex:1 1 100%;margin:0;color:var(--muted);font-size:13px}
+    .sleeves.grouped{display:block}
+    .cat-group{border-bottom:1px solid var(--line)}
+    .cat-group:last-child{border-bottom:0}
+    .cat-head{margin:0;padding:14px 20px 4px;font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+    .cat-head .cat-count{color:var(--muted);font-weight:600;letter-spacing:0;text-transform:none}
+    .strat-empty{padding:22px 20px;color:var(--muted);font-size:14px}
+    .back-top{position:fixed;right:18px;bottom:18px;z-index:30;border:1px solid var(--line-strong);border-radius:4px;background:var(--accent);color:#fff;padding:10px 14px;font-size:13px;font-weight:700;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+    .back-top[hidden]{display:none}
+    @media (max-width:640px){.strat-tools{padding:13px}.tool-field{flex:1 1 100%}.cat-head{padding-left:13px;padding-right:13px}}
   </style>
 </head>
 <body>
@@ -135,7 +154,24 @@
         <div class="panel-head"><div><h2>Strategies</h2><p>Every strategy the desk runs, and what each one is doing now. Select “How this strategy works” on any card for a plain-English explanation.</p></div><span class="pill info">Paper only</span></div>
         <div class="panel-body" id="algoUnavailable" hidden><div class="unavailable"><strong>Strategy descriptions unavailable right now.</strong><p>The plain-English descriptions could not be loaded, so no strategy cards are shown here rather than incomplete ones. This page checks again automatically.</p></div></div>
         <div class="glossary"><h3>Words we use</h3><ul><li><strong>Option:</strong> a contract giving the right to buy or sell something at an agreed price, by an agreed date.</li><li><strong>Call:</strong> an option that gains in value when the price rises.</li><li><strong>Put:</strong> an option that gains in value when the price falls.</li><li><strong>Strike:</strong> the agreed price at which an option lets you buy or sell.</li><li><strong>Premium:</strong> simply the price paid for an option — or the payment collected when one is sold.</li><li><strong>Spread:</strong> a paired option trade — one option bought and one sold on the same stock — so the most that can be made or lost is capped.</li><li><strong>Contract:</strong> one option contract covers 100 shares.</li><li><strong>Long:</strong> owned — the desk bought it and gains when the price rises.</li><li><strong>Short:</strong> sold first, as a bet the price will fall, and bought back later.</li><li><strong>Expiry:</strong> the date an option runs out.</li><li><strong>Straddle:</strong> buying a call and a put together on the same stock.</li><li><strong>Wheel:</strong> the repeating cycle of selling a put, possibly buying the shares, then selling calls against them.</li><li><strong>Ladder:</strong> options stacked at different prices and dates, like rungs of a ladder.</li><li><strong>Beta:</strong> a measure of how much a stock moves compared with the whole market; high-beta stocks move more.</li><li><strong>Bar:</strong> one period's price summary — where the price opened, its high, its low, and where it closed.</li><li><strong>Tensor:</strong> the desk's name for its pattern-scoring engine, which grades stocks for swing setups.</li><li><strong>VWAP:</strong> the day's average traded price, weighted by how much traded at each price.</li></ul></div>
+        <div class="strat-tools" id="stratTools">
+          <div class="tool-field">
+            <label for="stratSearch">Search strategies</label>
+            <input type="search" id="stratSearch" placeholder="Try condor, volatility, crypto…" autocomplete="off">
+          </div>
+          <div class="tool-field">
+            <label for="stratCategory">Category</label>
+            <select id="stratCategory"></select>
+          </div>
+          <div class="tool-actions">
+            <button type="button" class="tool-btn" id="stratExpand">Expand all</button>
+            <button type="button" class="tool-btn" id="stratCollapse">Collapse all</button>
+            <button type="button" class="tool-btn" id="stratClear">Clear</button>
+          </div>
+          <p class="strat-count" id="stratCount" role="status" aria-live="polite"></p>
+        </div>
         <div class="sleeves" id="sleeves"></div>
+        <p class="strat-empty" id="stratEmpty" hidden>No strategies match — try a different word or category.</p>
       </section>
     </section>
 
@@ -145,6 +181,7 @@
     </section>
 
     <p class="footnote">Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</p>
+    <button type="button" class="back-top" id="backTop" hidden>↑ Back to top</button>
   </main>
 
 <script id="terminal-app">
@@ -232,19 +269,71 @@
       });
       $('positions').innerHTML='<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+html+'</tbody></table>';
     }
-    var order=(d.desk||{}).sleeve_order||Object.keys(d.sleeves||{});
-    $('algoUnavailable').hidden=!ALGO_FAILED;
-    if(ALGO_FAILED){$('sleeves').innerHTML='';}
-    else $('sleeves').innerHTML=order.map(function(k){
-      var s=(d.sleeves||{})[k]||{positions:[],position_count:0};
-      var algo=ALGO[k];
-      var name=algo?algo.name:'Strategy name unavailable';
-      var summary=algo?algo.summary:'A plain-English description is not available yet.';
-      var expl=algo?'<details class="explainer"><summary>How this strategy works</summary><p>'+esc(algo.explainer)+'</p><p class="explainer-inst">Trades: '+esc(algo.instruments)+'</p></details>':'';
-      var state=s.position_count>0?['good','Holding '+s.position_count+' position'+(s.position_count===1?'':'s')]:['','Watching — no positions'];
-      return '<article class="sleeve"><div class="sleeve-top"><h3>'+esc(name)+'</h3><span class="pill '+state[0]+'">'+esc(state[1])+'</span></div><p>'+esc(summary)+'</p>'+expl
-        +'<div class="sleeve-meta"><span class="pill">Paper strategy</span></div></article>';
+    FEED=d;
+    renderStrategies();
+  }
+  var TAXONOMY=['Tensor strategies','Breakout & momentum','Pullbacks & mean reversion','Rule-based systems','Options \u2014 income','Options \u2014 directional & hedges','Systematic funds (Aurelia)','Crypto'];
+  var FEED=null;
+  function sleeveOrder(){return FEED?((FEED.desk||{}).sleeve_order||Object.keys(FEED.sleeves||{})):[];}
+  function categoryCounts(){
+    var counts={}; TAXONOMY.forEach(function(c){counts[c]=0;});
+    sleeveOrder().forEach(function(k){var c=(ALGO[k]||{}).category; if(c in counts)counts[c]++;});
+    return counts;
+  }
+  function buildCategoryOptions(){
+    var sel=$('stratCategory'); if(!sel)return;
+    var cur=sel.value||'all', counts=categoryCounts(), total=sleeveOrder().length;
+    sel.innerHTML='<option value="all">All strategies ('+total+')</option>'+TAXONOMY.map(function(c){
+      return '<option value="'+esc(c)+'">'+esc(c)+' ('+counts[c]+')</option>';
     }).join('');
+    sel.value=(cur==='all'||cur in counts)?cur:'all';
+  }
+  function cardHtml(k){
+    var s=(FEED.sleeves||{})[k]||{positions:[],position_count:0};
+    var algo=ALGO[k];
+    var name=algo?algo.name:'Strategy name unavailable';
+    var summary=algo?algo.summary:'A plain-English description is not available yet.';
+    var expl=algo?'<details class="explainer"><summary>How this strategy works</summary><p>'+esc(algo.explainer)+'</p><p class="explainer-inst">Trades: '+esc(algo.instruments)+'</p></details>':'';
+    var state=s.position_count>0?['good','Holding '+s.position_count+' position'+(s.position_count===1?'':'s')]:['','Watching — no positions'];
+    var cat=algo&&algo.category?'<span class="pill info">'+esc(algo.category)+'</span>':'';
+    return '<article class="sleeve" data-sleeve="'+esc(k)+'"><div class="sleeve-top"><h3>'+esc(name)+'</h3><span class="pill '+state[0]+'">'+esc(state[1])+'</span></div><p>'+esc(summary)+'</p>'+expl
+      +'<div class="sleeve-meta"><span class="pill">Paper strategy</span>'+cat+'</div></article>';
+  }
+  function matchesQuery(k,q){
+    if(!q)return true;
+    var algo=ALGO[k]||{};
+    var hay=((algo.name||'')+' '+(algo.summary||'')+' '+(algo.instruments||'')+' '+(algo.explainer||'')+' '+(algo.category||'')+' '+k.replace(/_/g,' ')).toLowerCase();
+    return q.toLowerCase().split(/\s+/).filter(Boolean).every(function(term){return hay.indexOf(term)!==-1;});
+  }
+  function visibleSleeves(){
+    var sel=$('stratCategory'), cat=sel?sel.value:'all';
+    var inp=$('stratSearch'), q=inp?inp.value.trim():'';
+    return sleeveOrder().filter(function(k){
+      return (cat==='all'||(ALGO[k]||{}).category===cat)&&matchesQuery(k,q);
+    });
+  }
+  function renderStrategies(){
+    var host=$('sleeves'); if(!host||!FEED)return;
+    $('algoUnavailable').hidden=!ALGO_FAILED;
+    var tools=$('stratTools'); if(tools)tools.hidden=ALGO_FAILED;
+    if(ALGO_FAILED){host.innerHTML='';var ce=$('stratEmpty'); if(ce)ce.hidden=true; var cc=$('stratCount'); if(cc)cc.textContent=''; return;}
+    buildCategoryOptions();
+    var order=sleeveOrder(), vis=visibleSleeves();
+    var sel=$('stratCategory'), cat=sel?sel.value:'all';
+    var inp=$('stratSearch'), q=inp?inp.value.trim():'';
+    var grouped=(cat==='all'&&!q);
+    host.classList.toggle('grouped',grouped);
+    if(grouped){
+      host.innerHTML=TAXONOMY.map(function(c){
+        var ks=vis.filter(function(k){return (ALGO[k]||{}).category===c;});
+        if(!ks.length)return '';
+        return '<section class="cat-group"><h3 class="cat-head">'+esc(c)+' <span class="cat-count">\u00b7 '+ks.length+' strateg'+(ks.length===1?'y':'ies')+'</span></h3><div class="sleeves">'+ks.map(cardHtml).join('')+'</div></section>';
+      }).join('');
+    } else {
+      host.innerHTML=vis.map(cardHtml).join('');
+    }
+    var cnt=$('stratCount'); if(cnt)cnt.textContent='Showing '+vis.length+' of '+order.length+' strategies';
+    var emp=$('stratEmpty'); if(emp)emp.hidden=vis.length>0;
   }
   function feedFailed(){
     $('feedUnavailable').hidden=false;
@@ -293,6 +382,14 @@
       el.innerHTML=pipe+(j.sections||[]).map(function(s){return '<div class="arch-section"><h3>'+esc(s.heading)+'</h3>'+rich(s.body)+'</div>';}).join('');
     })
     .catch(function(){ var el=$('architectureBody'); if(el)el.innerHTML=pipe+'<p>The architecture notes could not be loaded right now.</p>'; });
+  // Strategy toolbar wiring
+  var _ss=$('stratSearch'); if(_ss)_ss.addEventListener('input',renderStrategies);
+  var _sc=$('stratCategory'); if(_sc)_sc.addEventListener('change',renderStrategies);
+  var _cl=$('stratClear'); if(_cl)_cl.addEventListener('click',function(){if(_ss)_ss.value='';if(_sc)_sc.value='all';renderStrategies();if(_ss)_ss.focus();});
+  var _ex=$('stratExpand'); if(_ex)_ex.addEventListener('click',function(){document.querySelectorAll('#sleeves details.explainer').forEach(function(d){d.open=true;});});
+  var _co=$('stratCollapse'); if(_co)_co.addEventListener('click',function(){document.querySelectorAll('#sleeves details.explainer').forEach(function(d){d.open=false;});});
+  var _bt=$('backTop');
+  if(_bt){window.addEventListener('scroll',function(){_bt.hidden=window.scrollY<600;},{passive:true});_bt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
   fetch('../algorithms.json?t='+Date.now(),{cache:'no-store'})
     .then(function(r){if(!r.ok)throw new Error('algorithms http '+r.status);return r.json();})
     .then(function(j){ALGO=j||{};ALGO_FAILED=false;})
