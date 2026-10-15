@@ -4,14 +4,14 @@
   "summary": "Adjusts how much is held in a gold fund, following the same signal system as the Nasdaq allocation.",
   "explainer": "This strategy watches a single gold signal supplied to the desk, which says how much exposure to gold is wanted, alongside a separate Nasdaq signal that shares the same overall pot of money. It buys shares in a fund that holds physical gold when the gold signal has moved at least 0.20 away from what is currently held. Gold is held one-for-one, with no borrowed or multiplied exposure, and the combined Nasdaq and gold holdings are kept within a shared limit. It sells gold fund shares when the signal falls, and it sells all of them when the gold signal reaches zero.",
   "instruments": "US ETFs",
-  "category": "Systematic funds (Aurelia)"
+  "category": "Systematic funds"
  },
  "aurelia_ndx": {
   "name": "Nasdaq Allocation",
   "summary": "Adjusts how much is held in Nasdaq funds, using a triple-strength fund for exposure above 100%.",
   "explainer": "This strategy watches a single Nasdaq strength signal supplied to the desk, which says how much exposure to large US technology-heavy stocks is wanted, from none upward. It buys when that signal has moved at least 0.20 away from what is currently held, or buys a new holding whenever its target changes. Exposure up to 100% is held in a Nasdaq fund; above that, part moves into a fund that moves three times as much. At least 2% sits in a short-term Treasury fund when money is left over. It sells when the signal falls, and it sells everything in this part when the signal reaches zero.",
   "instruments": "US ETFs",
-  "category": "Systematic funds (Aurelia)"
+  "category": "Systematic funds"
  },
  "beatendown": {
   "name": "Beaten-Down Winners",
@@ -102,7 +102,7 @@
   "summary": "Buys set baskets of exchange-traded funds in fixed proportions, on a set schedule near the market open.",
   "explainer": "This strategy watches set baskets of exchange-traded funds, each with fixed proportions for its holdings, and checks that a full year, 252 trading days, of daily price history is available for every fund in a basket. It buys only between 9:35 and 9:40 a.m. Eastern, on scheduled days at the start of a basket and in the first five trading days of a month, and only when the gap between buying and selling prices is small. Spending is capped at $25,000 in a day. It sells when a holding is above its target proportion, and those sales can happen outside the morning buying window.",
   "instruments": "US ETFs",
-  "category": "Systematic funds (Aurelia)"
+  "category": "Systematic funds"
  },
  "free_kraken_ada_basis": {
   "name": "Cardano Price Alignment Monitor",
@@ -172,7 +172,7 @@
   "summary": "Checks whether call and put prices line up fairly with each other, and never places a trade.",
   "explainer": "This strategy watches the prices of call and put options on the same stock, with the same strike price (the agreed price at which the option lets you buy or sell) and expiry date (the date the option runs out), and checks whether those prices line up with each other the way they normally should. A call gains when a stock rises and a put gains when it falls, so their prices are closely linked. It never triggers a buy: when it finds a gap between the two prices, it records what converting one position into the other would notionally cost, purely as a check. It never triggers a sell or exit either, because it holds no position. It trades no instruments.",
   "instruments": "None — records checks only",
-  "category": "Options — directional & hedges"
+  "category": "Rule-based systems"
  },
  "free_opt_release": {
   "name": "Verified Event Straddle",
@@ -219,7 +219,7 @@
  "fwd_coinbase_sma200": {
   "name": "Bitcoin Daily Buyer on Coinbase",
   "summary": "Once a day, after checking 200 straight days of Bitcoin prices and a fresh quote, it buys a small fixed amount of Bitcoin.",
-  "explainer": "This strategy watches Bitcoin priced in US dollars on Coinbase, using daily price bars. Once a day, in the first five minutes after midnight UTC, it checks that it holds a full run of 200 completed daily bars in a row, with no missing days, and that it has a fresh price quote no more than 30 seconds old. When those checks pass, it buys a small fixed amount, 0.01 Bitcoin, once for that day, and the same day never triggers twice. It sets no profit target and has no built-in sell rule in its code, so holdings are closed only outside this strategy's own signals. It trades crypto on paper.",
+  "explainer": "This strategy watches Bitcoin priced in US dollars on Coinbase, using daily price bars. Once a day, in the first five minutes after midnight UTC (5 hours ahead of New York), it checks that it holds a full run of 200 completed daily bars in a row, with no missing days, and that it has a fresh price quote no more than 30 seconds old. When those checks pass, it buys a small fixed amount, 0.01 Bitcoin, once for that day, and the same day never triggers twice. It sets no profit target and has no built-in sell rule in its code, so holdings are closed only outside this strategy's own signals. It trades crypto on paper.",
   "instruments": "Crypto (paper)",
   "category": "Crypto"
  },
@@ -315,9 +315,9 @@
   "category": "Breakout & momentum"
  },
  "qullamaggie_paper": {
-  "name": "Leader Breakout — Paper Test Copy",
-  "summary": "A paper test copy of the Leader Breakout approach that carries accepted breakout buys onto the paper account inside its own fixed budget.",
-  "explainer": "This strategy watches the same kind of stocks as the desk's Leader Breakout strategy: strong, heavily traded US stocks breaking out of a tight pause after a big run. A separate scan prepares the possible buys and checks each one first. This test copy buys only long positions it has accepted, skips short bets, and never trades the three funds QQQ, TQQQ or GLD, which belong to another part of the desk, and never buys the same stock twice in one session. All of its buys together must fit inside a fixed $100,000 test budget. Positions it opens are then managed under the same breakout rules, including the stop price recorded with each buy. It trades US stocks.",
+  "name": "Leader Breakout — Second Run",
+  "summary": "A second, separate run of the Leader Breakout approach, carrying accepted breakout buys onto the paper account inside its own fixed budget.",
+  "explainer": "This strategy watches the same kind of stocks as the desk's Leader Breakout strategy: strong, heavily traded US stocks breaking out of a tight pause after a big run. A separate scan prepares the possible buys and checks each one first. This second run buys only long positions it has accepted, skips short bets, and never trades the three funds QQQ, TQQQ or GLD, which belong to another part of the desk, and never buys the same stock twice in one session. All of its buys together must fit inside a fixed $100,000 budget of its own. Positions it opens are then managed under the same breakout rules, including the stop price recorded with each buy. It trades US stocks.",
   "instruments": "US stocks",
   "category": "Breakout & momentum"
  },
@@ -386,7 +386,7 @@
  },
  "spx_premium": {
   "name": "Weekly Index Premium",
-  "summary": "Sells a weekly put spread — a spread pairs a bought option with a sold one, so the most that can be made or lost is capped; premium is the payment collected for selling — on XSP, a mini S&P 500 index, priced one week of typical movement below the market.",
+  "summary": "Sells a weekly put spread on XSP, a mini S&P 500 index, priced one week of typical movement below the market.",
   "explainer": "This strategy watches the S&P 500 through its smaller traded version, using the prior week's closing price and its average weekly movement over 14 weeks. It sells on the first trading day of the week, at about 10 a.m. Eastern, but only if the account is worth at least $37,000 and the sale brings in a positive credit. It sells a put option (a put gains in value when the price falls) about one average weekly move below the prior close, and buys a second put 5 points lower for protection, both expiring that week. It holds the pair until the end of the week's last trading day, when both are closed for settlement. If a week's trade loses at least 90% of the 5-point width, the strategy then sits out for four weeks before selling again.",
   "instruments": "Index options",
   "category": "Options — income"
