@@ -102,6 +102,25 @@
     .strat-empty{padding:22px 20px;color:var(--muted);font-size:14px}
     .back-top{position:fixed;right:18px;bottom:18px;z-index:30;border:1px solid var(--line-strong);border-radius:4px;background:var(--accent);color:#fff;padding:10px 14px;font-size:13px;font-weight:700;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.18)}
     .back-top[hidden]{display:none}
+    .meter-scale{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;font-family:var(--mono);margin:2px 0 10px}
+    .stack{margin:12px 0 6px}
+    .stack-bar{display:flex;height:14px;border:1px solid var(--line);border-radius:2px;overflow:hidden;background:#e5e9e7}
+    .stack-bar span{display:block;height:100%;min-width:2px}
+    .stack-legend{margin:8px 0 0;padding:0;list-style:none}
+    .stack-legend li{display:flex;align-items:baseline;gap:8px;font-size:13px;margin:4px 0}
+    .stack-legend .sw{flex:0 0 10px;width:10px;height:10px;border-radius:2px;align-self:center}
+    .stack-legend .sv{margin-left:auto;font-family:var(--mono);font-weight:650;white-space:nowrap}
+    .catmix{padding:16px 20px 6px;border-bottom:1px solid var(--line)}
+    .catmix h3{margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink)}
+    .catmix-row{display:grid;grid-template-columns:minmax(150px,240px) 1fr 34px;gap:10px;align-items:center;margin:5px 0;font-size:12.5px}
+    .catmix-row .cm-name{color:#39463f}
+    .catmix-track{height:9px;background:#e5e9e7;border-radius:2px;overflow:hidden}
+    .catmix-fill{display:block;height:100%}
+    .catmix-row .cm-n{font-family:var(--mono);text-align:right;color:var(--muted)}
+    .sleeve.holding{box-shadow:inset 4px 0 0 var(--positive);background:#f4faf6}
+    .sharebar{display:inline-block;vertical-align:middle;width:52px;height:7px;background:#e5e9e7;border-radius:2px;overflow:hidden;margin-right:7px}
+    .sharebar i{display:block;height:100%;background:var(--accent)}
+    @media (max-width:640px){.catmix{padding:13px}.catmix-row{grid-template-columns:minmax(110px,1fr) 1fr 30px}}
     @media (max-width:640px){.strat-tools{padding:13px}.tool-field{flex:1 1 100%}.cat-head{padding-left:13px;padding-right:13px}}
   </style>
 </head>
@@ -110,7 +129,7 @@
     <header class="masthead">
       <div>
         <h1>Galath — Paper Trading Research Desk</h1>
-        <p class="byline">Published by Galath</p>
+        <p class="byline">A paper-trading research desk — 60 automated strategies running on pretend money in real market hours.</p>
         <div class="statusbar" id="statusbar"></div>
       </div>
       <div class="mast-tools">
@@ -144,7 +163,7 @@
       </div>
       <section class="panel">
         <div class="panel-head"><div><h2>Position book</h2><p id="positionCount"></p></div><span class="pill info">Live from the broker</span></div>
-        <p class="pos-legend">A call gains when the price rises; a put gains when it falls. The strike is the agreed price the option is tied to. Each contract covers 100 shares, so an option priced at $1.11 is worth $111 per contract. Long means the desk owns it; short means the desk sold it first, as a bet the price will fall.</p>
+        <p class="pos-legend">Each option contract covers 100 shares, so an option priced at $1.11 is worth $111 per contract. Rows grouped under one heading are parts of a single trade, with a combined total underneath. Words like call, put and strike are explained in the “Words we use” list on the Strategies tab.</p>
         <div class="table-wrap" id="positions"></div>
       </section>
     </section>
@@ -153,7 +172,8 @@
       <section class="panel">
         <div class="panel-head"><div><h2>Strategies</h2><p>Every strategy the desk runs, and what each one is doing now. Select “How this strategy works” on any card for a plain-English explanation.</p></div><span class="pill info">Paper only</span></div>
         <div class="panel-body" id="algoUnavailable" hidden><div class="unavailable"><strong>Strategy descriptions unavailable right now.</strong><p>The plain-English descriptions could not be loaded, so no strategy cards are shown here rather than incomplete ones. This page checks again automatically.</p></div></div>
-        <div class="glossary"><h3>Words we use</h3><ul><li><strong>Option:</strong> a contract giving the right to buy or sell something at an agreed price, by an agreed date.</li><li><strong>Call:</strong> an option that gains in value when the price rises.</li><li><strong>Put:</strong> an option that gains in value when the price falls.</li><li><strong>Strike:</strong> the agreed price at which an option lets you buy or sell.</li><li><strong>Premium:</strong> simply the price paid for an option — or the payment collected when one is sold.</li><li><strong>Spread:</strong> a paired option trade — one option bought and one sold on the same stock — so the most that can be made or lost is capped.</li><li><strong>Contract:</strong> one option contract covers 100 shares.</li><li><strong>Long:</strong> owned — the desk bought it and gains when the price rises.</li><li><strong>Short:</strong> sold first, as a bet the price will fall, and bought back later.</li><li><strong>Expiry:</strong> the date an option runs out.</li><li><strong>Straddle:</strong> buying a call and a put together on the same stock.</li><li><strong>Wheel:</strong> the repeating cycle of selling a put, possibly buying the shares, then selling calls against them.</li><li><strong>Ladder:</strong> options stacked at different prices and dates, like rungs of a ladder.</li><li><strong>Beta:</strong> a measure of how much a stock moves compared with the whole market; high-beta stocks move more.</li><li><strong>Bar:</strong> one period's price summary — where the price opened, its high, its low, and where it closed.</li><li><strong>Tensor:</strong> the desk's name for its pattern-scoring engine, which grades stocks for swing setups.</li><li><strong>VWAP:</strong> the day's average traded price, weighted by how much traded at each price.</li></ul></div>
+        <div class="glossary"><h3>Words we use</h3><ul><li><strong>Option:</strong> a contract giving the right to buy or sell something at an agreed price, by an agreed date.</li><li><strong>Call:</strong> an option that gains in value when the price rises.</li><li><strong>Put:</strong> an option that gains in value when the price falls.</li><li><strong>Strike:</strong> the agreed price at which an option lets you buy or sell.</li><li><strong>Premium:</strong> simply the price paid for an option — or the payment collected when one is sold.</li><li><strong>Spread:</strong> a paired option trade — one option bought and one sold on the same stock — so the most that can be made or lost is capped.</li><li><strong>Contract:</strong> one option contract covers 100 shares.</li><li><strong>Long:</strong> owned — the desk bought it and gains when the price rises.</li><li><strong>Short:</strong> sold first, as a bet the price will fall, and bought back later.</li><li><strong>Expiry:</strong> the date an option runs out.</li><li><strong>Straddle:</strong> buying a call and a put together on the same stock.</li><li><strong>Wheel:</strong> the repeating cycle of selling a put, possibly buying the shares, then selling calls against them.</li><li><strong>Ladder:</strong> options stacked at different prices and dates, like rungs of a ladder.</li><li><strong>Beta:</strong> a measure of how much a stock moves compared with the whole market; high-beta stocks move more.</li><li><strong>Bar:</strong> one period's price summary — where the price opened, its high, its low, and where it closed.</li><li><strong>ETF:</strong> a fund traded like a stock, holding a basket of shares or assets.</li><li><strong>Tensor:</strong> the desk's name for its pattern-scoring engine, which grades stocks for swing setups.</li><li><strong>VWAP:</strong> the day's average traded price, weighted by how much traded at each price.</li></ul></div>
+        <div class="catmix" id="catMix"></div>
         <div class="strat-tools" id="stratTools">
           <div class="tool-field">
             <label for="stratSearch">Search strategies</label>
@@ -218,19 +238,42 @@
     $('snapshotTime').textContent=fmtTime(d.generated_at_utc);
     $('statusbar').innerHTML='<span class="badge good"><span class="dot"></span>Paper account</span>'
       +'<span class="badge"><span class="dot"></span>'+esc(((d.desk||{}).sleeve_order||[]).length)+' strategies</span>'
-      +'<span class="badge"><span class="dot"></span>Updated '+esc(fmtTime(d.generated_at_utc))+'</span>';
+      ;
     var a=d.account||{}, ex=d.exposure||{};
     var metrics=[['Account value',money(a.equity),'Total value of the paper account'],
                  ['Cash',money(a.cash),'Money not currently invested'],
-                 ['Buying power',money(a.buying_power),'Available to open new positions'],
+                 ['Buying power',money(a.buying_power),'Available to open new positions — the broker allows buying beyond the cash balance on this account'],
                  ['Open positions',String(d.position_count),'Positions currently held']];
     $('accountMetrics').innerHTML=metrics.map(function(m){return '<div class="metric"><span class="metric-label">'+esc(m[0])+'</span><span class="metric-value">'+esc(m[1])+'</span><span class="metric-sub">'+esc(m[2])+'</span></div>';}).join('');
     var grossPct=Number(ex.gross_pct); if(!isFinite(grossPct))grossPct=0; var meterW=Math.max(0,Math.min(100,grossPct));
     $('exposure').innerHTML='<div class="kv emphasis"><div>Total value held</div><div>'+money(ex.gross_notional)+'</div>'
       +'<div>Share of account</div><div>'+pct(ex.gross_pct,1)+'</div></div>'
       +'<div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(ex.gross_pct,1))+'"><span style="width:'+meterW+'%"></span><i></i><i></i><i></i></div>'
+      +'<div class="meter-scale"><span>0%</span><span>50%</span><span>100%</span></div>'
+      + bySleeveHtml(ex)
       +'<p class="footnote">The total value held is the combined market value of every open position, added up without netting winners against losers.</p>';
-    $('accountDetail').innerHTML='<div class="kv"><div>Status</div><div>'+esc(a.status||'—')+'</div></div>';
+    function bySleeveHtml(ex){
+      var bs=ex.by_sleeve||{}, keys=Object.keys(bs).filter(function(k){return Number(bs[k])>0;});
+      var tot=keys.reduce(function(s,k){return s+Number(bs[k]);},0);
+      if(!keys.length||!(tot>0))return '';
+      var cols=['#0f5a48','#bd8e2f','#3f6071','#7a4a8c','#b3541e','#2e6f8e','#5c7a1e','#963e3e'];
+      var segs=keys.map(function(k,i){var w=Number(bs[k])/tot*100;return '<span style="width:'+w+'%;background:'+cols[i%cols.length]+'"></span>';}).join('');
+      var leg=keys.map(function(k,i){var nm=(ALGO[k]||{}).name||k;return '<li><span class="sw" style="background:'+cols[i%cols.length]+'"></span>'+esc(nm)+'<span class="sv">'+money(bs[k])+' \u00b7 '+pct(Number(bs[k])/tot*100,1)+'</span></li>';}).join('');
+      return '<div class="stack"><p style="margin:0 0 2px;font-size:13px;color:var(--muted)">Where the held value sits, by strategy:</p><div class="stack-bar" role="img" aria-label="Held value split by strategy">'+segs+'</div><ul class="stack-legend">'+leg+'</ul></div>';
+    }
+    var statusTxt=(String(a.status||'').toUpperCase()==='ACTIVE')?'Active — open and trading normally':(a.status||'—');
+    var eqN=Number(a.equity), cashN=Number(a.cash), heldN=Number(ex.gross_notional);
+    var heldNet=(isFinite(eqN)&&isFinite(cashN))?eqN-cashN:NaN;
+    var acctHtml='<div class="kv"><div>Status</div><div style="font-family:var(--sans);font-size:13px">'+esc(statusTxt)+'</div>'
+      +'<div>Cash held</div><div>'+money(a.cash)+'</div>'
+      +'<div>Value held in positions</div><div>'+(isFinite(heldNet)?money(heldNet):'—')+'</div></div>';
+    if(isFinite(cashN)&&isFinite(heldN)&&(cashN+heldN)>0){
+      var tot=cashN+heldN, cw=cashN/tot*100, hw=heldN/tot*100;
+      acctHtml+='<div class="stack"><div class="stack-bar" role="img" aria-label="Account made up of '+pct(cashN/eqN*100,1)+' cash and '+pct(heldN/eqN*100,1)+' held in positions"><span style="width:'+cw+'%;background:var(--accent)"></span><span style="width:'+hw+'%;background:var(--gold,#bd8e2f)"></span></div>'
+        +'<ul class="stack-legend"><li><span class="sw" style="background:var(--accent)"></span>Cash<span class="sv">'+money(a.cash)+' \u00b7 '+pct(cashN/eqN*100,1)+' of account</span></li>'
+        +'<li><span class="sw" style="background:#bd8e2f"></span>Held in positions<span class="sv">'+money(ex.gross_notional)+' \u00b7 '+pct(heldN/eqN*100,1)+' of account</span></li></ul></div>';
+    }
+    $('accountDetail').innerHTML=acctHtml;
     $('positionCount').textContent=d.position_count+' open positions';
     if(!d.positions.length){$('positions').innerHTML='<p class="panel-body">No open positions right now.</p>';}
     else{
@@ -242,11 +285,15 @@
         var qtyNum=Math.abs(Number(p.qty));
         var qtyTxt=qtyNum+' '+(o?'contract':'share')+(qtyNum===1?'':'s');
         var sideTxt=(p.side==='short'||Number(p.qty)<0)?'Short (sold first)':'Long (owned)';
+        var share=(bookAbs>0&&p.market_value!=null)?(Math.abs(Number(p.market_value))/bookAbs*100):null;
         return '<tr><td data-label="Symbol" class="symbol">'+esc(decodeSymbol(p.symbol))+'</td><td data-label="Strategy">'+esc(strat)+'</td>'
           +'<td data-label="Quantity" class="num">'+esc(qtyTxt)+'</td><td data-label="Side">'+esc(sideTxt)+'</td>'
           +'<td data-label="Average entry" class="num">'+money(p.avg_entry)+'</td><td data-label="Current price" class="num">'+money(p.current)+'</td>'
-          +'<td data-label="Market value" class="num">'+money(p.market_value)+'</td><td data-label="Open profit or loss" class="num'+plCls(p.unrealized_pl)+'">'+esc(fmtPL(p.unrealized_pl))+'</td></tr>';
+          +'<td data-label="Market value" class="num">'+money(p.market_value)+'</td>'
+          +'<td data-label="Share of book" class="num">'+(share==null?'—':'<span class="sharebar" aria-hidden="true"><i style="width:'+Math.min(100,share)+'%"></i></span>'+pct(share,1))+'</td>'
+          +'<td data-label="Open profit or loss" class="num'+plCls(p.unrealized_pl)+'">'+esc(fmtPL(p.unrealized_pl))+'</td></tr>';
       }
+      var bookAbs=d.positions.reduce(function(s,p){return s+(p.market_value!=null?Math.abs(Number(p.market_value)):0);},0);
       var blocks=[], byKey={};
       d.positions.forEach(function(p,idx){
         var o=parseOption(p.symbol);
@@ -258,21 +305,24 @@
       blocks.forEach(function(b){
         if(b.opt&&b.rows.length>1){
           var typeWord=b.rows.every(function(p){return parseOption(p.symbol).type===b.opt.type;})?(b.opt.type==='C'?'call':'put')+' spread':'option spread';
-          html+='<tr class="group-head"><td colspan="8">'+esc(b.opt.underlying+' '+typeWord+' \u2014 '+b.rows.length+' parts of one trade')+'</td></tr>';
+          html+='<tr class="group-head"><td colspan="9">'+esc(b.opt.underlying+' '+typeWord+' \u2014 '+b.rows.length+' parts of one trade')+'</td></tr>';
           html+=b.rows.map(rowHtml).join('');
           var cmv=0, cpl=0, hasMv=false, hasPl=false;
           b.rows.forEach(function(p){if(p.market_value!=null){cmv+=Number(p.market_value);hasMv=true;} if(p.unrealized_pl!=null){cpl+=Number(p.unrealized_pl);hasPl=true;}});
-          html+='<tr class="group-total"><td colspan="6">Combined</td><td class="num">'+(hasMv?money(cmv):'\u2014')+'</td><td class="num'+plCls(hasPl?cpl:null)+'">'+(hasPl?fmtPL(cpl):'\u2014')+'</td></tr>';
+          html+='<tr class="group-total"><td colspan="6">Combined</td><td class="num">'+(hasMv?money(cmv):'\u2014')+'</td><td class="num"></td><td class="num'+plCls(hasPl?cpl:null)+'">'+(hasPl?fmtPL(cpl):'\u2014')+'</td></tr>';
         } else {
           html+=b.rows.map(rowHtml).join('');
         }
       });
-      $('positions').innerHTML='<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+html+'</tbody></table>';
+      var tMv=0,tPl=0,tHasMv=false,tHasPl=false;
+      d.positions.forEach(function(p){if(p.market_value!=null){tMv+=Number(p.market_value);tHasMv=true;} if(p.unrealized_pl!=null){tPl+=Number(p.unrealized_pl);tHasPl=true;}});
+      html+='<tr class="group-total"><td colspan="6">Total — whole book</td><td class="num">'+(tHasMv?money(tMv):'\u2014')+'</td><td class="num"></td><td class="num'+plCls(tHasPl?tPl:null)+'">'+(tHasPl?fmtPL(tPl):'\u2014')+'</td></tr>';
+      $('positions').innerHTML='<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Share of book</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+html+'</tbody></table>';
     }
     FEED=d;
     renderStrategies();
   }
-  var TAXONOMY=['Tensor strategies','Breakout & momentum','Pullbacks & mean reversion','Rule-based systems','Options \u2014 income','Options \u2014 directional & hedges','Systematic funds (Aurelia)','Crypto'];
+  var TAXONOMY=['Tensor strategies','Breakout & momentum','Pullbacks & mean reversion','Rule-based systems','Options \u2014 income','Options \u2014 directional & hedges','Systematic funds','Crypto'];
   var FEED=null;
   function sleeveOrder(){return FEED?((FEED.desk||{}).sleeve_order||Object.keys(FEED.sleeves||{})):[];}
   function categoryCounts(){
@@ -288,16 +338,29 @@
     }).join('');
     sel.value=(cur==='all'||cur in counts)?cur:'all';
   }
-  function cardHtml(k){
+  var CAT_COLORS={'Tensor strategies':'#7a4a8c','Breakout & momentum':'#b3541e','Pullbacks & mean reversion':'#2e6f8e','Rule-based systems':'#5c7a1e','Options \u2014 income':'#0f5a48','Options \u2014 directional & hedges':'#3f6071','Systematic funds':'#bd8e2f','Crypto':'#963e3e'};
+  function catColor(c){return CAT_COLORS[c]||'#0f5a48';}
+  function renderCatMix(){
+    var host=$('catMix'); if(!host)return;
+    var counts=categoryCounts(), total=sleeveOrder().length;
+    if(!total){host.innerHTML='';return;}
+    var max=Math.max.apply(null,TAXONOMY.map(function(c){return counts[c];}).concat([1]));
+    host.innerHTML='<h3>'+total+' strategies across '+TAXONOMY.length+' kinds</h3>'+TAXONOMY.map(function(c){
+      return '<div class="catmix-row"><span class="cm-name">'+esc(c)+'</span><span class="catmix-track"><span class="catmix-fill" style="width:'+(counts[c]/max*100)+'%;background:'+catColor(c)+'"></span></span><span class="cm-n">'+counts[c]+'</span></div>';
+    }).join('');
+  }
+  function cardHtml(k,showCat){
     var s=(FEED.sleeves||{})[k]||{positions:[],position_count:0};
     var algo=ALGO[k];
     var name=algo?algo.name:'Strategy name unavailable';
     var summary=algo?algo.summary:'A plain-English description is not available yet.';
     var expl=algo?'<details class="explainer"><summary>How this strategy works</summary><p>'+esc(algo.explainer)+'</p><p class="explainer-inst">Trades: '+esc(algo.instruments)+'</p></details>':'';
-    var state=s.position_count>0?['good','Holding '+s.position_count+' position'+(s.position_count===1?'':'s')]:['','Watching — no positions'];
-    var cat=algo&&algo.category?'<span class="pill info">'+esc(algo.category)+'</span>':'';
-    return '<article class="sleeve" data-sleeve="'+esc(k)+'"><div class="sleeve-top"><h3>'+esc(name)+'</h3><span class="pill '+state[0]+'">'+esc(state[1])+'</span></div><p>'+esc(summary)+'</p>'+expl
-      +'<div class="sleeve-meta"><span class="pill">Paper strategy</span>'+cat+'</div></article>';
+    var holding=s.position_count>0;
+    var state=holding?['good','Holding '+s.position_count+' position'+(s.position_count===1?'':'s')]:['','No positions right now'];
+    var col=catColor(algo&&algo.category);
+    var cat=(showCat&&algo&&algo.category)?'<span class="pill" style="color:'+col+';border-color:'+col+'">'+esc(algo.category)+'</span>':'';
+    return '<article class="sleeve'+(holding?' holding':'')+'" data-sleeve="'+esc(k)+'" style="box-shadow:inset 4px 0 0 '+col+(holding?',inset 8px 0 0 var(--positive)':'')+'"><div class="sleeve-top"><h3>'+esc(name)+'</h3><span class="pill '+state[0]+'">'+esc(state[1])+'</span></div><p>'+esc(summary)+'</p>'+expl
+      +(cat?'<div class="sleeve-meta">'+cat+'</div>':'')+'</article>';
   }
   function matchesQuery(k,q){
     if(!q)return true;
@@ -327,11 +390,12 @@
       host.innerHTML=TAXONOMY.map(function(c){
         var ks=vis.filter(function(k){return (ALGO[k]||{}).category===c;});
         if(!ks.length)return '';
-        return '<section class="cat-group"><h3 class="cat-head">'+esc(c)+' <span class="cat-count">\u00b7 '+ks.length+' strateg'+(ks.length===1?'y':'ies')+'</span></h3><div class="sleeves">'+ks.map(cardHtml).join('')+'</div></section>';
+        return '<section class="cat-group"><h3 class="cat-head" style="color:'+catColor(c)+';border-left:4px solid '+catColor(c)+';padding-left:12px">'+esc(c)+' <span class="cat-count">\u00b7 '+ks.length+' strateg'+(ks.length===1?'y':'ies')+'</span></h3><div class="sleeves">'+ks.map(function(k){return cardHtml(k,false);}).join('')+'</div></section>';
       }).join('');
     } else {
-      host.innerHTML=vis.map(cardHtml).join('');
+      host.innerHTML=vis.map(function(k){return cardHtml(k,true);}).join('');
     }
+    renderCatMix();
     var cnt=$('stratCount'); if(cnt)cnt.textContent='Showing '+vis.length+' of '+order.length+' strategies';
     var emp=$('stratEmpty'); if(emp)emp.hidden=vis.length>0;
   }
@@ -369,11 +433,13 @@
     closeList(); return html;
   }
   var steps=[['Data','Prices arrive from the broker and other data sources throughout the day.'],
+             ['Scheduler','The desk\'s clock wakes the right jobs at the right times.'],
              ['Strategies','Each strategy checks its own rules and decides whether to buy, sell, or wait.'],
-             ['Broker','Approved orders are sent to the paper account.'],
+             ['Broker','The only part that talks to the broker — approved orders are sent to the paper account.'],
+             ['Risk accounting','Keeps track of how much each strategy holds, and the desk in total.'],
              ['Ledger','Every fill is written into one permanent record.'],
              ['Terminal','This page is built from that record and the live broker account, refreshed every 5 minutes.']];
-  var pipe='<div class="pipeline" role="img" aria-label="How a trade flows: Data, then Strategies, then Broker, then Ledger, then Terminal">'
+  var pipe='<div class="pipeline" role="img" aria-label="The seven pieces of the desk, in flow order: Data, Scheduler, Strategies, Broker, Risk accounting, Ledger, Terminal">'
     + steps.map(function(s,i){return (i?'<span class="pipe-arrow" aria-hidden="true">\u2192</span>':'')+'<div class="pipe-step"><strong>'+esc(s[0])+'</strong><span>'+esc(s[1])+'</span></div>';}).join('')+'</div>';
   fetch('../architecture.json?t='+Date.now(),{cache:'no-store'})
     .then(function(r){if(!r.ok)throw new Error('architecture http '+r.status);return r.json();})
