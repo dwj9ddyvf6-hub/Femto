@@ -75,6 +75,15 @@
     @media (max-width:640px){body{font-size:15px;line-height:1.55}.shell{padding:14px 10px 44px}.masthead{grid-template-columns:1fr;gap:14px;padding-bottom:16px}.mast-tools{align-items:flex-start}.snapshot{text-align:left}.tabs{width:auto;margin:14px -7px 16px;padding:3px;gap:0}.tab{flex:1;padding:10px 3px 9px;font-size:11px}.metrics{grid-template-columns:1fr 1fr}.metric{padding:15px 13px}.metric-value{font-size:19px}.panel-head,.panel-body{padding-left:13px;padding-right:13px}.panel-head h2,.panel-head h3{font-size:14px}.sleeves{grid-template-columns:1fr}.sleeve{padding:15px 13px}.sleeve:nth-child(odd){border-right:0}.sleeve:nth-last-child(2){border-bottom:1px solid var(--line)}.table-wrap{overflow-x:visible}.table-wrap table,.table-wrap thead,.table-wrap tbody,.table-wrap th,.table-wrap td,.table-wrap tr{display:block}.table-wrap thead{display:none}.table-wrap tr{padding:9px 12px;border-bottom:1px solid var(--line)}.table-wrap tr:last-child{border-bottom:0}.table-wrap td{display:grid;grid-template-columns:minmax(96px,.42fr) minmax(0,1fr);gap:12px;border:0;padding:5px 0;text-align:left!important;white-space:normal!important}.table-wrap td:before{content:attr(data-label);color:var(--muted);font:600 11px/1.5 var(--sans);text-transform:uppercase;letter-spacing:.035em}.table-wrap td.symbol{font-size:14px}}
     @media (max-width:460px){.metric-value{font-size:18px}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  
+    .pos-legend{margin:0;padding:12px 20px;border-bottom:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.55}
+    .group-head td{background:var(--accent-pale);font-weight:700;font-size:13px}
+    .group-total td{font-weight:700;border-top:2px solid var(--line-strong)}
+    .glossary{margin:0 20px 18px;border:1px solid var(--line);border-radius:10px;padding:14px 18px;background:var(--panel)}
+    .glossary h3{margin:0 0 8px;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+    .glossary ul{margin:0;padding:0;list-style:none;columns:2;column-gap:32px}
+    .glossary li{margin:0 0 7px;font-size:13.5px;line-height:1.5;break-inside:avoid}
+    @media (max-width:700px){.glossary ul{columns:1}}
   </style>
 </head>
 <body>
@@ -116,6 +125,7 @@
       </div>
       <section class="panel">
         <div class="panel-head"><div><h2>Position book</h2><p id="positionCount"></p></div><span class="pill info">Live from the broker</span></div>
+        <p class="pos-legend">A call gains when the price rises; a put gains when it falls. The strike is the agreed price the option is tied to. Each contract covers 100 shares, so an option priced at $1.11 is worth $111 per contract. Long means the desk owns it; short means the desk sold it first, as a bet the price will fall.</p>
         <div class="table-wrap" id="positions"></div>
       </section>
     </section>
@@ -124,6 +134,7 @@
       <section class="panel">
         <div class="panel-head"><div><h2>Strategies</h2><p>Every strategy the desk runs, and what each one is doing now. Select “How this strategy works” on any card for a plain-English explanation.</p></div><span class="pill info">Paper only</span></div>
         <div class="panel-body" id="algoUnavailable" hidden><div class="unavailable"><strong>Strategy descriptions unavailable right now.</strong><p>The plain-English descriptions could not be loaded, so no strategy cards are shown here rather than incomplete ones. This page checks again automatically.</p></div></div>
+        <div class="glossary"><h3>Words we use</h3><ul><li><strong>Option:</strong> a contract giving the right to buy or sell something at an agreed price, by an agreed date.</li><li><strong>Call:</strong> an option that gains in value when the price rises.</li><li><strong>Put:</strong> an option that gains in value when the price falls.</li><li><strong>Strike:</strong> the agreed price at which an option lets you buy or sell.</li><li><strong>Premium:</strong> simply the price paid for an option — or the payment collected when one is sold.</li><li><strong>Spread:</strong> a paired option trade — one option bought and one sold on the same stock — so the most that can be made or lost is capped.</li><li><strong>Contract:</strong> one option contract covers 100 shares.</li><li><strong>Long:</strong> owned — the desk bought it and gains when the price rises.</li><li><strong>Short:</strong> sold first, as a bet the price will fall, and bought back later.</li><li><strong>Expiry:</strong> the date an option runs out.</li><li><strong>Straddle:</strong> buying a call and a put together on the same stock.</li><li><strong>Wheel:</strong> the repeating cycle of selling a put, possibly buying the shares, then selling calls against them.</li><li><strong>Ladder:</strong> options stacked at different prices and dates, like rungs of a ladder.</li><li><strong>Beta:</strong> a measure of how much a stock moves compared with the whole market; high-beta stocks move more.</li><li><strong>Bar:</strong> one period's price summary — where the price opened, its high, its low, and where it closed.</li><li><strong>Tensor:</strong> the desk's name for its pattern-scoring engine, which grades stocks for swing setups.</li><li><strong>VWAP:</strong> the day's average traded price, weighted by how much traded at each price.</li></ul></div>
         <div class="sleeves" id="sleeves"></div>
       </section>
     </section>
@@ -153,14 +164,16 @@
     });
   });
   var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  function decodeSymbol(sym){
+  var UNDERLYING_NAMES={VXX:'a volatility fund',XSP:'a mini S&P 500 index',QQQ:'a fund of 100 large Nasdaq companies',SPX:'the S&P 500 index',SPY:'a fund tracking the S&P 500 index'};
+  function parseOption(sym){
     var m=String(sym||'').match(/^([A-Z]+)(\d{2})(\d{2})(\d{2})([CP])(\d{8})$/);
-    if(!m)return sym;
+    if(!m)return null;
     var yr=2000+Number(m[2]), mo=Number(m[3]), dy=Number(m[4]);
-    if(mo<1||mo>12||dy<1||dy>31)return sym;
-    var strike=(Number(m[6])/1000).toFixed(2);
-    return m[1]+' '+strike+' '+(m[5]==='C'?'call':'put')+' \u00b7 expires '+MONTHS[mo-1]+' '+dy+', '+yr;
+    if(mo<1||mo>12||dy<1||dy>31)return null;
+    return {underlying:m[1],expiryKey:m[2]+m[3]+m[4],type:m[5],strike:Number(m[6])/1000,
+      label:m[1]+(UNDERLYING_NAMES[m[1]]?' \u2014 '+UNDERLYING_NAMES[m[1]]:'')+' \u00b7 '+(m[5]==='C'?'call':'put')+' \u00b7 strike $'+(Number(m[6])/1000).toFixed(2)+' \u00b7 expires '+MONTHS[mo-1]+' '+dy+', '+yr};
   }
+  function decodeSymbol(sym){var o=parseOption(sym);return o?o.label:sym;}
   var ALGO={};
   var ALGO_FAILED=false;
   function renderFeed(d){
@@ -184,16 +197,40 @@
     $('positionCount').textContent=d.position_count+' open positions';
     if(!d.positions.length){$('positions').innerHTML='<p class="panel-body">No open positions right now.</p>';}
     else{
-      var rows=d.positions.map(function(p){
-        var strat=(ALGO[p.sleeve]||{}).name||p.sleeve||'—';
-        var pl=p.unrealized_pl==null?'—':((Number(p.unrealized_pl)>=0?'+':'')+money(p.unrealized_pl));
-        var plCls=p.unrealized_pl==null?'':(Number(p.unrealized_pl)>=0?' pnl-major positive':' pnl-major negative');
+      function fmtPL(v){if(v==null)return '\u2014';return (Number(v)>=0?'+':'')+money(v);}
+      function plCls(v){return v==null?'':(Number(v)>=0?' pnl-major positive':' pnl-major negative');}
+      function rowHtml(p){
+        var o=parseOption(p.symbol);
+        var strat=ALGO_FAILED?'Strategy name unavailable':((ALGO[p.sleeve]||{}).name||'Strategy name unavailable');
+        var qtyNum=Math.abs(Number(p.qty));
+        var qtyTxt=qtyNum+' '+(o?'contract':'share')+(qtyNum===1?'':'s');
+        var sideTxt=(p.side==='short'||Number(p.qty)<0)?'Short (sold first)':'Long (owned)';
         return '<tr><td data-label="Symbol" class="symbol">'+esc(decodeSymbol(p.symbol))+'</td><td data-label="Strategy">'+esc(strat)+'</td>'
-          +'<td data-label="Quantity" class="num">'+esc(p.qty)+'</td><td data-label="Side">'+esc(p.side)+'</td>'
+          +'<td data-label="Quantity" class="num">'+esc(qtyTxt)+'</td><td data-label="Side">'+esc(sideTxt)+'</td>'
           +'<td data-label="Average entry" class="num">'+money(p.avg_entry)+'</td><td data-label="Current price" class="num">'+money(p.current)+'</td>'
-          +'<td data-label="Market value" class="num">'+money(p.market_value)+'</td><td data-label="Open profit or loss" class="num'+plCls+'">'+esc(pl)+'</td></tr>';
-      }).join('');
-      $('positions').innerHTML='<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+rows+'</tbody></table>';
+          +'<td data-label="Market value" class="num">'+money(p.market_value)+'</td><td data-label="Open profit or loss" class="num'+plCls(p.unrealized_pl)+'">'+esc(fmtPL(p.unrealized_pl))+'</td></tr>';
+      }
+      var blocks=[], byKey={};
+      d.positions.forEach(function(p,idx){
+        var o=parseOption(p.symbol);
+        var key=o?((p.sleeve||'')+'|'+o.underlying+'|'+o.expiryKey):('row|'+idx);
+        if(!byKey[key]){byKey[key]={opt:o,rows:[]};blocks.push(byKey[key]);}
+        byKey[key].rows.push(p);
+      });
+      var html='';
+      blocks.forEach(function(b){
+        if(b.opt&&b.rows.length>1){
+          var typeWord=b.rows.every(function(p){return parseOption(p.symbol).type===b.opt.type;})?(b.opt.type==='C'?'call':'put')+' spread':'option spread';
+          html+='<tr class="group-head"><td colspan="8">'+esc(b.opt.underlying+' '+typeWord+' \u2014 '+b.rows.length+' parts of one trade')+'</td></tr>';
+          html+=b.rows.map(rowHtml).join('');
+          var cmv=0, cpl=0, hasMv=false, hasPl=false;
+          b.rows.forEach(function(p){if(p.market_value!=null){cmv+=Number(p.market_value);hasMv=true;} if(p.unrealized_pl!=null){cpl+=Number(p.unrealized_pl);hasPl=true;}});
+          html+='<tr class="group-total"><td colspan="6">Combined</td><td class="num">'+(hasMv?money(cmv):'\u2014')+'</td><td class="num'+plCls(hasPl?cpl:null)+'">'+(hasPl?fmtPL(cpl):'\u2014')+'</td></tr>';
+        } else {
+          html+=b.rows.map(rowHtml).join('');
+        }
+      });
+      $('positions').innerHTML='<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+html+'</tbody></table>';
     }
     var order=(d.desk||{}).sleeve_order||Object.keys(d.sleeves||{});
     $('algoUnavailable').hidden=!ALGO_FAILED;
@@ -201,7 +238,7 @@
     else $('sleeves').innerHTML=order.map(function(k){
       var s=(d.sleeves||{})[k]||{positions:[],position_count:0};
       var algo=ALGO[k];
-      var name=algo?algo.name:k;
+      var name=algo?algo.name:'Strategy name unavailable';
       var summary=algo?algo.summary:'A plain-English description is not available yet.';
       var expl=algo?'<details class="explainer"><summary>How this strategy works</summary><p>'+esc(algo.explainer)+'</p><p class="explainer-inst">Trades: '+esc(algo.instruments)+'</p></details>':'';
       var state=s.position_count>0?['good','Holding '+s.position_count+' position'+(s.position_count===1?'':'s')]:['','Watching — no positions'];
@@ -242,11 +279,11 @@
     });
     closeList(); return html;
   }
-  var steps=[['Data','Prices arrive from the broker throughout the day.'],
+  var steps=[['Data','Prices arrive from the broker and other data sources throughout the day.'],
              ['Strategies','Each strategy checks its own rules and decides whether to buy, sell, or wait.'],
              ['Broker','Approved orders are sent to the paper account.'],
              ['Ledger','Every fill is written into one permanent record.'],
-             ['Terminal','This page is built from that record and refreshed every 5 minutes.']];
+             ['Terminal','This page is built from that record and the live broker account, refreshed every 5 minutes.']];
   var pipe='<div class="pipeline" role="img" aria-label="How a trade flows: Data, then Strategies, then Broker, then Ledger, then Terminal">'
     + steps.map(function(s,i){return (i?'<span class="pipe-arrow" aria-hidden="true">\u2192</span>':'')+'<div class="pipe-step"><strong>'+esc(s[0])+'</strong><span>'+esc(s[1])+'</span></div>';}).join('')+'</div>';
   fetch('../architecture.json?t='+Date.now(),{cache:'no-store'})
