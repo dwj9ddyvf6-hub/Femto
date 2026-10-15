@@ -81,6 +81,20 @@
     @media (max-width:640px){.featured-trade{grid-template-columns:1fr}.trade-score,.trade-story{padding:18px}.trade-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline{grid-template-columns:1fr;padding-top:0}.timeline:before{left:8px;right:auto;top:0;bottom:0;width:2px;height:auto}.event{margin-left:20px;border-top:0;border-left:3px solid var(--accent);min-height:0}.event:before{top:14px;left:-29px}.waterfall-row{grid-template-columns:100px minmax(0,1fr) 74px;gap:7px}.live-link{font-size:10px}}
     @media (max-width:460px){.sector-grid,.mini-viz-grid,.dial-grid,.performance-grid,.payoff-grid{grid-template-columns:1fr}.metric-value{font-size:18px}.viz{padding:13px 10px}.trade-facts{grid-template-columns:1fr 1fr}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  
+    .explainer{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+    .explainer summary{cursor:pointer;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.04em}
+    .explainer p{margin-top:8px}
+    .explainer .explainer-inst{color:var(--ink);font-weight:600;font-size:12px}
+    .pipeline{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin:4px 0 20px}
+    .pipe-step{flex:1 1 120px;background:var(--panel-2);border:1px solid var(--line-strong);border-radius:4px;padding:12px 14px}
+    .pipe-step strong{display:block;font-size:14px;margin-bottom:4px}
+    .pipe-step span{color:var(--muted);font-size:12px;line-height:1.5;display:block}
+    .pipe-arrow{align-self:center;color:var(--accent);font-weight:700;font-size:18px}
+    .arch-section{margin-bottom:22px}
+    .arch-section h3{font-size:15px;margin:0 0 8px;letter-spacing:.03em}
+    .arch-section p,.arch-section li{font-size:14px;line-height:1.65;color:#39463f}
+    .arch-section ul,.arch-section ol{margin:6px 0 6px 20px;padding:0}
   </style>
 </head>
 <body>
@@ -102,6 +116,7 @@
       <button class="tab" role="tab" aria-selected="false" aria-controls="model" id="tab-model">MODEL</button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="universe" id="tab-universe">UNIVERSE</button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="tape" id="tab-tape">TAPE</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="architecture" id="tab-architecture">ARCHITECTURE</button>
     </nav>
 
     <section class="tabpanel" role="tabpanel" id="pulse" aria-labelledby="tab-pulse">
@@ -124,7 +139,7 @@
       </div>
       <div class="grid equal" id="allocationVisuals" hidden>
         <section class="panel" id="waterfallPanel" hidden><div class="panel-head"><div><h2>Day P&amp;L waterfall</h2><p>Every recorded contributor reconciled to the account day P&amp;L</p></div><span class="pill" id="waterfallStatus"></span></div><div class="panel-body" id="dayWaterfall"></div></section>
-        <section class="panel" id="treemapPanel" hidden><div class="panel-head"><div><h2>Sleeve allocation</h2><p>Area is notional; color is unrealized P&amp;L</p></div><span class="pill accent">Recorded sleeves</span></div><div class="panel-body viz-large" id="sleeveTreemap"></div></section>
+        <section class="panel" id="treemapPanel" hidden><div class="panel-head"><div><h2>Strategy allocation</h2><p>Area is position size; color is open profit or loss</p></div><span class="pill accent">Recorded strategies</span></div><div class="panel-body viz-large" id="sleeveTreemap"></div></section>
       </div>
       <section class="panel">
         <div class="panel-head"><div><h2>Position book</h2><p id="positionCount"></p></div><span class="pill info">Broker snapshot</span></div>
@@ -136,16 +151,16 @@
     <section class="tabpanel" role="tabpanel" id="model" aria-labelledby="tab-model" hidden>
       <div class="grid two">
         <section class="panel">
-          <div class="panel-head"><div><h2>Strategy sleeves</h2><p>All 22 desk sleeves and current state</p></div><span class="pill info">Paper only</span></div>
+          <div class="panel-head"><div><h2>Strategies</h2><p>Every strategy the desk runs, and what each one is doing now. Select “How this strategy works” on any card for a plain-English explanation.</p></div><span class="pill info">Paper only</span></div>
           <div class="sleeves" id="sleeves"></div>
         </section>
         <div>
           <section class="panel"><div class="panel-head"><div><h2>Tensor engine</h2><p>Production signal implementation</p></div></div><div class="panel-body" id="engine"></div></section>
           <section class="panel"><div class="panel-head"><div><h2>Outcome study</h2><p>Closed 20-bar outcomes</p></div></div><div class="panel-body" id="outcomes"></div></section>
-          <section class="panel"><div class="panel-head"><div><h2>Sleeve regime scorecard</h2><p>Recorded regime fit by sleeve</p></div></div><div class="panel-body" id="regimeScorecard"></div></section>
+          <section class="panel"><div class="panel-head"><div><h2>Strategy scorecard</h2><p>How well each strategy fits current market conditions</p></div></div><div class="panel-body" id="regimeScorecard"></div></section>
         </div>
       </div>
-      <section class="panel"><div class="panel-head"><div><h2>Sleeve leaderboard</h2><p>Realized results in the recorded closed-trade board</p></div></div><div class="table-wrap" id="sleeveLeaderboard"></div></section>
+      <section class="panel"><div class="panel-head"><div><h2>Strategy leaderboard</h2><p>Realized results in the recorded closed-trade board</p></div></div><div class="table-wrap" id="sleeveLeaderboard"></div></section>
       <section class="panel"><div class="panel-head"><div><h2>Glossary</h2><p>Plain-English market and desk concepts</p></div></div><div id="glossary"></div></section>
       <section class="panel" id="tradeAnatomyPanel" hidden><div class="panel-head"><div><h2>Trade anatomy</h2><p>A featured closed trade, told in public-safe plain English</p></div><span class="pill accent">Case study</span></div><div id="tradeAnatomy"></div></section>
       <section class="panel"><div class="panel-head"><div><h2>Latest nightly / weekly review</h2><p id="reviewFile"></p></div></div><div class="panel-body"><div class="review" id="review"></div></div></section>
@@ -187,6 +202,10 @@
     </section>
 
     <p class="footnote">Paper-trading terminal. Figures refresh automatically from the desk feed — about every minute during market hours.</p>
+      <section class="tabpanel" role="tabpanel" id="architecture" aria-labelledby="tab-architecture" hidden>
+      <section class="panel"><div class="panel-head"><div><h2>Architecture</h2><p>How this desk works, in plain English</p></div><span class="pill info">Paper only</span></div>
+      <div class="panel-body" id="architectureBody"><p class="muted">Loading…</p></div></section>
+    </section>
   </main>
 
   <script id="snapshot-data" type="application/json">{
@@ -5448,8 +5467,8 @@ function lectorLabVisual(){
       if(pending>0)return ['warn',pending+' pending'];
       return ['','Flat'];
     }
-    $('sleeves').innerHTML=d.desk.sleeve_order.map(k=>{const s=d.sleeves[k],st=sleeveState(s),pending=(s.pending?.buys||[]).concat(s.pending?.sells||[]),open=d.positions.filter(p=>p.sleeve===k),openPnl=open.reduce((a,p)=>a+Number(p.unrealized_pl||0),0),closed=[...(d.closed_trade_board||[])].filter(t=>publicSleeveName(t.sleeve).toLowerCase()===String(s.name).toLowerCase()).sort((a,b)=>String(a.date).localeCompare(String(b.date)));let run=0,profile=[0,...closed.map(t=>(run+=parsePnl(t.pnl)))];if(open.length){run+=openPnl;profile.push(run)}const pnlLine=(closed.length||open.length)?'<div class="sleeve-pnl"><span>P/L snapshot</span><strong class="'+cls(run)+'">'+esc(signMoney(run))+'</strong>'+sparkline(profile,{compact:true,includeZero:true,semanticValue:run,label:s.name+' cumulative recorded P/L'})+'</div>':'';return '<article class="sleeve"><div class="sleeve-top"><h3>'+esc(s.name)+'</h3><span class="pill '+st[0]+'">'+esc(st[1])+'</span></div><p>'+esc(sleeveDescriptions[k]||'High-level description is not available in this snapshot.')+'</p>'+pnlLine+'<div class="sleeve-meta"><span class="pill">Paper sleeve</span>'+(s.credit?'<span class="credit-note">Research reference · '+esc(s.credit)+'</span>':'')+(pending.length?'<span class="pill warn">Pending '+esc(pending.join(', '))+'</span>':'')+'</div></article>'}).join('');
-    const sleeveResults={};(d.closed_trade_board||[]).forEach(t=>{const name=publicSleeveName(t.sleeve);if(!sleeveResults[name])sleeveResults[name]={name,pnl:0,wins:0,count:0};const v=parsePnl(t.pnl);sleeveResults[name].pnl+=v;sleeveResults[name].wins+=v>0?1:0;sleeveResults[name].count++});const ranked=Object.values(sleeveResults).sort((a,b)=>b.pnl-a.pnl);$('sleeveLeaderboard').innerHTML=ranked.length?table([{t:'Rank'},{t:'Sleeve'},{t:'Closed',c:'num'},{t:'Win rate',c:'num'},{t:'Realized P/L',c:'num'}],ranked.map((s,i)=>row([{l:'Rank',c:'num',v:esc(i+1)},{l:'Sleeve',c:'symbol',v:esc(s.name)},{l:'Closed',c:'num',v:esc(s.count)},{l:'Win rate',c:'num',v:esc(pct(s.wins/s.count*100,1))},{l:'Realized P/L',c:'num '+cls(s.pnl),v:esc(signMoney(s.pnl))}]))):'<div class="empty">No closed-trade results are recorded in this snapshot.</div>';
+    $('sleeves').innerHTML=d.desk.sleeve_order.map(k=>{const s=d.sleeves[k],st=sleeveState(s),pending=(s.pending?.buys||[]).concat(s.pending?.sells||[]),open=d.positions.filter(p=>p.sleeve===k),openPnl=open.reduce((a,p)=>a+Number(p.unrealized_pl||0),0),closed=[...(d.closed_trade_board||[])].filter(t=>publicSleeveName(t.sleeve).toLowerCase()===String(s.name).toLowerCase()).sort((a,b)=>String(a.date).localeCompare(String(b.date)));let run=0,profile=[0,...closed.map(t=>(run+=parsePnl(t.pnl)))];if(open.length){run+=openPnl;profile.push(run)}const pnlLine=(closed.length||open.length)?'<div class="sleeve-pnl"><span>P/L snapshot</span><strong class="'+cls(run)+'">'+esc(signMoney(run))+'</strong>'+sparkline(profile,{compact:true,includeZero:true,semanticValue:run,label:s.name+' cumulative recorded P/L'})+'</div>':'';const algo=(window.__ALGO||{})[k];const explainerHtml=algo?'<details class="explainer"><summary>How this strategy works</summary><p>'+esc(algo.explainer)+'</p><p class="explainer-inst">Trades: '+esc(algo.instruments)+'</p></details>':'';return '<article class="sleeve"><div class="sleeve-top"><h3>'+esc(algo?algo.name:s.name)+'</h3><span class="pill '+st[0]+'">'+esc(st[1])+'</span></div><p>'+esc(algo?algo.summary:(sleeveDescriptions[k]||'A plain-English description is not available yet.'))+'</p>'+explainerHtml+pnlLine+'<div class="sleeve-meta"><span class="pill">Paper strategy</span>'+(s.credit?'<span class="credit-note">Research reference · '+esc(s.credit)+'</span>':'')+(pending.length?'<span class="pill warn">Pending '+esc(pending.join(', '))+'</span>':'')+'</div></article>'}).join('');
+    const sleeveResults={};(d.closed_trade_board||[]).forEach(t=>{const name=publicSleeveName(t.sleeve);if(!sleeveResults[name])sleeveResults[name]={name,pnl:0,wins:0,count:0};const v=parsePnl(t.pnl);sleeveResults[name].pnl+=v;sleeveResults[name].wins+=v>0?1:0;sleeveResults[name].count++});const ranked=Object.values(sleeveResults).sort((a,b)=>b.pnl-a.pnl);$('sleeveLeaderboard').innerHTML=ranked.length?table([{t:'Rank'},{t:'Strategy'},{t:'Closed',c:'num'},{t:'Win rate',c:'num'},{t:'Realized P/L',c:'num'}],ranked.map((s,i)=>row([{l:'Rank',c:'num',v:esc(i+1)},{l:'Strategy',c:'symbol',v:esc(s.name)},{l:'Closed',c:'num',v:esc(s.count)},{l:'Win rate',c:'num',v:esc(pct(s.wins/s.count*100,1))},{l:'Realized P/L',c:'num '+cls(s.pnl),v:esc(signMoney(s.pnl))}]))):'<div class="empty">No closed-trade results are recorded in this snapshot.</div>';
     const glossary=[['Buying power','Capital currently available for new positions under the account’s brokerage rules.'],['Drawdown','The decline from a previous equity peak to a later low.'],['Gamma exposure','A view of how option-market positioning may change dealer hedging as the underlying price moves.'],['Gamma flip','A price level where estimated aggregate gamma exposure changes sign.'],['Call wall','A strike with concentrated call-option positioning that traders monitor as a potential reference level.'],['Put wall','A strike with concentrated put-option positioning that traders monitor as a potential reference level.'],['IV skew','The difference in implied volatility across option strikes or contract types.'],['Put spread','An options position combining puts at different strikes to create a bounded payoff shape.'],['Sharpe ratio','Return relative to variability; it requires consistently sampled returns to be meaningful.'],['Profit factor','Gross profit divided by gross loss across closed trades.'],['Buying power exposure','The portion of capital represented by current gross position value.'],['REVERSAL','A signal label for a move that turns away from a prior direction.'],['BREAKOUT','A signal label for a move through a previously observed price boundary.'],['RECLAIM','A signal label for price regaining a previously lost reference area.'],['TRANSITION','A signal label for a setup occurring while market behavior is changing.'],['Phenotype','A plain-language category used to group signals by their observed price behavior.'],['Confidence','A recorded score indicating the strength assigned to a signal in the public snapshot.']];$('glossary').innerHTML='<dl class="glossary-grid">'+glossary.map(g=>'<div class="glossary-item"><dt>'+esc(g[0])+'</dt><dd>'+esc(g[1])+'</dd></div>').join('')+'</dl>';
 
     $('engine').innerHTML='<div class="kv engine-kv"><div>Version</div><div>'+esc(d.engine.version)+'</div><div>Byte-exact</div><div>'+esc(d.engine.byte_exact?'YES':'NO')+'</div><div>Snapshot pin</div><div class="identifier">'+safeIdentifier(d.engine.last_snapshot_seen)+'</div><div>Drift</div><div class="'+(d.engine.drift?'negative':'positive')+'">'+esc(d.engine.drift?'DETECTED':'NONE')+'</div></div>';
@@ -5486,6 +5505,48 @@ function lectorLabVisual(){
     const tabs=[...document.querySelectorAll('[role="tab"]')]; tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.setAttribute('aria-selected',String(x===t)));document.querySelectorAll('[role="tabpanel"]').forEach(p=>p.hidden=p.id!==t.getAttribute('aria-controls'));window.scrollTo({top:0,behavior:'smooth'})}));
   })();
   </script>
+
+<script id="terminal-extras">
+(function(){
+  'use strict';
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  window.__ALGO_READY=fetch('../algorithms.json?t='+Date.now(),{cache:'no-store'})
+    .then(function(r){if(!r.ok)throw new Error('algorithms http '+r.status);return r.json();})
+    .then(function(j){window.__ALGO=j;})
+    .catch(function(){window.__ALGO={};});
+  function rich(body){
+    var lines=String(body||'').split('\n'), html='', list=null;
+    function closeList(){if(list){html+='</'+list+'>';list=null;}}
+    lines.forEach(function(ln){
+      var t=ln.trim();
+      if(!t){closeList();return;}
+      var bullet=t.match(/^-\s+(.*)$/), num=t.match(/^\d+\.\s+(.*)$/);
+      var item=bullet?bullet[1]:(num?num[1]:null), want=bullet?'ul':(num?'ol':null);
+      if(item!==null){ if(list!==want){closeList();html+='<'+want+'>';list=want;}
+        html+='<li>'+esc(item).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')+'</li>'; return; }
+      closeList();
+      html+='<p>'+esc(t).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')+'</p>';
+    });
+    closeList(); return html;
+  }
+  var steps=[['Data','Prices arrive from the broker throughout the day.'],
+             ['Strategies','Each strategy checks its own rules and decides whether to buy, sell, or wait.'],
+             ['Broker','Approved orders are sent to the paper account.'],
+             ['Ledger','Every fill is written into one permanent record.'],
+             ['Terminal','This page is built from that record and refreshed every 5 minutes.']];
+  var pipe='<div class="pipeline" role="img" aria-label="How a trade flows: Data, then Strategies, then Broker, then Ledger, then Terminal">'
+    + steps.map(function(s,i){return (i?'<span class="pipe-arrow" aria-hidden="true">\u2192</span>':'')+'<div class="pipe-step"><strong>'+esc(s[0])+'</strong><span>'+esc(s[1])+'</span></div>';}).join('')+'</div>';
+  fetch('../architecture.json?t='+Date.now(),{cache:'no-store'})
+    .then(function(r){if(!r.ok)throw new Error('architecture http '+r.status);return r.json();})
+    .then(function(j){
+      var el=document.getElementById('architectureBody'); if(!el)return;
+      el.innerHTML=pipe+(j.sections||[]).map(function(s){return '<div class="arch-section"><h3>'+esc(s.heading)+'</h3>'+rich(s.body)+'</div>';}).join('');
+    })
+    .catch(function(){
+      var el=document.getElementById('architectureBody'); if(el)el.innerHTML=pipe+'<p>The architecture notes could not be loaded right now.</p>';
+    });
+})();
+</script>
 <script id="live-feed">
 (function(){
   'use strict';
@@ -5575,7 +5636,7 @@ function lectorLabVisual(){
         var v=validFeed(j);
         if(v!==true){setBadge('off','FEED INVALID — showing last valid snapshot');return;}
         if(j.generated_at_utc>currentGen()){
-          if(appSrc){rerenderWith(j);}
+          if(appSrc){(window.__ALGO_READY||Promise.resolve()).then(function(){rerenderWith(j);});}
           else{paintBadgeFor(j.generated_at_utc);}
         }else{
           paintBadgeFor(j.generated_at_utc);
