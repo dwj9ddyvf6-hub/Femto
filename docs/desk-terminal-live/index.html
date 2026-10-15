@@ -4,13 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="light">
-  <link rel="icon" href="data:,">
+  <meta name="description" content="Muse Desk is a paper trading research desk: 60 automated strategies running on a paper account, with every figure read live from the broker account and the desk's permanent record.">
+  <meta name="theme-color" content="#0f5a48">
+  <link rel="canonical" href="https://dwj9ddyvf6-hub.github.io/Femto/docs/desk-terminal-live/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Muse Desk">
+  <meta property="og:title" content="Muse Desk">
+  <meta property="og:description" content="Muse Desk is a paper trading research desk: 60 automated strategies running on a paper account, with every figure read live from the broker account and the desk's permanent record.">
+  <meta property="og:url" content="https://dwj9ddyvf6-hub.github.io/Femto/docs/desk-terminal-live/">
+  <meta property="og:image" content="https://dwj9ddyvf6-hub.github.io/Femto/docs/desk-terminal-live/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Muse Desk — a paper trading research desk">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muse Desk">
+  <meta name="twitter:description" content="Muse Desk is a paper trading research desk: 60 automated strategies running on a paper account, with every figure read live from the broker account and the desk's permanent record.">
+  <meta name="twitter:image" content="https://dwj9ddyvf6-hub.github.io/Femto/docs/desk-terminal-live/og-card.png">
   <title>Muse Desk</title>
 <style>
     :root {
       color-scheme: light;
       --bg:#f4f6f5; --panel:#ffffff; --panel-2:#f8faf9; --ink:#1d2a25; --muted:#65716b;
-      --line:#d9e0dc; --line-strong:#aebbb5; --accent:#0f5a48; --accent-pale:#e3eee9;
+      --line:#d9e0dc; --line-strong:#7f968a; --gold:#bd8e2f; --gold-text:#8a6d1f; --accent:#0f5a48; --accent-pale:#e3eee9;
       --positive:#1d684c; --positive-bg:#e9f3ee; --negative:#963e3e; --negative-bg:#faeeee;
       --warning:#835f17; --warning-bg:#fbf4df; --info:#3f6071; --info-bg:#edf3f6;
       --sans:"Aptos", "Avenir Next", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
@@ -122,13 +141,89 @@
     .sharebar i{display:block;height:100%;background:var(--accent)}
     @media (max-width:640px){.catmix{padding:13px}.catmix-row{grid-template-columns:minmax(110px,1fr) 1fr 30px}}
     @media (max-width:640px){.strat-tools{padding:13px}.tool-field{flex:1 1 100%}.cat-head{padding-left:13px;padding-right:13px}}
+
+    /* ===== Polish pass: depth, motion, states, richness ===== */
+    ::selection{background:var(--accent-pale);color:var(--ink)}
+    body{background:linear-gradient(180deg,#eef3f0 0,#f4f6f5 340px)}
+    .panel{box-shadow:0 1px 2px rgba(29,42,37,.05),0 4px 14px rgba(29,42,37,.04)}
+    .tabs{box-shadow:0 2px 8px rgba(29,42,37,.10)}
+    .masthead{background:linear-gradient(180deg,rgba(227,238,233,.55),rgba(227,238,233,0));padding-left:10px;padding-right:10px;margin:0 -10px}
+    .brand-mark{display:inline-block;vertical-align:-6px;margin-right:12px}
+    .tab,.tool-btn,.back-top,.explainer summary{transition:background-color .15s ease,color .15s ease,border-color .15s ease,transform .1s ease}
+    .tab:focus-visible{outline-offset:2px}
+    .tool-btn:active,.back-top:active{transform:translateY(1px);background:var(--accent-pale)}
+    .tab:active{background:var(--accent-pale)}
+    .exposure-meter span,.stack-bar span,.catmix-fill,.sharebar i{transition:width .45s ease}
+    tbody tr{transition:background-color .12s ease}
+    tbody tr:hover{background:var(--accent-pale)}
+    tbody tr:nth-child(even){background:var(--panel-2)}
+    tbody tr.group-head:hover,tbody tr.group-total:hover{background:inherit}
+    .explainer summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+    .explainer summary::after{content:"\25B8";float:right;color:var(--accent);font-size:11px}
+    .explainer[open ] summary::after{content:"\25BE"}
+    .sleeve{transition:background-color .15s ease}
+    .sleeve:hover{background:var(--panel-2)}
+    .sleeve.holding:hover{background:#eef7f1}
+    .unavailable{border-left:4px solid var(--warning);background:var(--warning-bg);padding:20px}
+    .unavailable strong{font-size:15px}
+    .glossary{border-radius:3px}
+    .sleeve:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+    .sleeve:last-child{border-bottom:0}
+    .sleeve:nth-last-child(2):nth-child(even){border-bottom:0}
+    @media (max-width:640px){.sleeve:nth-last-child(2):nth-child(even){border-bottom:1px solid var(--line)}.sleeve:last-child{border-bottom:0}}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+    .skel{background:#e5e9e7;border-radius:2px;animation:pulse 1.6s ease-in-out infinite}
+    .loading-note{color:var(--muted);font-size:13.5px;display:flex;align-items:center;gap:9px;padding:6px 0}
+    .loading-note::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--accent);animation:pulse 1.2s ease-in-out infinite;flex:0 0 9px}
+    .metric-skel{height:86px;margin:22px 20px 20px}
+    #accountMetrics{min-height:128px}
+    #positions{min-height:120px}
+    .empty-state{text-align:center;padding:30px 20px;color:var(--muted);font-size:14px}
+    .empty-state .empty-dot{display:block;width:11px;height:11px;border-radius:50%;background:var(--gold);margin:0 auto 10px}
+    .empty-state button{margin-top:12px}
+    .strat-empty{text-align:center;padding:30px 20px}
+    .noscript-note{margin:16px 0}
+    .tab svg{vertical-align:-2px;margin-right:6px}
+    .metric-label svg{vertical-align:-2px;margin-right:5px}
+    footer.site-footer{margin:26px 2px 0;padding-top:16px;border-top:1px solid var(--line-strong);color:var(--muted);font-size:12.5px;line-height:1.6;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:baseline}
+    footer.site-footer .foot-brand{font-family:var(--display);font-size:15px;color:var(--ink);font-weight:700}
+    footer.site-footer a{color:var(--accent);font-weight:600}
+    .waffle{display:flex;flex-wrap:wrap;gap:5px;padding:14px 20px 4px}
+    .waffle i{width:13px;height:13px;border-radius:50%;border:2px solid;display:block}
+    .waffle-note{padding:6px 20px 12px;color:var(--muted);font-size:13px;border-bottom:1px solid var(--line)}
+    .matrix-wrap{overflow-x:auto;padding:6px 20px 16px}
+    table.matrix{font-size:12px;width:auto;min-width:100%}
+    table.matrix td{text-align:center;font-family:var(--mono);border-bottom:1px solid var(--line);padding:7px 9px}
+    table.matrix th{white-space:normal}
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0 20px}
+    .tl-phase{border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:3px;padding:10px 12px;background:var(--panel-2)}
+    .tl-phase h4{margin:0 0 7px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+    .tl-phase span{display:block;font-size:12.5px;line-height:1.45;margin:5px 0 5px 12px;position:relative}
+    .tl-phase span::before{content:"";position:absolute;left:-12px;top:6px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+    .hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px;margin:12px 0 6px}
+    .hub-piece{border:1px solid var(--line-strong);border-radius:3px;padding:11px 12px;background:var(--panel-2);font-size:12.5px}
+    .hub-piece strong{display:block;font-size:13.5px;margin-bottom:3px}
+    .hub-piece.broker{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .hub-piece.broker span{color:#d9e8e1}
+    .hub-piece.ledger{border-color:var(--gold);background:var(--warning-bg)}
+    .expiry-strip{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 20px;border-bottom:1px solid var(--line);font-size:13px}
+    .expiry-strip .exp-chip{border:1px solid var(--line-strong);border-radius:2px;padding:4px 9px;background:var(--panel-2);font-family:var(--mono);font-size:12.5px}
+    .equation{display:flex;gap:8px;align-items:stretch;margin-top:14px;flex-wrap:wrap}
+    .eq-block{border:1px solid var(--line-strong);border-radius:3px;padding:10px 12px;background:var(--panel-2);min-width:110px;flex:1 1 110px}
+    .eq-block.total{background:var(--accent-pale);border-color:var(--accent)}
+    .eq-block b{display:block;font-family:var(--mono);font-size:15px}
+    .eq-block span{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:700}
+    .eq-op{align-self:center;font-size:19px;font-weight:700;color:var(--accent)}
+    @media (max-width:640px){.pipeline .pipe-arrow{transform:rotate(90deg);align-self:center;margin:0 auto}.timeline{grid-template-columns:1fr 1fr}}
+    @media (prefers-reduced-motion:reduce){.skel,.loading-note::before{animation:none}.tab,.tool-btn,.back-top,.explainer summary,.exposure-meter span,.stack-bar span,.catmix-fill,.sharebar i,tbody tr{transition:none}}
+    @media print{.tabs,.back-top,.strat-tools{display:none!important}body{background:#fff}.panel{box-shadow:none}}
   </style>
 </head>
 <body>
-  <main class="shell">
+  <main class="shell" id="top">
     <header class="masthead">
       <div>
-        <h1>Muse Desk</h1>
+        <h1><svg class="brand-mark" width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="8" fill="#0f5a48"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#bd8e2f"/><circle cx="45" cy="42" r="3" fill="#e3eee9"/></svg>Muse Desk</h1>
         <p class="byline">A paper trading research desk</p>
         <div class="statusbar" id="statusbar"></div>
       </div>
@@ -136,16 +231,17 @@
         <div class="snapshot"><span>Snapshot</span><strong id="snapshotTime">—</strong><span>Updated every 5 minutes</span></div>
       </div>
     </header>
+    <noscript><div class="unavailable noscript-note"><strong>This page needs JavaScript to show the desk's figures.</strong><p>Every number on Muse Desk is loaded live from the desk's records. With JavaScript switched off, nothing here is current — please enable JavaScript and reload to see the desk as it stands.</p></div></noscript>
 
     <nav class="tabs" role="tablist" aria-label="Terminal sections">
-      <button class="tab" role="tab" aria-selected="true" aria-controls="pulse" id="tab-pulse">OVERVIEW</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="model" id="tab-model">STRATEGIES</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="architecture" id="tab-architecture">ARCHITECTURE</button>
+      <button class="tab" role="tab" aria-selected="true" aria-controls="pulse" id="tab-pulse"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>OVERVIEW</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="model" id="tab-model"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>STRATEGIES</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="architecture" id="tab-architecture"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M2 21h20"/><path d="M10 21v-6h4v6"/></svg>ARCHITECTURE</button>
     </nav>
 
     <section class="tabpanel" role="tabpanel" id="pulse" aria-labelledby="tab-pulse">
       <div class="panel">
-        <div class="metrics" id="accountMetrics"></div>
+        <div class="metrics" id="accountMetrics"><div class="skel metric-skel"></div><div class="skel metric-skel"></div><div class="skel metric-skel"></div><div class="skel metric-skel"></div></div>
         <div class="panel-body" id="feedUnavailable" hidden>
           <div class="unavailable"><strong>Data unavailable right now.</strong>
           <p>The desk's latest figures could not be loaded, so nothing is shown here rather than old numbers. This page checks again automatically.</p></div>
@@ -154,17 +250,21 @@
       <div class="grid two">
         <section class="panel">
           <div class="panel-head"><div><h2>Exposure</h2><p>The total value of everything the desk currently holds, and how much of the account that makes up.</p></div></div>
-          <div class="panel-body" id="exposure"></div>
+          <div class="panel-body" id="exposure"><p class="loading-note">Loading the latest figures…</p></div>
         </section>
         <section class="panel">
           <div class="panel-head"><div><h2>Account</h2><p>The paper account, as reported by the broker.</p></div><span class="pill info">Paper only</span></div>
-          <div class="panel-body" id="accountDetail"></div>
+          <div class="panel-body" id="accountDetail"><p class="loading-note">Loading the latest figures…</p></div>
         </section>
       </div>
       <section class="panel">
-        <div class="panel-head"><div><h2>Position book</h2><p id="positionCount"></p></div><span class="pill info">Live from the broker</span></div>
+        <div class="panel-head"><div><h2>The desk's permanent record</h2><p>Every action the desk takes is written into one record that is only ever added to, never rewritten. This is what is in it.</p></div></div>
+        <div class="panel-body" id="ledgerPanel"><p class="loading-note">Loading the latest figures…</p></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><div><h2>Position book</h2><p id="positionCount"></p></div><span class="pill info" id="brokerPill">Live from the broker</span></div>
         <p class="pos-legend">Each option contract covers 100 shares, so an option priced at $1.11 is worth $111 per contract. Rows grouped under one heading are parts of a single trade, with a combined total underneath. Words like call, put and strike are explained in the “Words we use” list on the Strategies tab.</p>
-        <div class="table-wrap" id="positions"></div>
+        <div class="table-wrap" id="positions"><p class="loading-note panel-body">Loading the latest figures…</p></div>
       </section>
     </section>
 
@@ -172,8 +272,7 @@
       <section class="panel">
         <div class="panel-head"><div><h2>Strategies</h2><p>Every strategy the desk runs, and what each one is doing now. Select “How this strategy works” on any card for a plain-English explanation.</p></div><span class="pill info">Paper only</span></div>
         <div class="panel-body" id="algoUnavailable" hidden><div class="unavailable"><strong>Strategy descriptions unavailable right now.</strong><p>The plain-English descriptions could not be loaded, so no strategy cards are shown here rather than incomplete ones. This page checks again automatically.</p></div></div>
-        <div class="glossary"><h3>Words we use</h3><ul><li><strong>Option:</strong> a contract giving the right to buy or sell something at an agreed price, by an agreed date.</li><li><strong>Call:</strong> an option that gains in value when the price rises.</li><li><strong>Put:</strong> an option that gains in value when the price falls.</li><li><strong>Strike:</strong> the agreed price at which an option lets you buy or sell.</li><li><strong>Premium:</strong> simply the price paid for an option — or the payment collected when one is sold.</li><li><strong>Spread:</strong> a paired option trade — one option bought and one sold on the same stock — so the most that can be made or lost is capped.</li><li><strong>Contract:</strong> one option contract covers 100 shares.</li><li><strong>Long:</strong> owned — the desk bought it and gains when the price rises.</li><li><strong>Short:</strong> sold first, as a bet the price will fall, and bought back later.</li><li><strong>Expiry:</strong> the date an option runs out.</li><li><strong>Straddle:</strong> buying a call and a put together on the same stock.</li><li><strong>Wheel:</strong> the repeating cycle of selling a put, possibly buying the shares, then selling calls against them.</li><li><strong>Ladder:</strong> options stacked at different prices and dates, like rungs of a ladder.</li><li><strong>Beta:</strong> a measure of how much a stock moves compared with the whole market; high-beta stocks move more.</li><li><strong>Bar:</strong> one period's price summary — where the price opened, its high, its low, and where it closed.</li><li><strong>ETF:</strong> a fund traded like a stock, holding a basket of shares or assets.</li><li><strong>Tensor:</strong> the desk's name for its pattern-scoring engine, which grades stocks for swing setups.</li><li><strong>VWAP:</strong> the day's average traded price, weighted by how much traded at each price.</li></ul></div>
-        <div class="catmix" id="catMix"></div>
+        <div class="waffle" id="waffle" role="img" aria-label="One dot per strategy, coloured by kind; a filled dot means the strategy currently holds positions"></div><p class="waffle-note" id="waffleNote"></p><div class="catmix" id="catMix"></div><div class="catmix" id="instMix"></div><div id="catMatrix"></div>
         <div class="strat-tools" id="stratTools">
           <div class="tool-field">
             <label for="stratSearch">Search strategies</label>
@@ -190,8 +289,9 @@
           </div>
           <p class="strat-count" id="stratCount" role="status" aria-live="polite"></p>
         </div>
-        <div class="sleeves" id="sleeves"></div>
-        <p class="strat-empty" id="stratEmpty" hidden>No strategies match — try a different word or category.</p>
+        <div class="sleeves" id="sleeves"><p class="loading-note panel-body">Loading the strategy list…</p></div>
+        <div class="strat-empty empty-state" id="stratEmpty" hidden><span class="empty-dot" aria-hidden="true"></span><span id="stratEmptyText">No strategies match — try a different word or category.</span><br><button type="button" class="tool-btn" id="stratEmptyClear">Clear search and category</button></div>
+        <div class="glossary"><h3>Words we use</h3><ul><li><strong>Option:</strong> a contract giving the right to buy or sell something at an agreed price, by an agreed date.</li><li><strong>Call:</strong> an option that gains in value when the price rises.</li><li><strong>Put:</strong> an option that gains in value when the price falls.</li><li><strong>Strike:</strong> the agreed price at which an option lets you buy or sell.</li><li><strong>Premium:</strong> simply the price paid for an option — or the payment collected when one is sold.</li><li><strong>Spread:</strong> a paired option trade — one option bought and one sold on the same stock — so the most that can be made or lost is capped.</li><li><strong>Contract:</strong> one option contract covers 100 shares.</li><li><strong>Long:</strong> owned — the desk bought it and gains when the price rises.</li><li><strong>Short:</strong> sold first, as a bet the price will fall, and bought back later.</li><li><strong>Expiry:</strong> the date an option runs out.</li><li><strong>Straddle:</strong> buying a call and a put together on the same stock.</li><li><strong>Wheel:</strong> the repeating cycle of selling a put, possibly buying the shares, then selling calls against them.</li><li><strong>Ladder:</strong> options stacked at different prices and dates, like rungs of a ladder.</li><li><strong>Beta:</strong> a measure of how much a stock moves compared with the whole market; high-beta stocks move more.</li><li><strong>Bar:</strong> one period's price summary — where the price opened, its high, its low, and where it closed.</li><li><strong>ETF:</strong> a fund traded like a stock, holding a basket of shares or assets.</li><li><strong>Tensor:</strong> the desk's name for its pattern-scoring engine, which grades stocks for swing setups.</li><li><strong>VWAP:</strong> the day's average traded price, weighted by how much traded at each price.</li></ul></div>
       </section>
     </section>
 
@@ -200,7 +300,7 @@
       <div class="panel-body" id="architectureBody"><p class="muted">Loading…</p></div></section>
     </section>
 
-    <p class="footnote">Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</p>
+    <footer class="site-footer"><span class="foot-brand">Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#top" id="footTop">Back to top</a></footer>
     <button type="button" class="back-top" id="backTop" hidden>↑ Back to top</button>
   </main>
 
@@ -235,21 +335,26 @@
   var ALGO_FAILED=false;
   function renderFeed(d){
     $('feedUnavailable').hidden=true;
+    var bp2=$('brokerPill'); if(bp2)bp2.hidden=false;
     $('snapshotTime').textContent=fmtTime(d.generated_at_utc);
     $('statusbar').innerHTML='<span class="badge good"><span class="dot"></span>Paper account</span>'
       +'<span class="badge"><span class="dot"></span>'+esc(((d.desk||{}).sleeve_order||[]).length)+' strategies</span>'
       ;
     var a=d.account||{}, ex=d.exposure||{};
+    var MICONS=['<circle cx="12" cy="12" r="9"/><path d="M12 7v10M15 9.5c-.6-1-1.7-1.5-3-1.5-1.7 0-3 .9-3 2.2 0 2.9 6 1.6 6 4.3 0 1.3-1.3 2.2-3 2.2-1.3 0-2.4-.5-3-1.5"/>','<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/>','<path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5z"/>','<path d="M4 19V5M4 19h16"/><path d="M8 16v-5M12 16V8M16 16v-3"/>'];
+    function micon(i){return '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+MICONS[i]+'</svg>';}
     var metrics=[['Account value',money(a.equity),'Total value of the paper account'],
                  ['Cash',money(a.cash),'Money not currently invested'],
-                 ['Buying power',money(a.buying_power),'Available to open new positions — the broker allows buying beyond the cash balance on this account'],
+                 ['Buying power',money(a.buying_power),'Available to open new positions'],
                  ['Open positions',String(d.position_count),'Positions currently held']];
-    $('accountMetrics').innerHTML=metrics.map(function(m){return '<div class="metric"><span class="metric-label">'+esc(m[0])+'</span><span class="metric-value">'+esc(m[1])+'</span><span class="metric-sub">'+esc(m[2])+'</span></div>';}).join('');
+    $('accountMetrics').innerHTML=metrics.map(function(m,i){return '<div class="metric"><span class="metric-label">'+micon(i)+esc(m[0])+'</span><span class="metric-value">'+esc(m[1])+'</span><span class="metric-sub">'+esc(m[2])+'</span></div>';}).join('');
+    var ft=$('footerTime'); if(ft)ft.textContent='Snapshot: '+fmtTime(d.generated_at_utc)+'.';
     var grossPct=Number(ex.gross_pct); if(!isFinite(grossPct))grossPct=0; var meterW=Math.max(0,Math.min(100,grossPct));
     $('exposure').innerHTML='<div class="kv emphasis"><div>Total value held</div><div>'+money(ex.gross_notional)+'</div>'
       +'<div>Share of account</div><div>'+pct(ex.gross_pct,1)+'</div></div>'
       +'<div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(ex.gross_pct,1))+'"><span style="width:'+meterW+'%"></span><i></i><i></i><i></i></div>'
-      +'<div class="meter-scale"><span>0%</span><span>50%</span><span>100%</span></div>'
+      +'<div class="meter-scale"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>'
+      +(grossPct<8?'<p class="footnote" style="margin-top:2px">Almost all of the account is currently in cash — only '+Object.keys(ex.by_sleeve||{}).filter(function(k){return Number(ex.by_sleeve[k])>0;}).length+' of '+(((d.desk||{}).sleeve_order||[]).length)+' strategies are holding anything.</p>':'')
       + bySleeveHtml(ex)
       +'<p class="footnote">The total value held is the combined market value of every open position, added up without netting winners against losers.</p>';
     function bySleeveHtml(ex){
@@ -273,9 +378,26 @@
         +'<ul class="stack-legend"><li><span class="sw" style="background:var(--accent)"></span>Cash<span class="sv">'+money(a.cash)+' \u00b7 '+pct(cashN/eqN*100,1)+' of account</span></li>'
         +'<li><span class="sw" style="background:#bd8e2f"></span>Held in positions<span class="sv">'+money(ex.gross_notional)+' \u00b7 '+pct(heldN/eqN*100,1)+' of account</span></li></ul></div>';
     }
+    acctHtml+='<div class="kv" style="margin-top:12px"><div>Buying power</div><div>'+money(a.buying_power)+'</div></div><p class="footnote">Buying power is what is available to open new positions — the broker allows buying beyond the cash balance on this account.</p>';
+    if(isFinite(eqN)&&isFinite(cashN)&&isFinite(heldNet)){
+      acctHtml+='<div class="equation" role="img" aria-label="Cash '+money(cashN)+' plus value held '+money(heldNet)+' equals account value '+money(eqN)+'"><div class="eq-block"><span>Cash</span><b>'+money(cashN)+'</b></div><span class="eq-op" aria-hidden="true">+</span><div class="eq-block"><span>Value held</span><b>'+money(heldNet)+'</b></div><span class="eq-op" aria-hidden="true">=</span><div class="eq-block total"><span>Account value</span><b>'+money(eqN)+'</b></div></div>';
+    }
     $('accountDetail').innerHTML=acctHtml;
+    var lp=$('ledgerPanel');
+    if(lp){
+      var lc=d.ledger_counts||{}, bk=lc.by_kind||{};
+      var KIND=[['fill','Completed trades (fills)'],['journal','Journal entries'],['tick','Price records'],['nightly_reconcile','Nightly checks against the broker'],['outcome','Trade reviews'],['import_position','Positions brought in at the start']];
+      var ltot=Number(lc.total)||KIND.reduce(function(s,x){return s+Number(bk[x[0]]||0);},0);
+      var lcols=['#0f5a48','#3f6071','#bd8e2f','#7a4a8c','#5c7a1e','#963e3e'];
+      var present=KIND.filter(function(x){return Number(bk[x[0]]||0)>0;});
+      if(ltot>0&&present.length){
+        lp.innerHTML='<div class="kv emphasis"><div>Records in total</div><div>'+ltot.toLocaleString('en-US')+'</div></div><div class="stack"><div class="stack-bar" role="img" aria-label="What the record is made of: '+present.map(function(x){return x[1]+' '+Number(bk[x[0]]).toLocaleString('en-US');}).join(', ')+'">'
+          +present.map(function(x,i){return '<span style="width:'+(Number(bk[x[0]])/ltot*100)+'%;background:'+lcols[i%lcols.length]+'"></span>';}).join('')+'</div><ul class="stack-legend">'
+          +present.map(function(x,i){return '<li><span class="sw" style="background:'+lcols[i%lcols.length]+'"></span>'+esc(x[1])+'<span class="sv">'+Number(bk[x[0]]).toLocaleString('en-US')+' \u00b7 '+pct(Number(bk[x[0]])/ltot*100,1)+'</span></li>';}).join('')+'</ul></div>';
+      } else { lp.innerHTML='<p class="muted">The record count is not available in this snapshot.</p>'; }
+    }
     $('positionCount').textContent=d.position_count+' open positions';
-    if(!d.positions.length){$('positions').innerHTML='<p class="panel-body">No open positions right now.</p>';}
+    if(!d.positions.length){$('positions').innerHTML='<div class="empty-state"><span class="empty-dot" aria-hidden="true"></span>No open positions right now — the desk is waiting for its next setup.</div>';}
     else{
       function fmtPL(v){if(v==null)return '\u2014';return (Number(v)>=0?'+':'')+money(v);}
       function plCls(v){return v==null?'':(Number(v)>=0?' pnl-major positive':' pnl-major negative');}
@@ -317,7 +439,10 @@
       var tMv=0,tPl=0,tHasMv=false,tHasPl=false;
       d.positions.forEach(function(p){if(p.market_value!=null){tMv+=Number(p.market_value);tHasMv=true;} if(p.unrealized_pl!=null){tPl+=Number(p.unrealized_pl);tHasPl=true;}});
       html+='<tr class="group-total"><td colspan="6">Total — whole book</td><td class="num">'+(tHasMv?money(tMv):'\u2014')+'</td><td class="num"></td><td class="num'+plCls(tHasPl?tPl:null)+'">'+(tHasPl?fmtPL(tPl):'\u2014')+'</td></tr>';
-      $('positions').innerHTML='<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Share of book</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+html+'</tbody></table>';
+      var expSeen={}, expList=[];
+      d.positions.forEach(function(p){var o=parseOption(p.symbol); if(o&&!expSeen[o.expiryKey]){expSeen[o.expiryKey]=true; expList.push(o);}});
+      var expHtml=expList.length?'<div class="expiry-strip"><strong>Option expiry dates:</strong>'+expList.map(function(o){return '<span class="exp-chip">'+esc(MONTHS[Number(o.expiryKey.slice(2,4))-1]+' '+Number(o.expiryKey.slice(4,6))+', '+(2000+Number(o.expiryKey.slice(0,2))))+'</span>';}).join('')+'<span class="muted">Each chip is a date on which an open option runs out.</span></div>':'';
+      $('positions').innerHTML=expHtml+'<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Share of book</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+html+'</tbody></table>';
     }
     FEED=d;
     renderStrategies();
@@ -340,6 +465,8 @@
   }
   var CAT_COLORS={'Tensor strategies':'#7a4a8c','Breakout & momentum':'#b3541e','Pullbacks & mean reversion':'#2e6f8e','Rule-based systems':'#5c7a1e','Options \u2014 income':'#0f5a48','Options \u2014 directional & hedges':'#3f6071','Systematic funds':'#bd8e2f','Crypto':'#963e3e'};
   function catColor(c){return CAT_COLORS[c]||'#0f5a48';}
+  var CAT_TEXT={'Systematic funds':'#8a6d1f'};
+  function catText(c){return CAT_TEXT[c]||catColor(c);}
   function renderCatMix(){
     var host=$('catMix'); if(!host)return;
     var counts=categoryCounts(), total=sleeveOrder().length;
@@ -349,7 +476,48 @@
       return '<div class="catmix-row"><span class="cm-name">'+esc(c)+'</span><span class="catmix-track"><span class="catmix-fill" style="width:'+(counts[c]/max*100)+'%;background:'+catColor(c)+'"></span></span><span class="cm-n">'+counts[c]+'</span></div>';
     }).join('');
   }
-  function cardHtml(k,showCat){
+  function renderWaffle(){
+    var host=$('waffle'); if(!host)return;
+    var order=sleeveOrder();
+    host.innerHTML=order.map(function(k){
+      var s=(FEED.sleeves||{})[k]||{position_count:0};
+      var c=catColor((ALGO[k]||{}).category);
+      var holding=s.position_count>0;
+      return '<i title="'+esc((ALGO[k]||{}).name||k)+'" style="border-color:'+c+';background:'+(holding?c:'transparent')+'"></i>';
+    }).join('');
+    var held=order.filter(function(k){return ((FEED.sleeves||{})[k]||{}).position_count>0;}).length;
+    var note=$('waffleNote');
+    if(note)note.textContent='Each dot is one strategy, coloured by its kind. A filled dot is holding positions right now: '+held+' of '+order.length+' strategies are holding, '+(order.length-held)+' are waiting.';
+    host.setAttribute('aria-label','One dot per strategy: '+held+' of '+order.length+' currently holding positions');
+  }
+  function renderInstMix(){
+    var host=$('instMix'); if(!host)return;
+    var counts={}, total=0;
+    sleeveOrder().forEach(function(k){var ins=(ALGO[k]||{}).instruments; if(ins){counts[ins]=(counts[ins]||0)+1; total++;}});
+    var keys=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a];});
+    if(!total){host.innerHTML='';return;}
+    var max=Math.max.apply(null,keys.map(function(k2){return counts[k2];}).concat([1]));
+    var cols=['#0f5a48','#3f6071','#bd8e2f','#7a4a8c','#5c7a1e','#963e3e'];
+    host.innerHTML='<h3>What the desk trades</h3>'+keys.map(function(k2,i){
+      return '<div class="catmix-row"><span class="cm-name">'+esc(k2==='None \u2014 records checks only'?'Monitors \u2014 no trades, records checks only':k2)+'</span><span class="catmix-track"><span class="catmix-fill" style="width:'+(counts[k2]/max*100)+'%;background:'+cols[i%cols.length]+'"></span></span><span class="cm-n">'+counts[k2]+'</span></div>';
+    }).join('');
+  }
+  function renderMatrix(){
+    var host=$('catMatrix'); if(!host)return;
+    var insts=[]; sleeveOrder().forEach(function(k){var i2=(ALGO[k]||{}).instruments; if(i2&&insts.indexOf(i2)===-1)insts.push(i2);});
+    if(!insts.length){host.innerHTML='';return;}
+    var head='<tr><th>Kind \u00d7 what it trades</th>'+insts.map(function(i2){return '<th>'+esc(i2.replace('None \u2014 records checks only','Monitors'))+'</th>';}).join('')+'</tr>';
+    var rows=TAXONOMY.map(function(c){
+      var cells=insts.map(function(i2){
+        var n=sleeveOrder().filter(function(k){var a=ALGO[k]||{}; return a.category===c&&a.instruments===i2;}).length;
+        var bg=n?('background:rgba(15,90,72,'+Math.min(.55,.12+n*.13)+');color:'+(n>=3?'#fff':'var(--ink)')):'color:var(--muted)';
+        return '<td style="'+bg+'">'+(n||'\u00b7')+'</td>';
+      }).join('');
+      return '<tr><th style="color:'+catText(c)+'">'+esc(c)+'</th>'+cells+'</tr>';
+    }).join('');
+    host.innerHTML='<div class="catmix" style="border-bottom:0"><h3>Kinds and what they trade, together</h3></div><div class="matrix-wrap"><table class="matrix"><thead>'+head+'</thead><tbody>'+rows+'</tbody></table></div>';
+  }
+  function cardHtml(k,showCat,grouped){
     var s=(FEED.sleeves||{})[k]||{positions:[],position_count:0};
     var algo=ALGO[k];
     var name=algo?algo.name:'Strategy name unavailable';
@@ -358,8 +526,8 @@
     var holding=s.position_count>0;
     var state=holding?['good','Holding '+s.position_count+' position'+(s.position_count===1?'':'s')]:['','No positions right now'];
     var col=catColor(algo&&algo.category);
-    var cat=(showCat&&algo&&algo.category)?'<span class="pill" style="color:'+col+';border-color:'+col+'">'+esc(algo.category)+'</span>':'';
-    return '<article class="sleeve'+(holding?' holding':'')+'" data-sleeve="'+esc(k)+'" style="box-shadow:inset 4px 0 0 '+col+(holding?',inset 8px 0 0 var(--positive)':'')+'"><div class="sleeve-top"><h3>'+esc(name)+'</h3><span class="pill '+state[0]+'">'+esc(state[1])+'</span></div><p>'+esc(summary)+'</p>'+expl
+    var cat=(showCat&&algo&&algo.category)?'<span class="pill" style="color:'+catText(algo.category)+';border-color:'+col+'">'+esc(algo.category)+'</span>':'';
+    return '<article class="sleeve'+(holding?' holding':'')+'" data-sleeve="'+esc(k)+'"'+(grouped?'':' style="box-shadow:inset 4px 0 0 '+col+'"')+'><div class="sleeve-top"><h3>'+esc(name)+'</h3><span class="pill '+state[0]+'">'+esc(state[1])+'</span></div><p>'+esc(summary)+'</p>'+expl
       +(cat?'<div class="sleeve-meta">'+cat+'</div>':'')+'</article>';
   }
   function matchesQuery(k,q){
@@ -390,17 +558,22 @@
       host.innerHTML=TAXONOMY.map(function(c){
         var ks=vis.filter(function(k){return (ALGO[k]||{}).category===c;});
         if(!ks.length)return '';
-        return '<section class="cat-group"><h3 class="cat-head" style="color:'+catColor(c)+';border-left:4px solid '+catColor(c)+';padding-left:12px">'+esc(c)+' <span class="cat-count">\u00b7 '+ks.length+' strateg'+(ks.length===1?'y':'ies')+'</span></h3><div class="sleeves">'+ks.map(function(k){return cardHtml(k,false);}).join('')+'</div></section>';
+        return '<section class="cat-group"><h3 class="cat-head" style="color:'+catText(c)+';border-left:4px solid '+catColor(c)+';padding-left:12px">'+esc(c)+' <span class="cat-count">\u00b7 '+ks.length+' strateg'+(ks.length===1?'y':'ies')+'</span></h3><div class="sleeves">'+ks.map(function(k){return cardHtml(k,false,true);}).join('')+'</div></section>';
       }).join('');
     } else {
       host.innerHTML=vis.map(function(k){return cardHtml(k,true);}).join('');
     }
-    renderCatMix();
+    renderCatMix(); renderWaffle(); renderInstMix(); renderMatrix();
     var cnt=$('stratCount'); if(cnt)cnt.textContent='Showing '+vis.length+' of '+order.length+' strategies';
-    var emp=$('stratEmpty'); if(emp)emp.hidden=vis.length>0;
+    var emp=$('stratEmpty'); if(emp){emp.hidden=vis.length>0; if(!vis.length){var et=$('stratEmptyText'); if(et)et.textContent='No strategies match'+(q?' \u201c'+q+'\u201d':'')+(cat!=='all'?' in '+cat:'')+' \u2014 try a different word or category.';}}
   }
   function feedFailed(){
     $('feedUnavailable').hidden=false;
+    var bp=$('brokerPill'); if(bp)bp.hidden=true;
+    var un='<div class="unavailable"><strong>Data unavailable right now.</strong><p>The latest figures could not be loaded, so this panel is empty rather than showing old numbers.</p></div>';
+    $('exposure').innerHTML=un; $('accountDetail').innerHTML=un;
+    $('positions').innerHTML='<div class="panel-body">'+un+'</div>';
+    var pc=$('positionCount'); if(pc)pc.textContent='';
     $('statusbar').innerHTML='<span class="badge warn"><span class="dot"></span>Data unavailable — showing no figures rather than old ones</span>';
   }
   function validFeed(j){
@@ -445,9 +618,27 @@
     .then(function(r){if(!r.ok)throw new Error('architecture http '+r.status);return r.json();})
     .then(function(j){
       var el=$('architectureBody'); if(!el)return;
-      el.innerHTML=pipe+(j.sections||[]).map(function(s){return '<div class="arch-section"><h3>'+esc(s.heading)+'</h3>'+rich(s.body)+'</div>';}).join('');
+      var PHASES=[['Before the open','Premarket|premarket'],['During market hours','Market scans|Exit sweeps|refreshes every 5 minutes'],['Evening and nightly','nightly|Nightly|heartbeat|Heartbeat|backup'],['Weekly','drills|Drills|weekly']];
+      function timelineHtml(sec){
+        var items=[];
+        String((sec&&sec.body)||'').split('\n').forEach(function(ln){var mm=ln.trim().match(/^-\s+\*\*(.+?)\*\*/); if(mm)items.push(mm[1].replace(/\.$/,''));});
+        if(items.length<4)return '';
+        var cols=PHASES.map(function(ph){
+          var mine=items.filter(function(it){return ph[1].split('|').some(function(kw){return it.toLowerCase().indexOf(kw.toLowerCase())===0||it.toLowerCase().indexOf(kw.toLowerCase())!==-1;});});
+          return '<div class="tl-phase"><h4>'+esc(ph[0])+'</h4>'+(mine.length?mine.map(function(it){return '<span>'+esc(it)+'</span>';}).join(''):'<span>Nothing scheduled in this part of the day</span>')+'</div>';
+        }).join('');
+        return '<div class="timeline" role="img" aria-label="The desk\'s daily rhythm: jobs grouped by the part of the day they run in">'+cols+'</div>';
+      }
+      var hub='<div class="hub" role="img" aria-label="The seven core pieces of the desk; the Broker piece is the only one that talks to the broker, and every piece writes to the Ledger">'+steps.map(function(s){
+        var cls=s[0]==='Broker'?'hub-piece broker':(s[0]==='Ledger'?'hub-piece ledger':'hub-piece');
+        return '<div class="'+cls+'"><strong>'+esc(s[0])+'</strong><span>'+esc(s[1])+'</span></div>';
+      }).join('')+'</div><p class="footnote">One structure matters most: only the Broker piece talks to the broker, and every piece writes what it does into the Ledger.</p>';
+      el.innerHTML=pipe+hub+(j.sections||[]).map(function(s){
+        var extra=(s.heading==='The automations')?timelineHtml(s):'';
+        return '<div class="arch-section"><h3>'+esc(s.heading)+'</h3>'+extra+rich(s.body)+'</div>';
+      }).join('');
     })
-    .catch(function(){ var el=$('architectureBody'); if(el)el.innerHTML=pipe+'<p>The architecture notes could not be loaded right now.</p>'; });
+    .catch(function(){ var el=$('architectureBody'); if(el)el.innerHTML=pipe+'<div class="unavailable"><strong>Architecture notes unavailable right now.</strong><p>The notes could not be loaded, so nothing is shown here rather than an incomplete picture.</p></div>'; });
   // Strategy toolbar wiring
   var _ss=$('stratSearch'); if(_ss)_ss.addEventListener('input',renderStrategies);
   var _sc=$('stratCategory'); if(_sc)_sc.addEventListener('change',renderStrategies);
@@ -455,7 +646,10 @@
   var _ex=$('stratExpand'); if(_ex)_ex.addEventListener('click',function(){document.querySelectorAll('#sleeves details.explainer').forEach(function(d){d.open=true;});});
   var _co=$('stratCollapse'); if(_co)_co.addEventListener('click',function(){document.querySelectorAll('#sleeves details.explainer').forEach(function(d){d.open=false;});});
   var _bt=$('backTop');
-  if(_bt){window.addEventListener('scroll',function(){_bt.hidden=window.scrollY<600;},{passive:true});_bt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}
+  if(_bt){window.addEventListener('scroll',function(){_bt.hidden=window.scrollY<600;},{passive:true});_bt.addEventListener('click',function(){var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;window.scrollTo({top:0,behavior:rm?'auto':'smooth'});});}
+  var _ec=$('stratEmptyClear'); if(_ec)_ec.addEventListener('click',function(){var c=$('stratClear'); if(c)c.click();});
+  document.querySelectorAll('[data-tablink]').forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();var t=$(a.getAttribute('data-tablink')); if(t)t.click(); window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});});
+  var _ft2=$('footTop'); if(_ft2)_ft2.addEventListener('click',function(ev){ev.preventDefault();window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
   fetch('../algorithms.json?t='+Date.now(),{cache:'no-store'})
     .then(function(r){if(!r.ok)throw new Error('algorithms http '+r.status);return r.json();})
     .then(function(j){ALGO=j||{};ALGO_FAILED=false;})
