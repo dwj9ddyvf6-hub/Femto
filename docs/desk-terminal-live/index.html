@@ -217,6 +217,58 @@
     @media (max-width:640px){.pipeline .pipe-arrow{transform:rotate(90deg);align-self:center;margin:0 auto}.timeline{grid-template-columns:1fr 1fr}}
     @media (prefers-reduced-motion:reduce){.skel,.loading-note::before{animation:none}.tab,.tool-btn,.back-top,.explainer summary,.exposure-meter span,.stack-bar span,.catmix-fill,.sharebar i,tbody tr{transition:none}}
     @media print{.tabs,.back-top,.strat-tools{display:none!important}body{background:#fff}.panel{box-shadow:none}}
+
+    /* ===== Polish pass 2 ===== */
+    .panel,.tabpanel>section{scroll-margin-top:64px}
+    .tabs{width:100%;background:var(--bg);border-radius:3px}
+    .masthead{background:linear-gradient(135deg,#0f5a48,#0b4536);color:#f2f7f4;border:0;border-radius:3px;padding:22px 22px 20px;margin:0}
+    .masthead h1{color:#fff}.masthead .byline{color:#cfe3da}
+    .masthead .snapshot{color:#b9d2c7}.masthead .snapshot strong{color:#fff}
+    .masthead .badge{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.35);color:#eef6f1}
+    .masthead .badge .dot{background:#d9e8e1}.masthead .badge.good .dot{background:#7fd6a4}
+    .hero-value{font-family:var(--display)!important;font-size:clamp(44px,4.6vw,56px)!important;font-weight:700;letter-spacing:-.02em}
+    .metric.hero{grid-column:span 2}
+    .exposure-band{padding:16px 20px 14px;border-bottom:1px solid var(--line);background:var(--panel-2)}
+    .exposure-band .eb-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13px}
+    .exposure-band .eb-head b{font-family:var(--mono);font-variant-numeric:tabular-nums slashed-zero}
+    .exposure-meter{overflow:visible}
+    .exposure-meter .endcap{position:absolute;top:50%;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 1px var(--accent);transform:translate(-50%,-50%)}
+    .exposure-meter .pctlab{position:absolute;top:-4px;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent);white-space:nowrap;transform:translateX(8px)}
+    .sleeve{padding:15px 20px 14px;border-top:3px solid var(--line)}
+    .sleeve p.summary{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .sleeve h3{font-size:16.5px}
+    .cat-glyph{display:inline-flex;width:20px;height:20px;border-radius:3px;color:#fff;align-items:center;justify-content:center;font:700 10px/1 var(--mono);flex:0 0 20px;margin-right:8px;vertical-align:-4px}
+    .inst-cap{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:3px;letter-spacing:.02em}
+    .idle-state{font-size:11.5px;color:var(--muted);white-space:nowrap}
+    .cat-head{position:sticky;top:56px;z-index:5;background:var(--panel);padding-top:12px;padding-bottom:8px}
+    .cat-jump{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 20px;border-bottom:1px solid var(--line);font-size:12.5px}
+    .cat-jump a{color:var(--ink);text-decoration:none;font-weight:600}.cat-jump a:hover{text-decoration:underline}
+    .cat-jump .jd{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}
+    .mix-close{border-top:1px solid var(--line);margin-top:6px}
+    .mix-close>h3{margin:0;padding:16px 20px 0;font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+    .waffle{gap:0}.wf-cluster{display:flex;flex-wrap:wrap;gap:5px;margin-right:14px;position:relative;padding-bottom:16px}
+    .wf-cluster em{position:absolute;left:0;bottom:0;font:700 9px/1 var(--mono);font-style:normal;color:var(--muted);letter-spacing:.05em}
+    .cm-glyph{display:inline-flex;width:16px;height:16px;border-radius:3px;color:#fff;align-items:center;justify-content:center;font:700 8.5px/1 var(--mono);margin-right:7px;vertical-align:-3px}
+    .catmix-row .cm-n{font-variant-numeric:tabular-nums slashed-zero;white-space:nowrap}
+    table.matrix th.rowh{border-left:4px solid var(--line)}
+    .arch-card{border:1px solid var(--line);border-radius:3px;background:var(--panel);padding:20px 22px;margin:0 0 18px;box-shadow:0 1px 2px rgba(29,42,37,.05)}
+    .arch-card h3{font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin:0 0 10px}
+    .arch-card h3 .secno{color:var(--gold-text);font-family:var(--mono);margin-right:9px}
+    .arch-card p,.arch-card li{font-size:15.5px;line-height:1.65;color:#39463f}
+    .arch-card.safety{border-left:4px solid var(--warning);background:var(--warning-bg)}
+    .tl-time{display:block;font-family:var(--mono);font-size:11px;color:var(--gold-text);font-weight:700;margin-top:2px}
+    .hub-note{text-align:center;color:var(--muted);font-size:12.5px;margin:2px 0 8px}
+    td.symbol .sym-label{font-family:var(--sans);font-weight:700;font-size:13.5px;display:block}
+    td.symbol .sym-raw{font-family:var(--mono);font-weight:400;font-size:11.5px;color:var(--muted);display:block;margin-top:2px;overflow-wrap:anywhere}
+    .badge,.pill{font-size:11.5px;border-radius:3px}
+    .back-top{background:var(--panel);color:var(--accent);border:1px solid var(--line-strong);box-shadow:0 2px 8px rgba(29,42,37,.10)}
+    .panel-head.tint-gold{background:#fbf4df}.panel-head.tint-green{background:var(--accent-pale)}
+    .foot-rule{display:flex;height:4px;margin:26px 2px 0;border-radius:2px;overflow:hidden}
+    .foot-rule i{flex:1;background:var(--accent)}.foot-rule b{flex:1;background:var(--gold)}
+    .mast-waffle{display:flex;flex-wrap:wrap;gap:3px;max-width:190px;margin-top:10px}
+    .mast-waffle i{width:8px;height:8px;border-radius:50%;border:1.5px solid;display:block}
+    .pipe-step,.unavailable{border-radius:3px}
+    @media (max-width:640px){.metric.hero{grid-column:span 2}.cat-head{top:52px}}
   </style>
 </head>
 <body>
@@ -228,7 +280,7 @@
         <div class="statusbar" id="statusbar"></div>
       </div>
       <div class="mast-tools">
-        <div class="snapshot"><span>Snapshot</span><strong id="snapshotTime">—</strong><span>Updated every 5 minutes</span></div>
+        <div class="mast-waffle" id="mastWaffle" aria-hidden="true"></div><div class="snapshot"><span>Snapshot</span><strong id="snapshotTime">—</strong><span>Updated every 5 minutes</span></div>
       </div>
     </header>
     <noscript><div class="unavailable noscript-note"><strong>This page needs JavaScript to show the desk's figures.</strong><p>Every number on Muse Desk is loaded live from the desk's records. With JavaScript switched off, nothing here is current — please enable JavaScript and reload to see the desk as it stands.</p></div></noscript>
@@ -242,6 +294,7 @@
     <section class="tabpanel" role="tabpanel" id="pulse" aria-labelledby="tab-pulse">
       <div class="panel">
         <div class="metrics" id="accountMetrics"><div class="skel metric-skel"></div><div class="skel metric-skel"></div><div class="skel metric-skel"></div><div class="skel metric-skel"></div></div>
+        <div class="exposure-band" id="exposureBand" hidden></div>
         <div class="panel-body" id="feedUnavailable" hidden>
           <div class="unavailable"><strong>Data unavailable right now.</strong>
           <p>The desk's latest figures could not be loaded, so nothing is shown here rather than old numbers. This page checks again automatically.</p></div>
@@ -253,16 +306,16 @@
           <div class="panel-body" id="exposure"><p class="loading-note">Loading the latest figures…</p></div>
         </section>
         <section class="panel">
-          <div class="panel-head"><div><h2>Account</h2><p>The paper account, as reported by the broker.</p></div><span class="pill info">Paper only</span></div>
+          <div class="panel-head"><div><h2>Account</h2><p>The paper account, as reported by the broker.</p></div></div>
           <div class="panel-body" id="accountDetail"><p class="loading-note">Loading the latest figures…</p></div>
         </section>
       </div>
       <section class="panel">
-        <div class="panel-head"><div><h2>The desk's permanent record</h2><p>Every action the desk takes is written into one record that is only ever added to, never rewritten. This is what is in it.</p></div></div>
+        <div class="panel-head tint-gold"><div><h2>The desk's permanent record</h2><p>Every action the desk takes is written into one record that is only ever added to, never rewritten. This is what is in it.</p></div></div>
         <div class="panel-body" id="ledgerPanel"><p class="loading-note">Loading the latest figures…</p></div>
       </section>
       <section class="panel">
-        <div class="panel-head"><div><h2>Position book</h2><p id="positionCount"></p></div><span class="pill info" id="brokerPill">Live from the broker</span></div>
+        <div class="panel-head tint-green"><div><h2>Position book</h2><p id="positionCount"></p></div><span class="pill info" id="brokerPill">Live from the broker</span></div>
         <p class="pos-legend">Each option contract covers 100 shares, so an option priced at $1.11 is worth $111 per contract. Rows grouped under one heading are parts of a single trade, with a combined total underneath. Words like call, put and strike are explained in the “Words we use” list on the Strategies tab.</p>
         <div class="table-wrap" id="positions"><p class="loading-note panel-body">Loading the latest figures…</p></div>
       </section>
@@ -270,9 +323,8 @@
 
     <section class="tabpanel" role="tabpanel" id="model" aria-labelledby="tab-model" hidden>
       <section class="panel">
-        <div class="panel-head"><div><h2>Strategies</h2><p>Every strategy the desk runs, and what each one is doing now. Select “How this strategy works” on any card for a plain-English explanation.</p></div><span class="pill info">Paper only</span></div>
+        <div class="panel-head"><div><h2>Strategies</h2><p>Every strategy the desk runs, and what each one is doing now. Select “How this strategy works” on any card for a plain-English explanation.</p></div></div>
         <div class="panel-body" id="algoUnavailable" hidden><div class="unavailable"><strong>Strategy descriptions unavailable right now.</strong><p>The plain-English descriptions could not be loaded, so no strategy cards are shown here rather than incomplete ones. This page checks again automatically.</p></div></div>
-        <div class="waffle" id="waffle" role="img" aria-label="One dot per strategy, coloured by kind; a filled dot means the strategy currently holds positions"></div><p class="waffle-note" id="waffleNote"></p><div class="catmix" id="catMix"></div><div class="catmix" id="instMix"></div><div id="catMatrix"></div>
         <div class="strat-tools" id="stratTools">
           <div class="tool-field">
             <label for="stratSearch">Search strategies</label>
@@ -291,16 +343,18 @@
         </div>
         <div class="sleeves" id="sleeves"><p class="loading-note panel-body">Loading the strategy list…</p></div>
         <div class="strat-empty empty-state" id="stratEmpty" hidden><span class="empty-dot" aria-hidden="true"></span><span id="stratEmptyText">No strategies match — try a different word or category.</span><br><button type="button" class="tool-btn" id="stratEmptyClear">Clear search and category</button></div>
+        <div class="mix-close"><h3>The mix, in pictures</h3><div class="waffle" id="waffle" role="img" aria-label="One dot per strategy, coloured by kind; a filled dot means the strategy currently holds positions"></div><p class="waffle-note" id="waffleNote"></p><div class="catmix" id="catMix"></div><div class="catmix" id="instMix"></div><div id="catMatrix"></div></div>
+        <div class="cat-jump" id="catJump" hidden></div>
         <div class="glossary"><h3>Words we use</h3><ul><li><strong>Option:</strong> a contract giving the right to buy or sell something at an agreed price, by an agreed date.</li><li><strong>Call:</strong> an option that gains in value when the price rises.</li><li><strong>Put:</strong> an option that gains in value when the price falls.</li><li><strong>Strike:</strong> the agreed price at which an option lets you buy or sell.</li><li><strong>Premium:</strong> simply the price paid for an option — or the payment collected when one is sold.</li><li><strong>Spread:</strong> a paired option trade — one option bought and one sold on the same stock — so the most that can be made or lost is capped.</li><li><strong>Contract:</strong> one option contract covers 100 shares.</li><li><strong>Long:</strong> owned — the desk bought it and gains when the price rises.</li><li><strong>Short:</strong> sold first, as a bet the price will fall, and bought back later.</li><li><strong>Expiry:</strong> the date an option runs out.</li><li><strong>Straddle:</strong> buying a call and a put together on the same stock.</li><li><strong>Wheel:</strong> the repeating cycle of selling a put, possibly buying the shares, then selling calls against them.</li><li><strong>Ladder:</strong> options stacked at different prices and dates, like rungs of a ladder.</li><li><strong>Beta:</strong> a measure of how much a stock moves compared with the whole market; high-beta stocks move more.</li><li><strong>Bar:</strong> one period's price summary — where the price opened, its high, its low, and where it closed.</li><li><strong>ETF:</strong> a fund traded like a stock, holding a basket of shares or assets.</li><li><strong>Tensor:</strong> the desk's name for its pattern-scoring engine, which grades stocks for swing setups.</li><li><strong>VWAP:</strong> the day's average traded price, weighted by how much traded at each price.</li></ul></div>
       </section>
     </section>
 
     <section class="tabpanel" role="tabpanel" id="architecture" aria-labelledby="tab-architecture" hidden>
-      <section class="panel"><div class="panel-head"><div><h2>Architecture</h2><p>How this desk works, in plain English</p></div><span class="pill info">Paper only</span></div>
+      <section class="panel"><div class="panel-head"><div><h2>Architecture</h2><p>How this desk works, in plain English</p></div></div>
       <div class="panel-body" id="architectureBody"><p class="muted">Loading…</p></div></section>
     </section>
 
-    <footer class="site-footer"><span class="foot-brand">Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#top" id="footTop">Back to top</a></footer>
+    <div class="foot-rule" aria-hidden="true"><i></i><b></b></div><footer class="site-footer"><span class="foot-brand"><svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true" style="vertical-align:-4px;margin-right:7px"><rect width="64" height="64" rx="8" fill="#0f5a48"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#bd8e2f"/><circle cx="45" cy="42" r="3" fill="#e3eee9"/></svg>Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#top" id="footTop">Back to top</a></footer>
     <button type="button" class="back-top" id="backTop" hidden>↑ Back to top</button>
   </main>
 
@@ -339,18 +393,21 @@
     $('snapshotTime').textContent=fmtTime(d.generated_at_utc);
     $('statusbar').innerHTML='<span class="badge good"><span class="dot"></span>Paper account</span>'
       +'<span class="badge"><span class="dot"></span>'+esc(((d.desk||{}).sleeve_order||[]).length)+' strategies</span>'
+      +'<span class="badge">Paper only</span>'
       ;
     var a=d.account||{}, ex=d.exposure||{};
     var MICONS=['<circle cx="12" cy="12" r="9"/><path d="M12 7v10M15 9.5c-.6-1-1.7-1.5-3-1.5-1.7 0-3 .9-3 2.2 0 2.9 6 1.6 6 4.3 0 1.3-1.3 2.2-3 2.2-1.3 0-2.4-.5-3-1.5"/>','<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/>','<path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5z"/>','<path d="M4 19V5M4 19h16"/><path d="M8 16v-5M12 16V8M16 16v-3"/>'];
     function micon(i){return '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+MICONS[i]+'</svg>';}
-    var metrics=[['Account value',money(a.equity),'Total value of the paper account'],
-                 ['Cash',money(a.cash),'Money not currently invested'],
-                 ['Buying power',money(a.buying_power),'Available to open new positions'],
-                 ['Open positions',String(d.position_count),'Positions currently held']];
-    $('accountMetrics').innerHTML=metrics.map(function(m,i){return '<div class="metric"><span class="metric-label">'+micon(i)+esc(m[0])+'</span><span class="metric-value">'+esc(m[1])+'</span><span class="metric-sub">'+esc(m[2])+'</span></div>';}).join('');
+    var holdStrats=Object.keys(ex.by_sleeve||{}).filter(function(k){return Number(ex.by_sleeve[k])>0;}).length;
+    var metrics=[['Account value',money(a.equity),'Total value of the paper account',1],
+                 ['Cash',money(a.cash),'Money not currently invested',0],
+                 ['Open positions',String(d.position_count),holdStrats+' strategies holding \u00b7 '+d.position_count+' position'+(d.position_count===1?'':'s'),0]];
+    $('accountMetrics').innerHTML=metrics.map(function(m,i){return '<div class="metric'+(m[3]?' hero':'')+'"><span class="metric-label">'+micon(m[3]?0:(i+1))+'</span><span class="metric-value'+(m[3]?' hero-value':'')+'">'+esc(m[1])+'</span><span class="metric-sub">'+esc(m[2])+'</span></div>';}).join('');
+    var eb=$('exposureBand'); if(eb){var gp2=Number(ex.gross_pct); if(!isFinite(gp2))gp2=0; var mw2=Math.max(0,Math.min(100,gp2)); eb.hidden=false; eb.innerHTML='<div class="eb-head"><span>Exposure \u2014 share of the account held in open positions</span><b>'+money(ex.gross_notional)+' \u00b7 '+pct(gp2,1)+'</b></div><div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(gp2,1))+'"><span style="width:'+mw2+'%"></span><i></i><i></i><i></i>'+(gp2<8?'<span class="endcap" style="left:'+mw2+'%"></span><span class="pctlab" style="left:'+mw2+'%">'+pct(gp2,1)+' held \u2014 almost all cash</span>':'')+'</div><div class="meter-scale"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>';}
+    var mwf=$('mastWaffle'); if(mwf&&typeof ALGO==='object'){mwf.innerHTML=sleeveOrder().map(function(k){var c=catColor((ALGO[k]||{}).category);var h=((d.sleeves||{})[k]||{}).position_count>0;return '<i style="border-color:'+c+';background:'+(h?c:'transparent')+'"></i>';}).join('');}
     var ft=$('footerTime'); if(ft)ft.textContent='Snapshot: '+fmtTime(d.generated_at_utc)+'.';
     var grossPct=Number(ex.gross_pct); if(!isFinite(grossPct))grossPct=0; var meterW=Math.max(0,Math.min(100,grossPct));
-    $('exposure').innerHTML='<div class="kv emphasis"><div>Total value held</div><div>'+money(ex.gross_notional)+'</div>'
+    $('exposure').innerHTML='<div class="kv emphasis"><div>Total value held (long and short added together)</div><div>'+money(ex.gross_notional)+'</div>'
       +'<div>Share of account</div><div>'+pct(ex.gross_pct,1)+'</div></div>'
       +'<div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(ex.gross_pct,1))+'"><span style="width:'+meterW+'%"></span><i></i><i></i><i></i></div>'
       +'<div class="meter-scale"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>'
@@ -380,7 +437,7 @@
     }
     acctHtml+='<div class="kv" style="margin-top:12px"><div>Buying power</div><div>'+money(a.buying_power)+'</div></div><p class="footnote">Buying power is what is available to open new positions — the broker allows buying beyond the cash balance on this account.</p>';
     if(isFinite(eqN)&&isFinite(cashN)&&isFinite(heldNet)){
-      acctHtml+='<div class="equation" role="img" aria-label="Cash '+money(cashN)+' plus value held '+money(heldNet)+' equals account value '+money(eqN)+'"><div class="eq-block"><span>Cash</span><b>'+money(cashN)+'</b></div><span class="eq-op" aria-hidden="true">+</span><div class="eq-block"><span>Value held</span><b>'+money(heldNet)+'</b></div><span class="eq-op" aria-hidden="true">=</span><div class="eq-block total"><span>Account value</span><b>'+money(eqN)+'</b></div></div>';
+      acctHtml+='<div class="equation" role="img" aria-label="Cash '+money(cashN)+' plus value held '+money(heldNet)+' equals account value '+money(eqN)+'"><div class="eq-block"><span>Cash</span><b>'+money(cashN)+'</b></div><span class="eq-op" aria-hidden="true">+</span><div class="eq-block"><span>Value held (net)</span><b>'+money(heldNet)+'</b></div><span class="eq-op" aria-hidden="true">=</span><div class="eq-block total"><span>Account value</span><b>'+money(eqN)+'</b></div></div>';
     }
     $('accountDetail').innerHTML=acctHtml;
     var lp=$('ledgerPanel');
@@ -408,7 +465,8 @@
         var qtyTxt=qtyNum+' '+(o?'contract':'share')+(qtyNum===1?'':'s');
         var sideTxt=(p.side==='short'||Number(p.qty)<0)?'Short (sold first)':'Long (owned)';
         var share=(bookAbs>0&&p.market_value!=null)?(Math.abs(Number(p.market_value))/bookAbs*100):null;
-        return '<tr><td data-label="Symbol" class="symbol">'+esc(decodeSymbol(p.symbol))+'</td><td data-label="Strategy">'+esc(strat)+'</td>'
+        var symCell=o?('<span class="sym-label">'+esc(decodeSymbol(p.symbol))+'</span><span class="sym-raw">'+esc(p.symbol)+'</span>'):esc(p.symbol);
+        return '<tr><td data-label="Symbol" class="symbol">'+symCell+'</td><td data-label="Strategy">'+esc(strat)+'</td>'
           +'<td data-label="Quantity" class="num">'+esc(qtyTxt)+'</td><td data-label="Side">'+esc(sideTxt)+'</td>'
           +'<td data-label="Average entry" class="num">'+money(p.avg_entry)+'</td><td data-label="Current price" class="num">'+money(p.current)+'</td>'
           +'<td data-label="Market value" class="num">'+money(p.market_value)+'</td>'
@@ -442,7 +500,7 @@
       var expSeen={}, expList=[];
       d.positions.forEach(function(p){var o=parseOption(p.symbol); if(o&&!expSeen[o.expiryKey]){expSeen[o.expiryKey]=true; expList.push(o);}});
       var expHtml=expList.length?'<div class="expiry-strip"><strong>Option expiry dates:</strong>'+expList.map(function(o){return '<span class="exp-chip">'+esc(MONTHS[Number(o.expiryKey.slice(2,4))-1]+' '+Number(o.expiryKey.slice(4,6))+', '+(2000+Number(o.expiryKey.slice(0,2))))+'</span>';}).join('')+'<span class="muted">Each chip is a date on which an open option runs out.</span></div>':'';
-      $('positions').innerHTML=expHtml+'<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Share of book</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+html+'</tbody></table>';
+      $('positions').innerHTML=expHtml+'<table><thead><tr><th>Symbol</th><th>Strategy</th><th class="num">Quantity</th><th>Side</th><th class="num">Average entry</th><th class="num">Current price</th><th class="num">Market value</th><th class="num">Share of book (net)</th><th class="num">Open profit or loss</th></tr></thead><tbody>'+html+'</tbody></table>';
     }
     FEED=d;
     renderStrategies();
@@ -467,28 +525,30 @@
   function catColor(c){return CAT_COLORS[c]||'#0f5a48';}
   var CAT_TEXT={'Systematic funds':'#8a6d1f'};
   function catText(c){return CAT_TEXT[c]||catColor(c);}
+  var CAT_GLYPH={'Tensor strategies':'T','Breakout & momentum':'B','Pullbacks & mean reversion':'P','Rule-based systems':'R','Options \u2014 income':'OI','Options \u2014 directional & hedges':'OD','Systematic funds':'S','Crypto':'C'};
+  function catGlyph(c){return '<span class="cat-glyph" style="background:'+catColor(c)+'" aria-hidden="true">'+esc(CAT_GLYPH[c]||'?')+'</span>';}
+  function catGlyphSm(c){return '<span class="cm-glyph" style="background:'+catColor(c)+'" aria-hidden="true">'+esc(CAT_GLYPH[c]||'?')+'</span>';}
   function renderCatMix(){
     var host=$('catMix'); if(!host)return;
     var counts=categoryCounts(), total=sleeveOrder().length;
     if(!total){host.innerHTML='';return;}
     var max=Math.max.apply(null,TAXONOMY.map(function(c){return counts[c];}).concat([1]));
     host.innerHTML='<h3>'+total+' strategies across '+TAXONOMY.length+' kinds</h3>'+TAXONOMY.map(function(c){
-      return '<div class="catmix-row"><span class="cm-name">'+esc(c)+'</span><span class="catmix-track"><span class="catmix-fill" style="width:'+(counts[c]/max*100)+'%;background:'+catColor(c)+'"></span></span><span class="cm-n">'+counts[c]+'</span></div>';
+      return '<div class="catmix-row"><span class="cm-name">'+catGlyphSm(c)+esc(c)+'</span><span class="catmix-track"><span class="catmix-fill" style="width:'+(counts[c]/max*100)+'%;background:'+catColor(c)+'"></span></span><span class="cm-n num">'+counts[c]+' \u00b7 '+pct(counts[c]/total*100,1)+'</span></div>';
     }).join('');
   }
   function renderWaffle(){
     var host=$('waffle'); if(!host)return;
     var order=sleeveOrder();
-    host.innerHTML=order.map(function(k){
-      var s=(FEED.sleeves||{})[k]||{position_count:0};
-      var c=catColor((ALGO[k]||{}).category);
-      var holding=s.position_count>0;
-      return '<i title="'+esc((ALGO[k]||{}).name||k)+'" style="border-color:'+c+';background:'+(holding?c:'transparent')+'"></i>';
+    host.innerHTML=TAXONOMY.map(function(c){
+      var ks=order.filter(function(k){return (ALGO[k]||{}).category===c;});
+      if(!ks.length)return '';
+      return '<span class="wf-cluster">'+ks.map(function(k){var s=(FEED.sleeves||{})[k]||{position_count:0};var col=catColor(c);var holding=s.position_count>0;return '<i title="'+esc((ALGO[k]||{}).name||k)+' ('+esc(c)+')" style="border-color:'+col+';background:'+(holding?col:'transparent')+'"></i>';}).join('')+'<em>'+esc(CAT_GLYPH[c]||'')+' \u00b7 '+esc(c)+'</em></span>';
     }).join('');
     var held=order.filter(function(k){return ((FEED.sleeves||{})[k]||{}).position_count>0;}).length;
     var note=$('waffleNote');
-    if(note)note.textContent='Each dot is one strategy, coloured by its kind. A filled dot is holding positions right now: '+held+' of '+order.length+' strategies are holding, '+(order.length-held)+' are waiting.';
-    host.setAttribute('aria-label','One dot per strategy: '+held+' of '+order.length+' currently holding positions');
+    if(note)note.textContent='Each dot is one strategy, grouped by kind (initials below each group). A filled dot is holding positions right now: '+held+' of '+order.length+' strategies are holding, '+(order.length-held)+' are waiting.';
+    host.setAttribute('aria-label','One dot per strategy, grouped by kind: '+held+' of '+order.length+' currently holding positions');
   }
   function renderInstMix(){
     var host=$('instMix'); if(!host)return;
@@ -510,10 +570,10 @@
     var rows=TAXONOMY.map(function(c){
       var cells=insts.map(function(i2){
         var n=sleeveOrder().filter(function(k){var a=ALGO[k]||{}; return a.category===c&&a.instruments===i2;}).length;
-        var bg=n?('background:rgba(15,90,72,'+Math.min(.55,.12+n*.13)+');color:'+(n>=3?'#fff':'var(--ink)')):'color:var(--muted)';
+        var al=n?Math.min(.92,.18+n*.16):0; var bg=n?('background:rgba(15,90,72,'+al+');color:'+(al>=.78?'#fff':'var(--ink)')):'color:var(--muted)';
         return '<td style="'+bg+'">'+(n||'\u00b7')+'</td>';
       }).join('');
-      return '<tr><th style="color:'+catText(c)+'">'+esc(c)+'</th>'+cells+'</tr>';
+      return '<tr><th class="rowh" style="color:'+catText(c)+';border-left-color:'+catColor(c)+'">'+esc(c)+'</th>'+cells+'</tr>';
     }).join('');
     host.innerHTML='<div class="catmix" style="border-bottom:0"><h3>Kinds and what they trade, together</h3></div><div class="matrix-wrap"><table class="matrix"><thead>'+head+'</thead><tbody>'+rows+'</tbody></table></div>';
   }
@@ -524,10 +584,11 @@
     var summary=algo?algo.summary:'A plain-English description is not available yet.';
     var expl=algo?'<details class="explainer"><summary>How this strategy works</summary><p>'+esc(algo.explainer)+'</p><p class="explainer-inst">Trades: '+esc(algo.instruments)+'</p></details>':'';
     var holding=s.position_count>0;
-    var state=holding?['good','Holding '+s.position_count+' position'+(s.position_count===1?'':'s')]:['','No positions right now'];
     var col=catColor(algo&&algo.category);
+    var stateHtml=holding?'<span class="pill good">Holding '+s.position_count+' position'+(s.position_count===1?'':'s')+'</span>':'<span class="idle-state">No positions</span>';
+    var inst=algo&&algo.instruments?'<span class="inst-cap">'+esc(algo.instruments==='None \u2014 records checks only'?'Monitors \u2014 no trades, records checks only':algo.instruments)+'</span>':'';
     var cat=(showCat&&algo&&algo.category)?'<span class="pill" style="color:'+catText(algo.category)+';border-color:'+col+'">'+esc(algo.category)+'</span>':'';
-    return '<article class="sleeve'+(holding?' holding':'')+'" data-sleeve="'+esc(k)+'"'+(grouped?'':' style="box-shadow:inset 4px 0 0 '+col+'"')+'><div class="sleeve-top"><h3>'+esc(name)+'</h3><span class="pill '+state[0]+'">'+esc(state[1])+'</span></div><p>'+esc(summary)+'</p>'+expl
+    return '<article class="sleeve'+(holding?' holding':'')+'" data-sleeve="'+esc(k)+'" style="border-top-color:'+col+'"><div class="sleeve-top"><h3>'+(algo?catGlyph(algo.category):'')+esc(name)+inst+'</h3>'+stateHtml+'</div><p class="summary">'+esc(summary)+'</p>'+expl
       +(cat?'<div class="sleeve-meta">'+cat+'</div>':'')+'</article>';
   }
   function matchesQuery(k,q){
@@ -558,12 +619,13 @@
       host.innerHTML=TAXONOMY.map(function(c){
         var ks=vis.filter(function(k){return (ALGO[k]||{}).category===c;});
         if(!ks.length)return '';
-        return '<section class="cat-group"><h3 class="cat-head" style="color:'+catText(c)+';border-left:4px solid '+catColor(c)+';padding-left:12px">'+esc(c)+' <span class="cat-count">\u00b7 '+ks.length+' strateg'+(ks.length===1?'y':'ies')+'</span></h3><div class="sleeves">'+ks.map(function(k){return cardHtml(k,false,true);}).join('')+'</div></section>';
+        return '<section class="cat-group" id="cat-'+esc(CAT_GLYPH[c]||c)+'"><h3 class="cat-head" style="color:'+catText(c)+';border-left:4px solid '+catColor(c)+';padding-left:12px">'+esc(c)+' <span class="cat-count">\u00b7 '+ks.length+' strateg'+(ks.length===1?'y':'ies')+'</span></h3><div class="sleeves">'+ks.map(function(k){return cardHtml(k,false,true);}).join('')+'</div></section>';
       }).join('');
     } else {
       host.innerHTML=vis.map(function(k){return cardHtml(k,true);}).join('');
     }
     renderCatMix(); renderWaffle(); renderInstMix(); renderMatrix();
+    var jr=$('catJump'); if(jr){var tools2=$('stratTools'); if(tools2&&jr.previousElementSibling!==tools2&&tools2.parentNode){tools2.parentNode.insertBefore(jr,tools2.nextSibling);} if(grouped){jr.hidden=false; jr.innerHTML=TAXONOMY.map(function(c){var n=vis.filter(function(k){return (ALGO[k]||{}).category===c;}).length; return n?'<a href="#cat-'+esc(CAT_GLYPH[c]||c)+'"><span class="jd" style="background:'+catColor(c)+'"></span>'+esc(c)+' ('+n+')</a>':'';}).join('');} else {jr.hidden=true; jr.innerHTML='';}}
     var cnt=$('stratCount'); if(cnt)cnt.textContent='Showing '+vis.length+' of '+order.length+' strategies';
     var emp=$('stratEmpty'); if(emp){emp.hidden=vis.length>0; if(!vis.length){var et=$('stratEmptyText'); if(et)et.textContent='No strategies match'+(q?' \u201c'+q+'\u201d':'')+(cat!=='all'?' in '+cat:'')+' \u2014 try a different word or category.';}}
   }
@@ -625,17 +687,19 @@
         if(items.length<4)return '';
         var cols=PHASES.map(function(ph){
           var mine=items.filter(function(it){return ph[1].split('|').some(function(kw){return it.toLowerCase().indexOf(kw.toLowerCase())===0||it.toLowerCase().indexOf(kw.toLowerCase())!==-1;});});
-          return '<div class="tl-phase"><h4>'+esc(ph[0])+'</h4>'+(mine.length?mine.map(function(it){return '<span>'+esc(it)+'</span>';}).join(''):'<span>Nothing scheduled in this part of the day</span>')+'</div>';
+          var TIMES={'premarket':'before the open','market scans':'during market hours','exit sweeps':'every few minutes','refreshes every 5 minutes':'every 5 minutes','nightly reconciliation':'nightly','nightly review':'nightly','nightly research':'nightly','heartbeat':'around the clock','nightly backup':'nightly','regular drills':'weekly'};
+          return '<div class="tl-phase"><h4>'+esc(ph[0])+'</h4>'+(mine.length?mine.map(function(it){var tm='';Object.keys(TIMES).forEach(function(kw){if(it.toLowerCase().indexOf(kw)!==-1)tm=TIMES[kw];});return '<span>'+esc(it)+(tm?'<span class="tl-time">'+esc(tm)+'</span>':'')+'</span>';}).join(''):'<span>Nothing scheduled in this part of the day</span>')+'</div>';
         }).join('');
         return '<div class="timeline" role="img" aria-label="The desk\'s daily rhythm: jobs grouped by the part of the day they run in">'+cols+'</div>';
       }
-      var hub='<div class="hub" role="img" aria-label="The seven core pieces of the desk; the Broker piece is the only one that talks to the broker, and every piece writes to the Ledger">'+steps.map(function(s){
+      var hub='<p class="hub-note">Strategies state what they want \u2192 the Broker talks to the broker \u2192 every fill is written to the Ledger.</p><div class="hub" role="img" aria-label="The seven core pieces of the desk; the Broker piece is the only one that talks to the broker, and every piece writes to the Ledger">'+steps.map(function(s){
         var cls=s[0]==='Broker'?'hub-piece broker':(s[0]==='Ledger'?'hub-piece ledger':'hub-piece');
         return '<div class="'+cls+'"><strong>'+esc(s[0])+'</strong><span>'+esc(s[1])+'</span></div>';
       }).join('')+'</div><p class="footnote">One structure matters most: only the Broker piece talks to the broker, and every piece writes what it does into the Ledger.</p>';
-      el.innerHTML=pipe+hub+(j.sections||[]).map(function(s){
+      el.innerHTML=pipe+hub+(j.sections||[]).map(function(s,idx){
         var extra=(s.heading==='The automations')?timelineHtml(s):'';
-        return '<div class="arch-section"><h3>'+esc(s.heading)+'</h3>'+extra+rich(s.body)+'</div>';
+        var cls=s.heading==='Safety by design'?'arch-card safety':'arch-card';
+        return '<div class="'+cls+' arch-section"><h3><span class="secno">'+String(idx+1).padStart(2,'0')+'</span>'+esc(s.heading)+'</h3>'+extra+rich(s.body)+'</div>';
       }).join('');
     })
     .catch(function(){ var el=$('architectureBody'); if(el)el.innerHTML=pipe+'<div class="unavailable"><strong>Architecture notes unavailable right now.</strong><p>The notes could not be loaded, so nothing is shown here rather than an incomplete picture.</p></div>'; });
