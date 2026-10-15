@@ -1,7 +1,7 @@
 {
  "sections": [
   {
-   "body": "This is a paper-trading research desk run by Galath. It runs 60 automated trading strategies on US stocks and listed options, all trading with pretend money on a paper account \u2014 no real money is at risk. The point is research: to test each strategy live, in real market hours, and record exactly what it does so the results can be studied honestly. This page is the public window into that desk. Everything shown here comes from the desk's own records, updated throughout the day.",
+   "body": "This is a paper-trading research desk run by Galath. It runs 60 automated trading strategies on US stocks and listed options, plus a set of paper-only crypto tests on coins such as Bitcoin, Cardano and Chainlink, all trading with pretend money on a paper account \u2014 no real money is at risk. The point is research: to test each strategy live, in real market hours, and record exactly what it does so the results can be studied honestly. This page is the public window into that desk. Everything shown here comes from the desk's own records, updated throughout the day.",
    "heading": "What this desk is"
   },
   {
@@ -17,7 +17,7 @@
    "heading": "The systems"
   },
   {
-   "body": "Ten regular jobs keep the desk running around the clock:\n\n- **Market scans** run repeatedly during market hours, giving each strategy its chance to act on fresh prices.\n- **Exit sweeps** run every few minutes to check open positions against their sell rules, so exits are not left waiting for the next scan.\n- **A premarket run** prepares the desk before the open each trading day.\n- **This page refreshes every 5 minutes** with the latest account, positions, and activity.\n- **A nightly reconciliation** compares the desk's own records against the broker's account, line by line, and a nightly review writes up the day's closed trades \u2014 what worked, what did not, and why.\n- **A nightly research refresh** updates the ChartsLector background feed.\n- **A heartbeat monitor** watches the desk itself: the desk regularly reports that it is alive, and a missed beat raises an alarm.\n- **A nightly backup** saves a full copy of the desk.\n- **Regular drills** \u2014 weekly and monthly practice runs that rehearse recovery, so restoring the desk is a tested routine rather than a hope.",
+   "body": "Ten regular jobs keep the desk running around the clock:\n\n- **Market scans** run repeatedly during market hours, giving each strategy its chance to act on fresh prices.\n- **Exit sweeps** run every few minutes to check open positions against their sell rules, so exits are not left waiting for the next scan.\n- **A premarket run** prepares the desk before the open each trading day.\n- **This page refreshes every 5 minutes** with the latest account, positions, and activity.\n- **A nightly reconciliation** compares the desk's own records against the broker's account, line by line.\n- **A nightly review** writes up the day's closed trades \u2014 what worked, what did not, and why.\n- **A nightly research refresh** updates the ChartsLector background feed.\n- **A heartbeat monitor** watches the desk itself: the desk regularly reports that it is alive, and a missed beat raises an alarm.\n- **A nightly backup** saves a full copy of the desk.\n- **Regular drills** \u2014 weekly and monthly practice runs that rehearse recovery, so restoring the desk is a tested routine rather than a hope.",
    "heading": "The automations"
   },
   {
