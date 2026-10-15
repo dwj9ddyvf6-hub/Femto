@@ -26,7 +26,7 @@
  "capitulation": {
   "name": "Capitulation Reversal",
   "summary": "Buys the first sign of a turnaround after a panic sell-off climax, in halves, and exits fast.",
-  "explainer": "It watches hourly price bars during regular market hours, hunting for a panic climax: an hourly momentum gauge below 20, trading volume on the climax bar more than double the previous 20 bars, a low within 2% of the stock's 200-day average price, and big daily swings \u2014 average daily movement above 5% of the price. It buys at the close of the first rising hourly bar after the climax, once momentum turns up, taking half the position first and adding the rest when the 5-day average turns up through the 20-day average within five sessions. It sells at the first of: price back up to the day's average traded price, a 5% gain, an 8% loss, or three trading days. It trades US stocks.",
+  "explainer": "It watches hourly price bars, hunting for a panic climax: an hourly momentum gauge below 20, trading volume on the climax bar more than double the previous 20 bars, a low within 2% of the stock's 200-day average price, and big daily swings \u2014 average daily movement above 5%. It buys at the close of the first rising bar after the climax, once momentum turns up, taking half the position first and adding the rest when the 5-day average turns up through the 20-day average within five sessions. It sells at the first of: price up to the day's average traded price, a 5% gain, an 8% loss, or three trading days, and a safety stop closes the trade if the price falls 25% from entry. It trades US stocks.",
   "instruments": "US stocks"
  },
  "capitulation_options": {
@@ -93,7 +93,7 @@
   "name": "Cardano Price Alignment Monitor",
   "summary": "Watches whether Cardano's futures-style and cash prices on Kraken line up, and records the result \u2014 it never places a trade.",
   "explainer": "This strategy watches Cardano, known as ADA, on the Kraken exchange, comparing its futures-style contract price with its cash market price to check that the two line up. The long price history it would need for that check is not currently collected, so today it cannot complete the comparison. It never buys and never sells: there is no buy trigger and no exit rule, because placing trades was never part of its job. Instead, each hour it records a status saying the history it needs is not available yet, so the gap is visible rather than hidden. It tracks crypto on paper.",
-  "instruments": "Crypto (paper)"
+  "instruments": "None \u2014 records checks only"
  },
  "free_kraken_ada_breakdown": {
   "name": "Cardano Breakdown Short",
@@ -111,13 +111,13 @@
   "name": "Enjin Spot Watch on Kraken",
   "summary": "Watches Enjin Coin's live cash market on Kraken and records its best prices, but never places a trade.",
   "explainer": "This strategy watches Enjin Coin, known as ENJ, on the Kraken exchange, checking the live list of buy and sell offers for the coin priced in US dollars. It is a watch-only strategy, because ENJ has no futures-style contract on Kraken, only a cash market. So it never opens a buy or a short trade, and there is no sell or exit rule to run. Instead, it records the best buy and sell prices when the order list is live and healthy. If that list is empty, or the best buy price sits above the best sell price, it records that the feed is not usable and takes no action. It tracks crypto on paper.",
-  "instruments": "Crypto (paper)"
+  "instruments": "None \u2014 records checks only"
  },
  "free_kraken_link_basis": {
   "name": "Chainlink Price Alignment Monitor",
   "summary": "Watches whether Chainlink's futures-style and cash prices on Kraken line up, and records the result \u2014 it never places a trade.",
   "explainer": "This strategy watches Chainlink, known as LINK, on the Kraken exchange, comparing its futures-style contract price with its cash market price to check that the two line up. The long price history it would need for that check is not currently collected, so today it cannot complete the comparison. It never buys and never sells: there is no buy trigger and no exit rule, because placing trades was never part of its job. Instead, each hour it records a status saying the history it needs is not available yet, so the gap is visible rather than hidden. It tracks crypto on paper.",
-  "instruments": "Crypto (paper)"
+  "instruments": "None \u2014 records checks only"
  },
  "free_kraken_link_breakdown": {
   "name": "Chainlink Breakdown Short on Kraken",
@@ -147,7 +147,7 @@
   "name": "Options Price Check",
   "summary": "Checks whether call and put prices line up fairly with each other, and never places a trade.",
   "explainer": "This strategy watches the prices of call and put options on the same stock, with the same strike price and expiry date, and checks whether those prices line up with each other the way they normally should. A call gains when a stock rises and a put gains when it falls, so their prices are closely linked. It never triggers a buy: when it finds a gap between the two prices, it records what converting one position into the other would notionally cost, purely as a check. It never triggers a sell or exit either, because it holds no position. It trades no instruments.",
-  "instruments": "Stock options"
+  "instruments": "None \u2014 records checks only"
  },
  "free_opt_release": {
   "name": "Verified Event Straddle",
@@ -260,7 +260,7 @@
  "qqq_put_ladder": {
   "name": "QQQ Weekly Put Ladder",
   "summary": "Sells three cash-backed QQQ put options about once a week, far below the current price, and manages each layer as expiry nears.",
-  "explainer": "This strategy watches QQQ, a fund tracking 100 large technology-heavy companies, and the prices of its put options. Once a week, if QQQ is not down over the past five trading days, it sells three put options expiring in about 45 days, chosen far enough below the current price that their sensitivity reading sits between 0.05 and 0.08. Each sale is backed by cash, and it holds at most 12 contracts. Near 21 days left, it moves a winning layer to a higher strike if QQQ rose and the put lost half its value, and moves or closes a pressured layer. It buys back any put at five days left. It trades stock options.",
+  "explainer": "This strategy watches QQQ, a fund tracking 100 large technology-heavy companies, and the prices of its put options. Once a week, if QQQ is not down over the past five trading days, it sells three put options expiring in about 45 days, chosen far below the current price, so they only gain much value if QQQ falls a long way (a sensitivity score between 0.05 and 0.08). Each sale is backed by cash, and it holds at most 12 contracts. Near 21 days left, it moves a winning layer to a higher strike if QQQ rose and the put lost half its value, and moves or closes a pressured layer. It buys back any put at five days left. It trades stock options.",
   "instruments": "Stock options"
  },
  "qullamaggie": {
@@ -272,7 +272,7 @@
  "qullamaggie_paper": {
   "name": "Leader Breakout \u2014 Paper Test Copy",
   "summary": "A paper test copy of the Leader Breakout approach that carries accepted breakout buys onto the paper account inside its own fixed budget.",
-  "explainer": "This strategy watches the same kind of stocks as the desk's Leader Breakout strategy: strong, heavily traded US stocks breaking out of a tight pause after a big run. A separate scan prepares the possible buys and checks each one first. This test copy buys only long positions it has accepted, skips short bets and any stock another part of the desk already owns, and never buys the same stock twice in one session. All of its buys together must fit inside a fixed $100,000 test budget. Positions it opens are then managed under the same breakout rules, including the stop price recorded with each buy. It trades US stocks.",
+  "explainer": "This strategy watches the same kind of stocks as the desk's Leader Breakout strategy: strong, heavily traded US stocks breaking out of a tight pause after a big run. A separate scan prepares the possible buys and checks each one first. This test copy buys only long positions it has accepted, skips short bets, and never trades the three funds QQQ, TQQQ or GLD, which belong to another part of the desk, and never buys the same stock twice in one session. All of its buys together must fit inside a fixed $100,000 test budget. Positions it opens are then managed under the same breakout rules, including the stop price recorded with each buy. It trades US stocks.",
   "instruments": "US stocks"
  },
  "red_day_reversal": {
@@ -332,7 +332,7 @@
  "spx_premium": {
   "name": "Weekly Index Premium",
   "summary": "Sells a weekly put spread on a mini S&P 500 index, priced one week of typical movement below the market.",
-  "explainer": "This strategy watches the S&P 500 through its smaller traded version, using the prior week's closing price and its average weekly movement over 14 weeks. It sells on the first trading day of the week, at about 10 a.m. Eastern, but only if the account is worth at least $37,000 and the sale brings in a positive credit. It sells a put option about one average weekly move below the prior close, and buys a second put 5 points lower for protection, both expiring that week. It holds the pair until the end of the week's last trading day, when both are closed for settlement.",
+  "explainer": "This strategy watches the S&P 500 through its smaller traded version, using the prior week's closing price and its average weekly movement over 14 weeks. It sells on the first trading day of the week, at about 10 a.m. Eastern, but only if the account is worth at least $37,000 and the sale brings in a positive credit. It sells a put option about one average weekly move below the prior close, and buys a second put 5 points lower for protection, both expiring that week. It holds the pair until the end of the week's last trading day, when both are closed for settlement. If a week's trade loses at least 90% of the 5-point width, the strategy then sits out for four weeks before selling again.",
   "instruments": "Index options"
  },
  "tensor_red_dip": {
@@ -344,7 +344,7 @@
  "tensor_swing": {
   "name": "Tensor Swing",
   "summary": "Buys high-confidence swing setups on fearful red days \u2014 dips in rising stocks and reversals after deep falls.",
-  "explainer": "It watches hourly price charts across its stock universe, using a pattern-scoring engine that grades each stock for swing setups such as pullbacks and reversals. It buys only when the engine's confidence score reaches at least 7 and the setup fits one of two situations: a dip in a stock that had been rising, bought on a broadly red, fearful market day, or a reversal after a major fall and a deep reset. Stocks that have already run too far and look euphoric are skipped, and a person reviews the chart before any buy goes through. A holding is sold when its swing setup has played out or the price action stops matching the pattern it was bought for. It trades US stocks.",
+  "explainer": "It watches hourly price charts across its stock universe, using a pattern-scoring engine that grades each stock for swing setups such as pullbacks and reversals. It puts a stock forward as a buy only when the engine's confidence score reaches at least 7, the stock is not held, and it has not run too far and turned euphoric. Before any buy goes through, the wider desk applies its own checks: the day must be broadly red and fearful, the setup must fit a dip in a rising stock or a reversal after a deep fall, and a person reviews the chart. This strategy has no sell rule of its own: it only puts forward buys, and holdings are closed by the desk's separate position checks. It trades US stocks.",
   "instruments": "US stocks"
  },
  "ts_momentum_decile": {
