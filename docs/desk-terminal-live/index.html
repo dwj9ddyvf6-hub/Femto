@@ -1033,6 +1033,28 @@
     (p.spread_rows||[]).forEach(function(r){
       spreadHtml+='<p class="plan-why"><b>'+esc(r.label)+':</b> '+esc(r.text||'')+'</p>';
     });
+    function prettyDate(iso){
+      var m=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if(!m)return String(iso||'');
+      var mo=Number(m[2]), dy=Number(m[3]);
+      if(mo<1||mo>12||dy<1||dy>31)return String(iso||'');
+      return MONTHS[mo-1]+' '+dy+', '+m[1];
+    }
+    var spreadFactsHtml='';
+    if(p.instrument&&p.instrument.max_loss!=null){
+      var ins=p.instrument;
+      var sf=[];
+      sf.push('Max loss '+money(ins.max_loss));
+      if(ins.max_gain!=null)sf.push('Max gain '+money(ins.max_gain));
+      if(ins.breakeven!=null)sf.push('Breakeven '+money(ins.breakeven));
+      if(ins.debit_per_share!=null&&ins.net_per_contract!=null)sf.push('Debit '+money(ins.net_per_contract)+' per contract');
+      else if(ins.credit_per_share!=null&&ins.net_per_contract!=null)sf.push('Credit '+money(ins.net_per_contract)+' per contract');
+      if(ins.expiry)sf.push('Expires '+prettyDate(ins.expiry)+(ins.dte!=null?' ('+ins.dte+' days)':''));
+      if(ins.manage_by)sf.push('Manage by '+prettyDate(ins.manage_by));
+      var sfText=sf.join(' \u00b7 ');
+      if(ins.manage_note)sfText+=' '+ins.manage_note;
+      spreadFactsHtml='<p class="plan-meta">'+esc(sfText)+'</p>';
+    }
     var meta=[];
     if(p.as_of_text)meta.push(p.as_of_text);
     if(p.risk_reward&&p.risk_reward.text)meta.push(p.risk_reward.text);
@@ -1041,11 +1063,17 @@
     if(p.conviction&&p.conviction.text)meta.push(p.conviction.text);
     if(p.valid&&p.valid.text)meta.push(p.valid.text);
     if(p.instrument&&p.instrument.help)meta.push(p.instrument.help);
+    if(p.expires_text)meta.push(p.expires_text);
+    if(p.provenance&&p.provenance.plan_version>1){
+      meta.push('Plan version '+p.provenance.plan_version);
+      if(p.provenance.change_note)meta.push(p.provenance.change_note);
+    }
     return '<div class="setup-detail-sec plan-block"><h3>The plan</h3>'
       +(b.stale?'<p class="plan-why"><b>Stale — awaiting refresh.</b> This plan is from an earlier scoring pass.</p>':'')
       +'<p class="plan-action">'+esc(p.action||'')+'</p>'
       +(p.why?'<p class="plan-why">'+esc(p.why)+'</p>':'')
       +(p.instrument&&p.instrument.text?'<p class="plan-why">'+esc(p.instrument.text)+'</p>':'')
+      +spreadFactsHtml
       +(cells?'<div class="plan-cells">'+cells+'</div>':'')
       +spreadHtml
       +(p.risk_reward&&p.risk_reward.badge?'<p class="plan-why"><b>'+esc(p.risk_reward.badge)+'.</b></p>':'')
