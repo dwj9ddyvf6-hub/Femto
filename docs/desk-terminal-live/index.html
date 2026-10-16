@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="dark">
   <meta name="description" content="Muse Desk is a paper trading research desk: 60 automated strategies running on a paper account, with every figure read live from the broker account and the desk's permanent record.">
-  <meta name="theme-color" content="#131722">
+  <meta name="theme-color" content="#0e1312">
   <link rel="canonical" href="https://dwj9ddyvf6-hub.github.io/Femto/docs/desk-terminal-live/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -33,18 +33,18 @@
 <style>
     :root {
       color-scheme: dark;
-      --bg:#131722; --panel:#1e2530; --panel-2:#252d3d; --ink:#d1d4dc; --ink-dim:#a9aebc; --muted:#8b91a1;
-      --line:#2a2e39; --line-strong:#4a5165; --gold:#d9a53a; --gold-text:#e0be62; --accent:#2ebd9b; --accent-pale:#173a32;
-      --positive:#26a69a; --positive-bg:#14312e; --negative:#ef5350; --negative-bg:#3d2126;
-      --warning:#eda93c; --warning-bg:#3a2f16; --info:#6ea8d8; --info-bg:#1e2c40;
-      --track:#262c38;
+      --bg:#0e1312; --panel:#161d1b; --panel-2:#1e2624; --ink:#e7ebe8; --ink-dim:#b4bab5; --muted:#8c948d;
+      --line:#27302d; --line-strong:#414d47; --gold:#c9a24d; --gold-text:#dcbc72; --accent:#34c3a5; --accent-pale:#14332b;
+      --positive:#2ea86f; --positive-bg:#122a1e; --negative:#e05d55; --negative-bg:#2f1d1f;
+      --warning:#d9a441; --warning-bg:#2c2312; --info:#6398cf; --info-bg:#182635;
+      --track:#212a27;
       --sans:"Aptos", "Avenir Next", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
       --display:"Iowan Old Style", Charter, Georgia, serif;
       --mono:"SFMono-Regular", Consolas, "Liberation Mono", monospace;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    body{margin:0;background-color:var(--bg);background-image:radial-gradient(1100px 480px at 50% -120px,#1a2a24 0,rgba(26,42,36,0) 70%);background-repeat:no-repeat;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
     button{font:inherit}
     .shell{max-width:1480px;margin:0 auto;padding:26px 20px 68px}
     .masthead{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:36px;align-items:end;padding:12px 2px 23px;border-top:4px solid var(--accent);border-bottom:1px solid var(--line-strong)}
@@ -78,7 +78,7 @@
     .kv{display:grid;grid-template-columns:minmax(130px,1fr) auto;gap:10px 18px;align-items:baseline}.kv > div:nth-child(odd){color:var(--muted)}.kv > div:nth-child(even){text-align:right;font-family:var(--mono);font-weight:650;font-size:14px;font-variant-numeric:tabular-nums}.kv.emphasis > div:nth-child(even){font-size:16px;font-weight:750;color:var(--ink)}
     .table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
     table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.5}th{text-align:left;color:var(--muted);font-size:11px;letter-spacing:.045em;text-transform:uppercase;font-weight:600;background:var(--panel-2);border-bottom:1px solid var(--line);padding:10px 12px;white-space:nowrap}td{border-bottom:1px solid var(--line);padding:11px 12px;vertical-align:top}tbody tr:nth-child(even){background:#1a212e}tbody tr:last-child td{border-bottom:0}td.num,th.num{text-align:right;white-space:nowrap}td.symbol{font-family:var(--mono);font-weight:700;overflow-wrap:anywhere}td.positive,td.negative{font-size:14px;font-weight:750}td.pnl-major.positive{background:var(--positive-bg);box-shadow:inset 3px 0 0 var(--positive)}td.pnl-major.negative{background:var(--negative-bg);box-shadow:inset 3px 0 0 var(--negative)}
-    .pill{display:inline-block;border:1px solid var(--line);border-radius:2px;padding:3px 6px;font-size:11px;line-height:1.25;font-weight:600;text-transform:uppercase;letter-spacing:.02em;background:var(--panel-2);white-space:nowrap}.pill.good{color:var(--positive);background:var(--positive-bg);border-color:#1f4d43}.pill.info{color:var(--info);background:var(--info-bg);border-color:#2c4258}
+    .pill{display:inline-block;border:1px solid var(--line);border-radius:2px;padding:3px 6px;font-size:11px;line-height:1.25;font-weight:600;text-transform:uppercase;letter-spacing:.02em;background:var(--panel-2);white-space:nowrap}.pill.good{color:var(--positive);background:var(--positive-bg);border-color:#1e4d3e}.pill.info{color:var(--info);background:var(--info-bg);border-color:#2b4156}
     .sleeves{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.sleeve{position:relative;padding:19px 20px 18px;border-bottom:1px solid var(--line);min-width:0}.sleeve:nth-child(odd){border-right:1px solid var(--line)}.sleeve:nth-last-child(-n+2){border-bottom:0}.sleeve-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.sleeve h3{font-family:var(--display);font-size:18px;line-height:1.25;letter-spacing:-.01em;margin:0}.sleeve p{font-size:13px;line-height:1.6;color:var(--muted);margin:8px 0 0;max-width:72ch}.sleeve-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:12px}
     .footnote{margin:18px 2px 0;color:var(--muted);font-size:12px;line-height:1.55}
     .mast-tools{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
@@ -231,7 +231,7 @@
     .masthead h1{color:#fff}.masthead .byline{color:#cfe3da}
     .masthead .snapshot{color:#b9d2c7}.masthead .snapshot strong{color:#fff}
     .masthead .badge{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.35);color:#eef6f1}
-    .masthead .badge .dot{background:#d9e8e1}.masthead .badge.good .dot{background:#2ebd9b}
+    .masthead .badge .dot{background:#d9e8e1}.masthead .badge.good .dot{background:#34c3a5}
     .hero-value{font-family:var(--display)!important;font-size:clamp(44px,4.6vw,56px)!important;font-weight:700;letter-spacing:-.02em}
     .metric.hero{grid-column:span 2}
     .exposure-band{padding:16px 20px 14px;border-bottom:1px solid var(--line);background:var(--panel-2)}
@@ -305,9 +305,9 @@
     .completed-facts{font-family:var(--mono);font-size:13.5px;font-variant-numeric:tabular-nums}
     .completed-row .muted{margin-left:auto}
     /* Addition 5 — the Desk read + on-demand/closed sections */
-    .pill.gut-for{color:var(--positive);background:var(--positive-bg);border-color:#1f4d43}
+    .pill.gut-for{color:var(--positive);background:var(--positive-bg);border-color:#1e4d3e}
     .pill.gut-against{color:var(--negative);background:var(--negative-bg);border-color:#5a2b2b}
-    .pill.gut-mixed{color:var(--info);background:var(--info-bg);border-color:#2c4258}
+    .pill.gut-mixed{color:var(--info);background:var(--info-bg);border-color:#2b4156}
     .dr-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
     .dr-grade{font-size:12.5px;color:var(--ink-dim)}
     .dr-para{font-size:14.5px;line-height:1.65;color:var(--ink);max-width:78ch}
@@ -417,7 +417,7 @@
   <main class="shell" id="top">
     <header class="masthead">
       <div>
-        <h1><svg class="brand-mark" width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="8" fill="#0f5a48"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#bd8e2f"/><circle cx="45" cy="42" r="3" fill="#e3eee9"/></svg>Muse Desk</h1>
+        <h1><svg class="brand-mark" width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="8" fill="#0d5243"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#c9a24d"/><circle cx="45" cy="42" r="3" fill="#e8f0ea"/></svg>Muse Desk</h1>
         <p class="byline">A paper trading research desk</p>
         <div class="statusbar" id="statusbar"></div>
       </div>
@@ -557,7 +557,7 @@
       <div class="panel-body" id="architectureBody"><p class="muted">Loading…</p></div></section>
     </section>
 
-    <div class="foot-rule" aria-hidden="true"><i></i><b></b></div><footer class="site-footer"><span class="foot-brand"><svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true" style="vertical-align:-4px;margin-right:7px"><rect width="64" height="64" rx="8" fill="#0f5a48"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#bd8e2f"/><circle cx="45" cy="42" r="3" fill="#e3eee9"/></svg>Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#top" id="footTop">Back to top</a></footer>
+    <div class="foot-rule" aria-hidden="true"><i></i><b></b></div><footer class="site-footer"><span class="foot-brand"><svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true" style="vertical-align:-4px;margin-right:7px"><rect width="64" height="64" rx="8" fill="#0d5243"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#c9a24d"/><circle cx="45" cy="42" r="3" fill="#e8f0ea"/></svg>Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#top" id="footTop">Back to top</a></footer>
     <button type="button" class="back-top" id="backTop" hidden>↑ Back to top</button>
   </main>
 
@@ -629,7 +629,7 @@
       var bs=ex.by_sleeve||{}, keys=Object.keys(bs).filter(function(k){return Number(bs[k])>0;});
       var tot=keys.reduce(function(s,k){return s+Number(bs[k]);},0);
       if(!keys.length||!(tot>0))return '';
-      var cols=['#2ebd9b','#d9a53a','#5b9bd5','#a06bc0','#e07b4c','#4db6c9','#8fbf5a','#ef6a6a'];
+      var cols=['#34c3a5','#cfa14a','#6398cf','#a583c7','#dd8a57','#57b7c7','#97bd63','#e0655f'];
       var segs=keys.map(function(k,i){var w=Number(bs[k])/tot*100;return '<span style="width:'+w+'%;background:'+cols[i%cols.length]+'"></span>';}).join('');
       var leg=keys.map(function(k,i){var nm=(ALGO[k]||{}).name||k;return '<li><span class="sw" style="background:'+cols[i%cols.length]+'"></span>'+esc(nm)+'<span class="sv">'+money(bs[k])+' \u00b7 '+pct(Number(bs[k])/tot*100,1)+'</span></li>';}).join('');
       return '<div class="stack"><p style="margin:0 0 2px;font-size:13px;color:var(--muted)">Where the held value sits, by strategy:</p><div class="stack-bar" role="img" aria-label="Held value split by strategy">'+segs+'</div><ul class="stack-legend">'+leg+'</ul></div>';
@@ -656,7 +656,7 @@
       var lc=d.ledger_counts||{}, bk=lc.by_kind||{};
       var KIND=[['fill','Completed trades (fills)'],['journal','Journal entries'],['tick','Price records'],['nightly_reconcile','Nightly checks against the broker'],['outcome','Trade reviews'],['import_position','Positions brought in at the start']];
       var ltot=Number(lc.total)||KIND.reduce(function(s,x){return s+Number(bk[x[0]]||0);},0);
-      var lcols=['#2ebd9b','#5b9bd5','#d9a53a','#a06bc0','#8fbf5a','#ef6a6a'];
+      var lcols=['#34c3a5','#6398cf','#cfa14a','#a583c7','#97bd63','#e0655f'];
       var present=KIND.filter(function(x){return Number(bk[x[0]]||0)>0;});
       if(ltot>0&&present.length){
         lp.innerHTML='<div class="kv emphasis"><div>Records in total</div><div>'+ltot.toLocaleString('en-US')+'</div></div><div class="stack"><div class="stack-bar" role="img" aria-label="What the record is made of: '+present.map(function(x){return x[1]+' '+Number(bk[x[0]]).toLocaleString('en-US');}).join(', ')+'">'
@@ -745,8 +745,8 @@
     }).join('');
     sel.value=(cur==='all'||cur in counts)?cur:'all';
   }
-  var CAT_COLORS={'Tensor strategies':'#a06bc0','Breakout & momentum':'#e07b4c','Pullbacks & mean reversion':'#5b9bd5','Rule-based systems':'#8fbf5a','Options \u2014 income':'#2ebd9b','Options \u2014 directional & hedges':'#7aa2c4','Systematic funds':'#d9a53a','Crypto':'#ef6a6a'};
-  function catColor(c){return CAT_COLORS[c]||'#2ebd9b';}
+  var CAT_COLORS={'Tensor strategies':'#a583c7','Breakout & momentum':'#dd8a57','Pullbacks & mean reversion':'#6398cf','Rule-based systems':'#97bd63','Options \u2014 income':'#34c3a5','Options \u2014 directional & hedges':'#82a8c9','Systematic funds':'#cfa14a','Crypto':'#e0655f'};
+  function catColor(c){return CAT_COLORS[c]||'#34c3a5';}
   var CAT_TEXT={'Systematic funds':'#e0be62'};
   function catText(c){return CAT_TEXT[c]||catColor(c);}
   var CAT_GLYPH={'Tensor strategies':'T','Breakout & momentum':'B','Pullbacks & mean reversion':'P','Rule-based systems':'R','Options \u2014 income':'OI','Options \u2014 directional & hedges':'OD','Systematic funds':'S','Crypto':'C'};
@@ -781,7 +781,7 @@
     var keys=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a];});
     if(!total){host.innerHTML='';return;}
     var max=Math.max.apply(null,keys.map(function(k2){return counts[k2];}).concat([1]));
-    var cols=['#2ebd9b','#5b9bd5','#d9a53a','#a06bc0','#8fbf5a','#ef6a6a'];
+    var cols=['#34c3a5','#6398cf','#cfa14a','#a583c7','#97bd63','#e0655f'];
     host.innerHTML='<h3>What the desk trades</h3>'+keys.map(function(k2,i){
       return '<div class="catmix-row"><span class="cm-name">'+esc(k2==='None \u2014 records checks only'?'Monitors \u2014 no trades, records checks only':k2)+'</span><span class="catmix-track"><span class="catmix-fill" style="width:'+(counts[k2]/max*100)+'%;background:'+cols[i%cols.length]+'"></span></span><span class="cm-n">'+counts[k2]+'</span></div>';
     }).join('');
