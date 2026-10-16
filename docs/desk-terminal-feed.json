@@ -1088,7 +1088,7 @@
    "trading_stop": null,
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
-   "scored_at": "2026-10-16T20:14:49.417788+00:00",
+   "scored_at": "2026-10-16T20:19:48.315179+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap_options:CVNA",
@@ -1160,7 +1160,7 @@
     "setup_story": [
      "On Friday, October 16, 2026, CVNA was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 54 of 100 \u2014 Watch tier on the desk's list.",
      "The desk bought CVNA 60/64 call spread expiring 2026-10-30 for a $1.93 debit (the stock was trading at $59.70 when the spread was bought). The position is still held. A spread can lose at most the debit paid for it \u2014 its risk is defined by the package, not by a stop order.",
-     "The picture as a whole: price closed $58.83, just above its recent swing low ($56.27) \u2014 reset onto the swing-low zone; the recent swing low at $56.27 is intact below price; its 10-session move is -7.7% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.98 (VIX as of 2026-10-16)."
+     "The picture as a whole: price closed $58.83, just above its recent swing low ($56.27) \u2014 reset onto the swing-low zone; the recent swing low at $56.27 is intact below price; its 10-session move is -7.7% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.15 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -1269,11 +1269,11 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-16T20:14:49.417788+00:00",
+    "scored_at": "2026-10-16T20:19:48.315179+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold CVNA \u2014 the desk holds CVNA 60/64 call spread expiring 2026-10-30, bought for a $1.93 debit. The levels below are reference levels on the stock; the spread itself has no stop order \u2014 its risk is the debit paid.",
-     "why": "Price closed $58.83, just above its recent swing low ($56.27) \u2014 reset onto the swing-low zone; the recent swing low at $56.27 is intact below price; its 10-session move is -7.7% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.98 (VIX as of 2026-10-16).",
+     "why": "Price closed $58.83, just above its recent swing low ($56.27) \u2014 reset onto the swing-low zone; the recent swing low at $56.27 is intact below price; its 10-session move is -7.7% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.15 (VIX as of 2026-10-16).",
      "instrument": {
       "text": "1\u00d7 CVNA 60/64 call spread expiring 2026-10-30 \u2014 bought for a $1.93 debit; the debit is the most the spread can lose. Risk is capped at the debit paid; no stop order protects or is needed for that cap, and gains are capped at the short strike.",
       "type": "options_package",
@@ -1358,20 +1358,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Spread plan horizon: manage by 2026-10-23.",
-     "as_of_text": "Plan as of 4:14 PM ET \u00b7 Prices checked 4:14 PM ET",
+     "as_of_text": "Plan as of 4:19 PM ET \u00b7 Prices checked 4:19 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-CVNA-ema_vwap_options-CVNA",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap_options:CVNA",
       "source_timestamp": "2026-10-16",
       "source_hash": "bad5fef2de800ae2",
-      "ingested_at": "2026-10-16T20:14:49.417788+00:00",
+      "ingested_at": "2026-10-16T20:19:48.315179+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 4:14 PM ET."
+      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 4:19 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -3359,7 +3359,7 @@
    "trading_stop": null,
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
-   "scored_at": "2026-10-16T20:14:49.417788+00:00",
+   "scored_at": "2026-10-16T20:19:48.315179+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap_options:IREN",
@@ -3431,7 +3431,7 @@
     "setup_story": [
      "On Friday, October 16, 2026, IREN was flagged by 2 of the desk's strategies across 2 independent families (capitulation & fear events and intraday pullback) and scored 40 of 100 \u2014 Watch tier on the desk's list.",
      "The desk bought IREN 29/31 call spread expiring 2026-10-30 for a $0.81 debit (the stock was trading at $28.66 when the spread was bought). The position is still held. A spread can lose at most the debit paid for it \u2014 its risk is defined by the package, not by a stop order.",
-     "The picture as a whole: price closed $27.00, just above its recent swing low ($26.60) \u2014 reset onto the swing-low zone; the recent swing low at $26.60 is intact below price; its 10-session move is -35.3% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.98 (VIX as of 2026-10-16)."
+     "The picture as a whole: price closed $27.00, just above its recent swing low ($26.60) \u2014 reset onto the swing-low zone; the recent swing low at $26.60 is intact below price; its 10-session move is -35.3% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.15 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -3540,11 +3540,11 @@
      "credit": null,
      "entry_spot": 28.66
     },
-    "scored_at": "2026-10-16T20:14:49.417788+00:00",
+    "scored_at": "2026-10-16T20:19:48.315179+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold IREN \u2014 the desk holds IREN 29/31 call spread expiring 2026-10-30, bought for a $0.81 debit. The levels below are reference levels on the stock; the spread itself has no stop order \u2014 its risk is the debit paid.",
-     "why": "Price closed $27.00, just above its recent swing low ($26.60) \u2014 reset onto the swing-low zone; the recent swing low at $26.60 is intact below price; its 10-session move is -35.3% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.98 (VIX as of 2026-10-16).",
+     "why": "Price closed $27.00, just above its recent swing low ($26.60) \u2014 reset onto the swing-low zone; the recent swing low at $26.60 is intact below price; its 10-session move is -35.3% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.15 (VIX as of 2026-10-16).",
      "instrument": {
       "text": "3\u00d7 IREN 29/31 call spread expiring 2026-10-30 \u2014 bought for a $0.81 debit; the debit is the most the spread can lose. Risk is capped at the debit paid; no stop order protects or is needed for that cap, and gains are capped at the short strike.",
       "type": "options_package",
@@ -3629,20 +3629,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Spread plan horizon: manage by 2026-10-23.",
-     "as_of_text": "Plan as of 4:14 PM ET \u00b7 Prices checked 4:14 PM ET",
+     "as_of_text": "Plan as of 4:19 PM ET \u00b7 Prices checked 4:19 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-IREN-ema_vwap_options-IREN",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap_options:IREN",
       "source_timestamp": "2026-10-16",
       "source_hash": "358af39a86f89d87",
-      "ingested_at": "2026-10-16T20:14:49.417788+00:00",
+      "ingested_at": "2026-10-16T20:19:48.315179+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 4:14 PM ET."
+      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 4:19 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -5830,12 +5830,12 @@
   "regime": "Chop",
   "regime_evidence": [
    "QQQ closed below its 50-day average (-2.3%) with a 20-day slope of -1.6% \u2014 the desk's regime rule reads chop.",
-   "VIX closed at 19.98 (+21.4% on the day) (VIX reading as of 2026-10-16).",
+   "VIX closed at 20.15 (+22.4% on the day) (VIX reading as of 2026-10-16).",
    "Both indexes were red today \u2014 the dip-buying habitat these strategies were validated in."
   ],
   "vix": {
-   "close": 19.98,
-   "change_pct": 21.4,
+   "close": 20.15,
+   "change_pct": 22.4,
    "as_of": "2026-10-16"
   },
   "spy": {
