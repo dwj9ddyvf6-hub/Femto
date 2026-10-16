@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-16T02:21:47.080453+00:00",
- "generated_at_et": "2026-10-15T22:21:47.080453-04:00",
+ "generated_at_utc": "2026-10-16T02:39:10.578285+00:00",
+ "generated_at_et": "2026-10-15T22:39:10.578285-04:00",
  "account": {
-  "equity": "109261.55",
+  "equity": "109732.13",
   "cash": "-241818.4",
   "buying_power": "0",
   "status": "ACTIVE",
@@ -48,10 +48,10 @@
    "symbol": "ARM",
    "qty": 52.0,
    "avg_entry": 229.380385,
-   "current": 243.0,
-   "unrealized_pl": 708.21998,
+   "current": 244.5,
+   "unrealized_pl": 786.21998,
    "unrealized_pl_pct": null,
-   "market_value": "12636",
+   "market_value": "12714",
    "side": "long",
    "sleeve": "red_day_reversal"
   },
@@ -59,10 +59,10 @@
    "symbol": "AXTI",
    "qty": 325.0,
    "avg_entry": 56.746462,
-   "current": 58.36,
-   "unrealized_pl": 524.39985,
+   "current": 58.9,
+   "unrealized_pl": 699.89985,
    "unrealized_pl_pct": null,
-   "market_value": "18967",
+   "market_value": "19142.5",
    "side": "long",
    "sleeve": "momentum_rotation"
   },
@@ -81,10 +81,10 @@
    "symbol": "DELL",
    "qty": 5.0,
    "avg_entry": 473.0,
-   "current": 473.82,
-   "unrealized_pl": 4.1,
+   "current": 477.9,
+   "unrealized_pl": 24.5,
    "unrealized_pl_pct": null,
-   "market_value": "2369.1",
+   "market_value": "2389.5",
    "side": "long",
    "sleeve": "momentum"
   },
@@ -103,10 +103,10 @@
    "symbol": "FCEL",
    "qty": 212.0,
    "avg_entry": 13.674906,
-   "current": 14.13,
-   "unrealized_pl": 96.479928,
+   "current": 14.14,
+   "unrealized_pl": 98.599928,
    "unrealized_pl_pct": null,
-   "market_value": "2995.56",
+   "market_value": "2997.68",
    "side": "long",
    "sleeve": "momentum"
   },
@@ -125,10 +125,10 @@
    "symbol": "LITE",
    "qty": 28.0,
    "avg_entry": 828.020245,
-   "current": 874.97,
-   "unrealized_pl": 1314.59314,
+   "current": 879.05,
+   "unrealized_pl": 1428.83314,
    "unrealized_pl_pct": null,
-   "market_value": "24499.16",
+   "market_value": "24613.4",
    "side": "long",
    "sleeve": "rsi_meanrev"
   },
@@ -136,10 +136,10 @@
    "symbol": "MU",
    "qty": 16.0,
    "avg_entry": 871.6725,
-   "current": 922.61,
-   "unrealized_pl": 815.0,
+   "current": 925.39,
+   "unrealized_pl": 859.48,
    "unrealized_pl_pct": null,
-   "market_value": "14761.76",
+   "market_value": "14806.24",
    "side": "long",
    "sleeve": "red_day_reversal"
   },
@@ -158,10 +158,10 @@
    "symbol": "NBIS",
    "qty": 32.0,
    "avg_entry": 171.837879,
-   "current": 186.7,
-   "unrealized_pl": 475.587872,
+   "current": 187.82,
+   "unrealized_pl": 511.427872,
    "unrealized_pl_pct": null,
-   "market_value": "5974.4",
+   "market_value": "6010.24",
    "side": "long",
    "sleeve": "rsi_meanrev"
   },
@@ -679,16 +679,16 @@
   ]
  },
  "exposure": {
-  "gross_notional": 351109.95,
-  "equity": 109261.55,
-  "gross_pct": 321.3,
+  "gross_notional": 351580.52999999997,
+  "equity": 109732.13,
+  "gross_pct": 320.4,
   "position_count": 24,
   "by_sleeve": {
-   "momentum": 22691.999999999996,
-   "rsi_meanrev": 49038.56,
+   "momentum": 22714.519999999997,
+   "rsi_meanrev": 49188.64,
    "donchian": 23710.44,
-   "red_day_reversal": 27397.760000000002,
-   "momentum_rotation": 59550.0,
+   "red_day_reversal": 27520.239999999998,
+   "momentum_rotation": 59725.5,
    "aurelia_ndx": 155360.35,
    "phase_daily": 12506.84,
    "vix_hedge": 832.0,
@@ -696,31 +696,31 @@
   }
  },
  "ledger_counts": {
-  "total": 7713,
+  "total": 7799,
   "by_kind": {
    "journal": 187,
    "fill": 5933,
    "outcome": 9,
    "import_position": 6,
-   "tick": 145,
+   "tick": 149,
    "nightly_reconcile": 52,
    "import_open_order": 51,
-   "signal_intent": 579,
-   "entry_rejected": 419,
+   "signal_intent": 618,
+   "entry_rejected": 446,
    "exit_skipped": 85,
-   "intent_rejected": 148,
-   "slice_sync": 89,
+   "intent_rejected": 160,
+   "slice_sync": 93,
    "exit_submitted": 10
   }
  },
- "setups": [
+ "setups": [],
+ "setups_completed": [
   {
    "symbol": "CRML",
-   "rank": 1,
+   "status": "completed",
    "score": 52,
    "tier": "Watch",
    "side": "long",
-   "status": "watch",
    "sources": [
     "ema_vwap",
     "rsi_meanrev",
@@ -739,8 +739,23 @@
     "No stop was recorded by the selecting strategy \u2014 treat size with care."
    ],
    "entry": 6.26,
-   "stop": null,
-   "target": null,
+   "exit_prices": [
+    6.62
+   ],
+   "exits": [
+    {
+     "sleeve": "ema_vwap",
+     "qty": 499,
+     "reason": "ema_vwap exit: reverted=False target=True stop=False held=0"
+    },
+    {
+     "sleeve": "rsi_meanrev",
+     "qty": 499,
+     "reason": "rsi_meanrev exit: px=6.62 entry=6.26 held=0"
+    }
+   ],
+   "exit_target": true,
+   "exit_stop": false,
    "last_close": 6.95,
    "lector_rank": null,
    "tensor": "confirmed_swing",
@@ -1267,11 +1282,10 @@
   },
   {
    "symbol": "SKYQ",
-   "rank": 2,
+   "status": "completed",
    "score": 52,
    "tier": "Watch",
    "side": "long",
-   "status": "watch",
    "sources": [
     "ema_vwap",
     "rsi_meanrev",
@@ -1290,8 +1304,23 @@
     "No stop was recorded by the selecting strategy \u2014 treat size with care."
    ],
    "entry": 2.26,
-   "stop": null,
-   "target": null,
+   "exit_prices": [
+    2.42
+   ],
+   "exits": [
+    {
+     "sleeve": "ema_vwap",
+     "qty": 1384,
+     "reason": "ema_vwap exit: reverted=False target=True stop=False held=0"
+    },
+    {
+     "sleeve": "rsi_meanrev",
+     "qty": 1384,
+     "reason": "rsi_meanrev exit: px=2.42 entry=2.26 held=0"
+    }
+   ],
+   "exit_target": true,
+   "exit_stop": false,
    "last_close": 2.54,
    "lector_rank": null,
    "tensor": "confirmed_swing",
