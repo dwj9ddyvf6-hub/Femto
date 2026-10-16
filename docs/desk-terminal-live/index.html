@@ -540,7 +540,7 @@
   // connected to the desk's alert relay; empty values are safe —
   // the Enable alerts flow completes on the device and shows its
   // fallback message instead of posting anywhere.
-  var PUSH_CONFIG = { vapidPublicKey: "BFFdwC7N-IAXO-75Q2O9bMCU4dOE92gpxamj1gLZcei5GfeHzF-wADC7esrTE9jxqe22uZd25yo0g2dcjHy3wXs", relayUrl: "https://formsubmit.co/ajax/[email-redacted]" };
+  var PUSH_CONFIG = { vapidPublicKey: "BFFdwC7N-IAXO-75Q2O9bMCU4dOE92gpxamj1gLZcei5GfeHzF-wADC7esrTE9jxqe22uZd25yo0g2dcjHy3wXs", relayUrl: "https://ntfy.envs.net/musedesk-pair-51f5db303a4344bda58e89c15d47110a" };
   function $(id){return document.getElementById(id);}
   function esc(s){return String(s==null?'—':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
   function money(v,dec){if(v==null||v==='')return '—';dec=(dec==null?2:dec);return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:dec,maximumFractionDigits:dec}).format(Number(v));}
@@ -1334,14 +1334,13 @@
           });
         }).then(function(sub){
           if(!PUSH_CONFIG.relayUrl)throw new Error('alerts not connected yet');
-          return fetch(PUSH_CONFIG.relayUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({subscription:sub.toJSON(),pairing_code:code})})
-            .then(function(r){ if(!r.ok)throw new Error('relay answered '+r.status); });
+          return fetch(PUSH_CONFIG.relayUrl,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({subscription:sub.toJSON(),pairing_code:code})});
         }).then(function(){
           btn.textContent='Alerts on';
-          alertsNote('Alerts are on. Midna will send a test alert shortly.');
+          alertsNote('Alerts are on. Your pairing code is '+code+' \u2014 Midna will finish the connection and send a test alert shortly.');
         }).catch(function(){
           btn.textContent='Alerts on';
-          alertsNote('Alerts are set up on this device \u2014 tell Midna \u2018alerts are on\u2019 and she\u2019ll finish the connection.');
+          alertsNote('Alerts are set up on this device \u2014 your pairing code is '+code+'. Tell Midna \u2018alerts are on\u2019 and she\u2019ll finish the connection.');
         });
       }).catch(function(){
         btn.disabled=false;
