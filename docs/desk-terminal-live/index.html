@@ -291,6 +291,12 @@
     .setup-reasons{margin:0;padding-left:17px;font-size:13.5px;color:var(--ink)}
     .setup-reasons li{margin:2px 0}
     .setup-sources{margin:0;font-size:12.5px;color:var(--muted)}
+    /* Stage B — the card's distillation leads its text: thesis,
+       then the one-line plan strip; the gut-call pill sits beside
+       the score pill (no auto margin of its own). */
+    .setup-top .gut-for,.setup-top .gut-against,.setup-top .gut-mixed{margin-left:0}
+    .setup-thesis{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink)}
+    .setup-planstrip{margin:0;font-family:var(--mono);font-size:13px;line-height:1.5;color:var(--ink);background:var(--panel-2);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:3px;padding:7px 10px}
     .setup-actions{display:flex;gap:8px;margin-top:auto}
     .completed-head{margin:22px 0 4px;font-size:15px;letter-spacing:.02em}
     .completed-sub{margin:0 0 10px;font-size:13px;color:var(--muted);max-width:76ch;line-height:1.5}
@@ -354,6 +360,18 @@
     .lens-ev{margin:0;font-size:14px;line-height:1.55;color:var(--ink-dim)}
     .setup-inv{margin:0;padding-left:18px;font-size:14.5px;line-height:1.6;color:var(--ink-dim)}
     .setup-inv li{margin:4px 0}
+    /* Stage B — the PLAN block: the detail's first section, the
+       refined distillation in front of all the depth below it */
+    .plan-block{border:1px solid var(--line-strong);border-top:3px solid var(--gold);border-radius:3px;background:var(--panel-2);padding:4px 16px 14px;margin-top:16px}
+    .plan-action{font-size:16.5px;font-weight:700;line-height:1.5;color:var(--ink);margin:6px 0}
+    .plan-why{font-size:14.5px;line-height:1.6;color:var(--ink-dim);margin:0 0 10px;max-width:76ch}
+    .plan-cells{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+    .plan-cells div{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:6px 9px}
+    .plan-cells span{display:block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+    .plan-cells b{font-family:var(--mono);font-size:14.5px;font-variant-numeric:tabular-nums}
+    .plan-cells small{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.4}
+    .plan-meta{font-size:13px;color:var(--muted);margin:10px 0 0;line-height:1.55}
+    .dr-change{font-size:14.5px;line-height:1.6;color:var(--ink);margin:0 0 8px}
     /* Chart read section: the desk's technical read of the chart
        above — pattern name leads, evidence grouped beneath it */
     .chart-read{border-top:2px solid var(--line-strong);margin-top:22px;padding-top:4px}
@@ -945,6 +963,65 @@
     }
     return '<svg class="setup-spark" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" role="img" aria-label="Recent closes: '+(up?'up ':'down ')+chgTxt+'over the last '+cs.length+' sessions'+(tick?'; the gold dashed line marks the entry price':'')+'"><polyline points="'+pts+'" stroke="'+col+'"/>'+tick+'</svg>';
   }
+  // Stage B (SA-8/SA-12): the plan strip — one line, the whole
+  // distillation, built only from the brief's plan object.
+  function planStripText(p){
+    var bits=[];
+    if(p.entry_zone){
+      bits.push(p.status==='Entered'
+        ?('In at '+money(p.entry_zone.anchor))
+        :('Buy zone '+money(p.entry_zone.lo)+'\u2013'+money(p.entry_zone.hi)));
+    }
+    if(p.stop&&p.stop.price!=null)bits.push('Stop '+money(p.stop.price));
+    (p.targets||[]).forEach(function(t){bits.push(t.label+' '+money(t.price));});
+    if(p.invalidation&&p.invalidation.price!=null)
+      bits.push('Wrong if it closes below '+money(p.invalidation.price));
+    if(!bits.length)return p.entry_note||'';
+    return bits.join(' \u00b7 ');
+  }
+  // Stage B (SA-8/SA-13): the PLAN block — the first section of
+  // the detail view. One object, the same one the card strip
+  // reads: action, why, entry zone, stop, targets, the one
+  // governing line, conviction, validity. Nothing else on the
+  // page competes with it for first attention.
+  function planBlockHtml(b){
+    var p=(b&&typeof b==='object')?b.plan:null;
+    if(!p||typeof p!=='object')return '';
+    function cellS(label,val,sub){
+      return '<div><span>'+label+'</span><b>'+esc(val)+'</b>'
+        +(sub?'<small>'+esc(sub)+'</small>':'')+'</div>';
+    }
+    var cells='';
+    if(p.entry_zone){
+      cells+=cellS(p.status==='Entered'?'Bought at':'Entry zone',
+        money(p.entry_zone.lo)
+          +(p.entry_zone.hi!==p.entry_zone.lo?'\u2013'+money(p.entry_zone.hi):''),
+        p.entry_zone.basis||'');
+    }
+    if(p.stop){
+      cells+=cellS('Stop',
+        p.stop.price!=null?money(p.stop.price):'\u2014',
+        p.stop.structure||'');
+    }
+    (p.targets||[]).forEach(function(t){
+      cells+=cellS('Target '+t.label, money(t.price), t.basis||'');
+    });
+    if(p.invalidation&&p.invalidation.price!=null){
+      cells+=cellS('Ends if it closes below',
+        money(p.invalidation.price),
+        'the one line that ends this setup');
+    }
+    var meta=[];
+    if(p.conviction&&p.conviction.text)meta.push(p.conviction.text);
+    if(p.valid&&p.valid.text)meta.push(p.valid.text);
+    return '<div class="setup-detail-sec plan-block"><h3>The plan</h3>'
+      +'<p class="plan-action">'+esc(p.action||'')+'</p>'
+      +(p.why?'<p class="plan-why">'+esc(p.why)+'</p>':'')
+      +(cells?'<div class="plan-cells">'+cells+'</div>':'')
+      +(p.entry_note?'<p class="plan-why">'+esc(p.entry_note)+'</p>':'')
+      +(meta.length?'<p class="plan-meta">'+esc(meta.join(' '))+'</p>':'')
+      +'</div>';
+  }
   function renderSetups(d){
     var panel=$('setupsPanel'); if(!panel)return;
     var setups=Array.isArray(d.setups)?d.setups:[];
@@ -958,11 +1035,17 @@
       var reasons=(s.reasons||[]).slice(0,3).map(function(r){return '<li>'+esc(r)+'</li>';}).join('');
       function lvl(label,v){return v==null?'':'<div><span>'+label+'</span><b>'+money(v)+'</b></div>';}
       var held=s.status==='entered';
+      var brf=(s.brief&&typeof s.brief==='object')?s.brief:null;
+      var plan=(brf&&brf.plan&&typeof brf.plan==='object')?brf.plan:null;
+      var strip=plan?planStripText(plan):'';
       return '<article class="setup-card" id="setup-'+esc(s.symbol)+'">'
         +'<div class="setup-top"><span class="setup-rank">#'+esc(s.rank)+'</span><h3>'+esc(s.symbol)+'</h3>'
-        +'<span class="pill">'+esc(s.tier)+' \u00b7 '+esc(s.score)+'</span></div>'
+        +'<span class="pill">'+esc(s.tier)+' \u00b7 '+esc(s.score)+'</span>'
+        +(brf&&brf.desk_read?gutPill(brf.desk_read.call):'')+'</div>'
         +'<p class="setup-status">'+(held?'<span class="pill good">Bought today</span>':'<span class="pill info">Watching</span>')
         +(s.last_close!=null?'<span class="muted">Last close '+money(s.last_close)+'</span>':'')+'</p>'
+        +(plan&&plan.why?'<p class="setup-thesis">'+esc(plan.why)+'</p>':'')
+        +(strip?'<p class="setup-planstrip">'+esc(strip)+'</p>':'')
         +sparkSvg(s)
         +'<div class="setup-levels">'+lvl('Entry',s.entry)+lvl('Stop',s.stop)+lvl('Target',s.target)+'</div>'
         +(reasons?'<ul class="setup-reasons">'+reasons+'</ul>':'')
@@ -1065,6 +1148,7 @@
     var html='<div class="setup-detail-sec desk-read"><h3>Desk read — the whole picture</h3>'
       +'<div class="dr-head">'+gutPill(dr.call)
       +'<span class="dr-grade">'+esc(dr.grade||'')+'</span></div>'
+      +(dr.change_call?'<p class="dr-change">'+esc(dr.change_call)+'</p>':'')
       +(dr.paragraph?'<p class="dr-para">'+esc(dr.paragraph)+'</p>':'')
       +(dec.length?'<h4 class="cr-group">What decides it</h4><ul class="dr-list">'
         +dec.map(row).join('')+'</ul>':'')
@@ -1122,7 +1206,14 @@
     var b=(s.brief&&typeof s.brief==='object')?s.brief:null;
     var lv=(b&&b.levels)?b.levels:s;
     function cell(label,v){return '<div><span>'+label+'</span><b>'+(v==null?'—':money(v))+'</b></div>';}
-    var html='';
+    var html=planBlockHtml(b);
+    if(b){
+      var story=Array.isArray(b.setup_story)?b.setup_story:(b.setup_story?[b.setup_story]:[]);
+      if(story.length){
+        html+='<div class="setup-detail-sec setup-story"><h3>The setup</h3>'
+          +story.map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>';
+      }
+    }
     if(b&&b.chart){
       var _annotated=(b.chart_panels||[]).indexOf('rsi')>=0;
       /* Phones get the mobile chart (a smaller, purpose-built
@@ -1133,26 +1224,16 @@
         :'<img class="setup-chart" src="'+esc(b.chart)+'" alt="Price chart for '+esc(s.symbol)+' with the setup&rsquo;s levels marked">')
         +'<p class="setup-chart-cap">The chart as it looked when this setup was briefed'
         +((b.chart_panels||[]).indexOf('hourly')>=0?' — daily bars above, the most recent hours below':'')
-        +(_annotated?'. The desk&rsquo;s chart read is drawn on it: the pattern boundaries, the levels, the retracement grid, the buy zone, and the RSI panel with any divergence marked at its pivots.'
-                    :'. Lines mark the entry, the averages and the recent low the brief uses.')
+        +(_annotated?'. The desk&rsquo;s chart read is drawn on it: the pattern boundaries, the levels, the retracement grid, the buy zone, the plan&rsquo;s entry, stop and target lines, the line that ends the setup, and the RSI panel with any divergence marked at its pivots.'
+                    :'. Lines mark the plan&rsquo;s entry, stop and target, the line that ends the setup, the averages and the recent low the brief uses.')
         +'</p>';
     } else if(b&&b.chart_gap){
       html+='<p class="brief-gap">'+esc(b.chart_gap)+'</p>';
     }
-    html+='<div class="setup-detail-sec"><h3>The levels</h3><div class="setup-levels">'
-      +cell('Entry',lv.entry)+cell('Stop',lv.stop)+cell('Target',lv.target)
-      +cell('Last close',lv.last_close)
-      +(b&&b.levels?cell('20-day average',lv.ema20)+cell('Recent swing low',lv.swing_low_20):'')
-      +'</div></div>';
     if(b&&b.desk_read){
       html+=deskReadHtml(b.desk_read);
     }
     if(b){
-      var story=Array.isArray(b.setup_story)?b.setup_story:(b.setup_story?[b.setup_story]:[]);
-      if(story.length){
-        html+='<div class="setup-detail-sec setup-story"><h3>The setup</h3>'
-          +story.map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>';
-      }
       var crd=(b.chart_read&&typeof b.chart_read==='object')?b.chart_read:null;
       if(crd&&(crd.bullets||[]).length){
         var groups=[],byGroup={};
@@ -1200,11 +1281,19 @@
               +'<p class="lens-ev">'+esc(e.evidence)+'</p></div>';
           }).join('')+'</div></div>';
       }
+    }
+    html+='<div class="setup-detail-sec"><h3>The levels</h3><div class="setup-levels">'
+      +cell('Entry',lv.entry)+cell('Stop',lv.stop)+cell('Target',lv.target)
+      +cell('Last close',lv.last_close)
+      +(b&&b.levels?cell('20-day average',lv.ema20)+cell('Recent swing low',lv.swing_low_20):'')
+      +'</div></div>';
+    if(b){
       if((b.invalidation||[]).length){
         html+='<div class="setup-detail-sec"><h3>What would end this setup</h3><ul class="setup-inv">'
           +b.invalidation.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>';
       }
-    } else {
+    }
+    if(!b) {
       var reasons=(s.reasons||[]).map(function(r){return '<li>'+esc(r)+'</li>';}).join('');
       html+='<div class="setup-detail-sec"><h3>Why the desk flagged it</h3>'
         +(reasons?'<ul class="setup-reasons">'+reasons+'</ul>':'')
