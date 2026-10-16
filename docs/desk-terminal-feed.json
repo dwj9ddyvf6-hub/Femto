@@ -1051,13 +1051,13 @@
     "Tensor confirmed a swing today (2026-10-16) \u2014 the desk's pattern engine only flags confirmed, in-age swings, and tensor evidence carries the most weight of any single signal in the desk's scoring method.",
     "A strategy tried to enter today but was turned away (buying power) \u2014 the call was real; the account's funds were not there, so the desk gives the attempt a small credit.",
     "Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.",
-    "Price has reset near support \u2014 it closed $15.88, just above its recent swing low at $14.96. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit.",
+    "Price has reset near support \u2014 it closed $15.92, just above its recent swing low at $14.96. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit.",
     "Stop sits inside one day's normal range \u2014 very likely to be noise-stopped."
    ],
    "entry": 16.325000762939453,
    "stop": 15.866100311279297,
    "target": 17.382801055908203,
-   "last_close": 15.88,
+   "last_close": 15.92,
    "lector_rank": null,
    "tensor": "confirmed_swing",
    "primary_sleeve": "ema_vwap_options",
@@ -1066,7 +1066,7 @@
    "instrument": null,
    "stop_problem": null,
    "entry_source": "tensor_intent",
-   "scored_at": "2026-10-16T18:04:41.495961+00:00",
+   "scored_at": "2026-10-16T18:09:43.771214+00:00",
    "provenance": {
     "source_system": "signal_intent",
     "source_record_id": "tensor_swing:AG:2026-10-16:27",
@@ -1118,21 +1118,21 @@
      16.33,
      15.25,
      16.09,
-     15.88
+     15.92
     ],
     "levels": {
      "entry": 16.325000762939453,
      "stop": 15.866100311279297,
      "target": 17.382801055908203,
-     "last_close": 15.88,
+     "last_close": 15.92,
      "ema20": 17.36,
      "swing_low_20": 14.96,
      "atr14": 0.681
     },
     "setup_story": [
      "On Friday, October 16, 2026, AG was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 42 of 100 \u2014 Watch tier on the desk's list.",
-     "The desk's strategies tried to enter today and were turned away (buying power), so this is still a watch, not a holding. Last close $15.88.",
-     "The picture as a whole: price closed $15.88, just above its recent swing low ($14.96) \u2014 reset onto the swing-low zone; the recent swing low at $14.96 is intact below price; its 10-session move is -10.1% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16)."
+     "The desk's strategies tried to enter today and were turned away (buying power), so this is still a watch, not a holding. Last close $15.92.",
+     "The picture as a whole: price closed $15.92, just above its recent swing low ($14.96) \u2014 reset onto the swing-low zone; the recent swing low at $14.96 is intact below price; its 10-session move is -9.9% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -1169,7 +1169,7 @@
       "key": "level",
       "lens": "Reset at a price level",
       "verdict": "At a level",
-      "evidence": "Price has reset near support \u2014 it closed $15.88, just above its recent swing low at $14.96. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
+      "evidence": "Price has reset near support \u2014 it closed $15.92, just above its recent swing low at $14.96. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
      },
      {
       "key": "geometry",
@@ -1181,13 +1181,13 @@
       "key": "invalidator_extension",
       "lens": "What would end it \u2014 an overextended run",
       "verdict": "Pass",
-      "evidence": "10-session run is -10.1% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
+      "evidence": "10-session run is -9.9% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
      },
      {
       "key": "invalidator_structure",
       "lens": "What would end it \u2014 price structure",
       "verdict": "Pass",
-      "evidence": "Price closed at $15.88, above the recent swing low of $14.96 \u2014 the structure the setup rests on is intact."
+      "evidence": "Price closed at $15.92, above the recent swing low of $14.96 \u2014 the structure the setup rests on is intact."
      },
      {
       "key": "chart_pattern",
@@ -1212,11 +1212,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-16T18:04:41.495961+00:00",
+    "scored_at": "2026-10-16T18:09:43.771214+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy AG in the entry zone below \u2014 the desk's strategies tried today and were turned away (buying power), so this is still a watch, not a holding. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
-     "why": "Price closed $15.88, just above its recent swing low ($14.96) \u2014 reset onto the swing-low zone; the recent swing low at $14.96 is intact below price; its 10-session move is -10.1% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16).",
+     "why": "Price closed $15.92, just above its recent swing low ($14.96) \u2014 reset onto the swing-low zone; the recent swing low at $14.96 is intact below price; its 10-session move is -9.9% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16).",
      "instrument": null,
      "entry_zone": {
       "anchor": 16.33,
@@ -1265,20 +1265,20 @@
      },
      "expires_at": "2026-10-16T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 2:04 PM ET \u00b7 Prices checked 2:04 PM ET",
+     "as_of_text": "Plan as of 2:09 PM ET \u00b7 Prices checked 2:09 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-AG-tensor_swing-AG-2026-10-16-27",
       "source_system": "signal_intent",
       "source_record_id": "tensor_swing:AG:2026-10-16:27",
       "source_timestamp": "2026-10-16",
       "source_hash": "a257d9e82ef69bdb",
-      "ingested_at": "2026-10-16T18:04:41.495961+00:00",
+      "ingested_at": "2026-10-16T18:09:43.771214+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:04 PM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:09 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -1295,7 +1295,7 @@
      "base_rate_line": null,
      "meta": "Falling channel \u00b7 context tier \u00b7 forming",
      "level1": [
-      "Falling channel [context tier, forming] \u2014 two falling boundaries, roughly parallel. Price sits 41% of the way from the pattern's lower boundary to its upper one.",
+      "Falling channel [context tier, forming] \u2014 two falling boundaries, roughly parallel. Price sits 42% of the way from the pattern's lower boundary to its upper one.",
       "Nearest support: $15.54\u2013$15.69 (pivot cluster \u2014 4 confirmed pivots in 4 separate tests) \u2014 former resistance: it capped price from above, and now it holds price up from below (polarity flips are a hypothesis to watch, not a law).",
       "Nearest resistance: $16.28 (pivot cluster \u2014 1 confirmed pivot in 1 separate test).",
       "Invalidation: $13.19 \u2014 a daily close below the pattern's lower boundary \u2014 the support line through the 2026-06-11 and 2026-07-17 pivots."
@@ -1303,7 +1303,7 @@
      "level2": [
       {
        "group": "Pattern",
-       "text": "Falling channel [context tier, forming] \u2014 two falling boundaries, roughly parallel. Price sits 41% of the way from the pattern's lower boundary to its upper one."
+       "text": "Falling channel [context tier, forming] \u2014 two falling boundaries, roughly parallel. Price sits 42% of the way from the pattern's lower boundary to its upper one."
       },
       {
        "group": "Supports & levels",
@@ -1339,7 +1339,7 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-0.880) sits below its signal line (-0.710) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01."
+       "text": "MACD (-0.877) sits below its signal line (-0.709) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01."
       },
       {
        "group": "Moving averages",
@@ -1357,7 +1357,7 @@
      "bullets": [
       {
        "group": "Pattern",
-       "text": "Falling channel [context tier, forming] \u2014 two falling boundaries, roughly parallel. Price sits 41% of the way from the pattern's lower boundary to its upper one."
+       "text": "Falling channel [context tier, forming] \u2014 two falling boundaries, roughly parallel. Price sits 42% of the way from the pattern's lower boundary to its upper one."
       },
       {
        "group": "Supports & levels",
@@ -1393,7 +1393,7 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-0.880) sits below its signal line (-0.710) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01."
+       "text": "MACD (-0.877) sits below its signal line (-0.709) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01."
       },
       {
        "group": "Moving averages",
@@ -1462,7 +1462,7 @@
        "key_level": null,
        "also": null,
        "gate_note": null,
-       "price_position_pct": 41.1,
+       "price_position_pct": 41.7,
        "apex_session": null
       },
       "scale": "log",
@@ -1482,7 +1482,7 @@
         "sources": [
          "pivot cluster \u2014 4 confirmed pivots in 4 separate tests"
         ],
-        "distance_atr": -0.3
+        "distance_atr": -0.35
        },
        {
         "price": 16.28,
@@ -1495,7 +1495,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 0.48
+        "distance_atr": 0.43
        },
        {
         "price": 15.33,
@@ -1508,7 +1508,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -0.66
+        "distance_atr": -0.71
        },
        {
         "price": 15.11,
@@ -1521,7 +1521,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -0.93
+        "distance_atr": -0.98
        },
        {
         "price": 17.42,
@@ -1534,7 +1534,7 @@
         "sources": [
          "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
         ],
-        "distance_atr": 1.86
+        "distance_atr": 1.81
        },
        {
         "price": 14.32,
@@ -1547,7 +1547,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -1.88
+        "distance_atr": -1.93
        },
        {
         "price": 14.11,
@@ -1560,7 +1560,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -2.14
+        "distance_atr": -2.19
        },
        {
         "price": 17.85,
@@ -1573,7 +1573,7 @@
         "sources": [
          "pivot cluster \u2014 3 confirmed pivots in 3 separate tests"
         ],
-        "distance_atr": 2.38
+        "distance_atr": 2.33
        }
       ],
       "divergences": [
@@ -1987,14 +1987,14 @@
       ],
       "rsi_context": {
        "regime": "bear",
-       "rsi": 36.2,
+       "rsi": 36.4,
        "range": "10-60",
        "note": "RSI is 36. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime."
       },
       "macd": {
-       "line": -0.8801,
-       "signal": -0.7099,
-       "histogram": -0.1702,
+       "line": -0.8769,
+       "signal": -0.7092,
+       "histogram": -0.1677,
        "vs_signal": "below",
        "zero": "below",
        "hist_trend": "contracting",
@@ -2002,27 +2002,27 @@
         "t": "2026-09-01",
         "kind": "bearish"
        },
-       "note": "MACD (-0.880) sits below its signal line (-0.710) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01"
+       "note": "MACD (-0.877) sits below its signal line (-0.709) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01"
       },
       "wyckoff": null,
       "ma_structure": {
        "sma20": {
         "value": 17.6,
-        "slope_pct_5d": -3.97,
+        "slope_pct_5d": -3.96,
         "relation": "below",
-        "distance_atr": -2.08
+        "distance_atr": -2.03
        },
        "sma50": {
         "value": 19.06,
         "slope_pct_5d": -0.16,
         "relation": "below",
-        "distance_atr": -3.84
+        "distance_atr": -3.79
        },
        "sma200": {
         "value": 20.16,
         "slope_pct_5d": -0.13,
         "relation": "below",
-        "distance_atr": -5.17
+        "distance_atr": -5.12
        },
        "golden_cross": false,
        "summary": "20-day average (simple) $17.60 \u2014 price below it, average falling; 50-day average $19.06 \u2014 price below it, average falling; 200-day average $20.16 \u2014 price below it, average falling"
@@ -2077,7 +2077,7 @@
        "MACD divergence (regular_bullish): price made a lower low while MACD made a higher low \u2014 $18.77 on 2026-04-29 (MACD -0.634) vs $18.63 on 2026-05-19 (MACD -0.080). Confirmed 2026-08-07 by its MACD failure swing \u2014 MACD made a higher low and broke its own high; formed at a tested level \u2014 it counts as evidence.",
        "Divergence ledger: 13 divergences measured across every confirmed pivot pair (RSI 7, MACD 6); the five most salient are listed above and the full ledger rides in the brief's Desk read.",
        "RSI regime: RSI is 36. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
-       "MACD: MACD (-0.880) sits below its signal line (-0.710) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01.",
+       "MACD: MACD (-0.877) sits below its signal line (-0.709) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01.",
        "Dominant swing: $7.74 on 2025-08-01 to $32.03 on 2026-02-27; retracements (confluence ingredients only, never standalone levels): 38.2% at $22.75, 50.0% at $19.89, 61.8% at $17.02.",
        "Averages: 20-day average (simple) $17.60 \u2014 price below it, average falling; 50-day average $19.06 \u2014 price below it, average falling; 200-day average $20.16 \u2014 price below it, average falling.",
        "Volume: volume in the pattern's second half is running at 0.87x its first half \u2014 roughly unchanged. the last 20 sessions average 0.94x the prior period's volume. no expansion-volume break in the last 10 sessions.",
@@ -2161,7 +2161,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price is 1.6% above the nearest tested support ($15.63) \u2014 neither sitting on it nor stretched from it.",
+       "reading": "Price is 1.8% above the nearest tested support ($15.63) \u2014 neither sitting on it nor stretched from it.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -2170,7 +2170,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $15.88, above the recent swing low of $14.96 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $13.19 \u2014 context only; the swing low above it is the line that governs.",
+       "reading": "Price closed at $15.92, above the recent swing low of $14.96 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $13.19 \u2014 context only; the swing low above it is the line that governs.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -2179,7 +2179,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -10.1% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -9.9% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -2269,7 +2269,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-0.880) sits below its signal line (-0.710) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01.",
+       "reading": "MACD (-0.877) sits below its signal line (-0.709) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01.",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -2413,7 +2413,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -2431,7 +2431,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -2588,7 +2588,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price is 1.6% above the nearest tested support ($15.63) \u2014 neither sitting on it nor stretched from it.",
+       "reading": "Price is 1.8% above the nearest tested support ($15.63) \u2014 neither sitting on it nor stretched from it.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -2597,7 +2597,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $15.88, above the recent swing low of $14.96 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $13.19 \u2014 context only; the swing low above it is the line that governs.",
+       "reading": "Price closed at $15.92, above the recent swing low of $14.96 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $13.19 \u2014 context only; the swing low above it is the line that governs.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -2606,7 +2606,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -10.1% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -9.9% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -2696,7 +2696,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-0.880) sits below its signal line (-0.710) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01.",
+       "reading": "MACD (-0.877) sits below its signal line (-0.709) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-09-01.",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -2831,7 +2831,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -2849,7 +2849,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -3224,13 +3224,13 @@
     "Selected by 2 independent strategy families (intraday pullback, red-day reversal; 3 strategies in all) \u2014 independent agreement is the desk's core quality signal.",
     "A strategy tried to enter today but was turned away (buying power) \u2014 the call was real; the account's funds were not there, so the desk gives the attempt a small credit.",
     "Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.",
-    "Price has reset near support \u2014 it closed $166.88, just above its recent swing low at $163.36. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit.",
+    "Price has reset near support \u2014 it closed $167.37, just above its recent swing low at $163.36. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit.",
     "Defined stop 2.5\u00d7 the daily range below entry \u2014 inside the desk's 1.5\u20132.5 range band."
    ],
-   "entry": 168.79,
-   "stop": 126.59,
+   "entry": 166.94,
+   "stop": 125.2,
    "target": null,
-   "last_close": 166.88,
+   "last_close": 167.37,
    "lector_rank": null,
    "tensor": "none",
    "primary_sleeve": "ema_vwap",
@@ -3239,12 +3239,12 @@
    "instrument": null,
    "stop_problem": null,
    "entry_source": "sleeve_intent",
-   "scored_at": "2026-10-16T18:04:41.495961+00:00",
+   "scored_at": "2026-10-16T18:09:43.771214+00:00",
    "provenance": {
     "source_system": "signal_intent",
-    "source_record_id": "ema_vwap:NBIS:2026-10-16:17",
+    "source_record_id": "ema_vwap:NBIS:2026-10-16:3",
     "source_timestamp": "2026-10-16",
-    "source_hash": "0e07324e0c167fd1"
+    "source_hash": "d178277ec1549f44"
    },
    "brief": {
     "symbol": "NBIS",
@@ -3285,21 +3285,21 @@
      206.86,
      186.01,
      188.41,
-     166.88
+     167.3699
     ],
     "levels": {
-     "entry": 168.79,
-     "stop": 126.59,
+     "entry": 166.94,
+     "stop": 125.2,
      "target": null,
-     "last_close": 166.88,
-     "ema20": 214.23,
+     "last_close": 167.37,
+     "ema20": 214.28,
      "swing_low_20": 163.36,
      "atr14": 16.975
     },
     "setup_story": [
      "On Friday, October 16, 2026, NBIS was flagged by 3 of the desk's strategies across 2 independent families (intraday pullback and red-day reversal) and scored 40 of 100 \u2014 Watch tier on the desk's list.",
-     "The desk's strategies tried to enter today and were turned away (buying power), so this is still a watch, not a holding. Last close $166.88.",
-     "The picture as a whole: price closed $166.88, just above its recent swing low ($163.36) \u2014 reset onto the swing-low zone; the recent swing low at $163.36 is intact below price; its 10-session move is -31.3% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16)."
+     "The desk's strategies tried to enter today and were turned away (buying power), so this is still a watch, not a holding. Last close $167.37.",
+     "The picture as a whole: price closed $167.37, just above its recent swing low ($163.36) \u2014 reset onto the swing-low zone; the recent swing low at $163.36 is intact below price; its 10-session move is -31.1% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -3336,7 +3336,7 @@
       "key": "level",
       "lens": "Reset at a price level",
       "verdict": "At a level",
-      "evidence": "Price has reset near support \u2014 it closed $166.88, just above its recent swing low at $163.36. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
+      "evidence": "Price has reset near support \u2014 it closed $167.37, just above its recent swing low at $163.36. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
      },
      {
       "key": "geometry",
@@ -3348,13 +3348,13 @@
       "key": "invalidator_extension",
       "lens": "What would end it \u2014 an overextended run",
       "verdict": "Pass",
-      "evidence": "10-session run is -31.3% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
+      "evidence": "10-session run is -31.1% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
      },
      {
       "key": "invalidator_structure",
       "lens": "What would end it \u2014 price structure",
       "verdict": "Pass",
-      "evidence": "Price closed at $166.88, above the recent swing low of $163.36 \u2014 the structure the setup rests on is intact."
+      "evidence": "Price closed at $167.37, above the recent swing low of $163.36 \u2014 the structure the setup rests on is intact."
      },
      {
       "key": "chart_pattern",
@@ -3365,7 +3365,7 @@
     ],
     "invalidation": [
      "A daily close below $163.36 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on.",
-     "A trade through the recorded stop at $126.59 ends the position under the selecting strategy's own rules.",
+     "A trade through the recorded stop at $125.20 ends the position under the selecting strategy's own rules.",
      "A run of +25% or more over 10 sessions with no reset turns the name into an extended spike \u2014 the method retires those rather than chase them.",
      "If fresh desk passes stop confirming it \u2014 the pattern engine and the selecting strategies go quiet \u2014 the setup leaves the list: only setups that are still true stay listed.",
      "This instance already ended: the position was exited today under its strategy's own rules, so the brief stands as the record of the setup at detection time."
@@ -3379,22 +3379,22 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-16T18:04:41.495961+00:00",
+    "scored_at": "2026-10-16T18:09:43.771214+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy NBIS in the entry zone below \u2014 the desk's strategies tried today and were turned away (buying power), so this is still a watch, not a holding. The stop below is the stop staged with this trade.",
-     "why": "Price closed $166.88, just above its recent swing low ($163.36) \u2014 reset onto the swing-low zone; the recent swing low at $163.36 is intact below price; its 10-session move is -31.3% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16).",
+     "why": "Price closed $167.37, just above its recent swing low ($163.36) \u2014 reset onto the swing-low zone; the recent swing low at $163.36 is intact below price; its 10-session move is -31.1% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16).",
      "instrument": null,
      "entry_zone": {
-      "anchor": 168.79,
-      "lo": 164.55,
-      "hi": 173.03,
+      "anchor": 166.94,
+      "lo": 162.7,
+      "hi": 171.18,
       "basis": "the selecting strategy's staged entry, shown as a zone a quarter of the 14-day average range either side of it"
      },
      "entry_note": null,
      "stop": {
-      "price": 126.59,
-      "structure": "staged $36.77 (22.5%) under the line that ends this setup ($163.36)"
+      "price": 125.2,
+      "structure": "staged $38.16 (23.4%) under the line that ends this setup ($163.36)"
      },
      "spread_rows": null,
      "targets": [],
@@ -3408,20 +3408,20 @@
      },
      "expires_at": "2026-10-16T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 2:04 PM ET \u00b7 Prices checked 2:04 PM ET",
+     "as_of_text": "Plan as of 2:09 PM ET \u00b7 Prices checked 2:09 PM ET",
      "provenance": {
-      "plan_id": "plan-2026-10-16-NBIS-ema_vwap-NBIS-2026-10-16-17",
+      "plan_id": "plan-2026-10-16-NBIS-ema_vwap-NBIS-2026-10-16-3",
       "source_system": "signal_intent",
-      "source_record_id": "ema_vwap:NBIS:2026-10-16:17",
+      "source_record_id": "ema_vwap:NBIS:2026-10-16:3",
       "source_timestamp": "2026-10-16",
-      "source_hash": "0e07324e0c167fd1",
-      "ingested_at": "2026-10-16T18:04:41.495961+00:00",
-      "plan_version": 2,
-      "change_note": "Plan updated to version 2 since the last publish: entry zone (high), entry zone (low) changed on the source record."
+      "source_hash": "d178277ec1549f44",
+      "ingested_at": "2026-10-16T18:09:43.771214+00:00",
+      "plan_version": 1,
+      "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:04 PM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:09 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -3515,7 +3515,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $166.88, above the recent swing low of $163.36 \u2014 the structure the setup rests on is intact.",
+       "reading": "Price closed at $167.37, above the recent swing low of $163.36 \u2014 the structure the setup rests on is intact.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -3524,7 +3524,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -31.3% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -31.1% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -3650,7 +3650,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -3668,7 +3668,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -3834,7 +3834,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $166.88, above the recent swing low of $163.36 \u2014 the structure the setup rests on is intact.",
+       "reading": "Price closed at $167.37, above the recent swing low of $163.36 \u2014 the structure the setup rests on is intact.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -3843,7 +3843,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -31.3% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -31.1% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -3969,7 +3969,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -3978,7 +3978,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -4337,13 +4337,13 @@
     "The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.",
     "Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.",
     "No target was recorded by the entering strategy \u2014 the plan shows no target rather than borrowing another strategy's.",
-    "Price has reset near support \u2014 it closed $6.93, 1.5% below its 20-day average at $7.04. That is inside about a day's range of the average but outside the scoring spec's tight 1% reset test, so it earns a smaller credit.",
+    "Price has reset near support \u2014 it closed $6.95, 1.3% below its 20-day average at $7.04. That is inside about a day's range of the average but outside the scoring spec's tight 1% reset test, so it earns a smaller credit.",
     "Defined stop 4.0\u00d7 the daily range below entry \u2014 wider than the desk's ideal band, so the position must ride out more noise to work."
    ],
    "entry": 7.21,
    "stop": 5.41,
    "target": null,
-   "last_close": 6.93,
+   "last_close": 6.95,
    "lector_rank": null,
    "tensor": "confirmed_swing",
    "primary_sleeve": "ema_vwap",
@@ -4352,7 +4352,7 @@
    "instrument": null,
    "stop_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-16T18:04:41.495961+00:00",
+   "scored_at": "2026-10-16T18:09:43.771214+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:CRML",
@@ -4404,21 +4404,21 @@
      6.54,
      6.26,
      6.95,
-     6.935
+     6.945
     ],
     "levels": {
      "entry": 7.21,
      "stop": 5.41,
      "target": null,
-     "last_close": 6.93,
+     "last_close": 6.95,
      "ema20": 7.04,
      "swing_low_20": 5.9,
      "atr14": 0.453
     },
     "setup_story": [
      "On Friday, October 16, 2026, CRML was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 59 of 100 \u2014 Strong tier on the desk's list.",
-     "The desk bought it at $7.21. The position is still held; the last close was $6.93 (-3.9% from entry).",
-     "The picture as a whole: price closed $6.93, 1.5% below its 20-day average (exponential) at $7.04 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $5.90 is intact below price; its 10-session move is -1.4% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16)."
+     "The desk bought it at $7.21. The position is still held; the last close was $6.95 (-3.6% from entry).",
+     "The picture as a whole: price closed $6.95, 1.3% below its 20-day average (exponential) at $7.04 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $5.90 is intact below price; its 10-session move is -1.2% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -4455,7 +4455,7 @@
       "key": "level",
       "lens": "Reset at a price level",
       "verdict": "At a level",
-      "evidence": "Price has reset near support \u2014 it closed $6.93, 1.5% below its 20-day average at $7.04. That is inside about a day's range of the average but outside the scoring spec's tight 1% reset test, so it earns a smaller credit."
+      "evidence": "Price has reset near support \u2014 it closed $6.95, 1.3% below its 20-day average at $7.04. That is inside about a day's range of the average but outside the scoring spec's tight 1% reset test, so it earns a smaller credit."
      },
      {
       "key": "geometry",
@@ -4467,13 +4467,13 @@
       "key": "invalidator_extension",
       "lens": "What would end it \u2014 an overextended run",
       "verdict": "Pass",
-      "evidence": "10-session run is -1.4% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
+      "evidence": "10-session run is -1.2% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
      },
      {
       "key": "invalidator_structure",
       "lens": "What would end it \u2014 price structure",
       "verdict": "Pass",
-      "evidence": "Price closed at $6.93, above the recent swing low of $5.90 \u2014 the structure the setup rests on is intact."
+      "evidence": "Price closed at $6.95, above the recent swing low of $5.90 \u2014 the structure the setup rests on is intact."
      },
      {
       "key": "chart_pattern",
@@ -4498,11 +4498,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-16T18:04:41.495961+00:00",
+    "scored_at": "2026-10-16T18:09:43.771214+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold CRML \u2014 the desk bought it at $7.21. The stop below is the stop staged with this trade.",
-     "why": "Price closed $6.93, 1.5% below its 20-day average (exponential) at $7.04 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $5.90 is intact below price; its 10-session move is -1.4% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16).",
+     "why": "Price closed $6.95, 1.3% below its 20-day average (exponential) at $7.04 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $5.90 is intact below price; its 10-session move is -1.2% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16).",
      "instrument": null,
      "entry_zone": {
       "anchor": 7.21,
@@ -4527,20 +4527,20 @@
      },
      "expires_at": "2026-10-30T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-30), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 2:04 PM ET \u00b7 Prices checked 2:04 PM ET",
+     "as_of_text": "Plan as of 2:09 PM ET \u00b7 Prices checked 2:09 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-CRML-ema_vwap-CRML",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap:CRML",
       "source_timestamp": "2026-10-16",
       "source_hash": "524d7d69082e997e",
-      "ingested_at": "2026-10-16T18:04:41.495961+00:00",
+      "ingested_at": "2026-10-16T18:09:43.771214+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:04 PM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:09 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -4557,7 +4557,7 @@
      "base_rate_line": null,
      "meta": "Symmetrical triangle \u00b7 context tier \u00b7 forming",
      "level1": [
-      "Symmetrical triangle [context tier, forming] \u2014 falling resistance and rising support converging. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -37% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-21.",
+      "Symmetrical triangle [context tier, forming] \u2014 falling resistance and rising support converging. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -36% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-21.",
       "Nearest support: $6.54\u2013$6.75 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests).",
       "Nearest resistance: $7.09 (50-day average).",
       "Invalidation: $5.92 \u2014 a daily close below the buy zone's lower edge \u2014 the last confluence of support under price."
@@ -4565,7 +4565,7 @@
      "level2": [
       {
        "group": "Pattern",
-       "text": "Symmetrical triangle [context tier, forming] \u2014 falling resistance and rising support converging. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -37% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-21."
+       "text": "Symmetrical triangle [context tier, forming] \u2014 falling resistance and rising support converging. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -36% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-21."
       },
       {
        "group": "Pattern",
@@ -4609,7 +4609,7 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-0.138) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01."
+       "text": "MACD (-0.137) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01."
       },
       {
        "group": "Moving averages",
@@ -4627,7 +4627,7 @@
      "bullets": [
       {
        "group": "Pattern",
-       "text": "Symmetrical triangle [context tier, forming] \u2014 falling resistance and rising support converging. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -37% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-21."
+       "text": "Symmetrical triangle [context tier, forming] \u2014 falling resistance and rising support converging. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -36% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-21."
       },
       {
        "group": "Pattern",
@@ -4671,7 +4671,7 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-0.138) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01."
+       "text": "MACD (-0.137) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01."
       },
       {
        "group": "Moving averages",
@@ -4764,7 +4764,7 @@
        "key_level": null,
        "also": null,
        "gate_note": null,
-       "price_position_pct": -37.0,
+       "price_position_pct": -36.4,
        "apex_session": "2026-11-21"
       },
       "scale": "log",
@@ -4779,7 +4779,7 @@
         "sources": [
          "50-day average"
         ],
-        "distance_atr": -0.27
+        "distance_atr": -0.25
        },
        {
         "price": 7.13,
@@ -4792,7 +4792,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 0.35
+        "distance_atr": 0.33
        },
        {
         "price": 6.64,
@@ -4805,7 +4805,7 @@
         "sources": [
          "pivot cluster \u2014 3 confirmed pivots in 3 separate tests"
         ],
-        "distance_atr": -0.53
+        "distance_atr": -0.54
        },
        {
         "price": 7.44,
@@ -4818,7 +4818,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 0.9
+        "distance_atr": 0.88
        },
        {
         "price": 7.59,
@@ -4826,7 +4826,7 @@
         "sources": [
          "support trendline through the 2026-08-20 and 2026-09-14 pivots (10 touches, broken on a close \u2014 a warning until the prior swing goes) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests"
         ],
-        "distance_atr": 1.17
+        "distance_atr": 1.15
        },
        {
         "price": 7.68,
@@ -4839,7 +4839,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 1.33
+        "distance_atr": 1.31
        },
        {
         "price": 6.05,
@@ -4852,7 +4852,7 @@
         "sources": [
          "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
         ],
-        "distance_atr": -1.58
+        "distance_atr": -1.59
        },
        {
         "price": 5.68,
@@ -4865,7 +4865,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -2.23
+        "distance_atr": -2.25
        }
       ],
       "divergences": [
@@ -5156,14 +5156,14 @@
       ],
       "rsi_context": {
        "regime": "bear",
-       "rsi": 48.2,
+       "rsi": 48.3,
        "range": "10-60",
        "note": "RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime."
       },
       "macd": {
-       "line": -0.1382,
-       "signal": -0.068,
-       "histogram": -0.0702,
+       "line": -0.1374,
+       "signal": -0.0678,
+       "histogram": -0.0695,
        "vs_signal": "below",
        "zero": "below",
        "hist_trend": "contracting",
@@ -5171,27 +5171,27 @@
         "t": "2026-10-01",
         "kind": "bearish"
        },
-       "note": "MACD (-0.138) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01"
+       "note": "MACD (-0.137) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01"
       },
       "wyckoff": null,
       "ma_structure": {
        "sma20": {
         "value": 7.36,
-        "slope_pct_5d": 0.42,
+        "slope_pct_5d": 0.43,
         "relation": "below",
-        "distance_atr": -0.76
+        "distance_atr": -0.74
        },
        "sma50": {
         "value": 7.09,
         "slope_pct_5d": 0.46,
         "relation": "below",
-        "distance_atr": -0.27
+        "distance_atr": -0.25
        },
        "sma200": {
         "value": 9.55,
         "slope_pct_5d": -0.25,
         "relation": "below",
-        "distance_atr": -4.66
+        "distance_atr": -4.64
        },
        "golden_cross": false,
        "summary": "20-day average (simple) $7.36 \u2014 price below it, average rising; 50-day average $7.09 \u2014 price below it, average rising; 200-day average $9.55 \u2014 price below it, average falling"
@@ -5244,7 +5244,7 @@
        "MACD divergence (hidden_bullish): price made a higher low while MACD made a lower low \u2014 $6.75 on 2025-12-31 (MACD -0.606) vs $8.62 on 2026-02-17 (MACD -0.944). Confirmed 2026-03-11 by its MACD failure swing \u2014 MACD made a higher low and broke its own high; formed at a tested level \u2014 it counts as evidence.",
        "Divergence ledger: 9 divergences measured across every confirmed pivot pair (RSI 3, MACD 6); the five most salient are listed above and the full ledger rides in the brief's Desk read.",
        "RSI regime: RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
-       "MACD: MACD (-0.138) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01.",
+       "MACD: MACD (-0.137) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01.",
        "Dominant swing: $3.19 on 2025-07-30 to $32.15 on 2025-10-14; retracements (confluence ingredients only, never standalone levels): 38.2% at $21.09, 50.0% at $17.67, 61.8% at $14.25.",
        "Averages: 20-day average (simple) $7.36 \u2014 price below it, average rising; 50-day average $7.09 \u2014 price below it, average rising; 200-day average $9.55 \u2014 price below it, average falling.",
        "Volume: volume in the pattern's second half is running at 1.27x its first half \u2014 not contracting. the last 20 sessions average 1.42x the prior period's volume. no expansion-volume break in the last 10 sessions.",
@@ -5329,7 +5329,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price is 4.3% above the nearest tested support ($6.64) \u2014 neither sitting on it nor stretched from it.",
+       "reading": "Price is 4.4% above the nearest tested support ($6.64) \u2014 neither sitting on it nor stretched from it.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -5338,7 +5338,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $6.93, above the recent swing low of $5.90 \u2014 the structure the setup rests on is intact. Two lines are measured under price; the tighter one \u2014 the chart read's at $5.92 \u2014 governs, and the swing low at $5.90 sits deeper as context only.",
+       "reading": "Price closed at $6.95, above the recent swing low of $5.90 \u2014 the structure the setup rests on is intact. Two lines are measured under price; the tighter one \u2014 the chart read's at $5.92 \u2014 governs, and the swing low at $5.90 sits deeper as context only.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -5347,7 +5347,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -1.4% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -1.2% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -5437,7 +5437,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-0.138) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01.",
+       "reading": "MACD (-0.137) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01.",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -5545,7 +5545,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -5563,7 +5563,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -5720,7 +5720,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price is 4.3% above the nearest tested support ($6.64) \u2014 neither sitting on it nor stretched from it.",
+       "reading": "Price is 4.4% above the nearest tested support ($6.64) \u2014 neither sitting on it nor stretched from it.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -5729,7 +5729,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $6.93, above the recent swing low of $5.90 \u2014 the structure the setup rests on is intact. Two lines are measured under price; the tighter one \u2014 the chart read's at $5.92 \u2014 governs, and the swing low at $5.90 sits deeper as context only.",
+       "reading": "Price closed at $6.95, above the recent swing low of $5.90 \u2014 the structure the setup rests on is intact. Two lines are measured under price; the tighter one \u2014 the chart read's at $5.92 \u2014 governs, and the swing low at $5.90 sits deeper as context only.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -5738,7 +5738,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -1.4% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -1.2% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -5819,7 +5819,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-0.138) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01.",
+       "reading": "MACD (-0.137) sits below its signal line (-0.068) and below zero; the histogram is contracting over the last three sessions; the last crossover was bearish on 2026-10-01.",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -5927,7 +5927,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -5945,7 +5945,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -6336,7 +6336,7 @@
    "instrument": null,
    "stop_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-16T18:04:41.495961+00:00",
+   "scored_at": "2026-10-16T18:09:43.771214+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:SKYQ",
@@ -6388,7 +6388,7 @@
      2.28,
      2.26,
      2.54,
-     2.4201
+     2.42
     ],
     "levels": {
      "entry": 2.45,
@@ -6402,7 +6402,7 @@
     "setup_story": [
      "On Friday, October 16, 2026, SKYQ was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 59 of 100 \u2014 Strong tier on the desk's list.",
      "The desk bought it at $2.45. The position is still held; the last close was $2.42 (-1.2% from entry).",
-     "The picture as a whole: price closed $2.42, 4.2% below its 20-day average (exponential) at $2.53 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $2.22 is intact below price; its 10-session move is -1.6% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16)."
+     "The picture as a whole: price closed $2.42, 4.2% below its 20-day average (exponential) at $2.53 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $2.22 is intact below price; its 10-session move is -1.6% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -6482,11 +6482,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-16T18:04:41.495961+00:00",
+    "scored_at": "2026-10-16T18:09:43.771214+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold SKYQ \u2014 the desk bought it at $2.45. The stop below is the stop staged with this trade.",
-     "why": "Price closed $2.42, 4.2% below its 20-day average (exponential) at $2.53 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $2.22 is intact below price; its 10-session move is -1.6% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16).",
+     "why": "Price closed $2.42, 4.2% below its 20-day average (exponential) at $2.53 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $2.22 is intact below price; its 10-session move is -1.6% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16).",
      "instrument": null,
      "entry_zone": {
       "anchor": 2.45,
@@ -6511,20 +6511,20 @@
      },
      "expires_at": "2026-10-30T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-30), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 2:04 PM ET \u00b7 Prices checked 2:04 PM ET",
+     "as_of_text": "Plan as of 2:09 PM ET \u00b7 Prices checked 2:09 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-SKYQ-ema_vwap-SKYQ",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap:SKYQ",
       "source_timestamp": "2026-10-16",
       "source_hash": "d7e7d1813dee807d",
-      "ingested_at": "2026-10-16T18:04:41.495961+00:00",
+      "ingested_at": "2026-10-16T18:09:43.771214+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:04 PM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:09 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -7659,7 +7659,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -7677,7 +7677,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -8068,7 +8068,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -8086,7 +8086,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -8453,12 +8453,12 @@
     "The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.",
     "Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.",
     "The desk's position is an options spread, not shares \u2014 no stop or target is recorded for it. A spread's risk is defined by the debit it cost; the plan names the package, and any price levels shown are reference levels on the stock.",
-    "Price has reset near support \u2014 it closed $58.92, just above its recent swing low at $56.27. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
+    "Price has reset near support \u2014 it closed $59.11, just above its recent swing low at $56.27. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
    ],
    "entry": 59.7,
    "stop": null,
    "target": null,
-   "last_close": 58.92,
+   "last_close": 59.11,
    "lector_rank": null,
    "tensor": "confirmed_swing",
    "primary_sleeve": "ema_vwap_options",
@@ -8496,7 +8496,7 @@
    },
    "stop_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-16T18:04:41.495961+00:00",
+   "scored_at": "2026-10-16T18:09:43.771214+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap_options:CVNA",
@@ -8548,21 +8548,21 @@
      60.39,
      57.96,
      60.62,
-     58.925
+     59.11
     ],
     "levels": {
      "entry": 59.7,
      "stop": null,
      "target": null,
-     "last_close": 58.92,
-     "ema20": 62.79,
+     "last_close": 59.11,
+     "ema20": 62.81,
      "swing_low_20": 56.27,
-     "atr14": 3.156
+     "atr14": 3.16
     },
     "setup_story": [
      "On Friday, October 16, 2026, CVNA was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 54 of 100 \u2014 Watch tier on the desk's list.",
      "The desk bought CVNA 60/64 call spread expiring 2026-10-30 for a $1.93 debit (the stock was trading at $59.70 when the spread was bought). The position is still held. A spread can lose at most the debit paid for it \u2014 its risk is defined by the package, not by a stop order.",
-     "The picture as a whole: price closed $58.92, just above its recent swing low ($56.27) \u2014 reset onto the swing-low zone; the recent swing low at $56.27 is intact below price; its 10-session move is -7.6% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16)."
+     "The picture as a whole: price closed $59.11, just above its recent swing low ($56.27) \u2014 reset onto the swing-low zone; the recent swing low at $56.27 is intact below price; its 10-session move is -7.3% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -8599,7 +8599,7 @@
       "key": "level",
       "lens": "Reset at a price level",
       "verdict": "At a level",
-      "evidence": "Price has reset near support \u2014 it closed $58.92, just above its recent swing low at $56.27. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
+      "evidence": "Price has reset near support \u2014 it closed $59.11, just above its recent swing low at $56.27. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
      },
      {
       "key": "geometry",
@@ -8611,19 +8611,19 @@
       "key": "invalidator_extension",
       "lens": "What would end it \u2014 an overextended run",
       "verdict": "Pass",
-      "evidence": "10-session run is -7.6% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
+      "evidence": "10-session run is -7.3% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
      },
      {
       "key": "invalidator_structure",
       "lens": "What would end it \u2014 price structure",
       "verdict": "Pass",
-      "evidence": "Price closed at $58.92, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact."
+      "evidence": "Price closed at $59.11, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact."
      },
      {
       "key": "chart_pattern",
       "lens": "Chart pattern",
       "verdict": "No clear pattern",
-      "evidence": "No clear pattern \u2014 the confirmed pivots do not form a named pattern right now. Structure: lower highs, lower lows. Divergence: price made a higher high while MACD made a lower high \u2014 $97.07 on 2025-12-12 (MACD 6.75) vs $97.38 on 2026-01-23 (MACD 2.64); measured across the major swing pivots. Buy zone $54.29\u2013$57.49 where 3 independent items stack."
+      "evidence": "No clear pattern \u2014 the confirmed pivots do not form a named pattern right now. Structure: lower highs, lower lows. Divergence: price made a higher high while MACD made a lower high \u2014 $97.07 on 2025-12-12 (MACD 6.75) vs $97.38 on 2026-01-23 (MACD 2.64); measured across the major swing pivots. Buy zone $54.28\u2013$57.50 where 3 independent items stack."
      }
     ],
     "invalidation": [
@@ -8671,11 +8671,11 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-16T18:04:41.495961+00:00",
+    "scored_at": "2026-10-16T18:09:43.771214+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold CVNA \u2014 the desk holds CVNA 60/64 call spread expiring 2026-10-30, bought for a $1.93 debit. The levels below are reference levels on the stock; the spread itself has no stop order \u2014 its risk is the debit paid.",
-     "why": "Price closed $58.92, just above its recent swing low ($56.27) \u2014 reset onto the swing-low zone; the recent swing low at $56.27 is intact below price; its 10-session move is -7.6% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16).",
+     "why": "Price closed $59.11, just above its recent swing low ($56.27) \u2014 reset onto the swing-low zone; the recent swing low at $56.27 is intact below price; its 10-session move is -7.3% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16).",
      "instrument": {
       "text": "1\u00d7 CVNA 60/64 call spread expiring 2026-10-30 \u2014 bought for a $1.93 debit; the debit is the most the spread can lose. Risk is capped at the debit paid; no stop order protects or is needed for that cap, and gains are capped at the short strike.",
       "type": "options_package",
@@ -8749,20 +8749,20 @@
      },
      "expires_at": "2026-10-30T16:00:00-04:00",
      "expires_text": "Spread plan horizon: manage by 2026-10-30 (inside 21 days of expiry \u2014 the desk manages this spread now, not at expiry).",
-     "as_of_text": "Plan as of 2:04 PM ET \u00b7 Prices checked 2:04 PM ET",
+     "as_of_text": "Plan as of 2:09 PM ET \u00b7 Prices checked 2:09 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-CVNA-ema_vwap_options-CVNA",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap_options:CVNA",
       "source_timestamp": "2026-10-16",
       "source_hash": "bad5fef2de800ae2",
-      "ingested_at": "2026-10-16T18:04:41.495961+00:00",
+      "ingested_at": "2026-10-16T18:09:43.771214+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:04 PM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:09 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -8780,7 +8780,7 @@
      "meta": "No clear pattern \u00b7 context tier",
      "level1": [
       "No clear pattern [context tier] \u2014 the confirmed pivots do not form a named pattern right now.",
-      "Nearest support: $57.01 (pivot cluster \u2014 1 confirmed pivot in 1 separate test).",
+      "Nearest support: $58.92 (pivot cluster \u2014 1 confirmed pivot in 1 separate test).",
       "Nearest resistance: $59.86 (pivot cluster \u2014 1 confirmed pivot in 1 separate test) \u2014 former support: it held price up from below, and now it caps price from above (polarity flips are a hypothesis to watch, not a law).",
       "Invalidation: $52.78 \u2014 a daily close below the support line through the 2026-09-01 and 2026-10-01 pivots."
      ],
@@ -8795,7 +8795,7 @@
       },
       {
        "group": "Supports & levels",
-       "text": "Support under price: $57.01 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $56.12 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $54.46\u2013$55.08 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests)."
+       "text": "Support under price: $58.92 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $57.01 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $56.12 (pivot cluster \u2014 1 confirmed pivot in 1 separate test)."
       },
       {
        "group": "Supports & levels",
@@ -8823,11 +8823,11 @@
       },
       {
        "group": "Divergence",
-       "text": "RSI is 38. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.."
+       "text": "RSI is 39. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.."
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-2.26) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12."
+       "text": "MACD (-2.25) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12."
       },
       {
        "group": "Moving averages",
@@ -8839,7 +8839,7 @@
       },
       {
        "group": "What to watch",
-       "text": "Watch the buy zone at $54.29\u2013$57.49 (3 independent items stack there); invalidation at $52.78 \u2014 a daily close below the support line through the 2026-09-01 and 2026-10-01 pivots."
+       "text": "Watch the buy zone at $54.28\u2013$57.50 (3 independent items stack there); invalidation at $52.78 \u2014 a daily close below the support line through the 2026-09-01 and 2026-10-01 pivots."
       }
      ],
      "bullets": [
@@ -8853,7 +8853,7 @@
       },
       {
        "group": "Supports & levels",
-       "text": "Support under price: $57.01 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $56.12 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $54.46\u2013$55.08 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests)."
+       "text": "Support under price: $58.92 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $57.01 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $56.12 (pivot cluster \u2014 1 confirmed pivot in 1 separate test)."
       },
       {
        "group": "Supports & levels",
@@ -8881,11 +8881,11 @@
       },
       {
        "group": "Divergence",
-       "text": "RSI is 38. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.."
+       "text": "RSI is 39. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.."
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-2.26) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12."
+       "text": "MACD (-2.25) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12."
       },
       {
        "group": "Moving averages",
@@ -8897,7 +8897,7 @@
       },
       {
        "group": "What to watch",
-       "text": "Watch the buy zone at $54.29\u2013$57.49 (3 independent items stack there); invalidation at $52.78 \u2014 a daily close below the support line through the 2026-09-01 and 2026-10-01 pivots."
+       "text": "Watch the buy zone at $54.28\u2013$57.50 (3 independent items stack there); invalidation at $52.78 \u2014 a daily close below the support line through the 2026-09-01 and 2026-10-01 pivots."
       }
      ],
      "ta": {
@@ -8935,7 +8935,7 @@
          "price": 58.92
         },
         "value_now": 52.78,
-        "slope_atr": -0.173,
+        "slope_atr": -0.172,
         "touches": 9,
         "state": "holding",
         "validation": "validated",
@@ -8965,7 +8965,7 @@
       "levels": [
        {
         "price": 58.92,
-        "kind": "at price",
+        "kind": "support",
         "zone": {
          "lo": 58.92,
          "hi": 58.92
@@ -8974,7 +8974,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -0.0
+        "distance_atr": -0.06
        },
        {
         "price": 59.86,
@@ -8987,7 +8987,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 0.29
+        "distance_atr": 0.23
        },
        {
         "price": 57.01,
@@ -9000,20 +9000,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -0.59
-       },
-       {
-        "price": 56.12,
-        "kind": "support",
-        "zone": {
-         "lo": 56.12,
-         "hi": 56.12
-        },
-        "polarity": null,
-        "sources": [
-         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
-        ],
-        "distance_atr": -0.87
+        "distance_atr": -0.65
        },
        {
         "price": 61.84,
@@ -9026,7 +9013,20 @@
         "sources": [
          "pivot cluster \u2014 6 confirmed pivots in 6 separate tests"
         ],
-        "distance_atr": 0.9
+        "distance_atr": 0.84
+       },
+       {
+        "price": 56.12,
+        "kind": "support",
+        "zone": {
+         "lo": 56.12,
+         "hi": 56.12
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+        ],
+        "distance_atr": -0.92
        },
        {
         "price": 54.77,
@@ -9039,7 +9039,7 @@
         "sources": [
          "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
         ],
-        "distance_atr": -1.29
+        "distance_atr": -1.34
        },
        {
         "price": 63.63,
@@ -9052,7 +9052,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 1.46
+        "distance_atr": 1.4
        },
        {
         "price": 64.87,
@@ -9065,7 +9065,7 @@
         "sources": [
          "pivot cluster \u2014 3 confirmed pivots in 3 separate tests"
         ],
-        "distance_atr": 1.84
+        "distance_atr": 1.78
        }
       ],
       "divergences": [
@@ -9454,14 +9454,14 @@
       ],
       "rsi_context": {
        "regime": "bear",
-       "rsi": 38.4,
+       "rsi": 38.7,
        "range": "10-60",
-       "note": "RSI is 38. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime."
+       "note": "RSI is 39. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime."
       },
       "macd": {
-       "line": -2.2616,
-       "signal": -2.0428,
-       "histogram": -0.2188,
+       "line": -2.2468,
+       "signal": -2.0398,
+       "histogram": -0.207,
        "vs_signal": "below",
        "zero": "below",
        "hist_trend": "mixed",
@@ -9469,7 +9469,7 @@
         "t": "2026-10-12",
         "kind": "bearish"
        },
-       "note": "MACD (-2.26) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12"
+       "note": "MACD (-2.25) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12"
       },
       "wyckoff": {
        "events": [
@@ -9504,21 +9504,21 @@
       "ma_structure": {
        "sma20": {
         "value": 62.7,
-        "slope_pct_5d": -2.84,
+        "slope_pct_5d": -2.83,
         "relation": "below",
-        "distance_atr": -1.17
+        "distance_atr": -1.11
        },
        "sma50": {
         "value": 67.99,
         "slope_pct_5d": -1.07,
         "relation": "below",
-        "distance_atr": -2.8
+        "distance_atr": -2.74
        },
        "sma200": {
         "value": 70.59,
         "slope_pct_5d": -0.97,
         "relation": "below",
-        "distance_atr": -3.61
+        "distance_atr": -3.55
        },
        "golden_cross": false,
        "summary": "20-day average (simple) $62.70 \u2014 price below it, average falling; 50-day average $67.99 \u2014 price below it, average falling; 200-day average $70.59 \u2014 price below it, average falling"
@@ -9544,8 +9544,8 @@
        "expansion_events": []
       },
       "buy_zone": {
-       "lo": 54.29,
-       "hi": 57.49,
+       "lo": 54.28,
+       "hi": 57.5,
        "confluence": 3,
        "basis": [
         "a pivot cluster at $54.77 tested in 2 separate episodes",
@@ -9569,13 +9569,13 @@
        "RSI divergence (regular_bullish): price made a lower low while RSI made a higher low \u2014 $55.08 on 2026-03-19 (RSI 37) vs $54.46 on 2026-03-30 (RSI 39). Confirmed 2026-03-31 by its price trigger \u2014 a close above the swing high between the two lows; formed at a tested level \u2014 it counts as evidence.",
        "RSI divergence (regular_bearish): price made a higher high while RSI made a lower high \u2014 $76.07 on 2026-08-14 (RSI 63) vs $76.80 on 2026-08-26 (RSI 56). Confirmed 2026-08-27 by its RSI trendline break \u2014 RSI closed under the line beneath its lows; formed at a tested level \u2014 it counts as evidence.",
        "Divergence ledger: 12 divergences measured across every confirmed pivot pair (RSI 6, MACD 6); the five most salient are listed above and the full ledger rides in the brief's Desk read.",
-       "RSI regime: RSI is 38. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
-       "MACD: MACD (-2.26) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12.",
+       "RSI regime: RSI is 39. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
+       "MACD: MACD (-2.25) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12.",
        "Wyckoff base vocabulary applies here: SC \u2192 AR \u2192 ST (climax low $58.92, base top $66.02); markup language is not earned until a sign of strength is followed by a last point of support..",
        "Dominant swing: $97.38 on 2026-01-23 to $54.46 on 2026-03-30; retracements (confluence ingredients only, never standalone levels): 38.2% at $70.86, 50.0% at $75.92, 61.8% at $80.98.",
        "Averages: 20-day average (simple) $62.70 \u2014 price below it, average falling; 50-day average $67.99 \u2014 price below it, average falling; 200-day average $70.59 \u2014 price below it, average falling.",
        "Volume: the last 20 sessions average 0.91x the prior period's volume. no expansion-volume break in the last 10 sessions.",
-       "Buy zone $54.29\u2013$57.49 (3 independent items stack there: a pivot cluster at $54.77 tested in 2 separate episodes; a pivot cluster at $56.12 tested in 1 separate episode; a pivot cluster at $57.01 tested in 1 separate episode).",
+       "Buy zone $54.28\u2013$57.50 (3 independent items stack there: a pivot cluster at $54.77 tested in 2 separate episodes; a pivot cluster at $56.12 tested in 1 separate episode; a pivot cluster at $57.01 tested in 1 separate episode).",
        "Invalidation: a daily close below the support line through the 2026-09-01 and 2026-10-01 pivots \u2014 $52.78."
       ]
      }
@@ -9656,7 +9656,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price sits 0.0% above the nearest tested support (pivot cluster \u2014 1 confirmed pivot in 1 separate test at $58.92) \u2014 a level to lean on, with room measured in percent, not hope.",
+       "reading": "Price sits 0.3% above the nearest tested support (pivot cluster \u2014 1 confirmed pivot in 1 separate test at $58.92) \u2014 a level to lean on, with room measured in percent, not hope.",
        "stance": 1,
        "salience": 2.5,
        "disposition": "considered",
@@ -9665,7 +9665,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $58.92, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $52.78 \u2014 context only; the swing low above it is the line that governs.",
+       "reading": "Price closed at $59.11, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $52.78 \u2014 context only; the swing low above it is the line that governs.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -9674,7 +9674,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -7.6% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -7.3% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -9692,7 +9692,7 @@
       {
        "key": "buy_zone",
        "factor": "Buy zone",
-       "reading": "The buy zone waits below at $54.29\u2013$57.49 (3 independent items stack there); price has not come back to it.",
+       "reading": "The buy zone waits below at $54.28\u2013$57.50 (3 independent items stack there); price has not come back to it.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -9764,7 +9764,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-2.26) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12.",
+       "reading": "MACD (-2.25) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "considered",
@@ -9773,7 +9773,7 @@
       {
        "key": "rsi_regime",
        "factor": "RSI regime context",
-       "reading": "RSI is 38. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
+       "reading": "RSI is 39. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -9899,7 +9899,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -9917,7 +9917,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -10074,7 +10074,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price sits 0.0% above the nearest tested support (pivot cluster \u2014 1 confirmed pivot in 1 separate test at $58.92) \u2014 a level to lean on, with room measured in percent, not hope.",
+       "reading": "Price sits 0.3% above the nearest tested support (pivot cluster \u2014 1 confirmed pivot in 1 separate test at $58.92) \u2014 a level to lean on, with room measured in percent, not hope.",
        "stance": 1,
        "salience": 2.5,
        "disposition": "considered",
@@ -10083,7 +10083,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $58.92, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $52.78 \u2014 context only; the swing low above it is the line that governs.",
+       "reading": "Price closed at $59.11, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $52.78 \u2014 context only; the swing low above it is the line that governs.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -10092,7 +10092,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -7.6% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -7.3% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -10110,7 +10110,7 @@
       {
        "key": "buy_zone",
        "factor": "Buy zone",
-       "reading": "The buy zone waits below at $54.29\u2013$57.49 (3 independent items stack there); price has not come back to it.",
+       "reading": "The buy zone waits below at $54.28\u2013$57.50 (3 independent items stack there); price has not come back to it.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -10182,7 +10182,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-2.26) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12.",
+       "reading": "MACD (-2.25) sits below its signal line (-2.04) and below zero; the histogram is mixed over the last three sessions; the last crossover was bearish on 2026-10-12.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "considered",
@@ -10191,7 +10191,7 @@
       {
        "key": "rsi_regime",
        "factor": "RSI regime context",
-       "reading": "RSI is 38. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
+       "reading": "RSI is 39. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -10308,7 +10308,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -10326,7 +10326,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -10701,12 +10701,12 @@
     "The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.",
     "Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.",
     "The desk's position is an options spread, not shares \u2014 no stop or target is recorded for it. A spread's risk is defined by the debit it cost; the plan names the package, and any price levels shown are reference levels on the stock.",
-    "Price has reset near support \u2014 it closed $27.28, just above its recent swing low at $26.60. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
+    "Price has reset near support \u2014 it closed $27.36, just above its recent swing low at $26.60. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
    ],
    "entry": 28.66,
    "stop": null,
    "target": null,
-   "last_close": 27.28,
+   "last_close": 27.36,
    "lector_rank": null,
    "tensor": "none",
    "primary_sleeve": "ema_vwap_options",
@@ -10744,7 +10744,7 @@
    },
    "stop_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-16T18:04:41.495961+00:00",
+   "scored_at": "2026-10-16T18:09:43.771214+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap_options:IREN",
@@ -10796,21 +10796,21 @@
      34.8,
      30.56,
      30.39,
-     27.28
+     27.355
     ],
     "levels": {
      "entry": 28.66,
      "stop": null,
      "target": null,
-     "last_close": 27.28,
-     "ema20": 37.14,
+     "last_close": 27.36,
+     "ema20": 37.15,
      "swing_low_20": 26.6,
-     "atr14": 2.593
+     "atr14": 2.596
     },
     "setup_story": [
      "On Friday, October 16, 2026, IREN was flagged by 2 of the desk's strategies across 2 independent families (capitulation & fear events and intraday pullback) and scored 40 of 100 \u2014 Watch tier on the desk's list.",
      "The desk bought IREN 29/31 call spread expiring 2026-10-30 for a $0.81 debit (the stock was trading at $28.66 when the spread was bought). The position is still held. A spread can lose at most the debit paid for it \u2014 its risk is defined by the package, not by a stop order.",
-     "The picture as a whole: price closed $27.28, just above its recent swing low ($26.60) \u2014 reset onto the swing-low zone; the recent swing low at $26.60 is intact below price; its 10-session move is -34.7% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16)."
+     "The picture as a whole: price closed $27.36, just above its recent swing low ($26.60) \u2014 reset onto the swing-low zone; the recent swing low at $26.60 is intact below price; its 10-session move is -34.5% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -10847,7 +10847,7 @@
       "key": "level",
       "lens": "Reset at a price level",
       "verdict": "At a level",
-      "evidence": "Price has reset near support \u2014 it closed $27.28, just above its recent swing low at $26.60. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
+      "evidence": "Price has reset near support \u2014 it closed $27.36, just above its recent swing low at $26.60. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
      },
      {
       "key": "geometry",
@@ -10859,13 +10859,13 @@
       "key": "invalidator_extension",
       "lens": "What would end it \u2014 an overextended run",
       "verdict": "Pass",
-      "evidence": "10-session run is -34.7% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
+      "evidence": "10-session run is -34.5% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
      },
      {
       "key": "invalidator_structure",
       "lens": "What would end it \u2014 price structure",
       "verdict": "Pass",
-      "evidence": "Price closed at $27.28, above the recent swing low of $26.60 \u2014 the structure the setup rests on is intact."
+      "evidence": "Price closed at $27.36, above the recent swing low of $26.60 \u2014 the structure the setup rests on is intact."
      },
      {
       "key": "chart_pattern",
@@ -10919,11 +10919,11 @@
      "credit": null,
      "entry_spot": 28.66
     },
-    "scored_at": "2026-10-16T18:04:41.495961+00:00",
+    "scored_at": "2026-10-16T18:09:43.771214+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold IREN \u2014 the desk holds IREN 29/31 call spread expiring 2026-10-30, bought for a $0.81 debit. The levels below are reference levels on the stock; the spread itself has no stop order \u2014 its risk is the debit paid.",
-     "why": "Price closed $27.28, just above its recent swing low ($26.60) \u2014 reset onto the swing-low zone; the recent swing low at $26.60 is intact below price; its 10-session move is -34.7% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16).",
+     "why": "Price closed $27.36, just above its recent swing low ($26.60) \u2014 reset onto the swing-low zone; the recent swing low at $26.60 is intact below price; its 10-session move is -34.5% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16).",
      "instrument": {
       "text": "3\u00d7 IREN 29/31 call spread expiring 2026-10-30 \u2014 bought for a $0.81 debit; the debit is the most the spread can lose. Risk is capped at the debit paid; no stop order protects or is needed for that cap, and gains are capped at the short strike.",
       "type": "options_package",
@@ -10997,20 +10997,20 @@
      },
      "expires_at": "2026-10-30T16:00:00-04:00",
      "expires_text": "Spread plan horizon: manage by 2026-10-30 (inside 21 days of expiry \u2014 the desk manages this spread now, not at expiry).",
-     "as_of_text": "Plan as of 2:04 PM ET \u00b7 Prices checked 2:04 PM ET",
+     "as_of_text": "Plan as of 2:09 PM ET \u00b7 Prices checked 2:09 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-IREN-ema_vwap_options-IREN",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap_options:IREN",
       "source_timestamp": "2026-10-16",
       "source_hash": "358af39a86f89d87",
-      "ingested_at": "2026-10-16T18:04:41.495961+00:00",
+      "ingested_at": "2026-10-16T18:09:43.771214+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:04 PM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:09 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -11071,11 +11071,11 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-3.29) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28."
+       "text": "MACD (-3.28) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28."
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (simple) $39.43 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling."
+       "text": "20-day average (simple) $39.44 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling."
       },
       {
        "group": "Volume",
@@ -11125,11 +11125,11 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-3.29) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28."
+       "text": "MACD (-3.28) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28."
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (simple) $39.43 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling."
+       "text": "20-day average (simple) $39.44 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling."
       },
       {
        "group": "Volume",
@@ -11175,7 +11175,7 @@
          "price": 29.31
         },
         "value_now": 9.23,
-        "slope_atr": -0.272,
+        "slope_atr": -0.271,
         "touches": 8,
         "state": "holding",
         "validation": "validated",
@@ -11214,7 +11214,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 0.59
+        "distance_atr": 0.56
        },
        {
         "price": 30.76,
@@ -11227,7 +11227,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 1.24
+        "distance_atr": 1.21
        },
        {
         "price": 32.22,
@@ -11240,7 +11240,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 1.76
+        "distance_atr": 1.73
        },
        {
         "price": 21.54,
@@ -11253,7 +11253,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -2.04
+        "distance_atr": -2.07
        },
        {
         "price": 33.34,
@@ -11266,7 +11266,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 2.16
+        "distance_atr": 2.13
        },
        {
         "price": 34.81,
@@ -11279,7 +11279,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 2.68
+        "distance_atr": 2.65
        },
        {
         "price": 35.63,
@@ -11292,7 +11292,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 2.97
+        "distance_atr": 2.94
        },
        {
         "price": 37.13,
@@ -11305,7 +11305,7 @@
         "sources": [
          "pivot cluster \u2014 3 confirmed pivots in 3 separate tests"
         ],
-        "distance_atr": 3.51
+        "distance_atr": 3.48
        }
       ],
       "divergences": [
@@ -11860,14 +11860,14 @@
       ],
       "rsi_context": {
        "regime": "bear",
-       "rsi": 22.5,
+       "rsi": 22.6,
        "range": "10-60",
        "note": "RSI is 23. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits deep in the bear range \u2014 washed out, but oversold in a downtrend is a condition, not a buy signal."
       },
       "macd": {
-       "line": -3.2891,
-       "signal": -1.8718,
-       "histogram": -1.4173,
+       "line": -3.2831,
+       "signal": -1.8706,
+       "histogram": -1.4126,
        "vs_signal": "below",
        "zero": "below",
        "hist_trend": "expanding",
@@ -11875,30 +11875,30 @@
         "t": "2026-09-28",
         "kind": "bearish"
        },
-       "note": "MACD (-3.29) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28"
+       "note": "MACD (-3.28) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28"
       },
       "wyckoff": null,
       "ma_structure": {
        "sma20": {
-        "value": 39.43,
-        "slope_pct_5d": -7.04,
+        "value": 39.44,
+        "slope_pct_5d": -7.03,
         "relation": "below",
-        "distance_atr": -4.33
+        "distance_atr": -4.3
        },
        "sma50": {
         "value": 41.0,
         "slope_pct_5d": -1.74,
         "relation": "below",
-        "distance_atr": -4.88
+        "distance_atr": -4.85
        },
        "sma200": {
         "value": 45.37,
-        "slope_pct_5d": -0.49,
+        "slope_pct_5d": -0.48,
         "relation": "below",
-        "distance_atr": -6.44
+        "distance_atr": -6.41
        },
        "golden_cross": false,
-       "summary": "20-day average (simple) $39.43 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling"
+       "summary": "20-day average (simple) $39.44 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling"
       },
       "fib": {
        "swing": {
@@ -11952,9 +11952,9 @@
        "RSI divergence (hidden_bearish): price made a lower high while RSI made a higher high \u2014 $47.25 on 2026-02-25 (RSI 48) vs $45.35 on 2026-03-16 (RSI 53). Confirmed 2026-03-27 by its price trigger \u2014 a close below the swing low between the two highs; formed at a tested level \u2014 it counts as evidence.",
        "Divergence ledger: 17 divergences measured across every confirmed pivot pair (RSI 11, MACD 6); the five most salient are listed above and the full ledger rides in the brief's Desk read.",
        "RSI regime: RSI is 23. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits deep in the bear range \u2014 washed out, but oversold in a downtrend is a condition, not a buy signal.",
-       "MACD: MACD (-3.29) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.",
+       "MACD: MACD (-3.28) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.",
        "Dominant swing: $14.72 on 2025-08-01 to $76.87 on 2025-11-05; retracements (confluence ingredients only, never standalone levels): 38.2% at $53.13, 50.0% at $45.80, 61.8% at $38.46.",
-       "Averages: 20-day average (simple) $39.43 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling.",
+       "Averages: 20-day average (simple) $39.44 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling.",
        "Volume: the last 20 sessions average 1.01x the prior period's volume. volume expanded 2.0x on 2026-10-14 on a down move.",
        "Buy zone $21.12\u2013$21.96 (1 independent items stack there: a pivot cluster at $21.54 tested in 1 separate episode).",
        "Invalidation: a daily close below the support line through the 2026-06-11 and 2026-07-29 pivots \u2014 $9.23."
@@ -12037,7 +12037,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price is extended \u2014 21.0% above the nearest tested support ($21.54). A long here chases; the level underneath is far away.",
+       "reading": "Price is extended \u2014 21.3% above the nearest tested support ($21.54). A long here chases; the level underneath is far away.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "decisive",
@@ -12046,7 +12046,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $27.28, above the recent swing low of $26.60 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $9.23 \u2014 context only; the swing low above it is the line that governs.",
+       "reading": "Price closed at $27.36, above the recent swing low of $26.60 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $9.23 \u2014 context only; the swing low above it is the line that governs.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -12055,7 +12055,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -34.7% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -34.5% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -12118,7 +12118,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (simple) $39.43 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling.",
+       "reading": "20-day average (simple) $39.44 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling.",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -12145,7 +12145,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-3.29) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.",
+       "reading": "MACD (-3.28) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "considered",
@@ -12325,7 +12325,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -12343,7 +12343,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -12444,7 +12444,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price is extended \u2014 21.0% above the nearest tested support ($21.54). A long here chases; the level underneath is far away.",
+       "reading": "Price is extended \u2014 21.3% above the nearest tested support ($21.54). A long here chases; the level underneath is far away.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "decisive",
@@ -12453,7 +12453,7 @@
       {
        "key": "conflict:divergence_top:level",
        "factor": "Conflict \u2014 Strongest divergence vs Level position",
-       "reading": "Strongest divergence argues for the setup (Confirmed 2026-07-30 \u2014 56 sessions before today \u2014 by its MACD trendline break \u2014 MACD closed over the line above its highs: Hidden Bullish (MACD): price made a higher low while MACD made a lower low \u2014 $14.72 on 2025-08-01 (MACD -0.082) vs $28.93 on 2026-07-29 (MACD -4.15); measured across the major swing pivots.) while Level position argues against (Price is extended \u2014 21.0% above the nearest tested support ($21.54). A long here chases; the level underneath is far away.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Strongest divergence argues for the setup (Confirmed 2026-07-30 \u2014 56 sessions before today \u2014 by its MACD trendline break \u2014 MACD closed over the line above its highs: Hidden Bullish (MACD): price made a higher low while MACD made a lower low \u2014 $14.72 on 2025-08-01 (MACD -0.082) vs $28.93 on 2026-07-29 (MACD -4.15); measured across the major swing pivots.) while Level position argues against (Price is extended \u2014 21.3% above the nearest tested support ($21.54). A long here chases; the level underneath is far away.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 2.5,
        "disposition": "conflict",
@@ -12462,7 +12462,7 @@
       {
        "key": "conflict:family_agreement:macd_state",
        "factor": "Conflict \u2014 Strategy agreement vs MACD state",
-       "reading": "Strategy agreement argues for the setup (Selected by 2 independent strategy families (capitulation & fear events, intraday pullback; 2 strategies in all) \u2014 independent agreement is the desk's core quality signal.) while MACD state argues against (MACD (-3.29) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Strategy agreement argues for the setup (Selected by 2 independent strategy families (capitulation & fear events, intraday pullback; 2 strategies in all) \u2014 independent agreement is the desk's core quality signal.) while MACD state argues against (MACD (-3.28) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 2.5,
        "disposition": "conflict",
@@ -12509,7 +12509,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $27.28, above the recent swing low of $26.60 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $9.23 \u2014 context only; the swing low above it is the line that governs.",
+       "reading": "Price closed at $27.36, above the recent swing low of $26.60 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $9.23 \u2014 context only; the swing low above it is the line that governs.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -12518,7 +12518,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -34.7% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -34.5% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -12581,7 +12581,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (simple) $39.43 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling.",
+       "reading": "20-day average (simple) $39.44 \u2014 price below it, average falling; 50-day average $41.00 \u2014 price below it, average falling; 200-day average $45.37 \u2014 price below it, average falling.",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -12608,7 +12608,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-3.29) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.",
+       "reading": "MACD (-3.28) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "considered",
@@ -12779,7 +12779,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -12797,7 +12797,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -12862,7 +12862,7 @@
       {
        "key": "conflict:divergence_top:level",
        "factor": "Conflict \u2014 Strongest divergence vs Level position",
-       "reading": "Strongest divergence argues for the setup (Confirmed 2026-07-30 \u2014 56 sessions before today \u2014 by its MACD trendline break \u2014 MACD closed over the line above its highs: Hidden Bullish (MACD): price made a higher low while MACD made a lower low \u2014 $14.72 on 2025-08-01 (MACD -0.082) vs $28.93 on 2026-07-29 (MACD -4.15); measured across the major swing pivots.) while Level position argues against (Price is extended \u2014 21.0% above the nearest tested support ($21.54). A long here chases; the level underneath is far away.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Strongest divergence argues for the setup (Confirmed 2026-07-30 \u2014 56 sessions before today \u2014 by its MACD trendline break \u2014 MACD closed over the line above its highs: Hidden Bullish (MACD): price made a higher low while MACD made a lower low \u2014 $14.72 on 2025-08-01 (MACD -0.082) vs $28.93 on 2026-07-29 (MACD -4.15); measured across the major swing pivots.) while Level position argues against (Price is extended \u2014 21.3% above the nearest tested support ($21.54). A long here chases; the level underneath is far away.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 2.5,
        "disposition": "conflict",
@@ -12871,7 +12871,7 @@
       {
        "key": "conflict:family_agreement:macd_state",
        "factor": "Conflict \u2014 Strategy agreement vs MACD state",
-       "reading": "Strategy agreement argues for the setup (Selected by 2 independent strategy families (capitulation & fear events, intraday pullback; 2 strategies in all) \u2014 independent agreement is the desk's core quality signal.) while MACD state argues against (MACD (-3.29) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Strategy agreement argues for the setup (Selected by 2 independent strategy families (capitulation & fear events, intraday pullback; 2 strategies in all) \u2014 independent agreement is the desk's core quality signal.) while MACD state argues against (MACD (-3.28) sits below its signal line (-1.87) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-09-28.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 2.5,
        "disposition": "conflict",
@@ -13171,13 +13171,13 @@
     "The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.",
     "Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.",
     "No target was recorded by the entering strategy \u2014 the plan shows no target rather than borrowing another strategy's.",
-    "Price has reset near support \u2014 it closed $96.33, just above its recent swing low at $95.23. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit.",
+    "Price has reset near support \u2014 it closed $96.90, just above its recent swing low at $95.23. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit.",
     "Defined stop 2.1\u00d7 the daily range below entry \u2014 inside the desk's 1.5\u20132.5 range band."
    ],
    "entry": 102.61,
    "stop": 76.96,
    "target": null,
-   "last_close": 96.33,
+   "last_close": 96.9,
    "lector_rank": null,
    "tensor": "none",
    "primary_sleeve": "ema_vwap",
@@ -13186,7 +13186,7 @@
    "instrument": null,
    "stop_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-16T18:04:41.495961+00:00",
+   "scored_at": "2026-10-16T18:09:43.771214+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:SOXL",
@@ -13238,21 +13238,21 @@
      127.57,
      110.54,
      107.35,
-     96.3288
+     96.8984
     ],
     "levels": {
      "entry": 102.61,
      "stop": 76.96,
      "target": null,
-     "last_close": 96.33,
-     "ema20": 131.39,
+     "last_close": 96.9,
+     "ema20": 131.45,
      "swing_low_20": 95.23,
-     "atr14": 12.399
+     "atr14": 12.408
     },
     "setup_story": [
      "On Friday, October 16, 2026, SOXL was flagged by 2 of the desk's strategies across 1 independent family (intraday pullback) and scored 38 of 100 \u2014 Watch tier on the desk's list.",
-     "The desk bought it at $102.61. The position is still held; the last close was $96.33 (-6.1% from entry).",
-     "The picture as a whole: price closed $96.33, just above its recent swing low ($95.23) \u2014 reset onto the swing-low zone; the recent swing low at $95.23 is intact below price; its 10-session move is -41.2% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16)."
+     "The desk bought it at $102.61. The position is still held; the last close was $96.90 (-5.6% from entry).",
+     "The picture as a whole: price closed $96.90, just above its recent swing low ($95.23) \u2014 reset onto the swing-low zone; the recent swing low at $95.23 is intact below price; its 10-session move is -40.8% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
      {
@@ -13289,7 +13289,7 @@
       "key": "level",
       "lens": "Reset at a price level",
       "verdict": "At a level",
-      "evidence": "Price has reset near support \u2014 it closed $96.33, just above its recent swing low at $95.23. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
+      "evidence": "Price has reset near support \u2014 it closed $96.90, just above its recent swing low at $95.23. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit."
      },
      {
       "key": "geometry",
@@ -13301,13 +13301,13 @@
       "key": "invalidator_extension",
       "lens": "What would end it \u2014 an overextended run",
       "verdict": "Pass",
-      "evidence": "10-session run is -41.2% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
+      "evidence": "10-session run is -40.8% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
      },
      {
       "key": "invalidator_structure",
       "lens": "What would end it \u2014 price structure",
       "verdict": "Pass",
-      "evidence": "Price closed at $96.33, above the recent swing low of $95.23 \u2014 the structure the setup rests on is intact."
+      "evidence": "Price closed at $96.90, above the recent swing low of $95.23 \u2014 the structure the setup rests on is intact."
      },
      {
       "key": "chart_pattern",
@@ -13332,11 +13332,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-16T18:04:41.495961+00:00",
+    "scored_at": "2026-10-16T18:09:43.771214+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold SOXL \u2014 the desk bought it at $102.61. The stop below is the stop staged with this trade.",
-     "why": "Price closed $96.33, just above its recent swing low ($95.23) \u2014 reset onto the swing-low zone; the recent swing low at $95.23 is intact below price; its 10-session move is -41.2% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.37 (VIX as of 2026-10-16).",
+     "why": "Price closed $96.90, just above its recent swing low ($95.23) \u2014 reset onto the swing-low zone; the recent swing low at $95.23 is intact below price; its 10-session move is -40.8% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 20.26 (VIX as of 2026-10-16).",
      "instrument": null,
      "entry_zone": {
       "anchor": 102.61,
@@ -13361,20 +13361,20 @@
      },
      "expires_at": "2026-10-30T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-30), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 2:04 PM ET \u00b7 Prices checked 2:04 PM ET",
+     "as_of_text": "Plan as of 2:09 PM ET \u00b7 Prices checked 2:09 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-SOXL-ema_vwap-SOXL",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap:SOXL",
       "source_timestamp": "2026-10-16",
       "source_hash": "3c8ba30d519c3adc",
-      "ingested_at": "2026-10-16T18:04:41.495961+00:00",
+      "ingested_at": "2026-10-16T18:09:43.771214+00:00",
       "plan_version": 2,
-      "change_note": "Plan updated to version 2 since the last publish: entry zone (high), entry zone (low) changed on the source record."
+      "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:04 PM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 2:09 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -13444,11 +13444,11 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-4.91) sits below its signal line (1.77) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09."
+       "text": "MACD (-4.86) sits below its signal line (1.78) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09."
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (simple) $141.62 \u2014 price below it, average rising; 50-day average $129.44 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising."
+       "text": "20-day average (simple) $141.65 \u2014 price below it, average rising; 50-day average $129.45 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising."
       },
       {
        "group": "Volume",
@@ -13506,11 +13506,11 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-4.91) sits below its signal line (1.77) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09."
+       "text": "MACD (-4.86) sits below its signal line (1.78) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09."
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (simple) $141.62 \u2014 price below it, average rising; 50-day average $129.44 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising."
+       "text": "20-day average (simple) $141.65 \u2014 price below it, average rising; 50-day average $129.45 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising."
       },
       {
        "group": "Volume",
@@ -13574,7 +13574,7 @@
         "sources": [
          "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
         ],
-        "distance_atr": 0.23
+        "distance_atr": 0.18
        },
        {
         "price": 91.5,
@@ -13587,7 +13587,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -0.38
+        "distance_atr": -0.42
        },
        {
         "price": 91.07,
@@ -13595,7 +13595,7 @@
         "sources": [
          "support trendline through the 2026-07-17 and 2026-09-14 pivots (9 touches) \u2014 validated by three or more tests"
         ],
-        "distance_atr": -0.41
+        "distance_atr": -0.46
        },
        {
         "price": 106.0,
@@ -13608,7 +13608,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 0.76
+        "distance_atr": 0.71
        },
        {
         "price": 116.47,
@@ -13621,7 +13621,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 1.58
+        "distance_atr": 1.53
        },
        {
         "price": 71.73,
@@ -13634,7 +13634,7 @@
         "sources": [
          "pivot cluster \u2014 3 confirmed pivots in 3 separate tests"
         ],
-        "distance_atr": -1.93
+        "distance_atr": -1.97
        },
        {
         "price": 122.12,
@@ -13642,7 +13642,7 @@
         "sources": [
          "200-day average"
         ],
-        "distance_atr": -2.02
+        "distance_atr": -1.97
        },
        {
         "price": 128.48,
@@ -13655,7 +13655,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 2.52
+        "distance_atr": 2.47
        }
       ],
       "divergences": [
@@ -13915,14 +13915,14 @@
       ],
       "rsi_context": {
        "regime": "bull",
-       "rsi": 30.8,
+       "rsi": 30.9,
        "range": "40-90",
        "note": "RSI is 31. In a bull regime it usually lives between 40-90, with the 40-50 support shelf as the zone that matters; it sits below the 40-50 support shelf \u2014 stretched for a bull regime, the zone where bull-regime RSI usually finds its footing."
       },
       "macd": {
-       "line": -4.9075,
-       "signal": 1.7668,
-       "histogram": -6.6743,
+       "line": -4.8621,
+       "signal": 1.7759,
+       "histogram": -6.638,
        "vs_signal": "below",
        "zero": "below",
        "hist_trend": "expanding",
@@ -13930,7 +13930,7 @@
         "t": "2026-10-09",
         "kind": "bearish"
        },
-       "note": "MACD (-4.91) sits below its signal line (1.77) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09"
+       "note": "MACD (-4.86) sits below its signal line (1.78) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09"
       },
       "wyckoff": {
        "events": [
@@ -13964,25 +13964,25 @@
       },
       "ma_structure": {
        "sma20": {
-        "value": 141.62,
-        "slope_pct_5d": 0.86,
+        "value": 141.65,
+        "slope_pct_5d": 0.88,
         "relation": "below",
-        "distance_atr": -3.55
+        "distance_atr": -3.5
        },
        "sma50": {
-        "value": 129.44,
-        "slope_pct_5d": -1.0,
+        "value": 129.45,
+        "slope_pct_5d": -0.99,
         "relation": "below",
-        "distance_atr": -2.59
+        "distance_atr": -2.55
        },
        "sma200": {
         "value": 122.12,
         "slope_pct_5d": 1.46,
         "relation": "below",
-        "distance_atr": -2.02
+        "distance_atr": -1.97
        },
        "golden_cross": true,
-       "summary": "20-day average (simple) $141.62 \u2014 price below it, average rising; 50-day average $129.44 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising"
+       "summary": "20-day average (simple) $141.65 \u2014 price below it, average rising; 50-day average $129.45 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising"
       },
       "fib": {
        "swing": {
@@ -14040,10 +14040,10 @@
        "RSI divergence (regular_bearish): price made a higher high while RSI made a lower high \u2014 $43.37 on 2025-10-06 (RSI 82) vs $50.76 on 2025-10-29 (RSI 69). Confirmed 2025-11-04 by its RSI trendline break \u2014 RSI closed under the line beneath its lows; formed at a tested level \u2014 it counts as evidence.",
        "Divergence ledger: 8 divergences measured across every confirmed pivot pair (RSI 7, MACD 1); the five most salient are listed above and the full ledger rides in the brief's Desk read.",
        "RSI regime: RSI is 31. In a bull regime it usually lives between 40-90, with the 40-50 support shelf as the zone that matters; it sits below the 40-50 support shelf \u2014 stretched for a bull regime, the zone where bull-regime RSI usually finds its footing.",
-       "MACD: MACD (-4.91) sits below its signal line (1.77) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.",
+       "MACD: MACD (-4.86) sits below its signal line (1.78) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.",
        "Wyckoff base vocabulary applies here: SC \u2192 AR \u2192 ST (climax low $91.50, base top $156.92); markup language is not earned until a sign of strength is followed by a last point of support..",
        "Dominant swing: $22.57 on 2025-08-01 to $302.00 on 2026-06-22; retracements (confluence ingredients only, never standalone levels): 38.2% at $195.26, 50.0% at $162.28, 61.8% at $129.31.",
-       "Averages: 20-day average (simple) $141.62 \u2014 price below it, average rising; 50-day average $129.44 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising.",
+       "Averages: 20-day average (simple) $141.65 \u2014 price below it, average rising; 50-day average $129.45 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising.",
        "Volume: volume in the pattern's second half is running at 0.96x its first half \u2014 roughly unchanged. the last 20 sessions average 1.05x the prior period's volume. volume expanded 1.9x on 2026-10-14 on a down move.",
        "Buy zone $88.08\u2013$93.42 (3 independent items stack there: a pivot cluster at $91.50 tested in 1 separate episode; the pattern's rising support line; the round number $90.00).",
        "Invalidation: a daily close below the selling-climax low \u2014 the base read fails there ($91.50) \u2014 $91.50."
@@ -14126,7 +14126,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price is extended \u2014 5.0% above the nearest tested support ($91.50). A long here chases; the level underneath is far away.",
+       "reading": "Price is extended \u2014 5.6% above the nearest tested support ($91.50). A long here chases; the level underneath is far away.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "decisive",
@@ -14135,7 +14135,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $96.33, above the recent swing low of $95.23 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $91.50 \u2014 context only; the swing low above it is the line that governs.",
+       "reading": "Price closed at $96.90, above the recent swing low of $95.23 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $91.50 \u2014 context only; the swing low above it is the line that governs.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -14144,7 +14144,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -41.2% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -40.8% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -14207,7 +14207,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (simple) $141.62 \u2014 price below it, average rising; 50-day average $129.44 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising.",
+       "reading": "20-day average (simple) $141.65 \u2014 price below it, average rising; 50-day average $129.45 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -14234,7 +14234,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-4.91) sits below its signal line (1.77) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.",
+       "reading": "MACD (-4.86) sits below its signal line (1.78) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "decisive",
@@ -14333,7 +14333,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -14351,7 +14351,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -14434,7 +14434,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "Price is extended \u2014 5.0% above the nearest tested support ($91.50). A long here chases; the level underneath is far away.",
+       "reading": "Price is extended \u2014 5.6% above the nearest tested support ($91.50). A long here chases; the level underneath is far away.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "decisive",
@@ -14452,7 +14452,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-4.91) sits below its signal line (1.77) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.",
+       "reading": "MACD (-4.86) sits below its signal line (1.78) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.",
        "stance": -1,
        "salience": 2.5,
        "disposition": "decisive",
@@ -14461,7 +14461,7 @@
       {
        "key": "conflict:commitment:level",
        "factor": "Conflict \u2014 Desk commitment vs Level position",
-       "reading": "Desk commitment argues for the setup (The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.) while Level position argues against (Price is extended \u2014 5.0% above the nearest tested support ($91.50). A long here chases; the level underneath is far away.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Desk commitment argues for the setup (The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.) while Level position argues against (Price is extended \u2014 5.6% above the nearest tested support ($91.50). A long here chases; the level underneath is far away.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 2.5,
        "disposition": "conflict",
@@ -14470,7 +14470,7 @@
       {
        "key": "conflict:regime_fit:macd_state",
        "factor": "Conflict \u2014 Regime fit (curator) vs MACD state",
-       "reading": "Regime fit (curator) argues for the setup (Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.) while MACD state argues against (MACD (-4.91) sits below its signal line (1.77) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Regime fit (curator) argues for the setup (Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.) while MACD state argues against (MACD (-4.86) sits below its signal line (1.78) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 2.5,
        "disposition": "conflict",
@@ -14526,7 +14526,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $96.33, above the recent swing low of $95.23 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $91.50 \u2014 context only; the swing low above it is the line that governs.",
+       "reading": "Price closed at $96.90, above the recent swing low of $95.23 \u2014 the structure the setup rests on is intact. The chart read's own line sits deeper at $91.50 \u2014 context only; the swing low above it is the line that governs.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -14535,7 +14535,7 @@
       {
        "key": "invalidation_extension",
        "factor": "What would end it \u2014 an overextended run",
-       "reading": "10-session run is -41.2% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
+       "reading": "10-session run is -40.8% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -14589,7 +14589,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (simple) $141.62 \u2014 price below it, average rising; 50-day average $129.44 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising.",
+       "reading": "20-day average (simple) $141.65 \u2014 price below it, average rising; 50-day average $129.45 \u2014 price below it, average falling; 200-day average $122.12 \u2014 price below it, average rising.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -14706,7 +14706,7 @@
       {
        "key": "market_regime",
        "factor": "Market regime",
-       "reading": "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
+       "reading": "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -14724,7 +14724,7 @@
       {
        "key": "index_trend",
        "factor": "Index trend",
-       "reading": "SPY -0.8% vs its 50-day average; QQQ -2.2% vs its 50-day average.",
+       "reading": "SPY -0.7% vs its 50-day average; QQQ -2.1% vs its 50-day average.",
        "stance": -1,
        "salience": 1.5,
        "disposition": "considered",
@@ -14789,7 +14789,7 @@
       {
        "key": "conflict:commitment:level",
        "factor": "Conflict \u2014 Desk commitment vs Level position",
-       "reading": "Desk commitment argues for the setup (The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.) while Level position argues against (Price is extended \u2014 5.0% above the nearest tested support ($91.50). A long here chases; the level underneath is far away.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Desk commitment argues for the setup (The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.) while Level position argues against (Price is extended \u2014 5.6% above the nearest tested support ($91.50). A long here chases; the level underneath is far away.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 2.5,
        "disposition": "conflict",
@@ -14798,7 +14798,7 @@
       {
        "key": "conflict:regime_fit:macd_state",
        "factor": "Conflict \u2014 Regime fit (curator) vs MACD state",
-       "reading": "Regime fit (curator) argues for the setup (Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.) while MACD state argues against (MACD (-4.91) sits below its signal line (1.77) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Regime fit (curator) argues for the setup (Red/fear day: dip and reversal strategies are in their validated habitat \u2014 swing signals do well in bearish regimes.) while MACD state argues against (MACD (-4.86) sits below its signal line (1.78) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 2.5,
        "disposition": "conflict",
@@ -15108,24 +15108,24 @@
  "market_context": {
   "regime": "Chop",
   "regime_evidence": [
-   "QQQ closed below its 50-day average (-2.2%) with a 20-day slope of -1.5% \u2014 the desk's regime rule reads chop.",
-   "VIX closed at 19.37 (+17.7% on the day) (VIX reading as of 2026-10-16).",
+   "QQQ closed below its 50-day average (-2.1%) with a 20-day slope of -1.3% \u2014 the desk's regime rule reads chop.",
+   "VIX closed at 20.26 (+23.1% on the day) (VIX reading as of 2026-10-16).",
    "Both indexes were red today \u2014 the dip-buying habitat these strategies were validated in."
   ],
   "vix": {
-   "close": 19.37,
-   "change_pct": 17.7,
+   "close": 20.26,
+   "change_pct": 23.1,
    "as_of": "2026-10-16"
   },
   "spy": {
-   "close": 762.6,
-   "day_pct": -1.19,
-   "vs_sma50_pct": -0.77
+   "close": 763.42,
+   "day_pct": -1.08,
+   "vs_sma50_pct": -0.66
   },
   "qqq": {
-   "close": 710.65,
-   "day_pct": -2.38,
-   "vs_sma50_pct": -2.22
+   "close": 711.77,
+   "day_pct": -2.23,
+   "vs_sma50_pct": -2.07
   },
   "fear_day": true,
   "charts": {
