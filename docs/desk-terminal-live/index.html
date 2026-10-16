@@ -298,6 +298,25 @@
     .completed-sym{font-weight:700;font-size:15px}
     .completed-facts{font-family:var(--mono);font-size:13.5px;font-variant-numeric:tabular-nums}
     .completed-row .muted{margin-left:auto}
+    /* Addition 5 — the Desk read + on-demand/closed sections */
+    .pill.gut-for{color:var(--positive);background:var(--positive-bg);border-color:#1f4d43}
+    .pill.gut-against{color:var(--negative);background:var(--negative-bg);border-color:#5a2b2b}
+    .pill.gut-mixed{color:var(--info);background:var(--info-bg);border-color:#2c4258}
+    .dr-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+    .dr-grade{font-size:12.5px;color:var(--ink-dim)}
+    .dr-para{font-size:14.5px;line-height:1.65;color:var(--ink);max-width:78ch}
+    .dr-list{margin:6px 0;padding-left:0;list-style:none}
+    .dr-list li{margin:7px 0;font-size:14px;line-height:1.55;color:var(--ink-dim)}
+    .dr-list .dr-factor{font-weight:700;color:var(--ink)}
+    .dr-stance{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;margin-left:6px}
+    .dr-stance.for{color:var(--positive)} .dr-stance.against{color:var(--negative)} .dr-stance.weighed{color:var(--ink-dim)}
+    .dr-conflict{border-left:3px solid var(--warning);padding-left:10px}
+    .dr-law{font-size:12.5px;color:var(--ink-dim);margin-top:10px}
+    .aux-rows{display:flex;flex-direction:column;gap:10px}
+    .aux-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;border:1px solid var(--line);border-radius:4px;padding:10px 12px;background:var(--panel-2)}
+    .aux-row .aux-sym{font-weight:800;font-size:16px}
+    .aux-row .aux-meta{font-size:13px;color:var(--ink-dim)}
+    .aux-row .aux-verdict{flex:1 1 260px;font-size:13.5px;color:var(--ink)}
     .flash{animation:setupflash 2.2s ease-out}
     @keyframes setupflash{0%{box-shadow:0 0 0 3px var(--gold)}100%{box-shadow:0 0 0 0 rgba(189,142,47,0)}}
     .alerts-box{text-align:right;max-width:300px}
@@ -414,6 +433,10 @@
           </div>
         </div>
       </section>
+      <section class="panel" id="ondemandPanel" hidden>
+        <div class="panel-head"><div><h2>On-demand reads</h2><p>Full Desk reads the desk produced on request, for any stock — the same whole-picture read the daily setups get, written when asked and published here.</p></div></div>
+        <div class="panel-body" id="ondemandBody"></div>
+      </section>
       <section class="panel" id="marketPanel" hidden>
         <div class="panel-head"><div><h2>Market and top-ranked stocks</h2><p>Where the market stands today, and the stocks the desk's chart-review board ranks highest.</p></div></div>
         <div class="panel-body" id="marketBody"></div>
@@ -437,6 +460,10 @@
               <li><strong>The warning signs.</strong> Some things count against a setup no matter how many lenses agree: a price that has already spiked hard in a few sessions, one stretched far above its average, or one that has broken below its recent lows. Each of those deductions exists because that exact pattern has burned traders before.</li>
             </ul>
             <p>The brief above walks the lenses for this one stock: the chart as it looked when the setup fired, the evidence lens by lens, and the list of what would end the setup. The list itself is a research starting point &mdash; the evidence is published with every setup so you can check the desk&rsquo;s work and decide for yourself.</p>
+            <h3>The whole-picture read</h3>
+            <p>On top of the score, every brief now carries a <strong>Desk read</strong>: a senior-trader-style weighing of <em>everything</em> the desk measures for the stock — the score&rsquo;s lenses, the full chart read (the pattern and its track record, every measured divergence on both oscillators, the moving-average structure, volume, Wyckoff events, momentum), the state of the wider market, and how fresh the data is. The few factors that decide it are named at the top; where strong evidence points both ways, the conflict itself is stated rather than averaged away; everything else is listed as considered and weighed, including anything the desk does <em>not</em> measure for this stock — an absence is written down, never passed over in silence. The read ends with what would change the call.</p>
+            <p>The Desk read is a weighed judgment, and it is deliberately kept <strong>out</strong> of the score: the number above never moves because of it. Every read is written into a permanent ledger before the outcome can be known, and the desk scores its past reads against what prices did over the following one, five and ten sessions. Only if that recorded track record earns it — by review and ruling, not by default — would the read ever be given weight in the ranking. Until then it is published so its judgment can be checked like everything else here.</p>
+            <p>The wider tape is measured the same way, every night, over the desk&rsquo;s own scanned universe: how many stocks are rising and how many sit above their own averages, the market&rsquo;s fear gauges combined into one mood reading, whether traders are reaching for risk or hiding from it across six benchmark pairings, which sectors and themes are leading and which are fading, and a five-check pulse on the two big index funds. Those readings sit in the market panel above and are weighed into every Desk read.</p>
           </div>
         </div>
       </section>
@@ -664,6 +691,10 @@
     }
     FEED=d;
     renderStrategies();
+    /* The on-demand section renders BEFORE renderSetups: it ends by
+       applying the URL hash, and the #/ondemand deep links resolve
+       against the map this render fills. */
+    renderOndemandReads(d);
     renderSetups(d);
     renderMarket(d);
   }
@@ -882,6 +913,8 @@
     if(m){ var sym=m[1].toUpperCase();
       if(SETUPS[sym]){ openSetupDetail(sym); return; }
       var card=$('setup-'+sym); if(card){ card.scrollIntoView({block:'center'}); flashEl(card); } return; }
+    m=h.match(/^#\/ondemand\/([A-Za-z0-9.]+(?:-[A-Za-z0-9.]+)*?)-(\d{4}-\d{2}-\d{2})$/);
+    if(m){ var key=m[1].toUpperCase()+'|'+m[2]; if(ONDEMAND[key]){ openOndemandDetail(key); return; } }
     m=h.match(/^#strategy-([A-Za-z0-9_\-]+)$/i);
     if(m)gotoStrategy(m[1]);
   }
@@ -1004,6 +1037,87 @@
     }
     return '<span class="pill '+cls+'">'+esc(v)+'</span>';
   }
+  /* Addition 5 — the Desk read (holistic synthesis + gut call).
+     The call sits BESIDE the score, never inside it: this section
+     renders the verdict and the evidence balance that produced
+     it, with the conflicts first-class and every other measured
+     factor listed as considered-and-weighed. */
+  function gutPill(call){
+    var cls=(call==='strongly for'||call==='for')?'gut-for'
+      :(call==='against'||call==='strongly against')?'gut-against':'gut-mixed';
+    return '<span class="pill '+cls+'">Desk read: '+esc(call||'mixed')+'</span>';
+  }
+  function stanceWord(st){
+    return st>0?'<span class="dr-stance for">For</span>'
+      :st<0?'<span class="dr-stance against">Against</span>'
+      :'<span class="dr-stance weighed">Weighed</span>';
+  }
+  function deskReadHtml(dr){
+    if(!dr||typeof dr!=='object')return '';
+    function row(it){
+      return '<li><span class="dr-factor">'+esc(it.factor)+'</span>'
+        +stanceWord(it.stance)
+        +(it.gap?' <span class="dr-stance weighed">Not measured</span>':'')
+        +'<br>'+esc(it.reading)+'</li>';
+    }
+    var conf=(dr.level1||[]).filter(function(i){return i.disposition==='conflict';});
+    var dec=(dr.level1||[]).filter(function(i){return i.disposition==='decisive';});
+    var html='<div class="setup-detail-sec desk-read"><h3>Desk read — the whole picture</h3>'
+      +'<div class="dr-head">'+gutPill(dr.call)
+      +'<span class="dr-grade">'+esc(dr.grade||'')+'</span></div>'
+      +(dr.paragraph?'<p class="dr-para">'+esc(dr.paragraph)+'</p>':'')
+      +(dec.length?'<h4 class="cr-group">What decides it</h4><ul class="dr-list">'
+        +dec.map(row).join('')+'</ul>':'')
+      +(conf.length?'<h4 class="cr-group">Where the evidence fights itself</h4><ul class="dr-list">'
+        +conf.map(function(i){return '<li class="dr-conflict"><span class="dr-factor">'
+          +esc(i.factor)+'</span><br>'+esc(i.reading)+'</li>';}).join('')+'</ul>':'')
+      +((dr.level2||[]).length?'<details class="cr-more"><summary>Also considered — everything else the desk measured</summary><ul class="dr-list">'
+        +dr.level2.map(row).join('')+'</ul></details>':'')
+      +'<p class="dr-law">The Desk read is the desk&rsquo;s weighed judgment across everything it measures. It does not change this setup&rsquo;s score or its place in the ranking — every read is recorded before outcomes are known and scored against what the stock does next, and the read earns weight in the ranking only if that record, once reviewed, says it should.</p>'
+      +'</div>';
+    return html;
+  }
+  var ONDEMAND={};
+  function showAuxDetail(title,sub,obj,hash){
+    var panel=$('setupDetail'); if(!panel)return;
+    DETAIL_SYM=null;
+    $('setupDetailTitle').textContent=title;
+    $('setupDetailSub').textContent=sub;
+    $('setupDetailBody').innerHTML=setupDetailHtml(obj);
+    panel.hidden=false;
+    panel.querySelectorAll('[data-sleeve-link]').forEach(function(btn){
+      btn.addEventListener('click',function(){ gotoStrategy(btn.getAttribute('data-sleeve-link')); });
+    });
+    if(window.location.hash!==hash){ try{ history.replaceState(null,'',hash); }catch(e){} }
+    panel.scrollIntoView({behavior:'smooth',block:'start'});
+    flashEl(panel);
+  }
+  function openOndemandDetail(key){
+    var e=ONDEMAND[key]; if(!e||!e.brief)return;
+    showAuxDetail(e.symbol+' — the on-demand read',
+      'Read on '+e.session+' · '+(e.brief.desk_read?('Desk read: '+e.brief.desk_read.call+' · '+e.brief.desk_read.grade):''),
+      {symbol:e.symbol,brief:e.brief,sources:[]},
+      '#/ondemand/'+e.symbol+'-'+e.session);
+  }
+  function renderOndemandReads(d){
+    var panel=$('ondemandPanel'); if(!panel)return;
+    var rows=Array.isArray(d.ondemand_reads)?d.ondemand_reads:[];
+    ONDEMAND={};
+    if(!rows.length){ panel.hidden=true; $('ondemandBody').innerHTML=''; return; }
+    panel.hidden=false;
+    $('ondemandBody').innerHTML='<div class="aux-rows">'+rows.map(function(e){
+      var key=e.symbol+'|'+e.session; ONDEMAND[key]=e;
+      return '<div class="aux-row"><span class="aux-sym">'+esc(e.symbol)+'</span>'
+        +gutPill(e.gut_call)
+        +'<span class="aux-meta">'+esc(e.session)+'</span>'
+        +'<span class="aux-verdict">'+esc(e.verdict||'')+'</span>'
+        +(e.brief?'<button type="button" class="tool-btn" data-ondemand="'+esc(key)+'">Read it</button>':'')
+        +'</div>';
+    }).join('')+'</div>';
+    $('ondemandBody').querySelectorAll('[data-ondemand]').forEach(function(btn){
+      btn.addEventListener('click',function(){ openOndemandDetail(btn.getAttribute('data-ondemand')); });
+    });
+  }
   function setupDetailHtml(s){
     var b=(s.brief&&typeof s.brief==='object')?s.brief:null;
     var lv=(b&&b.levels)?b.levels:s;
@@ -1030,6 +1144,9 @@
       +cell('Last close',lv.last_close)
       +(b&&b.levels?cell('20-day average',lv.ema20)+cell('Recent swing low',lv.swing_low_20):'')
       +'</div></div>';
+    if(b&&b.desk_read){
+      html+=deskReadHtml(b.desk_read);
+    }
     if(b){
       var story=Array.isArray(b.setup_story)?b.setup_story:(b.setup_story?[b.setup_story]:[]);
       if(story.length){
@@ -1151,6 +1268,11 @@
         +'</div>'
         +'<div class="mkt-idxs">'+idx('S&amp;P 500 (SPY)',mc.spy)+idx('Nasdaq 100 (QQQ)',mc.qqq)+'</div>'
         +((mc.regime_evidence||[]).length?'<ul class="mkt-ev">'+mc.regime_evidence.map(function(e){return '<li>'+esc(e)+'</li>';}).join('')+'</ul>':'');
+    }
+    if(mc&&Array.isArray(mc.measurements)&&mc.measurements.length){
+      html+='<h3 class="lector-h">The wider tape — measured every night</h3>'
+        +'<ul class="mkt-ev">'+mc.measurements.map(function(e){return '<li>'+esc(e)+'</li>';}).join('')+'</ul>'
+        +(mc.measurements_as_of?'<p class="footnote">Measured on the desk&rsquo;s own scanned universe after the close of '+esc(mc.measurements_as_of)+'.</p>':'');
     }
     if(lector.length){
       html+='<h3 class="lector-h">Top-ranked stocks \u2014 the desk\u2019s chart-review board</h3>'
