@@ -1017,7 +1017,7 @@
       // (underlying, reference only) and the executable spread
       // exit rule render as their own lines below the cells
     } else if(p.stop){
-      cells+=cellS('Stop',
+      cells+=cellS(p.backstop?'Trading stop':'Stop',
         p.stop.price!=null?money(p.stop.price):'\u2014',
         p.stop.structure||'');
     }
@@ -1033,6 +1033,13 @@
     (p.spread_rows||[]).forEach(function(r){
       spreadHtml+='<p class="plan-why"><b>'+esc(r.label)+':</b> '+esc(r.text||'')+'</p>';
     });
+    // Derivation Program (2026-10-16): the plan's stop roles, the
+    // strategy's own exit program, and a measured objective
+    // against the plan — each rendered from its own plan field.
+    var derivHtml='';
+    if(p.backstop&&p.backstop.text)derivHtml+='<p class="plan-why">'+esc(p.backstop.text)+'</p>';
+    if(p.exit_program&&p.exit_program.text)derivHtml+='<p class="plan-why">'+esc(p.exit_program.text)+'</p>';
+    if(p.conflict&&p.conflict.text)derivHtml+='<p class="plan-why"><b>Against the plan:</b> '+esc(p.conflict.text)+'</p>';
     function prettyDate(iso){
       var m=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})/);
       if(!m)return String(iso||'');
@@ -1060,6 +1067,7 @@
     if(p.risk_reward&&p.risk_reward.text)meta.push(p.risk_reward.text);
     if(p.risk_reward&&p.risk_reward.justification)meta.push(p.risk_reward.justification);
     if(p.targets_note)meta.push(p.targets_note);
+    if(p.implied_note)meta.push(p.implied_note);
     if(p.conviction&&p.conviction.text)meta.push(p.conviction.text);
     if(p.valid&&p.valid.text)meta.push(p.valid.text);
     if(p.instrument&&p.instrument.help)meta.push(p.instrument.help);
@@ -1076,6 +1084,7 @@
       +spreadFactsHtml
       +(cells?'<div class="plan-cells">'+cells+'</div>':'')
       +spreadHtml
+      +derivHtml
       +(p.risk_reward&&p.risk_reward.badge?'<p class="plan-why"><b>'+esc(p.risk_reward.badge)+'.</b></p>':'')
       +(p.entry_note?'<p class="plan-why">'+esc(p.entry_note)+'</p>':'')
       +(meta.length?'<p class="plan-meta">'+esc(meta.join(' '))+'</p>':'')
