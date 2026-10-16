@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-16T01:02:44.763429+00:00",
- "generated_at_et": "2026-10-15T21:02:44.763429-04:00",
+ "generated_at_utc": "2026-10-16T01:20:10.141585+00:00",
+ "generated_at_et": "2026-10-15T21:20:10.141585-04:00",
  "account": {
-  "equity": "108934.47",
+  "equity": "109519.49",
   "cash": "-241818.4",
   "buying_power": "0",
   "status": "ACTIVE",
@@ -15,10 +15,10 @@
    "symbol": "ABCL",
    "qty": 242.0,
    "avg_entry": 11.94,
-   "current": 12.64,
-   "unrealized_pl": 169.4,
+   "current": 12.69,
+   "unrealized_pl": 181.5,
    "unrealized_pl_pct": null,
-   "market_value": "3058.88",
+   "market_value": "3070.98",
    "side": "long",
    "sleeve": "momentum"
   },
@@ -26,10 +26,10 @@
    "symbol": "AEHR",
    "qty": 86.0,
    "avg_entry": 66.387093,
-   "current": 69.3,
-   "unrealized_pl": 250.510002,
+   "current": 69.49,
+   "unrealized_pl": 266.850002,
    "unrealized_pl_pct": null,
-   "market_value": "5959.8",
+   "market_value": "5976.14",
    "side": "long",
    "sleeve": "rsi_meanrev"
   },
@@ -59,10 +59,10 @@
    "symbol": "AXTI",
    "qty": 325.0,
    "avg_entry": 56.746462,
-   "current": 57.89,
-   "unrealized_pl": 371.64985,
+   "current": 59.09,
+   "unrealized_pl": 761.64985,
    "unrealized_pl_pct": null,
-   "market_value": "18814.25",
+   "market_value": "19204.25",
    "side": "long",
    "sleeve": "momentum_rotation"
   },
@@ -81,10 +81,10 @@
    "symbol": "DELL",
    "qty": 5.0,
    "avg_entry": 473.0,
-   "current": 469.52,
-   "unrealized_pl": -17.4,
+   "current": 472.3,
+   "unrealized_pl": -3.5,
    "unrealized_pl_pct": null,
-   "market_value": "2347.6",
+   "market_value": "2361.5",
    "side": "long",
    "sleeve": "momentum"
   },
@@ -125,10 +125,10 @@
    "symbol": "LITE",
    "qty": 28.0,
    "avg_entry": 828.020245,
-   "current": 871.2,
-   "unrealized_pl": 1209.03314,
+   "current": 874.25,
+   "unrealized_pl": 1294.43314,
    "unrealized_pl_pct": null,
-   "market_value": "24393.6",
+   "market_value": "24479",
    "side": "long",
    "sleeve": "rsi_meanrev"
   },
@@ -136,10 +136,10 @@
    "symbol": "MU",
    "qty": 16.0,
    "avg_entry": 871.6725,
-   "current": 925.0,
-   "unrealized_pl": 853.24,
+   "current": 926.0,
+   "unrealized_pl": 869.24,
    "unrealized_pl_pct": null,
-   "market_value": "14800",
+   "market_value": "14816",
    "side": "long",
    "sleeve": "red_day_reversal"
   },
@@ -158,10 +158,10 @@
    "symbol": "NBIS",
    "qty": 32.0,
    "avg_entry": 171.837879,
-   "current": 186.51,
-   "unrealized_pl": 469.507872,
+   "current": 187.8,
+   "unrealized_pl": 510.787872,
    "unrealized_pl_pct": null,
-   "market_value": "5968.32",
+   "market_value": "6009.6",
    "side": "long",
    "sleeve": "rsi_meanrev"
   },
@@ -224,10 +224,10 @@
    "symbol": "TWST",
    "qty": 20.0,
    "avg_entry": 136.7045,
-   "current": 144.5,
-   "unrealized_pl": 155.91,
+   "current": 145.0,
+   "unrealized_pl": 165.91,
    "unrealized_pl_pct": null,
-   "market_value": "2890",
+   "market_value": "2900",
    "side": "long",
    "sleeve": "momentum"
   },
@@ -679,16 +679,16 @@
   ]
  },
  "exposure": {
-  "gross_notional": 350782.87000000005,
-  "equity": 108934.47,
-  "gross_pct": 322.0,
+  "gross_notional": 351367.89,
+  "equity": 109519.49,
+  "gross_pct": 320.8,
   "position_count": 24,
   "by_sleeve": {
-   "momentum": 22624.82,
-   "rsi_meanrev": 48909.72,
+   "momentum": 22660.82,
+   "rsi_meanrev": 49052.74,
    "donchian": 23710.44,
-   "red_day_reversal": 27404.8,
-   "momentum_rotation": 59411.9,
+   "red_day_reversal": 27420.8,
+   "momentum_rotation": 59801.9,
    "aurelia_ndx": 155360.35,
    "phase_daily": 12506.84,
    "vix_hedge": 832.0,
@@ -696,24 +696,1126 @@
   }
  },
  "ledger_counts": {
-  "total": 7339,
+  "total": 7425,
   "by_kind": {
    "journal": 187,
    "fill": 5933,
    "outcome": 9,
    "import_position": 6,
-   "tick": 131,
+   "tick": 134,
    "nightly_reconcile": 52,
    "import_open_order": 51,
-   "signal_intent": 410,
-   "entry_rejected": 302,
+   "signal_intent": 449,
+   "entry_rejected": 329,
    "exit_skipped": 85,
-   "intent_rejected": 96,
-   "slice_sync": 67,
+   "intent_rejected": 108,
+   "slice_sync": 72,
    "exit_submitted": 10
   }
  },
- "setups": [],
+ "setups": [
+  {
+   "symbol": "CRML",
+   "rank": 1,
+   "score": 52,
+   "tier": "Watch",
+   "side": "long",
+   "status": "watch",
+   "sources": [
+    "ema_vwap",
+    "rsi_meanrev",
+    "tensor_swing"
+   ],
+   "families": [
+    "intraday pullback",
+    "Tensor pattern engine"
+   ],
+   "reasons": [
+    "Selected by 2 independent strategy families (3 strategies: intraday pullback, Tensor pattern engine) \u2014 independent agreement is the desk's core quality signal.",
+    "Tensor confirmed a swing today \u2014 the desk's pattern engine only flags confirmed, in-age swings, and Tensor evidence carries the most weight of any single signal in the desk's scoring method.",
+    "The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.",
+    "It was also exited today under its strategy's own rules \u2014 the position is no longer held.",
+    "Price has reset at support \u2014 it is sitting on its 20-day average, not dangling mid-range.",
+    "No stop was recorded by the selecting strategy \u2014 treat size with care."
+   ],
+   "entry": 6.26,
+   "stop": null,
+   "target": null,
+   "last_close": 6.95,
+   "lector_rank": null,
+   "tensor": "confirmed_swing",
+   "primary_sleeve": "ema_vwap",
+   "brief": {
+    "symbol": "CRML",
+    "as_of": "2026-10-15",
+    "score": 52,
+    "tier": "Watch",
+    "status": "watch",
+    "chart": "setup-charts/CRML-2026-10-15.png",
+    "chart_gap": null,
+    "chart_panels": [
+     "daily",
+     "volume",
+     "rsi",
+     "hourly"
+    ],
+    "spark_closes": [
+     7.36,
+     7.28,
+     7.32,
+     7.07,
+     6.72,
+     6.43,
+     6.46,
+     6.35,
+     6.48,
+     6.87,
+     6.73,
+     9.33,
+     8.54,
+     7.72,
+     8.17,
+     7.83,
+     7.65,
+     7.38,
+     7.26,
+     7.2,
+     7.03,
+     7.51,
+     7.36,
+     7.06,
+     6.83,
+     6.86,
+     6.82,
+     6.54,
+     6.26,
+     6.95
+    ],
+    "levels": {
+     "entry": 6.26,
+     "stop": null,
+     "target": null,
+     "last_close": 6.95,
+     "ema20": 7.05,
+     "swing_low_20": 6.16,
+     "atr14": 0.436
+    },
+    "setup_story": [
+     "On Thursday, October 15, 2026, CRML was flagged by 3 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 52 of 100 \u2014 Watch tier on the desk's list.",
+     "The desk bought it at $6.26. It was exited later the same day under its own strategy's rules \u2014 the full setup played out inside one session, entry to exit.",
+     "The picture as a whole: price sits essentially on its 20-day average ($7.05) \u2014 reset, not extended; the recent swing low at $6.16 is intact below price; its 10-session move is -3.5% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.46."
+    ],
+    "lens_walkthrough": [
+     {
+      "key": "agreement",
+      "lens": "Independent strategy agreement",
+      "verdict": "Agree",
+      "evidence": "Selected by 2 independent strategy families (3 strategies: intraday pullback, Tensor pattern engine) \u2014 independent agreement is the desk's core quality signal."
+     },
+     {
+      "key": "tensor",
+      "lens": "Tensor pattern engine",
+      "verdict": "Confirmed",
+      "evidence": "Tensor confirmed a swing today \u2014 the desk's pattern engine only flags confirmed, in-age swings, and Tensor evidence carries the most weight of any single signal in the desk's scoring method."
+     },
+     {
+      "key": "lector",
+      "lens": "ChartsLector chart-review board",
+      "verdict": "No reading",
+      "evidence": "CRML is not in the chart-review board's ranked universe today, so this lens adds nothing either way. Context can support a setup; it never creates one."
+     },
+     {
+      "key": "commitment",
+      "lens": "The desk's own commitment",
+      "verdict": "Bought",
+      "evidence": "The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated. It was also exited today under its strategy's own rules \u2014 the position is no longer held."
+     },
+     {
+      "key": "regime",
+      "lens": "Market regime",
+      "verdict": "Neutral",
+      "evidence": "Market regime: Chop. QQQ closed above its 50-day average (+0.2%) with a 20-day slope of +1.5% \u2014 the desk's regime rule reads chop. VIX closed at 16.5 (-2.4% on the day). QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
+     },
+     {
+      "key": "level",
+      "lens": "Reset at a price level",
+      "verdict": "At a level",
+      "evidence": "Price has reset at support \u2014 it is sitting on its 20-day average, not dangling mid-range."
+     },
+     {
+      "key": "geometry",
+      "lens": "Stop & risk geometry",
+      "verdict": "No recorded stop",
+      "evidence": "No stop was recorded by the selecting strategy \u2014 treat size with care."
+     },
+     {
+      "key": "invalidator_extension",
+      "lens": "Invalidator \u2014 extension & euphoria",
+      "verdict": "Pass",
+      "evidence": "10-session run is -3.5% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
+     },
+     {
+      "key": "invalidator_structure",
+      "lens": "Invalidator \u2014 broken structure",
+      "verdict": "Pass",
+      "evidence": "Price closed at $6.95, above the recent swing low of $6.16 \u2014 the structure the setup rests on is intact."
+     },
+     {
+      "key": "chart_pattern",
+      "lens": "Chart pattern",
+      "verdict": "Trendline break \u2014 warning",
+      "evidence": "Ascending triangle \u2014 flat resistance, rising support converging into it. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Structure: higher highs, lower lows. Divergence: price made a higher low while RSI made a lower low \u2014 $3.19 on 2025-07-30 (RSI 54) vs $5.12 on 2026-07-29 (RSI 25); measured across the major swing pivots. Buy zone $5.92\u2013$6.13 where 2 independent items stack."
+     }
+    ],
+    "invalidation": [
+     "A daily close below $6.16 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on.",
+     "No stop was recorded for this entry, so no recorded price level ends it mechanically \u2014 the selecting strategy's own exit rules (and position-size discipline) are the only guard.",
+     "A run of +25% or more over 10 sessions with no reset turns the name into an extended spike \u2014 the method retires those rather than chase them.",
+     "If fresh desk passes stop confirming it \u2014 the pattern engine and the selecting strategies go quiet \u2014 the setup leaves the list: only setups that are still true stay listed.",
+     "This instance already ended: the position was exited today under its strategy's own rules, so the brief stands as the record of the setup at detection time."
+    ],
+    "chart_read": {
+     "pattern": "Ascending triangle",
+     "detail": "flat resistance, rising support converging into it. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary",
+     "tier": "standard",
+     "confirmation": "forming",
+     "base_rate_line": null,
+     "meta": "Ascending triangle \u00b7 standard tier \u00b7 forming",
+     "level1": [
+      "Ascending triangle [standard tier, forming] \u2014 flat resistance, rising support converging into it. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -32% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-22.",
+      "Nearest support: $6.54\u2013$6.75 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests).",
+      "Nearest resistance: $7.08 (50-day average).",
+      "Invalidation: $5.92 \u2014 a daily close below the buy zone's lower edge \u2014 the last confluence of support under price."
+     ],
+     "level2": [
+      {
+       "group": "Pattern",
+       "text": "Ascending triangle [standard tier, forming] \u2014 flat resistance, rising support converging into it. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -32% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-22."
+      },
+      {
+       "group": "Pattern",
+       "text": "Base rates for this pattern (Bulkowski's bull-market pattern samples (thepatternsite.com, re-verified 2026-10-15), 1,400 perfect trades): 17% failed to break even; the average rise was 43%; the full measured move was reached 70% of the time; price came back to retest the break 64% of the time. Bull-market history, quoted as context \u2014 not a forecast for this name."
+      },
+      {
+       "group": "Pattern",
+       "text": "Base rates for this pattern (Bulkowski's bull-market pattern samples (thepatternsite.com, re-verified 2026-10-15), 1,400 perfect trades): 38% failed to break even; the average decline was 13%; the full measured move was reached 44% of the time; price pulled back to the break 63% of the time. Bull-market history, quoted as context \u2014 not a forecast for this name."
+      },
+      {
+       "group": "Supports & levels",
+       "text": "Support under price: $6.54\u2013$6.75 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests); $7.54 (support trendline through the 2026-08-20 and 2026-09-14 pivots (10 touches, broken on a close \u2014 a warning until the prior swing goes) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests); $6.05 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests)."
+      },
+      {
+       "group": "Supports & levels",
+       "text": "Resistance above price: $7.08 (50-day average); $7.13 (pivot cluster \u2014 1 confirmed pivot in 1 separate test) \u2014 former support: it held price up from below, and now it caps price from above (polarity flips are a hypothesis to watch, not a law); $7.44 (pivot cluster \u2014 1 confirmed pivot in 1 separate test)."
+      },
+      {
+       "group": "Divergence",
+       "text": "Hidden Bullish: price made a higher low while RSI made a lower low \u2014 $3.19 on 2025-07-30 (RSI 54) vs $5.12 on 2026-07-29 (RSI 25); measured across the major swing pivots. Confirmed 2026-07-30 \u2014 RSI trendline break \u2014 RSI closed over the line above its highs. It formed at a tested level, so it counts as evidence."
+      },
+      {
+       "group": "Divergence",
+       "text": "RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.."
+      },
+      {
+       "group": "Moving averages",
+       "text": "20-day average $7.35 \u2014 price below it, average rising; 50-day average $7.08 \u2014 price below it, average rising; 200-day average $9.55 \u2014 price below it, average falling."
+      },
+      {
+       "group": "Volume",
+       "text": "Volume in the pattern's second half is running at 1.29x its first half \u2014 not contracting. the last 20 sessions average 1.46x the prior period's volume. no expansion-volume break in the last 10 sessions."
+      },
+      {
+       "group": "What to watch",
+       "text": "Watch the buy zone at $5.92\u2013$6.13 (2 independent items stack there); invalidation at $5.92 \u2014 a daily close below the buy zone's lower edge \u2014 the last confluence of support under price; the lower trendline break is only a warning while the prior swing holds \u2014 a close through that swing is what confirms it."
+      }
+     ],
+     "bullets": [
+      {
+       "group": "Pattern",
+       "text": "Ascending triangle [standard tier, forming] \u2014 flat resistance, rising support converging into it. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary. Price sits -32% of the way from the pattern's lower boundary to its upper one, and the boundaries converge around 2026-11-22."
+      },
+      {
+       "group": "Pattern",
+       "text": "Base rates for this pattern (Bulkowski's bull-market pattern samples (thepatternsite.com, re-verified 2026-10-15), 1,400 perfect trades): 17% failed to break even; the average rise was 43%; the full measured move was reached 70% of the time; price came back to retest the break 64% of the time. Bull-market history, quoted as context \u2014 not a forecast for this name."
+      },
+      {
+       "group": "Pattern",
+       "text": "Base rates for this pattern (Bulkowski's bull-market pattern samples (thepatternsite.com, re-verified 2026-10-15), 1,400 perfect trades): 38% failed to break even; the average decline was 13%; the full measured move was reached 44% of the time; price pulled back to the break 63% of the time. Bull-market history, quoted as context \u2014 not a forecast for this name."
+      },
+      {
+       "group": "Supports & levels",
+       "text": "Support under price: $6.54\u2013$6.75 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests); $7.54 (support trendline through the 2026-08-20 and 2026-09-14 pivots (10 touches, broken on a close \u2014 a warning until the prior swing goes) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests); $6.05 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests)."
+      },
+      {
+       "group": "Supports & levels",
+       "text": "Resistance above price: $7.08 (50-day average); $7.13 (pivot cluster \u2014 1 confirmed pivot in 1 separate test) \u2014 former support: it held price up from below, and now it caps price from above (polarity flips are a hypothesis to watch, not a law); $7.44 (pivot cluster \u2014 1 confirmed pivot in 1 separate test)."
+      },
+      {
+       "group": "Divergence",
+       "text": "Hidden Bullish: price made a higher low while RSI made a lower low \u2014 $3.19 on 2025-07-30 (RSI 54) vs $5.12 on 2026-07-29 (RSI 25); measured across the major swing pivots. Confirmed 2026-07-30 \u2014 RSI trendline break \u2014 RSI closed over the line above its highs. It formed at a tested level, so it counts as evidence."
+      },
+      {
+       "group": "Divergence",
+       "text": "RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.."
+      },
+      {
+       "group": "Moving averages",
+       "text": "20-day average $7.35 \u2014 price below it, average rising; 50-day average $7.08 \u2014 price below it, average rising; 200-day average $9.55 \u2014 price below it, average falling."
+      },
+      {
+       "group": "Volume",
+       "text": "Volume in the pattern's second half is running at 1.29x its first half \u2014 not contracting. the last 20 sessions average 1.46x the prior period's volume. no expansion-volume break in the last 10 sessions."
+      },
+      {
+       "group": "What to watch",
+       "text": "Watch the buy zone at $5.92\u2013$6.13 (2 independent items stack there); invalidation at $5.92 \u2014 a daily close below the buy zone's lower edge \u2014 the last confluence of support under price; the lower trendline break is only a warning while the prior swing holds \u2014 a close through that swing is what confirms it."
+      }
+     ],
+     "ta": {
+      "symbol": "CRML",
+      "as_of": "2026-10-15",
+      "bars": 320,
+      "pattern": {
+       "name": "Ascending triangle",
+       "detail": "flat resistance, rising support converging into it. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary",
+       "state": "intact",
+       "upper": {
+        "from": {
+         "t": "2026-06-15",
+         "price": 10.65
+        },
+        "through": {
+         "t": "2026-09-21",
+         "price": 9.64
+        },
+        "value_now": 9.39,
+        "slope_atr": -0.019,
+        "touches": 11,
+        "state": "holding",
+        "validation": "validated",
+        "internal": false,
+        "break": null
+       },
+       "lower": {
+        "from": {
+         "t": "2026-08-20",
+         "price": 5.8
+        },
+        "through": {
+         "t": "2026-09-14",
+         "price": 6.46
+        },
+        "value_now": 7.54,
+        "slope_atr": 0.086,
+        "touches": 10,
+        "state": "warning",
+        "validation": "validated",
+        "internal": true,
+        "break": {
+         "run_start": 314,
+         "swing_price": 6.06,
+         "swing_t": "2026-09-14",
+         "confirmed": false
+        }
+       },
+       "family": "ascending_triangle",
+       "tier": "standard",
+       "confirmation": "forming",
+       "base_rate": null,
+       "base_rates": {
+        "up": {
+         "failure_pct": 17,
+         "avg_move_pct": 43,
+         "retest_pct": 64,
+         "target_met_pct": 70,
+         "samples": 1400,
+         "rank": null,
+         "note": null
+        },
+        "down": {
+         "failure_pct": 38,
+         "avg_move_pct": -13,
+         "retest_pct": 63,
+         "target_met_pct": 44,
+         "samples": 1400,
+         "rank": null,
+         "note": null
+        }
+       },
+       "base_rate_line": null,
+       "target": null,
+       "retest_zone": null,
+       "breakout": null,
+       "key_level": null,
+       "also": null,
+       "gate_note": null,
+       "price_position_pct": -32.1,
+       "apex_session": "2026-11-22"
+      },
+      "scale": "log",
+      "structure": {
+       "sequence": "L $5.68 (2026-08-20) \u2192 H $8.56 (2026-08-26) \u2192 L $6.63 (2026-09-01) \u2192 L $6.06 (2026-09-14) \u2192 H $9.64 (2026-09-21)",
+       "label": "higher highs, lower lows"
+      },
+      "levels": [
+       {
+        "price": 7.08,
+        "kind": "resistance",
+        "sources": [
+         "50-day average"
+        ],
+        "distance_atr": -0.23
+       },
+       {
+        "price": 7.13,
+        "kind": "resistance",
+        "zone": {
+         "lo": 7.13,
+         "hi": 7.13
+        },
+        "polarity": "former_support",
+        "sources": [
+         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+        ],
+        "distance_atr": 0.32
+       },
+       {
+        "price": 6.64,
+        "kind": "support",
+        "zone": {
+         "lo": 6.54,
+         "hi": 6.75
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 3 confirmed pivots in 3 separate tests"
+        ],
+        "distance_atr": -0.55
+       },
+       {
+        "price": 7.44,
+        "kind": "resistance",
+        "zone": {
+         "lo": 7.44,
+         "hi": 7.44
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+        ],
+        "distance_atr": 0.87
+       },
+       {
+        "price": 7.54,
+        "kind": "support",
+        "sources": [
+         "support trendline through the 2026-08-20 and 2026-09-14 pivots (10 touches, broken on a close \u2014 a warning until the prior swing goes) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests"
+        ],
+        "distance_atr": 1.05
+       },
+       {
+        "price": 7.68,
+        "kind": "resistance",
+        "zone": {
+         "lo": 7.68,
+         "hi": 7.68
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+        ],
+        "distance_atr": 1.3
+       },
+       {
+        "price": 6.05,
+        "kind": "support",
+        "zone": {
+         "lo": 6.05,
+         "hi": 6.06
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
+        ],
+        "distance_atr": -1.61
+       },
+       {
+        "price": 5.68,
+        "kind": "support",
+        "zone": {
+         "lo": 5.68,
+         "hi": 5.68
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+        ],
+        "distance_atr": -2.27
+       }
+      ],
+      "divergences": [
+       {
+        "type": "hidden_bullish",
+        "pair": "major",
+        "p1": {
+         "t": "2025-07-30",
+         "price": 3.19,
+         "rsi": 54.1
+        },
+        "p2": {
+         "t": "2026-07-29",
+         "price": 5.115,
+         "rsi": 25.3
+        },
+        "detail": "price made a higher low while RSI made a lower low \u2014 $3.19 on 2025-07-30 (RSI 54) vs $5.12 on 2026-07-29 (RSI 25); measured across the major swing pivots",
+        "confirmation": {
+         "state": "confirmed",
+         "trigger": "RSI trendline break \u2014 RSI closed over the line above its highs",
+         "t": "2026-07-30"
+        },
+        "location": "at_level",
+        "weight": "evidence"
+       }
+      ],
+      "rsi_context": {
+       "regime": "bear",
+       "rsi": 48.4,
+       "range": "10-60",
+       "note": "RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime."
+      },
+      "wyckoff": null,
+      "ma_structure": {
+       "sma20": {
+        "value": 7.35,
+        "slope_pct_5d": 0.57,
+        "relation": "below",
+        "distance_atr": -0.72
+       },
+       "sma50": {
+        "value": 7.08,
+        "slope_pct_5d": 0.72,
+        "relation": "below",
+        "distance_atr": -0.23
+       },
+       "sma200": {
+        "value": 9.55,
+        "slope_pct_5d": -0.31,
+        "relation": "below",
+        "distance_atr": -4.65
+       },
+       "golden_cross": false,
+       "summary": "20-day average $7.35 \u2014 price below it, average rising; 50-day average $7.08 \u2014 price below it, average rising; 200-day average $9.55 \u2014 price below it, average falling"
+      },
+      "fib": {
+       "swing": {
+        "from_t": "2025-07-30",
+        "from_price": 3.19,
+        "to_t": "2025-10-14",
+        "to_price": 32.15,
+        "direction": "up"
+       },
+       "levels": {
+        "0.382": 21.09,
+        "0.500": 17.67,
+        "0.618": 14.25
+       }
+      },
+      "volume": {
+       "note": "volume in the pattern's second half is running at 1.29x its first half \u2014 not contracting. the last 20 sessions average 1.46x the prior period's volume. no expansion-volume break in the last 10 sessions.",
+       "ratio_20_vs_prior": 1.46,
+       "pattern_contraction": 1.29,
+       "expansion_events": []
+      },
+      "buy_zone": {
+       "lo": 5.92,
+       "hi": 6.13,
+       "confluence": 2,
+       "basis": [
+        "a pivot cluster at $6.05 tested in 2 separate episodes",
+        "the round number $6.00"
+       ]
+      },
+      "invalidation": {
+       "price": 5.92,
+       "basis": "a daily close below the buy zone's lower edge \u2014 the last confluence of support under price"
+      },
+      "facts": [
+       "Pattern: Ascending triangle \u2014 flat resistance, rising support converging into it. Price has closed through the pattern's lower boundary, but the prior swing still holds \u2014 the break is a warning, not yet a loss of the boundary.",
+       "Pattern grade: standard tier, forming.",
+       "Resistance line through $10.65 (2026-06-15) and $9.64 (2026-09-21); it stands at $9.39 today, 11 touches (validated by three or more tests), state holding.",
+       "Support line through $5.80 (2026-08-20) and $6.46 (2026-09-14); it stands at $7.54 today, 10 touches (validated by three or more tests), state warning. It is an internal line \u2014 drawn through the swings' closes, spike wicks ignored. Its break is a warning only \u2014 the prior swing has not broken with it.",
+       "Structure: higher highs, lower lows (L $5.68 (2026-08-20) \u2192 H $8.56 (2026-08-26) \u2192 L $6.63 (2026-09-01) \u2192 L $6.06 (2026-09-14) \u2192 H $9.64 (2026-09-21)).",
+       "Polarity flip: the shelf at $7.13 was built from swing lows \u2014 former support, now overhead. A flip is a hypothesis to watch, not a law.",
+       "Polarity flip: the shelf at $5.11 was built from swing highs \u2014 former resistance, now underfoot.",
+       "RSI divergence (hidden_bullish): price made a higher low while RSI made a lower low \u2014 $3.19 on 2025-07-30 (RSI 54) vs $5.12 on 2026-07-29 (RSI 25); measured across the major swing pivots. Confirmed 2026-07-30 by its RSI trendline break \u2014 RSI closed over the line above its highs; formed at a tested level \u2014 it counts as evidence.",
+       "RSI regime: RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
+       "Dominant swing: $3.19 on 2025-07-30 to $32.15 on 2025-10-14; retracements (confluence ingredients only, never standalone levels): 38.2% at $21.09, 50.0% at $17.67, 61.8% at $14.25.",
+       "Averages: 20-day average $7.35 \u2014 price below it, average rising; 50-day average $7.08 \u2014 price below it, average rising; 200-day average $9.55 \u2014 price below it, average falling.",
+       "Volume: volume in the pattern's second half is running at 1.29x its first half \u2014 not contracting. the last 20 sessions average 1.46x the prior period's volume. no expansion-volume break in the last 10 sessions.",
+       "Buy zone $5.92\u2013$6.13 (2 independent items stack there: a pivot cluster at $6.05 tested in 2 separate episodes; the round number $6.00).",
+       "Invalidation: a daily close below the buy zone's lower edge \u2014 the last confluence of support under price \u2014 $5.92."
+      ]
+     }
+    },
+    "method": {
+     "label": "How a setup earns its place",
+     "anchor": "setup-method",
+     "note": "The whole-picture method behind this brief, in plain English, sits under every setup brief on the terminal."
+    },
+    "chart_mobile": "setup-charts/CRML-2026-10-15-m.png"
+   }
+  },
+  {
+   "symbol": "SKYQ",
+   "rank": 2,
+   "score": 52,
+   "tier": "Watch",
+   "side": "long",
+   "status": "watch",
+   "sources": [
+    "ema_vwap",
+    "rsi_meanrev",
+    "tensor_swing"
+   ],
+   "families": [
+    "intraday pullback",
+    "Tensor pattern engine"
+   ],
+   "reasons": [
+    "Selected by 2 independent strategy families (3 strategies: intraday pullback, Tensor pattern engine) \u2014 independent agreement is the desk's core quality signal.",
+    "Tensor confirmed a swing today \u2014 the desk's pattern engine only flags confirmed, in-age swings, and Tensor evidence carries the most weight of any single signal in the desk's scoring method.",
+    "The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated.",
+    "It was also exited today under its strategy's own rules \u2014 the position is no longer held.",
+    "Price has reset at support \u2014 it is sitting on its 20-day average, not dangling mid-range.",
+    "No stop was recorded by the selecting strategy \u2014 treat size with care."
+   ],
+   "entry": 2.26,
+   "stop": null,
+   "target": null,
+   "last_close": 2.54,
+   "lector_rank": null,
+   "tensor": "confirmed_swing",
+   "primary_sleeve": "ema_vwap",
+   "brief": {
+    "symbol": "SKYQ",
+    "as_of": "2026-10-15",
+    "score": 52,
+    "tier": "Watch",
+    "status": "watch",
+    "chart": "setup-charts/SKYQ-2026-10-15.png",
+    "chart_gap": null,
+    "chart_panels": [
+     "daily",
+     "volume",
+     "rsi",
+     "hourly"
+    ],
+    "spark_closes": [
+     2.7,
+     2.59,
+     2.66,
+     2.67,
+     3.19,
+     3.11,
+     3.14,
+     3.23,
+     2.97,
+     2.89,
+     2.76,
+     2.67,
+     2.6,
+     2.54,
+     2.91,
+     2.67,
+     2.6,
+     2.5,
+     2.49,
+     2.54,
+     2.46,
+     2.54,
+     2.55,
+     2.45,
+     2.52,
+     2.45,
+     2.33,
+     2.28,
+     2.26,
+     2.54
+    ],
+    "levels": {
+     "entry": 2.26,
+     "stop": null,
+     "target": null,
+     "last_close": 2.54,
+     "ema20": 2.54,
+     "swing_low_20": 2.22,
+     "atr14": 0.158
+    },
+    "setup_story": [
+     "On Thursday, October 15, 2026, SKYQ was flagged by 3 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 52 of 100 \u2014 Watch tier on the desk's list.",
+     "The desk bought it at $2.26. It was exited later the same day under its own strategy's rules \u2014 the full setup played out inside one session, entry to exit.",
+     "The picture as a whole: price sits essentially on its 20-day average ($2.54) \u2014 reset, not extended; the recent swing low at $2.22 is intact below price; its 10-session move is +0.0% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.46."
+    ],
+    "lens_walkthrough": [
+     {
+      "key": "agreement",
+      "lens": "Independent strategy agreement",
+      "verdict": "Agree",
+      "evidence": "Selected by 2 independent strategy families (3 strategies: intraday pullback, Tensor pattern engine) \u2014 independent agreement is the desk's core quality signal."
+     },
+     {
+      "key": "tensor",
+      "lens": "Tensor pattern engine",
+      "verdict": "Confirmed",
+      "evidence": "Tensor confirmed a swing today \u2014 the desk's pattern engine only flags confirmed, in-age swings, and Tensor evidence carries the most weight of any single signal in the desk's scoring method."
+     },
+     {
+      "key": "lector",
+      "lens": "ChartsLector chart-review board",
+      "verdict": "No reading",
+      "evidence": "SKYQ is not in the chart-review board's ranked universe today, so this lens adds nothing either way. Context can support a setup; it never creates one."
+     },
+     {
+      "key": "commitment",
+      "lens": "The desk's own commitment",
+      "verdict": "Bought",
+      "evidence": "The desk actually bought it today \u2014 real fills rank above ideas that were only evaluated. It was also exited today under its strategy's own rules \u2014 the position is no longer held."
+     },
+     {
+      "key": "regime",
+      "lens": "Market regime",
+      "verdict": "Neutral",
+      "evidence": "Market regime: Chop. QQQ closed above its 50-day average (+0.2%) with a 20-day slope of +1.5% \u2014 the desk's regime rule reads chop. VIX closed at 16.5 (-2.4% on the day). QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
+     },
+     {
+      "key": "level",
+      "lens": "Reset at a price level",
+      "verdict": "At a level",
+      "evidence": "Price has reset at support \u2014 it is sitting on its 20-day average, not dangling mid-range."
+     },
+     {
+      "key": "geometry",
+      "lens": "Stop & risk geometry",
+      "verdict": "No recorded stop",
+      "evidence": "No stop was recorded by the selecting strategy \u2014 treat size with care."
+     },
+     {
+      "key": "invalidator_extension",
+      "lens": "Invalidator \u2014 extension & euphoria",
+      "verdict": "Pass",
+      "evidence": "10-session run is +0.0% \u2014 under the +15% stretch watch and far from the +25% spike the method rejects outright."
+     },
+     {
+      "key": "invalidator_structure",
+      "lens": "Invalidator \u2014 broken structure",
+      "verdict": "Pass",
+      "evidence": "Price closed at $2.54, above the recent swing low of $2.22 \u2014 the structure the setup rests on is intact."
+     },
+     {
+      "key": "chart_pattern",
+      "lens": "Chart pattern",
+      "verdict": "No clear pattern",
+      "evidence": "No clear pattern \u2014 the confirmed pivots do not form a named pattern right now. Structure: lower highs, higher lows. Divergence: price made a higher high while RSI made a lower high \u2014 $4.36 on 2026-03-18 (RSI 94) vs $19.45 on 2026-04-13 (RSI 84); measured across the major swing pivots. Buy zone $1.96\u2013$2.14 where 2 independent items stack."
+     }
+    ],
+    "invalidation": [
+     "A daily close below $2.22 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on.",
+     "No stop was recorded for this entry, so no recorded price level ends it mechanically \u2014 the selecting strategy's own exit rules (and position-size discipline) are the only guard.",
+     "A run of +25% or more over 10 sessions with no reset turns the name into an extended spike \u2014 the method retires those rather than chase them.",
+     "If fresh desk passes stop confirming it \u2014 the pattern engine and the selecting strategies go quiet \u2014 the setup leaves the list: only setups that are still true stay listed.",
+     "This instance already ended: the position was exited today under its strategy's own rules, so the brief stands as the record of the setup at detection time."
+    ],
+    "chart_read": {
+     "pattern": "No clear pattern",
+     "detail": "the confirmed pivots do not form a named pattern right now",
+     "tier": "context",
+     "confirmation": null,
+     "base_rate_line": null,
+     "meta": "No clear pattern \u00b7 context tier",
+     "level1": [
+      "No clear pattern [context tier] \u2014 the confirmed pivots do not form a named pattern right now. Price sits 108% of the way from the pattern's lower boundary to its upper one.",
+      "Nearest support: $2.50\u2013$2.52 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests).",
+      "Nearest resistance: $2.65 (pivot cluster \u2014 1 confirmed pivot in 1 separate test).",
+      "Invalidation: $1.01 \u2014 a daily close below the pattern's lower boundary \u2014 the support line through the 2026-07-28 and 2026-08-19 pivots."
+     ],
+     "level2": [
+      {
+       "group": "Pattern",
+       "text": "No clear pattern [context tier] \u2014 the confirmed pivots do not form a named pattern right now. Price sits 108% of the way from the pattern's lower boundary to its upper one."
+      },
+      {
+       "group": "Pattern",
+       "text": "Wyckoff base vocabulary fits the geometry: SC \u2192 AR \u2192 ST \u2192 spring (climax low $3.75, base top $19.45). No sign of strength yet, so no markup language \u2014 the base is still the story."
+      },
+      {
+       "group": "Supports & levels",
+       "text": "Support under price: $2.50\u2013$2.52 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests); $2.35 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $2.08\u2013$2.12 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests) \u2014 former resistance: it capped price from above, and now it holds price up from below (polarity flips are a hypothesis to watch, not a law)."
+      },
+      {
+       "group": "Supports & levels",
+       "text": "Resistance above price: $2.65 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $2.43 (resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests); $2.77 (50-day average)."
+      },
+      {
+       "group": "Divergence",
+       "text": "Regular Bearish: price made a higher high while RSI made a lower high \u2014 $4.36 on 2026-03-18 (RSI 94) vs $19.45 on 2026-04-13 (RSI 84); measured across the major swing pivots. Confirmed 2026-06-03 \u2014 RSI failure swing \u2014 RSI made a lower high and broke its own low. It formed at a tested level, so it counts as evidence."
+      },
+      {
+       "group": "Divergence",
+       "text": "RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.."
+      },
+      {
+       "group": "Moving averages",
+       "text": "20-day average $2.53 \u2014 price above it, average falling; 50-day average $2.77 \u2014 price below it, average falling; 200-day average $2.78 \u2014 price below it, average rising."
+      },
+      {
+       "group": "Volume",
+       "text": "The last 20 sessions average 0.53x the prior period's volume. no expansion-volume break in the last 10 sessions."
+      },
+      {
+       "group": "What to watch",
+       "text": "Watch the buy zone at $1.96\u2013$2.14 (2 independent items stack there); invalidation at $1.01 \u2014 a daily close below the pattern's lower boundary \u2014 the support line through the 2026-07-28 and 2026-08-19 pivots."
+      }
+     ],
+     "bullets": [
+      {
+       "group": "Pattern",
+       "text": "No clear pattern [context tier] \u2014 the confirmed pivots do not form a named pattern right now. Price sits 108% of the way from the pattern's lower boundary to its upper one."
+      },
+      {
+       "group": "Pattern",
+       "text": "Wyckoff base vocabulary fits the geometry: SC \u2192 AR \u2192 ST \u2192 spring (climax low $3.75, base top $19.45). No sign of strength yet, so no markup language \u2014 the base is still the story."
+      },
+      {
+       "group": "Supports & levels",
+       "text": "Support under price: $2.50\u2013$2.52 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests); $2.35 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $2.08\u2013$2.12 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests) \u2014 former resistance: it capped price from above, and now it holds price up from below (polarity flips are a hypothesis to watch, not a law)."
+      },
+      {
+       "group": "Supports & levels",
+       "text": "Resistance above price: $2.65 (pivot cluster \u2014 1 confirmed pivot in 1 separate test); $2.43 (resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests); $2.77 (50-day average)."
+      },
+      {
+       "group": "Divergence",
+       "text": "Regular Bearish: price made a higher high while RSI made a lower high \u2014 $4.36 on 2026-03-18 (RSI 94) vs $19.45 on 2026-04-13 (RSI 84); measured across the major swing pivots. Confirmed 2026-06-03 \u2014 RSI failure swing \u2014 RSI made a lower high and broke its own low. It formed at a tested level, so it counts as evidence."
+      },
+      {
+       "group": "Divergence",
+       "text": "RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.."
+      },
+      {
+       "group": "Moving averages",
+       "text": "20-day average $2.53 \u2014 price above it, average falling; 50-day average $2.77 \u2014 price below it, average falling; 200-day average $2.78 \u2014 price below it, average rising."
+      },
+      {
+       "group": "Volume",
+       "text": "The last 20 sessions average 0.53x the prior period's volume. no expansion-volume break in the last 10 sessions."
+      },
+      {
+       "group": "What to watch",
+       "text": "Watch the buy zone at $1.96\u2013$2.14 (2 independent items stack there); invalidation at $1.01 \u2014 a daily close below the pattern's lower boundary \u2014 the support line through the 2026-07-28 and 2026-08-19 pivots."
+      }
+     ],
+     "ta": {
+      "symbol": "SKYQ",
+      "as_of": "2026-10-15",
+      "bars": 320,
+      "pattern": {
+       "name": "No clear pattern",
+       "detail": "the confirmed pivots do not form a named pattern right now",
+       "state": "intact",
+       "upper": {
+        "from": {
+         "t": "2026-04-13",
+         "price": 11.62
+        },
+        "through": {
+         "t": "2026-09-24",
+         "price": 2.91
+        },
+        "value_now": 2.43,
+        "slope_atr": -0.141,
+        "touches": 9,
+        "state": "holding",
+        "validation": "validated",
+        "internal": true,
+        "break": null
+       },
+       "lower": {
+        "from": {
+         "t": "2026-07-28",
+         "price": 3.67
+        },
+        "through": {
+         "t": "2026-08-19",
+         "price": 2.54
+        },
+        "value_now": 1.01,
+        "slope_atr": -0.266,
+        "touches": 5,
+        "state": "holding",
+        "validation": "validated",
+        "internal": true,
+        "break": null
+       },
+       "family": null,
+       "tier": "context",
+       "confirmation": null,
+       "base_rate": null,
+       "base_rates": {},
+       "base_rate_line": null,
+       "target": null,
+       "retest_zone": null,
+       "breakout": null,
+       "key_level": null,
+       "also": null,
+       "gate_note": null,
+       "price_position_pct": 108.1,
+       "apex_session": null
+      },
+      "scale": "log",
+      "structure": {
+       "sequence": "H $2.97 (2026-09-01) \u2192 L $2.52 (2026-09-03) \u2192 H $3.80 (2026-09-10) \u2192 H $3.48 (2026-09-24) \u2192 H $2.65 (2026-10-08)",
+       "label": "lower highs, higher lows"
+      },
+      "levels": [
+       {
+        "price": 2.51,
+        "kind": "support",
+        "zone": {
+         "lo": 2.5,
+         "hi": 2.52
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
+        ],
+        "distance_atr": -0.13
+       },
+       {
+        "price": 2.65,
+        "kind": "resistance",
+        "zone": {
+         "lo": 2.65,
+         "hi": 2.65
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+        ],
+        "distance_atr": 0.46
+       },
+       {
+        "price": 2.43,
+        "kind": "resistance",
+        "sources": [
+         "resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests"
+        ],
+        "distance_atr": -0.46
+       },
+       {
+        "price": 2.35,
+        "kind": "support",
+        "zone": {
+         "lo": 2.35,
+         "hi": 2.35
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+        ],
+        "distance_atr": -0.79
+       },
+       {
+        "price": 2.77,
+        "kind": "resistance",
+        "sources": [
+         "50-day average"
+        ],
+        "distance_atr": -0.94
+       },
+       {
+        "price": 2.78,
+        "kind": "resistance",
+        "sources": [
+         "200-day average"
+        ],
+        "distance_atr": -1.01
+       },
+       {
+        "price": 2.97,
+        "kind": "resistance",
+        "zone": {
+         "lo": 2.97,
+         "hi": 2.97
+        },
+        "polarity": null,
+        "sources": [
+         "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+        ],
+        "distance_atr": 1.8
+       },
+       {
+        "price": 2.1,
+        "kind": "support",
+        "zone": {
+         "lo": 2.08,
+         "hi": 2.12
+        },
+        "polarity": "former_resistance",
+        "sources": [
+         "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
+        ],
+        "distance_atr": -1.84
+       }
+      ],
+      "divergences": [
+       {
+        "type": "regular_bearish",
+        "pair": "major",
+        "p1": {
+         "t": "2026-03-18",
+         "price": 4.36,
+         "rsi": 94.5
+        },
+        "p2": {
+         "t": "2026-04-13",
+         "price": 19.4499,
+         "rsi": 83.9
+        },
+        "detail": "price made a higher high while RSI made a lower high \u2014 $4.36 on 2026-03-18 (RSI 94) vs $19.45 on 2026-04-13 (RSI 84); measured across the major swing pivots",
+        "confirmation": {
+         "state": "confirmed",
+         "trigger": "RSI failure swing \u2014 RSI made a lower high and broke its own low",
+         "t": "2026-06-03"
+        },
+        "location": "at_level",
+        "weight": "evidence"
+       }
+      ],
+      "rsi_context": {
+       "regime": "bear",
+       "rsi": 47.9,
+       "range": "10-60",
+       "note": "RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime."
+      },
+      "wyckoff": {
+       "events": [
+        {
+         "kind": "SC",
+         "t": "2026-04-07",
+         "price": 3.75,
+         "label": "selling climax \u2014 capitulation volume and a wide range, with a recovery close within days"
+        },
+        {
+         "kind": "AR",
+         "t": "2026-04-08",
+         "price": 6.61,
+         "label": "automatic rally off the climax low"
+        },
+        {
+         "kind": "ST",
+         "t": "2026-05-07",
+         "price": 3.92,
+         "label": "secondary test of the climax low on diminished volume"
+        },
+        {
+         "kind": "spring",
+         "t": "2026-07-13",
+         "price": 3.57,
+         "validated": true,
+         "label": "spring \u2014 a brief dip under the base's support that closed back inside, validated by a higher-low test on lesser volume"
+        }
+       ],
+       "sc_i": 186,
+       "sc_low": 3.75,
+       "base_top": 19.45,
+       "base_sessions": 133,
+       "sos": false,
+       "sos_i": null,
+       "lps": false,
+       "markup": false
+      },
+      "ma_structure": {
+       "sma20": {
+        "value": 2.53,
+        "slope_pct_5d": -6.43,
+        "relation": "above",
+        "distance_atr": 0.03
+       },
+       "sma50": {
+        "value": 2.77,
+        "slope_pct_5d": -6.55,
+        "relation": "below",
+        "distance_atr": -0.94
+       },
+       "sma200": {
+        "value": 2.78,
+        "slope_pct_5d": 1.92,
+        "relation": "below",
+        "distance_atr": -1.01
+       },
+       "golden_cross": false,
+       "summary": "20-day average $2.53 \u2014 price above it, average falling; 50-day average $2.77 \u2014 price below it, average falling; 200-day average $2.78 \u2014 price below it, average rising"
+      },
+      "fib": {
+       "swing": {
+        "from_t": "2025-12-31",
+        "from_price": 0.2075,
+        "to_t": "2026-04-13",
+        "to_price": 19.4499,
+        "direction": "up"
+       },
+       "levels": {
+        "0.382": 12.1,
+        "0.500": 9.83,
+        "0.618": 7.56
+       }
+      },
+      "volume": {
+       "note": "the last 20 sessions average 0.53x the prior period's volume. no expansion-volume break in the last 10 sessions.",
+       "ratio_20_vs_prior": 0.53,
+       "pattern_contraction": null,
+       "expansion_events": []
+      },
+      "buy_zone": {
+       "lo": 1.96,
+       "hi": 2.14,
+       "confluence": 2,
+       "basis": [
+        "a pivot cluster at $2.10 tested in 2 separate episodes",
+        "the round number $2.00"
+       ]
+      },
+      "invalidation": {
+       "price": 1.01,
+       "basis": "a daily close below the pattern's lower boundary \u2014 the support line through the 2026-07-28 and 2026-08-19 pivots"
+      },
+      "facts": [
+       "Pattern: No clear pattern \u2014 the confirmed pivots do not form a named pattern right now.",
+       "Resistance line through $11.62 (2026-04-13) and $2.91 (2026-09-24); it stands at $2.43 today, 9 touches (validated by three or more tests), state holding. It is an internal line \u2014 drawn through the swings' closes, spike wicks ignored.",
+       "Support line through $3.67 (2026-07-28) and $2.54 (2026-08-19); it stands at $1.01 today, 5 touches (validated by three or more tests), state holding. It is an internal line \u2014 drawn through the swings' closes, spike wicks ignored.",
+       "Structure: lower highs, higher lows (H $2.97 (2026-09-01) \u2192 L $2.52 (2026-09-03) \u2192 H $3.80 (2026-09-10) \u2192 H $3.48 (2026-09-24) \u2192 H $2.65 (2026-10-08)).",
+       "Polarity flip: the shelf at $3.34 was built from swing lows \u2014 former support, now overhead. A flip is a hypothesis to watch, not a law.",
+       "Polarity flip: the shelf at $1.11 was built from swing highs \u2014 former resistance, now underfoot.",
+       "RSI divergence (regular_bearish): price made a higher high while RSI made a lower high \u2014 $4.36 on 2026-03-18 (RSI 94) vs $19.45 on 2026-04-13 (RSI 84); measured across the major swing pivots. Confirmed 2026-06-03 by its RSI failure swing \u2014 RSI made a lower high and broke its own low; formed at a tested level \u2014 it counts as evidence.",
+       "RSI regime: RSI is 48. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
+       "Wyckoff base vocabulary applies here: SC \u2192 AR \u2192 ST \u2192 spring (climax low $3.75, base top $19.45); markup language is not earned until a sign of strength is followed by a last point of support..",
+       "Dominant swing: $0.21 on 2025-12-31 to $19.45 on 2026-04-13; retracements (confluence ingredients only, never standalone levels): 38.2% at $12.10, 50.0% at $9.83, 61.8% at $7.56.",
+       "Averages: 20-day average $2.53 \u2014 price above it, average falling; 50-day average $2.77 \u2014 price below it, average falling; 200-day average $2.78 \u2014 price below it, average rising.",
+       "Volume: the last 20 sessions average 0.53x the prior period's volume. no expansion-volume break in the last 10 sessions.",
+       "Buy zone $1.96\u2013$2.14 (2 independent items stack there: a pivot cluster at $2.10 tested in 2 separate episodes; the round number $2.00).",
+       "Invalidation: a daily close below the pattern's lower boundary \u2014 the support line through the 2026-07-28 and 2026-08-19 pivots \u2014 $1.01."
+      ]
+     }
+    },
+    "method": {
+     "label": "How a setup earns its place",
+     "anchor": "setup-method",
+     "note": "The whole-picture method behind this brief, in plain English, sits under every setup brief on the terminal."
+    },
+    "chart_mobile": "setup-charts/SKYQ-2026-10-15-m.png"
+   }
+  }
+ ],
  "market_context": {
   "regime": "Chop",
   "regime_evidence": [
@@ -736,11 +1838,66 @@
    "day_pct": -0.13,
    "vs_sma50_pct": 0.16
   },
-  "fear_day": false
+  "fear_day": false,
+  "charts": {
+   "spy": "setup-charts/SPY-2026-10-15.png",
+   "qqq": "setup-charts/QQQ-2026-10-15.png"
+  }
  },
- "lector_top": [],
- "notes": [
-  "ChartsLector ranks were not available \u2014 the ChartsLector factor is absent from every score."
+ "lector_top": [
+  {
+   "symbol": "NOW",
+   "score": 93.3,
+   "rank": 1
+  },
+  {
+   "symbol": "CRM",
+   "score": 87.7,
+   "rank": 2
+  },
+  {
+   "symbol": "OKTA",
+   "score": 78.3,
+   "rank": 3
+  },
+  {
+   "symbol": "NTAP",
+   "score": 77.3,
+   "rank": 4
+  },
+  {
+   "symbol": "ADI",
+   "score": 76.1,
+   "rank": 5
+  },
+  {
+   "symbol": "MSTR",
+   "score": 70.4,
+   "rank": 6
+  },
+  {
+   "symbol": "SNOW",
+   "score": 67.0,
+   "rank": 7
+  },
+  {
+   "symbol": "CRWD",
+   "score": 64.0,
+   "rank": 8
+  },
+  {
+   "symbol": "AMD",
+   "score": 63.2,
+   "rank": 9
+  },
+  {
+   "symbol": "PANW",
+   "score": 60.3,
+   "rank": 10
+  }
  ],
- "setups_as_of": null
+ "notes": [
+  "ChartsLector ranks as of 2026-10-15 (0 session(s) before this curator run; weekday count)."
+ ],
+ "setups_as_of": "2026-10-15"
 }
