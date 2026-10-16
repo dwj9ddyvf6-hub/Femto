@@ -1397,6 +1397,19 @@
               +'<p class="lens-ev">'+esc(e.evidence)+'</p></div>';
           }).join('')+'</div></div>';
       }
+      /* Elliott wave section (Elliott Program): the brief's wave
+         read stated straight — headline, then the count's own
+         lines (invalidation, target zones, guideline fit). */
+      var ewv=(b.elliott&&typeof b.elliott==='object')?b.elliott:null;
+      if(ewv&&ewv.headline){
+        var ewHead=ewv.headline.replace(/^Elliott wave: /,'');
+        html+='<div class="setup-detail-sec elliott-read"><h3>Elliott wave</h3>'
+          +'<p class="cr-pattern">'+esc(ewHead.charAt(0).toUpperCase()+ewHead.slice(1))+'</p>'
+          +((ewv.lines||[]).length?'<ul class="cr-bullets">'
+            +ewv.lines.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')
+            +'</ul>':'')
+          +'</div>';
+      }
     }
     html+='<div class="setup-detail-sec"><h3>The levels</h3><div class="setup-levels">'
       +cell('Entry',lv.entry)+cell(s.instrument&&s.instrument.type==='options_package'?'Thesis level (reference)':'Stop',lv.stop)+cell('Target',lv.target)
