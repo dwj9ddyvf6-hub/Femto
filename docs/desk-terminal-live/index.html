@@ -1555,10 +1555,10 @@
           return fetch(PUSH_CONFIG.relayUrl,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({subscription:sub.toJSON(),pairing_code:code})});
         }).then(function(){
           btn.textContent='Alerts on';
-          alertsNote('Alerts are on. Your pairing code is '+code+' \u2014 Midna will finish the connection and send a test alert shortly.');
+          alertsNote('Alerts are on. Your pairing code is '+code+' \u2014 the desk will finish the connection and send a test alert shortly.');
         }).catch(function(){
           btn.textContent='Alerts on';
-          alertsNote('Alerts are set up on this device \u2014 your pairing code is '+code+'. Tell Midna \u2018alerts are on\u2019 and she\u2019ll finish the connection.');
+          alertsNote('Alerts are set up on this device \u2014 your pairing code is '+code+'. Tell the desk \u2018alerts are on\u2019 and it will finish the connection.');
         });
       }).catch(function(){
         btn.disabled=false;
