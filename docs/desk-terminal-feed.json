@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-16T08:18:45.875384+00:00",
- "generated_at_et": "2026-10-16T04:18:45.875384-04:00",
+ "generated_at_utc": "2026-10-16T08:19:40.048830+00:00",
+ "generated_at_et": "2026-10-16T04:19:40.048830-04:00",
  "account": {
-  "equity": "109542.43",
+  "equity": "109535.54",
   "cash": "-241819.77",
   "buying_power": "0",
   "status": "ACTIVE",
@@ -136,10 +136,10 @@
    "symbol": "MU",
    "qty": 16.0,
    "avg_entry": 871.6725,
-   "current": 918.99,
-   "unrealized_pl": 757.08,
+   "current": 918.0,
+   "unrealized_pl": 741.24,
    "unrealized_pl_pct": null,
-   "market_value": "14703.84",
+   "market_value": "14688",
    "side": "long",
    "sleeve": "red_day_reversal"
   },
@@ -158,10 +158,10 @@
    "symbol": "NBIS",
    "qty": 32.0,
    "avg_entry": 171.461563,
-   "current": 185.0201,
-   "unrealized_pl": 433.873184,
+   "current": 185.3,
+   "unrealized_pl": 442.829984,
    "unrealized_pl_pct": null,
-   "market_value": "5920.6432",
+   "market_value": "5929.6",
    "side": "long",
    "sleeve": "rsi_meanrev"
   },
@@ -679,15 +679,15 @@
   ]
  },
  "exposure": {
-  "gross_notional": 351392.19659999997,
-  "equity": 109542.43,
+  "gross_notional": 351385.3133999999,
+  "equity": 109535.54,
   "gross_pct": 320.8,
   "position_count": 24,
   "by_sleeve": {
    "momentum": 22843.25,
-   "rsi_meanrev": 49068.2872,
+   "rsi_meanrev": 49077.244,
    "donchian": 23710.44,
-   "red_day_reversal": 27376.2244,
+   "red_day_reversal": 27360.384400000003,
    "momentum_rotation": 59664.32,
    "aurelia_ndx": 155368.835,
    "phase_daily": 12506.84,
@@ -696,7 +696,7 @@
   }
  },
  "ledger_counts": {
-  "total": 4786,
+  "total": 4787,
   "by_kind": {
    "journal": 53,
    "fill": 1716,
@@ -709,7 +709,7 @@
    "entry_rejected": 1024,
    "exit_skipped": 85,
    "intent_rejected": 184,
-   "slice_sync": 172,
+   "slice_sync": 173,
    "exit_submitted": 10,
    "pass_watchdog": 5
   }
@@ -802,7 +802,7 @@
     "setup_story": [
      "On Friday, October 16, 2026, CRML was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 44 of 100 \u2014 Watch tier on the desk's list.",
      "No entry was taken \u2014 the strategies flagged the name without buying, so this is a watch, not a holding. Last close $6.95.",
-     "The picture as a whole: price sits essentially on its 20-day average ($7.05) \u2014 reset, not extended; the recent swing low at $6.16 is intact below price; its 10-session move is -3.5% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.04."
+     "The picture as a whole: price sits essentially on its 20-day average ($7.05) \u2014 reset, not extended; the recent swing low at $6.16 is intact below price; its 10-session move is -3.5% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.02."
     ],
     "lens_walkthrough": [
      {
@@ -833,7 +833,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Chop. QQQ closed above its 50-day average (+0.2%) with a 20-day slope of +1.5% \u2014 the desk's regime rule reads chop. VIX closed at 16.0 (-2.6% on the day). QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
+      "evidence": "Market regime: Chop. QQQ closed above its 50-day average (+0.2%) with a 20-day slope of +1.5% \u2014 the desk's regime rule reads chop. VIX closed at 16.0 (-2.7% on the day). QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
      },
      {
       "key": "level",
@@ -1920,7 +1920,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 16.0 (-2.6% on the day) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 16.0 (-2.7% on the day) \u2014 no fear day by the desk's rule.",
        "stance": 1,
        "salience": 1.5,
        "disposition": "considered",
@@ -2311,7 +2311,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 16.0 (-2.6% on the day) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 16.0 (-2.7% on the day) \u2014 no fear day by the desk's rule.",
        "stance": 1,
        "salience": 1.5,
        "disposition": "considered",
@@ -2500,7 +2500,7 @@
     "setup_story": [
      "On Friday, October 16, 2026, SKYQ was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 44 of 100 \u2014 Watch tier on the desk's list.",
      "No entry was taken \u2014 the strategies flagged the name without buying, so this is a watch, not a holding. Last close $2.54.",
-     "The picture as a whole: price sits essentially on its 20-day average ($2.54) \u2014 reset, not extended; the recent swing low at $2.22 is intact below price; its 10-session move is +0.0% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.04."
+     "The picture as a whole: price sits essentially on its 20-day average ($2.54) \u2014 reset, not extended; the recent swing low at $2.22 is intact below price; its 10-session move is +0.0% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.02."
     ],
     "lens_walkthrough": [
      {
@@ -2531,7 +2531,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Chop. QQQ closed above its 50-day average (+0.2%) with a 20-day slope of +1.5% \u2014 the desk's regime rule reads chop. VIX closed at 16.0 (-2.6% on the day). QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
+      "evidence": "Market regime: Chop. QQQ closed above its 50-day average (+0.2%) with a 20-day slope of +1.5% \u2014 the desk's regime rule reads chop. VIX closed at 16.0 (-2.7% on the day). QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
      },
      {
       "key": "level",
@@ -3568,7 +3568,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 16.0 (-2.6% on the day) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 16.0 (-2.7% on the day) \u2014 no fear day by the desk's rule.",
        "stance": 1,
        "salience": 1.5,
        "disposition": "considered",
@@ -3941,7 +3941,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 16.0 (-2.6% on the day) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 16.0 (-2.7% on the day) \u2014 no fear day by the desk's rule.",
        "stance": 1,
        "salience": 1.5,
        "disposition": "considered",
@@ -4040,12 +4040,12 @@
   "regime": "Chop",
   "regime_evidence": [
    "QQQ closed above its 50-day average (+0.2%) with a 20-day slope of +1.5% \u2014 the desk's regime rule reads chop.",
-   "VIX closed at 16.0 (-2.6% on the day).",
+   "VIX closed at 16.0 (-2.7% on the day).",
    "QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
   ],
   "vix": {
-   "close": 16.04,
-   "change_pct": -2.6,
+   "close": 16.02,
+   "change_pct": -2.7,
    "as_of": "2026-10-16"
   },
   "spy": {
