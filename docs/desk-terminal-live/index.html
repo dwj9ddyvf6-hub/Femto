@@ -292,6 +292,12 @@
     .setup-reasons li{margin:2px 0}
     .setup-sources{margin:0;font-size:12.5px;color:var(--muted)}
     .setup-actions{display:flex;gap:8px;margin-top:auto}
+    .completed-head{margin:22px 0 4px;font-size:15px;letter-spacing:.02em}
+    .completed-sub{margin:0 0 10px;font-size:13px;color:var(--muted);max-width:76ch;line-height:1.5}
+    .completed-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 2px;border-top:1px solid var(--line);font-size:14px}
+    .completed-sym{font-weight:700;font-size:15px}
+    .completed-facts{font-family:var(--mono);font-size:13.5px;font-variant-numeric:tabular-nums}
+    .completed-row .muted{margin-left:auto}
     .flash{animation:setupflash 2.2s ease-out}
     @keyframes setupflash{0%{box-shadow:0 0 0 3px var(--gold)}100%{box-shadow:0 0 0 0 rgba(189,142,47,0)}}
     .alerts-box{text-align:right;max-width:300px}
@@ -401,6 +407,11 @@
         <div class="panel-body">
           <div class="setups-grid" id="setupsGrid"></div>
           <p class="footnote" id="setupsNotes"></p>
+          <div id="setupsCompleted" hidden>
+            <h3 class="completed-head">Closed today</h3>
+            <p class="completed-sub">These setups were bought and sold again today, so each trade is finished. They stay on the page for the day so the record is complete &mdash; they are not current setups.</p>
+            <div id="completedList"></div>
+          </div>
         </div>
       </section>
       <section class="panel" id="marketPanel" hidden>
@@ -904,10 +915,11 @@
   function renderSetups(d){
     var panel=$('setupsPanel'); if(!panel)return;
     var setups=Array.isArray(d.setups)?d.setups:[];
-    if(!setups.length){ panel.hidden=true; return; }
+    var completed=Array.isArray(d.setups_completed)?d.setups_completed:[];
+    if(!setups.length&&!completed.length){ panel.hidden=true; return; }
     panel.hidden=false;
     setups.forEach(function(s){ if(s&&s.symbol)SETUPS[s.symbol]=s; });
-    var grid=$('setupsGrid'); if(!grid)return;
+    var grid=$('setupsGrid'); if(grid){
     grid.innerHTML=setups.map(function(s){
       var names=(s.sources||[]).map(function(k){return (ALGO[k]||{}).name||k;});
       var reasons=(s.reasons||[]).slice(0,3).map(function(r){return '<li>'+esc(r)+'</li>';}).join('');
@@ -947,7 +959,31 @@
         openSetupDetail(card.id.replace(/^setup-/,''));
       });
     });
+    }
+    renderCompleted(completed);
     applyHash();
+  }
+  // Today's completed round trips: a record of the day, rendered
+  // under the board. Absent or empty in the feed -> the section
+  // stays hidden and the page renders exactly as before.
+  function renderCompleted(list){
+    var box=$('setupsCompleted'); if(!box)return;
+    var el=$('completedList'); if(!el)return;
+    if(!list.length){ box.hidden=true; return; }
+    box.hidden=false;
+    el.innerHTML=list.map(function(c){
+      var prices=(c.exit_prices||[]).filter(function(p){return p!=null;});
+      var facts=(c.entry!=null?'In '+money(c.entry):'')
+        +(prices.length?' &rarr; out '+prices.map(function(p){return money(p);}).join(', '):'');
+      var outcome=c.exit_target?'Reached its profit target':(c.exit_stop?'Stopped out':'Exited today');
+      var pill=c.exit_target?'good':(c.exit_stop?'bad':'info');
+      return '<div class="completed-row">'
+        +'<span class="completed-sym">'+esc(c.symbol)+'</span>'
+        +(facts?'<span class="completed-facts">'+facts+'</span>':'')
+        +'<span class="pill '+pill+'">'+outcome+'</span>'
+        +'<span class="muted">Score '+esc(c.score)+' &middot; '+esc(c.tier)+'</span>'
+        +'</div>';
+    }).join('');
   }
   // --- Setup detail view: the full brief behind one setup ---
   var VGOOD={'Agree':1,'Confirmed':1,'Supportive':1,'Bought':1,'At a level':1,'Sound':1,'Pass':1};
