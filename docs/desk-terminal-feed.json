@@ -1,9 +1,9 @@
 {
- "generated_at_utc": "2026-10-16T07:52:22.769535+00:00",
- "generated_at_et": "2026-10-16T03:52:22.769535-04:00",
+ "generated_at_utc": "2026-10-16T07:58:26.503868+00:00",
+ "generated_at_et": "2026-10-16T03:58:26.503868-04:00",
  "account": {
-  "equity": "109669.89",
-  "cash": "-241818.4",
+  "equity": "109605.01",
+  "cash": "-241819.77",
   "buying_power": "0",
   "status": "ACTIVE",
   "daytrade_count": null,
@@ -125,10 +125,10 @@
    "symbol": "LITE",
    "qty": 28.0,
    "avg_entry": 825.279286,
-   "current": 880.29,
-   "unrealized_pl": 1540.299992,
+   "current": 879.25,
+   "unrealized_pl": 1511.179992,
    "unrealized_pl_pct": null,
-   "market_value": "24648.12",
+   "market_value": "24619",
    "side": "long",
    "sleeve": "rsi_meanrev"
   },
@@ -136,10 +136,10 @@
    "symbol": "MU",
    "qty": 16.0,
    "avg_entry": 871.6725,
-   "current": 920.0,
-   "unrealized_pl": 773.24,
+   "current": 920.8,
+   "unrealized_pl": 786.04,
    "unrealized_pl_pct": null,
-   "market_value": "14720",
+   "market_value": "14732.8",
    "side": "long",
    "sleeve": "red_day_reversal"
   },
@@ -147,10 +147,10 @@
    "symbol": "MXL",
    "qty": 38.0,
    "avg_entry": 73.351316,
-   "current": 78.17,
-   "unrealized_pl": 183.109992,
+   "current": 77.5,
+   "unrealized_pl": 157.649992,
    "unrealized_pl_pct": null,
-   "market_value": "2970.46",
+   "market_value": "2945",
    "side": "long",
    "sleeve": "momentum"
   },
@@ -158,10 +158,10 @@
    "symbol": "NBIS",
    "qty": 32.0,
    "avg_entry": 171.461563,
-   "current": 187.07,
-   "unrealized_pl": 499.469984,
+   "current": 186.87,
+   "unrealized_pl": 493.069984,
    "unrealized_pl_pct": null,
-   "market_value": "5986.24",
+   "market_value": "5979.84",
    "side": "long",
    "sleeve": "rsi_meanrev"
   },
@@ -180,10 +180,10 @@
    "symbol": "P",
    "qty": 21.0,
    "avg_entry": 134.11,
-   "current": 134.0,
-   "unrealized_pl": -2.31,
+   "current": 133.27,
+   "unrealized_pl": -17.64,
    "unrealized_pl_pct": null,
-   "market_value": "2814",
+   "market_value": "2798.67",
    "side": "long",
    "sleeve": "momentum"
   },
@@ -679,15 +679,15 @@
   ]
  },
  "exposure": {
-  "gross_notional": 351518.29000000004,
-  "equity": 109669.89,
-  "gross_pct": 320.5,
+  "gross_notional": 351454.77999999997,
+  "equity": 109605.01,
+  "gross_pct": 320.7,
   "position_count": 24,
   "by_sleeve": {
-   "momentum": 22835.39,
-   "rsi_meanrev": 49234.619999999995,
+   "momentum": 22794.6,
+   "rsi_meanrev": 49199.100000000006,
    "donchian": 23710.44,
-   "red_day_reversal": 27408.0,
+   "red_day_reversal": 27420.8,
    "momentum_rotation": 59608.65,
    "aurelia_ndx": 155360.35,
    "phase_daily": 12506.84,
@@ -696,20 +696,20 @@
   }
  },
  "ledger_counts": {
-  "total": 4659,
+  "total": 4688,
   "by_kind": {
    "journal": 53,
    "fill": 1716,
    "outcome": 9,
    "import_position": 6,
-   "tick": 193,
+   "tick": 194,
    "nightly_reconcile": 52,
    "import_open_order": 51,
-   "signal_intent": 1165,
-   "entry_rejected": 967,
+   "signal_intent": 1178,
+   "entry_rejected": 980,
    "exit_skipped": 85,
    "intent_rejected": 184,
-   "slice_sync": 163,
+   "slice_sync": 165,
    "exit_submitted": 10,
    "pass_watchdog": 5
   }
@@ -802,7 +802,7 @@
     "setup_story": [
      "On Friday, October 16, 2026, CRML was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 44 of 100 \u2014 Watch tier on the desk's list.",
      "No entry was taken \u2014 the strategies flagged the name without buying, so this is a watch, not a holding. Last close $6.95.",
-     "The picture as a whole: price sits essentially on its 20-day average ($7.05) \u2014 reset, not extended; the recent swing low at $6.16 is intact below price; its 10-session move is -3.5% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.03."
+     "The picture as a whole: price sits essentially on its 20-day average ($7.05) \u2014 reset, not extended; the recent swing low at $6.16 is intact below price; its 10-session move is -3.5% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.04."
     ],
     "lens_walkthrough": [
      {
@@ -2500,7 +2500,7 @@
     "setup_story": [
      "On Friday, October 16, 2026, SKYQ was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and Tensor pattern engine) and scored 44 of 100 \u2014 Watch tier on the desk's list.",
      "No entry was taken \u2014 the strategies flagged the name without buying, so this is a watch, not a holding. Last close $2.54.",
-     "The picture as a whole: price sits essentially on its 20-day average ($2.54) \u2014 reset, not extended; the recent swing low at $2.22 is intact below price; its 10-session move is +0.0% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.03."
+     "The picture as a whole: price sits essentially on its 20-day average ($2.54) \u2014 reset, not extended; the recent swing low at $2.22 is intact below price; its 10-session move is +0.0% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 16.04."
     ],
     "lens_walkthrough": [
      {
@@ -4044,7 +4044,7 @@
    "QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
   ],
   "vix": {
-   "close": 16.03,
+   "close": 16.04,
    "change_pct": -2.6,
    "as_of": "2026-10-16"
   },
