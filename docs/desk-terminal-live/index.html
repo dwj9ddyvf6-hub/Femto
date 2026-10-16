@@ -435,7 +435,7 @@
 
     <section class="tabpanel" role="tabpanel" id="pulse" aria-labelledby="tab-pulse">
       <section class="panel" id="setupsPanel" hidden>
-        <div class="panel-head tint-green"><div><h2>Best setups</h2><p>The desk's strongest current buy setups, ranked by how many independent strategies agree on them, whether the desk's pattern engine confirms them, and how clean the entry looks. Every point of every score is explained on its card.</p></div>
+        <div class="panel-head tint-green"><div><h2>Best setups</h2><p>The desk's strongest current buy setups &mdash; names the desk has not entered yet, still intact and still in range, ranked by how many independent strategies agree on them, whether the desk's pattern engine confirms them, and how clean the entry looks. A name leaves this list the moment the desk enters it (it becomes a position, in the Position book below), its setup breaks, it runs too far, or its plan expires &mdash; and every departure is listed under the board with its reason. Every point of every score is explained on its card.</p></div>
           <div class="alerts-box">
             <button type="button" class="tool-btn alerts-btn" id="alertsBtn">Enable alerts</button>
             <p class="alerts-note" id="alertsNote" role="status" aria-live="polite"></p>
@@ -444,10 +444,10 @@
         <div class="panel-body">
           <div class="setups-grid" id="setupsGrid"></div>
           <p class="footnote" id="setupsNotes"></p>
-          <div id="setupsCompleted" hidden>
-            <h3 class="completed-head">Closed today</h3>
-            <p class="completed-sub">These setups were bought and sold again today, so each trade is finished. They stay on the page for the day so the record is complete &mdash; they are not current setups.</p>
-            <div id="completedList"></div>
+          <div id="setupsDepartures" hidden>
+            <h3 class="completed-head">Recently closed</h3>
+            <p class="completed-sub">Every name that leaves this list, with the reason and the outcome &mdash; kept here for at least five trading days, and permanently in the desk's record, so nothing quietly disappears.</p>
+            <div id="departuresList"></div>
           </div>
         </div>
       </section>
@@ -511,6 +511,16 @@
         <div class="panel-head tint-green"><div><h2>Position book</h2><p id="positionCount"></p></div><span class="pill info" id="brokerPill">Live from the broker</span></div>
         <p class="pos-legend">Each option contract covers 100 shares, so an option priced at $1.11 is worth $111 per contract. Rows grouped under one heading are parts of a single trade, with a combined total underneath. Words like call, put and strike are explained in the “Words we use” list on the Strategies tab.</p>
         <div class="table-wrap" id="positions"><p class="loading-note panel-body">Loading the latest figures…</p></div>
+        <div id="enteredPlans" hidden>
+          <h3 class="completed-head">Entered today &mdash; the plans these positions are managed by</h3>
+          <p class="completed-sub">These names were on the Best Setups list until the desk entered them. Entering a name moves it here: it is a position now, not a setup.</p>
+          <div id="enteredList"></div>
+        </div>
+        <div id="setupsCompleted" hidden>
+          <h3 class="completed-head">Closed today</h3>
+          <p class="completed-sub">These trades were entered and closed again today, so each one is finished. They are results, not current setups &mdash; they are listed here with the positions for the day's record.</p>
+          <div id="completedList"></div>
+        </div>
       </section>
     </section>
 
@@ -588,7 +598,10 @@
   function renderFeed(d){
     $('feedUnavailable').hidden=true;
     var bp2=$('brokerPill'); if(bp2)bp2.hidden=false;
-    $('snapshotTime').textContent=fmtTime(d.generated_at_utc);
+    var genTs=Date.parse(d.generated_at_utc||'');
+    $('snapshotTime').textContent=(genTs&&(Date.now()-genTs)>7.5*60000)
+      ?'Delayed \u2014 last updated '+fmtTime(d.generated_at_utc)
+      :fmtTime(d.generated_at_utc);
     $('statusbar').innerHTML='<span class="badge good"><span class="dot"></span>Paper account</span>'
       +'<span class="badge"><span class="dot"></span>'+esc(((d.desk||{}).sleeve_order||[]).length)+' strategies</span>'
       +'<span class="badge">Paper only</span>'
@@ -974,6 +987,7 @@
     }
     if(p.stop&&p.stop.price!=null)bits.push('Stop '+money(p.stop.price));
     (p.targets||[]).forEach(function(t){bits.push(t.label+' '+money(t.price));});
+    if(p.risk_reward&&p.risk_reward.ratio!=null)bits.push('Reward '+p.risk_reward.ratio+'\u00d7 the risk');
     if(p.invalidation&&p.invalidation.price!=null)
       bits.push('Wrong if it closes below '+money(p.invalidation.price));
     if(!bits.length)return p.entry_note||'';
@@ -998,26 +1012,43 @@
           +(p.entry_zone.hi!==p.entry_zone.lo?'\u2013'+money(p.entry_zone.hi):''),
         p.entry_zone.basis||'');
     }
-    if(p.stop){
+    if(p.spread_rows&&p.spread_rows.length){
+      // an options spread: no "Stop" cell — the thesis row
+      // (underlying, reference only) and the executable spread
+      // exit rule render as their own lines below the cells
+    } else if(p.stop){
       cells+=cellS('Stop',
         p.stop.price!=null?money(p.stop.price):'\u2014',
         p.stop.structure||'');
     }
     (p.targets||[]).forEach(function(t){
-      cells+=cellS('Target '+t.label, money(t.price), t.basis||'');
+      cells+=cellS('Profit objective '+t.label, money(t.price), t.basis||'');
     });
     if(p.invalidation&&p.invalidation.price!=null){
       cells+=cellS('Ends if it closes below',
         money(p.invalidation.price),
         'the one line that ends this setup');
     }
+    var spreadHtml='';
+    (p.spread_rows||[]).forEach(function(r){
+      spreadHtml+='<p class="plan-why"><b>'+esc(r.label)+':</b> '+esc(r.text||'')+'</p>';
+    });
     var meta=[];
+    if(p.as_of_text)meta.push(p.as_of_text);
+    if(p.risk_reward&&p.risk_reward.text)meta.push(p.risk_reward.text);
+    if(p.risk_reward&&p.risk_reward.justification)meta.push(p.risk_reward.justification);
+    if(p.targets_note)meta.push(p.targets_note);
     if(p.conviction&&p.conviction.text)meta.push(p.conviction.text);
     if(p.valid&&p.valid.text)meta.push(p.valid.text);
+    if(p.instrument&&p.instrument.help)meta.push(p.instrument.help);
     return '<div class="setup-detail-sec plan-block"><h3>The plan</h3>'
+      +(b.stale?'<p class="plan-why"><b>Stale — awaiting refresh.</b> This plan is from an earlier scoring pass.</p>':'')
       +'<p class="plan-action">'+esc(p.action||'')+'</p>'
       +(p.why?'<p class="plan-why">'+esc(p.why)+'</p>':'')
+      +(p.instrument&&p.instrument.text?'<p class="plan-why">'+esc(p.instrument.text)+'</p>':'')
       +(cells?'<div class="plan-cells">'+cells+'</div>':'')
+      +spreadHtml
+      +(p.risk_reward&&p.risk_reward.badge?'<p class="plan-why"><b>'+esc(p.risk_reward.badge)+'.</b></p>':'')
       +(p.entry_note?'<p class="plan-why">'+esc(p.entry_note)+'</p>':'')
       +(meta.length?'<p class="plan-meta">'+esc(meta.join(' '))+'</p>':'')
       +'</div>';
@@ -1026,11 +1057,21 @@
     var panel=$('setupsPanel'); if(!panel)return;
     var setups=Array.isArray(d.setups)?d.setups:[];
     var completed=Array.isArray(d.setups_completed)?d.setups_completed:[];
-    if(!setups.length&&!completed.length){ panel.hidden=true; return; }
-    panel.hidden=false;
+    var entered=Array.isArray(d.entered_setups)?d.entered_setups:[];
+    var departures=Array.isArray(d.departures)?d.departures:[];
     setups.forEach(function(s){ if(s&&s.symbol)SETUPS[s.symbol]=s; });
+    entered.forEach(function(s){ if(s&&s.symbol)SETUPS[s.symbol]=s; });
+    // The position-surface sections (entered plans, closed today)
+    // live in the Position book panel and render even when the
+    // board itself is empty; the departures strip renders with
+    // the board panel below.
+    renderEntered(entered);
+    renderCompleted(completed);
+    renderDepartures(departures);
+    if(!setups.length&&!departures.length){ panel.hidden=true; return; }
+    panel.hidden=false;
     var grid=$('setupsGrid'); if(grid){
-    grid.innerHTML=setups.map(function(s){
+    grid.innerHTML=setups.length?setups.map(function(s){
       var names=(s.sources||[]).map(function(k){return (ALGO[k]||{}).name||k;});
       var reasons=(s.reasons||[]).slice(0,3).map(function(r){return '<li>'+esc(r)+'</li>';}).join('');
       function lvl(label,v){return v==null?'':'<div><span>'+label+'</span><b>'+money(v)+'</b></div>';}
@@ -1047,7 +1088,7 @@
         +(plan&&plan.why?'<p class="setup-thesis">'+esc(plan.why)+'</p>':'')
         +(strip?'<p class="setup-planstrip">'+esc(strip)+'</p>':'')
         +sparkSvg(s)
-        +'<div class="setup-levels">'+lvl('Entry',s.entry)+lvl('Stop',s.stop)+lvl('Target',s.target)+'</div>'
+        +'<div class="setup-levels">'+lvl('Entry',s.entry)+lvl(s.instrument&&s.instrument.type==='options_package'?'Thesis level (reference)':'Stop',s.stop)+lvl('Target',s.target)+'</div>'
         +(reasons?'<ul class="setup-reasons">'+reasons+'</ul>':'')
         +'<p class="setup-sources">Selected by: '+esc(names.join(', ')||'\u2014')+'</p>'
         +'<div class="setup-actions">'
@@ -1055,7 +1096,7 @@
         +(s.primary_sleeve?'<button type="button" class="tool-btn" data-sleeve-link="'+esc(s.primary_sleeve)+'">View the strategy</button>':'')
         +(held?'<button type="button" class="tool-btn" data-view-position="1">View position</button>':'')
         +'</div></article>';
-    }).join('');
+    }).join(''):'<p class="muted">No actionable setups on the latest pass &mdash; nothing qualifies right now that the desk has not already entered and that is still intact and in range. Where names went is listed below.</p>';
     var notes=$('setupsNotes'); if(notes)notes.textContent=(d.notes||[]).join(' ');
     grid.querySelectorAll('[data-sleeve-link]').forEach(function(b){
       b.addEventListener('click',function(){ gotoStrategy(b.getAttribute('data-sleeve-link')); });
@@ -1076,12 +1117,50 @@
       });
     });
     }
-    renderCompleted(completed);
     applyHash();
   }
+  // Entered today: names the desk entered, with the plan each
+  // position is managed by — rendered in the Position book panel.
+  // Absent or empty in the feed -> the section stays hidden.
+  function renderEntered(list){
+    var box=$('enteredPlans'); if(!box)return;
+    var el=$('enteredList'); if(!el)return;
+    if(!list.length){ box.hidden=true; return; }
+    box.hidden=false;
+    el.innerHTML=list.map(function(s){
+      var brf=(s.brief&&typeof s.brief==='object')?s.brief:null;
+      var plan=(brf&&brf.plan&&typeof brf.plan==='object')?brf.plan:null;
+      var what=(plan&&plan.instrument&&plan.instrument.text)?plan.instrument.text:((plan&&plan.action)?plan.action:'');
+      return '<div class="completed-row">'
+        +'<span class="completed-sym">'+esc(s.symbol)+'</span>'
+        +(what?'<span class="completed-facts">'+esc(what)+'</span>':'')
+        +(brf&&brf.stale?'<span class="pill warn">Stale — awaiting refresh</span>':'')
+        +'<span class="pill good">Position</span>'
+        +(brf?'<button type="button" class="tool-btn" data-setup-detail="'+esc(s.symbol)+'">See the full setup</button>':'')
+        +'</div>';
+    }).join('');
+    el.querySelectorAll('[data-setup-detail]').forEach(function(b){
+      b.addEventListener('click',function(){ openSetupDetail(b.getAttribute('data-setup-detail')); });
+    });
+  }
+  // Left the board: the departures strip — every name that came
+  // off the published board, with its one-line reason.
+  function renderDepartures(list){
+    var box=$('setupsDepartures'); if(!box)return;
+    var el=$('departuresList'); if(!el)return;
+    if(!list.length){ box.hidden=true; return; }
+    box.hidden=false;
+    el.innerHTML=list.map(function(x){
+      return '<div class="completed-row">'
+        +'<span class="completed-sym">'+esc(x.symbol)+'</span>'
+        +'<span class="completed-facts">'+esc(x.text||x.reason||'')+'</span>'
+        +'</div>';
+    }).join('');
+  }
   // Today's completed round trips: a record of the day, rendered
-  // under the board. Absent or empty in the feed -> the section
-  // stays hidden and the page renders exactly as before.
+  // with the positions (results, not the shortlist). Absent or
+  // empty in the feed -> the section stays hidden and the page
+  // renders exactly as before.
   function renderCompleted(list){
     var box=$('setupsCompleted'); if(!box)return;
     var el=$('completedList'); if(!el)return;
@@ -1283,7 +1362,7 @@
       }
     }
     html+='<div class="setup-detail-sec"><h3>The levels</h3><div class="setup-levels">'
-      +cell('Entry',lv.entry)+cell('Stop',lv.stop)+cell('Target',lv.target)
+      +cell('Entry',lv.entry)+cell(s.instrument&&s.instrument.type==='options_package'?'Thesis level (reference)':'Stop',lv.stop)+cell('Target',lv.target)
       +cell('Last close',lv.last_close)
       +(b&&b.levels?cell('20-day average',lv.ema20)+cell('Recent swing low',lv.swing_low_20):'')
       +'</div></div>';
