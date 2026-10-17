@@ -296,6 +296,13 @@
        the score pill (no auto margin of its own). */
     .setup-top .gut-for,.setup-top .gut-against,.setup-top .gut-mixed{margin-left:0}
     .setup-thesis{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink)}
+    .setup-call{margin:0;font-size:16px;line-height:1.5;font-weight:600;color:var(--ink)}
+    .setup-why{margin:0;font-size:13.5px;line-height:1.55;color:var(--muted)}
+    .setup-card .setup-chart{margin:2px 0}
+    .call-basis{margin:0;font-size:12.5px;line-height:1.5;color:var(--muted)}
+    .conv-high{background:rgba(46,160,113,.18);color:#7bd9a8;border:1px solid rgba(46,160,113,.45)}
+    .conv-mid{background:rgba(38,166,154,.14);color:#7fd4c9;border:1px solid rgba(38,166,154,.4)}
+    .conv-lean{background:rgba(224,190,98,.12);color:var(--gold);border:1px solid rgba(224,190,98,.4)}
     .setup-planstrip{margin:0;font-family:var(--mono);font-size:13px;line-height:1.5;color:var(--ink);background:var(--panel-2);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:3px;padding:7px 10px}
     .setup-actions{display:flex;gap:8px;margin-top:auto}
     .completed-head{margin:22px 0 4px;font-size:15px;letter-spacing:.02em}
@@ -444,6 +451,11 @@
         <div class="panel-body">
           <div class="setups-grid" id="setupsGrid"></div>
           <p class="footnote" id="setupsNotes"></p>
+          <div id="setupsNoCall" hidden>
+            <h3 class="completed-head">On the radar &mdash; no call yet</h3>
+            <p class="completed-sub">Names the desk is watching where the evidence does not add up to a call. One honest line each &mdash; no card until the desk can say what it expects.</p>
+            <div id="noCallList"></div>
+          </div>
           <div id="setupsDepartures" hidden>
             <h3 class="completed-head">Recently closed</h3>
             <p class="completed-sub">Every name that leaves this list, with the reason and the outcome &mdash; kept here for at least five trading days, and permanently in the desk's record, so nothing quietly disappears.</p>
@@ -460,7 +472,7 @@
         <div class="panel-body" id="marketBody"></div>
       </section>
       <section class="panel" id="setupDetail" hidden>
-        <div class="panel-head tint-green"><div><h2 id="setupDetailTitle">The full setup</h2><p id="setupDetailSub"></p></div>
+        <div class="panel-head tint-green"><div><h2 id="setupDetailTitle">The full read</h2><p id="setupDetailSub"></p></div>
           <button type="button" class="tool-btn" id="setupDetailBack">&larr; Today&rsquo;s setups</button>
         </div>
         <div class="panel-body">
@@ -978,6 +990,12 @@
   }
   // Stage B (SA-8/SA-12): the plan strip — one line, the whole
   // distillation, built only from the brief's plan object.
+  function convChip(tc){
+    if(!tc||!tc.conviction_word)return '';
+    var cls=tc.conviction_word==='High conviction'?'conv-high'
+      :(tc.conviction_word==='Conviction'?'conv-mid':'conv-lean');
+    return '<span class="pill '+cls+'">'+esc(tc.conviction_word)+'</span>';
+  }
   function planStripText(p){
     var bits=[];
     if(p.entry_zone){
@@ -987,7 +1005,9 @@
     }
     if(p.stop&&p.stop.price!=null)bits.push('Stop '+money(p.stop.price));
     (p.targets||[]).forEach(function(t){bits.push(t.label+' '+money(t.price));});
-    if(p.risk_reward&&p.risk_reward.ratio!=null)bits.push('Reward '+p.risk_reward.ratio+'\u00d7 the risk');
+    if(p.risk_reward&&p.risk_reward.headline_r!=null)bits.push('R '+p.risk_reward.headline_r+' to the final objective');
+    if(p.instrument&&p.instrument.max_loss!=null)bits.push('Max loss '+money(p.instrument.max_loss));
+    if(p.instrument&&p.instrument.max_gain!=null)bits.push('Max gain '+money(p.instrument.max_gain));
     if(p.invalidation&&p.invalidation.price!=null)
       bits.push('Wrong if it closes below '+money(p.invalidation.price));
     if(!bits.length)return p.entry_note||'';
@@ -1068,7 +1088,6 @@
     if(p.risk_reward&&p.risk_reward.justification)meta.push(p.risk_reward.justification);
     if(p.targets_note)meta.push(p.targets_note);
     if(p.implied_note)meta.push(p.implied_note);
-    if(p.conviction&&p.conviction.text)meta.push(p.conviction.text);
     if(p.valid&&p.valid.text)meta.push(p.valid.text);
     if(p.instrument&&p.instrument.help)meta.push(p.instrument.help);
     if(p.expires_text)meta.push(p.expires_text);
@@ -1079,7 +1098,6 @@
     return '<div class="setup-detail-sec plan-block"><h3>The plan</h3>'
       +(b.stale?'<p class="plan-why"><b>Stale — awaiting refresh.</b> This plan is from an earlier scoring pass.</p>':'')
       +'<p class="plan-action">'+esc(p.action||'')+'</p>'
-      +(p.why?'<p class="plan-why">'+esc(p.why)+'</p>':'')
       +(p.instrument&&p.instrument.text?'<p class="plan-why">'+esc(p.instrument.text)+'</p>':'')
       +spreadFactsHtml
       +(cells?'<div class="plan-cells">'+cells+'</div>':'')
@@ -1108,32 +1126,54 @@
     if(!setups.length&&!departures.length){ panel.hidden=true; return; }
     panel.hidden=false;
     var grid=$('setupsGrid'); if(grid){
+    /* PRODUCT REDESIGN (§11): the card IS the call — expectation
+       first, the plan strip, this name's why, the plan chart,
+       one door to the full read. A name whose brief carries no
+       call gets no card: it drops to the one-line bucket. */
+    var nocall=[];
     grid.innerHTML=setups.length?setups.map(function(s){
       var names=(s.sources||[]).map(function(k){return (ALGO[k]||{}).name||k;});
-      var reasons=(s.reasons||[]).slice(0,3).map(function(r){return '<li>'+esc(r)+'</li>';}).join('');
       function lvl(label,v){return v==null?'':'<div><span>'+label+'</span><b>'+money(v)+'</b></div>';}
       var held=s.status==='entered';
       var brf=(s.brief&&typeof s.brief==='object')?s.brief:null;
       var plan=(brf&&brf.plan&&typeof brf.plan==='object')?brf.plan:null;
+      var tc=(brf&&brf.the_call&&typeof brf.the_call==='object')?brf.the_call:null;
+      if(tc&&tc.no_call){ nocall.push(s); return ''; }
       var strip=plan?planStripText(plan):'';
+      var chartImg='';
+      if(brf&&(brf.chart_plan||brf.chart)){
+        chartImg='<img class="setup-chart" src="'+esc(brf.chart_plan||brf.chart)+'" alt="Plan chart for '+esc(s.symbol)+' — entry zone, stop, objectives and invalidation">';
+      }
       return '<article class="setup-card" id="setup-'+esc(s.symbol)+'">'
         +'<div class="setup-top"><span class="setup-rank">#'+esc(s.rank)+'</span><h3>'+esc(s.symbol)+'</h3>'
-        +'<span class="pill">'+esc(s.tier)+' \u00b7 '+esc(s.score)+'</span>'
-        +(brf&&brf.desk_read?gutPill(brf.desk_read.call):'')+'</div>'
+        +(tc?convChip(tc):'<span class="pill">'+esc(s.tier)+' \u00b7 '+esc(s.score)+'</span>')+'</div>'
         +'<p class="setup-status">'+(held?'<span class="pill good">Bought today</span>':'<span class="pill info">Watching</span>')
-        +(s.last_close!=null?'<span class="muted">Last close '+money(s.last_close)+'</span>':'')+'</p>'
-        +(plan&&plan.why?'<p class="setup-thesis">'+esc(plan.why)+'</p>':'')
+        +(s.last_close!=null?'<span class="muted">Last close '+money(s.last_close)+'</span>':'')
+        +' <span class="muted">'+esc(s.tier)+' \u00b7 score '+esc(s.score)+'</span></p>'
+        +(tc&&tc.expectation?'<p class="setup-call">'+esc(tc.expectation)+'</p>'
+          :(plan&&plan.action?'<p class="setup-call">'+esc(plan.action)+'</p>':''))
+        +(tc&&tc.why&&tc.why.length?'<p class="setup-why">'+esc(tc.why.join(' '))+'</p>'
+          :(!tc&&plan&&plan.why?'<p class="setup-why">'+esc(plan.why)+'</p>':''))
         +(strip?'<p class="setup-planstrip">'+esc(strip)+'</p>':'')
-        +sparkSvg(s)
-        +'<div class="setup-levels">'+lvl('Entry',s.entry)+lvl(s.instrument&&s.instrument.type==='options_package'?'Thesis level (reference)':'Stop',s.stop)+lvl('Target',s.target)+'</div>'
-        +(reasons?'<ul class="setup-reasons">'+reasons+'</ul>':'')
+        +(chartImg||sparkSvg(s))
+        +(!plan?'<div class="setup-levels">'+lvl('Entry',s.entry)+lvl(s.instrument&&s.instrument.type==='options_package'?'Thesis level (reference)':'Stop',s.stop)+lvl('Target',s.target)+'</div>':'')
         +'<p class="setup-sources">Selected by: '+esc(names.join(', ')||'\u2014')+'</p>'
         +'<div class="setup-actions">'
-        +'<button type="button" class="tool-btn" data-setup-detail="'+esc(s.symbol)+'">See the full setup</button>'
-        +(s.primary_sleeve?'<button type="button" class="tool-btn" data-sleeve-link="'+esc(s.primary_sleeve)+'">View the strategy</button>':'')
+        +'<button type="button" class="tool-btn" data-setup-detail="'+esc(s.symbol)+'">The full read</button>'
         +(held?'<button type="button" class="tool-btn" data-view-position="1">View position</button>':'')
         +'</div></article>';
     }).join(''):'<p class="muted">No actionable setups on the latest pass &mdash; nothing qualifies right now that the desk has not already entered and that is still intact and in range. Where names went is listed below.</p>';
+    var ncBox=$('setupsNoCall'), ncList=$('noCallList');
+    if(ncBox&&ncList){
+      if(nocall.length){
+        ncBox.hidden=false;
+        ncList.innerHTML=nocall.map(function(s){
+          var tc=s.brief.the_call;
+          return '<div class="completed-row"><span class="completed-sym">'+esc(s.symbol)+'</span>'
+            +'<span class="completed-facts">'+esc(tc.no_call_line||'No call yet.')+'</span></div>';
+        }).join('');
+      } else { ncBox.hidden=true; }
+    }
     var notes=$('setupsNotes'); if(notes)notes.textContent=(d.notes||[]).join(' ');
     grid.querySelectorAll('[data-sleeve-link]').forEach(function(b){
       b.addEventListener('click',function(){ gotoStrategy(b.getAttribute('data-sleeve-link')); });
@@ -1167,7 +1207,8 @@
     el.innerHTML=list.map(function(s){
       var brf=(s.brief&&typeof s.brief==='object')?s.brief:null;
       var plan=(brf&&brf.plan&&typeof brf.plan==='object')?brf.plan:null;
-      var what=(plan&&plan.instrument&&plan.instrument.text)?plan.instrument.text:((plan&&plan.action)?plan.action:'');
+      var what=(brf&&brf.the_call&&brf.the_call.expectation)?brf.the_call.expectation
+        :((plan&&plan.instrument&&plan.instrument.text)?plan.instrument.text:((plan&&plan.action)?plan.action:''));
       return '<div class="completed-row">'
         +'<span class="completed-sym">'+esc(s.symbol)+'</span>'
         +(what?'<span class="completed-facts">'+esc(what)+'</span>':'')
@@ -1322,27 +1363,51 @@
     var b=(s.brief&&typeof s.brief==='object')?s.brief:null;
     var lv=(b&&b.levels)?b.levels:s;
     function cell(label,v){return '<div><span>'+label+'</span><b>'+(v==null?'—':money(v))+'</b></div>';}
-    var html=planBlockHtml(b);
+    var tc=(b&&b.the_call&&typeof b.the_call==='object')?b.the_call:null;
+    var html='';
+    /* PRODUCT REDESIGN (§11): ONE expansion, story-first order —
+       the plan chart (hero), the call, the plan in full, then
+       the evidence. Nothing is told twice. */
+    if(b&&b.chart_plan){
+      html+='<img class="setup-chart" src="'+esc(b.chart_plan)+'" alt="Plan chart for '+esc(s.symbol)+' — entry zone, stop, objectives and the line that ends the setup">'
+        +'<p class="setup-chart-cap">The plan, drawn — the entry zone, the stop, the objectives, and the line that ends the setup. The desk&rsquo;s full annotated chart read is in the evidence below.</p>';
+    }
+    if(tc&&!tc.no_call){
+      html+='<div class="setup-detail-sec"><h3>The call</h3>'
+        +(tc.expectation?'<p class="setup-call">'+esc(tc.expectation)+'</p>':'')
+        +(tc.conviction_word?'<p>'+convChip(tc)+' <span class="call-basis">'+esc(tc.basis||'')+'</span></p>':'')
+        +(tc.record?'<p class="call-basis">'+esc(tc.record)+'</p>':'')
+        +(tc.what_changes_it?'<p><b>What would change the call:</b> '+esc(tc.what_changes_it)+'</p>':'')
+        +'</div>';
+    } else if(tc&&tc.no_call){
+      html+='<div class="setup-detail-sec"><h3>No call on this name</h3><p>'+esc(tc.no_call_line||'')+'</p></div>';
+    }
+    html+=planBlockHtml(b);
     if(b){
       var story=Array.isArray(b.setup_story)?b.setup_story:(b.setup_story?[b.setup_story]:[]);
-      if(story.length){
-        html+='<div class="setup-detail-sec setup-story"><h3>The setup</h3>'
-          +story.map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>';
+      /* The story's first two paragraphs are the filing facts;
+         its third was the old template picture paragraph, which
+         the call's why replaces — it is not told twice. */
+      var facts=tc?story.slice(0,2):story;
+      if(facts.length){
+        html+='<div class="setup-detail-sec setup-story"><h3>How it got here</h3>'
+          +facts.map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>';
       }
     }
     if(b&&b.chart){
       var _annotated=(b.chart_panels||[]).indexOf('rsi')>=0;
       /* Phones get the mobile chart (a smaller, purpose-built
          render of the same read) when the brief carries one. */
-      html+=(b.chart_mobile
+      html+='<div class="setup-detail-sec"><h3>The full chart read, drawn</h3>'
+        +(b.chart_mobile
         ?'<picture><source media="(max-width:640px)" srcset="'+esc(b.chart_mobile)+'">'
           +'<img class="setup-chart" src="'+esc(b.chart)+'" alt="Price chart for '+esc(s.symbol)+' with the setup&rsquo;s levels marked"></picture>'
         :'<img class="setup-chart" src="'+esc(b.chart)+'" alt="Price chart for '+esc(s.symbol)+' with the setup&rsquo;s levels marked">')
         +'<p class="setup-chart-cap">The chart as it looked when this setup was briefed'
         +((b.chart_panels||[]).indexOf('hourly')>=0?' — daily bars above, the most recent hours below':'')
-        +(_annotated?'. The desk&rsquo;s chart read is drawn on it: the pattern boundaries, the levels, the retracement grid, the buy zone, the plan&rsquo;s entry, stop and target lines, the line that ends the setup, and the RSI panel with any divergence marked at its pivots.'
+        +(_annotated?'. Everything the desk&rsquo;s chart reader measured is drawn on it: the pattern boundaries, the levels, the retracement grid, the buy zone, the plan&rsquo;s lines, and the RSI panel with any divergence marked at its pivots.'
                     :'. Lines mark the plan&rsquo;s entry, stop and target, the line that ends the setup, the averages and the recent low the brief uses.')
-        +'</p>';
+        +'</p></div>';
     } else if(b&&b.chart_gap){
       html+='<p class="brief-gap">'+esc(b.chart_gap)+'</p>';
     }
@@ -1358,10 +1423,11 @@
           if(!byGroup[g]){byGroup[g]=[];groups.push(g);}
           byGroup[g].push(bl.text);
         });
-        /* Addition 4 disclosure: Level 1 (the at-a-glance read)
-           renders open; Level 2 (the full grouped detail) sits
-           behind a native expander. Briefs without layers fall
-           back to the plain grouped render. */
+        /* Level 1 (the at-a-glance read) first, then the full
+           grouped detail — rendered open: the full read IS the
+           one expansion now (§11), so no second door inside it.
+           Briefs without layers fall back to the plain grouped
+           render. */
         var l1=(crd.level1||[]),l2=crd.level2||crd.bullets;
         var g2=[],bg2={};
         l2.forEach(function(bl){
@@ -1376,12 +1442,11 @@
             +l1.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')
             +'</ul>':'')
           +(l1.length
-            ?'<details class="cr-more"><summary>The full read — every lens, level and number</summary>'
-              +g2.map(function(g){
+            ?g2.map(function(g){
                 return '<h4 class="cr-group">'+esc(g)+'</h4><ul class="cr-bullets">'
                   +bg2[g].map(function(t){return '<li>'+esc(t)+'</li>';}).join('')
                   +'</ul>';
-              }).join('')+'</details>'
+              }).join('')
             :groups.map(function(g){
               return '<h4 class="cr-group">'+esc(g)+'</h4><ul class="cr-bullets">'
                 +byGroup[g].map(function(t){return '<li>'+esc(t)+'</li>';}).join('')
@@ -1411,16 +1476,20 @@
           +'</div>';
       }
     }
-    html+='<div class="setup-detail-sec"><h3>The levels</h3><div class="setup-levels">'
-      +cell('Entry',lv.entry)+cell(s.instrument&&s.instrument.type==='options_package'?'Thesis level (reference)':'Stop',lv.stop)+cell('Target',lv.target)
-      +cell('Last close',lv.last_close)
-      +(b&&b.levels?cell('20-day average',lv.ema20)+cell('Recent swing low',lv.swing_low_20):'')
-      +'</div></div>';
-    if(b){
-      if((b.invalidation||[]).length){
-        html+='<div class="setup-detail-sec"><h3>What would end this setup</h3><ul class="setup-inv">'
-          +b.invalidation.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>';
-      }
+    if(!b){
+      html+='<div class="setup-detail-sec"><h3>The levels</h3><div class="setup-levels">'
+        +cell('Entry',lv.entry)+cell(s.instrument&&s.instrument.type==='options_package'?'Thesis level (reference)':'Stop',lv.stop)+cell('Target',lv.target)
+        +cell('Last close',lv.last_close)
+        +'</div></div>';
+    } else if(b.levels&&(b.levels.ema20!=null||b.levels.swing_low_20!=null)){
+      /* The plan's own numbers live in The plan above; the two
+         extra measured levels ride as one record line (§11:
+         no fact told twice). */
+      html+='<p class="call-basis">Also on the record: '
+        +(b.levels.ema20!=null?'20-day average '+money(b.levels.ema20):'')
+        +(b.levels.ema20!=null&&b.levels.swing_low_20!=null?' \u00b7 ':'')
+        +(b.levels.swing_low_20!=null?'recent swing low '+money(b.levels.swing_low_20):'')
+        +'</p>';
     }
     if(!b) {
       var reasons=(s.reasons||[]).map(function(r){return '<li>'+esc(r)+'</li>';}).join('');
@@ -1440,7 +1509,7 @@
     var s=SETUPS[sym]; var panel=$('setupDetail'); if(!s||!panel)return;
     if(DETAIL_SYM===sym&&!panel.hidden){ panel.scrollIntoView({block:'start'}); return; }
     DETAIL_SYM=sym;
-    $('setupDetailTitle').textContent=sym+' — the full setup';
+    $('setupDetailTitle').textContent=sym+' — the full read';
     $('setupDetailSub').textContent='#'+s.rank+' · '+s.tier+' · score '+s.score
       +(s.status==='entered'?' · Bought today':' · Watching')
       +((s.brief&&s.brief.as_of)?' · briefed '+s.brief.as_of:'');
