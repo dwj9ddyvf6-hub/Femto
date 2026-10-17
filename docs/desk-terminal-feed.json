@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-17T03:31:48.319163+00:00",
- "generated_at_et": "2026-10-16T23:31:48.319163-04:00",
+ "generated_at_utc": "2026-10-17T03:42:15.773315+00:00",
+ "generated_at_et": "2026-10-16T23:42:15.773315-04:00",
  "account": {
   "equity": "96390.14",
   "cash": "-196397.34",
@@ -968,7 +968,7 @@
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 8710,
+  "total": 8730,
   "by_kind": {
    "journal": 53,
    "fill": 1748,
@@ -977,16 +977,16 @@
    "tick": 293,
    "nightly_reconcile": 53,
    "import_open_order": 51,
-   "signal_intent": 3019,
-   "entry_rejected": 1867,
+   "signal_intent": 3028,
+   "entry_rejected": 1868,
    "exit_skipped": 85,
    "intent_rejected": 184,
-   "slice_sync": 329,
+   "slice_sync": 330,
    "exit_submitted": 26,
    "pass_watchdog": 20,
-   "entry_skipped": 922,
+   "entry_skipped": 930,
    "entry_bp_breaker": 8,
-   "exit_rejected": 37
+   "exit_rejected": 38
   }
  },
  "setups": [],
@@ -1058,7 +1058,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-17T03:39:45.854784+00:00",
+   "scored_at": "2026-10-17T03:44:42.742733+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:CRML",
@@ -1238,7 +1238,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T03:39:45.854784+00:00",
+    "scored_at": "2026-10-17T03:44:42.742733+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold CRML \u2014 the desk bought it at $7.21. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -1319,20 +1319,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-23), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:39 PM ET \u00b7 Prices checked 11:39 PM ET",
+     "as_of_text": "Plan as of 11:44 PM ET \u00b7 Prices checked 11:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-CRML-ema_vwap-CRML",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap:CRML",
       "source_timestamp": "2026-10-16",
       "source_hash": "524d7d69082e997e",
-      "ingested_at": "2026-10-17T03:39:45.854784+00:00",
+      "ingested_at": "2026-10-17T03:44:42.742733+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: targets changed on the source record."
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 5-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 5-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -5369,7 +5369,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-17T03:39:45.854784+00:00",
+   "scored_at": "2026-10-17T03:44:42.742733+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:SKYQ",
@@ -5549,7 +5549,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T03:39:45.854784+00:00",
+    "scored_at": "2026-10-17T03:44:42.742733+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold SKYQ \u2014 the desk bought it at $2.46. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -5636,20 +5636,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-23), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:39 PM ET \u00b7 Prices checked 11:39 PM ET",
+     "as_of_text": "Plan as of 11:44 PM ET \u00b7 Prices checked 11:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-SKYQ-ema_vwap-SKYQ",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap:SKYQ",
       "source_timestamp": "2026-10-16",
       "source_hash": "f099cb1e92e521d6",
-      "ingested_at": "2026-10-17T03:39:45.854784+00:00",
+      "ingested_at": "2026-10-17T03:44:42.742733+00:00",
       "plan_version": 4,
       "change_note": "Plan updated to version 4 since the last publish: entry zone (high), entry zone (low), stop changed on the source record."
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 5-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 5-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -6892,7 +6892,7 @@
       {
        "key": "consideration:level_confluence",
        "factor": "Consideration \u2014 Level confluence count (new)",
-       "reading": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
+       "reading": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
        "stance": 0,
        "salience": 1.15,
        "disposition": "considered",
@@ -7373,7 +7373,7 @@
       {
        "key": "consideration:level_confluence",
        "factor": "Consideration \u2014 Level confluence count (new)",
-       "reading": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
+       "reading": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
        "stance": 0,
        "salience": 1.15,
        "disposition": "considered",
@@ -7427,7 +7427,7 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on SKYQ: everything measured pulls both ways \u2014 the honest read is mixed. Tensor view: Tensor confirmed a swing in this name on the current pass \u2014 an independent engine agreeing carries weight. Strategy agreement: Selected by 2 independent strategy families (intraday pullback, Tensor pattern engine; 2 strategies in all) \u2014 independent agreement is the desk's core quality signal. The conflict is the story: Tensor view vs Volatility / fear pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 83 items on the desk's list were weighed for this name: MACD crossover events: the last signal-line cross was bullish on 2026-10-15 (1 sessions ago); the last zero-line cross was bearish on 2026-08-13 (45 sessions ago); Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band. What would change the call: a daily close below $2.22 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or volatility / fear turning for the setup.",
+     "paragraph": "The desk's read on SKYQ: everything measured pulls both ways \u2014 the honest read is mixed. Tensor view: Tensor confirmed a swing in this name on the current pass \u2014 an independent engine agreeing carries weight. Strategy agreement: Selected by 2 independent strategy families (intraday pullback, Tensor pattern engine; 2 strategies in all) \u2014 independent agreement is the desk's core quality signal. The conflict is the story: Tensor view vs Volatility / fear pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 83 items on the desk's list were weighed for this name: MACD crossover events: the last signal-line cross was bullish on 2026-10-15 (1 sessions ago); the last zero-line cross was bearish on 2026-08-13 (45 sessions ago); Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band. What would change the call: a daily close below $2.22 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or volatility / fear turning for the setup.",
      "change_call": "What would change the call: a daily close below $2.22 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or volatility / fear turning for the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
@@ -7441,7 +7441,7 @@
       {
        "key": "level_confluence",
        "family": "structure",
-       "fact": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
+       "fact": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
        "rule": "4 separate levels stack on one shelf (above price)",
        "score": 75
       },
@@ -7818,7 +7818,7 @@
        "family": "structure",
        "label": "Level confluence count (new)",
        "status": "value",
-       "fact": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
+       "fact": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
        "data": {
         "below": [
          [
@@ -9464,7 +9464,7 @@
       {
        "key": "level_confluence",
        "family": "structure",
-       "fact": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
+       "fact": "Confluence: 2 separate levels stack at $2.05 (pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.10; round number at $2.00) below price; 4 separate levels stack at $2.46 (20-day average at $2.52; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.51; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $2.40; resistance trendline through the 2026-04-13 and 2026-09-24 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests at $2.40) above. Stacking is counted within half a daily range, the desk's zone band.",
        "rule": "4 separate levels stack on one shelf (above price)",
        "score": 75
       },
@@ -9910,7 +9910,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T03:39:45.854784+00:00",
+   "scored_at": "2026-10-17T03:44:42.742733+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap_options:CVNA",
@@ -10115,7 +10115,7 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-17T03:39:45.854784+00:00",
+    "scored_at": "2026-10-17T03:44:42.742733+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold CVNA \u2014 the desk holds CVNA 60/64 call spread expiring 2026-10-30, bought for a $1.96 debit. The levels below are reference levels on the stock; the spread itself has no stop order \u2014 its risk is the debit paid.",
@@ -10206,20 +10206,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Spread plan horizon: manage by 2026-10-23.",
-     "as_of_text": "Plan as of 11:39 PM ET \u00b7 Prices checked 11:39 PM ET",
+     "as_of_text": "Plan as of 11:44 PM ET \u00b7 Prices checked 11:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-CVNA-ema_vwap_options-CVNA",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap_options:CVNA",
       "source_timestamp": "2026-10-16",
       "source_hash": "227a473788108233",
-      "ingested_at": "2026-10-17T03:39:45.854784+00:00",
+      "ingested_at": "2026-10-17T03:44:42.742733+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 11:39 PM ET."
+      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 11:44 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -14472,7 +14472,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T03:39:45.854784+00:00",
+   "scored_at": "2026-10-17T03:44:42.742733+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -14652,7 +14652,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T03:39:45.854784+00:00",
+    "scored_at": "2026-10-17T03:44:42.742733+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -14711,20 +14711,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:39 PM ET \u00b7 Prices checked 11:39 PM ET",
+     "as_of_text": "Plan as of 11:44 PM ET \u00b7 Prices checked 11:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-17T03:39:45.854784+00:00",
+      "ingested_at": "2026-10-17T03:44:42.742733+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -19490,7 +19490,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T03:39:45.854784+00:00",
+   "scored_at": "2026-10-17T03:44:42.742733+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -19670,7 +19670,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T03:39:45.854784+00:00",
+    "scored_at": "2026-10-17T03:44:42.742733+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -19729,20 +19729,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:39 PM ET \u00b7 Prices checked 11:39 PM ET",
+     "as_of_text": "Plan as of 11:44 PM ET \u00b7 Prices checked 11:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-17T03:39:45.854784+00:00",
+      "ingested_at": "2026-10-17T03:44:42.742733+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -23955,7 +23955,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T03:39:45.854784+00:00",
+   "scored_at": "2026-10-17T03:44:42.742733+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap_options:IREN",
@@ -24160,7 +24160,7 @@
      "credit": null,
      "entry_spot": 28.66
     },
-    "scored_at": "2026-10-17T03:39:45.854784+00:00",
+    "scored_at": "2026-10-17T03:44:42.742733+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold IREN \u2014 the desk holds IREN 29/31 call spread expiring 2026-10-30, bought for a $0.81 debit. The levels below are reference levels on the stock; the spread itself has no stop order \u2014 its risk is the debit paid.",
@@ -24249,20 +24249,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Spread plan horizon: manage by 2026-10-23.",
-     "as_of_text": "Plan as of 11:39 PM ET \u00b7 Prices checked 11:39 PM ET",
+     "as_of_text": "Plan as of 11:44 PM ET \u00b7 Prices checked 11:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-IREN-ema_vwap_options-IREN",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap_options:IREN",
       "source_timestamp": "2026-10-16",
       "source_hash": "1bfee91871cf7b24",
-      "ingested_at": "2026-10-17T03:39:45.854784+00:00",
+      "ingested_at": "2026-10-17T03:44:42.742733+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 11:39 PM ET."
+      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 11:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -28640,7 +28640,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-17T03:39:45.854784+00:00",
+   "scored_at": "2026-10-17T03:44:42.742733+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "red_day_reversal:ALAB",
@@ -28820,7 +28820,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T03:39:45.854784+00:00",
+    "scored_at": "2026-10-17T03:44:42.742733+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold ALAB \u2014 the desk bought it at $288.05. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
@@ -28892,20 +28892,20 @@
      },
      "expires_at": "2026-10-21T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 3 trading sessions from entry (to 2026-10-21), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:39 PM ET \u00b7 Prices checked 11:39 PM ET",
+     "as_of_text": "Plan as of 11:44 PM ET \u00b7 Prices checked 11:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-ALAB-red_day_reversal-ALAB",
       "source_system": "sleeve_position_record",
       "source_record_id": "red_day_reversal:ALAB",
       "source_timestamp": "2026-10-16",
       "source_hash": "5d7edd9599238e03",
-      "ingested_at": "2026-10-17T03:39:45.854784+00:00",
+      "ingested_at": "2026-10-17T03:44:42.742733+00:00",
       "plan_version": 5,
       "change_note": "Plan updated to version 5 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 3-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 3-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -33335,7 +33335,7 @@
    "instrument": null,
    "stop_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-17T03:39:45.854784+00:00",
+   "scored_at": "2026-10-17T03:44:42.742733+00:00",
    "provenance": {
     "source_system": "ledger_fill",
     "source_record_id": "red_day_reversal:SNDK:2026-10-16:17",
