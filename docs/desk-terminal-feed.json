@@ -1062,7 +1062,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-17T00:39:39.036642+00:00",
+   "scored_at": "2026-10-17T00:44:43.797174+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:CRML",
@@ -1239,7 +1239,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T00:39:39.036642+00:00",
+    "scored_at": "2026-10-17T00:44:43.797174+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold CRML \u2014 the desk bought it at $7.21. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -1320,20 +1320,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-23), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 8:39 PM ET \u00b7 Prices checked 8:39 PM ET",
+     "as_of_text": "Plan as of 8:44 PM ET \u00b7 Prices checked 8:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-CRML-ema_vwap-CRML",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap:CRML",
       "source_timestamp": "2026-10-16",
       "source_hash": "524d7d69082e997e",
-      "ingested_at": "2026-10-17T00:39:39.036642+00:00",
+      "ingested_at": "2026-10-17T00:44:43.797174+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: targets changed on the source record."
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 5-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 5-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -3252,7 +3252,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-17T00:39:39.036642+00:00",
+   "scored_at": "2026-10-17T00:44:43.797174+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:SKYQ",
@@ -3429,7 +3429,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T00:39:39.036642+00:00",
+    "scored_at": "2026-10-17T00:44:43.797174+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold SKYQ \u2014 the desk bought it at $2.46. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -3516,20 +3516,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-23), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 8:39 PM ET \u00b7 Prices checked 8:39 PM ET",
+     "as_of_text": "Plan as of 8:44 PM ET \u00b7 Prices checked 8:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-SKYQ-ema_vwap-SKYQ",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap:SKYQ",
       "source_timestamp": "2026-10-16",
       "source_hash": "f099cb1e92e521d6",
-      "ingested_at": "2026-10-17T00:39:39.036642+00:00",
+      "ingested_at": "2026-10-17T00:44:43.797174+00:00",
       "plan_version": 4,
       "change_note": "Plan updated to version 4 since the last publish: entry zone (high), entry zone (low), stop changed on the source record."
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 5-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 5-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -5580,7 +5580,7 @@
       "symbol": "CVNA261030C00060000",
       "side": "buy",
       "position_intent": "buy_to_open",
-      "ratio_qty": null,
+      "ratio_qty": 1,
       "strike": 60.0,
       "right": "call",
       "expiry": "2026-10-30"
@@ -5589,7 +5589,7 @@
       "symbol": "CVNA261030C00064000",
       "side": "sell",
       "position_intent": "sell_to_open",
-      "ratio_qty": null,
+      "ratio_qty": 1,
       "strike": 64.0,
       "right": "call",
       "expiry": "2026-10-30"
@@ -5598,11 +5598,10 @@
     "expiry": "2026-10-30",
     "debit": 1.96,
     "credit": null,
-    "entry_spot": 59.7,
-    "economics_source": "broker_snapshot"
+    "entry_spot": 59.7
    },
    "stop_problem": null,
-   "entry_source": "fill",
+   "entry_source": "position_record",
    "exit_rules": null,
    "exit_target": null,
    "exit_rules_origin": null,
@@ -5610,12 +5609,12 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T00:39:39.036642+00:00",
+   "scored_at": "2026-10-17T00:44:43.797174+00:00",
    "provenance": {
-    "source_system": "ledger_fill",
-    "source_record_id": "ema_vwap_options:CVNA:2026-10-16:4",
+    "source_system": "sleeve_position_record",
+    "source_record_id": "ema_vwap_options:CVNA",
     "source_timestamp": "2026-10-16",
-    "source_hash": "9c82fbb38080d096"
+    "source_hash": "227a473788108233"
    },
    "brief": {
     "symbol": "CVNA",
@@ -5792,7 +5791,7 @@
        "symbol": "CVNA261030C00060000",
        "side": "buy",
        "position_intent": "buy_to_open",
-       "ratio_qty": null,
+       "ratio_qty": 1,
        "strike": 60.0,
        "right": "call",
        "expiry": "2026-10-30"
@@ -5801,7 +5800,7 @@
        "symbol": "CVNA261030C00064000",
        "side": "sell",
        "position_intent": "sell_to_open",
-       "ratio_qty": null,
+       "ratio_qty": 1,
        "strike": 64.0,
        "right": "call",
        "expiry": "2026-10-30"
@@ -5810,10 +5809,9 @@
      "expiry": "2026-10-30",
      "debit": 1.96,
      "credit": null,
-     "entry_spot": 59.7,
-     "economics_source": "broker_snapshot"
+     "entry_spot": 59.7
     },
-    "scored_at": "2026-10-17T00:39:39.036642+00:00",
+    "scored_at": "2026-10-17T00:44:43.797174+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold CVNA \u2014 the desk holds CVNA 60/64 call spread expiring 2026-10-30, bought for a $1.96 debit. The levels below are reference levels on the stock; the spread itself has no stop order \u2014 its risk is the debit paid.",
@@ -5828,7 +5826,7 @@
         "symbol": "CVNA261030C00060000",
         "side": "buy",
         "position_intent": "buy_to_open",
-        "ratio_qty": null,
+        "ratio_qty": 1,
         "strike": 60.0,
         "right": "call",
         "expiry": "2026-10-30"
@@ -5837,7 +5835,7 @@
         "symbol": "CVNA261030C00064000",
         "side": "sell",
         "position_intent": "sell_to_open",
-        "ratio_qty": null,
+        "ratio_qty": 1,
         "strike": 64.0,
         "right": "call",
         "expiry": "2026-10-30"
@@ -5904,20 +5902,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Spread plan horizon: manage by 2026-10-23.",
-     "as_of_text": "Plan as of 8:39 PM ET \u00b7 Prices checked 8:39 PM ET",
+     "as_of_text": "Plan as of 8:44 PM ET \u00b7 Prices checked 8:44 PM ET",
      "provenance": {
-      "plan_id": "plan-2026-10-16-CVNA-ema_vwap_options-CVNA-2026-10-16-4",
-      "source_system": "ledger_fill",
-      "source_record_id": "ema_vwap_options:CVNA:2026-10-16:4",
+      "plan_id": "plan-2026-10-16-CVNA-ema_vwap_options-CVNA",
+      "source_system": "sleeve_position_record",
+      "source_record_id": "ema_vwap_options:CVNA",
       "source_timestamp": "2026-10-16",
-      "source_hash": "9c82fbb38080d096",
-      "ingested_at": "2026-10-17T00:39:39.036642+00:00",
+      "source_hash": "227a473788108233",
+      "ingested_at": "2026-10-17T00:44:43.797174+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 8:39 PM ET."
+      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 8:44 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -8020,7 +8018,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T00:39:39.036642+00:00",
+   "scored_at": "2026-10-17T00:44:43.797174+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -8197,7 +8195,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T00:39:39.036642+00:00",
+    "scored_at": "2026-10-17T00:44:43.797174+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -8256,20 +8254,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 8:39 PM ET \u00b7 Prices checked 8:39 PM ET",
+     "as_of_text": "Plan as of 8:44 PM ET \u00b7 Prices checked 8:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-17T00:39:39.036642+00:00",
+      "ingested_at": "2026-10-17T00:44:43.797174+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -10959,7 +10957,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T00:39:39.036642+00:00",
+   "scored_at": "2026-10-17T00:44:43.797174+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -11136,7 +11134,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T00:39:39.036642+00:00",
+    "scored_at": "2026-10-17T00:44:43.797174+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -11195,20 +11193,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 8:39 PM ET \u00b7 Prices checked 8:39 PM ET",
+     "as_of_text": "Plan as of 8:44 PM ET \u00b7 Prices checked 8:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-17T00:39:39.036642+00:00",
+      "ingested_at": "2026-10-17T00:44:43.797174+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -13434,7 +13432,7 @@
       "symbol": "IREN261030C00029000",
       "side": "buy",
       "position_intent": "buy_to_open",
-      "ratio_qty": null,
+      "ratio_qty": 1,
       "strike": 29.0,
       "right": "call",
       "expiry": "2026-10-30"
@@ -13443,7 +13441,7 @@
       "symbol": "IREN261030C00031000",
       "side": "sell",
       "position_intent": "sell_to_open",
-      "ratio_qty": null,
+      "ratio_qty": 1,
       "strike": 31.0,
       "right": "call",
       "expiry": "2026-10-30"
@@ -13452,11 +13450,10 @@
     "expiry": "2026-10-30",
     "debit": 0.81,
     "credit": null,
-    "entry_spot": 28.66,
-    "economics_source": "broker_snapshot"
+    "entry_spot": 28.66
    },
    "stop_problem": null,
-   "entry_source": "fill",
+   "entry_source": "position_record",
    "exit_rules": null,
    "exit_target": null,
    "exit_rules_origin": null,
@@ -13464,12 +13461,12 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T00:39:39.036642+00:00",
+   "scored_at": "2026-10-17T00:44:43.797174+00:00",
    "provenance": {
-    "source_system": "ledger_fill",
-    "source_record_id": "ema_vwap_options:IREN:2026-10-16:6",
+    "source_system": "sleeve_position_record",
+    "source_record_id": "ema_vwap_options:IREN",
     "source_timestamp": "2026-10-16",
-    "source_hash": "a083f243fddc7b5a"
+    "source_hash": "1bfee91871cf7b24"
    },
    "brief": {
     "symbol": "IREN",
@@ -13646,7 +13643,7 @@
        "symbol": "IREN261030C00029000",
        "side": "buy",
        "position_intent": "buy_to_open",
-       "ratio_qty": null,
+       "ratio_qty": 1,
        "strike": 29.0,
        "right": "call",
        "expiry": "2026-10-30"
@@ -13655,7 +13652,7 @@
        "symbol": "IREN261030C00031000",
        "side": "sell",
        "position_intent": "sell_to_open",
-       "ratio_qty": null,
+       "ratio_qty": 1,
        "strike": 31.0,
        "right": "call",
        "expiry": "2026-10-30"
@@ -13664,10 +13661,9 @@
      "expiry": "2026-10-30",
      "debit": 0.81,
      "credit": null,
-     "entry_spot": 28.66,
-     "economics_source": "broker_snapshot"
+     "entry_spot": 28.66
     },
-    "scored_at": "2026-10-17T00:39:39.036642+00:00",
+    "scored_at": "2026-10-17T00:44:43.797174+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold IREN \u2014 the desk holds IREN 29/31 call spread expiring 2026-10-30, bought for a $0.81 debit. The levels below are reference levels on the stock; the spread itself has no stop order \u2014 its risk is the debit paid.",
@@ -13682,7 +13678,7 @@
         "symbol": "IREN261030C00029000",
         "side": "buy",
         "position_intent": "buy_to_open",
-        "ratio_qty": null,
+        "ratio_qty": 1,
         "strike": 29.0,
         "right": "call",
         "expiry": "2026-10-30"
@@ -13691,7 +13687,7 @@
         "symbol": "IREN261030C00031000",
         "side": "sell",
         "position_intent": "sell_to_open",
-        "ratio_qty": null,
+        "ratio_qty": 1,
         "strike": 31.0,
         "right": "call",
         "expiry": "2026-10-30"
@@ -13756,20 +13752,20 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Spread plan horizon: manage by 2026-10-23.",
-     "as_of_text": "Plan as of 8:39 PM ET \u00b7 Prices checked 8:39 PM ET",
+     "as_of_text": "Plan as of 8:44 PM ET \u00b7 Prices checked 8:44 PM ET",
      "provenance": {
-      "plan_id": "plan-2026-10-16-IREN-ema_vwap_options-IREN-2026-10-16-6",
-      "source_system": "ledger_fill",
-      "source_record_id": "ema_vwap_options:IREN:2026-10-16:6",
+      "plan_id": "plan-2026-10-16-IREN-ema_vwap_options-IREN",
+      "source_system": "sleeve_position_record",
+      "source_record_id": "ema_vwap_options:IREN",
       "source_timestamp": "2026-10-16",
-      "source_hash": "a083f243fddc7b5a",
-      "ingested_at": "2026-10-17T00:39:39.036642+00:00",
+      "source_hash": "1bfee91871cf7b24",
+      "ingested_at": "2026-10-17T00:44:43.797174+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 8:39 PM ET."
+      "text": "This spread plan runs to its manage-by date \u2014 re-validated on every pass while it stands, and it leaves the list when the position closes or the manage-by date passes. Prices and strategy reasons are from the desk's scoring pass at 8:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -15969,7 +15965,7 @@
     "Price has reset near support \u2014 it closed $286.03, just above its recent swing low at $281.29. The reset is at the swing-low zone rather than at the 20-day average the scoring spec's tight test measures, so it earns a smaller credit.",
     "Stop sits inside one day's normal range \u2014 very likely to be noise-stopped."
    ],
-   "entry": 288.9905,
+   "entry": 288.05,
    "stop": 283.83,
    "target": null,
    "last_close": 286.03,
@@ -16011,12 +16007,12 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-17T00:39:39.036642+00:00",
+   "scored_at": "2026-10-17T00:44:43.797174+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "red_day_reversal:ALAB",
     "source_timestamp": "2026-10-16",
-    "source_hash": "dda82c6db02153ad"
+    "source_hash": "5d7edd9599238e03"
    },
    "brief": {
     "symbol": "ALAB",
@@ -16091,7 +16087,7 @@
      286.03
     ],
     "levels": {
-     "entry": 288.9905,
+     "entry": 288.05,
      "stop": 283.83,
      "recorded_stop": 283.83,
      "trading_stop": 283.83,
@@ -16107,7 +16103,7 @@
     },
     "setup_story": [
      "On Friday, October 16, 2026, ALAB was flagged by 3 of the desk's strategies across 2 independent families (intraday pullback and red-day reversal) and scored 36 of 100 \u2014 Watch tier on the desk's list.",
-     "The desk bought it at $288.99. The position is still held; the last close was $286.03 (-1.0% from entry).",
+     "The desk bought it at $288.05. The position is still held; the last close was $286.03 (-0.7% from entry).",
      "The picture as a whole: price closed $286.03, just above its recent swing low ($281.29) \u2014 reset onto the swing-low zone; the recent swing low at $281.29 is intact below price; its 10-session move is -18.4% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.99 (VIX as of 2026-10-16)."
     ],
     "lens_walkthrough": [
@@ -16188,16 +16184,16 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T00:39:39.036642+00:00",
+    "scored_at": "2026-10-17T00:44:43.797174+00:00",
     "plan": {
      "status": "Entered",
-     "action": "Hold ALAB \u2014 the desk bought it at $288.99. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
+     "action": "Hold ALAB \u2014 the desk bought it at $288.05. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
      "why": "Price closed $286.03, just above its recent swing low ($281.29) \u2014 reset onto the swing-low zone; the recent swing low at $281.29 is intact below price; its 10-session move is -18.4% \u2014 nowhere near the +25% spike the method rejects; the market read Chop on a fear day, fear gauge at 19.99 (VIX as of 2026-10-16).",
      "instrument": null,
      "entry_zone": {
-      "anchor": 288.99,
-      "lo": 288.99,
-      "hi": 288.99,
+      "anchor": 288.05,
+      "lo": 288.05,
+      "hi": 288.05,
       "basis": "the entering strategy's recorded entry \u2014 shown as the price itself, not widened into a zone: a quarter of the 14-day average range below it would cross the trade's stop at $283.83, and below that stop the trade is over"
      },
      "entry_note": null,
@@ -16223,20 +16219,20 @@
      ],
      "targets_note": "Targets are profit objectives the desk reviews on daily closes \u2014 not resting orders; a gap can skip a level entirely. A second objective was not printed: the next named level ($303.00) is not materially beyond the first target \u2014 the gap is under the desk's materiality floor (the larger of half the risk distance and a full 14-day average range).",
      "risk_reward": {
-      "ratio": 2.37,
-      "text": "Risk $5.16 a share to the stop ($283.83); reward $12.21 to its objective ($301.20) \u2014 R 2.37, which breaks even at a 30% win rate before costs.",
-      "headline_r": 2.37,
-      "risk": 5.16,
-      "reward_t1": 12.21,
-      "r_t1": 2.37,
-      "reward_final": 12.21,
-      "r_final": 2.37,
-      "breakeven_win_rate_t1": 0.297,
-      "breakeven_win_rate_final": 0.297,
+      "ratio": 3.12,
+      "text": "Risk $4.22 a share to the stop ($283.83); reward $13.15 to its objective ($301.20) \u2014 R 3.12, which breaks even at a 24% win rate before costs.",
+      "headline_r": 3.12,
+      "risk": 4.22,
+      "reward_t1": 13.15,
+      "r_t1": 3.12,
+      "reward_final": 13.15,
+      "r_final": 3.12,
+      "breakeven_win_rate_t1": 0.243,
+      "breakeven_win_rate_final": 0.243,
       "badge": null,
       "justification": null,
       "rr_basis": {
-       "entry": 288.9905,
+       "entry": 288.05,
        "stop": 283.83,
        "t1": 301.2,
        "t_final": 301.2
@@ -16260,20 +16256,20 @@
      },
      "expires_at": "2026-10-21T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 3 trading sessions from entry (to 2026-10-21), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 8:39 PM ET \u00b7 Prices checked 8:39 PM ET",
+     "as_of_text": "Plan as of 8:44 PM ET \u00b7 Prices checked 8:44 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-16-ALAB-red_day_reversal-ALAB",
       "source_system": "sleeve_position_record",
       "source_record_id": "red_day_reversal:ALAB",
       "source_timestamp": "2026-10-16",
-      "source_hash": "dda82c6db02153ad",
-      "ingested_at": "2026-10-17T00:39:39.036642+00:00",
-      "plan_version": 4,
-      "change_note": "Plan updated to version 4 since the last publish: entry zone (high), entry zone (low) changed on the source record."
+      "source_hash": "5d7edd9599238e03",
+      "ingested_at": "2026-10-17T00:44:43.797174+00:00",
+      "plan_version": 5,
+      "change_note": "Plan updated to version 5 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-16",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 3-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:39 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 3-session horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:44 PM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -18528,7 +18524,7 @@
    "instrument": null,
    "stop_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-17T00:39:39.036642+00:00",
+   "scored_at": "2026-10-17T00:44:43.797174+00:00",
    "provenance": {
     "source_system": "ledger_fill",
     "source_record_id": "red_day_reversal:SNDK:2026-10-16:17",
