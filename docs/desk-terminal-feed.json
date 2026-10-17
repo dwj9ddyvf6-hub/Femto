@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-17T23:41:04.708883+00:00",
- "generated_at_et": "2026-10-17T19:41:04.708883-04:00",
+ "generated_at_utc": "2026-10-17T23:54:51.034698+00:00",
+ "generated_at_et": "2026-10-17T19:54:51.034698-04:00",
  "account": {
   "equity": "96385.73",
   "cash": "-196401.75",
@@ -968,23 +968,23 @@
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 13802,
+  "total": 13891,
   "by_kind": {
    "journal": 53,
    "fill": 1748,
    "outcome": 9,
    "import_position": 6,
-   "tick": 387,
+   "tick": 389,
    "nightly_reconcile": 53,
    "import_open_order": 51,
-   "signal_intent": 5388,
-   "entry_rejected": 1996,
-   "exit_skipped": 188,
+   "signal_intent": 5430,
+   "entry_rejected": 1998,
+   "exit_skipped": 190,
    "intent_rejected": 184,
-   "slice_sync": 477,
+   "slice_sync": 478,
    "exit_submitted": 26,
    "pass_watchdog": 26,
-   "entry_skipped": 3160,
+   "entry_skipped": 3200,
    "entry_bp_breaker": 8,
    "exit_rejected": 42
   }
@@ -1036,7 +1036,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T23:49:44.957751+00:00",
+   "scored_at": "2026-10-17T23:54:58.532995+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1227,7 +1227,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T23:49:44.957751+00:00",
+    "scored_at": "2026-10-17T23:54:58.532995+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1289,20 +1289,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:49 PM ET \u00b7 Prices checked 7:49 PM ET",
+     "as_of_text": "Plan as of 7:54 PM ET \u00b7 Prices checked 7:54 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-17-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-17T23:49:44.957751+00:00",
+      "ingested_at": "2026-10-17T23:54:58.532995+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-17",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:49 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:54 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -2562,6 +2562,7 @@
       ]
      }
     },
+    "visual_read": null,
     "desk_read": {
      "call": "against",
      "call_band": "mixed",
@@ -3149,6 +3150,15 @@
        "salience": 1.08,
        "disposition": "considered",
        "gap": false
+      },
+      {
+       "key": "visual_read",
+       "factor": "Visual chart read",
+       "reading": "No visual read of the rendered charts backs this brief \u2014 the charts were rendered but not read back, so this brief weighs the computed geometry only. The absence is stated, not hidden.",
+       "stance": 0,
+       "salience": 0.5,
+       "disposition": "considered",
+       "gap": true
       }
      ],
      "level1": [
@@ -3747,6 +3757,15 @@
        "salience": 1.08,
        "disposition": "considered",
        "gap": false
+      },
+      {
+       "key": "visual_read",
+       "factor": "Visual chart read",
+       "reading": "No visual read of the rendered charts backs this brief \u2014 the charts were rendered but not read back, so this brief weighs the computed geometry only. The absence is stated, not hidden.",
+       "stance": 0,
+       "salience": 0.5,
+       "disposition": "considered",
+       "gap": true
       }
      ],
      "conflicts": [
@@ -3769,7 +3788,7 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on LITE: the balance of everything measured leans against this setup. The full weighing nets even (balance -0.03); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the volume-confirmed momentum tips it against the call (-0.25 of its weighed share). Chart pattern: Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost Swing structure: higher highs, higher lows. The conflict is the story: Strategy agreement vs Chart pattern pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 83 items on the desk's list were weighed for this name: Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average); swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.22. What would change the call: a daily close below $800.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
+     "paragraph": "The desk's read on LITE: the balance of everything measured leans against this setup. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. The full weighing nets even (balance -0.03); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the volume-confirmed momentum tips it against the call (-0.25 of its weighed share). Chart pattern: Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost Swing structure: higher highs, higher lows. The conflict is the story: Strategy agreement vs Chart pattern pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 83 items on the desk's list were weighed for this name: Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average); swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.22. What would change the call: a daily close below $800.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "change_call": "What would change the call: a daily close below $800.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
@@ -3818,8 +3837,8 @@
      ],
      "consideration_counts": {
       "items": 83,
-      "value": 80,
-      "unavailable": 3,
+      "value": 81,
+      "unavailable": 2,
       "material": 6
      }
     },
@@ -4759,15 +4778,17 @@
        "family": "volume",
        "label": "Liquidity & float (addendum 1)",
        "status": "value",
-       "fact": "Liquidity: average daily volume 4,778,727 shares ($3,938,292,241.30 a day at the last close); no EDGAR shares-outstanding record resolved for this name, so no market-cap or float fact is stated; the typical spread is not stated \u2014 the desk holds no equity quote snapshot at this boundary.",
+       "fact": "Liquidity: average daily volume 4,778,727 shares ($3,938,292,241.30 a day at the last close); shares outstanding 89,700,000 (EDGAR facts, Lumentum Holdings Inc.), a market value near $73,924,461,000.00; the typical spread is not stated \u2014 the desk holds no equity quote snapshot at this boundary.",
        "data": {
         "adv20": 4778727,
-        "dollar_adv20": 3938292241
+        "dollar_adv20": 3938292241,
+        "shares_outstanding": 89700000.0,
+        "mcap_est": 73924461000
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Liquidity: average daily volume 4,778,727 shares ($3,938,292,241.30 a day at the last close); no EDGAR shares-outstanding record resolved for this name, so no m"
+       "deciding": "considered \u2014 Liquidity: average daily volume 4,778,727 shares ($3,938,292,241.30 a day at the last close); shares outstanding 89,700,000 (EDGAR facts, Lumentum Holdings Inc."
       },
       {
        "key": "div_daily_core",
@@ -5239,10 +5260,10 @@
        "status": "unavailable",
        "fact": null,
        "data": {},
-       "reason": "Tensor printed no signal row for this name this session, and the memo carries a diagnostics snapshot only with a row",
-       "needs": "the signal memo row's diagnostics snapshot (the engine's newest-bar slow/fast state and votes, wired in Stage 5; rows printed before that wiring, or without diagnostics, carry none). No separate weekly/daily engine reads exist \u2014 the canonical engine publishes one series (Decision #108)",
+       "reason": "Tensor printed no signal row for this name this session, and the memo carries no diagnostics snapshot for it \u2014 the name sits outside the engine's 41-name basket (Decision #38), or the engine evaluated it and printed no diagnostics",
+       "needs": "the memo's diagnostics snapshot for the name (the engine's newest-bar slow/fast state and votes \u2014 wired with a signal row in Stage 5 and for every evaluated basket name by GESTALT G4, 2026-10-17; names outside the 41-name basket, Decision #38, have no snapshot because the engine does not run on them). No separate weekly/daily engine reads exist \u2014 the canonical engine publishes one series (Decision #108)",
        "verdict": "unavailable",
-       "deciding": "unavailable \u2014 Tensor printed no signal row for this name this session, and the memo carries a diagnostics snapshot only with a row; needs the signal memo row's diagnostics snapshot (the engine's newest-bar slow/fast state and votes, wired in Stage 5; rows printed before that wiring, or without diagnostics, carry none). No separate weekly/daily engine reads exist \u2014 the canonical engine publishes one series (Decision #108)"
+       "deciding": "unavailable \u2014 Tensor printed no signal row for this name this session, and the memo carries no diagnostics snapshot for it \u2014 the name sits outside the engine's 41-name basket (Decision #38), or the engine evaluated it and printed no diagnostics; needs the memo's diagnostics snapshot for the name (the engine's newest-bar slow/fast state and votes \u2014 wired with a signal row in Stage 5 and for every evaluated basket name by GESTALT G4, 2026-10-17; names outside the 41-name basket, Decision #38, have no snapshot because the engine does not run on them). No separate weekly/daily engine reads exist \u2014 the canonical engine publishes one series (Decision #108)"
       },
       {
        "key": "fear_window",
@@ -5385,7 +5406,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 77.8% \u2014 at the money on the 2026-11-20 expiry (34 days out, strike $820.00; Alpaca snapshot IV from the desk's options product, built 2026-10-17T23:14:21.692790+00:00.",
+       "fact": "Standing IV on the name: 77.8% \u2014 at the money on the 2026-11-20 expiry (34 days out, strike $820.00; Alpaca snapshot IV from the desk's options product, built 2026-10-17T23:53:32.559740+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 77.8,
@@ -5525,7 +5546,8 @@
         "median_pct": -18.201620632569494,
         "mine_pct": -7.78,
         "spread": 10.43,
-        "n_peers": 13
+        "n_peers": 13,
+        "source": "desk"
        },
        "reason": null,
        "needs": null,
@@ -5562,13 +5584,17 @@
        "key": "fundamentals",
        "family": "company_market",
        "label": "Quarterly fundamentals & market cap",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no EDGAR company-facts record resolved for this name at this boundary",
-       "needs": "SEC EDGAR company facts (the desk's mcap_facts product) keyed by a CIK the name resolves to",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no EDGAR company-facts record resolved for this name at this boundary; needs SEC EDGAR company facts (the desk's mcap_facts product) keyed by a CIK the name resolves to"
+       "status": "value",
+       "fact": "EDGAR company facts: Lumentum Holdings Inc. reports 89,700,000 shares outstanding (fact dated 2026-08-14); at the last close that is a market value near $73,924,461,000.00. Deeper quarterly fundamentals ride with the sleeves, not the brief.",
+       "data": {
+        "shares": 89700000.0,
+        "entity": "Lumentum Holdings Inc.",
+        "as_of": "2026-08-14"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 EDGAR company facts: Lumentum Holdings Inc"
       },
       {
        "key": "news_counts",
@@ -5905,8 +5931,8 @@
      ],
      "counts": {
       "items": 83,
-      "value": 80,
-      "unavailable": 3,
+      "value": 81,
+      "unavailable": 2,
       "material": 6
      }
     },
@@ -6239,7 +6265,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T23:49:44.957751+00:00",
+   "scored_at": "2026-10-17T23:54:58.532995+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -6430,7 +6456,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T23:49:44.957751+00:00",
+    "scored_at": "2026-10-17T23:54:58.532995+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -6490,20 +6516,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:49 PM ET \u00b7 Prices checked 7:49 PM ET",
+     "as_of_text": "Plan as of 7:54 PM ET \u00b7 Prices checked 7:54 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-17-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-17T23:49:44.957751+00:00",
+      "ingested_at": "2026-10-17T23:54:58.532995+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-17",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:49 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:54 PM ET."
      },
      "conviction": {
       "call": "for",
@@ -7433,6 +7459,7 @@
       ]
      }
     },
+    "visual_read": null,
     "desk_read": {
      "call": "for",
      "call_band": "mixed",
@@ -7921,6 +7948,15 @@
        "salience": 0.9,
        "disposition": "considered",
        "gap": false
+      },
+      {
+       "key": "visual_read",
+       "factor": "Visual chart read",
+       "reading": "No visual read of the rendered charts backs this brief \u2014 the charts were rendered but not read back, so this brief weighs the computed geometry only. The absence is stated, not hidden.",
+       "stance": 0,
+       "salience": 0.5,
+       "disposition": "considered",
+       "gap": true
       }
      ],
      "level1": [
@@ -8411,6 +8447,15 @@
        "salience": 0.9,
        "disposition": "considered",
        "gap": false
+      },
+      {
+       "key": "visual_read",
+       "factor": "Visual chart read",
+       "reading": "No visual read of the rendered charts backs this brief \u2014 the charts were rendered but not read back, so this brief weighs the computed geometry only. The absence is stated, not hidden.",
+       "stance": 0,
+       "salience": 0.5,
+       "disposition": "considered",
+       "gap": true
       }
      ],
      "conflicts": [
@@ -8424,7 +8469,7 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on FFIV: the balance of everything measured leans in this setup's favor. The full weighing nets even (balance +0.10); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the levels on the chart tip it for the call (+0.50 of its weighed share). Strategy agreement: Selected by 2 independent strategy families (intraday pullback, red-day reversal) \u2014 independent agreement carries weight. The conflict is the story: Strategy agreement vs Volatility / fear pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 83 items on the desk's list were weighed for this name: MACD crossover events: the last signal-line cross was bearish on 2026-10-15 (1 session ago); the last zero-line cross was bullish on 2026-09-11 (25 sessions ago); Candle prints at key levels (last 30 sessions): tweezer top on 2026-10-12; bullish harami on 2026-10-13; bearish engulfing on 2026-10-16. 4 further print(s) landed away from any key level and do not count (the list's gate). 21 named detectors run. What would change the call: a daily close below $424.32 \u2014 the pattern's lower boundary, the support line through the 2026-04-10 and 2026-08-20 pivots \u2014 breaks the price structure this setup rests on; or volatility / fear turning for the setup.",
+     "paragraph": "The desk's read on FFIV: the balance of everything measured leans in this setup's favor. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. The full weighing nets even (balance +0.10); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the levels on the chart tip it for the call (+0.50 of its weighed share). Strategy agreement: Selected by 2 independent strategy families (intraday pullback, red-day reversal) \u2014 independent agreement carries weight. The conflict is the story: Strategy agreement vs Volatility / fear pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 83 items on the desk's list were weighed for this name: MACD crossover events: the last signal-line cross was bearish on 2026-10-15 (1 session ago); the last zero-line cross was bullish on 2026-09-11 (25 sessions ago); Candle prints at key levels (last 30 sessions): tweezer top on 2026-10-12; bullish harami on 2026-10-13; bearish engulfing on 2026-10-16. 4 further print(s) landed away from any key level and do not count (the list's gate). 21 named detectors run. What would change the call: a daily close below $424.32 \u2014 the pattern's lower boundary, the support line through the 2026-04-10 and 2026-08-20 pivots \u2014 breaks the price structure this setup rests on; or volatility / fear turning for the setup.",
      "change_call": "What would change the call: a daily close below $424.32 \u2014 the pattern's lower boundary, the support line through the 2026-04-10 and 2026-08-20 pivots \u2014 breaks the price structure this setup rests on; or volatility / fear turning for the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
@@ -8466,8 +8511,8 @@
      ],
      "consideration_counts": {
       "items": 83,
-      "value": 80,
-      "unavailable": 3,
+      "value": 81,
+      "unavailable": 2,
       "material": 5
      }
     },
@@ -9320,15 +9365,17 @@
        "family": "volume",
        "label": "Liquidity & float (addendum 1)",
        "status": "value",
-       "fact": "Liquidity: average daily volume 520,609 shares ($230,124,950.98 a day at the last close); no EDGAR shares-outstanding record resolved for this name, so no market-cap or float fact is stated; the typical spread is not stated \u2014 the desk holds no equity quote snapshot at this boundary.",
+       "fact": "Liquidity: average daily volume 520,609 shares ($230,124,950.98 a day at the last close); shares outstanding 56,627,182 (EDGAR facts, F5, INC.), a market value near $25,030,913,259.46; the typical spread is not stated \u2014 the desk holds no equity quote snapshot at this boundary.",
        "data": {
         "adv20": 520609,
-        "dollar_adv20": 230124951
+        "dollar_adv20": 230124951,
+        "shares_outstanding": 56627182.0,
+        "mcap_est": 25030913259
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Liquidity: average daily volume 520,609 shares ($230,124,950.98 a day at the last close); no EDGAR shares-outstanding record resolved for this name, so no marke"
+       "deciding": "considered \u2014 Liquidity: average daily volume 520,609 shares ($230,124,950.98 a day at the last close); shares outstanding 56,627,182 (EDGAR facts, F5, INC.), a market value "
       },
       {
        "key": "div_daily_core",
@@ -9802,10 +9849,10 @@
        "status": "unavailable",
        "fact": null,
        "data": {},
-       "reason": "Tensor printed no signal row for this name this session, and the memo carries a diagnostics snapshot only with a row",
-       "needs": "the signal memo row's diagnostics snapshot (the engine's newest-bar slow/fast state and votes, wired in Stage 5; rows printed before that wiring, or without diagnostics, carry none). No separate weekly/daily engine reads exist \u2014 the canonical engine publishes one series (Decision #108)",
+       "reason": "Tensor printed no signal row for this name this session, and the memo carries no diagnostics snapshot for it \u2014 the name sits outside the engine's 41-name basket (Decision #38), or the engine evaluated it and printed no diagnostics",
+       "needs": "the memo's diagnostics snapshot for the name (the engine's newest-bar slow/fast state and votes \u2014 wired with a signal row in Stage 5 and for every evaluated basket name by GESTALT G4, 2026-10-17; names outside the 41-name basket, Decision #38, have no snapshot because the engine does not run on them). No separate weekly/daily engine reads exist \u2014 the canonical engine publishes one series (Decision #108)",
        "verdict": "unavailable",
-       "deciding": "unavailable \u2014 Tensor printed no signal row for this name this session, and the memo carries a diagnostics snapshot only with a row; needs the signal memo row's diagnostics snapshot (the engine's newest-bar slow/fast state and votes, wired in Stage 5; rows printed before that wiring, or without diagnostics, carry none). No separate weekly/daily engine reads exist \u2014 the canonical engine publishes one series (Decision #108)"
+       "deciding": "unavailable \u2014 Tensor printed no signal row for this name this session, and the memo carries no diagnostics snapshot for it \u2014 the name sits outside the engine's 41-name basket (Decision #38), or the engine evaluated it and printed no diagnostics; needs the memo's diagnostics snapshot for the name (the engine's newest-bar slow/fast state and votes \u2014 wired with a signal row in Stage 5 and for every evaluated basket name by GESTALT G4, 2026-10-17; names outside the 41-name basket, Decision #38, have no snapshot because the engine does not run on them). No separate weekly/daily engine reads exist \u2014 the canonical engine publishes one series (Decision #108)"
       },
       {
        "key": "fear_window",
@@ -9937,7 +9984,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 53.7% \u2014 at the money on the 2026-11-20 expiry (34 days out, strike $440.00; Alpaca snapshot IV from the desk's options product, built 2026-10-17T23:14:21.692790+00:00.",
+       "fact": "Standing IV on the name: 53.7% \u2014 at the money on the 2026-11-20 expiry (34 days out, strike $440.00; Alpaca snapshot IV from the desk's options product, built 2026-10-17T23:53:32.559740+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 53.7,
@@ -10072,7 +10119,8 @@
         "median_pct": -24.051561998256798,
         "mine_pct": 1.7,
         "spread": 25.76,
-        "n_peers": 15
+        "n_peers": 15,
+        "source": "desk"
        },
        "reason": null,
        "needs": null,
@@ -10109,13 +10157,17 @@
        "key": "fundamentals",
        "family": "company_market",
        "label": "Quarterly fundamentals & market cap",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no EDGAR company-facts record resolved for this name at this boundary",
-       "needs": "SEC EDGAR company facts (the desk's mcap_facts product) keyed by a CIK the name resolves to",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no EDGAR company-facts record resolved for this name at this boundary; needs SEC EDGAR company facts (the desk's mcap_facts product) keyed by a CIK the name resolves to"
+       "status": "value",
+       "fact": "EDGAR company facts: F5, INC. reports 56,627,182 shares outstanding (fact dated 2026-08-03); at the last close that is a market value near $25,030,913,259.46. Deeper quarterly fundamentals ride with the sleeves, not the brief.",
+       "data": {
+        "shares": 56627182.0,
+        "entity": "F5, INC.",
+        "as_of": "2026-08-03"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 EDGAR company facts: F5, INC"
       },
       {
        "key": "news_counts",
@@ -10433,8 +10485,8 @@
      ],
      "counts": {
       "items": 83,
-      "value": 80,
-      "unavailable": 3,
+      "value": 81,
+      "unavailable": 2,
       "material": 5
      }
     },
