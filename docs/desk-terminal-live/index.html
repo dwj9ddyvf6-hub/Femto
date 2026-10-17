@@ -299,6 +299,10 @@
     .setup-call{margin:0;font-size:16px;line-height:1.5;font-weight:600;color:var(--ink)}
     .setup-why{margin:0;font-size:13.5px;line-height:1.55;color:var(--muted)}
     .setup-card .setup-chart{margin:2px 0}
+    .setup-post{background:var(--panel-2);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:3px;padding:10px 12px}
+    .setup-post p{margin:0 0 8px;font-size:13.5px;line-height:1.55;color:var(--ink-dim)}
+    .setup-post p:last-child{margin-bottom:0}
+    .setup-post p:first-child{color:var(--ink)}
     .call-basis{margin:0;font-size:12.5px;line-height:1.5;color:var(--muted)}
     .conv-high{background:rgba(46,160,113,.18);color:#7bd9a8;border:1px solid rgba(46,160,113,.45)}
     .conv-mid{background:rgba(38,166,154,.14);color:#7fd4c9;border:1px solid rgba(38,166,154,.4)}
@@ -1013,6 +1017,14 @@
     if(!bits.length)return p.entry_note||'';
     return bits.join(' \u00b7 ');
   }
+  /* THE CARD (Amendment A-2 (§12)): the brief's post text,
+     rendered as the post it is — paragraphs, nothing added. */
+  function postHtml(post){
+    if(!post)return '';
+    return '<div class="setup-post">'+String(post).split(/\n\n+/).map(function(p){
+      return '<p>'+esc(p)+'</p>';
+    }).join('')+'</div>';
+  }
   // Stage B (SA-8/SA-13): the PLAN block — the first section of
   // the detail view. One object, the same one the card strip
   // reads: action, why, entry zone, stop, targets, the one
@@ -1126,10 +1138,11 @@
     if(!setups.length&&!departures.length){ panel.hidden=true; return; }
     panel.hidden=false;
     var grid=$('setupsGrid'); if(grid){
-    /* PRODUCT REDESIGN (§11): the card IS the call — expectation
-       first, the plan strip, this name's why, the plan chart,
-       one door to the full read. A name whose brief carries no
-       call gets no card: it drops to the one-line bucket. */
+    /* PRODUCT REDESIGN (§11) + THE CARD (A-2): the face is
+       the card image + its post when the brief carries them
+       (the A-1 text face is the fallback), one door to the
+       full read. A name whose brief carries no call gets no
+       card: it drops to the one-line bucket. */
     var nocall=[];
     grid.innerHTML=setups.length?setups.map(function(s){
       var names=(s.sources||[]).map(function(k){return (ALGO[k]||{}).name||k;});
@@ -1140,8 +1153,17 @@
       var tc=(brf&&brf.the_call&&typeof brf.the_call==='object')?brf.the_call:null;
       if(tc&&tc.no_call){ nocall.push(s); return ''; }
       var strip=plan?planStripText(plan):'';
+      /* THE CARD (Amendment A-2 (§12)) is the face when the brief carries
+         one: the image holds the call, the why and the strip,
+         so the HTML face adds only the post text — the same
+         facts are never told twice on the card. Without a
+         card, the A-1 text face below stands as the fallback. */
+      var hasCard=!!(brf&&brf.card);
       var chartImg='';
-      if(brf&&(brf.chart_plan||brf.chart)){
+      if(hasCard){
+        chartImg='<img class="setup-chart" src="'+esc(brf.card)+'" alt="The desk\u2019s card for '+esc(s.symbol)+' — the call, the plan drawn on the chart, and what proves it wrong">'
+          +postHtml(brf.card_post);
+      } else if(brf&&(brf.chart_plan||brf.chart)){
         chartImg='<img class="setup-chart" src="'+esc(brf.chart_plan||brf.chart)+'" alt="Plan chart for '+esc(s.symbol)+' — entry zone, stop, objectives and invalidation">';
       }
       return '<article class="setup-card" id="setup-'+esc(s.symbol)+'">'
@@ -1150,11 +1172,11 @@
         +'<p class="setup-status">'+(held?'<span class="pill good">Bought today</span>':'<span class="pill info">Watching</span>')
         +(s.last_close!=null?'<span class="muted">Last close '+money(s.last_close)+'</span>':'')
         +' <span class="muted">'+esc(s.tier)+' \u00b7 score '+esc(s.score)+'</span></p>'
-        +(tc&&tc.expectation?'<p class="setup-call">'+esc(tc.expectation)+'</p>'
-          :(plan&&plan.action?'<p class="setup-call">'+esc(plan.action)+'</p>':''))
-        +(tc&&tc.why&&tc.why.length?'<p class="setup-why">'+esc(tc.why.join(' '))+'</p>'
-          :(!tc&&plan&&plan.why?'<p class="setup-why">'+esc(plan.why)+'</p>':''))
-        +(strip?'<p class="setup-planstrip">'+esc(strip)+'</p>':'')
+        +(!hasCard&&tc&&tc.expectation?'<p class="setup-call">'+esc(tc.expectation)+'</p>'
+          :(!hasCard&&plan&&plan.action?'<p class="setup-call">'+esc(plan.action)+'</p>':''))
+        +(!hasCard&&tc&&tc.why&&tc.why.length?'<p class="setup-why">'+esc(tc.why.join(' '))+'</p>'
+          :(!hasCard&&!tc&&plan&&plan.why?'<p class="setup-why">'+esc(plan.why)+'</p>':''))
+        +(!hasCard&&strip?'<p class="setup-planstrip">'+esc(strip)+'</p>':'')
         +(chartImg||sparkSvg(s))
         +(!plan?'<div class="setup-levels">'+lvl('Entry',s.entry)+lvl(s.instrument&&s.instrument.type==='options_package'?'Thesis level (reference)':'Stop',s.stop)+lvl('Target',s.target)+'</div>':'')
         +'<p class="setup-sources">Selected by: '+esc(names.join(', ')||'\u2014')+'</p>'
@@ -1368,7 +1390,11 @@
     /* PRODUCT REDESIGN (§11): ONE expansion, story-first order —
        the plan chart (hero), the call, the plan in full, then
        the evidence. Nothing is told twice. */
-    if(b&&b.chart_plan){
+    if(b&&b.card){
+      html+='<img class="setup-chart" src="'+esc(b.card)+'" alt="The desk\u2019s card for '+esc(s.symbol)+' — the call, the plan drawn on the chart, and what proves it wrong">'
+        +'<p class="setup-chart-cap">The card — the call and the plan as the desk states them, with the post the desk publishes for this setup. The full read follows below.</p>'
+        +postHtml(b.card_post);
+    } else if(b&&b.chart_plan){
       html+='<img class="setup-chart" src="'+esc(b.chart_plan)+'" alt="Plan chart for '+esc(s.symbol)+' — entry zone, stop, objectives and the line that ends the setup">'
         +'<p class="setup-chart-cap">The plan, drawn — the entry zone, the stop, the objectives, and the line that ends the setup. The desk&rsquo;s full annotated chart read is in the evidence below.</p>';
     }
