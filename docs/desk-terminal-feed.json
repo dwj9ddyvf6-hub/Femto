@@ -1036,7 +1036,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T04:34:48.475104+00:00",
+   "scored_at": "2026-10-17T04:39:45.335688+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1216,7 +1216,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T04:34:48.475104+00:00",
+    "scored_at": "2026-10-17T04:39:45.335688+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1275,20 +1275,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 12:34 AM ET \u00b7 Prices checked 12:34 AM ET",
+     "as_of_text": "Plan as of 12:39 AM ET \u00b7 Prices checked 12:39 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-17-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-17T04:34:48.475104+00:00",
+      "ingested_at": "2026-10-17T04:39:45.335688+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-17",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:34 AM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:39 AM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -3802,8 +3802,8 @@
      ],
      "consideration_counts": {
       "items": 83,
-      "value": 72,
-      "unavailable": 11,
+      "value": 80,
+      "unavailable": 3,
       "material": 6
      }
     },
@@ -5363,25 +5363,32 @@
        "key": "iv_name",
        "family": "options",
        "label": "Implied volatility on the name",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no options product reaches the brief",
-       "needs": "the desk's options gap product (core/gap_products.py \u2014 contracts + snapshots for the board's names, 30-minute cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no options product reaches the brief; needs the desk's options gap product (core/gap_products.py \u2014 contracts + snapshots for the board's names, 30-minute cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "Standing IV on the name: 77.8% \u2014 at the money on the 2026-11-20 expiry (34 days out, strike $820.00; Alpaca snapshot IV from the desk's options product, built 2026-10-17T04:37:52.097473+00:00.",
+       "data": {
+        "atm_iv": {
+         "iv_pct": 77.8,
+         "expiry": "2026-11-20",
+         "dte": 34,
+         "strike": 820.0
+        }
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Standing IV on the name: 77.8% \u2014 at the money on the 2026-11-20 expiry (34 days out, strike $820.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 75.0% annualized. No IV side reached the brief, so neither rank nor the HV-vs-IV spread can be stated.",
+       "fact": "Realized volatility (20 sessions) is 75.0% annualized. IV 77.8% vs HV 75.0% \u2014 a spread of +2.8 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 75.0,
-        "iv_pct": null,
+        "iv_pct": 77.8,
         "iv_rank": null,
-        "iv_readings": 0
+        "iv_readings": 1
        },
        "reason": null,
        "needs": null,
@@ -5392,13 +5399,42 @@
        "key": "options_positioning",
        "family": "options",
        "label": "Options positioning on the name",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no options product reaches the brief",
-       "needs": "the desk's options gap product (core/gap_products.py \u2014 the chain's own open interest and traded volume); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no options product reaches the brief; needs the desk's options gap product (core/gap_products.py \u2014 the chain's own open interest and traded volume); no fresh product reached the brief"
+       "status": "value",
+       "fact": "Options positioning (the name's chain through 2027-04-16: 3086 contracts; open interest as published on the contracts themselves): calls carry 71,342 OI, puts 107,749 \u2014 a put/call OI ratio of 1.51. Today's traded volume ran 19,683 calls / 19,986 puts (ratio 1.015). The largest single open interest sits at the $600.00 put expiring 2026-12-18 (4,394 contracts).",
+       "data": {
+        "n_contracts": 3086,
+        "call_oi": 71342,
+        "put_oi": 107749,
+        "oi_put_call": 1.51,
+        "call_vol": 19683,
+        "put_vol": 19986,
+        "vol_put_call": 1.015,
+        "expiries_through": "2027-04-16",
+        "top_oi": [
+         {
+          "strike": 600.0,
+          "type": "put",
+          "expiry": "2026-12-18",
+          "oi": 4394
+         },
+         {
+          "strike": 800.0,
+          "type": "put",
+          "expiry": "2027-01-15",
+          "oi": 2537
+         },
+         {
+          "strike": 1050.0,
+          "type": "put",
+          "expiry": "2027-01-15",
+          "oi": 2281
+         }
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Options positioning (the name's chain through 2027-04-16: 3086 contracts; open interest as published on the contracts themselves): calls carry 71,342 OI, puts 1"
       },
       {
        "key": "put_call_gamma",
@@ -5416,25 +5452,46 @@
        "key": "short_interest",
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no shorts product reaches the brief",
-       "needs": "FINRA short interest proper \u2014 the public CDN files answer AccessDenied on every probed settlement date (retired), and the FINRA Query API requires a developer credential from FINRA's API Console (free registration) that the desk does not hold; days to cover divides short interest by volume and inherits the gap",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no shorts product reaches the brief; needs FINRA short interest proper \u2014 the public CDN files answer AccessDenied on every probed settlement date (retired), and the FINRA Query API requires a developer credential from FINRA's API Console (free registration) that the desk does not hold; days to cover divides short interest by volume and inherits the gap"
+       "status": "value",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-16): shorts were 45.3% of the day's volume (889,051 of 1,962,402 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 80,968 shares in total, most recently 19,810 on 2026-09-30. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "data": {
+        "regsho": {
+         "short_volume": 889051.317868,
+         "total_volume": 1962402.111341,
+         "short_pct": 45.3
+        },
+        "ftd": {
+         "last_date": "2026-09-30",
+         "last_qty": 19810.0,
+         "total_qty": 80968.0,
+         "n_days": 7
+        },
+        "short_interest": null,
+        "days_to_cover": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-16): shorts were 45.3% of the day's volume (889,051 of 1,962,402 shares)"
       },
       {
        "key": "insider_buys",
        "family": "options",
        "label": "Insider buys",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no EDGAR product reaches the brief",
-       "needs": "the desk's EDGAR gap product (SEC submissions + Form 4 detail via SEC Archives, daily cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no EDGAR product reaches the brief; needs the desk's EDGAR gap product (SEC submissions + Form 4 detail via SEC Archives, daily cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "Insider buys: none \u2014 the 8 Form 4 filings in the last 180 days carry no open-market purchase (code P). (Insider selling is not read, by the desk's frozen method.)",
+       "data": {
+        "insider": {
+         "n_buys": 0,
+         "shares": 0,
+         "last_date": null,
+         "filings_examined": 8
+        }
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Insider buys: none \u2014 the 8 Form 4 filings in the last 180 days carry no open-market purchase (code P)"
       },
       {
        "key": "peers_21d",
@@ -5458,13 +5515,27 @@
        "key": "filings_8k",
        "family": "company_market",
        "label": "SEC 8-K filings",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no EDGAR product reaches the brief",
-       "needs": "the desk's EDGAR gap product (SEC submissions, daily cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no EDGAR product reaches the brief; needs the desk's EDGAR gap product (SEC submissions, daily cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "SEC 8-K filings (EDGAR, the desk's product): 2 in the last 120 days; the most recent is 2026-08-11 (items 2.02,9.01). Recent dates: 2026-08-11, 2026-07-30.",
+       "data": {
+        "n_8k": 2,
+        "recent_8k": [
+         {
+          "date": "2026-08-11",
+          "items": "2.02,9.01",
+          "accession": "0001628280-26-055726"
+         },
+         {
+          "date": "2026-07-30",
+          "items": "5.02",
+          "accession": "0001628280-26-051078"
+         }
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 SEC 8-K filings (EDGAR, the desk's product): 2 in the last 120 days; the most recent is 2026-08-11 (items 2.02,9.01)"
       },
       {
        "key": "fundamentals",
@@ -5482,13 +5553,20 @@
        "key": "news_counts",
        "family": "company_market",
        "label": "News counts",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no news product reaches the brief",
-       "needs": "the desk's news gap product (Alpaca News via the desk's data credentials, daily cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no news product reaches the brief; needs the desk's news gap product (Alpaca News via the desk's data credentials, daily cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "News (Alpaca News, the desk's product): 10 items naming the company in the last 7 days, 35 in the last 30. The latest, 2026-10-16 via benzinga: \u201cChip Stocks Endure Longest Losing Streak Since 2006 as CoreWeave Credit Concerns Mount: This Week on Wall Street\u201d.",
+       "data": {
+        "n7": 10,
+        "n30": 35,
+        "capped": false,
+        "latest_date": "2026-10-16",
+        "latest_headline": "Chip Stocks Endure Longest Losing Streak Since 2006 as CoreWeave Credit Concerns Mount: This Week on Wall Street",
+        "latest_source": "benzinga"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 10 items naming the company in the last 7 days, 35 in the last 30"
       },
       {
        "key": "earnings",
@@ -5509,13 +5587,77 @@
        "key": "earnings_reactions",
        "family": "company_market",
        "label": "Past earnings reactions",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no EDGAR product reaches the brief",
-       "needs": "the desk's EDGAR gap product's report dates (8-K item 2.02) read against the brief's own bars; no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no EDGAR product reaches the brief; needs the desk's EDGAR gap product's report dates (8-K item 2.02) read against the brief's own bars; no fresh product reached the brief"
+       "status": "value",
+       "fact": "Past earnings reactions (each report's 8-K item 2.02 filing date, from EDGAR; the reaction is the next session's close-to-close move on the brief's own bars): the 2026-08-11 filing was followed by +13.6% on 2026-08-12; the 2026-05-05 filing was followed by -5.1% on 2026-05-06; the 2026-02-03 filing was followed by +7.0% on 2026-02-04; the 2025-11-04 filing was followed by +23.6% on 2025-11-05.",
+       "data": {
+        "moves": [
+         {
+          "report_date": "2026-08-11",
+          "session": "2026-08-12",
+          "move_pct": 13.63
+         },
+         {
+          "report_date": "2026-05-05",
+          "session": "2026-05-06",
+          "move_pct": -5.06
+         },
+         {
+          "report_date": "2026-02-03",
+          "session": "2026-02-04",
+          "move_pct": 7.0
+         },
+         {
+          "report_date": "2025-11-04",
+          "session": "2025-11-05",
+          "move_pct": 23.57
+         }
+        ],
+        "report_dates": [
+         "2026-08-11",
+         "2026-05-05",
+         "2026-02-03",
+         "2025-11-04",
+         "2025-08-12",
+         "2025-05-06",
+         "2025-02-06",
+         "2025-02-03",
+         "2024-11-07",
+         "2024-08-14",
+         "2024-05-06",
+         "2024-02-08",
+         "2023-11-08",
+         "2023-10-30",
+         "2023-08-17",
+         "2023-05-09",
+         "2023-04-06",
+         "2023-02-09",
+         "2022-11-08",
+         "2022-08-16",
+         "2022-05-04",
+         "2022-02-03",
+         "2021-11-04",
+         "2021-08-18",
+         "2021-05-12",
+         "2021-02-02",
+         "2021-01-19",
+         "2020-11-02",
+         "2020-08-11",
+         "2020-05-05",
+         "2020-02-04",
+         "2019-10-31",
+         "2019-08-08",
+         "2019-05-07",
+         "2019-02-05",
+         "2018-11-01",
+         "2018-08-08",
+         "2018-05-02",
+         "2018-02-06"
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Past earnings reactions (each report's 8-K item 2.02 filing date, from EDGAR; the reaction is the next session's close-to-close move on the brief's own bars): t"
       },
       {
        "key": "event_calendar_name",
@@ -5606,13 +5748,18 @@
        "key": "attention",
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no attention product reaches the brief",
-       "needs": "the desk's attention gap product (Wikimedia Pageviews, daily cadence; the article is resolved from the EDGAR entity name and printed with the fact); no fresh product reached the brief. Reddit has no credential-free route \u2014 its JSON endpoints refuse unauthenticated reads (403 on probe, 2026-10-16)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no attention product reaches the brief; needs the desk's attention gap product (Wikimedia Pageviews, daily cadence; the article is resolved from the EDGAR entity name and printed with the fact); no fresh product reached the brief. Reddit has no credential-free route \u2014 its JSON endpoints refuse unauthenticated reads (403 on probe, 2026-10-16)"
+       "status": "value",
+       "fact": "Wikipedia attention (article \u201cLumentum\u201d, resolved from the filer's EDGAR name): 259 views a day over the last 7 complete days vs 191 the week before (1.36\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "data": {
+        "article": "Lumentum",
+        "avg7": 258.9,
+        "avg_prior7": 191.0,
+        "ratio": 1.36
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cLumentum\u201d, resolved from the filer's EDGAR name): 259 views a day over the last 7 complete days vs 191 the week before (1.36\u00d7)"
       },
       {
        "key": "seasonality",
@@ -5737,8 +5884,8 @@
      ],
      "counts": {
       "items": 83,
-      "value": 72,
-      "unavailable": 11,
+      "value": 80,
+      "unavailable": 3,
       "material": 6
      }
     },
@@ -6071,7 +6218,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-17T04:34:48.475104+00:00",
+   "scored_at": "2026-10-17T04:39:45.335688+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -6251,7 +6398,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-17T04:34:48.475104+00:00",
+    "scored_at": "2026-10-17T04:39:45.335688+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -6310,20 +6457,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 12:34 AM ET \u00b7 Prices checked 12:34 AM ET",
+     "as_of_text": "Plan as of 12:39 AM ET \u00b7 Prices checked 12:39 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-17-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-17T04:34:48.475104+00:00",
+      "ingested_at": "2026-10-17T04:39:45.335688+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-17",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:34 AM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its 10-session horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:39 AM ET."
      },
      "conviction": {
       "call": "mixed",
@@ -8284,8 +8431,8 @@
      ],
      "consideration_counts": {
       "items": 83,
-      "value": 72,
-      "unavailable": 11,
+      "value": 80,
+      "unavailable": 3,
       "material": 5
      }
     },
@@ -9752,25 +9899,32 @@
        "key": "iv_name",
        "family": "options",
        "label": "Implied volatility on the name",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no options product reaches the brief",
-       "needs": "the desk's options gap product (core/gap_products.py \u2014 contracts + snapshots for the board's names, 30-minute cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no options product reaches the brief; needs the desk's options gap product (core/gap_products.py \u2014 contracts + snapshots for the board's names, 30-minute cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "Standing IV on the name: 53.7% \u2014 at the money on the 2026-11-20 expiry (34 days out, strike $440.00; Alpaca snapshot IV from the desk's options product, built 2026-10-17T04:37:52.097473+00:00.",
+       "data": {
+        "atm_iv": {
+         "iv_pct": 53.7,
+         "expiry": "2026-11-20",
+         "dte": 34,
+         "strike": 440.0
+        }
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Standing IV on the name: 53.7% \u2014 at the money on the 2026-11-20 expiry (34 days out, strike $440.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 33.8% annualized. No IV side reached the brief, so neither rank nor the HV-vs-IV spread can be stated.",
+       "fact": "Realized volatility (20 sessions) is 33.8% annualized. IV 53.7% vs HV 33.8% \u2014 a spread of +19.9 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 33.8,
-        "iv_pct": null,
+        "iv_pct": 53.7,
         "iv_rank": null,
-        "iv_readings": 0
+        "iv_readings": 1
        },
        "reason": null,
        "needs": null,
@@ -9781,13 +9935,42 @@
        "key": "options_positioning",
        "family": "options",
        "label": "Options positioning on the name",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no options product reaches the brief",
-       "needs": "the desk's options gap product (core/gap_products.py \u2014 the chain's own open interest and traded volume); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no options product reaches the brief; needs the desk's options gap product (core/gap_products.py \u2014 the chain's own open interest and traded volume); no fresh product reached the brief"
+       "status": "value",
+       "fact": "Options positioning (the name's chain through 2027-04-16: 488 contracts; open interest as published on the contracts themselves): calls carry 3,579 OI, puts 3,246 \u2014 a put/call OI ratio of 0.907. Today's traded volume ran 1,079 calls / 742 puts (ratio 0.688). The largest single open interest sits at the $470.00 put expiring 2026-11-20 (444 contracts).",
+       "data": {
+        "n_contracts": 488,
+        "call_oi": 3579,
+        "put_oi": 3246,
+        "oi_put_call": 0.907,
+        "call_vol": 1079,
+        "put_vol": 742,
+        "vol_put_call": 0.688,
+        "expiries_through": "2027-04-16",
+        "top_oi": [
+         {
+          "strike": 470.0,
+          "type": "put",
+          "expiry": "2026-11-20",
+          "oi": 444
+         },
+         {
+          "strike": 420.0,
+          "type": "put",
+          "expiry": "2027-02-19",
+          "oi": 412
+         },
+         {
+          "strike": 470.0,
+          "type": "call",
+          "expiry": "2026-12-18",
+          "oi": 325
+         }
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Options positioning (the name's chain through 2027-04-16: 488 contracts; open interest as published on the contracts themselves): calls carry 3,579 OI, puts 3,2"
       },
       {
        "key": "put_call_gamma",
@@ -9805,25 +9988,41 @@
        "key": "short_interest",
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no shorts product reaches the brief",
-       "needs": "FINRA short interest proper \u2014 the public CDN files answer AccessDenied on every probed settlement date (retired), and the FINRA Query API requires a developer credential from FINRA's API Console (free registration) that the desk does not hold; days to cover divides short interest by volume and inherits the gap",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no shorts product reaches the brief; needs FINRA short interest proper \u2014 the public CDN files answer AccessDenied on every probed settlement date (retired), and the FINRA Query API requires a developer credential from FINRA's API Console (free registration) that the desk does not hold; days to cover divides short interest by volume and inherits the gap"
+       "status": "value",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-16): shorts were 39.5% of the day's volume (74,488 of 188,466 shares). Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "data": {
+        "regsho": {
+         "short_volume": 74487.863259,
+         "total_volume": 188466.305862,
+         "short_pct": 39.5
+        },
+        "ftd": null,
+        "short_interest": null,
+        "days_to_cover": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-16): shorts were 39.5% of the day's volume (74,488 of 188,466 shares)"
       },
       {
        "key": "insider_buys",
        "family": "options",
        "label": "Insider buys",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no EDGAR product reaches the brief",
-       "needs": "the desk's EDGAR gap product (SEC submissions + Form 4 detail via SEC Archives, daily cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no EDGAR product reaches the brief; needs the desk's EDGAR gap product (SEC submissions + Form 4 detail via SEC Archives, daily cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "Insider buys: none \u2014 the 8 Form 4 filings in the last 180 days carry no open-market purchase (code P). (Insider selling is not read, by the desk's frozen method.)",
+       "data": {
+        "insider": {
+         "n_buys": 0,
+         "shares": 0,
+         "last_date": null,
+         "filings_examined": 8
+        }
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Insider buys: none \u2014 the 8 Form 4 filings in the last 180 days carry no open-market purchase (code P)"
       },
       {
        "key": "peers_21d",
@@ -9847,13 +10046,27 @@
        "key": "filings_8k",
        "family": "company_market",
        "label": "SEC 8-K filings",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no EDGAR product reaches the brief",
-       "needs": "the desk's EDGAR gap product (SEC submissions, daily cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no EDGAR product reaches the brief; needs the desk's EDGAR gap product (SEC submissions, daily cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "SEC 8-K filings (EDGAR, the desk's product): 2 in the last 120 days; the most recent is 2026-07-27 (items 2.02,9.01). Recent dates: 2026-07-27, 2026-06-23.",
+       "data": {
+        "n_8k": 2,
+        "recent_8k": [
+         {
+          "date": "2026-07-27",
+          "items": "2.02,9.01",
+          "accession": "0001048695-26-000063"
+         },
+         {
+          "date": "2026-06-23",
+          "items": "5.02,7.01,9.01",
+          "accession": "0001048695-26-000059"
+         }
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 SEC 8-K filings (EDGAR, the desk's product): 2 in the last 120 days; the most recent is 2026-07-27 (items 2.02,9.01)"
       },
       {
        "key": "fundamentals",
@@ -9871,13 +10084,20 @@
        "key": "news_counts",
        "family": "company_market",
        "label": "News counts",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no news product reaches the brief",
-       "needs": "the desk's news gap product (Alpaca News via the desk's data credentials, daily cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no news product reaches the brief; needs the desk's news gap product (Alpaca News via the desk's data credentials, daily cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "News (Alpaca News, the desk's product): 2 items naming the company in the last 7 days, 4 in the last 30. The latest, 2026-10-16 via benzinga: \u201cHere\u2019s How Much You Would Have Made Owning F5 Stock In The Last 5 Years\u201d.",
+       "data": {
+        "n7": 2,
+        "n30": 4,
+        "capped": false,
+        "latest_date": "2026-10-16",
+        "latest_headline": "Here\u2019s How Much You Would Have Made Owning F5 Stock In The Last 5 Years",
+        "latest_source": "benzinga"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 2 items naming the company in the last 7 days, 4 in the last 30"
       },
       {
        "key": "earnings",
@@ -9898,13 +10118,65 @@
        "key": "earnings_reactions",
        "family": "company_market",
        "label": "Past earnings reactions",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no EDGAR product reaches the brief",
-       "needs": "the desk's EDGAR gap product's report dates (8-K item 2.02) read against the brief's own bars; no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no EDGAR product reaches the brief; needs the desk's EDGAR gap product's report dates (8-K item 2.02) read against the brief's own bars; no fresh product reached the brief"
+       "status": "value",
+       "fact": "Past earnings reactions (each report's 8-K item 2.02 filing date, from EDGAR; the reaction is the next session's close-to-close move on the brief's own bars): the 2026-07-27 filing was followed by -1.1% on 2026-07-28; the 2026-04-28 filing was followed by +8.0% on 2026-04-29; the 2026-01-27 filing was followed by +8.1% on 2026-01-28; the 2025-10-27 filing was followed by -7.9% on 2025-10-28.",
+       "data": {
+        "moves": [
+         {
+          "report_date": "2026-07-27",
+          "session": "2026-07-28",
+          "move_pct": -1.1
+         },
+         {
+          "report_date": "2026-04-28",
+          "session": "2026-04-29",
+          "move_pct": 8.02
+         },
+         {
+          "report_date": "2026-01-27",
+          "session": "2026-01-28",
+          "move_pct": 8.09
+         },
+         {
+          "report_date": "2025-10-27",
+          "session": "2025-10-28",
+          "move_pct": -7.86
+         }
+        ],
+        "report_dates": [
+         "2026-07-27",
+         "2026-04-28",
+         "2026-01-27",
+         "2025-10-27",
+         "2025-07-30",
+         "2025-04-28",
+         "2025-01-28",
+         "2024-10-28",
+         "2024-07-29",
+         "2024-04-29",
+         "2024-01-29",
+         "2023-10-24",
+         "2023-07-24",
+         "2023-04-19",
+         "2023-01-24",
+         "2022-10-25",
+         "2022-07-25",
+         "2022-04-26",
+         "2022-01-25",
+         "2021-10-26",
+         "2021-07-26",
+         "2021-04-27",
+         "2021-01-26",
+         "2021-01-07",
+         "2020-10-26",
+         "2020-07-27",
+         "2020-04-27"
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Past earnings reactions (each report's 8-K item 2.02 filing date, from EDGAR; the reaction is the next session's close-to-close move on the brief's own bars): t"
       },
       {
        "key": "event_calendar_name",
@@ -9995,13 +10267,18 @@
        "key": "attention",
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no attention product reaches the brief",
-       "needs": "the desk's attention gap product (Wikimedia Pageviews, daily cadence; the article is resolved from the EDGAR entity name and printed with the fact); no fresh product reached the brief. Reddit has no credential-free route \u2014 its JSON endpoints refuse unauthenticated reads (403 on probe, 2026-10-16)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no attention product reaches the brief; needs the desk's attention gap product (Wikimedia Pageviews, daily cadence; the article is resolved from the EDGAR entity name and printed with the fact); no fresh product reached the brief. Reddit has no credential-free route \u2014 its JSON endpoints refuse unauthenticated reads (403 on probe, 2026-10-16)"
+       "status": "value",
+       "fact": "Wikipedia attention (article \u201cF5, Inc.\u201d, resolved from the filer's EDGAR name): 264 views a day over the last 7 complete days vs 241 the week before (1.1\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "data": {
+        "article": "F5, Inc.",
+        "avg7": 264.1,
+        "avg_prior7": 240.6,
+        "ratio": 1.1
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cF5, Inc.\u201d, resolved from the filer's EDGAR name): 264 views a day over the last 7 complete days vs 241 the week before (1.1\u00d7)"
       },
       {
        "key": "seasonality",
@@ -10119,8 +10396,8 @@
      ],
      "counts": {
       "items": 83,
-      "value": 72,
-      "unavailable": 11,
+      "value": 80,
+      "unavailable": 3,
       "material": 5
      }
     },
