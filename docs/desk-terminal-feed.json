@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-18T04:34:23.770732+00:00",
- "generated_at_et": "2026-10-18T00:34:23.770732-04:00",
+ "generated_at_utc": "2026-10-18T04:49:35.199120+00:00",
+ "generated_at_et": "2026-10-18T00:49:35.199120-04:00",
  "account": {
   "equity": "96385.73",
   "cash": "-196401.75",
@@ -944,23 +944,23 @@
   }
  },
  "ledger_counts": {
-  "total": 14468,
+  "total": 14536,
   "by_kind": {
    "journal": 40,
    "fill": 1163,
    "outcome": 9,
    "import_position": 6,
-   "tick": 410,
+   "tick": 411,
    "nightly_reconcile": 53,
    "import_open_order": 51,
-   "signal_intent": 5978,
-   "entry_rejected": 2027,
-   "exit_skipped": 215,
+   "signal_intent": 6011,
+   "entry_rejected": 2029,
+   "exit_skipped": 216,
    "intent_rejected": 184,
-   "slice_sync": 510,
+   "slice_sync": 511,
    "exit_submitted": 26,
    "pass_watchdog": 27,
-   "entry_skipped": 3719,
+   "entry_skipped": 3749,
    "entry_bp_breaker": 8,
    "exit_rejected": 42
   }
@@ -1012,7 +1012,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-18T04:44:45.702279+00:00",
+   "scored_at": "2026-10-18T04:49:43.646902+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1048,6 +1048,7 @@
      "no_call_line": null,
      "no_call_trigger_price": null,
      "no_call_alt_objective": null,
+     "no_call_alt_invalidation": null,
      "no_call_ends_price": null,
      "direction": "long",
      "sleeve_direction": "long",
@@ -1317,7 +1318,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-18T04:44:45.702279+00:00",
+    "scored_at": "2026-10-18T04:49:43.646902+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1372,6 +1373,7 @@
       }
      },
      "noise_floor": null,
+     "zone_stop": null,
      "family_win_rate": null,
      "invalidation": {
       "price": 800.0,
@@ -1380,20 +1382,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 12:44 AM ET \u00b7 Prices checked 12:44 AM ET",
+     "as_of_text": "Plan as of 12:49 AM ET \u00b7 Prices checked 12:49 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-18T04:44:45.702279+00:00",
+      "ingested_at": "2026-10-18T04:49:43.646902+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:44 AM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:49 AM ET."
      },
      "conviction": {
       "call": "against",
@@ -6433,7 +6435,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-18T04:44:45.702279+00:00",
+   "scored_at": "2026-10-18T04:49:43.646902+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -6469,6 +6471,7 @@
      "no_call_line": null,
      "no_call_trigger_price": null,
      "no_call_alt_objective": null,
+     "no_call_alt_invalidation": null,
      "no_call_ends_price": null,
      "direction": "long",
      "sleeve_direction": "long",
@@ -6738,7 +6741,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-18T04:44:45.702279+00:00",
+    "scored_at": "2026-10-18T04:49:43.646902+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -6791,6 +6794,7 @@
       }
      },
      "noise_floor": null,
+     "zone_stop": null,
      "family_win_rate": null,
      "invalidation": {
       "price": 424.32,
@@ -6799,20 +6803,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 12:44 AM ET \u00b7 Prices checked 12:44 AM ET",
+     "as_of_text": "Plan as of 12:49 AM ET \u00b7 Prices checked 12:49 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-18T04:44:45.702279+00:00",
+      "ingested_at": "2026-10-18T04:49:43.646902+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:44 AM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:49 AM ET."
      },
      "conviction": {
       "call": "for",
