@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-18T16:02:44.532722+00:00",
- "generated_at_et": "2026-10-18T12:02:44.532722-04:00",
+ "generated_at_utc": "2026-10-18T16:13:41.166520+00:00",
+ "generated_at_et": "2026-10-18T12:13:41.166520-04:00",
  "account": {
   "equity": "96385.73",
   "cash": "-196401.75",
@@ -944,23 +944,23 @@
   }
  },
  "ledger_counts": {
-  "total": 17185,
+  "total": 17229,
   "by_kind": {
    "journal": 40,
    "fill": 1163,
    "outcome": 9,
    "import_position": 6,
-   "tick": 463,
+   "tick": 464,
    "nightly_reconcile": 53,
    "import_open_order": 51,
-   "signal_intent": 7258,
+   "signal_intent": 7279,
    "entry_rejected": 2071,
-   "exit_skipped": 276,
+   "exit_skipped": 277,
    "intent_rejected": 184,
-   "slice_sync": 575,
+   "slice_sync": 576,
    "exit_submitted": 26,
    "pass_watchdog": 28,
-   "entry_skipped": 4931,
+   "entry_skipped": 4951,
    "entry_bp_breaker": 8,
    "exit_rejected": 42,
    "entry_blocked_resting_order": 1
@@ -1013,7 +1013,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-18T16:09:55.924732+00:00",
+   "scored_at": "2026-10-18T16:14:52.381606+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1321,7 +1321,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-18T16:09:55.924732+00:00",
+    "scored_at": "2026-10-18T16:14:52.381606+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1385,20 +1385,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 12:09 PM ET \u00b7 Prices checked 12:09 PM ET",
+     "as_of_text": "Plan as of 12:14 PM ET \u00b7 Prices checked 12:14 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-18T16:09:55.924732+00:00",
+      "ingested_at": "2026-10-18T16:14:52.381606+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:09 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:14 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -6440,7 +6440,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-18T16:09:55.924732+00:00",
+   "scored_at": "2026-10-18T16:14:52.381606+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -6748,7 +6748,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-18T16:09:55.924732+00:00",
+    "scored_at": "2026-10-18T16:14:52.381606+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -6810,20 +6810,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 12:09 PM ET \u00b7 Prices checked 12:09 PM ET",
+     "as_of_text": "Plan as of 12:14 PM ET \u00b7 Prices checked 12:14 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-18T16:09:55.924732+00:00",
+      "ingested_at": "2026-10-18T16:14:52.381606+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:09 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 12:14 PM ET."
      },
      "conviction": {
       "call": "for",
