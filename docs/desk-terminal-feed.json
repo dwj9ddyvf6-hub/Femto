@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-18T20:04:44.750359+00:00",
- "generated_at_et": "2026-10-18T16:04:44.750359-04:00",
+ "generated_at_utc": "2026-10-18T20:28:45.741496+00:00",
+ "generated_at_et": "2026-10-18T16:28:45.741496-04:00",
  "account": {
   "equity": "96385.73",
   "cash": "-196401.75",
@@ -944,23 +944,23 @@
   }
  },
  "ledger_counts": {
-  "total": 18132,
+  "total": 18191,
   "by_kind": {
    "journal": 40,
    "fill": 1163,
    "outcome": 9,
    "import_position": 6,
-   "tick": 480,
+   "tick": 481,
    "nightly_reconcile": 53,
    "import_open_order": 51,
-   "signal_intent": 7711,
+   "signal_intent": 7739,
    "entry_rejected": 2071,
-   "exit_skipped": 298,
+   "exit_skipped": 299,
    "intent_rejected": 184,
-   "slice_sync": 600,
+   "slice_sync": 602,
    "exit_submitted": 26,
-   "pass_watchdog": 29,
-   "entry_skipped": 5360,
+   "pass_watchdog": 30,
+   "entry_skipped": 5386,
    "entry_bp_breaker": 8,
    "exit_rejected": 42,
    "entry_blocked_resting_order": 1
@@ -1013,7 +1013,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-18T20:25:11.222160+00:00",
+   "scored_at": "2026-10-18T20:29:47.735193+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1069,8 +1069,12 @@
      "volume_cap": null,
      "projection_cap": null,
      "counter_trend_cap": null,
+     "pattern_break": null,
+     "data_gap": false,
+     "trigger_rung_price": null,
+     "trigger_history": null,
      "material_opposes": true,
-     "basis": "Tested zones stands decisively for it. 2 independent strategy families stand behind it. The evidence came out even \u2014 the volume-confirmed momentum tips it against the call. The strongest single fact fights this call.",
+     "basis": "Tested zones stands decisively for it. 2 independent strategy families stand behind it. The evidence came out even \u2014 the volume-confirmed momentum tips it against the call. The strongest single fact fights this call. Trendlines stands against it.",
      "gut_call": "against",
      "why": [
       "A pivot cluster (12 confirmed pivots in 12 separate tests) at $806.53 used to cap price as resistance; it now acts as support underneath it.",
@@ -1323,7 +1327,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-18T20:25:11.222160+00:00",
+    "scored_at": "2026-10-18T20:29:47.735193+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1356,7 +1360,7 @@
        "basis": "chart-derived objective \u2014 the nearest tested resistance above the entry zone"
       }
      ],
-     "targets_note": "Targets are profit objectives the desk reviews on daily closes \u2014 not resting orders; a gap can skip a level entirely. A second objective was not printed: the next named level ($925.50) is not materially beyond the first target \u2014 the gap is under the desk's materiality floor (the larger of half the risk distance and a full 14-day average range).",
+     "targets_note": "Targets are profit objectives the desk reviews on daily closes \u2014 not resting orders; a gap can skip a level entirely. A second objective was not printed: the next named level ($925.50) is not materially beyond the first target \u2014 the gap is under the desk's materiality floor (the larger of half the risk distance and a full 14-day average range). Above the final objective sits the 50-day average at $931.66: a moving average's value is not a level \u2014 it moves as price moves \u2014 so no objective is priced to it.",
      "measured_set_aside": null,
      "trend_record": {
       "upper_slope_atr": 0.074,
@@ -1397,20 +1401,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 4:25 PM ET \u00b7 Prices checked 4:25 PM ET",
+     "as_of_text": "Plan as of 4:29 PM ET \u00b7 Prices checked 4:29 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-18T20:25:11.222160+00:00",
+      "ingested_at": "2026-10-18T20:29:47.735193+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 4:25 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 4:29 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -6452,7 +6456,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-18T20:25:11.222160+00:00",
+   "scored_at": "2026-10-18T20:29:47.735193+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -6508,6 +6512,10 @@
      "volume_cap": null,
      "projection_cap": null,
      "counter_trend_cap": null,
+     "pattern_break": null,
+     "data_gap": false,
+     "trigger_rung_price": null,
+     "trigger_history": null,
      "material_opposes": true,
      "basis": "Tested zones stands decisively for it. 2 independent strategy families stand behind it. The strongest single fact fights this call.",
      "gut_call": "for",
@@ -6762,7 +6770,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-18T20:25:11.222160+00:00",
+    "scored_at": "2026-10-18T20:29:47.735193+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -6834,20 +6842,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 4:25 PM ET \u00b7 Prices checked 4:25 PM ET",
+     "as_of_text": "Plan as of 4:29 PM ET \u00b7 Prices checked 4:29 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-18T20:25:11.222160+00:00",
+      "ingested_at": "2026-10-18T20:29:47.735193+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 4:25 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 4:29 PM ET."
      },
      "conviction": {
       "call": "for",
