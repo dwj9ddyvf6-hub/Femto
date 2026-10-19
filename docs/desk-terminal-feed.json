@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-19T10:14:23.980778+00:00",
- "generated_at_et": "2026-10-19T06:14:23.980778-04:00",
+ "generated_at_utc": "2026-10-19T10:36:43.946256+00:00",
+ "generated_at_et": "2026-10-19T06:36:43.946256-04:00",
  "account": {
-  "equity": "99986.36",
+  "equity": "100015.84",
   "cash": "-196401.75",
-  "buying_power": "56.56",
+  "buying_power": "169.87",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -1026,26 +1026,26 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 99986.36,
+  "equity": 100015.84,
   "gross_pct": 0.0,
   "position_count": 52,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 20131,
+  "total": 20139,
   "by_kind": {
    "journal": 40,
    "fill": 1173,
    "outcome": 9,
    "import_position": 6,
-   "tick": 530,
+   "tick": 532,
    "nightly_reconcile": 53,
    "import_open_order": 51,
    "signal_intent": 8598,
    "entry_rejected": 2085,
-   "exit_skipped": 407,
+   "exit_skipped": 411,
    "intent_rejected": 184,
-   "slice_sync": 690,
+   "slice_sync": 692,
    "exit_submitted": 27,
    "pass_watchdog": 36,
    "entry_skipped": 6181,
@@ -1105,7 +1105,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T10:34:48.103603+00:00",
+   "scored_at": "2026-10-19T10:39:43.909817+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1284,9 +1284,9 @@
      "hourly": {
       "state": "read",
       "stance": "sideways",
-      "close": 851.5,
-      "sma20": 845.53,
-      "sma50": 871.74,
+      "close": 855,
+      "sma20": 845.71,
+      "sma50": 871.81,
       "pivot_sequence": "LH-LL",
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -1341,7 +1341,7 @@
     "setup_story": [
      "On Monday, October 19, 2026, LITE was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and momentum & trend) and scored 42 of 100 \u2014 Watch tier on the desk's list.",
      "The desk bought it at $826.00. The position is still held; the last close was $823.57 (-0.3% from entry).",
-     "The picture as a whole: price closed $823.57, just above its recent swing low ($800.00) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -24.1% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 18.69 (VIX as of 2026-10-19)."
+     "The picture as a whole: price closed $823.57, just above its recent swing low ($800.00) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -24.1% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 18.71 (VIX as of 2026-10-19)."
     ],
     "lens_walkthrough": [
      {
@@ -1372,7 +1372,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Chop. QQQ closed below its 50-day average (-2.3%) with a 20-day slope of -1.6% \u2014 the desk's regime rule reads chop. VIX closed at 18.69 (-6.5% on the day) (VIX reading as of 2026-10-19). Both indexes were red today."
+      "evidence": "Market regime: Chop. QQQ closed below its 50-day average (-2.3%) with a 20-day slope of -1.6% \u2014 the desk's regime rule reads chop. VIX closed at 18.71 (-6.4% on the day) (VIX reading as of 2026-10-19). Both indexes were red today."
      },
      {
       "key": "level",
@@ -1421,11 +1421,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T10:34:48.103603+00:00",
+    "scored_at": "2026-10-19T10:39:43.909817+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
-     "why": "Price closed $823.57, just above its recent swing low ($800.00) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -24.1% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 18.69 (VIX as of 2026-10-19).",
+     "why": "Price closed $823.57, just above its recent swing low ($800.00) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -24.1% \u2014 nowhere near the +25% spike the method rejects; the market read Chop, fear gauge at 18.71 (VIX as of 2026-10-19).",
      "instrument": null,
      "entry_zone": {
       "anchor": 826.0,
@@ -1500,20 +1500,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 6:34 AM ET \u00b7 Prices checked 6:34 AM ET",
+     "as_of_text": "Plan as of 6:39 AM ET \u00b7 Prices checked 6:39 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-19T10:34:48.103603+00:00",
+      "ingested_at": "2026-10-19T10:39:43.909817+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 6:34 AM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 6:39 AM ET."
      },
      "conviction": {
       "call": "against",
@@ -3241,7 +3241,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 18.69 (-6.5% on the day) (VIX reading as of 2026-10-19) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 18.71 (-6.4% on the day) (VIX reading as of 2026-10-19) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -3859,7 +3859,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 18.69 (-6.5% on the day) (VIX reading as of 2026-10-19) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 18.71 (-6.4% on the day) (VIX reading as of 2026-10-19) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -5997,7 +5997,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Chop; QQQ -2.49% on the day, -2.33% vs its 50-day; VIX 18.69 (-6.5% on the day).",
+       "fact": "Market regime: Chop; QQQ -2.49% on the day, -2.33% vs its 50-day; VIX 18.71 (-6.4% on the day).",
        "data": {
         "regime": "Chop",
         "fear_day": false
@@ -6005,7 +6005,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Chop; QQQ -2.49% on the day, -2.33% vs its 50-day; VIX 18.69 (-6.5% on the day)"
+       "deciding": "considered \u2014 Market regime: Chop; QQQ -2.49% on the day, -2.33% vs its 50-day; VIX 18.71 (-6.4% on the day)"
       },
       {
        "key": "market_breadth",
@@ -6625,12 +6625,12 @@
   "regime": "Chop",
   "regime_evidence": [
    "QQQ closed below its 50-day average (-2.3%) with a 20-day slope of -1.6% \u2014 the desk's regime rule reads chop.",
-   "VIX closed at 18.69 (-6.5% on the day) (VIX reading as of 2026-10-19).",
+   "VIX closed at 18.71 (-6.4% on the day) (VIX reading as of 2026-10-19).",
    "Both indexes were red today."
   ],
   "vix": {
-   "close": 18.69,
-   "change_pct": -6.5,
+   "close": 18.71,
+   "change_pct": -6.4,
    "as_of": "2026-10-19"
   },
   "spy": {
