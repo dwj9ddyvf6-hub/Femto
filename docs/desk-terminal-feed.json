@@ -1013,7 +1013,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-18T23:59:53.023642+00:00",
+   "scored_at": "2026-10-19T00:05:08.780718+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1329,7 +1329,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-18T23:59:53.023642+00:00",
+    "scored_at": "2026-10-19T00:05:08.780718+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1407,20 +1407,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:59 PM ET \u00b7 Prices checked 7:59 PM ET",
+     "as_of_text": "Plan as of 8:05 PM ET \u00b7 Prices checked 8:05 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-18T23:59:53.023642+00:00",
+      "ingested_at": "2026-10-19T00:05:08.780718+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:59 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:05 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -4002,18 +4002,10 @@
        "stretch_expert": "filed",
        "candles_gaps_expert": "filed",
        "options_expert": "filed",
-       "company_market_expert": "filed"
+       "company_market_expert": "filed",
+       "echo_expert": "filed"
       },
-      "problems": [
-       "record item echo_structure family echo has no owning expert",
-       "record item echo_zone family echo has no owning expert",
-       "record item echo_reaction family echo has no owning expert",
-       "record item echo_trap family echo has no owning expert",
-       "manifest item echo_structure is covered by no testimony and no classified non-testimony",
-       "manifest item echo_zone is covered by no testimony and no classified non-testimony",
-       "manifest item echo_reaction is covered by no testimony and no classified non-testimony",
-       "manifest item echo_trap is covered by no testimony and no classified non-testimony"
-      ],
+      "problems": [],
       "pattern_unproven": true,
       "gut_split": [
        "mood",
@@ -6470,33 +6462,20 @@
     "chart_mobile": "setup-charts/LITE-2026-10-18-m.png",
     "chart_weekly": "setup-charts/LITE-2026-10-18-w.png",
     "seals": {
-     "evidence": [
-      "record item echo_structure family echo has no owning expert",
-      "record item echo_zone family echo has no owning expert",
-      "record item echo_reaction family echo has no owning expert",
-      "record item echo_trap family echo has no owning expert",
-      "manifest item echo_structure is covered by no testimony and no classified non-testimony",
-      "manifest item echo_zone is covered by no testimony and no classified non-testimony",
-      "manifest item echo_reaction is covered by no testimony and no classified non-testimony",
-      "manifest item echo_trap is covered by no testimony and no classified non-testimony"
+     "evidence": [],
+     "surface": [
+      "the post does not print the plan's invalidation price ($672.25)"
      ]
     },
     "held": {
      "state": "held",
-     "reason_class": "evidence",
-     "reason": "the full evidence check for this name did not complete, so no call is published",
+     "reason_class": "surface",
+     "reason": "the published summary did not match the checked brief",
      "problems": [
-      "record item echo_structure family echo has no owning expert",
-      "record item echo_zone family echo has no owning expert",
-      "record item echo_reaction family echo has no owning expert",
-      "record item echo_trap family echo has no owning expert",
-      "manifest item echo_structure is covered by no testimony and no classified non-testimony",
-      "manifest item echo_zone is covered by no testimony and no classified non-testimony",
-      "manifest item echo_reaction is covered by no testimony and no classified non-testimony",
-      "manifest item echo_trap is covered by no testimony and no classified non-testimony"
+      "the post does not print the plan's invalidation price ($672.25)"
      ]
     },
-    "board_line": "held \u2014 the full evidence check for this name did not complete, so no call is published"
+    "board_line": "held \u2014 the published summary did not match the checked brief"
    }
   },
   {
@@ -6543,7 +6522,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-18T23:59:53.023642+00:00",
+   "scored_at": "2026-10-19T00:05:08.780718+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -6859,7 +6838,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-18T23:59:53.023642+00:00",
+    "scored_at": "2026-10-19T00:05:08.780718+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -6934,20 +6913,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:59 PM ET \u00b7 Prices checked 7:59 PM ET",
+     "as_of_text": "Plan as of 8:05 PM ET \u00b7 Prices checked 8:05 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-18T23:59:53.023642+00:00",
+      "ingested_at": "2026-10-19T00:05:08.780718+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:59 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:05 PM ET."
      },
      "conviction": {
       "call": "for",
@@ -8982,18 +8961,10 @@
        "stretch_expert": "filed",
        "candles_gaps_expert": "filed",
        "options_expert": "filed",
-       "company_market_expert": "filed"
+       "company_market_expert": "filed",
+       "echo_expert": "filed"
       },
-      "problems": [
-       "record item echo_structure family echo has no owning expert",
-       "record item echo_zone family echo has no owning expert",
-       "record item echo_reaction family echo has no owning expert",
-       "record item echo_trap family echo has no owning expert",
-       "manifest item echo_structure is covered by no testimony and no classified non-testimony",
-       "manifest item echo_zone is covered by no testimony and no classified non-testimony",
-       "manifest item echo_reaction is covered by no testimony and no classified non-testimony",
-       "manifest item echo_trap is covered by no testimony and no classified non-testimony"
-      ],
+      "problems": [],
       "pattern_unproven": true,
       "gut_split": [
        "mood",
@@ -11402,33 +11373,20 @@
     "chart_mobile": "setup-charts/FFIV-2026-10-18-m.png",
     "chart_weekly": "setup-charts/FFIV-2026-10-18-w.png",
     "seals": {
-     "evidence": [
-      "record item echo_structure family echo has no owning expert",
-      "record item echo_zone family echo has no owning expert",
-      "record item echo_reaction family echo has no owning expert",
-      "record item echo_trap family echo has no owning expert",
-      "manifest item echo_structure is covered by no testimony and no classified non-testimony",
-      "manifest item echo_zone is covered by no testimony and no classified non-testimony",
-      "manifest item echo_reaction is covered by no testimony and no classified non-testimony",
-      "manifest item echo_trap is covered by no testimony and no classified non-testimony"
+     "evidence": [],
+     "surface": [
+      "the post does not print the plan's invalidation price ($342.94)"
      ]
     },
     "held": {
      "state": "held",
-     "reason_class": "evidence",
-     "reason": "the full evidence check for this name did not complete, so no call is published",
+     "reason_class": "surface",
+     "reason": "the published summary did not match the checked brief",
      "problems": [
-      "record item echo_structure family echo has no owning expert",
-      "record item echo_zone family echo has no owning expert",
-      "record item echo_reaction family echo has no owning expert",
-      "record item echo_trap family echo has no owning expert",
-      "manifest item echo_structure is covered by no testimony and no classified non-testimony",
-      "manifest item echo_zone is covered by no testimony and no classified non-testimony",
-      "manifest item echo_reaction is covered by no testimony and no classified non-testimony",
-      "manifest item echo_trap is covered by no testimony and no classified non-testimony"
+      "the post does not print the plan's invalidation price ($342.94)"
      ]
     },
-    "board_line": "held \u2014 the full evidence check for this name did not complete, so no call is published"
+    "board_line": "held \u2014 the published summary did not match the checked brief"
    }
   }
  ],
