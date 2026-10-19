@@ -1080,7 +1080,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T03:54:42.266833+00:00",
+   "scored_at": "2026-10-19T03:59:39.483212+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1396,7 +1396,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T03:54:42.266833+00:00",
+    "scored_at": "2026-10-19T03:59:39.483212+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1435,6 +1435,7 @@
       925.5,
       965.16
      ],
+     "zones_set_aside": null,
      "trend_record": {
       "upper_slope_atr": 0.074,
       "lower_slope_atr": 0.065,
@@ -1474,20 +1475,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:54 PM ET \u00b7 Prices checked 11:54 PM ET",
+     "as_of_text": "Plan as of 11:59 PM ET \u00b7 Prices checked 11:59 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-19T03:54:42.266833+00:00",
+      "ingested_at": "2026-10-19T03:59:39.483212+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:54 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:59 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -1504,7 +1505,7 @@
      "base_rate_line": null,
      "meta": "Rising channel \u00b7 context tier \u00b7 confirmed",
      "level1": [
-      "Rising channel [context tier, confirmed] \u2014 two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost. Price sits -51% of the way from the pattern's lower boundary to its upper one.",
+      "Rising channel [context tier, confirmed] \u2014 two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost The break is holding: the last close, $823.57, sits below the pattern's lower boundary at $943.09.. Price sits -51% of the way from the pattern's lower boundary to its upper one.",
       "Nearest support: $776.01\u2013$854.62 (pivot cluster \u2014 12 confirmed pivots in 12 separate tests) \u2014 former resistance: it capped price from above, and now it holds price up from below (polarity flips are a hypothesis to watch, not a law).",
       "Nearest resistance: $881.23\u2013$897.00 (pivot cluster \u2014 2 confirmed pivots in 2 separate tests) \u2014 former support: it held price up from below, and now it caps price from above (polarity flips are a hypothesis to watch, not a law).",
       "Invalidation: $738.22 \u2014 a daily close below the stacked-level zone's lower edge \u2014 the last support under price, where its tested levels stack."
@@ -1512,7 +1513,7 @@
      "level2": [
       {
        "group": "Pattern",
-       "text": "Rising channel [context tier, confirmed] \u2014 two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost. Price sits -51% of the way from the pattern's lower boundary to its upper one."
+       "text": "Rising channel [context tier, confirmed] \u2014 two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost The break is holding: the last close, $823.57, sits below the pattern's lower boundary at $943.09.. Price sits -51% of the way from the pattern's lower boundary to its upper one."
       },
       {
        "group": "Pattern",
@@ -1574,7 +1575,7 @@
      "bullets": [
       {
        "group": "Pattern",
-       "text": "Rising channel [context tier, confirmed] \u2014 two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost. Price sits -51% of the way from the pattern's lower boundary to its upper one."
+       "text": "Rising channel [context tier, confirmed] \u2014 two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost The break is holding: the last close, $823.57, sits below the pattern's lower boundary at $943.09.. Price sits -51% of the way from the pattern's lower boundary to its upper one."
       },
       {
        "group": "Pattern",
@@ -2855,7 +2856,7 @@
       {
        "key": "pattern",
        "factor": "Chart pattern",
-       "reading": "Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost Swing structure: higher highs, higher lows.",
+       "reading": "Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost The break is holding: the last close, $823.57, sits below the pattern's lower boundary at $943.09. Swing structure: higher highs, higher lows.",
        "stance": -1,
        "salience": 4.0,
        "disposition": "considered",
@@ -3409,7 +3410,7 @@
       {
        "key": "conflict:family_agreement:pattern",
        "factor": "Conflict \u2014 Strategy agreement vs Chart pattern",
-       "reading": "Strategy agreement argues for the setup (Selected by 2 independent strategy families (intraday pullback, red-day reversal) \u2014 independent agreement carries weight.) while Chart pattern argues against (Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost Swing structure: higher highs, higher lows.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Strategy agreement argues for the setup (Selected by 2 independent strategy families (intraday pullback, red-day reversal) \u2014 independent agreement carries weight.) while Chart pattern argues against (Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost The break is holding: the last close, $823.57, sits below the pattern's lower boundary at $943.09. Swing structure: higher highs, higher lows.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 3.0,
        "disposition": "conflict",
@@ -3492,7 +3493,7 @@
       {
        "key": "pattern",
        "factor": "Chart pattern",
-       "reading": "Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost Swing structure: higher highs, higher lows.",
+       "reading": "Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost The break is holding: the last close, $823.57, sits below the pattern's lower boundary at $943.09. Swing structure: higher highs, higher lows.",
        "stance": -1,
        "salience": 4.0,
        "disposition": "considered",
@@ -3983,7 +3984,7 @@
       {
        "key": "conflict:family_agreement:pattern",
        "factor": "Conflict \u2014 Strategy agreement vs Chart pattern",
-       "reading": "Strategy agreement argues for the setup (Selected by 2 independent strategy families (intraday pullback, red-day reversal) \u2014 independent agreement carries weight.) while Chart pattern argues against (Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost Swing structure: higher highs, higher lows.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
+       "reading": "Strategy agreement argues for the setup (Selected by 2 independent strategy families (intraday pullback, red-day reversal) \u2014 independent agreement carries weight.) while Chart pattern argues against (Rising channel \u2014 confirmed. two rising boundaries, roughly parallel. Price has since broken below the pattern's lower boundary \u2014 the pattern is spent and that support is lost The break is holding: the last close, $823.57, sits below the pattern's lower boundary at $943.09. Swing structure: higher highs, higher lows.) Both are strong measurements; the desk does not average a fight away \u2014 the conflict is itself a Level-1 fact.",
        "stance": 0,
        "salience": 3.0,
        "disposition": "conflict",
@@ -6589,7 +6590,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T03:54:42.266833+00:00",
+   "scored_at": "2026-10-19T03:59:39.483212+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -6905,7 +6906,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T03:54:42.266833+00:00",
+    "scored_at": "2026-10-19T03:59:39.483212+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -6941,6 +6942,7 @@
      "ladder_set_aside": [
       472.44
      ],
+     "zones_set_aside": null,
      "trend_record": {
       "upper_slope_atr": 0.041,
       "lower_slope_atr": 0.091,
@@ -6980,20 +6982,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:54 PM ET \u00b7 Prices checked 11:54 PM ET",
+     "as_of_text": "Plan as of 11:59 PM ET \u00b7 Prices checked 11:59 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-19T03:54:42.266833+00:00",
+      "ingested_at": "2026-10-19T03:59:39.483212+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:54 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:59 PM ET."
      },
      "conviction": {
       "call": "for",
