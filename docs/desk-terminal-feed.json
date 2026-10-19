@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-19T21:34:46.102778+00:00",
- "generated_at_et": "2026-10-19T17:34:46.102778-04:00",
+ "generated_at_utc": "2026-10-19T21:39:57.300221+00:00",
+ "generated_at_et": "2026-10-19T17:39:57.300221-04:00",
  "account": {
   "equity": "100715.55",
   "cash": "-213043.52",
@@ -1148,13 +1148,14 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T21:34:46.102778+00:00",
+   "scored_at": "2026-10-19T21:39:57.300221+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
-    "source_record_id": "momentum_rotation:AXTI",
-    "source_timestamp": "2026-10-15",
-    "source_hash": "71e71c73f9cf5997"
+    "source_timestamp": "2026-10-15"
    },
+   "bought_at": 56.746462,
+   "held_qty": 325.0,
+   "position_sleeve": "momentum_rotation",
    "brief": {
     "symbol": "AXTI",
     "as_of": "2026-10-19",
@@ -1189,7 +1190,7 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 57.0365,
+      "close": 57.03,
       "sma20": 54.78,
       "sma50": 56.13,
       "pivot_sequence": null,
@@ -1241,7 +1242,10 @@
      "last_close": 56.79,
      "ema20": 67.59,
      "swing_low_20": 50.57,
-     "atr14": 6.575
+     "atr14": 6.575,
+     "stop_label": "Trading stop",
+     "stop_basis": "trading",
+     "recorded_stop_label": "Recorded stop \u2014 the entering strategy's own line"
     },
     "setup_story": [
      "On Monday, October 19, 2026, AXTI was flagged by 2 of the desk's strategies across 2 independent families (momentum & trend and Tensor pattern engine) and scored 56 of 100 \u2014 Strong tier on the desk's list.",
@@ -1325,7 +1329,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:34:46.102778+00:00",
+    "scored_at": "2026-10-19T21:39:57.300221+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -1345,7 +1349,7 @@
      "inventory": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 56 (Strong) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -1636,7 +1640,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -1765,7 +1769,7 @@
      "level2": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 56 (Strong) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -2011,7 +2015,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -2100,42 +2104,48 @@
        "family": "momentum",
        "fact": "MACD crossover events: the last signal-line cross was bearish on 2026-10-08 (7 sessions ago); the last zero-line cross was bearish on 2026-10-14 (3 sessions ago).",
        "rule": "a bearish MACD signal cross printed within a week",
-       "score": 70
+       "score": 70,
+       "outcome_state": "standing"
       },
       {
        "key": "tensor_state",
        "family": "tensor",
        "fact": "Tensor confirmed a swing in this name \u2014 an independent engine agreeing.",
        "rule": "Tensor confirmed a swing in this name",
-       "score": 70
+       "score": 70,
+       "outcome_state": "standing"
       },
       {
        "key": "higher_timeframe",
        "family": "trend",
        "fact": "Higher-timeframe map: the weekly trend is down (close vs its 10-week average, falling); the monthly trend is down. the daily setup works AGAINST the weekly trend \u2014 a different, harder trade. Nearest weekly swing high $143.16 (2026-05-29), weekly swing low $36.73 (2026-07-31).",
        "rule": "the weekly trend runs against this long setup (context class \u2014 ranks below name-specific events)",
-       "score": 68
+       "score": 68,
+       "outcome_state": "standing"
       },
       {
        "key": "stochastic",
        "family": "momentum",
        "fact": "Slow stochastic: %K 11, %D 10 \u2014 oversold ground (under 20); the last %K/%D cross was bullish on 2026-10-19 (0 sessions ago).",
        "rule": "stochastic crossed up out of oversold ground",
-       "score": 65
+       "score": 65,
+       "outcome_state": "standing"
       },
       {
        "key": "relative_strength",
        "family": "momentum",
        "fact": "Relative strength \u2014 vs the S&P 500: -19.5 points over 21 sessions, -1.9 over 63; vs its sector (SOXX): -13.1 points over 21 sessions, +9.7 over 63.",
        "rule": "relative strength spread of -20 points over 21 sessions",
-       "score": 60
+       "score": 60,
+       "outcome_state": "standing"
       },
       {
        "key": "seasonality",
        "family": "company_market",
        "fact": "Seasonality (this name's own history, 702 sessions): the current month (October) has averaged 0.779% a session over 3 year(s) of prints; its strongest month is February (2.506%/session), weakest June (-0.026%/session). Two-to-three years of history \u2014 a tendency, stated at its true depth.",
        "rule": "the calendar month is one of this name's own strong/weak seasonal windows",
-       "score": 50
+       "score": 50,
+       "outcome_state": "standing"
       }
      ],
      "consideration_counts": {
@@ -3831,7 +3841,7 @@
       {
        "key": "echo_structure",
        "family": "echo",
-       "label": "Echo method \u2014 structure & wave position (addendum 11)",
+       "label": "Chart-pattern read \u2014 structure & wave position (addendum 11)",
        "status": "value",
        "fact": "No Echo structure at the current point (impulse claim fails: rule3_w4_no_overlap - recount (his rule))",
        "data": {
@@ -3845,7 +3855,7 @@
       {
        "key": "echo_zone",
        "family": "echo",
-       "label": "Echo method \u2014 buy zone & fib confluence (addendum 11)",
+       "label": "Chart-pattern read \u2014 buy zone & fib confluence (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -3857,7 +3867,7 @@
       {
        "key": "echo_reaction",
        "family": "echo",
-       "label": "Echo method \u2014 the reaction at the zone (addendum 11)",
+       "label": "Chart-pattern read \u2014 the reaction at the zone (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -3869,9 +3879,9 @@
       {
        "key": "echo_trap",
        "family": "echo",
-       "label": "Echo method \u2014 the WYFI trap screen (addendum 11)",
+       "label": "Chart-pattern read \u2014 the trap screen (addendum 11)",
        "status": "value",
-       "fact": "Trap screen clear \u2014 1 of his four WYFI signs fire (selling volume rises through the pullback)",
+       "fact": "Trap screen clear \u2014 1 of his four warning signs fire (selling volume rises through the pullback)",
        "data": {
         "is_trap": false,
         "sign_count": 1,
@@ -3885,7 +3895,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Trap screen clear \u2014 1 of his four WYFI signs fire (selling volume rises through the pullback)"
+       "deciding": "considered \u2014 Trap screen clear \u2014 1 of his four warning signs fire (selling volume rises through the pullback)"
       }
      ],
      "material": [
@@ -3982,7 +3992,7 @@
         "label": "Independent strategy families agreeing",
         "source": "desk",
         "citation": null,
-        "note": "The doctrine that independent families each get one vote is the Grand Synthesis (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
+        "note": "The doctrine that independent families each get one vote is the desk's combined read (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
         "values": [
          {
           "families": 1,
@@ -4006,7 +4016,6 @@
         "factor": "tensor_confirmed",
         "label": "Tensor pattern engine confirms a swing",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "The spec grades Tensor evidence by freshness: a fresh trade signal 8 of 15, a fresh watch 4, a stale signal (4-10 sessions) 2. The desk maps those proportions onto its own scale, where the fresh weight is 14.",
         "points": 14,
         "values": [
@@ -4028,7 +4037,6 @@
         "factor": "tensor_context_only",
         "label": "Tensor dip context (no confirmed swing)",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "Tensor's dip sleeve selected the name without a confirmed swing trade signal \u2014 half the fresh confirmation weight, the spec's fresh-watch proportion.",
         "points": 7
        },
@@ -4037,7 +4045,7 @@
         "label": "ChartsLector strength (context only)",
         "source": "desk",
         "citation": null,
-        "note": "A context layer: it can add points but never creates a setup (Grand Synthesis, Part V). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
+        "note": "A context layer: it can add points but never creates a setup (the desk's combined read). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
         "values": [
          {
           "min_score": 75.0,
@@ -4133,7 +4141,6 @@
         "factor": "reset_at_support",
         "label": "Reset at support \u2014 at the 20-day average",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 2 (at the 20 EMA = 8, tolerance \u00b11.0%)",
         "note": "Paid only when the close is within 1% of the 20-day average \u2014 the tolerance the spec itself sets.",
         "points": 8
        },
@@ -4190,7 +4197,6 @@
         "label": "Parabolic-spike guard (up 25% or more in 10 sessions)",
         "points": "x0.7",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, regime modifier (parabolic-spike guard)",
         "note": "Not a flat deduction: when a name has run 25% or more in 10 sessions, the whole finished score is multiplied by 0.7 \u2014 the first red day of a spike is not the buy."
        },
        {
@@ -4236,7 +4242,8 @@
       "chart withheld: Chart withheld \u2014 price history under review: the close stepped +27.0% in a single session on 2026-07-30 and never traded back through the level it stepped from \u2014 a step this large that the desk's checks cannot verify as a genuine move, so the chart is withheld while the price history is reviewed. The rest of this brief stands on the desk's records; no chart was drawn from a price history that does not check out."
      ]
     },
-    "board_line": "held \u2014 the chart data for this name failed its integrity check"
+    "board_line": "held \u2014 the chart data for this name failed its integrity check",
+    "last_close": 56.79
    },
    "held": {
     "state": "held",
@@ -4321,12 +4328,34 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T21:34:46.102778+00:00",
+   "scored_at": "2026-10-19T21:39:57.300221+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
-    "source_record_id": "ema_vwap:LITE",
-    "source_timestamp": "2026-10-19",
-    "source_hash": "6ed1ffc5e19ea1bf"
+    "source_timestamp": "2026-10-19"
+   },
+   "bought_at": 838.323164,
+   "held_qty": 43.0,
+   "position_sleeve": "ema_vwap",
+   "co_hold": {
+    "sleeves": [
+     {
+      "sleeve": "ema_vwap",
+      "qty": 3
+     },
+     {
+      "sleeve": "momentum_rotation",
+      "qty": 22
+     },
+     {
+      "sleeve": "red_day_reversal",
+      "qty": 15
+     },
+     {
+      "sleeve": "rsi_meanrev",
+      "qty": 3
+     }
+    ],
+    "text": "Held by more than one strategy together \u2014 ema_vwap holds 3 shares and momentum_rotation holds 22 shares and red_day_reversal holds 15 shares and rsi_meanrev holds 3 shares, of the 43 shares held in all."
    },
    "brief": {
     "symbol": "LITE",
@@ -4392,7 +4421,8 @@
      ],
      "what_changes_it": "A daily close below $800.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on.",
      "record": "Base rate: the intraday_pullback family's last 9 closed trades won 3 of 9; 1 of the 9 carry an R \u2014 too few to quote a rate or a mean (2026-10-15 to 2026-10-16).",
-     "material_fact": "Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average)."
+     "material_fact": "Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average). That breakdown has since failed: the last close, $834.51, sits back above the $896.33 level it broke.",
+     "material_fact_state": "failed"
     },
     "branches": [
      {
@@ -4504,9 +4534,9 @@
      "hourly": {
       "state": "read",
       "stance": "lower",
-      "close": 836.39,
-      "sma20": 841.5,
-      "sma50": 852.48,
+      "close": 836,
+      "sma20": 841.48,
+      "sma50": 852.47,
       "pivot_sequence": "mixed",
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -4556,7 +4586,11 @@
      "last_close": 834.51,
      "ema20": 954.79,
      "swing_low_20": 800.0,
-     "atr14": 73.254
+     "atr14": 73.254,
+     "stop_label": "Trading stop",
+     "stop_basis": "trading",
+     "recorded_stop_label": "Recorded stop \u2014 the entering strategy's own line",
+     "backstop_stop_label": "Disaster backstop \u2014 the last-resort line"
     },
     "setup_story": [
      "On Monday, October 19, 2026, LITE was flagged by 4 of the desk's strategies across 3 independent families (intraday pullback, momentum & trend and red-day reversal) and scored 47 of 100 \u2014 Watch tier on the desk's list.",
@@ -4641,7 +4675,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:34:46.102778+00:00",
+    "scored_at": "2026-10-19T21:39:57.300221+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $838.80. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -4656,7 +4690,9 @@
      "entry_note": null,
      "stop": {
       "price": 771.7,
-      "structure": "staged $28.30 (3.5%) under the line that ends this setup ($800.00)"
+      "structure": "staged $28.30 (3.5%) under the line that ends this setup ($800.00)",
+      "basis": "trading",
+      "label": "Trading stop"
      },
      "backstop": {
       "price": 631.21,
@@ -4742,20 +4778,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 5:34 PM ET \u00b7 Prices checked 5:34 PM ET",
+     "as_of_text": "Plan as of 5:39 PM ET \u00b7 Prices checked 5:39 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-LITE-ema_vwap-LITE",
       "source_system": "sleeve_position_record",
-      "source_record_id": "ema_vwap:LITE",
       "source_timestamp": "2026-10-19",
-      "source_hash": "6ed1ffc5e19ea1bf",
-      "ingested_at": "2026-10-19T21:34:46.102778+00:00",
+      "ingested_at": "2026-10-19T21:39:57.300221+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:34 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:39 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -6001,7 +6035,7 @@
      "inventory": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 47 (Watch) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -6517,7 +6551,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -6535,7 +6569,7 @@
       {
        "key": "consideration:pat_breakout",
        "factor": "Consideration \u2014 Breakouts & breakdowns",
-       "reading": "Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average).",
+       "reading": "Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average). That breakdown has since failed: the last close, $834.51, sits back above the $896.33 level it broke.",
        "stance": 0,
        "salience": 1.3,
        "disposition": "considered",
@@ -6544,7 +6578,7 @@
       {
        "key": "consideration:structure_state",
        "factor": "Consideration \u2014 Structure intact / broken, warnings",
-       "reading": "swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.44.",
+       "reading": "swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.44. That breakdown has since failed: the last close, $834.51, sits back above the $738.44 level it broke.",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -6552,8 +6586,8 @@
       },
       {
        "key": "consideration:echo_trap",
-       "factor": "Consideration \u2014 Echo method \u2014 the WYFI trap screen (addendum 11)",
-       "reading": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "factor": "Consideration \u2014 Chart-pattern read \u2014 the trap screen (addendum 11)",
+       "reading": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -6562,7 +6596,7 @@
       {
        "key": "consideration:retests_reclaims",
        "factor": "Consideration \u2014 Retests & reclaims (new)",
-       "reading": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-13; lost the 50-day average on 2026-10-14; retested the breakdown level $896.33 on 2026-10-15 and was rejected \u2014 the break held.",
+       "reading": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-13; lost the 50-day average on 2026-10-14; retested the breakdown level $896.33 on 2026-10-15 and was rejected \u2014 the break held. That breakdown has since failed: the last close, $834.51, sits back above the $896.33 level it broke.",
        "stance": 0,
        "salience": 1.2,
        "disposition": "considered",
@@ -6664,7 +6698,7 @@
      "level2": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 47 (Watch) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -7135,7 +7169,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -7153,7 +7187,7 @@
       {
        "key": "consideration:pat_breakout",
        "factor": "Consideration \u2014 Breakouts & breakdowns",
-       "reading": "Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average).",
+       "reading": "Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average). That breakdown has since failed: the last close, $834.51, sits back above the $896.33 level it broke.",
        "stance": 0,
        "salience": 1.3,
        "disposition": "considered",
@@ -7162,7 +7196,7 @@
       {
        "key": "consideration:structure_state",
        "factor": "Consideration \u2014 Structure intact / broken, warnings",
-       "reading": "swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.44.",
+       "reading": "swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.44. That breakdown has since failed: the last close, $834.51, sits back above the $738.44 level it broke.",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -7170,8 +7204,8 @@
       },
       {
        "key": "consideration:echo_trap",
-       "factor": "Consideration \u2014 Echo method \u2014 the WYFI trap screen (addendum 11)",
-       "reading": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "factor": "Consideration \u2014 Chart-pattern read \u2014 the trap screen (addendum 11)",
+       "reading": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -7180,7 +7214,7 @@
       {
        "key": "consideration:retests_reclaims",
        "factor": "Consideration \u2014 Retests & reclaims (new)",
-       "reading": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-13; lost the 50-day average on 2026-10-14; retested the breakdown level $896.33 on 2026-10-15 and was rejected \u2014 the break held.",
+       "reading": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-13; lost the 50-day average on 2026-10-14; retested the breakdown level $896.33 on 2026-10-15 and was rejected \u2014 the break held. That breakdown has since failed: the last close, $834.51, sits back above the $896.33 level it broke.",
        "stance": 0,
        "salience": 1.2,
        "disposition": "considered",
@@ -7234,51 +7268,57 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on LITE: the balance of everything measured leans against this setup. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. The full weighing nets even (balance -0.02); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the levels on the chart tip it against the call (-0.19 of its weighed share). Strategy agreement: Selected by 3 independent strategy families (intraday pullback, momentum & trend, red-day reversal) \u2014 independent agreement carries weight. The conflict is the story: Strategy agreement vs Chart pattern pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average); swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.44. What would change the call: a daily close below $800.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
+     "paragraph": "The desk's read on LITE: the balance of everything measured leans against this setup. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. The full weighing nets even (balance -0.02); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the levels on the chart tip it against the call (-0.19 of its weighed share). Strategy agreement: Selected by 3 independent strategy families (intraday pullback, momentum & trend, red-day reversal) \u2014 independent agreement carries weight. The conflict is the story: Strategy agreement vs Chart pattern pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average). That breakdown has since failed: the last close, $834.51, sits back above the $896.33 level it broke; swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.44. That breakdown has since failed: the last close, $834.51, sits back above the $738.44 level it broke. What would change the call: a daily close below $800.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "change_call": "What would change the call: a daily close below $800.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
       {
        "key": "pat_breakout",
        "family": "patterns",
-       "fact": "Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average).",
+       "fact": "Breakdown confirmed on 2026-10-14 at $896.33, on volume 1.24x the 30-session average (in line with the 30-session average). That breakdown has since failed: the last close, $834.51, sits back above the $896.33 level it broke.",
        "rule": "fresh confirmed break (within 10 sessions)",
-       "score": 90
+       "score": 90,
+       "outcome_state": "failed"
       },
       {
        "key": "structure_state",
        "family": "structure",
-       "fact": "swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.44.",
+       "fact": "swing sequence: higher highs, higher lows; the pattern has broken down \u2014 structure is broken on this read. The read's invalidation sits at $738.44. That breakdown has since failed: the last close, $834.51, sits back above the $738.44 level it broke.",
        "rule": "the pattern has broken down \u2014 structure is broken",
-       "score": 85
+       "score": 85,
+       "outcome_state": "failed"
       },
       {
        "key": "echo_trap",
        "family": "echo",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
-       "rule": "Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
-       "score": 85
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "rule": "Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
+       "score": 85,
+       "outcome_state": "standing"
       },
       {
        "key": "retests_reclaims",
        "family": "structure",
-       "fact": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-13; lost the 50-day average on 2026-10-14; retested the breakdown level $896.33 on 2026-10-15 and was rejected \u2014 the break held.",
+       "fact": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-13; lost the 50-day average on 2026-10-14; retested the breakdown level $896.33 on 2026-10-15 and was rejected \u2014 the break held. That breakdown has since failed: the last close, $834.51, sits back above the $896.33 level it broke.",
        "rule": "a break retest printed and held",
-       "score": 80
+       "score": 80,
+       "outcome_state": "failed"
       },
       {
        "key": "level_confluence",
        "family": "structure",
        "fact": "4 separate levels stack between $748.85 and $806.53 around $783.00 (pivot cluster \u2014 12 confirmed pivots in 12 separate tests at $806.53; round number at $800.00; 200-day average at $779.80; and 1 more level in the stack) below price; 8 separate levels stack between $884.30 and $982.33 around $928.35 (round number at $900.00; pivot cluster \u2014 2 confirmed pivots in 2 separate tests at $889.12; unfilled gap at $884.30; and 5 more levels in the stack) above. Stacking is counted within half a daily range.",
        "rule": "4 separate levels stack on one shelf (below price)",
-       "score": 75
+       "score": 75,
+       "outcome_state": "standing"
       },
       {
        "key": "macd_crossovers",
        "family": "momentum",
        "fact": "MACD crossover events: the last signal-line cross was bearish on 2026-10-13 (4 sessions ago); the last zero-line cross was bearish on 2026-10-16 (1 session ago).",
        "rule": "a bearish MACD signal cross printed within a week",
-       "score": 70
+       "score": 70,
+       "outcome_state": "standing"
       }
      ],
      "consideration_counts": {
@@ -9384,7 +9424,7 @@
       {
        "key": "echo_structure",
        "family": "echo",
-       "label": "Echo method \u2014 structure & wave position (addendum 11)",
+       "label": "Chart-pattern read \u2014 structure & wave position (addendum 11)",
        "status": "value",
        "fact": "No Echo structure at the current point (impulse claim fails: rule2_w3_not_shortest, rule3_w4_no_overlap - recount (his rule))",
        "data": {
@@ -9398,7 +9438,7 @@
       {
        "key": "echo_zone",
        "family": "echo",
-       "label": "Echo method \u2014 buy zone & fib confluence (addendum 11)",
+       "label": "Chart-pattern read \u2014 buy zone & fib confluence (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -9410,7 +9450,7 @@
       {
        "key": "echo_reaction",
        "family": "echo",
-       "label": "Echo method \u2014 the reaction at the zone (addendum 11)",
+       "label": "Chart-pattern read \u2014 the reaction at the zone (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -9422,9 +9462,9 @@
       {
        "key": "echo_trap",
        "family": "echo",
-       "label": "Echo method \u2014 the WYFI trap screen (addendum 11)",
+       "label": "Chart-pattern read \u2014 the trap screen (addendum 11)",
        "status": "value",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "data": {
         "is_trap": true,
         "sign_count": 2,
@@ -9438,7 +9478,7 @@
        "reason": null,
        "needs": null,
        "verdict": "material",
-       "deciding": "material \u2014 Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
+       "deciding": "material \u2014 Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
       }
      ],
      "material": [
@@ -9459,8 +9499,8 @@
       {
        "key": "echo_trap",
        "family": "echo",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
-       "rule": "Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "rule": "Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
        "score": 85
       },
       {
@@ -9641,7 +9681,7 @@
         "label": "Independent strategy families agreeing",
         "source": "desk",
         "citation": null,
-        "note": "The doctrine that independent families each get one vote is the Grand Synthesis (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
+        "note": "The doctrine that independent families each get one vote is the desk's combined read (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
         "values": [
          {
           "families": 1,
@@ -9665,7 +9705,6 @@
         "factor": "tensor_confirmed",
         "label": "Tensor pattern engine confirms a swing",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "The spec grades Tensor evidence by freshness: a fresh trade signal 8 of 15, a fresh watch 4, a stale signal (4-10 sessions) 2. The desk maps those proportions onto its own scale, where the fresh weight is 14.",
         "points": 14,
         "values": [
@@ -9687,7 +9726,6 @@
         "factor": "tensor_context_only",
         "label": "Tensor dip context (no confirmed swing)",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "Tensor's dip sleeve selected the name without a confirmed swing trade signal \u2014 half the fresh confirmation weight, the spec's fresh-watch proportion.",
         "points": 7
        },
@@ -9696,7 +9734,7 @@
         "label": "ChartsLector strength (context only)",
         "source": "desk",
         "citation": null,
-        "note": "A context layer: it can add points but never creates a setup (Grand Synthesis, Part V). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
+        "note": "A context layer: it can add points but never creates a setup (the desk's combined read). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
         "values": [
          {
           "min_score": 75.0,
@@ -9792,7 +9830,6 @@
         "factor": "reset_at_support",
         "label": "Reset at support \u2014 at the 20-day average",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 2 (at the 20 EMA = 8, tolerance \u00b11.0%)",
         "note": "Paid only when the close is within 1% of the 20-day average \u2014 the tolerance the spec itself sets.",
         "points": 8
        },
@@ -9849,7 +9886,6 @@
         "label": "Parabolic-spike guard (up 25% or more in 10 sessions)",
         "points": "x0.7",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, regime modifier (parabolic-spike guard)",
         "note": "Not a flat deduction: when a name has run 25% or more in 10 sessions, the whole finished score is multiplied by 0.7 \u2014 the first red day of a spike is not the buy."
        },
        {
@@ -9884,7 +9920,8 @@
     "seals": {
      "evidence": [],
      "surface": []
-    }
+    },
+    "last_close": 834.51
    }
   },
   {
@@ -9956,13 +9993,14 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T21:34:46.102778+00:00",
+   "scored_at": "2026-10-19T21:39:57.300221+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
-    "source_record_id": "ema_vwap:AEHR",
-    "source_timestamp": "2026-10-19",
-    "source_hash": "6b30fc851a4cbb8e"
+    "source_timestamp": "2026-10-19"
    },
+   "bought_at": 62.29,
+   "held_qty": 50.0,
+   "position_sleeve": "ema_vwap",
    "brief": {
     "symbol": "AEHR",
     "as_of": "2026-10-19",
@@ -10046,7 +10084,11 @@
      "last_close": 63.33,
      "ema20": 83.07,
      "swing_low_20": 60.48,
-     "atr14": 7.672
+     "atr14": 7.672,
+     "stop_label": "Trading stop",
+     "stop_basis": "trading",
+     "recorded_stop_label": "Recorded stop \u2014 the entering strategy's own line",
+     "backstop_stop_label": "Disaster backstop \u2014 the last-resort line"
     },
     "setup_story": [
      "On Monday, October 19, 2026, AEHR was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and momentum & trend) and scored 42 of 100 \u2014 Watch tier on the desk's list.",
@@ -10130,7 +10172,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:34:46.102778+00:00",
+    "scored_at": "2026-10-19T21:39:57.300221+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -10150,7 +10192,7 @@
      "inventory": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 42 (Watch) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -10450,7 +10492,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10467,8 +10509,8 @@
       },
       {
        "key": "consideration:echo_trap",
-       "factor": "Consideration \u2014 Echo method \u2014 the WYFI trap screen (addendum 11)",
-       "reading": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "factor": "Consideration \u2014 Chart-pattern read \u2014 the trap screen (addendum 11)",
+       "reading": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -10588,7 +10630,7 @@
      "level2": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 42 (Watch) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -10843,7 +10885,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10860,8 +10902,8 @@
       },
       {
        "key": "consideration:echo_trap",
-       "factor": "Consideration \u2014 Echo method \u2014 the WYFI trap screen (addendum 11)",
-       "reading": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "factor": "Consideration \u2014 Chart-pattern read \u2014 the trap screen (addendum 11)",
+       "reading": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -10933,65 +10975,64 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on AEHR: the balance of everything measured leans against this setup. No visual read backs this brief \u2014 the close stepped +25.7% in a single session on 2026-04-08 and never traded back through the level it stepped from \u2014 a step this large that the desk's checks cannot verify as a genuine move, so the chart is withheld while the price history is reviewed. The full weighing nets even (balance +0.03); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the levels on the chart tip it against the call (-1.00 of its weighed share). Strategy agreement: Selected by 2 independent strategy families (intraday pullback, momentum & trend) \u2014 independent agreement carries weight. The conflict is the story: Strategy agreement vs Stop & risk geometry pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down; Weekly swings carry 5 divergence(s): RSI regular bearish (2026-06-18 \u2192 2026-08-14); RSI hidden bullish (2026-04-02 \u2192 2026-07-10); MACD histogram regular bearish (2026-06-18 \u2192 2026-08-14). What would change the call: a daily close below $60.48 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
+     "paragraph": "The desk's read on AEHR: the balance of everything measured leans against this setup. No visual read backs this brief \u2014 the close stepped +25.7% in a single session on 2026-04-08 and never traded back through the level it stepped from \u2014 a step this large that the desk's checks cannot verify as a genuine move, so the chart is withheld while the price history is reviewed. The full weighing nets even (balance +0.03); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the levels on the chart tip it against the call (-1.00 of its weighed share). Strategy agreement: Selected by 2 independent strategy families (intraday pullback, momentum & trend) \u2014 independent agreement carries weight. The conflict is the story: Strategy agreement vs Stop & risk geometry pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down; Weekly swings carry 5 divergence(s): RSI regular bearish (2026-06-18 \u2192 2026-08-14); RSI hidden bullish (2026-04-02 \u2192 2026-07-10); MACD histogram regular bearish (2026-06-18 \u2192 2026-08-14). What would change the call: a daily close below $60.48 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "change_call": "What would change the call: a daily close below $60.48 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
       {
        "key": "echo_trap",
        "family": "echo",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
-       "rule": "Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
-       "score": 85
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "rule": "Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
+       "score": 85,
+       "outcome_state": "standing"
       },
       {
        "key": "div_weekly",
        "family": "divergences",
        "fact": "Weekly swings carry 5 divergence(s): RSI regular bearish (2026-06-18 \u2192 2026-08-14); RSI hidden bullish (2026-04-02 \u2192 2026-07-10); MACD histogram regular bearish (2026-06-18 \u2192 2026-08-14).",
        "rule": "a divergence stands on the WEEKLY swings, anchored at the latest weekly pivot",
-       "score": 70
+       "score": 70,
+       "outcome_state": "standing"
       },
       {
        "key": "higher_timeframe",
        "family": "trend",
        "fact": "Higher-timeframe map: the weekly trend is down (close vs its 10-week average, falling); the monthly trend is down. the daily setup works AGAINST the weekly trend \u2014 a different, harder trade. Nearest weekly swing high $147.40 (2026-08-14), weekly swing low $18.70 (2025-11-21).",
        "rule": "the weekly trend runs against this long setup (context class \u2014 ranks below name-specific events)",
-       "score": 68
+       "score": 68,
+       "outcome_state": "standing"
       },
       {
        "key": "stretch_rank",
        "family": "stretch",
        "fact": "Price sits 2.4 daily ranges below the 20-day average \u2014 the 92th percentile of its own last 252 sessions. Stretched, though not at its own extreme.",
        "rule": "the stretch is in the name's own top decile",
-       "score": 65
-      },
-      {
-       "key": "momentum_6m",
-       "family": "momentum",
-       "fact": "6-month momentum: -29.8% over the last 126 sessions. Within tonight's briefed book that is the 0th percentile.",
-       "rule": "6-month momentum at the bottom of tonight's briefed book (0th pct)",
-       "score": 65
+       "score": 65,
+       "outcome_state": "standing"
       },
       {
        "key": "relative_strength",
        "family": "momentum",
        "fact": "Relative strength \u2014 vs the S&P 500: -32.9 points over 21 sessions, -38.4 over 63; vs its sector (SOXX): -26.4 points over 21 sessions, -26.8 over 63.",
        "rule": "relative strength spread of -33 points over 21 sessions",
-       "score": 60
+       "score": 60,
+       "outcome_state": "standing"
       },
       {
        "key": "peers_21d",
        "family": "company_market",
        "fact": "Peers (the desk's semis bucket, 13 names with bars): the median peer moved -16.0% over 21 sessions; this name moved -32.3% \u2014 a spread of -16.3 points.",
        "rule": "the name runs -16 points vs its peers' median over 21 sessions",
-       "score": 60
+       "score": 60,
+       "outcome_state": "standing"
       }
      ],
      "consideration_counts": {
       "items": 87,
       "value": 54,
       "unavailable": 33,
-      "material": 7
+      "material": 6
      },
      "docket": {
       "experts": {
@@ -12662,7 +12703,7 @@
       {
        "key": "echo_structure",
        "family": "echo",
-       "label": "Echo method \u2014 structure & wave position (addendum 11)",
+       "label": "Chart-pattern read \u2014 structure & wave position (addendum 11)",
        "status": "value",
        "fact": "No Echo structure at the current point (impulse claim fails: rule1_w2_not_full_retrace, rule2_w3_not_shortest, rule3_w4_no_overlap - recount (his rule))",
        "data": {
@@ -12676,7 +12717,7 @@
       {
        "key": "echo_zone",
        "family": "echo",
-       "label": "Echo method \u2014 buy zone & fib confluence (addendum 11)",
+       "label": "Chart-pattern read \u2014 buy zone & fib confluence (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -12688,7 +12729,7 @@
       {
        "key": "echo_reaction",
        "family": "echo",
-       "label": "Echo method \u2014 the reaction at the zone (addendum 11)",
+       "label": "Chart-pattern read \u2014 the reaction at the zone (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -12700,9 +12741,9 @@
       {
        "key": "echo_trap",
        "family": "echo",
-       "label": "Echo method \u2014 the WYFI trap screen (addendum 11)",
+       "label": "Chart-pattern read \u2014 the trap screen (addendum 11)",
        "status": "value",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "data": {
         "is_trap": true,
         "sign_count": 2,
@@ -12716,15 +12757,15 @@
        "reason": null,
        "needs": null,
        "verdict": "material",
-       "deciding": "material \u2014 Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
+       "deciding": "material \u2014 Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
       }
      ],
      "material": [
       {
        "key": "echo_trap",
        "family": "echo",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
-       "rule": "Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "rule": "Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
        "score": 85
       },
       {
@@ -12854,7 +12895,7 @@
         "label": "Independent strategy families agreeing",
         "source": "desk",
         "citation": null,
-        "note": "The doctrine that independent families each get one vote is the Grand Synthesis (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
+        "note": "The doctrine that independent families each get one vote is the desk's combined read (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
         "values": [
          {
           "families": 1,
@@ -12878,7 +12919,6 @@
         "factor": "tensor_confirmed",
         "label": "Tensor pattern engine confirms a swing",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "The spec grades Tensor evidence by freshness: a fresh trade signal 8 of 15, a fresh watch 4, a stale signal (4-10 sessions) 2. The desk maps those proportions onto its own scale, where the fresh weight is 14.",
         "points": 14,
         "values": [
@@ -12900,7 +12940,6 @@
         "factor": "tensor_context_only",
         "label": "Tensor dip context (no confirmed swing)",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "Tensor's dip sleeve selected the name without a confirmed swing trade signal \u2014 half the fresh confirmation weight, the spec's fresh-watch proportion.",
         "points": 7
        },
@@ -12909,7 +12948,7 @@
         "label": "ChartsLector strength (context only)",
         "source": "desk",
         "citation": null,
-        "note": "A context layer: it can add points but never creates a setup (Grand Synthesis, Part V). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
+        "note": "A context layer: it can add points but never creates a setup (the desk's combined read). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
         "values": [
          {
           "min_score": 75.0,
@@ -13005,7 +13044,6 @@
         "factor": "reset_at_support",
         "label": "Reset at support \u2014 at the 20-day average",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 2 (at the 20 EMA = 8, tolerance \u00b11.0%)",
         "note": "Paid only when the close is within 1% of the 20-day average \u2014 the tolerance the spec itself sets.",
         "points": 8
        },
@@ -13062,7 +13100,6 @@
         "label": "Parabolic-spike guard (up 25% or more in 10 sessions)",
         "points": "x0.7",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, regime modifier (parabolic-spike guard)",
         "note": "Not a flat deduction: when a name has run 25% or more in 10 sessions, the whole finished score is multiplied by 0.7 \u2014 the first red day of a spike is not the buy."
        },
        {
@@ -13106,7 +13143,8 @@
       "chart withheld: Chart withheld \u2014 price history under review: the close stepped +25.7% in a single session on 2026-04-08 and never traded back through the level it stepped from \u2014 a step this large that the desk's checks cannot verify as a genuine move, so the chart is withheld while the price history is reviewed. The rest of this brief stands on the desk's records; no chart was drawn from a price history that does not check out."
      ]
     },
-    "board_line": "held \u2014 the chart data for this name failed its integrity check"
+    "board_line": "held \u2014 the chart data for this name failed its integrity check",
+    "last_close": 63.33
    },
    "held": {
     "state": "held",
@@ -13192,13 +13230,14 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T21:34:46.102778+00:00",
+   "scored_at": "2026-10-19T21:39:57.300221+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
-    "source_record_id": "rsi_meanrev:SNDK",
-    "source_timestamp": "2026-10-19",
-    "source_hash": "7be7e68062a43545"
+    "source_timestamp": "2026-10-19"
    },
+   "bought_at": 1374.81,
+   "held_qty": 2.0,
+   "position_sleeve": "rsi_meanrev",
    "brief": {
     "symbol": "SNDK",
     "as_of": "2026-10-19",
@@ -13230,9 +13269,9 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 1376.67,
-      "sma20": 1348.58,
-      "sma50": 1352.7,
+      "close": 1375.0828,
+      "sma20": 1348.5,
+      "sma50": 1352.67,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -13282,7 +13321,11 @@
      "last_close": 1371.12,
      "ema20": 1551.72,
      "swing_low_20": 1276.0,
-     "atr14": 88.286
+     "atr14": 88.286,
+     "stop_label": "Trading stop",
+     "stop_basis": "trading",
+     "recorded_stop_label": "Recorded stop \u2014 the entering strategy's own line",
+     "backstop_stop_label": "Disaster backstop \u2014 the last-resort line"
     },
     "setup_story": [
      "On Monday, October 19, 2026, SNDK was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and momentum & trend) and scored 42 of 100 \u2014 Watch tier on the desk's list.",
@@ -13366,7 +13409,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:34:46.102778+00:00",
+    "scored_at": "2026-10-19T21:39:57.300221+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -13386,7 +13429,7 @@
      "inventory": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 42 (Watch) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -13686,7 +13729,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -13703,8 +13746,8 @@
       },
       {
        "key": "consideration:echo_trap",
-       "factor": "Consideration \u2014 Echo method \u2014 the WYFI trap screen (addendum 11)",
-       "reading": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "factor": "Consideration \u2014 Chart-pattern read \u2014 the trap screen (addendum 11)",
+       "reading": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -13815,7 +13858,7 @@
      "level2": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 42 (Watch) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -14070,7 +14113,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -14087,8 +14130,8 @@
       },
       {
        "key": "consideration:echo_trap",
-       "factor": "Consideration \u2014 Echo method \u2014 the WYFI trap screen (addendum 11)",
-       "reading": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "factor": "Consideration \u2014 Chart-pattern read \u2014 the trap screen (addendum 11)",
+       "reading": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -14150,51 +14193,57 @@
       }
      ],
      "conflicts": [],
-     "paragraph": "The desk's read on SNDK: the balance of everything measured leans against this setup. No visual read backs this brief \u2014 the close stepped +27.6% in a single session on 2026-01-06 and never traded back through the level it stepped from \u2014 a step this large that the desk's checks cannot verify as a genuine move, so the chart is withheld while the price history is reviewed. The full weighing nets even (balance +0.10); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the levels on the chart tip it against the call (-1.00 of its weighed share). Strategy agreement: Selected by 2 independent strategy families (intraday pullback, momentum & trend) \u2014 independent agreement carries weight. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down; Weekly swings carry 3 divergence(s): RSI regular bearish (2026-02-06 \u2192 2026-06-26); RSI hidden bullish (2026-03-13 \u2192 2026-07-31); MACD histogram hidden bullish (2026-03-13 \u2192 2026-07-31). What would change the call: a daily close below $1,276.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
+     "paragraph": "The desk's read on SNDK: the balance of everything measured leans against this setup. No visual read backs this brief \u2014 the close stepped +27.6% in a single session on 2026-01-06 and never traded back through the level it stepped from \u2014 a step this large that the desk's checks cannot verify as a genuine move, so the chart is withheld while the price history is reviewed. The full weighing nets even (balance +0.10); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the levels on the chart tip it against the call (-1.00 of its weighed share). Strategy agreement: Selected by 2 independent strategy families (intraday pullback, momentum & trend) \u2014 independent agreement carries weight. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down; Weekly swings carry 3 divergence(s): RSI regular bearish (2026-02-06 \u2192 2026-06-26); RSI hidden bullish (2026-03-13 \u2192 2026-07-31); MACD histogram hidden bullish (2026-03-13 \u2192 2026-07-31). What would change the call: a daily close below $1,276.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "change_call": "What would change the call: a daily close below $1,276.00 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
       {
        "key": "echo_trap",
        "family": "echo",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
-       "rule": "Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
-       "score": 85
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "rule": "Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
+       "score": 85,
+       "outcome_state": "standing"
       },
       {
        "key": "div_weekly",
        "family": "divergences",
        "fact": "Weekly swings carry 3 divergence(s): RSI regular bearish (2026-02-06 \u2192 2026-06-26); RSI hidden bullish (2026-03-13 \u2192 2026-07-31); MACD histogram hidden bullish (2026-03-13 \u2192 2026-07-31).",
        "rule": "a divergence stands on the WEEKLY swings, anchored at the latest weekly pivot",
-       "score": 70
+       "score": 70,
+       "outcome_state": "standing"
       },
       {
        "key": "higher_timeframe",
        "family": "trend",
        "fact": "Higher-timeframe map: the weekly trend is down (close vs its 10-week average, rising); the monthly trend is up. the daily setup works AGAINST the weekly trend \u2014 a different, harder trade. Nearest weekly swing high $2,354.39 (2026-06-26), weekly swing low $517.00 (2026-03-13).",
        "rule": "the weekly trend runs against this long setup (context class \u2014 ranks below name-specific events)",
-       "score": 68
+       "score": 68,
+       "outcome_state": "standing"
       },
       {
        "key": "stochastic",
        "family": "momentum",
        "fact": "Slow stochastic: %K 15, %D 13 \u2014 oversold ground (under 20); the last %K/%D cross was bullish on 2026-10-19 (0 sessions ago).",
        "rule": "stochastic crossed up out of oversold ground",
-       "score": 65
+       "score": 65,
+       "outcome_state": "standing"
       },
       {
        "key": "momentum_6m",
        "family": "momentum",
        "fact": "6-month momentum: +50.2% over the last 126 sessions.",
        "rule": "6-month momentum is +50% \u2014 a standout move",
-       "score": 60
+       "score": 60,
+       "outcome_state": "standing"
       },
       {
        "key": "relative_strength",
        "family": "momentum",
        "fact": "Relative strength \u2014 vs the S&P 500: -24.1 points over 21 sessions, -16.2 over 63; vs its sector (XLK): -21.6 points over 21 sessions, -16.6 over 63.",
        "rule": "relative strength spread of -24 points over 21 sessions",
-       "score": 60
+       "score": 60,
+       "outcome_state": "standing"
       }
      ],
      "consideration_counts": {
@@ -15904,7 +15953,7 @@
       {
        "key": "echo_structure",
        "family": "echo",
-       "label": "Echo method \u2014 structure & wave position (addendum 11)",
+       "label": "Chart-pattern read \u2014 structure & wave position (addendum 11)",
        "status": "value",
        "fact": "No Echo structure at the current point (impulse claim fails: rule3_w4_no_overlap - recount (his rule))",
        "data": {
@@ -15918,7 +15967,7 @@
       {
        "key": "echo_zone",
        "family": "echo",
-       "label": "Echo method \u2014 buy zone & fib confluence (addendum 11)",
+       "label": "Chart-pattern read \u2014 buy zone & fib confluence (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -15930,7 +15979,7 @@
       {
        "key": "echo_reaction",
        "family": "echo",
-       "label": "Echo method \u2014 the reaction at the zone (addendum 11)",
+       "label": "Chart-pattern read \u2014 the reaction at the zone (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -15942,9 +15991,9 @@
       {
        "key": "echo_trap",
        "family": "echo",
-       "label": "Echo method \u2014 the WYFI trap screen (addendum 11)",
+       "label": "Chart-pattern read \u2014 the trap screen (addendum 11)",
        "status": "value",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "data": {
         "is_trap": true,
         "sign_count": 2,
@@ -15958,15 +16007,15 @@
        "reason": null,
        "needs": null,
        "verdict": "material",
-       "deciding": "material \u2014 Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
+       "deciding": "material \u2014 Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
       }
      ],
      "material": [
       {
        "key": "echo_trap",
        "family": "echo",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
-       "rule": "Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "rule": "Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
        "score": 85
       },
       {
@@ -16103,7 +16152,7 @@
         "label": "Independent strategy families agreeing",
         "source": "desk",
         "citation": null,
-        "note": "The doctrine that independent families each get one vote is the Grand Synthesis (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
+        "note": "The doctrine that independent families each get one vote is the desk's combined read (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
         "values": [
          {
           "families": 1,
@@ -16127,7 +16176,6 @@
         "factor": "tensor_confirmed",
         "label": "Tensor pattern engine confirms a swing",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "The spec grades Tensor evidence by freshness: a fresh trade signal 8 of 15, a fresh watch 4, a stale signal (4-10 sessions) 2. The desk maps those proportions onto its own scale, where the fresh weight is 14.",
         "points": 14,
         "values": [
@@ -16149,7 +16197,6 @@
         "factor": "tensor_context_only",
         "label": "Tensor dip context (no confirmed swing)",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "Tensor's dip sleeve selected the name without a confirmed swing trade signal \u2014 half the fresh confirmation weight, the spec's fresh-watch proportion.",
         "points": 7
        },
@@ -16158,7 +16205,7 @@
         "label": "ChartsLector strength (context only)",
         "source": "desk",
         "citation": null,
-        "note": "A context layer: it can add points but never creates a setup (Grand Synthesis, Part V). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
+        "note": "A context layer: it can add points but never creates a setup (the desk's combined read). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
         "values": [
          {
           "min_score": 75.0,
@@ -16254,7 +16301,6 @@
         "factor": "reset_at_support",
         "label": "Reset at support \u2014 at the 20-day average",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 2 (at the 20 EMA = 8, tolerance \u00b11.0%)",
         "note": "Paid only when the close is within 1% of the 20-day average \u2014 the tolerance the spec itself sets.",
         "points": 8
        },
@@ -16311,7 +16357,6 @@
         "label": "Parabolic-spike guard (up 25% or more in 10 sessions)",
         "points": "x0.7",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, regime modifier (parabolic-spike guard)",
         "note": "Not a flat deduction: when a name has run 25% or more in 10 sessions, the whole finished score is multiplied by 0.7 \u2014 the first red day of a spike is not the buy."
        },
        {
@@ -16355,7 +16400,8 @@
       "chart withheld: Chart withheld \u2014 price history under review: the close stepped +27.6% in a single session on 2026-01-06 and never traded back through the level it stepped from \u2014 a step this large that the desk's checks cannot verify as a genuine move, so the chart is withheld while the price history is reviewed. The rest of this brief stands on the desk's records; no chart was drawn from a price history that does not check out."
      ]
     },
-    "board_line": "held \u2014 the chart data for this name failed its integrity check"
+    "board_line": "held \u2014 the chart data for this name failed its integrity check",
+    "last_close": 1371.12
    },
    "held": {
     "state": "held",
@@ -16435,12 +16481,26 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T21:34:46.102778+00:00",
+   "scored_at": "2026-10-19T21:39:57.300221+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
-    "source_record_id": "rsi_meanrev:ALAB",
-    "source_timestamp": "2026-10-19",
-    "source_hash": "bb733ce0de611617"
+    "source_timestamp": "2026-10-19"
+   },
+   "bought_at": 288.026,
+   "held_qty": 55.0,
+   "position_sleeve": "red_day_reversal",
+   "co_hold": {
+    "sleeves": [
+     {
+      "sleeve": "red_day_reversal",
+      "qty": 44
+     },
+     {
+      "sleeve": "rsi_meanrev",
+      "qty": 11
+     }
+    ],
+    "text": "Held by more than one strategy together \u2014 red_day_reversal holds 44 shares and rsi_meanrev holds 11 shares, of the 55 shares held in all."
    },
    "brief": {
     "symbol": "ALAB",
@@ -16506,7 +16566,8 @@
      ],
      "what_changes_it": "A daily close below $281.29 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on.",
      "record": "Base rate: the intraday_pullback family's last 7 closed trades won 3 of 7; none carries an R yet, so no mean is quoted (2026-10-15 to 2026-10-16).",
-     "material_fact": "Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average)."
+     "material_fact": "Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average). That breakout has since failed: the last close, $286.58, sits back below the $389.80 level it broke.",
+     "material_fact_state": "failed"
     },
     "branches": [
      {
@@ -16666,7 +16727,11 @@
      "last_close": 286.58,
      "ema20": 324.7,
      "swing_low_20": 281.29,
-     "atr14": 24.088
+     "atr14": 24.088,
+     "stop_label": "Trading stop",
+     "stop_basis": "trading",
+     "recorded_stop_label": "Recorded stop \u2014 the entering strategy's own line",
+     "backstop_stop_label": "Disaster backstop \u2014 the last-resort line"
     },
     "setup_story": [
      "On Monday, October 19, 2026, ALAB was flagged by 2 of the desk's strategies across 2 independent families (intraday pullback and momentum & trend) and scored 36 of 100 \u2014 Watch tier on the desk's list.",
@@ -16751,7 +16816,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:34:46.102778+00:00",
+    "scored_at": "2026-10-19T21:39:57.300221+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold ALAB \u2014 the desk bought it at $287.93. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
@@ -16766,7 +16831,9 @@
      "entry_note": null,
      "stop": {
       "price": 264.9,
-      "structure": "staged $16.39 (5.8%) under the line that ends this setup ($281.29)"
+      "structure": "staged $16.39 (5.8%) under the line that ends this setup ($281.29)",
+      "basis": "trading",
+      "label": "Trading stop"
      },
      "backstop": {
       "price": 263.15,
@@ -16849,20 +16916,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 5:34 PM ET \u00b7 Prices checked 5:34 PM ET",
+     "as_of_text": "Plan as of 5:39 PM ET \u00b7 Prices checked 5:39 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-ALAB-rsi_meanrev-ALAB",
       "source_system": "sleeve_position_record",
-      "source_record_id": "rsi_meanrev:ALAB",
       "source_timestamp": "2026-10-19",
-      "source_hash": "bb733ce0de611617",
-      "ingested_at": "2026-10-19T21:34:46.102778+00:00",
+      "ingested_at": "2026-10-19T21:39:57.300221+00:00",
       "plan_version": 4,
       "change_note": "Plan updated to version 4 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:34 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:39 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -17781,7 +17846,7 @@
      "inventory": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 36 (Watch) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -18207,7 +18272,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -18225,7 +18290,7 @@
       {
        "key": "consideration:pat_breakout",
        "factor": "Consideration \u2014 Breakouts & breakdowns",
-       "reading": "Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average).",
+       "reading": "Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average). That breakout has since failed: the last close, $286.58, sits back below the $389.80 level it broke.",
        "stance": 0,
        "salience": 1.3,
        "disposition": "considered",
@@ -18243,7 +18308,7 @@
       {
        "key": "consideration:retests_reclaims",
        "factor": "Consideration \u2014 Retests & reclaims (new)",
-       "reading": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-12; lost the 50-day average on 2026-10-14; fell back inside the breakout level $389.80 on 2026-10-07 \u2014 the retest failed.",
+       "reading": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-12; lost the 50-day average on 2026-10-14; fell back inside the breakout level $389.80 on 2026-10-07 \u2014 the retest failed. That breakout has since failed: the last close, $286.58, sits back below the $389.80 level it broke.",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -18251,8 +18316,8 @@
       },
       {
        "key": "consideration:echo_trap",
-       "factor": "Consideration \u2014 Echo method \u2014 the WYFI trap screen (addendum 11)",
-       "reading": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "factor": "Consideration \u2014 Chart-pattern read \u2014 the trap screen (addendum 11)",
+       "reading": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -18354,7 +18419,7 @@
      "level2": [
       {
        "key": "curator_score",
-       "factor": "Curator score",
+       "factor": "Setup score",
        "reading": "Composite confidence 36 (Watch) from the published component rules. The score is listed here as context \u2014 it is NOT one of the votes the Desk read weighs, or the read would be the score grading itself.",
        "stance": 0,
        "salience": 1.0,
@@ -18735,7 +18800,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.99B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.94B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -18753,7 +18818,7 @@
       {
        "key": "consideration:pat_breakout",
        "factor": "Consideration \u2014 Breakouts & breakdowns",
-       "reading": "Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average).",
+       "reading": "Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average). That breakout has since failed: the last close, $286.58, sits back below the $389.80 level it broke.",
        "stance": 0,
        "salience": 1.3,
        "disposition": "considered",
@@ -18771,7 +18836,7 @@
       {
        "key": "consideration:retests_reclaims",
        "factor": "Consideration \u2014 Retests & reclaims (new)",
-       "reading": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-12; lost the 50-day average on 2026-10-14; fell back inside the breakout level $389.80 on 2026-10-07 \u2014 the retest failed.",
+       "reading": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-12; lost the 50-day average on 2026-10-14; fell back inside the breakout level $389.80 on 2026-10-07 \u2014 the retest failed. That breakout has since failed: the last close, $286.58, sits back below the $389.80 level it broke.",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -18779,8 +18844,8 @@
       },
       {
        "key": "consideration:echo_trap",
-       "factor": "Consideration \u2014 Echo method \u2014 the WYFI trap screen (addendum 11)",
-       "reading": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "factor": "Consideration \u2014 Chart-pattern read \u2014 the trap screen (addendum 11)",
+       "reading": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "stance": 0,
        "salience": 1.25,
        "disposition": "considered",
@@ -18834,65 +18899,64 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on ALAB: the balance of everything measured leans against this setup. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. The full weighing nets even (balance -0.01); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the volume-confirmed momentum tips it against the call (-0.25 of its weighed share). Strategy agreement: Selected by 2 independent strategy families (intraday pullback, momentum & trend) \u2014 independent agreement carries weight. The conflict is the story: Strategy agreement vs Chart pattern pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average); 2 separate levels stack between $263.89 and $275.12 around $269.50 (unfilled gap at $275.12; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $263.89) below price; 7 separate levels stack between $289.60 and $321.65 around $306.48 (round number at $300.00; 50.0% retracement at $298.68; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $289.60; and 4 more levels in the stack) above. Stacking is counted within half a daily range. What would change the call: a daily close below $281.29 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
+     "paragraph": "The desk's read on ALAB: the balance of everything measured leans against this setup. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. The full weighing nets even (balance -0.01); the tie-break \u2014 structure first, then volume-confirmed momentum, then context \u2014 resolves it: the volume-confirmed momentum tips it against the call (-0.25 of its weighed share). Strategy agreement: Selected by 2 independent strategy families (intraday pullback, momentum & trend) \u2014 independent agreement carries weight. The conflict is the story: Strategy agreement vs Chart pattern pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average). That breakout has since failed: the last close, $286.58, sits back below the $389.80 level it broke; 2 separate levels stack between $263.89 and $275.12 around $269.50 (unfilled gap at $275.12; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $263.89) below price; 7 separate levels stack between $289.60 and $321.65 around $306.48 (round number at $300.00; 50.0% retracement at $298.68; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $289.60; and 4 more levels in the stack) above. Stacking is counted within half a daily range. What would change the call: a daily close below $281.29 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "change_call": "What would change the call: a daily close below $281.29 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or strategy agreement turning against the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
       {
        "key": "pat_breakout",
        "family": "patterns",
-       "fact": "Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average).",
+       "fact": "Breakout confirmed on 2026-10-06 at $389.80, on volume 1.74x the 30-session average (heavy \u2014 well above the 30-session average). That breakout has since failed: the last close, $286.58, sits back below the $389.80 level it broke.",
        "rule": "fresh confirmed break (within 10 sessions)",
-       "score": 90
+       "score": 90,
+       "outcome_state": "failed"
       },
       {
        "key": "level_confluence",
        "family": "structure",
        "fact": "2 separate levels stack between $263.89 and $275.12 around $269.50 (unfilled gap at $275.12; pivot cluster \u2014 3 confirmed pivots in 3 separate tests at $263.89) below price; 7 separate levels stack between $289.60 and $321.65 around $306.48 (round number at $300.00; 50.0% retracement at $298.68; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $289.60; and 4 more levels in the stack) above. Stacking is counted within half a daily range.",
        "rule": "7 separate levels stack on one shelf (above price)",
-       "score": 85
+       "score": 85,
+       "outcome_state": "standing"
       },
       {
        "key": "retests_reclaims",
        "family": "structure",
-       "fact": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-12; lost the 50-day average on 2026-10-14; fell back inside the breakout level $389.80 on 2026-10-07 \u2014 the retest failed.",
+       "fact": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-12; lost the 50-day average on 2026-10-14; fell back inside the breakout level $389.80 on 2026-10-07 \u2014 the retest failed. That breakout has since failed: the last close, $286.58, sits back below the $389.80 level it broke.",
        "rule": "a retest FAILED \u2014 the break did not hold",
-       "score": 85
+       "score": 85,
+       "outcome_state": "failed"
       },
       {
        "key": "echo_trap",
        "family": "echo",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
-       "rule": "Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
-       "score": 85
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "rule": "Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
+       "score": 85,
+       "outcome_state": "standing"
       },
       {
        "key": "macd_crossovers",
        "family": "momentum",
        "fact": "MACD crossover events: the last signal-line cross was bearish on 2026-10-09 (6 sessions ago); the last zero-line cross was bearish on 2026-10-16 (1 session ago).",
        "rule": "a bearish MACD signal cross printed within a week",
-       "score": 70
+       "score": 70,
+       "outcome_state": "standing"
       },
       {
        "key": "div_weekly",
        "family": "divergences",
        "fact": "Weekly swings carry 3 divergence(s): RSI hidden bullish (2026-07-31 \u2192 2026-09-18); MACD histogram hidden bullish (2026-07-31 \u2192 2026-09-18); MACD histogram regular bullish (2025-11-21 \u2192 2026-04-02).",
        "rule": "a divergence stands on the WEEKLY swings, anchored at the latest weekly pivot",
-       "score": 70
-      },
-      {
-       "key": "momentum_6m",
-       "family": "momentum",
-       "fact": "6-month momentum: +63.0% over the last 126 sessions. Within tonight's briefed book that is the 100th percentile.",
-       "rule": "6-month momentum at the top of tonight's briefed book (100th pct)",
-       "score": 65
+       "score": 70,
+       "outcome_state": "standing"
       }
      ],
      "consideration_counts": {
       "items": 87,
       "value": 84,
       "unavailable": 3,
-      "material": 7
+      "material": 6
      },
      "docket": {
       "experts": {
@@ -21053,21 +21117,21 @@
       {
        "key": "echo_structure",
        "family": "echo",
-       "label": "Echo method \u2014 structure & wave position (addendum 11)",
+       "label": "Chart-pattern read \u2014 structure & wave position (addendum 11)",
        "status": "value",
-       "fact": "No Echo structure at the current point (2 of his four WYFI signs fire on the dominant impulse's pullback - expect a B-wave rejection near the 0.5-0.786 retrace of this pullback, then wave C)",
+       "fact": "No Echo structure at the current point (2 of his four warning signs fire on the dominant impulse's pullback - expect a B-wave rejection near the 0.5-0.786 retrace of this pullback, then wave C)",
        "data": {
         "verdict": "TRAP"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 No Echo structure at the current point (2 of his four WYFI signs fire on the dominant impulse's pullback - expect a B-wave rejection near the 0.5-0.786 retrace "
+       "deciding": "considered \u2014 No Echo structure at the current point (2 of his four warning signs fire on the dominant impulse's pullback - expect a B-wave rejection near the 0.5-0.786 retrace "
       },
       {
        "key": "echo_zone",
        "family": "echo",
-       "label": "Echo method \u2014 buy zone & fib confluence (addendum 11)",
+       "label": "Chart-pattern read \u2014 buy zone & fib confluence (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -21079,7 +21143,7 @@
       {
        "key": "echo_reaction",
        "family": "echo",
-       "label": "Echo method \u2014 the reaction at the zone (addendum 11)",
+       "label": "Chart-pattern read \u2014 the reaction at the zone (addendum 11)",
        "status": "unavailable",
        "fact": null,
        "data": {},
@@ -21091,9 +21155,9 @@
       {
        "key": "echo_trap",
        "family": "echo",
-       "label": "Echo method \u2014 the WYFI trap screen (addendum 11)",
+       "label": "Chart-pattern read \u2014 the trap screen (addendum 11)",
        "status": "value",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
        "data": {
         "is_trap": true,
         "sign_count": 2,
@@ -21107,7 +21171,7 @@
        "reason": null,
        "needs": null,
        "verdict": "material",
-       "deciding": "material \u2014 Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
+       "deciding": "material \u2014 Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
       }
      ],
      "material": [
@@ -21135,8 +21199,8 @@
       {
        "key": "echo_trap",
        "family": "echo",
-       "fact": "TRAP \u2014 2 of his four WYFI signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
-       "rule": "Echo's WYFI trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
+       "fact": "TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down",
+       "rule": "Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry",
        "score": 85
       },
       {
@@ -21310,7 +21374,7 @@
         "label": "Independent strategy families agreeing",
         "source": "desk",
         "citation": null,
-        "note": "The doctrine that independent families each get one vote is the Grand Synthesis (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
+        "note": "The doctrine that independent families each get one vote is the desk's combined read (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
         "values": [
          {
           "families": 1,
@@ -21334,7 +21398,6 @@
         "factor": "tensor_confirmed",
         "label": "Tensor pattern engine confirms a swing",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "The spec grades Tensor evidence by freshness: a fresh trade signal 8 of 15, a fresh watch 4, a stale signal (4-10 sessions) 2. The desk maps those proportions onto its own scale, where the fresh weight is 14.",
         "points": 14,
         "values": [
@@ -21356,7 +21419,6 @@
         "factor": "tensor_context_only",
         "label": "Tensor dip context (no confirmed swing)",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
         "note": "Tensor's dip sleeve selected the name without a confirmed swing trade signal \u2014 half the fresh confirmation weight, the spec's fresh-watch proportion.",
         "points": 7
        },
@@ -21365,7 +21427,7 @@
         "label": "ChartsLector strength (context only)",
         "source": "desk",
         "citation": null,
-        "note": "A context layer: it can add points but never creates a setup (Grand Synthesis, Part V). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
+        "note": "A context layer: it can add points but never creates a setup (the desk's combined read). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
         "values": [
          {
           "min_score": 75.0,
@@ -21461,7 +21523,6 @@
         "factor": "reset_at_support",
         "label": "Reset at support \u2014 at the 20-day average",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, Component 2 (at the 20 EMA = 8, tolerance \u00b11.0%)",
         "note": "Paid only when the close is within 1% of the 20-day average \u2014 the tolerance the spec itself sets.",
         "points": 8
        },
@@ -21518,7 +21579,6 @@
         "label": "Parabolic-spike guard (up 25% or more in 10 sessions)",
         "points": "x0.7",
         "source": "spec",
-        "citation": "DIP_SCORE_SPEC.md, regime modifier (parabolic-spike guard)",
         "note": "Not a flat deduction: when a name has run 25% or more in 10 sessions, the whole finished score is multiplied by 0.7 \u2014 the first red day of a spike is not the buy."
        },
        {
@@ -21553,7 +21613,8 @@
     "seals": {
      "evidence": [],
      "surface": []
-    }
+    },
+    "last_close": 286.58
    }
   }
  ],
@@ -21564,7 +21625,6 @@
    "date": "2026-10-16",
    "outcome_r": null,
    "detail": "Entered by the desk \u2014 it is a position now, not a setup.",
-   "problems": null,
    "text": "Idea closed: entered by the desk \u2014 now a position \u00b7 2026-10-16 \u00b7 position open"
   },
   {
@@ -21573,9 +21633,6 @@
    "date": "2026-10-16",
    "outcome_r": null,
    "detail": "Plan expired \u2014 never triggered.",
-   "problems": [
-    "the plan's expiry is not after its scoring pass"
-   ],
    "text": "Idea closed: plan expired \u2014 never triggered \u00b7 2026-10-16 \u00b7 no trade"
   },
   {
@@ -21584,7 +21641,6 @@
    "date": "2026-10-16",
    "outcome_r": null,
    "detail": "Entered by the desk \u2014 it is a position now, not a setup.",
-   "problems": null,
    "text": "Idea closed: entered by the desk \u2014 now a position \u00b7 2026-10-16 \u00b7 position open"
   },
   {
@@ -21593,7 +21649,6 @@
    "date": "2026-10-16",
    "outcome_r": null,
    "detail": "Entered by the desk \u2014 it is a position now, not a setup.",
-   "problems": null,
    "text": "Idea closed: entered by the desk \u2014 now a position \u00b7 2026-10-16 \u00b7 position closed"
   },
   {
@@ -21602,9 +21657,6 @@
    "date": "2026-10-16",
    "outcome_r": null,
    "detail": "Plan expired \u2014 never triggered.",
-   "problems": [
-    "the plan's expiry is not after its scoring pass"
-   ],
    "text": "Idea closed: plan expired \u2014 never triggered \u00b7 2026-10-16 \u00b7 no trade"
   }
  ],
@@ -21637,7 +21689,7 @@
   },
   "measurements": [
    "Breadth (1831 names scanned): 699 advanced, 1126 declined; 30.7% sit above their 50-day average (50.3% above the 20-day, 43.4% above the 200-day); 22 names jumped 4%+ on the day against 266 down 4%+.",
-   "Mood ring: 11.2 \u2014 RED (VIX 19.99, term ratio 0.975, SKEW 168.59, VVIX 109.91).",
+   "Mood ring (measured 2026-10-16): 11.2 \u2014 RED (VIX 19.99, term ratio 0.975, SKEW 168.59, VVIX 109.91).",
    "Risk appetite: 0 of 6 ratio pairs read risk-on.",
    "Theme rotation vs SPY \u2014 leading: XLF, XLE, XLV, XLI, XLB, XLP; lagging: XLK, SMH, SOXX, IGV, ARKK, TAN.",
    "QQQ pulse YELLOW (3/5); SPY pulse YELLOW (3/5)."
@@ -21666,8 +21718,7 @@
     "factor": "family_confluence",
     "label": "Independent strategy families agreeing",
     "source": "desk",
-    "citation": null,
-    "note": "The doctrine that independent families each get one vote is the Grand Synthesis (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
+    "note": "The doctrine that independent families each get one vote is the desk's combined read (Part V). The point steps are desk-set: the synthesis gives no numbers, and the DIP spec's 30-point block is a different quantity (level confluence), so it is not borrowed here.",
     "values": [
      {
       "families": 1,
@@ -21691,7 +21742,6 @@
     "factor": "tensor_confirmed",
     "label": "Tensor pattern engine confirms a swing",
     "source": "spec",
-    "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
     "note": "The spec grades Tensor evidence by freshness: a fresh trade signal 8 of 15, a fresh watch 4, a stale signal (4-10 sessions) 2. The desk maps those proportions onto its own scale, where the fresh weight is 14.",
     "points": 14,
     "values": [
@@ -21713,7 +21763,6 @@
     "factor": "tensor_context_only",
     "label": "Tensor dip context (no confirmed swing)",
     "source": "spec",
-    "citation": "DIP_SCORE_SPEC.md, Component 4 (strategy evidence)",
     "note": "Tensor's dip sleeve selected the name without a confirmed swing trade signal \u2014 half the fresh confirmation weight, the spec's fresh-watch proportion.",
     "points": 7
    },
@@ -21721,8 +21770,7 @@
     "factor": "lector_tiers",
     "label": "ChartsLector strength (context only)",
     "source": "desk",
-    "citation": null,
-    "note": "A context layer: it can add points but never creates a setup (Grand Synthesis, Part V). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
+    "note": "A context layer: it can add points but never creates a setup (the desk's combined read). The tier numbers are desk-set. When the ranks are more than 3 sessions old, the points are halved.",
     "values": [
      {
       "min_score": 75.0,
@@ -21746,7 +21794,6 @@
     "factor": "entered",
     "label": "The desk actually entered today",
     "source": "desk",
-    "citation": null,
     "note": "A filled entry is the desk's revealed conviction and outranks an evaluated intent. A position the desk already holds earns the same credit \u2014 the money is committed either way (DA-2: one entered predicate \u2014 fills today, an entry-dated record today, or a current holding, options holdings mapped to their underlying). Doctrine supports the idea; the number is desk-set.",
     "points": 12
    },
@@ -21754,7 +21801,6 @@
     "factor": "attempted_rejected",
     "label": "A strategy tried to enter and was turned away",
     "source": "desk",
-    "citation": null,
     "note": "Paid only when the broker's own rejection says the account could not fund the order (buying power). A rejection for any other reason earns nothing.",
     "points": 4
    },
@@ -21762,7 +21808,6 @@
     "factor": "regime_fear_dip_family",
     "label": "Fear day \u2014 dip-habitat family",
     "source": "desk",
-    "citation": null,
     "note": "Departure, recorded: the DIP spec's fear bonus is +10 (Component 1), paid inside a dip-depth component this rubric does not compute. The desk merges fear into this single regime factor and sets the dip-family credit at 8. The fear-day gate itself follows the spec \u2014 SPY down more than 1.5% or VIX up more than 15% (desk extensions: VIX at 25 or higher, or a red index day with VIX at 20 or higher).",
     "points": 8
    },
@@ -21770,7 +21815,6 @@
     "factor": "regime_fear_other_family",
     "label": "Fear day \u2014 other family",
     "source": "desk",
-    "citation": null,
     "note": "A smaller credit: fear days are the dip buyers' validated habitat rather than this family's.",
     "points": 3
    },
@@ -21778,7 +21822,6 @@
     "factor": "regime_uptrend_momentum",
     "label": "Uptrend \u2014 momentum family",
     "source": "desk",
-    "citation": null,
     "note": "The DIP spec's market-context component pays 10 in an uptrend and 0 in a downtrend, without splitting by family. The desk splits by family habitat (the 2026-10-13 ruling: swing signals do well in bearish regimes) and sets its own numbers.",
     "points": 6
    },
@@ -21786,7 +21829,6 @@
     "factor": "regime_uptrend_dip",
     "label": "Uptrend \u2014 dip family",
     "source": "desk",
-    "citation": null,
     "note": "The desk's method buys dips inside uptrends, not against them. Desk-set number; see the uptrend note above.",
     "points": 3
    },
@@ -21794,7 +21836,6 @@
     "factor": "regime_downtrend_dip",
     "label": "Downtrend \u2014 reversal-class family",
     "source": "desk",
-    "citation": null,
     "note": "Only reversal-class setups keep support in a downtrend. Desk-set number; the DIP spec's context component pays 0 in a downtrend and does not make this exception \u2014 the desk's bearish-habitat ruling (2026-10-13) does.",
     "points": 2
    },
@@ -21802,7 +21843,6 @@
     "factor": "regime_downtrend_other",
     "label": "Downtrend \u2014 other family",
     "source": "desk",
-    "citation": null,
     "note": "Trend-following entries are penalised until the regime turns. Desk-set number.",
     "points": -6
    },
@@ -21810,7 +21850,6 @@
     "factor": "regime_chop",
     "label": "Chop (sideways) market",
     "source": "desk",
-    "citation": null,
     "note": "No tailwind either way; the setup stands on its own evidence. Desk-set number.",
     "points": 2
    },
@@ -21818,7 +21857,6 @@
     "factor": "reset_at_support",
     "label": "Reset at support \u2014 at the 20-day average",
     "source": "spec",
-    "citation": "DIP_SCORE_SPEC.md, Component 2 (at the 20 EMA = 8, tolerance \u00b11.0%)",
     "note": "Paid only when the close is within 1% of the 20-day average \u2014 the tolerance the spec itself sets.",
     "points": 8
    },
@@ -21826,7 +21864,6 @@
     "factor": "reset_near_support",
     "label": "Reset near support \u2014 wider pullback",
     "source": "desk",
-    "citation": null,
     "note": "A wider, weaker condition the desk credits at half the spec route: the close within about a day's range of the 20-day average, or reset onto the recent swing-low zone. Desk-set.",
     "points": 4
    },
@@ -21834,7 +21871,6 @@
     "factor": "stop_ideal",
     "label": "Stop distance 1.5-2.5x the daily range",
     "source": "desk",
-    "citation": null,
     "note": "The distance bands follow the desk's chart-reading method \u2014 stops at least 1.5x the daily range, 1.5-2.5x preferred. The point values are desk-set.",
     "points": 8
    },
@@ -21842,7 +21878,6 @@
     "factor": "stop_wide_ok",
     "label": "Stop distance 2.5-4x the daily range",
     "source": "desk",
-    "citation": null,
     "note": "Wider than the ideal band, so the position must ride out more noise. Desk-set points; band per the chart-reading method.",
     "points": 5
    },
@@ -21850,7 +21885,6 @@
     "factor": "stop_tight",
     "label": "Stop distance 1-1.5x the daily range",
     "source": "desk",
-    "citation": null,
     "note": "Below the method's 1.5x floor \u2014 noise can shake it out. Desk-set points.",
     "points": 2
    },
@@ -21858,7 +21892,6 @@
     "factor": "stop_inside_noise",
     "label": "Stop inside one day's range",
     "source": "desk",
-    "citation": null,
     "note": "A stop inside the normal daily range is very likely to be noise-stopped, so it deducts. Desk-set points.",
     "points": -4
    },
@@ -21866,7 +21899,6 @@
     "factor": "stop_very_wide",
     "label": "Stop distance beyond 4x the daily range",
     "source": "desk",
-    "citation": null,
     "note": "The level is defined, but a great deal of room sits between entry and exit. Desk-set points.",
     "points": 1
    },
@@ -21875,14 +21907,12 @@
     "label": "Parabolic-spike guard (up 25% or more in 10 sessions)",
     "points": "x0.7",
     "source": "spec",
-    "citation": "DIP_SCORE_SPEC.md, regime modifier (parabolic-spike guard)",
     "note": "Not a flat deduction: when a name has run 25% or more in 10 sessions, the whole finished score is multiplied by 0.7 \u2014 the first red day of a spike is not the buy."
    },
    {
     "factor": "extension_run_15",
     "label": "Stretched (up 15-25% in 10 sessions)",
     "source": "desk",
-    "citation": null,
     "note": "A lesser extension warning below the spike line. Desk-set; the spec has no such tier.",
     "points": -10
    },
@@ -21890,7 +21920,6 @@
     "factor": "extension_above_ema",
     "label": "Far above the 20-day average",
     "source": "desk",
-    "citation": null,
     "note": "Close more than 2.5x the daily range above the 20-day average \u2014 poor initiation quality even when the trend is intact. Desk-set.",
     "points": -8
    },
@@ -21898,7 +21927,6 @@
     "factor": "broken_structure",
     "label": "Broken structure (closed below the swing low)",
     "source": "desk",
-    "citation": null,
     "note": "Broken structure is one of the desk's named invalidators (2026-10-13 ruling: extension, no reset at support, broken structure). The point value is desk-set.",
     "points": -15
    }
@@ -21957,8 +21985,7 @@
   }
  ],
  "notes": [
-  "ChartsLector ranks as of 2026-10-16 (1 session(s) before this curator run; weekday count).",
-  "No daily bars for IREN \u2014 structure, extension and stop-geometry factors were not scored for it."
+  "ChartsLector ranks as of 2026-10-16 (1 session(s) before this curator run; sessions)."
  ],
  "setups_as_of": "2026-10-19",
  "scorecard": {
@@ -22000,6 +22027,7 @@
    }
   ],
   "closed_calls": [],
-  "line": "Call record: 10 calls since 2026-10-16 \u2014 no closed call carries an R yet; 5 open."
- }
+  "line": "Call record: 10 calls since 2026-10-16 \u2014 5 open, 0 closed, 5 departed; no closed call carries an R yet."
+ },
+ "lector_as_of": "2026-10-16"
 }
