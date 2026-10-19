@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-19T23:19:27.236951+00:00",
- "generated_at_et": "2026-10-19T19:19:27.236951-04:00",
+ "generated_at_utc": "2026-10-19T23:23:25.438630+00:00",
+ "generated_at_et": "2026-10-19T19:23:25.438630-04:00",
  "account": {
   "equity": "100774.01",
   "cash": "-213043.52",
@@ -1151,7 +1151,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T23:19:27.236951+00:00",
+   "scored_at": "2026-10-19T23:23:25.438630+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -1193,7 +1193,7 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 57.52,
+      "close": 57.3997,
       "sma20": 55.39,
       "sma50": 55.99,
       "pivot_sequence": null,
@@ -1332,7 +1332,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:19:27.236951+00:00",
+    "scored_at": "2026-10-19T23:23:25.438630+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -1643,7 +1643,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -2018,7 +2018,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3364,12 +3364,12 @@
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
        "status": "value",
-       "fact": "Short volume (FINRA Reg SHO, 2026-10-16): shorts were 57.8% of the day's volume (2,405,006 of 4,160,888 shares). fails-to-deliver (SEC CNS file 202609b): 8 settlement days carried fails in the file's half-month \u2014 27,840 shares in total, most recently 1,318 on 2026-09-28. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-19): shorts were 60.3% of the day's volume (2,989,093 of 4,953,520 shares). fails-to-deliver (SEC CNS file 202609b): 8 settlement days carried fails in the file's half-month \u2014 27,840 shares in total, most recently 1,318 on 2026-09-28. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
        "data": {
         "regsho": {
-         "short_volume": 2405006.087812,
-         "total_volume": 4160888.263373,
-         "short_pct": 57.8
+         "short_volume": 2989093.256625,
+         "total_volume": 4953519.908792,
+         "short_pct": 60.3
         },
         "ftd": {
          "last_date": "2026-09-28",
@@ -3383,7 +3383,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-16): shorts were 57.8% of the day's volume (2,405,006 of 4,160,888 shares)"
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-19): shorts were 60.3% of the day's volume (2,989,093 of 4,953,520 shares)"
       },
       {
        "key": "insider_buys",
@@ -3502,8 +3502,7 @@
         "capped": false,
         "latest_date": "2026-10-19",
         "latest_headline": "Silence Therapeutics, Disc Medicine, Veradermics And Other Big Stocks Moving Higher On Monday",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-19T17:06:14.559187+00:00"
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
@@ -4331,7 +4330,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T23:19:27.236951+00:00",
+   "scored_at": "2026-10-19T23:23:25.438630+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -4537,8 +4536,8 @@
      "hourly": {
       "state": "read",
       "stance": "lower",
-      "close": 835,
-      "sma20": 842.46,
+      "close": 835.125,
+      "sma20": 842.47,
       "sma50": 850.22,
       "pivot_sequence": "mixed",
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
@@ -4678,7 +4677,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:19:27.236951+00:00",
+    "scored_at": "2026-10-19T23:23:25.438630+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $838.80. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -4780,18 +4779,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:19 PM ET \u00b7 Prices checked 7:19 PM ET",
+     "as_of_text": "Plan as of 7:23 PM ET \u00b7 Prices checked 7:23 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-LITE-ema_vwap-LITE",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-19",
-      "ingested_at": "2026-10-19T23:19:27.236951+00:00",
+      "ingested_at": "2026-10-19T23:23:25.438630+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:19 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:23 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -6559,7 +6558,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -7177,7 +7176,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -7331,8 +7330,8 @@
      ],
      "consideration_counts": {
       "items": 87,
-      "value": 83,
-      "unavailable": 4,
+      "value": 84,
+      "unavailable": 3,
       "material": 6
      },
      "docket": {
@@ -9037,12 +9036,12 @@
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
        "status": "value",
-       "fact": "Short volume (FINRA Reg SHO, 2026-10-16): shorts were 45.3% of the day's volume (889,051 of 1,962,402 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 80,968 shares in total, most recently 19,810 on 2026-09-30. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-19): shorts were 62.1% of the day's volume (1,392,919 of 2,244,534 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 80,968 shares in total, most recently 19,810 on 2026-09-30. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
        "data": {
         "regsho": {
-         "short_volume": 889051.317868,
-         "total_volume": 1962402.111341,
-         "short_pct": 45.3
+         "short_volume": 1392919.026364,
+         "total_volume": 2244534.057071,
+         "short_pct": 62.1
         },
         "ftd": {
          "last_date": "2026-09-30",
@@ -9056,7 +9055,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-16): shorts were 45.3% of the day's volume (889,051 of 1,962,402 shares)"
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-19): shorts were 62.1% of the day's volume (1,392,919 of 2,244,534 shares)"
       },
       {
        "key": "insider_buys",
@@ -9142,13 +9141,20 @@
        "key": "news_counts",
        "family": "company_market",
        "label": "News counts",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "the news product reaching the brief is stale (built 2026-10-18T22:36:04.375451+00:00) \u2014 the record states no values from a stale product",
-       "needs": "the desk's news gap product (Alpaca News via the desk's data credentials, daily cadence); no fresh product reached the brief",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 the news product reaching the brief is stale (built 2026-10-18T22:36:04.375451+00:00) \u2014 the record states no values from a stale product; needs the desk's news gap product (Alpaca News via the desk's data credentials, daily cadence); no fresh product reached the brief"
+       "status": "value",
+       "fact": "News (Alpaca News, the desk's product): 10 items naming the company in the last 7 days, 34 in the last 30. The latest, 2026-10-18 via benzinga: \u201cGE Aerospace Stock Nears Death Cross Amid Valuation Concerns and Strong Earnings Outlook\u201d.",
+       "data": {
+        "n7": 10,
+        "n30": 34,
+        "capped": false,
+        "latest_date": "2026-10-18",
+        "latest_headline": "GE Aerospace Stock Nears Death Cross Amid Valuation Concerns and Strong Earnings Outlook",
+        "latest_source": "benzinga"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 10 items naming the company in the last 7 days, 34 in the last 30"
       },
       {
        "key": "earnings",
@@ -9333,17 +9339,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cLumentum\u201d, resolved from the filer's EDGAR name): 259 views a day over the last 7 complete days vs 191 the week before (1.36\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cLumentum\u201d, resolved from the filer's EDGAR name): 226 views a day over the last 7 complete days vs 240 the week before (0.94\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Lumentum",
-        "avg7": 258.9,
-        "avg_prior7": 191.0,
-        "ratio": 1.36
+        "avg7": 226.4,
+        "avg_prior7": 240.4,
+        "ratio": 0.94
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cLumentum\u201d, resolved from the filer's EDGAR name): 259 views a day over the last 7 complete days vs 191 the week before (1.36\u00d7)"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cLumentum\u201d, resolved from the filer's EDGAR name): 226 views a day over the last 7 complete days vs 240 the week before (0.94\u00d7)"
       },
       {
        "key": "seasonality",
@@ -9527,8 +9533,8 @@
      ],
      "counts": {
       "items": 87,
-      "value": 83,
-      "unavailable": 4,
+      "value": 84,
+      "unavailable": 3,
       "material": 6
      }
     },
@@ -9993,7 +9999,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T23:19:27.236951+00:00",
+   "scored_at": "2026-10-19T23:23:25.438630+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -10032,9 +10038,9 @@
      "hourly": {
       "state": "read",
       "stance": "sideways",
-      "close": 63.8555,
-      "sma20": 63.2,
-      "sma50": 65.58,
+      "close": 63.47,
+      "sma20": 63.18,
+      "sma50": 65.57,
       "pivot_sequence": "mixed",
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -10172,7 +10178,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:19:27.236951+00:00",
+    "scored_at": "2026-10-19T23:23:25.438630+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -10492,7 +10498,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10885,7 +10891,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -12327,12 +12333,12 @@
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
        "status": "value",
-       "fact": "Short volume (FINRA Reg SHO, 2026-10-16): shorts were 47.3% of the day's volume (723,933 of 1,530,139 shares). fails-to-deliver (SEC CNS file 202609b): 5 settlement days carried fails in the file's half-month \u2014 1,844 shares in total, most recently 369 on 2026-09-30. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-19): shorts were 55.8% of the day's volume (676,558 of 1,212,567 shares). fails-to-deliver (SEC CNS file 202609b): 5 settlement days carried fails in the file's half-month \u2014 1,844 shares in total, most recently 369 on 2026-09-30. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
        "data": {
         "regsho": {
-         "short_volume": 723932.823056,
-         "total_volume": 1530138.702413,
-         "short_pct": 47.3
+         "short_volume": 676557.782397,
+         "total_volume": 1212567.477734,
+         "short_pct": 55.8
         },
         "ftd": {
          "last_date": "2026-09-30",
@@ -12346,7 +12352,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-16): shorts were 47.3% of the day's volume (723,933 of 1,530,139 shares)"
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-19): shorts were 55.8% of the day's volume (676,558 of 1,212,567 shares)"
       },
       {
        "key": "insider_buys",
@@ -12428,20 +12434,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 0 items naming the company in the last 7 days, 2 in the last 30. The latest, 2026-10-07 via benzinga: \u201cAehr Test Systems Bags $6 Million Follow-On Order\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 1 items naming the company in the last 7 days, 3 in the last 30. The latest, 2026-10-19 via benzinga: \u201cSilence Therapeutics, Disc Medicine, Veradermics And Other Big Stocks Moving Higher On Monday\u201d.",
        "data": {
-        "n7": 0,
-        "n30": 2,
+        "n7": 1,
+        "n30": 3,
         "capped": false,
-        "latest_date": "2026-10-07",
-        "latest_headline": "Aehr Test Systems Bags $6 Million Follow-On Order",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-19T14:03:41.232832+00:00"
+        "latest_date": "2026-10-19",
+        "latest_headline": "Silence Therapeutics, Disc Medicine, Veradermics And Other Big Stocks Moving Higher On Monday",
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 0 items naming the company in the last 7 days, 2 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 1 items naming the company in the last 7 days, 3 in the last 30"
       },
       {
        "key": "earnings",
@@ -13230,7 +13235,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T23:19:27.236951+00:00",
+   "scored_at": "2026-10-19T23:23:25.438630+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -13269,8 +13274,8 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 1381,
-      "sma20": 1356.04,
+      "close": 1381.16,
+      "sma20": 1356.05,
       "sma50": 1352.52,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
@@ -13409,7 +13414,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:19:27.236951+00:00",
+    "scored_at": "2026-10-19T23:23:25.438630+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -13729,7 +13734,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -14113,7 +14118,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -15586,12 +15591,12 @@
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
        "status": "value",
-       "fact": "Short volume (FINRA Reg SHO, 2026-10-16): shorts were 36.2% of the day's volume (1,535,795 of 4,247,851 shares). fails-to-deliver (SEC CNS file 202609b): 4 settlement days carried fails in the file's half-month \u2014 9,915 shares in total, most recently 1,200 on 2026-09-28. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-19): shorts were 40.0% of the day's volume (1,738,744 of 4,348,530 shares). fails-to-deliver (SEC CNS file 202609b): 4 settlement days carried fails in the file's half-month \u2014 9,915 shares in total, most recently 1,200 on 2026-09-28. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
        "data": {
         "regsho": {
-         "short_volume": 1535795.156025,
-         "total_volume": 4247851.228787,
-         "short_pct": 36.2
+         "short_volume": 1738744.301943,
+         "total_volume": 4348530.324775,
+         "short_pct": 40.0
         },
         "ftd": {
          "last_date": "2026-09-28",
@@ -15605,7 +15610,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-16): shorts were 36.2% of the day's volume (1,535,795 of 4,247,851 shares)"
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-19): shorts were 40.0% of the day's volume (1,738,744 of 4,348,530 shares)"
       },
       {
        "key": "insider_buys",
@@ -15697,20 +15702,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 38 items naming the company in the last 7 days, 75 in the last 30. The latest, 2026-10-19 via benzinga: \u201cSilence Therapeutics, Disc Medicine, Veradermics And Other Big Stocks Moving Higher On Monday\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 42 items naming the company in the last 7 days, 79 in the last 30. The latest, 2026-10-19 via benzinga: \u201c10 Information Technology Stocks With Whale Alerts In Today\u2019s Session\u201d.",
        "data": {
-        "n7": 38,
-        "n30": 75,
+        "n7": 42,
+        "n30": 79,
         "capped": false,
         "latest_date": "2026-10-19",
-        "latest_headline": "Silence Therapeutics, Disc Medicine, Veradermics And Other Big Stocks Moving Higher On Monday",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-19T14:12:54.056842+00:00"
+        "latest_headline": "10 Information Technology Stocks With Whale Alerts In Today\u2019s Session",
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 38 items naming the company in the last 7 days, 75 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 42 items naming the company in the last 7 days, 79 in the last 30"
       },
       {
        "key": "earnings",
@@ -16481,7 +16485,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T23:19:27.236951+00:00",
+   "scored_at": "2026-10-19T23:23:25.438630+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -16816,7 +16820,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:19:27.236951+00:00",
+    "scored_at": "2026-10-19T23:23:25.438630+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold ALAB \u2014 the desk bought it at $287.93. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
@@ -16915,18 +16919,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:19 PM ET \u00b7 Prices checked 7:19 PM ET",
+     "as_of_text": "Plan as of 7:23 PM ET \u00b7 Prices checked 7:23 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-ALAB-rsi_meanrev-ALAB",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-19",
-      "ingested_at": "2026-10-19T23:19:27.236951+00:00",
+      "ingested_at": "2026-10-19T23:23:25.438630+00:00",
       "plan_version": 4,
       "change_note": "Plan updated to version 4 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:19 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:23 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -18274,7 +18278,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -18802,7 +18806,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.69B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -20758,12 +20762,12 @@
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
        "status": "value",
-       "fact": "Short volume (FINRA Reg SHO, 2026-10-16): shorts were 51.8% of the day's volume (753,176 of 1,454,167 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 22,579 shares in total, most recently 3,282 on 2026-09-30. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-19): shorts were 51.7% of the day's volume (563,357 of 1,089,031 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 22,579 shares in total, most recently 3,282 on 2026-09-30. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
        "data": {
         "regsho": {
-         "short_volume": 753176.216235,
-         "total_volume": 1454167.183535,
-         "short_pct": 51.8
+         "short_volume": 563357.484462,
+         "total_volume": 1089030.687082,
+         "short_pct": 51.7
         },
         "ftd": {
          "last_date": "2026-09-30",
@@ -20777,7 +20781,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-16): shorts were 51.8% of the day's volume (753,176 of 1,454,167 shares)"
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-19): shorts were 51.7% of the day's volume (563,357 of 1,089,031 shares)"
       },
       {
        "key": "insider_buys",
@@ -20866,8 +20870,7 @@
         "capped": false,
         "latest_date": "2026-10-19",
         "latest_headline": "Chip Stocks Repeated a Lehman-Era Losing Streak: Is The Bottom Now In?",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-19T14:12:54.056842+00:00"
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
@@ -21649,9 +21652,9 @@
    "symbol": "CRML",
    "reason": "entered",
    "date": "2026-10-16",
-   "outcome_r": null,
+   "outcome_r": -0.98,
    "detail": "Entered by the desk \u2014 it is a position now, not a setup.",
-   "text": "Idea closed: entered by the desk \u2014 now a position \u00b7 2026-10-16 \u00b7 position closed"
+   "text": "Idea closed: entered by the desk \u2014 now a position \u00b7 2026-10-16 \u00b7 -0.98R realised (closed 2026-10-19)"
   },
   {
    "symbol": "AG",
@@ -21994,10 +21997,10 @@
  "scorecard": {
   "as_of": "2026-10-19",
   "calls_made": 10,
-  "closed": 0,
-  "departed": 5,
-  "n_with_r": 0,
-  "mean_r": null,
+  "closed": 1,
+  "departed": 4,
+  "n_with_r": 1,
+  "mean_r": -0.98,
   "span": {
    "first": "2026-10-16",
    "last": "2026-10-19"
@@ -22029,7 +22032,14 @@
     "status": "entered"
    }
   ],
-  "closed_calls": [],
-  "line": "Call record: 10 calls since 2026-10-16 \u2014 5 open, 0 closed, 5 departed; no closed call carries an R yet."
+  "closed_calls": [
+   {
+    "symbol": "CRML",
+    "date": "2026-10-16",
+    "outcome_r": -0.98,
+    "outcome_text": "-0.98R realised (closed 2026-10-19)"
+   }
+  ],
+  "line": "Call record: 10 calls since 2026-10-16 \u2014 5 open, 1 closed, 4 departed; mean -0.98R over the 1 closed calls that carry an R (2026-10-16 to 2026-10-19)."
  }
 }
