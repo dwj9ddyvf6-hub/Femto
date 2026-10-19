@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="dark">
   <meta name="description" content="Muse Desk is a paper trading research desk: 60 automated strategies running on a paper account, with every figure read live from the broker account and the desk's permanent record.">
-  <meta name="theme-color" content="#0e1312">
+  <meta name="theme-color" content="#131722">
   <link rel="canonical" href="https://dwj9ddyvf6-hub.github.io/Femto/docs/desk-terminal-live/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -460,6 +460,10 @@
             <p class="completed-sub">Names the desk is watching where the evidence does not add up to a call. One honest line each &mdash; no card until the desk can say what it expects.</p>
             <div id="noCallList"></div>
           </div>
+          <div id="scorecardBand" hidden>
+            <h3 class="completed-head">Call record</h3>
+            <p class="completed-sub" id="scorecardLine"></p>
+          </div>
           <div id="setupsDepartures" hidden>
             <h3 class="completed-head">Recently closed</h3>
             <p class="completed-sub">Every name that leaves this list, with the reason and the outcome &mdash; kept here for at least five trading days, and permanently in the desk's record, so nothing quietly disappears.</p>
@@ -630,14 +634,14 @@
                  ['Cash',money(a.cash),'Money not currently invested',0],
                  ['Open positions',String(d.position_count),holdStrats+' strategies holding \u00b7 '+d.position_count+' position'+(d.position_count===1?'':'s'),0]];
     $('accountMetrics').innerHTML=metrics.map(function(m,i){return '<div class="metric'+(m[3]?' hero':'')+'"><span class="metric-label">'+micon(m[3]?0:(i+1))+'</span><span class="metric-value'+(m[3]?' hero-value':'')+'">'+esc(m[1])+'</span><span class="metric-sub">'+esc(m[2])+'</span></div>';}).join('');
-    var eb=$('exposureBand'); if(eb){var gp2=Number(ex.gross_pct); if(!isFinite(gp2))gp2=0; var mw2=Math.max(0,Math.min(100,gp2)); eb.hidden=false; eb.innerHTML='<div class="eb-head"><span>Exposure \u2014 share of the account held in open positions</span><b>'+money(ex.gross_notional)+' \u00b7 '+pct(gp2,1)+'</b></div><div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(gp2,1))+'"><span style="width:'+mw2+'%"></span><i></i><i></i><i></i>'+(gp2<8?'<span class="endcap" style="left:'+mw2+'%"></span><span class="pctlab" style="left:'+mw2+'%">'+pct(gp2,1)+' held \u2014 almost all cash</span>':'')+'</div><div class="meter-scale"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>';}
+    var eb=$('exposureBand'); if(eb){var gp2=Number(ex.gross_pct); if(!isFinite(gp2))gp2=0; var scaleMax=gp2>100?Math.ceil(gp2/100)*100:100; var mw2=Math.max(0,gp2/scaleMax*100); eb.hidden=false; eb.innerHTML='<div class="eb-head"><span>Exposure \u2014 share of the account held in open positions</span><b>'+money(ex.gross_notional)+' \u00b7 '+pct(gp2,1)+'</b></div><div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(gp2,1))+'"><span style="width:'+mw2+'%"></span><i></i><i></i><i></i>'+(gp2<8?'<span class="endcap" style="left:'+mw2+'%"></span><span class="pctlab" style="left:'+mw2+'%">'+pct(gp2,1)+' held \u2014 almost all cash</span>':'')+'</div><div class="meter-scale"><span>0%</span><span>'+(scaleMax*0.25)+'%</span><span>'+(scaleMax*0.5)+'%</span><span>'+(scaleMax*0.75)+'%</span><span>'+scaleMax+'%</span></div>';}
     var mwf=$('mastWaffle'); if(mwf&&typeof ALGO==='object'){mwf.innerHTML=sleeveOrder().map(function(k){var c=catColor((ALGO[k]||{}).category);var h=((d.sleeves||{})[k]||{}).position_count>0;return '<i style="border-color:'+c+';background:'+(h?c:'transparent')+'"></i>';}).join('');}
     var ft=$('footerTime'); if(ft)ft.textContent='Snapshot: '+fmtTime(d.generated_at_utc)+'.';
-    var grossPct=Number(ex.gross_pct); if(!isFinite(grossPct))grossPct=0; var meterW=Math.max(0,Math.min(100,grossPct));
+    var grossPct=Number(ex.gross_pct); if(!isFinite(grossPct))grossPct=0; var scaleMax2=grossPct>100?Math.ceil(grossPct/100)*100:100; var meterW=Math.max(0,grossPct/scaleMax2*100);
     $('exposure').innerHTML='<div class="kv emphasis"><div>Total value held (long and short added together)</div><div>'+money(ex.gross_notional)+'</div>'
       +'<div>Share of account</div><div>'+pct(ex.gross_pct,1)+'</div></div>'
       +'<div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(ex.gross_pct,1))+'"><span style="width:'+meterW+'%"></span><i></i><i></i><i></i></div>'
-      +'<div class="meter-scale"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>'
+      +'<div class="meter-scale"><span>0%</span><span>'+(scaleMax2*0.25)+'%</span><span>'+(scaleMax2*0.5)+'%</span><span>'+(scaleMax2*0.75)+'%</span><span>'+scaleMax2+'%</span></div>'
       +(grossPct<8?'<p class="footnote" style="margin-top:2px">Almost all of the account is currently in cash — only '+Object.keys(ex.by_sleeve||{}).filter(function(k){return Number(ex.by_sleeve[k])>0;}).length+' of '+(((d.desk||{}).sleeve_order||[]).length)+' strategies are holding anything.</p>':'')
       + bySleeveHtml(ex)
       +'<p class="footnote">The total value held is the combined market value of every open position, added up without netting winners against losers.</p>';
@@ -656,8 +660,8 @@
     var acctHtml='<div class="kv"><div>Status</div><div style="font-family:var(--sans);font-size:13px">'+esc(statusTxt)+'</div>'
       +'<div>Cash held</div><div>'+money(a.cash)+'</div>'
       +'<div>Value held in positions</div><div>'+(isFinite(heldNet)?money(heldNet):'—')+'</div></div>';
-    if(isFinite(cashN)&&isFinite(heldN)&&(cashN+heldN)>0){
-      var tot=cashN+heldN, cw=cashN/tot*100, hw=heldN/tot*100;
+    if(isFinite(cashN)&&isFinite(heldNet)&&(cashN+heldNet)>0){
+      var tot=cashN+heldNet, cw=Math.max(0,Math.min(100,cashN/tot*100)), hw=Math.max(0,Math.min(100,heldNet/tot*100));
       acctHtml+='<div class="stack"><div class="stack-bar" role="img" aria-label="Account made up of '+pct(cashN/eqN*100,1)+' cash and '+pct(heldN/eqN*100,1)+' held in positions"><span style="width:'+cw+'%;background:var(--accent)"></span><span style="width:'+hw+'%;background:var(--gold)"></span></div>'
         +'<ul class="stack-legend"><li><span class="sw" style="background:var(--accent)"></span>Cash<span class="sv">'+money(a.cash)+' \u00b7 '+pct(cashN/eqN*100,1)+' of account</span></li>'
         +'<li><span class="sw" style="background:var(--gold)"></span>Held in positions<span class="sv">'+money(ex.gross_notional)+' \u00b7 '+pct(heldN/eqN*100,1)+' of account</span></li></ul></div>';
@@ -1039,7 +1043,7 @@
     }
     var cells='';
     if(p.entry_zone){
-      cells+=cellS(p.status==='Entered'?'Bought at':'Entry zone',
+      cells+=cellS('Buy zone',
         money(p.entry_zone.lo)
           +(p.entry_zone.hi!==p.entry_zone.lo?'\u2013'+money(p.entry_zone.hi):''),
         p.entry_zone.basis||'');
@@ -1049,15 +1053,15 @@
       // (underlying, reference only) and the executable spread
       // exit rule render as their own lines below the cells
     } else if(p.stop){
-      cells+=cellS(p.backstop?'Trading stop':'Stop',
+      cells+=cellS('Invalidation',
         p.stop.price!=null?money(p.stop.price):'\u2014',
         p.stop.structure||'');
     }
     (p.targets||[]).forEach(function(t){
-      cells+=cellS('Profit objective '+t.label, money(t.price), t.basis||'');
+      cells+=cellS('Target '+t.label, money(t.price), t.basis||'');
     });
     if(p.invalidation&&p.invalidation.price!=null){
-      cells+=cellS('Ends if it closes below',
+      cells+=cellS('Invalidation',
         money(p.invalidation.price),
         'the one line that ends this setup');
     }
@@ -1135,6 +1139,8 @@
     renderEntered(entered);
     renderCompleted(completed);
     renderDepartures(departures);
+    var scb=$('scorecardBand'), scl=$('scorecardLine');
+    if(scb&&scl&&d.scorecard&&d.scorecard.line){scl.textContent=d.scorecard.line; scb.hidden=false;}
     if(!setups.length&&!departures.length){ panel.hidden=true; return; }
     panel.hidden=false;
     var grid=$('setupsGrid'); if(grid){
