@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-19T00:37:47.911941+00:00",
- "generated_at_et": "2026-10-18T20:37:47.911941-04:00",
+ "generated_at_utc": "2026-10-19T00:55:17.072578+00:00",
+ "generated_at_et": "2026-10-18T20:55:17.072578-04:00",
  "account": {
-  "equity": "98106.11",
+  "equity": "98343.48",
   "cash": "-196401.75",
-  "buying_power": "1571.8",
+  "buying_power": "2192.36",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -989,29 +989,29 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 98106.11,
+  "equity": 98343.48,
   "gross_pct": 0.0,
   "position_count": 49,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 19083,
+  "total": 19123,
   "by_kind": {
    "journal": 40,
    "fill": 1165,
    "outcome": 9,
    "import_position": 6,
-   "tick": 497,
+   "tick": 498,
    "nightly_reconcile": 53,
    "import_open_order": 51,
-   "signal_intent": 8167,
+   "signal_intent": 8186,
    "entry_rejected": 2071,
-   "exit_skipped": 320,
+   "exit_skipped": 321,
    "intent_rejected": 184,
-   "slice_sync": 622,
+   "slice_sync": 623,
    "exit_submitted": 26,
    "pass_watchdog": 32,
-   "entry_skipped": 5787,
+   "entry_skipped": 5805,
    "entry_bp_breaker": 8,
    "exit_rejected": 42,
    "entry_blocked_resting_order": 1,
@@ -1065,7 +1065,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T00:50:02.417350+00:00",
+   "scored_at": "2026-10-19T00:55:20.847689+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1381,7 +1381,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T00:50:02.417350+00:00",
+    "scored_at": "2026-10-19T00:55:20.847689+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1459,20 +1459,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 8:50 PM ET \u00b7 Prices checked 8:50 PM ET",
+     "as_of_text": "Plan as of 8:55 PM ET \u00b7 Prices checked 8:55 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-19T00:50:02.417350+00:00",
+      "ingested_at": "2026-10-19T00:55:20.847689+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:50 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:55 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -5638,7 +5638,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 76.5% \u2014 at the money on the 2026-11-27 expiry (40 days out, strike $825.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T00:17:39.174794+00:00.",
+       "fact": "Standing IV on the name: 76.5% \u2014 at the money on the 2026-11-27 expiry (40 days out, strike $825.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T00:54:17.457788+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 76.5,
@@ -6574,7 +6574,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T00:50:02.417350+00:00",
+   "scored_at": "2026-10-19T00:55:20.847689+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:FFIV",
@@ -6890,7 +6890,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T00:50:02.417350+00:00",
+    "scored_at": "2026-10-19T00:55:20.847689+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold FFIV \u2014 the desk bought it at $451.21. The stop below is the stop staged with this trade.",
@@ -6965,20 +6965,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 8:50 PM ET \u00b7 Prices checked 8:50 PM ET",
+     "as_of_text": "Plan as of 8:55 PM ET \u00b7 Prices checked 8:55 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-18-FFIV-momentum_rotation-FFIV",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:FFIV",
       "source_timestamp": "2026-10-15",
       "source_hash": "747406f9d9f74ca3",
-      "ingested_at": "2026-10-19T00:50:02.417350+00:00",
+      "ingested_at": "2026-10-19T00:55:20.847689+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-18",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:50 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 8:55 PM ET."
      },
      "conviction": {
       "call": "for",
@@ -10501,7 +10501,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 54.5% \u2014 at the money on the 2026-11-20 expiry (33 days out, strike $440.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T00:17:39.174794+00:00.",
+       "fact": "Standing IV on the name: 54.5% \u2014 at the money on the 2026-11-20 expiry (33 days out, strike $440.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T00:54:17.457788+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 54.5,
