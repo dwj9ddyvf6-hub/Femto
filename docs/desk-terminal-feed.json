@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-19T08:40:53.783332+00:00",
- "generated_at_et": "2026-10-19T04:40:53.783332-04:00",
+ "generated_at_utc": "2026-10-19T08:51:25.125473+00:00",
+ "generated_at_et": "2026-10-19T04:51:25.125473-04:00",
  "account": {
-  "equity": "99841.43",
+  "equity": "99686.73",
   "cash": "-196401.75",
   "buying_power": "0",
   "status": "ACTIVE",
@@ -1026,26 +1026,26 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 99841.43,
+  "equity": 99686.73,
   "gross_pct": 0.0,
   "position_count": 52,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 20071,
+  "total": 20075,
   "by_kind": {
    "journal": 40,
    "fill": 1171,
    "outcome": 9,
    "import_position": 6,
-   "tick": 522,
+   "tick": 523,
    "nightly_reconcile": 53,
    "import_open_order": 51,
    "signal_intent": 8590,
    "entry_rejected": 2079,
-   "exit_skipped": 385,
+   "exit_skipped": 387,
    "intent_rejected": 184,
-   "slice_sync": 676,
+   "slice_sync": 677,
    "exit_submitted": 27,
    "pass_watchdog": 36,
    "entry_skipped": 6181,
@@ -1105,7 +1105,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T08:49:44.068941+00:00",
+   "scored_at": "2026-10-19T08:54:59.130857+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:LITE",
@@ -1284,9 +1284,9 @@
      "hourly": {
       "state": "read",
       "stance": "sideways",
-      "close": 852.2,
-      "sma20": 847.96,
-      "sma50": 876.94,
+      "close": 851,
+      "sma20": 847.9,
+      "sma50": 876.91,
       "pivot_sequence": "LH-LL",
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -1421,7 +1421,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T08:49:44.068941+00:00",
+    "scored_at": "2026-10-19T08:54:59.130857+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $826.00. The stop below is the stop staged with this trade.",
@@ -1500,20 +1500,20 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 4:49 AM ET \u00b7 Prices checked 4:49 AM ET",
+     "as_of_text": "Plan as of 4:54 AM ET \u00b7 Prices checked 4:54 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-LITE-momentum_rotation-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "momentum_rotation:LITE",
       "source_timestamp": "2026-10-15",
       "source_hash": "30d8eb593b3f2f7b",
-      "ingested_at": "2026-10-19T08:49:44.068941+00:00",
+      "ingested_at": "2026-10-19T08:54:59.130857+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 4:49 AM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 4:54 AM ET."
      },
      "conviction": {
       "call": "against",
