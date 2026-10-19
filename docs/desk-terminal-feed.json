@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-19T21:04:53.623774+00:00",
- "generated_at_et": "2026-10-19T17:04:53.623774-04:00",
+ "generated_at_utc": "2026-10-19T21:09:47.662229+00:00",
+ "generated_at_et": "2026-10-19T17:09:47.662229-04:00",
  "account": {
   "equity": "100457.82",
   "cash": "-213043.52",
@@ -1146,7 +1146,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T21:04:53.623774+00:00",
+   "scored_at": "2026-10-19T21:09:47.662229+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "momentum_rotation:AXTI",
@@ -1323,7 +1323,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:04:53.623774+00:00",
+    "scored_at": "2026-10-19T21:09:47.662229+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -1634,7 +1634,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -2009,7 +2009,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3111,33 +3111,28 @@
        "family": "tensor",
        "label": "Tensor votes & confidence",
        "status": "value",
-       "fact": "Tensor memo row: decision TRADE, phenotype RECLAIM, confidence 7, regime bearish \u2014 votes 6 bull / 1 bear; its own staged prices ride with the row (entry $59.00, stop $58.30, target $61.26).",
+       "fact": "No Tensor signal row for this name this session \u2014 the canonical engine printed nothing in age; silence is the measurement.",
        "data": {
-        "decision": "TRADE",
-        "confidence": 7,
-        "phenotype": "RECLAIM",
-        "regime": "bearish",
-        "bull_votes": 6,
-        "bear_votes": 1
+        "row": null
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Tensor memo row: decision TRADE, phenotype RECLAIM, confidence 7, regime bearish \u2014 votes 6 bull / 1 bear; its own staged prices ride with the row (entry $59.00,"
+       "deciding": "considered \u2014 No Tensor signal row for this name this session \u2014 the canonical engine printed nothing in age; silence is the measurement"
       },
       {
        "key": "tensor_timeframes",
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-19): slow state mixed, fast state bullish, votes 3 bull / 4 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-19): slow state bearish, fast state mixed, votes 2 bull / 5 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
-        "slow": "mixed",
-        "fast": "bullish",
+        "slow": "bearish",
+        "fast": "mixed",
         "bar_date": "2026-10-19",
-        "bull_votes": 3,
-        "bear_votes": 4
+        "bull_votes": 2,
+        "bear_votes": 5
        },
        "reason": null,
        "needs": null,
@@ -3265,10 +3260,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 111.5% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $57.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T19:46:13.472670+00:00.",
+       "fact": "Standing IV on the name: 114.7% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $57.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T21:07:36.088333+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 111.5,
+         "iv_pct": 114.7,
          "expiry": "2026-11-27",
          "dte": 39,
          "strike": 57.0
@@ -3277,17 +3272,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 111.5% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $57.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 114.7% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $57.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 99.4% annualized. IV 111.5% vs HV 99.4% \u2014 a spread of +12.1 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 99.4% annualized. IV 114.7% vs HV 99.4% \u2014 a spread of +15.3 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 99.4,
-        "iv_pct": 111.5,
+        "iv_pct": 114.7,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -3301,15 +3296,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-04-16: 962 contracts; open interest as published on the contracts themselves): calls carry 111,598 OI, puts 79,606 \u2014 a put/call OI ratio of 0.713. Today's traded volume ran 24,058 calls / 7,856 puts (ratio 0.327). The largest single open interest sits at the $45.00 put expiring 2026-12-18 (11,557 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-04-16: 962 contracts; open interest as published on the contracts themselves): calls carry 111,598 OI, puts 79,606 \u2014 a put/call OI ratio of 0.713. Today's traded volume ran 26,673 calls / 8,466 puts (ratio 0.317). The largest single open interest sits at the $45.00 put expiring 2026-12-18 (11,557 contracts).",
        "data": {
         "n_contracts": 962,
         "call_oi": 111598,
         "put_oi": 79606,
         "oi_put_call": 0.713,
-        "call_vol": 24058,
-        "put_vol": 7856,
-        "vol_put_call": 0.327,
+        "call_vol": 26673,
+        "put_vol": 8466,
+        "vol_put_call": 0.317,
         "expiries_through": "2027-04-16",
         "top_oi": [
          {
@@ -4324,7 +4319,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T21:04:53.623774+00:00",
+   "scored_at": "2026-10-19T21:09:47.662229+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:LITE",
@@ -4644,7 +4639,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:04:53.623774+00:00",
+    "scored_at": "2026-10-19T21:09:47.662229+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $838.80. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -4745,20 +4740,20 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 5:04 PM ET \u00b7 Prices checked 5:04 PM ET",
+     "as_of_text": "Plan as of 5:09 PM ET \u00b7 Prices checked 5:09 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-LITE-ema_vwap-LITE",
       "source_system": "sleeve_position_record",
       "source_record_id": "ema_vwap:LITE",
       "source_timestamp": "2026-10-19",
       "source_hash": "6ed1ffc5e19ea1bf",
-      "ingested_at": "2026-10-19T21:04:53.623774+00:00",
+      "ingested_at": "2026-10-19T21:09:47.662229+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:04 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:09 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -6520,7 +6515,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -7138,7 +7133,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8748,14 +8743,14 @@
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-19): slow state bearish, fast state mixed, votes 2 bull / 5 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-19): slow state bearish, fast state bearish, votes 1 bull / 6 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
         "slow": "bearish",
-        "fast": "mixed",
+        "fast": "bearish",
         "bar_date": "2026-10-19",
-        "bull_votes": 2,
-        "bear_votes": 5
+        "bull_votes": 1,
+        "bear_votes": 6
        },
        "reason": null,
        "needs": null,
@@ -8903,29 +8898,29 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 74.2% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $840.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T19:46:13.472670+00:00.",
+       "fact": "Standing IV on the name: 73.3% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $835.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T21:07:36.088333+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 74.2,
+         "iv_pct": 73.3,
          "expiry": "2026-11-27",
          "dte": 39,
-         "strike": 840.0
+         "strike": 835.0
         }
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 74.2% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $840.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 73.3% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $835.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 74.4% annualized. IV 74.2% vs HV 74.4% \u2014 a spread of -0.2 points. IV rank accrues from the desk's own daily readings \u2014 3 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 74.4% annualized. IV 73.3% vs HV 74.4% \u2014 a spread of -1.1 points. IV rank accrues from the desk's own daily readings \u2014 3 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 74.4,
-        "iv_pct": 74.2,
+        "iv_pct": 73.3,
         "iv_rank": null,
         "iv_readings": 3
        },
@@ -8939,15 +8934,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-04-16: 3106 contracts; open interest as published on the contracts themselves): calls carry 76,382 OI, puts 113,119 \u2014 a put/call OI ratio of 1.481. Today's traded volume ran 22,236 calls / 15,095 puts (ratio 0.679). The largest single open interest sits at the $600.00 put expiring 2026-12-18 (4,395 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-04-16: 3106 contracts; open interest as published on the contracts themselves): calls carry 76,382 OI, puts 113,119 \u2014 a put/call OI ratio of 1.481. Today's traded volume ran 23,038 calls / 15,757 puts (ratio 0.684). The largest single open interest sits at the $600.00 put expiring 2026-12-18 (4,395 contracts).",
        "data": {
         "n_contracts": 3106,
         "call_oi": 76382,
         "put_oi": 113119,
         "oi_put_call": 1.481,
-        "call_vol": 22236,
-        "put_vol": 15095,
-        "vol_put_call": 0.679,
+        "call_vol": 23038,
+        "put_vol": 15757,
+        "vol_put_call": 0.684,
         "expiries_through": "2027-04-16",
         "top_oi": [
          {
@@ -9959,7 +9954,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T21:04:53.623774+00:00",
+   "scored_at": "2026-10-19T21:09:47.662229+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "ema_vwap:AEHR",
@@ -10133,7 +10128,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:04:53.623774+00:00",
+    "scored_at": "2026-10-19T21:09:47.662229+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -10453,7 +10448,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10846,7 +10841,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -12055,14 +12050,14 @@
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-19): slow state bearish, fast state bullish, votes 3 bull / 4 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-19): slow state bearish, fast state bullish, votes 2 bull / 5 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
         "slow": "bearish",
         "fast": "bullish",
         "bar_date": "2026-10-19",
-        "bull_votes": 3,
-        "bear_votes": 4
+        "bull_votes": 2,
+        "bear_votes": 5
        },
        "reason": null,
        "needs": null,
@@ -12200,29 +12195,29 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 110.0% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $64.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T19:46:13.472670+00:00.",
+       "fact": "Standing IV on the name: 113.0% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $63.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T21:07:36.088333+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 110.0,
+         "iv_pct": 113.0,
          "expiry": "2026-11-27",
          "dte": 39,
-         "strike": 64.0
+         "strike": 63.0
         }
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 110.0% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $64.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 113.0% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $63.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 87.5% annualized. IV 110.0% vs HV 87.5% \u2014 a spread of +22.5 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 87.5% annualized. IV 113.0% vs HV 87.5% \u2014 a spread of +25.5 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 87.5,
-        "iv_pct": 110.0,
+        "iv_pct": 113.0,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -12236,15 +12231,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-03-19: 1060 contracts; open interest as published on the contracts themselves): calls carry 48,962 OI, puts 50,035 \u2014 a put/call OI ratio of 1.022. Today's traded volume ran 6,688 calls / 5,687 puts (ratio 0.85). The largest single open interest sits at the $7.50 put expiring 2027-01-15 (13,130 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-03-19: 1060 contracts; open interest as published on the contracts themselves): calls carry 48,962 OI, puts 50,035 \u2014 a put/call OI ratio of 1.022. Today's traded volume ran 6,720 calls / 5,699 puts (ratio 0.848). The largest single open interest sits at the $7.50 put expiring 2027-01-15 (13,130 contracts).",
        "data": {
         "n_contracts": 1060,
         "call_oi": 48962,
         "put_oi": 50035,
         "oi_put_call": 1.022,
-        "call_vol": 6688,
-        "put_vol": 5687,
-        "vol_put_call": 0.85,
+        "call_vol": 6720,
+        "put_vol": 5699,
+        "vol_put_call": 0.848,
         "expiries_through": "2027-03-19",
         "top_oi": [
          {
@@ -13195,7 +13190,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T21:04:53.623774+00:00",
+   "scored_at": "2026-10-19T21:09:47.662229+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "rsi_meanrev:SNDK",
@@ -13369,7 +13364,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:04:53.623774+00:00",
+    "scored_at": "2026-10-19T21:09:47.662229+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -13689,7 +13684,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -14073,7 +14068,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -15307,14 +15302,14 @@
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-19): slow state mixed, fast state bullish, votes 3 bull / 4 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-19): slow state bearish, fast state bullish, votes 2 bull / 5 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
-        "slow": "mixed",
+        "slow": "bearish",
         "fast": "bullish",
         "bar_date": "2026-10-19",
-        "bull_votes": 3,
-        "bear_votes": 4
+        "bull_votes": 2,
+        "bear_votes": 5
        },
        "reason": null,
        "needs": null,
@@ -15451,29 +15446,29 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 72.0% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $1,380.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T19:46:13.472670+00:00.",
+       "fact": "Standing IV on the name: 72.4% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $1,370.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T21:07:36.088333+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 72.0,
+         "iv_pct": 72.4,
          "expiry": "2026-11-27",
          "dte": 39,
-         "strike": 1380.0
+         "strike": 1370.0
         }
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 72.0% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $1,380.00; Alpaca snapshot IV from the desk's options product, built"
+       "deciding": "considered \u2014 Standing IV on the name: 72.4% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $1,370.00; Alpaca snapshot IV from the desk's options product, built"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 59.3% annualized. IV 72.0% vs HV 59.3% \u2014 a spread of +12.7 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 59.3% annualized. IV 72.4% vs HV 59.3% \u2014 a spread of +13.1 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 59.3,
-        "iv_pct": 72.0,
+        "iv_pct": 72.4,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -15487,15 +15482,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-03-19: 5978 contracts; open interest as published on the contracts themselves): calls carry 260,609 OI, puts 320,196 \u2014 a put/call OI ratio of 1.229. Today's traded volume ran 81,019 calls / 52,211 puts (ratio 0.644). The largest single open interest sits at the $250.00 put expiring 2027-01-15 (13,239 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-03-19: 5978 contracts; open interest as published on the contracts themselves): calls carry 260,609 OI, puts 320,196 \u2014 a put/call OI ratio of 1.229. Today's traded volume ran 86,075 calls / 55,243 puts (ratio 0.642). The largest single open interest sits at the $250.00 put expiring 2027-01-15 (13,239 contracts).",
        "data": {
         "n_contracts": 5978,
         "call_oi": 260609,
         "put_oi": 320196,
         "oi_put_call": 1.229,
-        "call_vol": 81019,
-        "put_vol": 52211,
-        "vol_put_call": 0.644,
+        "call_vol": 86075,
+        "put_vol": 55243,
+        "vol_put_call": 0.642,
         "expiries_through": "2027-03-19",
         "top_oi": [
          {
@@ -16438,7 +16433,7 @@
      "last_exit": "2026-10-16"
     }
    },
-   "scored_at": "2026-10-19T21:04:53.623774+00:00",
+   "scored_at": "2026-10-19T21:09:47.662229+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_record_id": "rsi_meanrev:ALAB",
@@ -16754,7 +16749,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T21:04:53.623774+00:00",
+    "scored_at": "2026-10-19T21:09:47.662229+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold ALAB \u2014 the desk bought it at $287.93. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
@@ -16852,20 +16847,20 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 5:04 PM ET \u00b7 Prices checked 5:04 PM ET",
+     "as_of_text": "Plan as of 5:09 PM ET \u00b7 Prices checked 5:09 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-ALAB-rsi_meanrev-ALAB",
       "source_system": "sleeve_position_record",
       "source_record_id": "rsi_meanrev:ALAB",
       "source_timestamp": "2026-10-19",
       "source_hash": "bb733ce0de611617",
-      "ingested_at": "2026-10-19T21:04:53.623774+00:00",
+      "ingested_at": "2026-10-19T21:09:47.662229+00:00",
       "plan_version": 4,
       "change_note": "Plan updated to version 4 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:04 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:09 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -18210,7 +18205,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -18738,7 +18733,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.98B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.96B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -20606,10 +20601,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 87.0% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $285.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T19:46:13.472670+00:00.",
+       "fact": "Standing IV on the name: 84.2% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $285.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T21:07:36.088333+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 87.0,
+         "iv_pct": 84.2,
          "expiry": "2026-11-27",
          "dte": 39,
          "strike": 285.0
@@ -20618,17 +20613,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 87.0% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $285.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 84.2% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $285.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 66.9% annualized. IV 87.0% vs HV 66.9% \u2014 a spread of +20.1 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 66.9% annualized. IV 84.2% vs HV 66.9% \u2014 a spread of +17.3 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 66.9,
-        "iv_pct": 87.0,
+        "iv_pct": 84.2,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -20642,15 +20637,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-04-16: 1624 contracts; open interest as published on the contracts themselves): calls carry 80,057 OI, puts 85,507 \u2014 a put/call OI ratio of 1.068. Today's traded volume ran 10,149 calls / 7,049 puts (ratio 0.695). The largest single open interest sits at the $80.00 put expiring 2026-11-20 (5,497 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-04-16: 1624 contracts; open interest as published on the contracts themselves): calls carry 80,057 OI, puts 85,507 \u2014 a put/call OI ratio of 1.068. Today's traded volume ran 10,611 calls / 7,145 puts (ratio 0.673). The largest single open interest sits at the $80.00 put expiring 2026-11-20 (5,497 contracts).",
        "data": {
         "n_contracts": 1624,
         "call_oi": 80057,
         "put_oi": 85507,
         "oi_put_call": 1.068,
-        "call_vol": 10149,
-        "put_vol": 7049,
-        "vol_put_call": 0.695,
+        "call_vol": 10611,
+        "put_vol": 7145,
+        "vol_put_call": 0.673,
         "expiries_through": "2027-04-16",
         "top_oi": [
          {
