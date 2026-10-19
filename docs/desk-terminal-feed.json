@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-19T06:21:12.582251+00:00",
- "generated_at_et": "2026-10-19T02:21:12.582251-04:00",
+ "generated_at_utc": "2026-10-19T06:48:12.840431+00:00",
+ "generated_at_et": "2026-10-19T02:48:12.840431-04:00",
  "account": {
-  "equity": "100222.14",
+  "equity": "100345.6",
   "cash": "-196401.75",
-  "buying_power": "773.47",
+  "buying_power": "65.54",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
@@ -13,7 +13,7 @@
  "positions": [
   {
    "symbol": "GLD",
-   "qty": 2.0,
+   "qty": 3.0,
    "avg_entry": null,
    "current": null,
    "unrealized_pl": null,
@@ -25,6 +25,17 @@
   {
    "symbol": "BIL",
    "qty": 1240.0,
+   "avg_entry": null,
+   "current": null,
+   "unrealized_pl": null,
+   "unrealized_pl_pct": null,
+   "market_value": null,
+   "side": "long",
+   "sleeve": "aurelia_ndx"
+  },
+  {
+   "symbol": "QQQ",
+   "qty": 1.0,
    "avg_entry": null,
    "current": null,
    "unrealized_pl": null,
@@ -573,7 +584,7 @@
    "sleeve": "snapback"
   }
  ],
- "position_count": 51,
+ "position_count": 52,
  "sleeves": {
   "aurelia_gold": {
    "name": "aurelia_gold",
@@ -585,9 +596,10 @@
   "aurelia_ndx": {
    "name": "aurelia_ndx",
    "positions": [
-    "BIL"
+    "BIL",
+    "QQQ"
    ],
-   "position_count": 1
+   "position_count": 2
   },
   "beatendown": {
    "name": "beatendown",
@@ -1014,28 +1026,28 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 100222.14,
+  "equity": 100345.6,
   "gross_pct": 0.0,
-  "position_count": 51,
+  "position_count": 52,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 19994,
+  "total": 20014,
   "by_kind": {
    "journal": 40,
-   "fill": 1168,
+   "fill": 1170,
    "outcome": 9,
    "import_position": 6,
-   "tick": 512,
+   "tick": 515,
    "nightly_reconcile": 53,
    "import_open_order": 51,
-   "signal_intent": 8579,
-   "entry_rejected": 2072,
-   "exit_skipped": 357,
+   "signal_intent": 8583,
+   "entry_rejected": 2074,
+   "exit_skipped": 363,
    "intent_rejected": 184,
-   "slice_sync": 660,
+   "slice_sync": 662,
    "exit_submitted": 27,
-   "pass_watchdog": 35,
+   "pass_watchdog": 36,
    "entry_skipped": 6181,
    "entry_bp_breaker": 8,
    "exit_rejected": 44,
