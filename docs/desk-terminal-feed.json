@@ -1,16 +1,27 @@
 {
- "generated_at_utc": "2026-10-19T04:04:02.468026+00:00",
- "generated_at_et": "2026-10-19T00:04:02.468026-04:00",
+ "generated_at_utc": "2026-10-19T04:15:19.571577+00:00",
+ "generated_at_et": "2026-10-19T00:15:19.571577-04:00",
  "account": {
-  "equity": "99945.87",
+  "equity": "99726.44",
   "cash": "-196401.75",
-  "buying_power": "894.01",
+  "buying_power": "0",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true
  },
  "positions_known": false,
  "positions": [
+  {
+   "symbol": "GLD",
+   "qty": 2.0,
+   "avg_entry": null,
+   "current": null,
+   "unrealized_pl": null,
+   "unrealized_pl_pct": null,
+   "market_value": null,
+   "side": "long",
+   "sleeve": "aurelia_gold"
+  },
   {
    "symbol": "BIL",
    "qty": 1240.0,
@@ -562,12 +573,14 @@
    "sleeve": "snapback"
   }
  ],
- "position_count": 50,
+ "position_count": 51,
  "sleeves": {
   "aurelia_gold": {
    "name": "aurelia_gold",
-   "positions": [],
-   "position_count": 0
+   "positions": [
+    "GLD"
+   ],
+   "position_count": 1
   },
   "aurelia_ndx": {
    "name": "aurelia_ndx",
@@ -1001,31 +1014,31 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 99945.87,
+  "equity": 99726.44,
   "gross_pct": 0.0,
-  "position_count": 50,
+  "position_count": 51,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 19576,
+  "total": 19581,
   "by_kind": {
    "journal": 40,
-   "fill": 1167,
+   "fill": 1168,
    "outcome": 9,
    "import_position": 6,
    "tick": 506,
    "nightly_reconcile": 53,
    "import_open_order": 51,
-   "signal_intent": 8395,
+   "signal_intent": 8396,
    "entry_rejected": 2071,
-   "exit_skipped": 336,
+   "exit_skipped": 337,
    "intent_rejected": 184,
-   "slice_sync": 641,
+   "slice_sync": 642,
    "exit_submitted": 27,
    "pass_watchdog": 34,
    "entry_skipped": 5999,
    "entry_bp_breaker": 8,
-   "exit_rejected": 42,
+   "exit_rejected": 43,
    "entry_blocked_resting_order": 2,
    "virtual_attribution": 2,
    "spx_settlement": 1,
