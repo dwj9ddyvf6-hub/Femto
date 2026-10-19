@@ -1,10 +1,12 @@
-/* Muse Desk service worker.
-   - Caches the app shell so the installed terminal opens offline.
-   - The data feed is network-first: fresh figures whenever the
-     network answers, the last good copy when it does not.
-   - Receives push alerts and opens the terminal at the alert's
-     link when one is tapped. */
-var SHELL_CACHE = 'muse-desk-shell-v1';
+/* Muse Desk service worker — FIXALL T-PWA-01 handoff.
+   - The shell cache name is stamped per publish: the publisher
+     replaces b20b23c03860 with the shell content hash, so a
+     changed index.html can never ride under an old cache name.
+   - The app shell is network-first on every fetch: a publish is
+     visible on the next load; the cache is the offline fallback
+     only. The data feed stays network-first as before. */
+var SHELL_BUILD = 'b20b23c03860';
+var SHELL_CACHE = 'muse-desk-shell-' + SHELL_BUILD;
 var SHELL = [
   './',
   './index.html',
@@ -38,24 +40,18 @@ self.addEventListener('activate', function (event) {
 
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
-  var url = new URL(event.request.url);
-  if (url.pathname.slice(-'desk-terminal-feed.json'.length) === 'desk-terminal-feed.json') {
-    event.respondWith(
-      fetch(event.request).then(function (response) {
-        var copy = response.clone();
-        caches.open(SHELL_CACHE).then(function (cache) {
-          cache.put(event.request, copy);
-        });
-        return response;
-      }).catch(function () {
-        return caches.match(event.request);
-      })
-    );
-    return;
-  }
+  // Network-first for everything this worker serves (feed AND
+  // shell): fresh on every load the network answers, the last
+  // good cached copy only when it does not.
   event.respondWith(
-    caches.match(event.request).then(function (hit) {
-      return hit || fetch(event.request);
+    fetch(event.request).then(function (response) {
+      var copy = response.clone();
+      caches.open(SHELL_CACHE).then(function (cache) {
+        cache.put(event.request, copy);
+      });
+      return response;
+    }).catch(function () {
+      return caches.match(event.request);
     })
   );
 });
