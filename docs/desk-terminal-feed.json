@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-20T10:35:40.675903+00:00",
- "generated_at_et": "2026-10-20T06:35:40.675903-04:00",
+ "generated_at_utc": "2026-10-20T10:39:51.353562+00:00",
+ "generated_at_et": "2026-10-20T06:39:51.353562-04:00",
  "account": {
   "equity": "96454.95",
   "cash": "-213046.47",
@@ -1154,9 +1154,14 @@
  "market_context": {
   "regime": "Downtrend",
   "regime_evidence": [
-   "QQQ closed below its 50-day average (-1.1%) with a 20-day slope of -3.1% \u2014 the desk's regime rule reads downtrend."
+   "QQQ closed below its 50-day average (-1.1%) with a 20-day slope of -3.1% \u2014 the desk's regime rule reads downtrend.",
+   "VIX closed at 18.61 (+0.9% on the day) (VIX reading as of 2026-10-20)."
   ],
-  "vix": null,
+  "vix": {
+   "close": 18.61,
+   "change_pct": 0.9,
+   "as_of": "2026-10-20"
+  },
   "spy": {
    "close": 766.48,
    "day_pct": 0.42,
@@ -1174,7 +1179,7 @@
   },
   "measurements": [
    "Breadth (1831 names scanned): 726 advanced, 1092 declined; 30.7% sit above their 50-day average (46.5% above the 20-day, 42.5% above the 200-day); 63 names jumped 4%+ on the day against 34 down 4%+.",
-   "Mood ring: 17.8 \u2014 RED (VIX 18.44, term ratio 0.941, SKEW 161.86, VVIX 106.93).",
+   "Mood ring (measured 2026-10-19): 17.8 \u2014 RED (VIX 18.44, term ratio 0.941, SKEW 161.86, VVIX 106.93).",
    "Risk appetite: 0 of 6 ratio pairs read risk-on.",
    "Theme rotation vs SPY \u2014 leading: XLF, XLE, XLV, XLB, XLP, XLY; lagging: XLK, SMH, SOXX, IGV, ARKK, TAN.",
    "QQQ pulse YELLOW (3/5); SPY pulse YELLOW (3/5)."
