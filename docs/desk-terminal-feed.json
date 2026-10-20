@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-20T14:30:23.090674+00:00",
- "generated_at_et": "2026-10-20T10:30:23.090674-04:00",
+ "generated_at_utc": "2026-10-20T14:34:56.895150+00:00",
+ "generated_at_et": "2026-10-20T10:34:56.895150-04:00",
  "account": {
   "equity": "100711.77",
   "cash": "-189231.17",
@@ -1140,27 +1140,29 @@
  "market_context": {
   "regime": "Downtrend",
   "regime_evidence": [
-   "QQQ closed below its 50-day average (-0.6%) with a 20-day slope of -3.4% \u2014 the desk's regime rule reads downtrend.",
-   "VIX closed at 17.95 (-2.7% on the day) (VIX reading as of 2026-10-20)."
+   "QQQ closed below its 50-day average (-0.8%) with a 20-day slope of -3.5% \u2014 the desk's regime rule reads downtrend.",
+   "VIX closed at 17.83 (-3.3% on the day) (VIX reading as of 2026-10-20)."
   ],
   "vix": {
-   "close": 17.95,
-   "change_pct": -2.7,
+   "close": 17.83,
+   "change_pct": -3.3,
    "as_of": "2026-10-20"
   },
   "spy": {
-   "close": 771.68,
-   "day_pct": 0.68,
-   "vs_sma50_pct": 0.43
+   "close": 771.07,
+   "day_pct": 0.6,
+   "vs_sma50_pct": 0.36
   },
   "qqq": {
-   "close": 722.11,
-   "day_pct": 0.52,
-   "vs_sma50_pct": -0.63
+   "close": 720.99,
+   "day_pct": 0.37,
+   "vs_sma50_pct": -0.78
   },
   "fear_day": false,
+  "charts": {
+   "spy": "setup-charts/SPY-2026-10-20.png"
+  },
   "charts_withheld": [
-   "spy",
    "qqq"
   ],
   "measurements": [
