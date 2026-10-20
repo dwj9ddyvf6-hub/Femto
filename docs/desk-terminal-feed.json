@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-20T23:15:04.212003+00:00",
- "generated_at_et": "2026-10-20T19:15:04.212003-04:00",
+ "generated_at_utc": "2026-10-20T23:26:15.739613+00:00",
+ "generated_at_et": "2026-10-20T19:26:15.739613-04:00",
  "account": {
   "equity": "106302.01",
   "cash": "-191424.28",
@@ -1549,7 +1549,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T23:15:04.212003+00:00",
+   "scored_at": "2026-10-20T23:26:15.739613+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -1621,7 +1621,7 @@
      ],
      "what_changes_it": "A daily close below $63.50 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on.",
      "record": null,
-     "material_fact": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
+     "material_fact": "Dead-cat bounce: confirmed dead \u2014 price closed below the drop low.",
      "objective_kind_realism": {
       "kind": "recorded_level",
       "band": "considered",
@@ -1744,9 +1744,9 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 67.23,
-      "sma20": 65.73,
-      "sma50": 66.4,
+      "close": 67.15,
+      "sma20": 65.88,
+      "sma50": 66.32,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -1884,7 +1884,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T23:15:04.212003+00:00",
+    "scored_at": "2026-10-20T23:26:15.739613+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold TEM \u2014 the desk bought it at $66.07. The stop below is the stop staged with this trade.",
@@ -1962,18 +1962,18 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:15 PM ET \u00b7 Prices checked 7:15 PM ET",
+     "as_of_text": "Plan as of 7:26 PM ET \u00b7 Prices checked 7:26 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-20-TEM-momentum_rotation-TEM",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-15",
-      "ingested_at": "2026-10-20T23:15:04.212003+00:00",
+      "ingested_at": "2026-10-20T23:26:15.739613+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-20",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:15 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:26 PM ET."
      },
      "conviction": {
       "call": "strongly for",
@@ -3254,7 +3254,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.37B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3270,11 +3270,11 @@
        "gap": true
       },
       {
-       "key": "consideration:level_confluence",
-       "factor": "Consideration \u2014 Level confluence count (new)",
-       "reading": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
+       "key": "consideration:dead_cat_bounce",
+       "factor": "Consideration \u2014 Dead-cat bounce (addendum 12)",
+       "reading": "Dead-cat bounce: confirmed dead \u2014 price closed below the drop low.",
        "stance": 0,
-       "salience": 1.25,
+       "salience": 1.12,
        "disposition": "considered",
        "gap": false
       },
@@ -3306,20 +3306,20 @@
        "gap": false
       },
       {
-       "key": "consideration:candles",
-       "factor": "Consideration \u2014 Candlestick detectors at key levels",
-       "reading": "Candle prints at key levels (last 30 sessions): tweezer top on 2026-10-16; bullish engulfing on 2026-10-20; tweezer bottom on 2026-10-20. 0 further print(s) landed away from any key level and do not count (the list's gate). 21 named detectors run.",
+       "key": "consideration:base_metrics_stage",
+       "factor": "Consideration \u2014 Base depth, length & stage count (addendum 12)",
+       "reading": "Base metrics: the current base runs 2 weeks at 28% deep; the tape on offer counts at least 8 completed base(s) since the last major low \u2014 late-stage ground (3rd base or later).",
        "stance": 0,
-       "salience": 1.02,
+       "salience": 1.06,
        "disposition": "considered",
        "gap": false
       },
       {
-       "key": "consideration:structure_state",
-       "factor": "Consideration \u2014 Structure intact / broken, warnings",
-       "reading": "swing sequence: higher highs, higher lows; no boundary has been lost \u2014 structure stands as drawn; a boundary break is at WARNING (closed through, prior swing intact). The read's invalidation sits at $53.15.",
+       "key": "consideration:volume_dry_up",
+       "factor": "Consideration \u2014 Volume dry-up at the pivot (addendum 12)",
+       "reading": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
        "stance": 0,
-       "salience": 1.0,
+       "salience": 1.05,
        "disposition": "considered",
        "gap": false
       },
@@ -3755,7 +3755,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.37B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3771,11 +3771,11 @@
        "gap": true
       },
       {
-       "key": "consideration:level_confluence",
-       "factor": "Consideration \u2014 Level confluence count (new)",
-       "reading": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
+       "key": "consideration:dead_cat_bounce",
+       "factor": "Consideration \u2014 Dead-cat bounce (addendum 12)",
+       "reading": "Dead-cat bounce: confirmed dead \u2014 price closed below the drop low.",
        "stance": 0,
-       "salience": 1.25,
+       "salience": 1.12,
        "disposition": "considered",
        "gap": false
       },
@@ -3807,20 +3807,20 @@
        "gap": false
       },
       {
-       "key": "consideration:candles",
-       "factor": "Consideration \u2014 Candlestick detectors at key levels",
-       "reading": "Candle prints at key levels (last 30 sessions): tweezer top on 2026-10-16; bullish engulfing on 2026-10-20; tweezer bottom on 2026-10-20. 0 further print(s) landed away from any key level and do not count (the list's gate). 21 named detectors run.",
+       "key": "consideration:base_metrics_stage",
+       "factor": "Consideration \u2014 Base depth, length & stage count (addendum 12)",
+       "reading": "Base metrics: the current base runs 2 weeks at 28% deep; the tape on offer counts at least 8 completed base(s) since the last major low \u2014 late-stage ground (3rd base or later).",
        "stance": 0,
-       "salience": 1.02,
+       "salience": 1.06,
        "disposition": "considered",
        "gap": false
       },
       {
-       "key": "consideration:structure_state",
-       "factor": "Consideration \u2014 Structure intact / broken, warnings",
-       "reading": "swing sequence: higher highs, higher lows; no boundary has been lost \u2014 structure stands as drawn; a boundary break is at WARNING (closed through, prior swing intact). The read's invalidation sits at $53.15.",
+       "key": "consideration:volume_dry_up",
+       "factor": "Consideration \u2014 Volume dry-up at the pivot (addendum 12)",
+       "reading": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
        "stance": 0,
-       "salience": 1.0,
+       "salience": 1.05,
        "disposition": "considered",
        "gap": false
       },
@@ -3845,16 +3845,16 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on TEM: the balance of everything measured leans strongly in this setup's favor. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. Strongest divergence: Confirmed 2026-08-07 \u2014 52 sessions before today \u2014 by its RSI failure swing \u2014 RSI made a higher low and broke its own high: Regular Bullish (RSI): price made a lower low while RSI made a higher low \u2014 $41.73 on 2026-03-30 (RSI 29) vs $40.77 on 2026-07-28 (RSI 33); measured across the major swing pivots. The conflict is the story: Strongest divergence vs MACD state pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: 1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range; Weekly swings carry 1 divergence(s): MACD histogram regular bullish (2026-04-02 \u2192 2026-07-31). What would change the call: a daily close below $63.50 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or macd state turning for the setup.",
+     "paragraph": "The desk's read on TEM: the balance of everything measured leans strongly in this setup's favor. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. Strongest divergence: Confirmed 2026-08-07 \u2014 52 sessions before today \u2014 by its RSI failure swing \u2014 RSI made a higher low and broke its own high: Regular Bullish (RSI): price made a lower low while RSI made a higher low \u2014 $41.73 on 2026-03-30 (RSI 29) vs $40.77 on 2026-07-28 (RSI 33); measured across the major swing pivots. The conflict is the story: Strongest divergence vs MACD state pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 173 items on the desk's list were weighed for this name: Dead-cat bounce: confirmed dead \u2014 price closed below the drop low; Weekly swings carry 1 divergence(s): MACD histogram regular bullish (2026-04-02 \u2192 2026-07-31). What would change the call: a daily close below $63.50 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or macd state turning for the setup.",
      "change_call": "What would change the call: a daily close below $63.50 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or macd state turning for the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
       {
-       "key": "level_confluence",
-       "family": "structure",
-       "fact": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
-       "rule": "14 separate levels stack on one shelf (above price)",
-       "score": 85,
+       "key": "dead_cat_bounce",
+       "family": "patterns",
+       "fact": "Dead-cat bounce: confirmed dead \u2014 price closed below the drop low.",
+       "rule": "dead-cat confirmed: the bounce broke the drop low",
+       "score": 72,
        "outcome_state": "standing"
       },
       {
@@ -3882,26 +3882,26 @@
        "outcome_state": "standing"
       },
       {
-       "key": "candles",
-       "family": "candles_gaps",
-       "fact": "Candle prints at key levels (last 30 sessions): tweezer top on 2026-10-16; bullish engulfing on 2026-10-20; tweezer bottom on 2026-10-20. 0 further print(s) landed away from any key level and do not count (the list's gate). 21 named detectors run.",
-       "rule": "a bearish harami printed at a key level within 3 sessions",
-       "score": 62,
+       "key": "base_metrics_stage",
+       "family": "patterns",
+       "fact": "Base metrics: the current base runs 2 weeks at 28% deep; the tape on offer counts at least 8 completed base(s) since the last major low \u2014 late-stage ground (3rd base or later).",
+       "rule": "a late-stage base (3rd or later) \u2014 caution, direction-neutral",
+       "score": 66,
        "outcome_state": "standing"
       },
       {
-       "key": "structure_state",
-       "family": "structure",
-       "fact": "swing sequence: higher highs, higher lows; no boundary has been lost \u2014 structure stands as drawn; a boundary break is at WARNING (closed through, prior swing intact). The read's invalidation sits at $53.15.",
-       "rule": "a boundary break sits at warning",
-       "score": 60,
+       "key": "volume_dry_up",
+       "family": "volume",
+       "fact": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
+       "rule": "volume dried up at the base's tight point \u2014 supply exhaustion",
+       "score": 65,
        "outcome_state": "standing"
       }
      ],
      "consideration_counts": {
-      "items": 87,
-      "value": 83,
-      "unavailable": 4,
+      "items": 173,
+      "value": 140,
+      "unavailable": 33,
       "material": 6
      },
      "docket": {
@@ -4142,291 +4142,97 @@
        "key": "swings_dated",
        "family": "structure",
        "label": "Swing highs & lows (dated, confirmed)",
-       "status": "value",
-       "fact": "38 confirmed swings on the record (18 highs, 20 lows); the latest high $89.09 confirmed 2026-09-29, the latest low $57.72 confirmed 2026-09-14.",
-       "data": {
-        "n": 38,
-        "last_high": {
-         "i": 304,
-         "t": "2026-09-29",
-         "price": 89.09,
-         "kind": "high"
-        },
-        "last_low": {
-         "i": 293,
-         "t": "2026-09-14",
-         "price": 57.72,
-         "kind": "low"
-        }
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 38 confirmed swings on the record (18 highs, 20 lows); the latest high $89.09 confirmed 2026-09-29, the latest low $57.72 confirmed 2026-09-14"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "trendlines",
        "family": "structure",
        "label": "Support & resistance trendlines",
-       "status": "value",
-       "fact": "Trendlines: the support line through 2026-07-28 and 2026-08-18 stands at $74.48 (11 touches, warning); the resistance line through 2026-03-25 and 2026-09-29 stands at $95.11 (8 touches, holding).",
-       "data": {
-        "upper": {
-         "from": {
-          "t": "2026-03-25",
-          "price": 50.75
-         },
-         "through": {
-          "t": "2026-09-29",
-          "price": 89.09
-         },
-         "value_now": 95.11,
-         "slope_atr": 0.055,
-         "touches": 8,
-         "state": "holding",
-         "validation": "validated",
-         "internal": false,
-         "break": null
-        },
-        "lower": {
-         "from": {
-          "t": "2026-07-28",
-          "price": 42.9
-         },
-         "through": {
-          "t": "2026-08-18",
-          "price": 49.36
-         },
-         "value_now": 74.48,
-         "slope_atr": 0.117,
-         "touches": 11,
-         "state": "warning",
-         "validation": "validated",
-         "internal": true,
-         "break": {
-          "run_start": 317,
-          "swing_price": 57.72,
-          "swing_t": "2026-09-14",
-          "confirmed": false
-         }
-        }
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 Trendlines: the support line through 2026-07-28 and 2026-08-18 stands at $74.48 (11 touches, warning); the resistance line through 2026-03-25 and 2026-09-29 sta"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "zones_swings",
        "family": "structure",
        "label": "Zones from swings",
-       "status": "value",
-       "fact": "8 tested levels on the chart: nearest support $65.82, nearest resistance $68.30; each carries its test count in the chart read.",
-       "data": {
-        "n_levels": 8
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 8 tested levels on the chart: nearest support $65.82, nearest resistance $68.30; each carries its test count in the chart read"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "zones_round",
        "family": "structure",
        "label": "Zones from round numbers",
-       "status": "value",
-       "fact": "Round numbers bracket price: $60.00 below (10.1% away) and $70.00 above.",
-       "data": {
-        "below": 60.0,
-        "above": 70.0
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 Round numbers bracket price: $60.00 below (10.1% away) and $70.00 above"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "zones_volume_profile",
        "family": "structure",
        "label": "Zones from the volume profile",
-       "status": "value",
-       "fact": "Volume profile (last 120 sessions, daily-bar approximation): the point of control is $52.25; the value area runs $40.77\u2013$67.35 and price sits inside it.",
-       "data": {
-        "poc": 52.25,
-        "vah": 67.35,
-        "val": 40.77,
-        "heavy": [
-         {
-          "lo": 45.6,
-          "hi": 46.81,
-          "share": 0.059
-         },
-         {
-          "lo": 46.81,
-          "hi": 48.02,
-          "share": 0.045
-         },
-         {
-          "lo": 48.02,
-          "hi": 49.23,
-          "share": 0.058
-         },
-         {
-          "lo": 49.23,
-          "hi": 50.43,
-          "share": 0.057
-         },
-         {
-          "lo": 50.43,
-          "hi": 51.64,
-          "share": 0.047
-         },
-         {
-          "lo": 51.64,
-          "hi": 52.85,
-          "share": 0.066
-         },
-         {
-          "lo": 54.06,
-          "hi": 55.27,
-          "share": 0.041
-         },
-         {
-          "lo": 60.1,
-          "hi": 61.31,
-          "share": 0.049
-         },
-         {
-          "lo": 63.72,
-          "hi": 64.93,
-          "share": 0.043
-         },
-         {
-          "lo": 66.14,
-          "hi": 67.35,
-          "share": 0.045
-         }
-        ]
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 Volume profile (last 120 sessions, daily-bar approximation): the point of control is $52.25; the value area runs $40.77\u2013$67.35 and price sits inside it"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "level_confluence",
        "family": "structure",
        "label": "Level confluence count (new)",
-       "status": "value",
-       "fact": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
-       "data": {
-        "below": [
-         [
-          52.955,
-          "unfilled gap"
-         ]
-        ],
-        "above": [
-         [
-          74.59,
-          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
-         ],
-         [
-          74.48,
-          "support trendline through the 2026-07-28 and 2026-08-18 pivots (11 touches, broken on a close \u2014 a warning until the prior swing goes) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests"
-         ],
-         [
-          74.2,
-          "20-day average"
-         ],
-         [
-          72.98,
-          "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
-         ],
-         [
-          72.55,
-          "50.0% retracement"
-         ],
-         [
-          71.4,
-          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
-         ],
-         [
-          70.0,
-          "round number"
-         ],
-         [
-          68.3,
-          "50-day average"
-         ],
-         [
-          68.3,
-          "50-day average"
-         ],
-         [
-          65.82,
-          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
-         ],
-         [
-          65.05,
-          "38.2% retracement"
-         ],
-         [
-          62.54,
-          "pivot cluster \u2014 5 confirmed pivots in 5 separate tests"
-         ],
-         [
-          60.0,
-          "round number"
-         ],
-         [
-          57.74,
-          "pivot cluster \u2014 4 confirmed pivots in 4 separate tests"
-         ],
-         [
-          56.83,
-          "200-day average"
-         ]
-        ]
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "material",
-       "deciding": "material \u2014 14 separate levels stack on one shelf (above price)"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "retests_reclaims",
        "family": "structure",
        "label": "Retests & reclaims (new)",
-       "status": "value",
-       "fact": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-06; lost the 50-day average on 2026-10-16; tested the 50-day average from above on 2026-10-14 and held (low $66.35 vs average $66.96).",
-       "data": {
-        "events": [
-         "lost the 20-day average on 2026-10-06",
-         "lost the 50-day average on 2026-10-16",
-         "tested the 50-day average from above on 2026-10-14 and held (low $66.35 vs average $66.96)"
-        ]
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-06; lost the 50-day average on 2026-10-16; tested the 50-day average from above on 202"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "structure_state",
        "family": "structure",
        "label": "Structure intact / broken, warnings",
-       "status": "value",
-       "fact": "swing sequence: higher highs, higher lows; no boundary has been lost \u2014 structure stands as drawn; a boundary break is at WARNING (closed through, prior swing intact). The read's invalidation sits at $53.15.",
-       "data": {
-        "sequence": "higher highs, higher lows",
-        "pattern_state": "intact",
-        "warnings": 1
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "material",
-       "deciding": "material \u2014 a boundary break sits at warning"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "fib_retracement",
@@ -5180,7 +4986,8 @@
        "data": {
         "width": 0.3714,
         "width_pct_rank": 72.9,
-        "squeeze": false
+        "squeeze": false,
+        "squeeze_on": false
        },
        "reason": null,
        "needs": null,
@@ -5390,8 +5197,8 @@
        },
        "reason": null,
        "needs": null,
-       "verdict": "material",
-       "deciding": "material \u2014 a bearish harami printed at a key level within 3 sessions"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Candle prints at key levels (last 30 sessions): tweezer top on 2026-10-16; bullish engulfing on 2026-10-20; tweezer bottom on 2026-10-20"
       },
       {
        "key": "gaps",
@@ -6186,15 +5993,1576 @@
        "needs": null,
        "verdict": "considered",
        "deciding": "considered \u2014 Trap screen clear \u2014 1 of his four warning signs fire (the pullback has no three-wave structure)"
+      },
+      {
+       "key": "vcp_footprints",
+       "family": "patterns",
+       "label": "VCP footprint sequence (addendum 12)",
+       "status": "value",
+       "fact": "VCP footprints: 6 contraction(s) on the base (17%\u219214%\u219235%\u219213%\u219218%\u21929%) \u2014 no tightening VCP sequence (the depths do not halve into a tight final pullback); pivot $81.83, +22.6% from price.",
+       "data": {
+        "depths": [
+         17.24,
+         13.91,
+         35.23,
+         13.47,
+         17.68,
+         8.58
+        ],
+        "n": 6,
+        "fires": false,
+        "pivot": 81.83,
+        "dist_to_pivot_pct": 22.59,
+        "footprint": "17%\u219214%\u219235%\u219213%\u219218%\u21929%"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 VCP footprints: 6 contraction(s) on the base (17%\u219214%\u219235%\u219213%\u219218%\u21929%) \u2014 no tightening VCP sequence (the depths do not halve into a tight final pullback); pivot "
+      },
+      {
+       "key": "pivot_tightness",
+       "family": "patterns",
+       "label": "Pivot tightness / 3-weeks-tight / shakeout+3 (addendum 12)",
+       "status": "value",
+       "fact": "Pivot tightness: the last 10 closes span 10.0% (not tight); three-weeks-tight does not stand; shakeout+3 printed 2026-10-15.",
+       "data": {
+        "tight_spread_pct": 9.96,
+        "tight": false,
+        "three_weeks_tight": false,
+        "shakeout_plus3": {
+         "t": "2026-10-15",
+         "undercut_pct": 3.88,
+         "low": 63.6
+        },
+        "seat_score": 62,
+        "seat_rule": "shakeout+3: an undercut reclaimed and price stands 3%+ off the low"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Pivot tightness: the last 10 closes span 10.0% (not tight); three-weeks-tight does not stand; shakeout+3 printed 2026-10-15"
+      },
+      {
+       "key": "base_metrics_stage",
+       "family": "patterns",
+       "label": "Base depth, length & stage count (addendum 12)",
+       "status": "value",
+       "fact": "Base metrics: the current base runs 2 weeks at 28% deep; the tape on offer counts at least 8 completed base(s) since the last major low \u2014 late-stage ground (3rd base or later).",
+       "data": {
+        "depth_pct": 28.17,
+        "length_sessions": 11,
+        "length_weeks": 2.2,
+        "base_count": 8,
+        "counted_ranges": [
+         [
+          "2025-10-14",
+          "2026-04-28"
+         ],
+         [
+          "2026-04-28",
+          "2026-06-03"
+         ],
+         [
+          "2026-06-03",
+          "2026-07-16"
+         ],
+         [
+          "2026-07-16",
+          "2026-08-18"
+         ],
+         [
+          "2026-08-18",
+          "2026-08-28"
+         ],
+         [
+          "2026-08-28",
+          "2026-10-01"
+         ]
+        ],
+        "stage_lower_bound": true,
+        "late_stage": true,
+        "seat_score": 66,
+        "seat_rule": "a late-stage base (3rd or later) \u2014 caution, direction-neutral"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "material",
+       "deciding": "material \u2014 a late-stage base (3rd or later) \u2014 caution, direction-neutral"
+      },
+      {
+       "key": "base_flat",
+       "family": "patterns",
+       "label": "Flat base rules (addendum 12)",
+       "status": "value",
+       "fact": "Flat base: the rules fail (depth over 15%; weekly closes spread over 12%) \u2014 no flat base files.",
+       "data": {
+        "depth_pct": 35.21,
+        "prior_advance_pct": 118.5,
+        "weekly_spread_pct": 36.78,
+        "fires": false,
+        "failed_rules": [
+         "depth over 15%",
+         "weekly closes spread over 12%"
+        ],
+        "pivot": 89.09
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Flat base: the rules fail (depth over 15%; weekly closes spread over 12%) \u2014 no flat base files"
+      },
+      {
+       "key": "base_ascending",
+       "family": "patterns",
+       "label": "Ascending base (addendum 12)",
+       "status": "value",
+       "fact": "Ascending base: three pullbacks of 8\u201322% with rising lows stand over the base window.",
+       "data": {
+        "fires": true,
+        "depths": [
+         13.47,
+         17.68,
+         8.58
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Ascending base: three pullbacks of 8\u201322% with rising lows stand over the base window"
+      },
+      {
+       "key": "base_on_base",
+       "family": "patterns",
+       "label": "Base-on-base (addendum 12)",
+       "status": "value",
+       "fact": "Base-on-base: no base-on-base stack stands.",
+       "data": {
+        "fires": false,
+        "advance_pct": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Base-on-base: no base-on-base stack stands"
+      },
+      {
+       "key": "base_ipo",
+       "family": "patterns",
+       "label": "IPO base (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no listing date reaches the brief and the tape on offer is a truncated window, so listing age cannot be stated",
+       "needs": "an EDGAR-derived listing date, or the name's full first-bar history (the brief window alone cannot date an IPO)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no listing date reaches the brief and the tape on offer is a truncated window, so listing age cannot be stated; needs an EDGAR-derived listing date, or the name's full first-bar history (the brief window alone cannot date an IPO)"
+      },
+      {
+       "key": "cup_without_handle",
+       "family": "patterns",
+       "label": "Cup without handle (addendum 12)",
+       "status": "value",
+       "fact": "Cup without handle: no handle-less cup stands (a handle dip or a missing cup form) (cup depth 35%).",
+       "data": {
+        "rim": 63.1096,
+        "depth_pct": 35.4,
+        "handle_dip_pct": 13.5,
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Cup without handle: no handle-less cup stands (a handle dip or a missing cup form) (cup depth 35%)"
+      },
+      {
+       "key": "high_tight_flag",
+       "family": "patterns",
+       "label": "High tight flag (addendum 12)",
+       "status": "value",
+       "fact": "High tight flag: no 100%-pole high tight flag stands.",
+       "data": {
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 High tight flag: no 100%-pole high tight flag stands"
+      },
+      {
+       "key": "pat_diamond",
+       "family": "patterns",
+       "label": "Diamond top / bottom (addendum 12)",
+       "status": "value",
+       "fact": "Diamond: no diamond (diverge-then-converge) shape stands (third-widths 31.1 / 21.6 / 20.7).",
+       "data": {
+        "fires": false,
+        "widths": [
+         31.14,
+         21.62,
+         20.74
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Diamond: no diamond (diverge-then-converge) shape stands (third-widths 31.1 / 21.6 / 20.7)"
+      },
+      {
+       "key": "pat_broadening",
+       "family": "patterns",
+       "label": "Broadening formations (addendum 12)",
+       "status": "value",
+       "fact": "Broadening: no right-angled or both-sloping broadening form stands.",
+       "data": {
+        "form": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Broadening: no right-angled or both-sloping broadening form stands"
+      },
+      {
+       "key": "pat_bump_and_run",
+       "family": "patterns",
+       "label": "Bump-and-run reversal (addendum 12)",
+       "status": "value",
+       "fact": "Bump-and-run: no bump-and-run geometry stands.",
+       "data": {
+        "state": "none"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Bump-and-run: no bump-and-run geometry stands"
+      },
+      {
+       "key": "v_reversal",
+       "family": "patterns",
+       "label": "V-top / V-bottom (addendum 12)",
+       "status": "value",
+       "fact": "V-reversal: a V (10%+ leg in 10 sessions, half retraced inside 10 more, no base) stands \u2014 breakout entries do not apply to a baseless reversal.",
+       "data": {
+        "fires": true,
+        "leg_pct": 21.2,
+        "retrace_pct": 61.4,
+        "age": 269
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 V-reversal: a V (10%+ leg in 10 sessions, half retraced inside 10 more, no base) stands \u2014 breakout entries do not apply to a baseless reversal"
+      },
+      {
+       "key": "dead_cat_bounce",
+       "family": "patterns",
+       "label": "Dead-cat bounce (addendum 12)",
+       "status": "value",
+       "fact": "Dead-cat bounce: confirmed dead \u2014 price closed below the drop low.",
+       "data": {
+        "state": "confirmed_dead",
+        "drop_pct": -17.4,
+        "drop_low": 85.27,
+        "bounce_pct": -21.7,
+        "seat_score": 72,
+        "seat_rule": "dead-cat confirmed: the bounce broke the drop low"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "material",
+       "deciding": "material \u2014 dead-cat confirmed: the bounce broke the drop low"
+      },
+      {
+       "key": "climax_top",
+       "family": "patterns",
+       "label": "Climax top / climax run (addendum 12)",
+       "status": "value",
+       "fact": "Climax top: no climax-run sequence stands (acceleration -19% in 3 weeks, 5/8 up days, stretch +17%). The selling-climax side is read under the climax-base / Wyckoff items, not here.",
+       "data": {
+        "accel_3wk_pct": -19.2,
+        "up_days_8": 5,
+        "largest_gain_recent": 9.03,
+        "stretch_vs_200d_pct": 17.4,
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Climax top: no climax-run sequence stands (acceleration -19% in 3 weeks, 5/8 up days, stretch +17%)"
+      },
+      {
+       "key": "trap_2b",
+       "family": "patterns",
+       "label": "2B reversal / traps (addendum 12)",
+       "status": "value",
+       "fact": "2B reversal: no marginal-new-extreme trap stands at a prior swing.",
+       "data": {
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 2B reversal: no marginal-new-extreme trap stands at a prior swing"
+      },
+      {
+       "key": "micro_patterns",
+       "family": "patterns",
+       "label": "Micro-patterns, grouped (addendum 12)",
+       "status": "value",
+       "fact": "Micro-patterns: the grouped minor-pattern scan fires pipe bottom weekly.",
+       "data": {
+        "fire": "pipe_bottom_weekly"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Micro-patterns: the grouped minor-pattern scan fires pipe bottom weekly"
+      },
+      {
+       "key": "andrews_pitchfork",
+       "family": "structure",
+       "label": "Andrews pitchfork (addendum 12)",
+       "status": "value",
+       "fact": "Andrews pitchfork on the last three confirmed pivots (2026-08-21, 2026-09-14, 2026-09-29): the median line projects to $663.65 at the last session; price sits below it.",
+       "data": {
+        "anchors": [
+         "2026-08-21",
+         "2026-09-14",
+         "2026-09-29"
+        ],
+        "median_at_last": 663.65
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Andrews pitchfork on the last three confirmed pivots (2026-08-21, 2026-09-14, 2026-09-29): the median line projects to $663.65 at the last session; price sits b"
+      },
+      {
+       "key": "regression_channel",
+       "family": "structure",
+       "label": "Linear-regression (Raff) channel (addendum 12)",
+       "status": "value",
+       "fact": "Regression channel (OLS over 60 sessions, Raff \u00b12\u03c3): the line ends at $79.75 (slope +0.64%/session); channel $64.70\u2013$94.81; price sits inside it.",
+       "data": {
+        "line_end": 79.75,
+        "slope_pct": 0.641,
+        "sd": 7.53,
+        "upper": 94.81,
+        "lower": 64.7
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Regression channel (OLS over 60 sessions, Raff \u00b12\u03c3): the line ends at $79.75 (slope +0.64%/session); channel $64.70\u2013$94.81; price sits inside it"
+      },
+      {
+       "key": "fair_value_gap",
+       "family": "structure",
+       "label": "Fair value gap / imbalance (addendum 12, provisional)",
+       "status": "value",
+       "fact": "Fair value gaps (PROVISIONAL): 92 3-candle imbalance zone(s) on the tape; the nearest is a bearish zone at $68.78\u2013$69.20, fully revisited.",
+       "data": {
+        "zones": [
+         {
+          "dir": "bearish",
+          "hi": 76.17,
+          "lo": 73.09,
+          "i": 310,
+          "mitigation": "fully revisited",
+          "age": 9
+         },
+         {
+          "dir": "bearish",
+          "hi": 71.34,
+          "lo": 69.75,
+          "i": 311,
+          "mitigation": "fully revisited",
+          "age": 8
+         },
+         {
+          "dir": "bearish",
+          "hi": 69.2,
+          "lo": 68.78,
+          "i": 314,
+          "mitigation": "fully revisited",
+          "age": 5
+         }
+        ],
+        "provisional": true
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Fair value gaps (PROVISIONAL): 92 3-candle imbalance zone(s) on the tape; the nearest is a bearish zone at $68.78\u2013$69.20, fully revisited"
+      },
+      {
+       "key": "order_block",
+       "family": "structure",
+       "label": "Order block (addendum 12, provisional)",
+       "status": "value",
+       "fact": "Order block (PROVISIONAL): no origin-candle zone is filed beyond the swing / profile zones already on record in this build \u2014 the selection rule is specified in the study and files zones only on a confirmed structure break carrying an origin candle.",
+       "data": {
+        "zone": null,
+        "provisional": true,
+        "structure_keys": [
+         "label",
+         "sequence"
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Order block (PROVISIONAL): no origin-candle zone is filed beyond the swing / profile zones already on record in this build \u2014 the selection rule is specified in "
+      },
+      {
+       "key": "liquidity_sweeps",
+       "family": "structure",
+       "label": "Liquidity pools & sweeps (addendum 12, provisional)",
+       "status": "value",
+       "fact": "Liquidity sweeps (PROVISIONAL): 7 equal-extreme pool(s) stand; no sweep through a pool stands.",
+       "data": {
+        "pools": [
+         {
+          "side": "low",
+          "price": 49.08
+         },
+         {
+          "side": "low",
+          "price": 42.07
+         },
+         {
+          "side": "low",
+          "price": 42.52
+         },
+         {
+          "side": "low",
+          "price": 46.0
+         }
+        ],
+        "sweeps": [],
+        "provisional": true
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Liquidity sweeps (PROVISIONAL): 7 equal-extreme pool(s) stand; no sweep through a pool stands"
+      },
+      {
+       "key": "smc_labels",
+       "family": "structure",
+       "label": "Displacement / inducement labels (addendum 12, provisional)",
+       "status": "value",
+       "fact": "SMC labels (PROVISIONAL, labels only \u2014 no new measurement): the substance is filed under the stretch / breakout items on this record; no displacement or inducement label adds a number here.",
+       "data": {
+        "labels_only": true,
+        "provisional": true
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 SMC labels (PROVISIONAL, labels only \u2014 no new measurement): the substance is filed under the stretch / breakout items on this record; no displacement or inducem"
+      },
+      {
+       "key": "pivot_points",
+       "family": "levels",
+       "label": "Pivot point systems (addendum 12)",
+       "status": "value",
+       "fact": "Pivot points (completed periods): monthly floor pivot $76.24 (R1 $94.75 / S1 $63.38; CPR $73.41\u2013$79.07); weekly pivot $67.04. Floor, Fibonacci, Camarilla, Woodie and DeMark sets are filed in the data \u2014 level inputs, realised through confluence, never a seat of their own.",
+       "data": {
+        "monthly": {
+         "floor": {
+          "p": 76.2367,
+          "r1": 94.7533,
+          "s1": 63.3833,
+          "r2": 107.6067,
+          "s2": 44.8667,
+          "r3": 126.1233,
+          "s3": 32.0133
+         },
+         "fibonacci": {
+          "p": 76.2367,
+          "r1": 88.22,
+          "r2": 95.6233,
+          "r3": 107.6067,
+          "s1": 64.2533,
+          "s2": 56.85,
+          "s3": 44.8667
+         },
+         "camarilla": {
+          "r4": 99.1535,
+          "r3": 90.5268,
+          "r2": 87.6512,
+          "r1": 84.7756,
+          "s1": 79.0244,
+          "s2": 76.1488,
+          "s3": 73.2733,
+          "s4": 64.6465
+         },
+         "woodie": {
+          "p": 77.6525,
+          "r1": 97.585,
+          "s1": 66.215,
+          "r2": 109.0225,
+          "s2": 46.2825
+         },
+         "demark": {
+          "p": 79.45,
+          "r1": 101.18,
+          "s1": 69.81
+         },
+         "cpr": {
+          "p": 76.2367,
+          "bc": 73.405,
+          "tc": 79.0683,
+          "width_pct": 7.429
+         }
+        },
+        "weekly": {
+         "floor": {
+          "p": 67.0417,
+          "r1": 70.4833,
+          "s1": 61.2783,
+          "r2": 76.2467,
+          "s2": 57.8367,
+          "r3": 79.6883,
+          "s3": 52.0733
+         },
+         "fibonacci": {
+          "p": 67.0417,
+          "r1": 70.558,
+          "r2": 72.7304,
+          "r3": 76.2467,
+          "s1": 63.5254,
+          "s2": 61.353,
+          "s3": 57.8367
+         },
+         "camarilla": {
+          "r4": 69.7828,
+          "r3": 67.2514,
+          "r2": 66.4076,
+          "r1": 65.5638,
+          "s1": 63.8762,
+          "s2": 63.0324,
+          "s3": 62.1886,
+          "s4": 59.6572
+         },
+         "woodie": {
+          "p": 66.4613,
+          "r1": 69.3225,
+          "s1": 60.1175,
+          "r2": 75.6663,
+          "s2": 57.2563
+         },
+         "demark": {
+          "p": 66.1813,
+          "r1": 68.7625,
+          "s1": 59.5575
+         },
+         "cpr": {
+          "p": 67.0417,
+          "bc": 68.2025,
+          "tc": 65.8808,
+          "width_pct": 3.463
+         }
+        },
+        "monthly_period": "2026-09-30",
+        "weekly_period": "2026-10-16"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Pivot points (completed periods): monthly floor pivot $76.24 (R1 $94.75 / S1 $63.38; CPR $73.41\u2013$79.07); weekly pivot $67.04"
+      },
+      {
+       "key": "prior_period_levels",
+       "family": "levels",
+       "label": "Prior day/week/month levels (addendum 12)",
+       "status": "value",
+       "fact": "Prior-period levels: prior day $63.50\u2013$67.70 (open $66.38); prior week $63.60\u2013$72.81; prior month $57.72\u2013$89.09. No break/retest event at these levels.",
+       "data": {
+        "pdh": 67.7,
+        "pdl": 63.5,
+        "pdo": 66.38,
+        "pd_t": "2026-10-19",
+        "pwh": 72.805,
+        "pwl": 63.6,
+        "pmh": 89.09,
+        "pml": 57.72,
+        "events": []
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Prior-period levels: prior day $63.50\u2013$67.70 (open $66.38); prior week $63.60\u2013$72.81; prior month $57.72\u2013$89.09"
+      },
+      {
+       "key": "ath_distance",
+       "family": "levels",
+       "label": "Distance to all-time high (addendum 12)",
+       "status": "value",
+       "fact": "All-time high: $104.32 \u2014 price sits -36.0% from it.",
+       "data": {
+        "ath": 104.32,
+        "dist_pct": -36.01,
+        "blue_sky": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 All-time high: $104.32 \u2014 price sits -36.0% from it"
+      },
+      {
+       "key": "ichimoku",
+       "family": "trend",
+       "label": "Ichimoku Cloud (addendum 12)",
+       "status": "value",
+       "fact": "Ichimoku: price is above cloud (cloud $56.86\u2013$61.25; Tenkan $68.08 vs Kijun $75.48); a bearish TK cross printed 1 session(s) ago (weak).",
+       "data": {
+        "tenkan": 68.08,
+        "kijun": 75.48,
+        "senkou_a": 61.25,
+        "senkou_b": 56.86,
+        "cloud_top": 61.25,
+        "cloud_bottom": 56.86,
+        "cloud_state": "above_cloud",
+        "tk_cross": [
+         "bearish",
+         1
+        ],
+        "cross_strength": "weak",
+        "chikou_vs_price_26ago": 4.54,
+        "seat_score": 60,
+        "seat_rule": "an Ichimoku cloud state change / TK cross printed within 3 sessions"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Ichimoku: price is above cloud (cloud $56.86\u2013$61.25; Tenkan $68.08 vs Kijun $75.48); a bearish TK cross printed 1 session(s) ago (weak)"
+      },
+      {
+       "key": "donchian",
+       "family": "trend",
+       "label": "Donchian channels 20/55 (addendum 12)",
+       "status": "value",
+       "fact": "Donchian: 20-session channel $63.50\u2013$89.09; 55-session $42.40\u2013$89.09 \u2014 price sits inside the 55-session channel.",
+       "data": {
+        "hi20": 89.09,
+        "lo20": 63.5,
+        "hi55": 89.09,
+        "lo55": 42.4005,
+        "break55": false,
+        "break20": false,
+        "break55_age": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Donchian: 20-session channel $63.50\u2013$89.09; 55-session $42.40\u2013$89.09 \u2014 price sits inside the 55-session channel"
+      },
+      {
+       "key": "parabolic_sar",
+       "family": "trend",
+       "label": "Parabolic SAR (addendum 12)",
+       "status": "value",
+       "fact": "Parabolic SAR: $74.53 (above price short), -10.4% from price; flipped 12 session(s) ago. Filed read-only.",
+       "data": {
+        "sar": 74.53,
+        "side": "above_price_short",
+        "dist_pct": -10.44,
+        "flip_age": 12
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Parabolic SAR: $74.53 (above price short), -10.4% from price; flipped 12 session(s) ago"
+      },
+      {
+       "key": "supertrend",
+       "family": "trend",
+       "label": "Supertrend (addendum 12)",
+       "status": "value",
+       "fact": "Supertrend (ATR10 x3): the trend reads down with the line at $83.02; flipped 8 session(s) ago.",
+       "data": {
+        "direction": "down",
+        "line": 83.02,
+        "flip_age": 8,
+        "n_flips_window": 9
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Supertrend (ATR10 x3): the trend reads down with the line at $83.02; flipped 8 session(s) ago"
+      },
+      {
+       "key": "gmma",
+       "family": "trend",
+       "label": "GMMA ribbon (addendum 12)",
+       "status": "value",
+       "fact": "GMMA ribbon (EMA kernels): ribbons interwoven (no agreement); the short group's spread is 5.5% of its mean.",
+       "data": {
+        "state": "ribbons interwoven (no agreement)",
+        "short_spread_pct": 5.51,
+        "short_mean": 68.24,
+        "long_mean": 68.54
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 GMMA ribbon (EMA kernels): ribbons interwoven (no agreement); the short group's spread is 5.5% of its mean"
+      },
+      {
+       "key": "williams_r",
+       "family": "momentum",
+       "label": "Williams %R (addendum 12)",
+       "status": "value",
+       "fact": "Williams %R(14) is -86 (oversold ground).",
+       "data": {
+        "williams_r": -85.7
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Williams %R(14) is -86 (oversold ground)"
+      },
+      {
+       "key": "vortex",
+       "family": "momentum",
+       "label": "Vortex indicator (addendum 12)",
+       "status": "value",
+       "fact": "Vortex(14): VI+ 0.77 vs VI- 1.18 (minus leads).",
+       "data": {
+        "vi_plus": 0.773,
+        "vi_minus": 1.182
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Vortex(14): VI+ 0.77 vs VI- 1.18 (minus leads)"
+      },
+      {
+       "key": "trix",
+       "family": "momentum",
+       "label": "TRIX (addendum 12)",
+       "status": "value",
+       "fact": "TRIX(15) is +0.159% (above zero).",
+       "data": {
+        "trix_pct": 0.1594
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 TRIX(15) is +0.159% (above zero)"
+      },
+      {
+       "key": "ultimate_oscillator",
+       "family": "momentum",
+       "label": "Ultimate Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "Ultimate Oscillator (7/14/28, 4/2/1) is 44.",
+       "data": {
+        "uo": 43.6
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Ultimate Oscillator (7/14/28, 4/2/1) is 44"
+      },
+      {
+       "key": "awesome_oscillator",
+       "family": "momentum",
+       "label": "Awesome Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "Awesome Oscillator (SMA5-SMA34 of median price) is -4.34 (below zero).",
+       "data": {
+        "ao": -4.338
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Awesome Oscillator (SMA5-SMA34 of median price) is -4.34 (below zero)"
+      },
+      {
+       "key": "cmo",
+       "family": "momentum",
+       "label": "Chande Momentum Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "CMO(14) is -35.",
+       "data": {
+        "cmo": -34.7
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 CMO(14) is -35"
+      },
+      {
+       "key": "kst",
+       "family": "momentum",
+       "label": "KST \u2014 Know Sure Thing (addendum 12)",
+       "status": "value",
+       "fact": "KST is 4.4 vs its signal 139.9 (below).",
+       "data": {
+        "kst": 4.35,
+        "signal": 139.86
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 KST is 4.4 vs its signal 139.9 (below)"
+      },
+      {
+       "key": "coppock",
+       "family": "momentum",
+       "label": "Coppock Curve (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "history too short for this measurement's own window",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 history too short for this measurement's own window"
+      },
+      {
+       "key": "elder_ray",
+       "family": "momentum",
+       "label": "Elder-Ray & Impulse (addendum 12)",
+       "status": "value",
+       "fact": "Elder-Ray: bull power -0.57, bear power -6.44 vs EMA13 $69.64.",
+       "data": {
+        "bull_power": -0.57,
+        "bear_power": -6.44
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Elder-Ray: bull power -0.57, bear power -6.44 vs EMA13 $69.64"
+      },
+      {
+       "key": "dpo",
+       "family": "momentum",
+       "label": "Detrended Price Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "DPO(20) is -2.22 (the close 11 sessions back vs the 20-day average).",
+       "data": {
+        "dpo": -2.22
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 DPO(20) is -2.22 (the close 11 sessions back vs the 20-day average)"
+      },
+      {
+       "key": "td_sequential",
+       "family": "momentum",
+       "label": "Exhaustion counts \u2014 setup 9 / countdown 13 (addendum 12)",
+       "status": "value",
+       "fact": "Exhaustion counts: setup count 3/9, countdown 0/13.",
+       "data": {
+        "setup_count": 3,
+        "countdown": 0
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Exhaustion counts: setup count 3/9, countdown 0/13"
+      },
+      {
+       "key": "rs_line",
+       "family": "momentum",
+       "label": "RS line & RS-line new high (addendum 12, provisional)",
+       "status": "value",
+       "fact": "RS line (PROVISIONAL \u2014 no cluster-grade study has calibrated this item): the line stands at 96.6 of its window start (high 170.7).",
+       "data": {
+        "rs_line": 96.58,
+        "rs_line_high": 170.75,
+        "rs_line_new_high": false,
+        "provisional": true
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 RS line (PROVISIONAL \u2014 no cluster-grade study has calibrated this item): the line stands at 96.6 of its window start (high 170.7)"
+      },
+      {
+       "key": "volume_dry_up",
+       "family": "volume",
+       "label": "Volume dry-up at the pivot (addendum 12)",
+       "status": "value",
+       "fact": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
+       "data": {
+        "vol50": 7197747.3,
+        "min_ratio": 0.528,
+        "dry_days": 3,
+        "dry_up": true,
+        "vol_rank_120": 8.4,
+        "seat_score": 65,
+        "seat_rule": "volume dried up at the base's tight point \u2014 supply exhaustion"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "material",
+       "deciding": "material \u2014 volume dried up at the base's tight point \u2014 supply exhaustion"
+      },
+      {
+       "key": "vwap_bands",
+       "family": "volume",
+       "label": "VWAP \u00b1\u03c3 bands (addendum 12)",
+       "status": "value",
+       "fact": "VWAP bands (20-session, daily-bar construction): VWAP $75.23, price at -1.3 sigma (bands \u00b11\u03c3 $68.93\u2013$81.54, \u00b12\u03c3 $62.62\u2013$87.85).",
+       "data": {
+        "vwap20": 75.23,
+        "sd": 6.31,
+        "z": -1.35,
+        "bands": {
+         "-3": 56.31,
+         "-2": 62.62,
+         "-1": 68.93,
+         "1": 81.54,
+         "2": 87.85,
+         "3": 94.16
+        },
+        "construction": "daily-bar VWAP (typical price x daily volume), not intraday-tick VWAP"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 VWAP bands (20-session, daily-bar construction): VWAP $75.23, price at -1.3 sigma (bands \u00b11\u03c3 $68.93\u2013$81.54, \u00b12\u03c3 $62.62\u2013$87.85)"
+      },
+      {
+       "key": "tpo_profile",
+       "family": "volume",
+       "label": "Market-profile TPO shape (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "the brief carries no 30-minute bars, so no time-at-price profile can be built",
+       "needs": "a 30-minute SIP bars product for board names (the brief currently carries daily bars only)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 the brief carries no 30-minute bars, so no time-at-price profile can be built; needs a 30-minute SIP bars product for board names (the brief currently carries daily bars only)"
+      },
+      {
+       "key": "chaikin_oscillator",
+       "family": "volume",
+       "label": "Chaikin Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "Chaikin Oscillator (EMA3-EMA10 of the A/D line) is -2,687,488; CMF(20) stands at -0.0883.",
+       "data": {
+        "chaikin_osc": -2687487.8,
+        "cmf20": -0.0883
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Chaikin Oscillator (EMA3-EMA10 of the A/D line) is -2,687,488; CMF(20) stands at -0.0883"
+      },
+      {
+       "key": "force_index",
+       "family": "volume",
+       "label": "Force Index (addendum 12)",
+       "status": "value",
+       "fact": "Force Index (EMA13 of change x volume) is -6,290,763.",
+       "data": {
+        "force_index_13": -6290763.4
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Force Index (EMA13 of change x volume) is -6,290,763"
+      },
+      {
+       "key": "ease_of_movement",
+       "family": "volume",
+       "label": "Ease of Movement (addendum 12)",
+       "status": "value",
+       "fact": "Ease of Movement (14) is -85.088.",
+       "data": {
+        "emv14": -85.0882
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Ease of Movement (14) is -85.088"
+      },
+      {
+       "key": "klinger",
+       "family": "volume",
+       "label": "Klinger Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "Klinger Oscillator (EMA34-EMA55 of force volume) is -3,540,230.",
+       "data": {
+        "klinger": -3540229.5
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Klinger Oscillator (EMA34-EMA55 of force volume) is -3,540,230"
+      },
+      {
+       "key": "vwma",
+       "family": "volume",
+       "label": "VWMA \u2014 volume-weighted average (addendum 12)",
+       "status": "value",
+       "fact": "VWMA(20) is $74.70 \u2014 price is below it.",
+       "data": {
+        "vwma20": 74.7,
+        "state": "below"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 VWMA(20) is $74.70 \u2014 price is below it"
+      },
+      {
+       "key": "up_down_volume",
+       "family": "volume",
+       "label": "Up/down volume ratio (addendum 12)",
+       "status": "value",
+       "fact": "Up/down volume (50 sessions): up-volume 195,545,988 vs down-volume 169,783,285 \u2014 a ratio of 1.15.",
+       "data": {
+        "ratio_50d": 1.152,
+        "up_vol": 195545988.0,
+        "down_vol": 169783285.0
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Up/down volume (50 sessions): up-volume 195,545,988 vs down-volume 169,783,285 \u2014 a ratio of 1.15"
+      },
+      {
+       "key": "ad_rating_grade",
+       "family": "volume",
+       "label": "Desk accumulation grade, A\u2013E (addendum 12)",
+       "status": "value",
+       "fact": "Desk accumulation grade over 13 weeks: C (packaged from the OBV / A/D / MFI facts already on record \u2014 a desk grade, not an IBD rating).",
+       "data": {
+        "grade": "C"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Desk accumulation grade over 13 weeks: C (packaged from the OBV / A/D / MFI facts already on record \u2014 a desk grade, not an IBD rating)"
+      },
+      {
+       "key": "volume_lines_alt",
+       "family": "volume",
+       "label": "Minor volume lines \u2014 NVI/PVI/PVT/Williams A/D (addendum 12)",
+       "status": "value",
+       "fact": "Minor volume lines (grouped): NVI 877, PVI 1361, PVT 18,644,383, Williams A/D 16,650,398.",
+       "data": {
+        "nvi": 877.4,
+        "pvi": 1361.2,
+        "pvt": 18644383.4,
+        "williams_ad": 16650397.7
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Minor volume lines (grouped): NVI 877, PVI 1361, PVT 18,644,383, Williams A/D 16,650,398"
+      },
+      {
+       "key": "keltner",
+       "family": "stretch",
+       "label": "Keltner channels & the squeeze (addendum 12)",
+       "status": "value",
+       "fact": "Keltner (EMA20 \u00b1 2xATR10): $58.90\u2013$82.15 around $70.53; the Bollinger squeeze is off.",
+       "data": {
+        "mid": 70.53,
+        "upper": 82.15,
+        "lower": 58.9,
+        "squeeze_on": false,
+        "squeeze_fired_age": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Keltner (EMA20 \u00b1 2xATR10): $58.90\u2013$82.15 around $70.53; the Bollinger squeeze is off"
+      },
+      {
+       "key": "atr_trailing_levels",
+       "family": "stretch",
+       "label": "ATR trailing levels \u2014 Chandelier & Wilder (addendum 12)",
+       "status": "value",
+       "fact": "ATR trailing levels (filed as levels only \u2014 never scored, never an exit): Chandelier long $72.92, short $79.37 (22-session, 3xATR22 $5.39).",
+       "data": {
+        "chandelier_long": 72.92,
+        "chandelier_short": 79.37,
+        "atr22": 5.39,
+        "wilder_stop_long": 50.58
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 ATR trailing levels (filed as levels only \u2014 never scored, never an exit): Chandelier long $72.92, short $79.37 (22-session, 3xATR22 $5.39)"
+      },
+      {
+       "key": "mass_index",
+       "family": "stretch",
+       "label": "Mass Index (addendum 12)",
+       "status": "value",
+       "fact": "Mass Index (sum-25 of the EMA9 range ratio) is 26.2.",
+       "data": {
+        "mass_index": 26.15
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Mass Index (sum-25 of the EMA9 range ratio) is 26.2"
+      },
+      {
+       "key": "choppiness",
+       "family": "stretch",
+       "label": "Choppiness Index (addendum 12)",
+       "status": "value",
+       "fact": "Choppiness Index(14) is 43 \u2014 between ground.",
+       "data": {
+        "choppiness": 43.0,
+        "state": "between"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Choppiness Index(14) is 43 \u2014 between ground"
+      },
+      {
+       "key": "hv_percentile",
+       "family": "stretch",
+       "label": "HV percentile vs its own year (addendum 12)",
+       "status": "value",
+       "fact": "HV percentiles (vs each window's own trailing year): HV10 63.7 (45.0th), HV20 85.8 (84.5th), HV30 90.5 (88.0th), HV60 93.8 (97.6th).",
+       "data": {
+        "hv10": 63.7,
+        "hv10_pct": 45.0,
+        "hv20": 85.8,
+        "hv20_pct": 84.5,
+        "hv30": 90.5,
+        "hv30_pct": 88.0,
+        "hv60": 93.8,
+        "hv60_pct": 97.6
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 HV percentiles (vs each window's own trailing year): HV10 63.7 (45.0th), HV20 85.8 (84.5th), HV30 90.5 (88.0th), HV60 93.8 (97.6th)"
+      },
+      {
+       "key": "island_reversal",
+       "family": "candles_gaps",
+       "label": "Island reversal (addendum 12)",
+       "status": "value",
+       "fact": "Island reversal: no gap-away / isolated / gap-back island stands.",
+       "data": {
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Island reversal: no gap-away / isolated / gap-back island stands"
+      },
+      {
+       "key": "range_events",
+       "family": "candles_gaps",
+       "label": "Range events \u2014 NR4/NR7, inside/outside, key reversal (addendum 12)",
+       "status": "value",
+       "fact": "Range events: outside day, key reversal.",
+       "data": {
+        "nr4": false,
+        "nr7": false,
+        "inside": false,
+        "outside": true,
+        "key_reversal": true,
+        "id_nr4": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Range events: outside day, key reversal"
+      },
+      {
+       "key": "heikin_ashi",
+       "family": "candles_gaps",
+       "label": "Heikin-Ashi view (addendum 12)",
+       "status": "value",
+       "fact": "Heikin-Ashi view (an averaged view \u2014 it never outranks the real bars): a bearish streak of 11 HA candle(s).",
+       "data": {
+        "streak": -11,
+        "ha_doji": false,
+        "ha_open": 66.81,
+        "ha_close": 65.7
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Heikin-Ashi view (an averaged view \u2014 it never outranks the real bars): a bearish streak of 11 HA candle(s)"
+      },
+      {
+       "key": "expected_move",
+       "family": "options",
+       "label": "Expected move (addendum 12)",
+       "status": "value",
+       "fact": "Expected move to 2026-11-27 (38 days): \u00b1$17.42 by the IV form (IV 80.9%).",
+       "data": {
+        "spot": 66.75,
+        "iv_pct": 80.9,
+        "expiry": "2026-11-27",
+        "dte": 38,
+        "iv_form": 17.42
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (38 days): \u00b1$17.42 by the IV form (IV 80.9%)"
+      },
+      {
+       "key": "gamma_flip_name",
+       "family": "options",
+       "label": "Gamma flip, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "gamma_walls_name",
+       "family": "options",
+       "label": "Call wall / put wall, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "max_pain_name",
+       "family": "options",
+       "label": "Max pain, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "oi_concentration_name",
+       "family": "options",
+       "label": "OI strike concentration (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "iv_skew_name",
+       "family": "options",
+       "label": "IV skew, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "iv_term_name",
+       "family": "options",
+       "label": "IV term structure, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "options_flow_name",
+       "family": "options",
+       "label": "Unusual options flow (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no options trades tape reaches the desk",
+       "needs": "an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed as of 2026-10-20 \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no options trades tape reaches the desk; needs an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed as of 2026-10-20 \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints"
+      },
+      {
+       "key": "borrow_lending_name",
+       "family": "options",
+       "label": "Borrow fee / utilisation (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no securities-lending data reaches the desk",
+       "needs": "a securities-lending feed (e.g. Ortex, Fintel, or Interactive Brokers' lending file/API) carrying per-name borrow fee, utilisation and shares available. FINRA publishes none of these; the desk holds no lending subscription",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no securities-lending data reaches the desk; needs a securities-lending feed (e.g. Ortex, Fintel, or Interactive Brokers' lending file/API) carrying per-name borrow fee, utilisation and shares available. FINRA publishes none of these; the desk holds no lending subscription"
+      },
+      {
+       "key": "power_earnings_gap",
+       "family": "company_market",
+       "label": "Power Earnings Gap (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no earnings-date product reaches the brief, so no gap can be tied to a report",
+       "needs": "the desk's EDGAR gap product's report dates (8-K item 2.02) read against the brief's own bars",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no earnings-date product reaches the brief, so no gap can be tied to a report; needs the desk's EDGAR gap product's report dates (8-K item 2.02) read against the brief's own bars"
+      },
+      {
+       "key": "opex_calendar_name",
+       "family": "company_market",
+       "label": "OpEx timing & pin risk (addendum 12)",
+       "status": "value",
+       "fact": "OpEx calendar: the next monthly OpEx is 2026-11-20 (31 day(s) out).",
+       "data": {
+        "next_opex": "2026-11-20",
+        "days": 31,
+        "witching": false,
+        "pin_risk": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 OpEx calendar: the next monthly OpEx is 2026-11-20 (31 day(s) out)"
+      },
+      {
+       "key": "buybacks_name",
+       "family": "company_market",
+       "label": "Buybacks as calendar catalyst (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no buyback authorisation or repurchase disclosure reaches the brief",
+       "needs": "the EDGAR gap product's buyback fields (8-K authorisations + 10-Q repurchase tables) \u2014 the live producer of addendum 12; the frozen old desk's buyback scan is not a source",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no buyback authorisation or repurchase disclosure reaches the brief; needs the EDGAR gap product's buyback fields (8-K authorisations + 10-Q repurchase tables) \u2014 the live producer of addendum 12; the frozen old desk's buyback scan is not a source"
+      },
+      {
+       "key": "market_distribution_days",
+       "family": "company_market",
+       "label": "Distribution-day count (addendum 12)",
+       "status": "value",
+       "fact": "Distribution days (SPY, 25-session window): 7 \u2014 the uptrend reads under pressure at 5+.",
+       "data": {
+        "count": 7,
+        "days": [
+         {
+          "t": "2026-09-16",
+          "kind": "distribution",
+          "chg_pct": -0.44
+         },
+         {
+          "t": "2026-09-23",
+          "kind": "distribution",
+          "chg_pct": -0.72
+         },
+         {
+          "t": "2026-09-28",
+          "kind": "distribution",
+          "chg_pct": -0.74
+         },
+         {
+          "t": "2026-09-30",
+          "kind": "distribution",
+          "chg_pct": -0.21
+         },
+         {
+          "t": "2026-10-08",
+          "kind": "distribution",
+          "chg_pct": -0.42
+         },
+         {
+          "t": "2026-10-14",
+          "kind": "distribution",
+          "chg_pct": -1.08
+         },
+         {
+          "t": "2026-10-16",
+          "kind": "distribution",
+          "chg_pct": -1.11
+         }
+        ],
+        "window_sessions": 25,
+        "seat_score": 65,
+        "seat_rule": "five or more distribution days in 25 sessions \u2014 the IBD 'uptrend under pressure' band"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Distribution days (SPY, 25-session window): 7 \u2014 the uptrend reads under pressure at 5+"
+      },
+      {
+       "key": "market_follow_through",
+       "family": "company_market",
+       "label": "Follow-through day (addendum 12)",
+       "status": "value",
+       "fact": "Follow-through day: no rally attempt carries a follow-through verdict on this tape.",
+       "data": {
+        "state": "none"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Follow-through day: no rally attempt carries a follow-through verdict on this tape"
+      },
+      {
+       "key": "market_mcclellan",
+       "family": "company_market",
+       "label": "McClellan oscillator & summation (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "the nightly market product reaching the brief carries no McClellan summary \u2014 the producer computes it (core/market_measurements.mcclellan) but this build's product did not file it",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 the nightly market product reaching the brief carries no McClellan summary \u2014 the producer computes it (core/market_measurements.mcclellan) but this build's product did not file it"
+      },
+      {
+       "key": "market_breadth_thrust",
+       "family": "company_market",
+       "label": "Zweig Breadth Thrust (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained (advancers, decliners) series reaches the brief",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained (advancers, decliners) series reaches the brief"
+      },
+      {
+       "key": "market_trin",
+       "family": "company_market",
+       "label": "TRIN / Arms Index (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "the breadth product carries counts but no advancing/declining volume sums, so TRIN cannot be stated",
+       "needs": "advancing/declining volume sums in the nightly breadth product (build_breadth extension, addendum 12)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 the breadth product carries counts but no advancing/declining volume sums, so TRIN cannot be stated; needs advancing/declining volume sums in the nightly breadth product (build_breadth extension, addendum 12)"
+      },
+      {
+       "key": "market_ad_line",
+       "family": "company_market",
+       "label": "A/D line series (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained (advancers, decliners) series reaches the brief",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained (advancers, decliners) series reaches the brief"
+      },
+      {
+       "key": "rrg_name",
+       "family": "company_market",
+       "label": "Relative Rotation Graph, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no RRG row for this name rides the nightly themes product reaching the brief",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no RRG row for this name rides the nightly themes product reaching the brief"
+      },
+      {
+       "key": "beta_correlation",
+       "family": "company_market",
+       "label": "Beta & correlation (addendum 12)",
+       "status": "value",
+       "fact": "Beta & correlation (raw, 251 daily sessions vs SPY): beta 2.572, correlation 0.438, R\u00b2 0.192 \u2014 a risk descriptor, not a forecast.",
+       "data": {
+        "beta_spy": 2.572,
+        "rho_spy": 0.438,
+        "r2_spy": 0.192,
+        "sessions": 251,
+        "label": "raw (no adjusted-beta shrinkage); a risk descriptor, never a forecast"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Beta & correlation (raw, 251 daily sessions vs SPY): beta 2.572, correlation 0.438, R\u00b2 0.192 \u2014 a risk descriptor, not a forecast"
+      },
+      {
+       "key": "institutional_sponsorship",
+       "family": "company_market",
+       "label": "Institutional sponsorship, 13F (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no 13F sponsorship product reaches the brief",
+       "needs": "a quarterly EDGAR 13F-HR product keyed by the name's CUSIP (full-text search of information tables, trailing 6 quarters) \u2014 a new crawl class flagged for the parent (study-market Flag M2); the lag is structural (45 days) and would print in every fact",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no 13F sponsorship product reaches the brief; needs a quarterly EDGAR 13F-HR product keyed by the name's CUSIP (full-text search of information tables, trailing 6 quarters) \u2014 a new crawl class flagged for the parent (study-market Flag M2); the lag is structural (45 days) and would print in every fact"
+      },
+      {
+       "key": "industry_group_rank",
+       "family": "company_market",
+       "label": "Industry-group strength rank (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no industry-group rank product reaches the brief",
+       "needs": "the nightly GICS group-rank product (the desk's own groups, equal-weighted, 126-session score) filed into the market product",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no industry-group rank product reaches the brief; needs the nightly GICS group-rank product (the desk's own groups, equal-weighted, 126-session score) filed into the market product"
+      },
+      {
+       "key": "peer_rs_trail",
+       "family": "company_market",
+       "label": "Peer RS trail (addendum 12)",
+       "status": "value",
+       "fact": "Peer RS trail: the spread vs peers runs 11.34 \u2192 20.55 \u2192 27.74 \u2192 11.9 points over the last four weekly marks \u2014 a slope of +0.6.",
+       "data": {
+        "trail": [
+         11.34,
+         20.55,
+         27.74,
+         11.9
+        ],
+        "spread": 11.9,
+        "slope": 0.56,
+        "bucket": "tech",
+        "seat_score": 60,
+        "seat_rule": "the peer RS spread is 10+ points with its trail slope confirming (seat shared with peers_21d, not additive)"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Peer RS trail: the spread vs peers runs 11.34 \u2192 20.55 \u2192 27.74 \u2192 11.9 points over the last four weekly marks \u2014 a slope of +0.6"
+      },
+      {
+       "key": "sentiment_surveys",
+       "family": "company_market",
+       "label": "Sentiment surveys (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no sentiment survey series reaches the desk",
+       "needs": "weekly survey series the desk holds no route to: AAII publishes its Sentiment Survey results weekly (aaii.com), the NAAIM Exposure Index is published weekly by NAAIM, and Investors Intelligence is subscription-only; no feed, connector or file in the desk carries any of the three",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no sentiment survey series reaches the desk; needs weekly survey series the desk holds no route to: AAII publishes its Sentiment Survey results weekly (aaii.com), the NAAIM Exposure Index is published weekly by NAAIM, and Investors Intelligence is subscription-only; no feed, connector or file in the desk carries any of the three"
       }
      ],
      "material": [
       {
-       "key": "level_confluence",
-       "family": "structure",
-       "fact": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
-       "rule": "14 separate levels stack on one shelf (above price)",
-       "score": 85
+       "key": "dead_cat_bounce",
+       "family": "patterns",
+       "fact": "Dead-cat bounce: confirmed dead \u2014 price closed below the drop low.",
+       "rule": "dead-cat confirmed: the bounce broke the drop low",
+       "score": 72
       },
       {
        "key": "div_weekly",
@@ -6218,24 +7586,24 @@
        "score": 68
       },
       {
-       "key": "candles",
-       "family": "candles_gaps",
-       "fact": "Candle prints at key levels (last 30 sessions): tweezer top on 2026-10-16; bullish engulfing on 2026-10-20; tweezer bottom on 2026-10-20. 0 further print(s) landed away from any key level and do not count (the list's gate). 21 named detectors run.",
-       "rule": "a bearish harami printed at a key level within 3 sessions",
-       "score": 62
+       "key": "base_metrics_stage",
+       "family": "patterns",
+       "fact": "Base metrics: the current base runs 2 weeks at 28% deep; the tape on offer counts at least 8 completed base(s) since the last major low \u2014 late-stage ground (3rd base or later).",
+       "rule": "a late-stage base (3rd or later) \u2014 caution, direction-neutral",
+       "score": 66
       },
       {
-       "key": "structure_state",
-       "family": "structure",
-       "fact": "swing sequence: higher highs, higher lows; no boundary has been lost \u2014 structure stands as drawn; a boundary break is at WARNING (closed through, prior swing intact). The read's invalidation sits at $53.15.",
-       "rule": "a boundary break sits at warning",
-       "score": 60
+       "key": "volume_dry_up",
+       "family": "volume",
+       "fact": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
+       "rule": "volume dried up at the base's tight point \u2014 supply exhaustion",
+       "score": 65
       }
      ],
      "counts": {
-      "items": 87,
-      "value": 83,
-      "unavailable": 4,
+      "items": 173,
+      "value": 140,
+      "unavailable": 33,
       "material": 6
      },
      "calibration_entries": [
@@ -6806,7 +8174,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T23:15:04.212003+00:00",
+   "scored_at": "2026-10-20T23:26:15.739613+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-16"
@@ -7030,7 +8398,7 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-20T23:15:04.212003+00:00",
+    "scored_at": "2026-10-20T23:26:15.739613+00:00",
     "plan": null,
     "chart_read": {
      "pattern": "Selling climax + base",
@@ -8251,7 +9619,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.37B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8734,7 +10102,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.37B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8824,7 +10192,7 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on CVNA: the balance of everything measured leans in this setup's favor. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. Tensor view: Tensor confirmed a swing today (2026-10-20) \u2014 the desk's pattern engine only flags confirmed, in-age swings, and tensor evidence carries the most weight of any single signal in the desk's scoring method. The conflict is the story: Tensor view vs Tested zones \u2014 support, resistance, and levels that flipped pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 87 items on the desk's list were weighed for this name: TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down; Candle prints at key levels (last 30 sessions): dark cloud cover on 2026-10-16; bullish engulfing on 2026-10-20; tweezer bottom on 2026-10-20. 0 further print(s) landed away from any key level and do not count (the list's gate). 21 named detectors run. What would change the call: a daily close below $58.92 \u2014 the selling-climax low, the base read fails there ($58.92) \u2014 breaks the price structure this setup rests on; or tested zones \u2014 support, resistance, and levels that flipped turning for the setup.",
+     "paragraph": "The desk's read on CVNA: the balance of everything measured leans in this setup's favor. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. Tensor view: Tensor confirmed a swing today (2026-10-20) \u2014 the desk's pattern engine only flags confirmed, in-age swings, and tensor evidence carries the most weight of any single signal in the desk's scoring method. The conflict is the story: Tensor view vs Tested zones \u2014 support, resistance, and levels that flipped pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 173 items on the desk's list were weighed for this name: TRAP \u2014 2 of his four warning signs fire (selling volume rises through the pullback; the pullback has no three-wave structure): expect the bounce to fail near the 0.5-0.786 retrace of this drop, then wave C down; Candle prints at key levels (last 30 sessions): dark cloud cover on 2026-10-16; bullish engulfing on 2026-10-20; tweezer bottom on 2026-10-20. 0 further print(s) landed away from any key level and do not count (the list's gate). 21 named detectors run. What would change the call: a daily close below $58.92 \u2014 the selling-climax low, the base read fails there ($58.92) \u2014 breaks the price structure this setup rests on; or tested zones \u2014 support, resistance, and levels that flipped turning for the setup.",
      "change_call": "What would change the call: a daily close below $58.92 \u2014 the selling-climax low, the base read fails there ($58.92) \u2014 breaks the price structure this setup rests on; or tested zones \u2014 support, resistance, and levels that flipped turning for the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
@@ -8878,9 +10246,9 @@
       }
      ],
      "consideration_counts": {
-      "items": 87,
-      "value": 82,
-      "unavailable": 5,
+      "items": 173,
+      "value": 139,
+      "unavailable": 34,
       "material": 6
      },
      "docket": {
@@ -9122,211 +10490,97 @@
        "key": "swings_dated",
        "family": "structure",
        "label": "Swing highs & lows (dated, confirmed)",
-       "status": "value",
-       "fact": "47 confirmed swings on the record (24 highs, 23 lows); the latest high $66.02 confirmed 2026-10-02, the latest low $58.92 confirmed 2026-10-01.",
-       "data": {
-        "n": 47,
-        "last_high": {
-         "i": 307,
-         "t": "2026-10-02",
-         "price": 66.02,
-         "kind": "high"
-        },
-        "last_low": {
-         "i": 306,
-         "t": "2026-10-01",
-         "price": 58.92,
-         "kind": "low"
-        }
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 47 confirmed swings on the record (24 highs, 23 lows); the latest high $66.02 confirmed 2026-10-02, the latest low $58.92 confirmed 2026-10-01"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "trendlines",
        "family": "structure",
        "label": "Support & resistance trendlines",
-       "status": "value",
-       "fact": "Trendlines: none drawn on this read.",
-       "data": {
-        "upper": null,
-        "lower": null
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 Trendlines: none drawn on this read"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "zones_swings",
        "family": "structure",
        "label": "Zones from swings",
-       "status": "value",
-       "fact": "8 tested levels on the chart: nearest support $59.86, nearest resistance $61.84; each carries its test count in the chart read.",
-       "data": {
-        "n_levels": 8
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 8 tested levels on the chart: nearest support $59.86, nearest resistance $61.84; each carries its test count in the chart read"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "zones_round",
        "family": "structure",
        "label": "Zones from round numbers",
-       "status": "value",
-       "fact": "Round numbers bracket price: $60.00 below (0.4% away) and $70.00 above.",
-       "data": {
-        "below": 60.0,
-        "above": 70.0
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 Round numbers bracket price: $60.00 below (0.4% away) and $70.00 above"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "zones_volume_profile",
        "family": "structure",
        "label": "Zones from the volume profile",
-       "status": "value",
-       "fact": "Volume profile (last 120 sessions, daily-bar approximation): the point of control is $66.19; the value area runs $60.29\u2013$71.40 and price sits below it.",
-       "data": {
-        "poc": 66.19,
-        "vah": 71.4,
-        "val": 60.29,
-        "heavy": [
-         {
-          "lo": 62.37,
-          "hi": 63.07,
-          "share": 0.043
-         },
-         {
-          "lo": 63.07,
-          "hi": 63.76,
-          "share": 0.058
-         },
-         {
-          "lo": 63.76,
-          "hi": 64.46,
-          "share": 0.058
-         },
-         {
-          "lo": 64.46,
-          "hi": 65.15,
-          "share": 0.053
-         },
-         {
-          "lo": 65.15,
-          "hi": 65.85,
-          "share": 0.048
-         },
-         {
-          "lo": 65.85,
-          "hi": 66.54,
-          "share": 0.071
-         },
-         {
-          "lo": 66.54,
-          "hi": 67.24,
-          "share": 0.046
-         },
-         {
-          "lo": 67.24,
-          "hi": 67.93,
-          "share": 0.059
-         },
-         {
-          "lo": 69.32,
-          "hi": 70.02,
-          "share": 0.048
-         },
-         {
-          "lo": 70.02,
-          "hi": 70.71,
-          "share": 0.061
-         },
-         {
-          "lo": 73.49,
-          "hi": 74.18,
-          "share": 0.05
-         }
-        ]
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 Volume profile (last 120 sessions, daily-bar approximation): the point of control is $66.19; the value area runs $60.29\u2013$71.40 and price sits below it"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "level_confluence",
        "family": "structure",
        "label": "Level confluence count (new)",
-       "status": "value",
-       "fact": "3 separate levels stack between $58.92 and $60.00 around $59.59 (round number at $60.00; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $59.86; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $58.92) below price; 2 separate levels stack between $61.84 and $62.01 around $61.92 (20-day average at $62.01; pivot cluster \u2014 6 confirmed pivots in 6 separate tests at $61.84) above. Stacking is counted within half a daily range.",
-       "data": {
-        "below": [
-         [
-          60.0,
-          "round number"
-         ],
-         [
-          59.86,
-          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
-         ],
-         [
-          58.92,
-          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
-         ]
-        ],
-        "above": [
-         [
-          62.01,
-          "20-day average"
-         ],
-         [
-          61.84,
-          "pivot cluster \u2014 6 confirmed pivots in 6 separate tests"
-         ]
-        ]
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 3 separate levels stack between $58.92 and $60.00 around $59.59 (round number at $60.00; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $59.86; pivot c"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "retests_reclaims",
        "family": "structure",
        "label": "Retests & reclaims (new)",
-       "status": "value",
-       "fact": "Retests & reclaims (last 20 sessions): no reclaim, loss, retest or retest-failure printed.",
-       "data": {
-        "events": []
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 Retests & reclaims (last 20 sessions): no reclaim, loss, retest or retest-failure printed"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "structure_state",
        "family": "structure",
        "label": "Structure intact / broken, warnings",
-       "status": "value",
-       "fact": "swing sequence: lower highs, lower lows; no boundary has been lost \u2014 structure stands as drawn. The read's invalidation sits at $58.92.",
-       "data": {
-        "sequence": "lower highs, lower lows",
-        "pattern_state": "intact",
-        "warnings": 0
-       },
-       "reason": null,
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "family computation failed: NameError: name '_avwap' is not defined",
        "needs": null,
-       "verdict": "considered",
-       "deciding": "considered \u2014 swing sequence: lower highs, lower lows; no boundary has been lost \u2014 structure stands as drawn"
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
       },
       {
        "key": "fib_retracement",
@@ -10040,7 +11294,8 @@
        "data": {
         "width": 0.1367,
         "width_pct_rank": 6.8,
-        "squeeze": true
+        "squeeze": true,
+        "squeeze_on": true
        },
        "reason": null,
        "needs": null,
@@ -11028,6 +12283,1567 @@
        "needs": null,
        "verdict": "material",
        "deciding": "material \u2014 Echo's trap screen fires \u2014 this pullback fails his wave-2 standard; the bounce is the trap, not the entry"
+      },
+      {
+       "key": "vcp_footprints",
+       "family": "patterns",
+       "label": "VCP footprint sequence (addendum 12)",
+       "status": "value",
+       "fact": "VCP footprints: 6 contraction(s) on the base (19%\u219219%\u219215%\u21928%\u219215%\u219214%) \u2014 no tightening VCP sequence (the depths do not halve into a tight final pullback); pivot $65.09, +8.0% from price.",
+       "data": {
+        "depths": [
+         18.83,
+         19.14,
+         14.87,
+         8.02,
+         14.86,
+         13.54
+        ],
+        "n": 6,
+        "fires": false,
+        "pivot": 65.09,
+        "dist_to_pivot_pct": 8.02,
+        "footprint": "19%\u219219%\u219215%\u21928%\u219215%\u219214%"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 VCP footprints: 6 contraction(s) on the base (19%\u219219%\u219215%\u21928%\u219215%\u219214%) \u2014 no tightening VCP sequence (the depths do not halve into a tight final pullback); pivot "
+      },
+      {
+       "key": "pivot_tightness",
+       "family": "patterns",
+       "label": "Pivot tightness / 3-weeks-tight / shakeout+3 (addendum 12)",
+       "status": "value",
+       "fact": "Pivot tightness: the last 10 closes span 9.5% (not tight); three-weeks-tight does not stand; shakeout+3 printed 2026-10-13.",
+       "data": {
+        "tight_spread_pct": 9.52,
+        "tight": false,
+        "three_weeks_tight": false,
+        "shakeout_plus3": {
+         "t": "2026-10-13",
+         "undercut_pct": 1.05,
+         "low": 58.3
+        },
+        "seat_score": 62,
+        "seat_rule": "shakeout+3: an undercut reclaimed and price stands 3%+ off the low"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Pivot tightness: the last 10 closes span 9.5% (not tight); three-weeks-tight does not stand; shakeout+3 printed 2026-10-13"
+      },
+      {
+       "key": "base_metrics_stage",
+       "family": "patterns",
+       "label": "Base depth, length & stage count (addendum 12)",
+       "status": "value",
+       "fact": "Base metrics: the current base runs 5 weeks at 21% deep; the tape on offer counts at least 4 completed base(s) since the last major low \u2014 late-stage ground (3rd base or later).",
+       "data": {
+        "depth_pct": 20.93,
+        "length_sessions": 26,
+        "length_weeks": 5.2,
+        "base_count": 4,
+        "counted_ranges": [
+         [
+          "2025-07-15",
+          "2025-10-10"
+         ],
+         [
+          "2025-10-10",
+          "2025-12-31"
+         ],
+         [
+          "2025-12-31",
+          "2026-05-12"
+         ],
+         [
+          "2026-05-12",
+          "2026-08-18"
+         ]
+        ],
+        "stage_lower_bound": true,
+        "late_stage": true,
+        "seat_score": 66,
+        "seat_rule": "a late-stage base (3rd or later) \u2014 caution, direction-neutral"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Base metrics: the current base runs 5 weeks at 21% deep; the tape on offer counts at least 4 completed base(s) since the last major low \u2014 late-stage ground (3rd"
+      },
+      {
+       "key": "base_flat",
+       "family": "patterns",
+       "label": "Flat base rules (addendum 12)",
+       "status": "value",
+       "fact": "Flat base: the rules fail (depth over 15%; weekly closes spread over 12%) \u2014 no flat base files.",
+       "data": {
+        "depth_pct": 26.38,
+        "prior_advance_pct": 36.2,
+        "weekly_spread_pct": 24.22,
+        "fires": false,
+        "failed_rules": [
+         "depth over 15%",
+         "weekly closes spread over 12%"
+        ],
+        "pivot": 76.44
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Flat base: the rules fail (depth over 15%; weekly closes spread over 12%) \u2014 no flat base files"
+      },
+      {
+       "key": "base_ascending",
+       "family": "patterns",
+       "label": "Ascending base (addendum 12)",
+       "status": "value",
+       "fact": "Ascending base: the three-rising-pullback ascending form does not stand.",
+       "data": {
+        "fires": false,
+        "depths": [
+         8.02,
+         14.86,
+         13.54
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Ascending base: the three-rising-pullback ascending form does not stand"
+      },
+      {
+       "key": "base_on_base",
+       "family": "patterns",
+       "label": "Base-on-base (addendum 12)",
+       "status": "value",
+       "fact": "Base-on-base: no base-on-base stack stands.",
+       "data": {
+        "fires": false,
+        "advance_pct": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Base-on-base: no base-on-base stack stands"
+      },
+      {
+       "key": "base_ipo",
+       "family": "patterns",
+       "label": "IPO base (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no listing date reaches the brief and the tape on offer is a truncated window, so listing age cannot be stated",
+       "needs": "an EDGAR-derived listing date, or the name's full first-bar history (the brief window alone cannot date an IPO)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no listing date reaches the brief and the tape on offer is a truncated window, so listing age cannot be stated; needs an EDGAR-derived listing date, or the name's full first-bar history (the brief window alone cannot date an IPO)"
+      },
+      {
+       "key": "cup_without_handle",
+       "family": "patterns",
+       "label": "Cup without handle (addendum 12)",
+       "status": "value",
+       "fact": "Cup without handle: no handle-less cup stands (a handle dip or a missing cup form) (cup depth 33%).",
+       "data": {
+        "rim": 83.91,
+        "depth_pct": 33.1,
+        "handle_dip_pct": 13.5,
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Cup without handle: no handle-less cup stands (a handle dip or a missing cup form) (cup depth 33%)"
+      },
+      {
+       "key": "high_tight_flag",
+       "family": "patterns",
+       "label": "High tight flag (addendum 12)",
+       "status": "value",
+       "fact": "High tight flag: no 100%-pole high tight flag stands.",
+       "data": {
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 High tight flag: no 100%-pole high tight flag stands"
+      },
+      {
+       "key": "pat_diamond",
+       "family": "patterns",
+       "label": "Diamond top / bottom (addendum 12)",
+       "status": "value",
+       "fact": "Diamond: no diamond (diverge-then-converge) shape stands (third-widths 14.2 / 10.7 / 7.1).",
+       "data": {
+        "fires": false,
+        "widths": [
+         14.15,
+         10.66,
+         7.1
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Diamond: no diamond (diverge-then-converge) shape stands (third-widths 14.2 / 10.7 / 7.1)"
+      },
+      {
+       "key": "pat_broadening",
+       "family": "patterns",
+       "label": "Broadening formations (addendum 12)",
+       "status": "value",
+       "fact": "Broadening: no right-angled or both-sloping broadening form stands.",
+       "data": {
+        "form": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Broadening: no right-angled or both-sloping broadening form stands"
+      },
+      {
+       "key": "pat_bump_and_run",
+       "family": "patterns",
+       "label": "Bump-and-run reversal (addendum 12)",
+       "status": "value",
+       "fact": "Bump-and-run: no bump-and-run geometry stands.",
+       "data": {
+        "state": "none"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Bump-and-run: no bump-and-run geometry stands"
+      },
+      {
+       "key": "v_reversal",
+       "family": "patterns",
+       "label": "V-top / V-bottom (addendum 12)",
+       "status": "value",
+       "fact": "V-reversal: a V (10%+ leg in 10 sessions, half retraced inside 10 more, no base) stands \u2014 breakout entries do not apply to a baseless reversal.",
+       "data": {
+        "fires": true,
+        "leg_pct": 12.7,
+        "retrace_pct": 50.7,
+        "age": 306
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 V-reversal: a V (10%+ leg in 10 sessions, half retraced inside 10 more, no base) stands \u2014 breakout entries do not apply to a baseless reversal"
+      },
+      {
+       "key": "dead_cat_bounce",
+       "family": "patterns",
+       "label": "Dead-cat bounce (addendum 12)",
+       "status": "value",
+       "fact": "Dead-cat bounce: no 15%+ drop-and-bounce template stands.",
+       "data": {
+        "state": "none",
+        "drop_pct": -15.2,
+        "drop_low": 58.03,
+        "bounce_pct": 3.8
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Dead-cat bounce: no 15%+ drop-and-bounce template stands"
+      },
+      {
+       "key": "climax_top",
+       "family": "patterns",
+       "label": "Climax top / climax run (addendum 12)",
+       "status": "value",
+       "fact": "Climax top: no climax-run sequence stands (acceleration -5% in 3 weeks, 4/8 up days, stretch -14%). The selling-climax side is read under the climax-base / Wyckoff items, not here.",
+       "data": {
+        "accel_3wk_pct": -5.3,
+        "up_days_8": 4,
+        "largest_gain_recent": 4.59,
+        "stretch_vs_200d_pct": -14.4,
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Climax top: no climax-run sequence stands (acceleration -5% in 3 weeks, 4/8 up days, stretch -14%)"
+      },
+      {
+       "key": "trap_2b",
+       "family": "patterns",
+       "label": "2B reversal / traps (addendum 12)",
+       "status": "value",
+       "fact": "2B reversal: a bull trap bottom stands at the $58.92 swing \u2014 unconfirmed.",
+       "data": {
+        "fires": true,
+        "side": "bull_trap_bottom",
+        "anchor": 58.92,
+        "age": 5,
+        "confirmed": false,
+        "seat_score": 63,
+        "seat_rule": "an unconfirmed 2B trap \u2014 a marginal new extreme closed back inside"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 2B reversal: a bull trap bottom stands at the $58.92 swing \u2014 unconfirmed"
+      },
+      {
+       "key": "micro_patterns",
+       "family": "patterns",
+       "label": "Micro-patterns, grouped (addendum 12)",
+       "status": "value",
+       "fact": "Micro-patterns: the grouped minor-pattern scan (horn, pipe, scallops, roof, cloudbank, diving board, tower, three peaks) checked \u2014 none stands.",
+       "data": {
+        "fire": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Micro-patterns: the grouped minor-pattern scan (horn, pipe, scallops, roof, cloudbank, diving board, tower, three peaks) checked \u2014 none stands"
+      },
+      {
+       "key": "andrews_pitchfork",
+       "family": "structure",
+       "label": "Andrews pitchfork (addendum 12)",
+       "status": "value",
+       "fact": "Andrews pitchfork on the last three confirmed pivots (2026-09-03, 2026-10-01, 2026-10-02): the median line projects to $218.95 at the last session; price sits below it.",
+       "data": {
+        "anchors": [
+         "2026-09-03",
+         "2026-10-01",
+         "2026-10-02"
+        ],
+        "median_at_last": 218.95
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Andrews pitchfork on the last three confirmed pivots (2026-09-03, 2026-10-01, 2026-10-02): the median line projects to $218.95 at the last session; price sits b"
+      },
+      {
+       "key": "regression_channel",
+       "family": "structure",
+       "label": "Linear-regression (Raff) channel (addendum 12)",
+       "status": "value",
+       "fact": "Regression channel (OLS over 60 sessions, Raff \u00b12\u03c3): the line ends at $62.16 (slope -0.29%/session); channel $54.12\u2013$70.21; price sits inside it.",
+       "data": {
+        "line_end": 62.16,
+        "slope_pct": -0.288,
+        "sd": 4.02,
+        "upper": 70.21,
+        "lower": 54.12
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Regression channel (OLS over 60 sessions, Raff \u00b12\u03c3): the line ends at $62.16 (slope -0.29%/session); channel $54.12\u2013$70.21; price sits inside it"
+      },
+      {
+       "key": "fair_value_gap",
+       "family": "structure",
+       "label": "Fair value gap / imbalance (addendum 12, provisional)",
+       "status": "value",
+       "fact": "Fair value gaps (PROVISIONAL): 93 3-candle imbalance zone(s) on the tape; the nearest is a bearish zone at $61.11\u2013$62.84, fully revisited.",
+       "data": {
+        "zones": [
+         {
+          "dir": "bearish",
+          "hi": 65.44,
+          "lo": 65.04,
+          "i": 300,
+          "mitigation": "fully revisited",
+          "age": 19
+         },
+         {
+          "dir": "bearish",
+          "hi": 65.27,
+          "lo": 64.53,
+          "i": 301,
+          "mitigation": "fully revisited",
+          "age": 18
+         },
+         {
+          "dir": "bearish",
+          "hi": 62.841,
+          "lo": 61.11,
+          "i": 314,
+          "mitigation": "fully revisited",
+          "age": 5
+         }
+        ],
+        "provisional": true
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Fair value gaps (PROVISIONAL): 93 3-candle imbalance zone(s) on the tape; the nearest is a bearish zone at $61.11\u2013$62.84, fully revisited"
+      },
+      {
+       "key": "order_block",
+       "family": "structure",
+       "label": "Order block (addendum 12, provisional)",
+       "status": "value",
+       "fact": "Order block (PROVISIONAL): no origin-candle zone is filed beyond the swing / profile zones already on record in this build \u2014 the selection rule is specified in the study and files zones only on a confirmed structure break carrying an origin candle.",
+       "data": {
+        "zone": null,
+        "provisional": true,
+        "structure_keys": [
+         "label",
+         "sequence"
+        ]
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Order block (PROVISIONAL): no origin-candle zone is filed beyond the swing / profile zones already on record in this build \u2014 the selection rule is specified in "
+      },
+      {
+       "key": "liquidity_sweeps",
+       "family": "structure",
+       "label": "Liquidity pools & sweeps (addendum 12, provisional)",
+       "status": "value",
+       "fact": "Liquidity sweeps (PROVISIONAL): 8 equal-extreme pool(s) stand; a sweep (wick through the pool, close back inside) printed 8 session(s) ago.",
+       "data": {
+        "pools": [
+         {
+          "side": "high",
+          "price": 76.62
+         },
+         {
+          "side": "low",
+          "price": 54.77
+         },
+         {
+          "side": "low",
+          "price": 61.06
+         },
+         {
+          "side": "low",
+          "price": 62.13
+         }
+        ],
+        "sweeps": [
+         {
+          "side": "low",
+          "age": 9,
+          "price": 62.13
+         },
+         {
+          "side": "low",
+          "age": 8,
+          "price": 62.13
+         }
+        ],
+        "provisional": true
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Liquidity sweeps (PROVISIONAL): 8 equal-extreme pool(s) stand; a sweep (wick through the pool, close back inside) printed 8 session(s) ago"
+      },
+      {
+       "key": "smc_labels",
+       "family": "structure",
+       "label": "Displacement / inducement labels (addendum 12, provisional)",
+       "status": "value",
+       "fact": "SMC labels (PROVISIONAL, labels only \u2014 no new measurement): the substance is filed under the stretch / breakout items on this record; no displacement or inducement label adds a number here.",
+       "data": {
+        "labels_only": true,
+        "provisional": true
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 SMC labels (PROVISIONAL, labels only \u2014 no new measurement): the substance is filed under the stretch / breakout items on this record; no displacement or inducem"
+      },
+      {
+       "key": "pivot_points",
+       "family": "levels",
+       "label": "Pivot point systems (addendum 12)",
+       "status": "value",
+       "fact": "Pivot points (completed periods): monthly floor pivot $66.21 (R1 $72.77 / S1 $55.98; CPR $68.05\u2013$64.38); weekly pivot $60.06. Floor, Fibonacci, Camarilla, Woodie and DeMark sets are filed in the data \u2014 level inputs, realised through confluence, never a seat of their own.",
+       "data": {
+        "monthly": {
+         "floor": {
+          "p": 66.21,
+          "r1": 72.77,
+          "s1": 55.98,
+          "r2": 83.0,
+          "s2": 49.42,
+          "r3": 89.56,
+          "s3": 39.19
+         },
+         "fibonacci": {
+          "p": 66.21,
+          "r1": 72.6238,
+          "r2": 76.5862,
+          "r3": 83.0,
+          "s1": 59.7962,
+          "s2": 55.8338,
+          "s3": 49.42
+         },
+         "camarilla": {
+          "r4": 71.7745,
+          "r3": 67.1573,
+          "r2": 65.6182,
+          "r1": 64.0791,
+          "s1": 61.0009,
+          "s2": 59.4618,
+          "s3": 57.9228,
+          "s4": 53.3055
+         },
+         "woodie": {
+          "p": 65.2925,
+          "r1": 70.935,
+          "s1": 54.145,
+          "r2": 82.0825,
+          "s2": 48.5025
+         },
+         "demark": {
+          "p": 64.57,
+          "r1": 69.49,
+          "s1": 52.7
+         },
+         "cpr": {
+          "p": 66.21,
+          "bc": 68.045,
+          "tc": 64.375,
+          "width_pct": 5.543
+         }
+        },
+        "weekly": {
+         "floor": {
+          "p": 60.065,
+          "r1": 63.855,
+          "s1": 55.04,
+          "r2": 68.88,
+          "s2": 51.25,
+          "r3": 72.67,
+          "s3": 46.225
+         },
+         "fibonacci": {
+          "p": 60.065,
+          "r1": 63.4323,
+          "r2": 65.5127,
+          "r3": 68.88,
+          "s1": 56.6977,
+          "s2": 54.6173,
+          "s3": 51.25
+         },
+         "camarilla": {
+          "r4": 63.6782,
+          "r3": 61.2541,
+          "r2": 60.4461,
+          "r1": 59.638,
+          "s1": 58.022,
+          "s2": 57.2139,
+          "s3": 56.4059,
+          "s4": 53.9817
+         },
+         "woodie": {
+          "p": 59.7563,
+          "r1": 63.2375,
+          "s1": 54.4225,
+          "r2": 68.5713,
+          "s2": 50.9412
+         },
+         "demark": {
+          "p": 59.1175,
+          "r1": 61.96,
+          "s1": 53.145
+         },
+         "cpr": {
+          "p": 60.065,
+          "bc": 60.6825,
+          "tc": 59.4475,
+          "width_pct": 2.056
+         }
+        },
+        "monthly_period": "2026-09-30",
+        "weekly_period": "2026-10-16"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Pivot points (completed periods): monthly floor pivot $66.21 (R1 $72.77 / S1 $55.98; CPR $68.05\u2013$64.38); weekly pivot $60.06"
+      },
+      {
+       "key": "prior_period_levels",
+       "family": "levels",
+       "label": "Prior day/week/month levels (addendum 12)",
+       "status": "value",
+       "fact": "Prior-period levels: prior day $57.82\u2013$59.68 (open $59.46); prior week $56.27\u2013$65.09; prior month $59.65\u2013$76.44. No break/retest event at these levels.",
+       "data": {
+        "pdh": 59.68,
+        "pdl": 57.82,
+        "pdo": 59.46,
+        "pd_t": "2026-10-19",
+        "pwh": 65.09,
+        "pwl": 56.275,
+        "pmh": 76.44,
+        "pml": 59.65,
+        "events": []
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Prior-period levels: prior day $57.82\u2013$59.68 (open $59.46); prior week $56.27\u2013$65.09; prior month $59.65\u2013$76.44"
+      },
+      {
+       "key": "ath_distance",
+       "family": "levels",
+       "label": "Distance to all-time high (addendum 12)",
+       "status": "value",
+       "fact": "All-time high: $97.38 \u2014 price sits -38.1% from it.",
+       "data": {
+        "ath": 97.38,
+        "dist_pct": -38.12,
+        "blue_sky": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 All-time high: $97.38 \u2014 price sits -38.1% from it"
+      },
+      {
+       "key": "ichimoku",
+       "family": "trend",
+       "label": "Ichimoku Cloud (addendum 12)",
+       "status": "value",
+       "fact": "Ichimoku: price is below cloud (cloud $66.46\u2013$71.71; Tenkan $60.68 vs Kijun $63.72); no fresh TK cross.",
+       "data": {
+        "tenkan": 60.68,
+        "kijun": 63.72,
+        "senkou_a": 71.71,
+        "senkou_b": 66.46,
+        "cloud_top": 71.71,
+        "cloud_bottom": 66.46,
+        "cloud_state": "below_cloud",
+        "tk_cross": null,
+        "cross_strength": null,
+        "chikou_vs_price_26ago": -10.61
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Ichimoku: price is below cloud (cloud $66.46\u2013$71.71; Tenkan $60.68 vs Kijun $63.72); no fresh TK cross"
+      },
+      {
+       "key": "donchian",
+       "family": "trend",
+       "label": "Donchian channels 20/55 (addendum 12)",
+       "status": "value",
+       "fact": "Donchian: 20-session channel $56.27\u2013$69.20; 55-session $56.27\u2013$76.80 \u2014 price sits inside the 55-session channel.",
+       "data": {
+        "hi20": 69.2,
+        "lo20": 56.275,
+        "hi55": 76.8,
+        "lo55": 56.275,
+        "break55": false,
+        "break20": false,
+        "break55_age": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Donchian: 20-session channel $56.27\u2013$69.20; 55-session $56.27\u2013$76.80 \u2014 price sits inside the 55-session channel"
+      },
+      {
+       "key": "parabolic_sar",
+       "family": "trend",
+       "label": "Parabolic SAR (addendum 12)",
+       "status": "value",
+       "fact": "Parabolic SAR: $63.54 (above price short), -5.2% from price; flipped 6 session(s) ago. Filed read-only.",
+       "data": {
+        "sar": 63.54,
+        "side": "above_price_short",
+        "dist_pct": -5.17,
+        "flip_age": 6
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Parabolic SAR: $63.54 (above price short), -5.2% from price; flipped 6 session(s) ago"
+      },
+      {
+       "key": "supertrend",
+       "family": "trend",
+       "label": "Supertrend (addendum 12)",
+       "status": "value",
+       "fact": "Supertrend (ATR10 x3): the trend reads down with the line at $67.47; flipped 19 session(s) ago.",
+       "data": {
+        "direction": "down",
+        "line": 67.47,
+        "flip_age": 19,
+        "n_flips_window": 11
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Supertrend (ATR10 x3): the trend reads down with the line at $67.47; flipped 19 session(s) ago"
+      },
+      {
+       "key": "gmma",
+       "family": "trend",
+       "label": "GMMA ribbon (addendum 12)",
+       "status": "value",
+       "fact": "GMMA ribbon (EMA kernels): short group fully below the long group (agreement, down); the short group's spread is 2.8% of its mean.",
+       "data": {
+        "state": "short group fully below the long group (agreement, down)",
+        "short_spread_pct": 2.82,
+        "short_mean": 60.39,
+        "long_mean": 64.64
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 GMMA ribbon (EMA kernels): short group fully below the long group (agreement, down); the short group's spread is 2.8% of its mean"
+      },
+      {
+       "key": "williams_r",
+       "family": "momentum",
+       "label": "Williams %R (addendum 12)",
+       "status": "value",
+       "fact": "Williams %R(14) is -59 (mid-range).",
+       "data": {
+        "williams_r": -59.1
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Williams %R(14) is -59 (mid-range)"
+      },
+      {
+       "key": "vortex",
+       "family": "momentum",
+       "label": "Vortex indicator (addendum 12)",
+       "status": "value",
+       "fact": "Vortex(14): VI+ 0.88 vs VI- 1.06 (minus leads).",
+       "data": {
+        "vi_plus": 0.876,
+        "vi_minus": 1.058
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Vortex(14): VI+ 0.88 vs VI- 1.06 (minus leads)"
+      },
+      {
+       "key": "trix",
+       "family": "momentum",
+       "label": "TRIX (addendum 12)",
+       "status": "value",
+       "fact": "TRIX(15) is -0.483% (below zero).",
+       "data": {
+        "trix_pct": -0.4835
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 TRIX(15) is -0.483% (below zero)"
+      },
+      {
+       "key": "ultimate_oscillator",
+       "family": "momentum",
+       "label": "Ultimate Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "Ultimate Oscillator (7/14/28, 4/2/1) is 44.",
+       "data": {
+        "uo": 44.4
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Ultimate Oscillator (7/14/28, 4/2/1) is 44"
+      },
+      {
+       "key": "awesome_oscillator",
+       "family": "momentum",
+       "label": "Awesome Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "Awesome Oscillator (SMA5-SMA34 of median price) is -6.26 (below zero).",
+       "data": {
+        "ao": -6.265
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Awesome Oscillator (SMA5-SMA34 of median price) is -6.26 (below zero)"
+      },
+      {
+       "key": "cmo",
+       "family": "momentum",
+       "label": "Chande Momentum Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "CMO(14) is -13.",
+       "data": {
+        "cmo": -13.3
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 CMO(14) is -13"
+      },
+      {
+       "key": "kst",
+       "family": "momentum",
+       "label": "KST \u2014 Know Sure Thing (addendum 12)",
+       "status": "value",
+       "fact": "KST is -109.7 vs its signal -109.1 (below).",
+       "data": {
+        "kst": -109.72,
+        "signal": -109.07
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 KST is -109.7 vs its signal -109.1 (below)"
+      },
+      {
+       "key": "coppock",
+       "family": "momentum",
+       "label": "Coppock Curve (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "history too short for this measurement's own window",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 history too short for this measurement's own window"
+      },
+      {
+       "key": "elder_ray",
+       "family": "momentum",
+       "label": "Elder-Ray & Impulse (addendum 12)",
+       "status": "value",
+       "fact": "Elder-Ray: bull power -0.05, bear power -3.13 vs EMA13 $61.03.",
+       "data": {
+        "bull_power": -0.05,
+        "bear_power": -3.13
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Elder-Ray: bull power -0.05, bear power -3.13 vs EMA13 $61.03"
+      },
+      {
+       "key": "dpo",
+       "family": "momentum",
+       "label": "Detrended Price Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "DPO(20) is +1.87 (the close 11 sessions back vs the 20-day average).",
+       "data": {
+        "dpo": 1.87
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 DPO(20) is +1.87 (the close 11 sessions back vs the 20-day average)"
+      },
+      {
+       "key": "td_sequential",
+       "family": "momentum",
+       "label": "Exhaustion counts \u2014 setup 9 / countdown 13 (addendum 12)",
+       "status": "value",
+       "fact": "Exhaustion counts: setup count 0/9, countdown 0/13.",
+       "data": {
+        "setup_count": 0,
+        "countdown": 0
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Exhaustion counts: setup count 0/9, countdown 0/13"
+      },
+      {
+       "key": "rs_line",
+       "family": "momentum",
+       "label": "RS line & RS-line new high (addendum 12, provisional)",
+       "status": "value",
+       "fact": "RS line (PROVISIONAL \u2014 no cluster-grade study has calibrated this item): the line stands at 69.9 of its window start (high 124.0).",
+       "data": {
+        "rs_line": 69.94,
+        "rs_line_high": 124.01,
+        "rs_line_new_high": false,
+        "provisional": true
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 RS line (PROVISIONAL \u2014 no cluster-grade study has calibrated this item): the line stands at 69.9 of its window start (high 124.0)"
+      },
+      {
+       "key": "volume_dry_up",
+       "family": "volume",
+       "label": "Volume dry-up at the pivot (addendum 12)",
+       "status": "value",
+       "fact": "Volume dry-up: the quietest of the last 10 sessions ran at 0.58x the 50-session mean (1 dry day(s) at or under 0.60x) \u2014 no dry-up (volume never thinned to the canon band).",
+       "data": {
+        "vol50": 8846676.6,
+        "min_ratio": 0.585,
+        "dry_days": 1,
+        "dry_up": false,
+        "vol_rank_120": 5.9
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Volume dry-up: the quietest of the last 10 sessions ran at 0.58x the 50-session mean (1 dry day(s) at or under 0.60x) \u2014 no dry-up (volume never thinned to the c"
+      },
+      {
+       "key": "vwap_bands",
+       "family": "volume",
+       "label": "VWAP \u00b1\u03c3 bands (addendum 12)",
+       "status": "value",
+       "fact": "VWAP bands (20-session, daily-bar construction): VWAP $61.77, price at -0.8 sigma (bands \u00b11\u03c3 $59.80\u2013$63.75, \u00b12\u03c3 $57.82\u2013$65.72).",
+       "data": {
+        "vwap20": 61.77,
+        "sd": 1.97,
+        "z": -0.77,
+        "bands": {
+         "-3": 55.85,
+         "-2": 57.82,
+         "-1": 59.8,
+         "1": 63.75,
+         "2": 65.72,
+         "3": 67.69
+        },
+        "construction": "daily-bar VWAP (typical price x daily volume), not intraday-tick VWAP"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 VWAP bands (20-session, daily-bar construction): VWAP $61.77, price at -0.8 sigma (bands \u00b11\u03c3 $59.80\u2013$63.75, \u00b12\u03c3 $57.82\u2013$65.72)"
+      },
+      {
+       "key": "tpo_profile",
+       "family": "volume",
+       "label": "Market-profile TPO shape (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "the brief carries no 30-minute bars, so no time-at-price profile can be built",
+       "needs": "a 30-minute SIP bars product for board names (the brief currently carries daily bars only)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 the brief carries no 30-minute bars, so no time-at-price profile can be built; needs a 30-minute SIP bars product for board names (the brief currently carries daily bars only)"
+      },
+      {
+       "key": "chaikin_oscillator",
+       "family": "volume",
+       "label": "Chaikin Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "Chaikin Oscillator (EMA3-EMA10 of the A/D line) is 572,272; CMF(20) stands at 0.0152.",
+       "data": {
+        "chaikin_osc": 572272.2,
+        "cmf20": 0.0152
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Chaikin Oscillator (EMA3-EMA10 of the A/D line) is 572,272; CMF(20) stands at 0.0152"
+      },
+      {
+       "key": "force_index",
+       "family": "volume",
+       "label": "Force Index (addendum 12)",
+       "status": "value",
+       "fact": "Force Index (EMA13 of change x volume) is -1,800,352.",
+       "data": {
+        "force_index_13": -1800351.9
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Force Index (EMA13 of change x volume) is -1,800,352"
+      },
+      {
+       "key": "ease_of_movement",
+       "family": "volume",
+       "label": "Ease of Movement (addendum 12)",
+       "status": "value",
+       "fact": "Ease of Movement (14) is -10.357.",
+       "data": {
+        "emv14": -10.3568
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Ease of Movement (14) is -10.357"
+      },
+      {
+       "key": "klinger",
+       "family": "volume",
+       "label": "Klinger Oscillator (addendum 12)",
+       "status": "value",
+       "fact": "Klinger Oscillator (EMA34-EMA55 of force volume) is -14,943,504.",
+       "data": {
+        "klinger": -14943504.2
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Klinger Oscillator (EMA34-EMA55 of force volume) is -14,943,504"
+      },
+      {
+       "key": "vwma",
+       "family": "volume",
+       "label": "VWMA \u2014 volume-weighted average (addendum 12)",
+       "status": "value",
+       "fact": "VWMA(20) is $61.73 \u2014 price is below it.",
+       "data": {
+        "vwma20": 61.73,
+        "state": "below"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 VWMA(20) is $61.73 \u2014 price is below it"
+      },
+      {
+       "key": "up_down_volume",
+       "family": "volume",
+       "label": "Up/down volume ratio (addendum 12)",
+       "status": "value",
+       "fact": "Up/down volume (50 sessions): up-volume 187,569,109 vs down-volume 207,645,949 \u2014 a ratio of 0.90.",
+       "data": {
+        "ratio_50d": 0.903,
+        "up_vol": 187569109.0,
+        "down_vol": 207645949.0
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Up/down volume (50 sessions): up-volume 187,569,109 vs down-volume 207,645,949 \u2014 a ratio of 0.90"
+      },
+      {
+       "key": "ad_rating_grade",
+       "family": "volume",
+       "label": "Desk accumulation grade, A\u2013E (addendum 12)",
+       "status": "value",
+       "fact": "Desk accumulation grade over 13 weeks: E (packaged from the OBV / A/D / MFI facts already on record \u2014 a desk grade, not an IBD rating).",
+       "data": {
+        "grade": "E"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Desk accumulation grade over 13 weeks: E (packaged from the OBV / A/D / MFI facts already on record \u2014 a desk grade, not an IBD rating)"
+      },
+      {
+       "key": "volume_lines_alt",
+       "family": "volume",
+       "label": "Minor volume lines \u2014 NVI/PVI/PVT/Williams A/D (addendum 12)",
+       "status": "value",
+       "fact": "Minor volume lines (grouped): NVI 1960, PVI 441, PVT -19,858,880, Williams A/D -99,268,902.",
+       "data": {
+        "nvi": 1959.7,
+        "pvi": 441.3,
+        "pvt": -19858880.3,
+        "williams_ad": -99268901.6
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Minor volume lines (grouped): NVI 1960, PVI 441, PVT -19,858,880, Williams A/D -99,268,902"
+      },
+      {
+       "key": "keltner",
+       "family": "stretch",
+       "label": "Keltner channels & the squeeze (addendum 12)",
+       "status": "value",
+       "fact": "Keltner (EMA20 \u00b1 2xATR10): $55.90\u2013$68.49 around $62.19; the Bollinger squeeze is ON \u2014 the bands sit inside the Keltner channel (the true containment test).",
+       "data": {
+        "mid": 62.19,
+        "upper": 68.49,
+        "lower": 55.9,
+        "squeeze_on": true,
+        "squeeze_fired_age": null
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Keltner (EMA20 \u00b1 2xATR10): $55.90\u2013$68.49 around $62.19; the Bollinger squeeze is ON \u2014 the bands sit inside the Keltner channel (the true containment test)"
+      },
+      {
+       "key": "atr_trailing_levels",
+       "family": "stretch",
+       "label": "ATR trailing levels \u2014 Chandelier & Wilder (addendum 12)",
+       "status": "value",
+       "fact": "ATR trailing levels (filed as levels only \u2014 never scored, never an exit): Chandelier long $59.47, short $66.00 (22-session, 3xATR22 $3.24).",
+       "data": {
+        "chandelier_long": 59.47,
+        "chandelier_short": 66.0,
+        "atr22": 3.24,
+        "wilder_stop_long": 50.53
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 ATR trailing levels (filed as levels only \u2014 never scored, never an exit): Chandelier long $59.47, short $66.00 (22-session, 3xATR22 $3.24)"
+      },
+      {
+       "key": "mass_index",
+       "family": "stretch",
+       "label": "Mass Index (addendum 12)",
+       "status": "value",
+       "fact": "Mass Index (sum-25 of the EMA9 range ratio) is 25.0.",
+       "data": {
+        "mass_index": 24.97
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Mass Index (sum-25 of the EMA9 range ratio) is 25.0"
+      },
+      {
+       "key": "choppiness",
+       "family": "stretch",
+       "label": "Choppiness Index (addendum 12)",
+       "status": "value",
+       "fact": "Choppiness Index(14) is 57 \u2014 between ground.",
+       "data": {
+        "choppiness": 57.3,
+        "state": "between"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Choppiness Index(14) is 57 \u2014 between ground"
+      },
+      {
+       "key": "hv_percentile",
+       "family": "stretch",
+       "label": "HV percentile vs its own year (addendum 12)",
+       "status": "value",
+       "fact": "HV percentiles (vs each window's own trailing year): HV10 53.7 (33.5th), HV20 50.7 (22.3th), HV30 48.4 (8.0th), HV60 54.5 (2.0th).",
+       "data": {
+        "hv10": 53.7,
+        "hv10_pct": 33.5,
+        "hv20": 50.7,
+        "hv20_pct": 22.3,
+        "hv30": 48.4,
+        "hv30_pct": 8.0,
+        "hv60": 54.5,
+        "hv60_pct": 2.0
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 HV percentiles (vs each window's own trailing year): HV10 53.7 (33.5th), HV20 50.7 (22.3th), HV30 48.4 (8.0th), HV60 54.5 (2.0th)"
+      },
+      {
+       "key": "island_reversal",
+       "family": "candles_gaps",
+       "label": "Island reversal (addendum 12)",
+       "status": "value",
+       "fact": "Island reversal: no gap-away / isolated / gap-back island stands.",
+       "data": {
+        "fires": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Island reversal: no gap-away / isolated / gap-back island stands"
+      },
+      {
+       "key": "range_events",
+       "family": "candles_gaps",
+       "label": "Range events \u2014 NR4/NR7, inside/outside, key reversal (addendum 12)",
+       "status": "value",
+       "fact": "Range events: no NR4/NR7, inside/outside or key-reversal event on the last session.",
+       "data": {
+        "nr4": false,
+        "nr7": false,
+        "inside": false,
+        "outside": false,
+        "key_reversal": false,
+        "id_nr4": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Range events: no NR4/NR7, inside/outside or key-reversal event on the last session"
+      },
+      {
+       "key": "heikin_ashi",
+       "family": "candles_gaps",
+       "label": "Heikin-Ashi view (addendum 12)",
+       "status": "value",
+       "fact": "Heikin-Ashi view (an averaged view \u2014 it never outranks the real bars): a bearish streak of 2 HA candle(s); the last HA candle is a doji.",
+       "data": {
+        "streak": -2,
+        "ha_doji": true,
+        "ha_open": 59.37,
+        "ha_close": 59.33
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Heikin-Ashi view (an averaged view \u2014 it never outranks the real bars): a bearish streak of 2 HA candle(s); the last HA candle is a doji"
+      },
+      {
+       "key": "expected_move",
+       "family": "options",
+       "label": "Expected move (addendum 12)",
+       "status": "value",
+       "fact": "Expected move to 2026-11-27 (38 days): \u00b1$14.39 by the IV form (IV 74.0%).",
+       "data": {
+        "spot": 60.26,
+        "iv_pct": 74.0,
+        "expiry": "2026-11-27",
+        "dte": 38,
+        "iv_form": 14.39
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (38 days): \u00b1$14.39 by the IV form (IV 74.0%)"
+      },
+      {
+       "key": "gamma_flip_name",
+       "family": "options",
+       "label": "Gamma flip, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "gamma_walls_name",
+       "family": "options",
+       "label": "Call wall / put wall, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "max_pain_name",
+       "family": "options",
+       "label": "Max pain, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "oi_concentration_name",
+       "family": "options",
+       "label": "OI strike concentration (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "iv_skew_name",
+       "family": "options",
+       "label": "IV skew, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "iv_term_name",
+       "family": "options",
+       "label": "IV term structure, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
+       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+      },
+      {
+       "key": "options_flow_name",
+       "family": "options",
+       "label": "Unusual options flow (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no options trades tape reaches the desk",
+       "needs": "an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed as of 2026-10-20 \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no options trades tape reaches the desk; needs an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed as of 2026-10-20 \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints"
+      },
+      {
+       "key": "borrow_lending_name",
+       "family": "options",
+       "label": "Borrow fee / utilisation (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no securities-lending data reaches the desk",
+       "needs": "a securities-lending feed (e.g. Ortex, Fintel, or Interactive Brokers' lending file/API) carrying per-name borrow fee, utilisation and shares available. FINRA publishes none of these; the desk holds no lending subscription",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no securities-lending data reaches the desk; needs a securities-lending feed (e.g. Ortex, Fintel, or Interactive Brokers' lending file/API) carrying per-name borrow fee, utilisation and shares available. FINRA publishes none of these; the desk holds no lending subscription"
+      },
+      {
+       "key": "power_earnings_gap",
+       "family": "company_market",
+       "label": "Power Earnings Gap (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no earnings-date product reaches the brief, so no gap can be tied to a report",
+       "needs": "the desk's EDGAR gap product's report dates (8-K item 2.02) read against the brief's own bars",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no earnings-date product reaches the brief, so no gap can be tied to a report; needs the desk's EDGAR gap product's report dates (8-K item 2.02) read against the brief's own bars"
+      },
+      {
+       "key": "opex_calendar_name",
+       "family": "company_market",
+       "label": "OpEx timing & pin risk (addendum 12)",
+       "status": "value",
+       "fact": "OpEx calendar: the next monthly OpEx is 2026-11-20 (31 day(s) out).",
+       "data": {
+        "next_opex": "2026-11-20",
+        "days": 31,
+        "witching": false,
+        "pin_risk": false
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 OpEx calendar: the next monthly OpEx is 2026-11-20 (31 day(s) out)"
+      },
+      {
+       "key": "buybacks_name",
+       "family": "company_market",
+       "label": "Buybacks as calendar catalyst (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no buyback authorisation or repurchase disclosure reaches the brief",
+       "needs": "the EDGAR gap product's buyback fields (8-K authorisations + 10-Q repurchase tables) \u2014 the live producer of addendum 12; the frozen old desk's buyback scan is not a source",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no buyback authorisation or repurchase disclosure reaches the brief; needs the EDGAR gap product's buyback fields (8-K authorisations + 10-Q repurchase tables) \u2014 the live producer of addendum 12; the frozen old desk's buyback scan is not a source"
+      },
+      {
+       "key": "market_distribution_days",
+       "family": "company_market",
+       "label": "Distribution-day count (addendum 12)",
+       "status": "value",
+       "fact": "Distribution days (SPY, 25-session window): 7 \u2014 the uptrend reads under pressure at 5+.",
+       "data": {
+        "count": 7,
+        "days": [
+         {
+          "t": "2026-09-16",
+          "kind": "distribution",
+          "chg_pct": -0.44
+         },
+         {
+          "t": "2026-09-23",
+          "kind": "distribution",
+          "chg_pct": -0.72
+         },
+         {
+          "t": "2026-09-28",
+          "kind": "distribution",
+          "chg_pct": -0.74
+         },
+         {
+          "t": "2026-09-30",
+          "kind": "distribution",
+          "chg_pct": -0.21
+         },
+         {
+          "t": "2026-10-08",
+          "kind": "distribution",
+          "chg_pct": -0.42
+         },
+         {
+          "t": "2026-10-14",
+          "kind": "distribution",
+          "chg_pct": -1.08
+         },
+         {
+          "t": "2026-10-16",
+          "kind": "distribution",
+          "chg_pct": -1.11
+         }
+        ],
+        "window_sessions": 25,
+        "seat_score": 65,
+        "seat_rule": "five or more distribution days in 25 sessions \u2014 the IBD 'uptrend under pressure' band"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Distribution days (SPY, 25-session window): 7 \u2014 the uptrend reads under pressure at 5+"
+      },
+      {
+       "key": "market_follow_through",
+       "family": "company_market",
+       "label": "Follow-through day (addendum 12)",
+       "status": "value",
+       "fact": "Follow-through day: no rally attempt carries a follow-through verdict on this tape.",
+       "data": {
+        "state": "none"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Follow-through day: no rally attempt carries a follow-through verdict on this tape"
+      },
+      {
+       "key": "market_mcclellan",
+       "family": "company_market",
+       "label": "McClellan oscillator & summation (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "the nightly market product reaching the brief carries no McClellan summary \u2014 the producer computes it (core/market_measurements.mcclellan) but this build's product did not file it",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 the nightly market product reaching the brief carries no McClellan summary \u2014 the producer computes it (core/market_measurements.mcclellan) but this build's product did not file it"
+      },
+      {
+       "key": "market_breadth_thrust",
+       "family": "company_market",
+       "label": "Zweig Breadth Thrust (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained (advancers, decliners) series reaches the brief",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained (advancers, decliners) series reaches the brief"
+      },
+      {
+       "key": "market_trin",
+       "family": "company_market",
+       "label": "TRIN / Arms Index (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "the breadth product carries counts but no advancing/declining volume sums, so TRIN cannot be stated",
+       "needs": "advancing/declining volume sums in the nightly breadth product (build_breadth extension, addendum 12)",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 the breadth product carries counts but no advancing/declining volume sums, so TRIN cannot be stated; needs advancing/declining volume sums in the nightly breadth product (build_breadth extension, addendum 12)"
+      },
+      {
+       "key": "market_ad_line",
+       "family": "company_market",
+       "label": "A/D line series (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no retained (advancers, decliners) series reaches the brief",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no retained (advancers, decliners) series reaches the brief"
+      },
+      {
+       "key": "rrg_name",
+       "family": "company_market",
+       "label": "Relative Rotation Graph, per name (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no RRG row for this name rides the nightly themes product reaching the brief",
+       "needs": null,
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no RRG row for this name rides the nightly themes product reaching the brief"
+      },
+      {
+       "key": "beta_correlation",
+       "family": "company_market",
+       "label": "Beta & correlation (addendum 12)",
+       "status": "value",
+       "fact": "Beta & correlation (raw, 251 daily sessions vs SPY): beta 2.377, correlation 0.487, R\u00b2 0.237 \u2014 a risk descriptor, not a forecast.",
+       "data": {
+        "beta_spy": 2.377,
+        "rho_spy": 0.487,
+        "r2_spy": 0.237,
+        "sessions": 251,
+        "label": "raw (no adjusted-beta shrinkage); a risk descriptor, never a forecast"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Beta & correlation (raw, 251 daily sessions vs SPY): beta 2.377, correlation 0.487, R\u00b2 0.237 \u2014 a risk descriptor, not a forecast"
+      },
+      {
+       "key": "institutional_sponsorship",
+       "family": "company_market",
+       "label": "Institutional sponsorship, 13F (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no 13F sponsorship product reaches the brief",
+       "needs": "a quarterly EDGAR 13F-HR product keyed by the name's CUSIP (full-text search of information tables, trailing 6 quarters) \u2014 a new crawl class flagged for the parent (study-market Flag M2); the lag is structural (45 days) and would print in every fact",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no 13F sponsorship product reaches the brief; needs a quarterly EDGAR 13F-HR product keyed by the name's CUSIP (full-text search of information tables, trailing 6 quarters) \u2014 a new crawl class flagged for the parent (study-market Flag M2); the lag is structural (45 days) and would print in every fact"
+      },
+      {
+       "key": "industry_group_rank",
+       "family": "company_market",
+       "label": "Industry-group strength rank (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no industry-group rank product reaches the brief",
+       "needs": "the nightly GICS group-rank product (the desk's own groups, equal-weighted, 126-session score) filed into the market product",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no industry-group rank product reaches the brief; needs the nightly GICS group-rank product (the desk's own groups, equal-weighted, 126-session score) filed into the market product"
+      },
+      {
+       "key": "peer_rs_trail",
+       "family": "company_market",
+       "label": "Peer RS trail (addendum 12)",
+       "status": "value",
+       "fact": "Peer RS trail: the spread vs peers runs 0.88 \u2192 -7.11 \u2192 0.12 \u2192 -10.34 points over the last four weekly marks \u2014 a slope of -11.2.",
+       "data": {
+        "trail": [
+         0.88,
+         -7.11,
+         0.12,
+         -10.34
+        ],
+        "spread": -10.34,
+        "slope": -11.22,
+        "bucket": "Automotive Retail",
+        "seat_score": 60,
+        "seat_rule": "the peer RS spread is 10+ points with its trail slope confirming (seat shared with peers_21d, not additive)"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Peer RS trail: the spread vs peers runs 0.88 \u2192 -7.11 \u2192 0.12 \u2192 -10.34 points over the last four weekly marks \u2014 a slope of -11.2"
+      },
+      {
+       "key": "sentiment_surveys",
+       "family": "company_market",
+       "label": "Sentiment surveys (addendum 12)",
+       "status": "unavailable",
+       "fact": null,
+       "data": {},
+       "reason": "no sentiment survey series reaches the desk",
+       "needs": "weekly survey series the desk holds no route to: AAII publishes its Sentiment Survey results weekly (aaii.com), the NAAIM Exposure Index is published weekly by NAAIM, and Investors Intelligence is subscription-only; no feed, connector or file in the desk carries any of the three",
+       "verdict": "unavailable",
+       "deciding": "unavailable \u2014 no sentiment survey series reaches the desk; needs weekly survey series the desk holds no route to: AAII publishes its Sentiment Survey results weekly (aaii.com), the NAAIM Exposure Index is published weekly by NAAIM, and Investors Intelligence is subscription-only; no feed, connector or file in the desk carries any of the three"
       }
      ],
      "material": [
@@ -11075,9 +13891,9 @@
       }
      ],
      "counts": {
-      "items": 87,
-      "value": 82,
-      "unavailable": 5,
+      "items": 173,
+      "value": 139,
+      "unavailable": 34,
       "material": 6
      },
      "calibration_entries": [
@@ -11774,7 +14590,7 @@
    "stop_problem": null,
    "target_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-20T23:15:04.212003+00:00",
+   "scored_at": "2026-10-20T23:26:15.739613+00:00",
    "provenance": {
     "source_system": "ledger_fill",
     "source_timestamp": "2026-10-20"
