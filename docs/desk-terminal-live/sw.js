@@ -1,11 +1,11 @@
 /* Muse Desk service worker — FIXALL T-PWA-01 handoff.
    - The shell cache name is stamped per publish: the publisher
-     replaces f05c86d3ed23 with the shell content hash, so a
+     replaces c2c81eb157a5 with the shell content hash, so a
      changed index.html can never ride under an old cache name.
    - The app shell is network-first on every fetch: a publish is
      visible on the next load; the cache is the offline fallback
      only. The data feed stays network-first as before. */
-var SHELL_BUILD = 'f05c86d3ed23';
+var SHELL_BUILD = 'c2c81eb157a5';
 var SHELL_CACHE = 'muse-desk-shell-' + SHELL_BUILD;
 var SHELL = [
   './',
