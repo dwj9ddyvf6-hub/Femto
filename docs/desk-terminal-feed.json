@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-20T21:20:01.513442+00:00",
- "generated_at_et": "2026-10-20T17:20:01.513442-04:00",
+ "generated_at_utc": "2026-10-20T21:24:45.788638+00:00",
+ "generated_at_et": "2026-10-20T17:24:45.788638-04:00",
  "account": {
-  "equity": "104765.84",
+  "equity": "104590.41",
   "cash": "-191424.28",
-  "buying_power": "365.59",
+  "buying_power": "0",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true,
@@ -1422,13 +1422,13 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 104765.84,
+  "equity": 104590.41,
   "gross_pct": 0.0,
   "position_count": 85,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 27626,
+  "total": 27640,
   "by_kind": {
    "journal": 27,
    "fill": 670,
@@ -1441,7 +1441,7 @@
    "entry_rejected": 2100,
    "exit_skipped": 524,
    "intent_rejected": 184,
-   "slice_sync": 923,
+   "slice_sync": 924,
    "exit_submitted": 37,
    "pass_watchdog": 62,
    "entry_skipped": 6414,
@@ -1460,13 +1460,13 @@
    "sleeve_attribution": 93,
    "ts_rebalance_stamp_repaired": 1,
    "ts_rebalance_starved": 18,
-   "protection_defect": 2079,
+   "protection_defect": 2092,
    "evaluation_heartbeat": 4675,
    "slice_rederive": 1,
    "github_mirror_converged": 1
   }
  },
- "input_hash": "6b70024d29f96e98f897c0e2b29ea8c9132b3e4236a67016cb4fd5e7d6088ea2",
+ "input_hash": "c285fe86b7a43f8735a1d2e81b27c0995dff9c15ccfa9574e14ddd4329e8820a",
  "setups": [],
  "entered_setups": [
   {
@@ -1513,7 +1513,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T21:20:01.513442+00:00",
+   "scored_at": "2026-10-20T21:24:45.788638+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -1708,9 +1708,9 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 67.6632,
-      "sma20": 65.58,
-      "sma50": 66.49,
+      "close": 67.18,
+      "sma20": 65.56,
+      "sma50": 66.48,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -1848,7 +1848,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T21:20:01.513442+00:00",
+    "scored_at": "2026-10-20T21:24:45.788638+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold TEM \u2014 the desk bought it at $66.07. The stop below is the stop staged with this trade.",
@@ -1926,18 +1926,18 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 5:20 PM ET \u00b7 Prices checked 5:20 PM ET",
+     "as_of_text": "Plan as of 5:24 PM ET \u00b7 Prices checked 5:24 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-20-TEM-momentum_rotation-TEM",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-15",
-      "ingested_at": "2026-10-20T21:20:01.513442+00:00",
+      "ingested_at": "2026-10-20T21:24:45.788638+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-20",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:20 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:24 PM ET."
      },
      "conviction": {
       "call": "strongly for",
@@ -3218,7 +3218,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-2.46B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-2.30B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3719,7 +3719,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-2.46B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-2.30B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -6774,7 +6774,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T21:20:01.513442+00:00",
+   "scored_at": "2026-10-20T21:24:45.788638+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-16"
@@ -6998,7 +6998,7 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-20T21:20:01.513442+00:00",
+    "scored_at": "2026-10-20T21:24:45.788638+00:00",
     "plan": null,
     "chart_read": {
      "pattern": "Selling climax + base",
@@ -8219,7 +8219,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-2.46B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-2.30B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8702,7 +8702,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-2.46B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-2.30B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -11746,7 +11746,7 @@
    "stop_problem": null,
    "target_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-20T21:20:01.513442+00:00",
+   "scored_at": "2026-10-20T21:24:45.788638+00:00",
    "provenance": {
     "source_system": "ledger_fill",
     "source_timestamp": "2026-10-20"
