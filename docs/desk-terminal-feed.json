@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-20T23:26:15.739613+00:00",
- "generated_at_et": "2026-10-20T19:26:15.739613-04:00",
+ "generated_at_utc": "2026-10-20T23:53:25.557926+00:00",
+ "generated_at_et": "2026-10-20T19:53:25.557926-04:00",
  "account": {
-  "equity": "106302.01",
+  "equity": "105605.41",
   "cash": "-191424.28",
-  "buying_power": "1457.67",
+  "buying_power": "0",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true,
@@ -1458,28 +1458,28 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 106302.01,
+  "equity": 105605.41,
   "gross_pct": 0.0,
   "position_count": 88,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 28057,
+  "total": 28201,
   "by_kind": {
    "journal": 27,
    "fill": 673,
    "outcome": 9,
    "import_position": 6,
-   "tick": 653,
+   "tick": 654,
    "nightly_reconcile": 55,
    "import_open_order": 51,
    "signal_intent": 8923,
    "entry_rejected": 2100,
    "exit_skipped": 524,
    "intent_rejected": 184,
-   "slice_sync": 932,
+   "slice_sync": 935,
    "exit_submitted": 37,
-   "pass_watchdog": 64,
+   "pass_watchdog": 65,
    "entry_skipped": 6414,
    "entry_bp_breaker": 13,
    "exit_rejected": 44,
@@ -1496,13 +1496,13 @@
    "sleeve_attribution": 96,
    "ts_rebalance_stamp_repaired": 1,
    "ts_rebalance_starved": 18,
-   "protection_defect": 2196,
-   "evaluation_heartbeat": 4961,
+   "protection_defect": 2235,
+   "evaluation_heartbeat": 5061,
    "slice_rederive": 2,
    "github_mirror_converged": 1
   }
  },
- "input_hash": "09c2831284fb523950f06db962555f524b716b30004a05e6d6a3d9a43288940a",
+ "input_hash": "ecbbce1e72c0eee05ee202b0b6e51cd363cc34faca3b8f5ec56c362c693f0f51",
  "setups": [],
  "entered_setups": [
   {
@@ -1549,7 +1549,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T23:26:15.739613+00:00",
+   "scored_at": "2026-10-20T23:53:25.557926+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -1621,7 +1621,7 @@
      ],
      "what_changes_it": "A daily close below $63.50 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on.",
      "record": null,
-     "material_fact": "Dead-cat bounce: confirmed dead \u2014 price closed below the drop low.",
+     "material_fact": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
      "objective_kind_realism": {
       "kind": "recorded_level",
       "band": "considered",
@@ -1744,8 +1744,8 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 67.15,
-      "sma20": 65.88,
+      "close": 67.12,
+      "sma20": 65.87,
       "sma50": 66.32,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
@@ -1884,7 +1884,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T23:26:15.739613+00:00",
+    "scored_at": "2026-10-20T23:53:25.557926+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold TEM \u2014 the desk bought it at $66.07. The stop below is the stop staged with this trade.",
@@ -1962,18 +1962,18 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:26 PM ET \u00b7 Prices checked 7:26 PM ET",
+     "as_of_text": "Plan as of 7:53 PM ET \u00b7 Prices checked 7:53 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-20-TEM-momentum_rotation-TEM",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-15",
-      "ingested_at": "2026-10-20T23:26:15.739613+00:00",
+      "ingested_at": "2026-10-20T23:53:25.557926+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-20",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:26 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:53 PM ET."
      },
      "conviction": {
       "call": "strongly for",
@@ -3254,7 +3254,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.29B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3268,6 +3268,15 @@
        "salience": 0.5,
        "disposition": "considered",
        "gap": true
+      },
+      {
+       "key": "consideration:level_confluence",
+       "factor": "Consideration \u2014 Level confluence count (new)",
+       "reading": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
+       "stance": 0,
+       "salience": 1.25,
+       "disposition": "considered",
+       "gap": false
       },
       {
        "key": "consideration:dead_cat_bounce",
@@ -3311,15 +3320,6 @@
        "reading": "Base metrics: the current base runs 2 weeks at 28% deep; the tape on offer counts at least 8 completed base(s) since the last major low \u2014 late-stage ground (3rd base or later).",
        "stance": 0,
        "salience": 1.06,
-       "disposition": "considered",
-       "gap": false
-      },
-      {
-       "key": "consideration:volume_dry_up",
-       "factor": "Consideration \u2014 Volume dry-up at the pivot (addendum 12)",
-       "reading": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
-       "stance": 0,
-       "salience": 1.05,
        "disposition": "considered",
        "gap": false
       },
@@ -3755,7 +3755,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.29B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3769,6 +3769,15 @@
        "salience": 0.5,
        "disposition": "considered",
        "gap": true
+      },
+      {
+       "key": "consideration:level_confluence",
+       "factor": "Consideration \u2014 Level confluence count (new)",
+       "reading": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
+       "stance": 0,
+       "salience": 1.25,
+       "disposition": "considered",
+       "gap": false
       },
       {
        "key": "consideration:dead_cat_bounce",
@@ -3816,15 +3825,6 @@
        "gap": false
       },
       {
-       "key": "consideration:volume_dry_up",
-       "factor": "Consideration \u2014 Volume dry-up at the pivot (addendum 12)",
-       "reading": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
-       "stance": 0,
-       "salience": 1.05,
-       "disposition": "considered",
-       "gap": false
-      },
-      {
        "key": "visual_read",
        "factor": "Visual chart read",
        "reading": "No visual read of the rendered charts backs this brief \u2014 the charts were rendered but not read back, so this brief weighs the computed geometry only. The absence is stated, not hidden.",
@@ -3845,10 +3845,18 @@
        "gap": false
       }
      ],
-     "paragraph": "The desk's read on TEM: the balance of everything measured leans strongly in this setup's favor. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. Strongest divergence: Confirmed 2026-08-07 \u2014 52 sessions before today \u2014 by its RSI failure swing \u2014 RSI made a higher low and broke its own high: Regular Bullish (RSI): price made a lower low while RSI made a higher low \u2014 $41.73 on 2026-03-30 (RSI 29) vs $40.77 on 2026-07-28 (RSI 33); measured across the major swing pivots. The conflict is the story: Strongest divergence vs MACD state pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 173 items on the desk's list were weighed for this name: Dead-cat bounce: confirmed dead \u2014 price closed below the drop low; Weekly swings carry 1 divergence(s): MACD histogram regular bullish (2026-04-02 \u2192 2026-07-31). What would change the call: a daily close below $63.50 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or macd state turning for the setup.",
+     "paragraph": "The desk's read on TEM: the balance of everything measured leans strongly in this setup's favor. No visual read of the rendered charts backs this brief \u2014 the eye has not been over them. Strongest divergence: Confirmed 2026-08-07 \u2014 52 sessions before today \u2014 by its RSI failure swing \u2014 RSI made a higher low and broke its own high: Regular Bullish (RSI): price made a lower low while RSI made a higher low \u2014 $41.73 on 2026-03-30 (RSI 29) vs $40.77 on 2026-07-28 (RSI 33); measured across the major swing pivots. The conflict is the story: Strongest divergence vs MACD state pull against each other at full strength. Standing out in the full consideration sweep \u2014 all 173 items on the desk's list were weighed for this name: 1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range; Dead-cat bounce: confirmed dead \u2014 price closed below the drop low. What would change the call: a daily close below $63.50 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or macd state turning for the setup.",
      "change_call": "What would change the call: a daily close below $63.50 \u2014 the recent 20-session low \u2014 breaks the price structure this setup rests on; or macd state turning for the setup.",
      "law": "The Desk read carries no weight in the score or the ranking. It is the desk's instinct, recorded before outcomes so its record can be measured; it earns weight only if that record is reviewed and a ruling promotes it.",
      "material": [
+      {
+       "key": "level_confluence",
+       "family": "structure",
+       "fact": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
+       "rule": "14 separate levels stack on one shelf (above price)",
+       "score": 85,
+       "outcome_state": "standing"
+      },
       {
        "key": "dead_cat_bounce",
        "family": "patterns",
@@ -3888,20 +3896,12 @@
        "rule": "a late-stage base (3rd or later) \u2014 caution, direction-neutral",
        "score": 66,
        "outcome_state": "standing"
-      },
-      {
-       "key": "volume_dry_up",
-       "family": "volume",
-       "fact": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
-       "rule": "volume dried up at the base's tight point \u2014 supply exhaustion",
-       "score": 65,
-       "outcome_state": "standing"
       }
      ],
      "consideration_counts": {
       "items": 173,
-      "value": 140,
-      "unavailable": 33,
+      "value": 153,
+      "unavailable": 20,
       "material": 6
      },
      "docket": {
@@ -4142,97 +4142,291 @@
        "key": "swings_dated",
        "family": "structure",
        "label": "Swing highs & lows (dated, confirmed)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "38 confirmed swings on the record (18 highs, 20 lows); the latest high $89.09 confirmed 2026-09-29, the latest low $57.72 confirmed 2026-09-14.",
+       "data": {
+        "n": 38,
+        "last_high": {
+         "i": 304,
+         "t": "2026-09-29",
+         "price": 89.09,
+         "kind": "high"
+        },
+        "last_low": {
+         "i": 293,
+         "t": "2026-09-14",
+         "price": 57.72,
+         "kind": "low"
+        }
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 38 confirmed swings on the record (18 highs, 20 lows); the latest high $89.09 confirmed 2026-09-29, the latest low $57.72 confirmed 2026-09-14"
       },
       {
        "key": "trendlines",
        "family": "structure",
        "label": "Support & resistance trendlines",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "Trendlines: the support line through 2026-07-28 and 2026-08-18 stands at $74.48 (11 touches, warning); the resistance line through 2026-03-25 and 2026-09-29 stands at $95.11 (8 touches, holding).",
+       "data": {
+        "upper": {
+         "from": {
+          "t": "2026-03-25",
+          "price": 50.75
+         },
+         "through": {
+          "t": "2026-09-29",
+          "price": 89.09
+         },
+         "value_now": 95.11,
+         "slope_atr": 0.055,
+         "touches": 8,
+         "state": "holding",
+         "validation": "validated",
+         "internal": false,
+         "break": null
+        },
+        "lower": {
+         "from": {
+          "t": "2026-07-28",
+          "price": 42.9
+         },
+         "through": {
+          "t": "2026-08-18",
+          "price": 49.36
+         },
+         "value_now": 74.48,
+         "slope_atr": 0.117,
+         "touches": 11,
+         "state": "warning",
+         "validation": "validated",
+         "internal": true,
+         "break": {
+          "run_start": 317,
+          "swing_price": 57.72,
+          "swing_t": "2026-09-14",
+          "confirmed": false
+         }
+        }
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Trendlines: the support line through 2026-07-28 and 2026-08-18 stands at $74.48 (11 touches, warning); the resistance line through 2026-03-25 and 2026-09-29 sta"
       },
       {
        "key": "zones_swings",
        "family": "structure",
        "label": "Zones from swings",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "8 tested levels on the chart: nearest support $65.82, nearest resistance $68.30; each carries its test count in the chart read.",
+       "data": {
+        "n_levels": 8
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 8 tested levels on the chart: nearest support $65.82, nearest resistance $68.30; each carries its test count in the chart read"
       },
       {
        "key": "zones_round",
        "family": "structure",
        "label": "Zones from round numbers",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "Round numbers bracket price: $60.00 below (10.1% away) and $70.00 above.",
+       "data": {
+        "below": 60.0,
+        "above": 70.0
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Round numbers bracket price: $60.00 below (10.1% away) and $70.00 above"
       },
       {
        "key": "zones_volume_profile",
        "family": "structure",
        "label": "Zones from the volume profile",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "Volume profile (last 120 sessions, daily-bar approximation): the point of control is $52.25; the value area runs $40.77\u2013$67.35 and price sits inside it.",
+       "data": {
+        "poc": 52.25,
+        "vah": 67.35,
+        "val": 40.77,
+        "heavy": [
+         {
+          "lo": 45.6,
+          "hi": 46.81,
+          "share": 0.059
+         },
+         {
+          "lo": 46.81,
+          "hi": 48.02,
+          "share": 0.045
+         },
+         {
+          "lo": 48.02,
+          "hi": 49.23,
+          "share": 0.058
+         },
+         {
+          "lo": 49.23,
+          "hi": 50.43,
+          "share": 0.057
+         },
+         {
+          "lo": 50.43,
+          "hi": 51.64,
+          "share": 0.047
+         },
+         {
+          "lo": 51.64,
+          "hi": 52.85,
+          "share": 0.066
+         },
+         {
+          "lo": 54.06,
+          "hi": 55.27,
+          "share": 0.041
+         },
+         {
+          "lo": 60.1,
+          "hi": 61.31,
+          "share": 0.049
+         },
+         {
+          "lo": 63.72,
+          "hi": 64.93,
+          "share": 0.043
+         },
+         {
+          "lo": 66.14,
+          "hi": 67.35,
+          "share": 0.045
+         }
+        ]
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Volume profile (last 120 sessions, daily-bar approximation): the point of control is $52.25; the value area runs $40.77\u2013$67.35 and price sits inside it"
       },
       {
        "key": "level_confluence",
        "family": "structure",
        "label": "Level confluence count (new)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
+       "data": {
+        "below": [
+         [
+          52.955,
+          "unfilled gap"
+         ]
+        ],
+        "above": [
+         [
+          74.59,
+          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+         ],
+         [
+          74.48,
+          "support trendline through the 2026-07-28 and 2026-08-18 pivots (11 touches, broken on a close \u2014 a warning until the prior swing goes) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests"
+         ],
+         [
+          74.2,
+          "20-day average"
+         ],
+         [
+          72.98,
+          "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
+         ],
+         [
+          72.55,
+          "50.0% retracement"
+         ],
+         [
+          71.4,
+          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+         ],
+         [
+          70.0,
+          "round number"
+         ],
+         [
+          68.3,
+          "50-day average"
+         ],
+         [
+          68.3,
+          "50-day average"
+         ],
+         [
+          65.82,
+          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+         ],
+         [
+          65.05,
+          "38.2% retracement"
+         ],
+         [
+          62.54,
+          "pivot cluster \u2014 5 confirmed pivots in 5 separate tests"
+         ],
+         [
+          60.0,
+          "round number"
+         ],
+         [
+          57.74,
+          "pivot cluster \u2014 4 confirmed pivots in 4 separate tests"
+         ],
+         [
+          56.83,
+          "200-day average"
+         ]
+        ]
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "material",
+       "deciding": "material \u2014 14 separate levels stack on one shelf (above price)"
       },
       {
        "key": "retests_reclaims",
        "family": "structure",
        "label": "Retests & reclaims (new)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-06; lost the 50-day average on 2026-10-16; tested the 50-day average from above on 2026-10-14 and held (low $66.35 vs average $66.96).",
+       "data": {
+        "events": [
+         "lost the 20-day average on 2026-10-06",
+         "lost the 50-day average on 2026-10-16",
+         "tested the 50-day average from above on 2026-10-14 and held (low $66.35 vs average $66.96)"
+        ]
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Retests & reclaims (last 20 sessions): lost the 20-day average on 2026-10-06; lost the 50-day average on 2026-10-16; tested the 50-day average from above on 202"
       },
       {
        "key": "structure_state",
        "family": "structure",
        "label": "Structure intact / broken, warnings",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "swing sequence: higher highs, higher lows; no boundary has been lost \u2014 structure stands as drawn; a boundary break is at WARNING (closed through, prior swing intact). The read's invalidation sits at $53.15.",
+       "data": {
+        "sequence": "higher highs, higher lows",
+        "pattern_state": "intact",
+        "warnings": 1
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 swing sequence: higher highs, higher lows; no boundary has been lost \u2014 structure stands as drawn; a boundary break is at WARNING (closed through, prior swing in"
       },
       {
        "key": "fib_retracement",
@@ -4348,7 +4542,7 @@
        "family": "levels",
        "label": "Anchored VWAP (addendum 2)",
        "status": "value",
-       "fact": "Anchored VWAP \u2014 from the swing low (2026-07-28): $66.59 \u2014 price is above it; from the swing high (2025-10-09): $62.03 \u2014 price is above it. An earnings-anchored line needs the last report date, which the desk's calendar does not carry (see Past earnings reactions).",
+       "fact": "Anchored VWAP \u2014 from the swing low (2026-07-28): $66.59 \u2014 price is above it; from the swing high (2025-10-09): $62.03 \u2014 price is above it; from the ytd (2026-01-02): $57.96 \u2014 price is above it; from the gap day (2026-09-17): $75.86 \u2014 price is below it. An earnings-anchored line needs the last report date, which the desk's calendar does not carry (see Past earnings reactions).",
        "data": {
         "swing_low": {
          "t": "2026-07-28",
@@ -4357,12 +4551,20 @@
         "swing_high": {
          "t": "2025-10-09",
          "value": 62.03
+        },
+        "ytd": {
+         "t": "2026-01-02",
+         "value": 57.96
+        },
+        "gap_day": {
+         "t": "2026-09-17",
+         "value": 75.86
         }
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Anchored VWAP \u2014 from the swing low (2026-07-28): $66.59 \u2014 price is above it; from the swing high (2025-10-09): $62.03 \u2014 price is above it"
+       "deciding": "considered \u2014 Anchored VWAP \u2014 from the swing low (2026-07-28): $66.59 \u2014 price is above it; from the swing high (2025-10-09): $62.03 \u2014 price is above it; from the ytd (2026-01"
       },
       {
        "key": "averages",
@@ -5475,10 +5677,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 80.9% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $67.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T22:52:26.061425+00:00.",
+       "fact": "Standing IV on the name: 81.1% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $67.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T23:34:31.321626+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 80.9,
+         "iv_pct": 81.1,
          "expiry": "2026-11-27",
          "dte": 38,
          "strike": 67.0
@@ -5487,17 +5689,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 80.9% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $67.00; Alpaca snapshot IV from the desk's options product, built 20"
+       "deciding": "considered \u2014 Standing IV on the name: 81.1% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $67.00; Alpaca snapshot IV from the desk's options product, built 20"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 85.8% annualized. IV 80.9% vs HV 85.8% \u2014 a spread of -4.9 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 85.8% annualized. IV 81.1% vs HV 85.8% \u2014 a spread of -4.7 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 85.8,
-        "iv_pct": 80.9,
+        "iv_pct": 81.1,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -6900,8 +7102,8 @@
        },
        "reason": null,
        "needs": null,
-       "verdict": "material",
-       "deciding": "material \u2014 volume dried up at the base's tight point \u2014 supply exhaustion"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands"
       },
       {
        "key": "vwap_bands",
@@ -7199,78 +7401,113 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (38 days): \u00b1$17.42 by the IV form (IV 80.9%).",
+       "fact": "Expected move to 2026-11-27 (38 days): \u00b1$17.47 by the IV form (IV 81.1%); \u00b1$11.85 by the 0.85x straddle form.",
        "data": {
         "spot": 66.75,
-        "iv_pct": 80.9,
+        "iv_pct": 81.1,
         "expiry": "2026-11-27",
         "dte": 38,
-        "iv_form": 17.42
+        "iv_form": 17.47,
+        "straddle_form": 11.85
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (38 days): \u00b1$17.42 by the IV form (IV 80.9%)"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (38 days): \u00b1$17.47 by the IV form (IV 81.1%); \u00b1$11.85 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
        "family": "options",
        "label": "Gamma flip, per name (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $80.00; net gamma $+0.00B per 1% move \u2014 price sits in the amplifying regime (below the flip).",
+       "data": {
+        "flip_strike": 80.0,
+        "net_gex": 1468885.34,
+        "contracts_used": 342,
+        "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $80.00; net gamma $+0.00B per 1% move \u2014 price sits in the ampl"
       },
       {
        "key": "gamma_walls_name",
        "family": "options",
        "label": "Call wall / put wall, per name (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "Gamma walls (model estimate): the call wall sits at $75.00, the put wall at $65.00.",
+       "data": {
+        "call_wall": 75.0,
+        "put_wall": 65.0
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Gamma walls (model estimate): the call wall sits at $75.00, the put wall at $65.00"
       },
       {
        "key": "max_pain_name",
        "family": "options",
        "label": "Max pain, per name (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "Max pain: the payout-minimising strike for the 2026-10-23 expiry is $70.00 (per-expiry values filed in the data).",
+       "data": {
+        "by_expiry": {
+         "2026-10-23": 70.0,
+         "2026-10-30": 71.0,
+         "2026-11-06": 70.0,
+         "2026-11-13": 70.0,
+         "2026-11-20": 65.0,
+         "2026-11-27": 69.0,
+         "2026-12-18": 65.0,
+         "2027-01-15": 55.0,
+         "2027-02-19": 70.0,
+         "2027-03-19": 70.0,
+         "2027-04-16": 75.0
+        }
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Max pain: the payout-minimising strike for the 2026-10-23 expiry is $70.00 (per-expiry values filed in the data)"
       },
       {
        "key": "oi_concentration_name",
        "family": "options",
        "label": "OI strike concentration (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "OI concentration: 311,008 contracts across the retained map; the top strike (100.0, 2027-01-15) holds 6% of it.",
+       "data": {
+        "total_oi": 311008,
+        "top_share_pct": 6.5,
+        "top": {
+         "expiry": "2027-01-15",
+         "strike": "100.0"
+        }
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 OI concentration: 311,008 contracts across the retained map; the top strike (100.0, 2027-01-15) holds 6% of it"
       },
       {
        "key": "iv_skew_name",
        "family": "options",
        "label": "IV skew, per name (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
+       "data": {
+        "expiry": "2026-11-27",
+        "atm_iv": 0.7763,
+        "put_iv_5pct_otm": 0.8085,
+        "skew_pts": 0.03
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such)"
       },
       {
        "key": "iv_term_name",
@@ -7292,9 +7529,9 @@
        "fact": null,
        "data": {},
        "reason": "no options trades tape reaches the desk",
-       "needs": "an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed as of 2026-10-20 \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints",
+       "needs": "an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed at this build \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints",
        "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no options trades tape reaches the desk; needs an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed as of 2026-10-20 \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints"
+       "deciding": "unavailable \u2014 no options trades tape reaches the desk; needs an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed at this build \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints"
       },
       {
        "key": "borrow_lending_name",
@@ -7558,6 +7795,13 @@
      ],
      "material": [
       {
+       "key": "level_confluence",
+       "family": "structure",
+       "fact": "1 separate level stacks at $52.95 (unfilled gap at $52.95) below price; 14 separate levels stack between $56.83 and $74.59 around $67.65 (50-day average at $68.30; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $65.82; 38.2% retracement at $65.05; and 11 more levels in the stack) above. Stacking is counted within half a daily range.",
+       "rule": "14 separate levels stack on one shelf (above price)",
+       "score": 85
+      },
+      {
        "key": "dead_cat_bounce",
        "family": "patterns",
        "fact": "Dead-cat bounce: confirmed dead \u2014 price closed below the drop low.",
@@ -7591,19 +7835,12 @@
        "fact": "Base metrics: the current base runs 2 weeks at 28% deep; the tape on offer counts at least 8 completed base(s) since the last major low \u2014 late-stage ground (3rd base or later).",
        "rule": "a late-stage base (3rd or later) \u2014 caution, direction-neutral",
        "score": 66
-      },
-      {
-       "key": "volume_dry_up",
-       "family": "volume",
-       "fact": "Volume dry-up: the quietest of the last 10 sessions ran at 0.53x the 50-session mean (3 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
-       "rule": "volume dried up at the base's tight point \u2014 supply exhaustion",
-       "score": 65
       }
      ],
      "counts": {
       "items": 173,
-      "value": 140,
-      "unavailable": 33,
+      "value": 153,
+      "unavailable": 20,
       "material": 6
      },
      "calibration_entries": [
@@ -8174,7 +8411,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T23:26:15.739613+00:00",
+   "scored_at": "2026-10-20T23:53:25.557926+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-16"
@@ -8232,9 +8469,9 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 60.42,
-      "sma20": 59.45,
-      "sma50": 59.57,
+      "close": 60.2618,
+      "sma20": 59.55,
+      "sma50": 59.56,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -8398,7 +8635,7 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-20T23:26:15.739613+00:00",
+    "scored_at": "2026-10-20T23:53:25.557926+00:00",
     "plan": null,
     "chart_read": {
      "pattern": "Selling climax + base",
@@ -9619,7 +9856,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.29B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10102,7 +10339,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.70B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.29B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10247,8 +10484,8 @@
      ],
      "consideration_counts": {
       "items": 173,
-      "value": 139,
-      "unavailable": 34,
+      "value": 152,
+      "unavailable": 21,
       "material": 6
      },
      "docket": {
@@ -10490,97 +10727,211 @@
        "key": "swings_dated",
        "family": "structure",
        "label": "Swing highs & lows (dated, confirmed)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "47 confirmed swings on the record (24 highs, 23 lows); the latest high $66.02 confirmed 2026-10-02, the latest low $58.92 confirmed 2026-10-01.",
+       "data": {
+        "n": 47,
+        "last_high": {
+         "i": 307,
+         "t": "2026-10-02",
+         "price": 66.02,
+         "kind": "high"
+        },
+        "last_low": {
+         "i": 306,
+         "t": "2026-10-01",
+         "price": 58.92,
+         "kind": "low"
+        }
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 47 confirmed swings on the record (24 highs, 23 lows); the latest high $66.02 confirmed 2026-10-02, the latest low $58.92 confirmed 2026-10-01"
       },
       {
        "key": "trendlines",
        "family": "structure",
        "label": "Support & resistance trendlines",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "Trendlines: none drawn on this read.",
+       "data": {
+        "upper": null,
+        "lower": null
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Trendlines: none drawn on this read"
       },
       {
        "key": "zones_swings",
        "family": "structure",
        "label": "Zones from swings",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "8 tested levels on the chart: nearest support $59.86, nearest resistance $61.84; each carries its test count in the chart read.",
+       "data": {
+        "n_levels": 8
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 8 tested levels on the chart: nearest support $59.86, nearest resistance $61.84; each carries its test count in the chart read"
       },
       {
        "key": "zones_round",
        "family": "structure",
        "label": "Zones from round numbers",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "Round numbers bracket price: $60.00 below (0.4% away) and $70.00 above.",
+       "data": {
+        "below": 60.0,
+        "above": 70.0
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Round numbers bracket price: $60.00 below (0.4% away) and $70.00 above"
       },
       {
        "key": "zones_volume_profile",
        "family": "structure",
        "label": "Zones from the volume profile",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "Volume profile (last 120 sessions, daily-bar approximation): the point of control is $66.19; the value area runs $60.29\u2013$71.40 and price sits below it.",
+       "data": {
+        "poc": 66.19,
+        "vah": 71.4,
+        "val": 60.29,
+        "heavy": [
+         {
+          "lo": 62.37,
+          "hi": 63.07,
+          "share": 0.043
+         },
+         {
+          "lo": 63.07,
+          "hi": 63.76,
+          "share": 0.058
+         },
+         {
+          "lo": 63.76,
+          "hi": 64.46,
+          "share": 0.058
+         },
+         {
+          "lo": 64.46,
+          "hi": 65.15,
+          "share": 0.053
+         },
+         {
+          "lo": 65.15,
+          "hi": 65.85,
+          "share": 0.048
+         },
+         {
+          "lo": 65.85,
+          "hi": 66.54,
+          "share": 0.071
+         },
+         {
+          "lo": 66.54,
+          "hi": 67.24,
+          "share": 0.046
+         },
+         {
+          "lo": 67.24,
+          "hi": 67.93,
+          "share": 0.059
+         },
+         {
+          "lo": 69.32,
+          "hi": 70.02,
+          "share": 0.048
+         },
+         {
+          "lo": 70.02,
+          "hi": 70.71,
+          "share": 0.061
+         },
+         {
+          "lo": 73.49,
+          "hi": 74.18,
+          "share": 0.05
+         }
+        ]
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Volume profile (last 120 sessions, daily-bar approximation): the point of control is $66.19; the value area runs $60.29\u2013$71.40 and price sits below it"
       },
       {
        "key": "level_confluence",
        "family": "structure",
        "label": "Level confluence count (new)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "3 separate levels stack between $58.92 and $60.00 around $59.59 (round number at $60.00; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $59.86; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $58.92) below price; 2 separate levels stack between $61.84 and $62.01 around $61.92 (20-day average at $62.01; pivot cluster \u2014 6 confirmed pivots in 6 separate tests at $61.84) above. Stacking is counted within half a daily range.",
+       "data": {
+        "below": [
+         [
+          60.0,
+          "round number"
+         ],
+         [
+          59.86,
+          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+         ],
+         [
+          58.92,
+          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
+         ]
+        ],
+        "above": [
+         [
+          62.01,
+          "20-day average"
+         ],
+         [
+          61.84,
+          "pivot cluster \u2014 6 confirmed pivots in 6 separate tests"
+         ]
+        ]
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 3 separate levels stack between $58.92 and $60.00 around $59.59 (round number at $60.00; pivot cluster \u2014 1 confirmed pivot in 1 separate test at $59.86; pivot c"
       },
       {
        "key": "retests_reclaims",
        "family": "structure",
        "label": "Retests & reclaims (new)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "Retests & reclaims (last 20 sessions): no reclaim, loss, retest or retest-failure printed.",
+       "data": {
+        "events": []
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 Retests & reclaims (last 20 sessions): no reclaim, loss, retest or retest-failure printed"
       },
       {
        "key": "structure_state",
        "family": "structure",
        "label": "Structure intact / broken, warnings",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "family computation failed: NameError: name '_avwap' is not defined",
+       "status": "value",
+       "fact": "swing sequence: lower highs, lower lows; no boundary has been lost \u2014 structure stands as drawn. The read's invalidation sits at $58.92.",
+       "data": {
+        "sequence": "lower highs, lower lows",
+        "pattern_state": "intact",
+        "warnings": 0
+       },
+       "reason": null,
        "needs": null,
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 family computation failed: NameError: name '_avwap' is not defined"
+       "verdict": "considered",
+       "deciding": "considered \u2014 swing sequence: lower highs, lower lows; no boundary has been lost \u2014 structure stands as drawn"
       },
       {
        "key": "fib_retracement",
@@ -10696,7 +11047,7 @@
        "family": "levels",
        "label": "Anchored VWAP (addendum 2)",
        "status": "value",
-       "fact": "Anchored VWAP \u2014 from the swing low (2026-03-30): $68.52 \u2014 price is below it; from the swing high (2026-01-23): $69.56 \u2014 price is below it. An earnings-anchored line needs the last report date, which the desk's calendar does not carry (see Past earnings reactions).",
+       "fact": "Anchored VWAP \u2014 from the swing low (2026-03-30): $68.52 \u2014 price is below it; from the swing high (2026-01-23): $69.56 \u2014 price is below it; from the ytd (2026-01-02): $71.10 \u2014 price is below it; from the gap day (2026-09-23): $61.77 \u2014 price is below it. An earnings-anchored line needs the last report date, which the desk's calendar does not carry (see Past earnings reactions).",
        "data": {
         "swing_low": {
          "t": "2026-03-30",
@@ -10705,12 +11056,20 @@
         "swing_high": {
          "t": "2026-01-23",
          "value": 69.56
+        },
+        "ytd": {
+         "t": "2026-01-02",
+         "value": 71.1
+        },
+        "gap_day": {
+         "t": "2026-09-23",
+         "value": 61.77
         }
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Anchored VWAP \u2014 from the swing low (2026-03-30): $68.52 \u2014 price is below it; from the swing high (2026-01-23): $69.56 \u2014 price is below it"
+       "deciding": "considered \u2014 Anchored VWAP \u2014 from the swing low (2026-03-30): $68.52 \u2014 price is below it; from the swing high (2026-01-23): $69.56 \u2014 price is below it; from the ytd (2026-01"
       },
       {
        "key": "averages",
@@ -11777,11 +12136,11 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "This position is an options package; the implied move the desk priced at selection rides in the plan's own implied-range note. Standing IV on the name: 74.0% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $60.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T22:52:26.061425+00:00.",
+       "fact": "This position is an options package; the implied move the desk priced at selection rides in the plan's own implied-range note. Standing IV on the name: 74.1% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $60.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T23:34:31.321626+00:00.",
        "data": {
         "package": true,
         "atm_iv": {
-         "iv_pct": 74.0,
+         "iv_pct": 74.1,
          "expiry": "2026-11-27",
          "dte": 38,
          "strike": 60.0
@@ -11797,10 +12156,10 @@
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 50.7% annualized. IV 74.0% vs HV 50.7% \u2014 a spread of +23.3 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 50.7% annualized. IV 74.1% vs HV 50.7% \u2014 a spread of +23.4 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 50.7,
-        "iv_pct": 74.0,
+        "iv_pct": 74.1,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -13489,78 +13848,112 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (38 days): \u00b1$14.39 by the IV form (IV 74.0%).",
+       "fact": "Expected move to 2026-11-27 (38 days): \u00b1$14.41 by the IV form (IV 74.1%); \u00b1$9.72 by the 0.85x straddle form.",
        "data": {
         "spot": 60.26,
-        "iv_pct": 74.0,
+        "iv_pct": 74.1,
         "expiry": "2026-11-27",
         "dte": 38,
-        "iv_form": 14.39
+        "iv_form": 14.41,
+        "straddle_form": 9.72
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (38 days): \u00b1$14.39 by the IV form (IV 74.0%)"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (38 days): \u00b1$14.41 by the IV form (IV 74.1%); \u00b1$9.72 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
        "family": "options",
        "label": "Gamma flip, per name (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.00B per 1% move \u2014 price sits with no flip inside the chain.",
+       "data": {
+        "flip_strike": null,
+        "net_gex": -2736055.56,
+        "contracts_used": 409,
+        "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.00B per 1% move \u2014 price sits with no flip ins"
       },
       {
        "key": "gamma_walls_name",
        "family": "options",
        "label": "Call wall / put wall, per name (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "Gamma walls (model estimate): the call wall sits at $80.00, the put wall at $60.00.",
+       "data": {
+        "call_wall": 80.0,
+        "put_wall": 60.0
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Gamma walls (model estimate): the call wall sits at $80.00, the put wall at $60.00"
       },
       {
        "key": "max_pain_name",
        "family": "options",
        "label": "Max pain, per name (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "Max pain: the payout-minimising strike for the 2026-10-23 expiry is $61.00 (per-expiry values filed in the data).",
+       "data": {
+        "by_expiry": {
+         "2026-10-23": 61.0,
+         "2026-10-30": 61.0,
+         "2026-11-06": 62.0,
+         "2026-11-13": 60.0,
+         "2026-11-20": 65.0,
+         "2026-11-27": 60.0,
+         "2026-12-18": 62.0,
+         "2027-01-15": 62.0,
+         "2027-02-19": 70.0,
+         "2027-03-19": 66.0
+        }
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 Max pain: the payout-minimising strike for the 2026-10-23 expiry is $61.00 (per-expiry values filed in the data)"
       },
       {
        "key": "oi_concentration_name",
        "family": "options",
        "label": "OI strike concentration (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "OI concentration: 717,191 contracts across the retained map; the top strike (13.0, 2026-12-18) holds 5% of it.",
+       "data": {
+        "total_oi": 717191,
+        "top_share_pct": 5.3,
+        "top": {
+         "expiry": "2026-12-18",
+         "strike": "13.0"
+        }
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 OI concentration: 717,191 contracts across the retained map; the top strike (13.0, 2026-12-18) holds 5% of it"
       },
       {
        "key": "iv_skew_name",
        "family": "options",
        "label": "IV skew, per name (addendum 12)",
-       "status": "unavailable",
-       "fact": null,
-       "data": {},
-       "reason": "no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name",
-       "needs": "the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)",
-       "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no retained per-contract chain map reaches the brief \u2014 the options product's aggregation did not carry one for this name; needs the desk's options gap product with the retained chain map (aggregate_chain retention, addendum 12 prerequisite P0)"
+       "status": "value",
+       "fact": "IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
+       "data": {
+        "expiry": "2026-11-27",
+        "atm_iv": 0.7558,
+        "put_iv_5pct_otm": 0.7695,
+        "skew_pts": 0.01
+       },
+       "reason": null,
+       "needs": null,
+       "verdict": "considered",
+       "deciding": "considered \u2014 IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such)"
       },
       {
        "key": "iv_term_name",
@@ -13582,9 +13975,9 @@
        "fact": null,
        "data": {},
        "reason": "no options trades tape reaches the desk",
-       "needs": "an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed as of 2026-10-20 \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints",
+       "needs": "an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed at this build \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints",
        "verdict": "unavailable",
-       "deciding": "unavailable \u2014 no options trades tape reaches the desk; needs an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed as of 2026-10-20 \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints"
+       "deciding": "unavailable \u2014 no options trades tape reaches the desk; needs an executed options trades tape: Alpaca v1beta1 options trades (GET /v1beta1/options/trades and/or the options stream, OPRA feed) if the desk's subscription admits it \u2014 unprobed at this build \u2014 or a flow vendor subscription (e.g. Unusual Whales). Snapshots and daily contract volume cannot substitute: they carry no prints"
       },
       {
        "key": "borrow_lending_name",
@@ -13892,8 +14285,8 @@
      ],
      "counts": {
       "items": 173,
-      "value": 139,
-      "unavailable": 34,
+      "value": 152,
+      "unavailable": 21,
       "material": 6
      },
      "calibration_entries": [
@@ -14590,7 +14983,7 @@
    "stop_problem": null,
    "target_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-20T23:26:15.739613+00:00",
+   "scored_at": "2026-10-20T23:53:25.557926+00:00",
    "provenance": {
     "source_system": "ledger_fill",
     "source_timestamp": "2026-10-20"
