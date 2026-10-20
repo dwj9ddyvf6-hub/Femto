@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-20T21:29:54.722925+00:00",
- "generated_at_et": "2026-10-20T17:29:54.722925-04:00",
+ "generated_at_utc": "2026-10-20T21:34:57.375148+00:00",
+ "generated_at_et": "2026-10-20T17:34:57.375148-04:00",
  "account": {
-  "equity": "104590.41",
+  "equity": "104464.99",
   "cash": "-191424.28",
   "buying_power": "0",
   "status": "ACTIVE",
@@ -1422,26 +1422,26 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 104590.41,
+  "equity": 104464.99,
   "gross_pct": 0.0,
   "position_count": 85,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 27640,
+  "total": 27704,
   "by_kind": {
    "journal": 27,
    "fill": 670,
    "outcome": 9,
    "import_position": 6,
-   "tick": 649,
+   "tick": 650,
    "nightly_reconcile": 54,
    "import_open_order": 51,
    "signal_intent": 8919,
    "entry_rejected": 2100,
    "exit_skipped": 524,
    "intent_rejected": 184,
-   "slice_sync": 924,
+   "slice_sync": 925,
    "exit_submitted": 37,
    "pass_watchdog": 62,
    "entry_skipped": 6414,
@@ -1460,13 +1460,13 @@
    "sleeve_attribution": 93,
    "ts_rebalance_stamp_repaired": 1,
    "ts_rebalance_starved": 18,
-   "protection_defect": 2092,
-   "evaluation_heartbeat": 4675,
+   "protection_defect": 2105,
+   "evaluation_heartbeat": 4724,
    "slice_rederive": 1,
    "github_mirror_converged": 1
   }
  },
- "input_hash": "c285fe86b7a43f8735a1d2e81b27c0995dff9c15ccfa9574e14ddd4329e8820a",
+ "input_hash": "bf1bf469b5cdb16253030963a666a23322f09ba6c14c1c4713f4c9d2bb0db48e",
  "setups": [],
  "entered_setups": [
   {
@@ -1513,7 +1513,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T21:29:54.722925+00:00",
+   "scored_at": "2026-10-20T21:34:57.375148+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -1708,7 +1708,7 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 67.3,
+      "close": 67.3001,
       "sma20": 65.56,
       "sma50": 66.48,
       "pivot_sequence": null,
@@ -1848,7 +1848,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T21:29:54.722925+00:00",
+    "scored_at": "2026-10-20T21:34:57.375148+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold TEM \u2014 the desk bought it at $66.07. The stop below is the stop staged with this trade.",
@@ -1926,18 +1926,18 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 5:29 PM ET \u00b7 Prices checked 5:29 PM ET",
+     "as_of_text": "Plan as of 5:34 PM ET \u00b7 Prices checked 5:34 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-20-TEM-momentum_rotation-TEM",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-15",
-      "ingested_at": "2026-10-20T21:29:54.722925+00:00",
+      "ingested_at": "2026-10-20T21:34:57.375148+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-20",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:29 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 5:34 PM ET."
      },
      "conviction": {
       "call": "strongly for",
@@ -3218,7 +3218,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-2.36B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-2.29B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3719,7 +3719,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-2.36B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-2.29B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -5632,7 +5632,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 81.0% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $67.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T20:51:59.965287+00:00.",
+       "fact": "Standing IV on the name: 81.0% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $67.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T21:34:02.017817+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 81.0,
@@ -6774,7 +6774,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T21:29:54.722925+00:00",
+   "scored_at": "2026-10-20T21:34:57.375148+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-16"
@@ -6998,7 +6998,7 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-20T21:29:54.722925+00:00",
+    "scored_at": "2026-10-20T21:34:57.375148+00:00",
     "plan": null,
     "chart_read": {
      "pattern": "Selling climax + base",
@@ -8219,7 +8219,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-2.36B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-2.29B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8702,7 +8702,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-2.36B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $465. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-2.29B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10490,11 +10490,11 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "This position is an options package; the implied move the desk priced at selection rides in the plan's own implied-range note. Standing IV on the name: 74.1% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $60.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T20:51:59.965287+00:00.",
+       "fact": "This position is an options package; the implied move the desk priced at selection rides in the plan's own implied-range note. Standing IV on the name: 73.9% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $60.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T21:34:02.017817+00:00.",
        "data": {
         "package": true,
         "atm_iv": {
-         "iv_pct": 74.1,
+         "iv_pct": 73.9,
          "expiry": "2026-11-27",
          "dte": 38,
          "strike": 60.0
@@ -10510,10 +10510,10 @@
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 50.7% annualized. IV 74.1% vs HV 50.7% \u2014 a spread of +23.4 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 50.7% annualized. IV 73.9% vs HV 50.7% \u2014 a spread of +23.2 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 50.7,
-        "iv_pct": 74.1,
+        "iv_pct": 73.9,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -11746,7 +11746,7 @@
    "stop_problem": null,
    "target_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-20T21:29:54.722925+00:00",
+   "scored_at": "2026-10-20T21:34:57.375148+00:00",
    "provenance": {
     "source_system": "ledger_fill",
     "source_timestamp": "2026-10-20"
