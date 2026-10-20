@@ -1,14 +1,14 @@
 {
- "generated_at_utc": "2026-10-20T07:54:53.961317+00:00",
- "generated_at_et": "2026-10-20T03:54:53.961317-04:00",
+ "generated_at_utc": "2026-10-20T08:00:03.798669+00:00",
+ "generated_at_et": "2026-10-20T04:00:03.798669-04:00",
  "account": {
-  "equity": "97124.56",
+  "equity": "97108.23",
   "cash": "-213043.52",
   "buying_power": "0",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true,
-  "positions_value": 310168.08060000004
+  "positions_value": 310147.7606000001
  },
  "positions_known": true,
  "positions": [
@@ -324,10 +324,10 @@
    "symbol": "MU",
    "qty": 9.0,
    "avg_entry": 906.25,
-   "current": 882.84,
-   "unrealized_pl": -210.69,
-   "unrealized_pl_pct": -2.5829999999999997,
-   "market_value": "7945.56",
+   "current": 882.0,
+   "unrealized_pl": -218.25,
+   "unrealized_pl_pct": -2.6759999999999997,
+   "market_value": "7938",
    "side": "long",
    "sleeve": "momentum"
   },
@@ -467,10 +467,10 @@
    "symbol": "QQQ",
    "qty": 80.0,
    "avg_entry": 721.34025,
-   "current": 715.74,
-   "unrealized_pl": -448.02,
-   "unrealized_pl_pct": -0.776,
-   "market_value": "57259.2",
+   "current": 715.63,
+   "unrealized_pl": -456.82,
+   "unrealized_pl_pct": -0.792,
+   "market_value": "57250.4",
    "side": "long",
    "sleeve": "aurelia_ndx"
   },
@@ -544,10 +544,10 @@
    "symbol": "TQQQ",
    "qty": 22.0,
    "avg_entry": 72.249091,
-   "current": 69.9,
-   "unrealized_pl": -51.680002,
-   "unrealized_pl_pct": -3.251,
-   "market_value": "1537.8",
+   "current": 69.72,
+   "unrealized_pl": -55.640002,
+   "unrealized_pl_pct": -3.501,
+   "market_value": "1533.84",
    "side": "long",
    "sleeve": "aurelia_ndx"
   },
@@ -1045,13 +1045,13 @@
   ]
  },
  "exposure": {
-  "gross_notional": 311916.08060000004,
-  "equity": 97124.56,
+  "gross_notional": 311895.7606000001,
+  "equity": 97108.23,
   "gross_pct": 321.2,
   "position_count": 54,
   "by_sleeve": {
    "rsi_meanrev": 8805.02,
-   "momentum": 29377.120000000003,
+   "momentum": 29369.559999999998,
    "ema_vwap": 50446.49,
    "red_day_reversal": 15325.2,
    "snapback": 6570.4706,
@@ -1063,11 +1063,11 @@
    "rule_1w_cyan_mom_adx": 960.75,
    "daily_cyan_gbm": 1972.24,
    "leaps_momentum": 2545.0,
-   "aurelia_ndx": 58797.0
+   "aurelia_ndx": 58784.24
   }
  },
  "ledger_counts": {
-  "total": 22755,
+  "total": 22768,
   "by_kind": {
    "journal": 27,
    "fill": 642,
@@ -1080,7 +1080,7 @@
    "entry_rejected": 2098,
    "exit_skipped": 494,
    "intent_rejected": 184,
-   "slice_sync": 815,
+   "slice_sync": 816,
    "exit_submitted": 33,
    "pass_watchdog": 54,
    "entry_skipped": 6218,
@@ -1099,13 +1099,13 @@
    "sleeve_attribution": 62,
    "ts_rebalance_stamp_repaired": 1,
    "ts_rebalance_starved": 10,
-   "protection_defect": 768,
+   "protection_defect": 780,
    "evaluation_heartbeat": 1821,
    "slice_rederive": 1,
    "github_mirror_converged": 1
   }
  },
- "input_hash": "0acd5bef2dd56701081049a9620e4aeb920f781b3f24154e09d9cf1e7e240dad",
+ "input_hash": "e522b1ac803233e7a33263efb10603b78fddfcda3c4638afeb6ff42b01731c05",
  "setups": [],
  "entered_setups": [],
  "departures": [
@@ -1155,11 +1155,11 @@
   "regime": "Downtrend",
   "regime_evidence": [
    "QQQ closed below its 50-day average (-1.1%) with a 20-day slope of -3.1% \u2014 the desk's regime rule reads downtrend.",
-   "VIX closed at 18.56 (+0.7% on the day) (VIX reading as of 2026-10-20)."
+   "VIX closed at 18.59 (+0.8% on the day) (VIX reading as of 2026-10-20)."
   ],
   "vix": {
-   "close": 18.56,
-   "change_pct": 0.7,
+   "close": 18.59,
+   "change_pct": 0.8,
    "as_of": "2026-10-20"
   },
   "spy": {
