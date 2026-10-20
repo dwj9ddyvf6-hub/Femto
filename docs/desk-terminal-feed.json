@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-19T23:48:57.809444+00:00",
- "generated_at_et": "2026-10-19T19:48:57.809444-04:00",
+ "generated_at_utc": "2026-10-19T23:56:55.302116+00:00",
+ "generated_at_et": "2026-10-19T19:56:55.302116-04:00",
  "account": {
   "equity": "100774.01",
   "cash": "-213043.52",
@@ -1151,7 +1151,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-19T23:48:57.809444+00:00",
+   "scored_at": "2026-10-19T23:56:55.302116+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -1193,8 +1193,8 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 57.21,
-      "sma20": 55.38,
+      "close": 57.3901,
+      "sma20": 55.39,
       "sma50": 55.99,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
@@ -1332,7 +1332,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:48:57.809444+00:00",
+    "scored_at": "2026-10-19T23:56:55.302116+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -1643,7 +1643,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -2018,7 +2018,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3275,10 +3275,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 114.1% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $57.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:22:26.727827+00:00.",
+       "fact": "Standing IV on the name: 114.3% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $57.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:55:21.623896+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 114.1,
+         "iv_pct": 114.3,
          "expiry": "2026-11-27",
          "dte": 39,
          "strike": 57.0
@@ -3287,17 +3287,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 114.1% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $57.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 114.3% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $57.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 99.4% annualized. IV 114.1% vs HV 99.4% \u2014 a spread of +14.7 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 99.4% annualized. IV 114.3% vs HV 99.4% \u2014 a spread of +14.9 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 99.4,
-        "iv_pct": 114.1,
+        "iv_pct": 114.3,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -4330,7 +4330,7 @@
      "last_exit": "2026-10-19"
     }
    },
-   "scored_at": "2026-10-19T23:48:57.809444+00:00",
+   "scored_at": "2026-10-19T23:56:55.302116+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -4536,9 +4536,9 @@
      "hourly": {
       "state": "read",
       "stance": "lower",
-      "close": 834.76,
-      "sma20": 842.45,
-      "sma50": 850.22,
+      "close": 833.4706,
+      "sma20": 842.39,
+      "sma50": 850.19,
       "pivot_sequence": "mixed",
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -4677,7 +4677,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:48:57.809444+00:00",
+    "scored_at": "2026-10-19T23:56:55.302116+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $838.80. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -4779,18 +4779,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:48 PM ET \u00b7 Prices checked 7:48 PM ET",
+     "as_of_text": "Plan as of 7:56 PM ET \u00b7 Prices checked 7:56 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-LITE-ema_vwap-LITE",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-19",
-      "ingested_at": "2026-10-19T23:48:57.809444+00:00",
+      "ingested_at": "2026-10-19T23:56:55.302116+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:48 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:56 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -6558,7 +6558,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -7176,7 +7176,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8948,10 +8948,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 73.3% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $835.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:22:26.727827+00:00.",
+       "fact": "Standing IV on the name: 73.4% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $835.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:55:21.623896+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 73.3,
+         "iv_pct": 73.4,
          "expiry": "2026-11-27",
          "dte": 39,
          "strike": 835.0
@@ -8960,17 +8960,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 73.3% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $835.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 73.4% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $835.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 74.4% annualized. IV 73.3% vs HV 74.4% \u2014 a spread of -1.1 points. IV rank accrues from the desk's own daily readings \u2014 3 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 74.4% annualized. IV 73.4% vs HV 74.4% \u2014 a spread of -1.0 points. IV rank accrues from the desk's own daily readings \u2014 3 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 74.4,
-        "iv_pct": 73.3,
+        "iv_pct": 73.4,
         "iv_rank": null,
         "iv_readings": 3
        },
@@ -10000,7 +10000,7 @@
      "last_exit": "2026-10-19"
     }
    },
-   "scored_at": "2026-10-19T23:48:57.809444+00:00",
+   "scored_at": "2026-10-19T23:56:55.302116+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -10038,10 +10038,10 @@
      "adx": 14.0,
      "hourly": {
       "state": "read",
-      "stance": "sideways",
-      "close": 63.5,
-      "sma20": 63.19,
-      "sma50": 65.57,
+      "stance": "lower",
+      "close": 63,
+      "sma20": 63.16,
+      "sma50": 65.56,
       "pivot_sequence": "mixed",
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -10179,7 +10179,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:48:57.809444+00:00",
+    "scored_at": "2026-10-19T23:56:55.302116+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -10499,7 +10499,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10892,7 +10892,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -12245,10 +12245,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 113.2% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $63.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:22:26.727827+00:00.",
+       "fact": "Standing IV on the name: 113.5% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $63.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:55:21.623896+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 113.2,
+         "iv_pct": 113.5,
          "expiry": "2026-11-27",
          "dte": 39,
          "strike": 63.0
@@ -12257,17 +12257,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 113.2% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $63.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 113.5% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $63.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 87.5% annualized. IV 113.2% vs HV 87.5% \u2014 a spread of +25.7 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 87.5% annualized. IV 113.5% vs HV 87.5% \u2014 a spread of +26.0 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 87.5,
-        "iv_pct": 113.2,
+        "iv_pct": 113.5,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -13236,7 +13236,7 @@
      "last_exit": "2026-10-19"
     }
    },
-   "scored_at": "2026-10-19T23:48:57.809444+00:00",
+   "scored_at": "2026-10-19T23:56:55.302116+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -13275,9 +13275,9 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 1372.06,
-      "sma20": 1355.6,
-      "sma50": 1352.34,
+      "close": 1370.75,
+      "sma20": 1355.53,
+      "sma50": 1352.31,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
      }
@@ -13415,7 +13415,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:48:57.809444+00:00",
+    "scored_at": "2026-10-19T23:56:55.302116+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -13735,7 +13735,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -14119,7 +14119,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -15503,10 +15503,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 72.2% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $1,370.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:22:26.727827+00:00.",
+       "fact": "Standing IV on the name: 72.5% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $1,370.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:55:21.623896+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 72.2,
+         "iv_pct": 72.5,
          "expiry": "2026-11-27",
          "dte": 39,
          "strike": 1370.0
@@ -15515,17 +15515,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 72.2% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $1,370.00; Alpaca snapshot IV from the desk's options product, built"
+       "deciding": "considered \u2014 Standing IV on the name: 72.5% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $1,370.00; Alpaca snapshot IV from the desk's options product, built"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 59.3% annualized. IV 72.2% vs HV 59.3% \u2014 a spread of +12.9 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 59.3% annualized. IV 72.5% vs HV 59.3% \u2014 a spread of +13.2 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 59.3,
-        "iv_pct": 72.2,
+        "iv_pct": 72.5,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -16486,7 +16486,7 @@
      "last_exit": "2026-10-19"
     }
    },
-   "scored_at": "2026-10-19T23:48:57.809444+00:00",
+   "scored_at": "2026-10-19T23:56:55.302116+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -16821,7 +16821,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-19T23:48:57.809444+00:00",
+    "scored_at": "2026-10-19T23:56:55.302116+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold ALAB \u2014 the desk bought it at $287.93. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
@@ -16920,18 +16920,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 7:48 PM ET \u00b7 Prices checked 7:48 PM ET",
+     "as_of_text": "Plan as of 7:56 PM ET \u00b7 Prices checked 7:56 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-ALAB-rsi_meanrev-ALAB",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-19",
-      "ingested_at": "2026-10-19T23:48:57.809444+00:00",
+      "ingested_at": "2026-10-19T23:56:55.302116+00:00",
       "plan_version": 4,
       "change_note": "Plan updated to version 4 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:48 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 7:56 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -18279,7 +18279,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -18807,7 +18807,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-6.51B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.52B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -20674,10 +20674,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 84.4% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $285.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:22:26.727827+00:00.",
+       "fact": "Standing IV on the name: 84.3% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $285.00; Alpaca snapshot IV from the desk's options product, built 2026-10-19T23:55:21.623896+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 84.4,
+         "iv_pct": 84.3,
          "expiry": "2026-11-27",
          "dte": 39,
          "strike": 285.0
@@ -20686,17 +20686,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 84.4% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $285.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 84.3% \u2014 at the money on the 2026-11-27 expiry (39 days out, strike $285.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 66.9% annualized. IV 84.4% vs HV 66.9% \u2014 a spread of +17.5 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 66.9% annualized. IV 84.3% vs HV 66.9% \u2014 a spread of +17.4 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 66.9,
-        "iv_pct": 84.4,
+        "iv_pct": 84.3,
         "iv_rank": null,
         "iv_readings": 1
        },
