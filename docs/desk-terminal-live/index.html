@@ -1413,10 +1413,12 @@
         +(tc.expectation?'<p class="setup-call">'+esc(tc.expectation)+'</p>':'')
         +(tc.conviction_word?'<p>'+convChip(tc)+' <span class="call-basis">'+esc(tc.basis||'')+'</span></p>':'')
         +(tc.record?'<p class="call-basis">'+esc(tc.record)+'</p>':'')
+        +(tc.calibration_sentence&&(b.card_post||'').indexOf(tc.calibration_sentence)<0?'<p class="call-basis">'+esc(tc.calibration_sentence)+'</p>':'')
         +(tc.what_changes_it?'<p><b>What would change the call:</b> '+esc(tc.what_changes_it)+'</p>':'')
         +'</div>';
     } else if(tc&&tc.no_call){
-      html+='<div class="setup-detail-sec"><h3>No call on this name</h3><p>'+esc(tc.no_call_line||'')+'</p></div>';
+      html+='<div class="setup-detail-sec"><h3>No call on this name</h3><p>'+esc(tc.no_call_line||'')+'</p>'
+        +(tc.calibration_sentence?'<p class="call-basis">'+esc(tc.calibration_sentence)+'</p>':'')+'</div>';
     }
     html+=planBlockHtml(b);
     if(b){
