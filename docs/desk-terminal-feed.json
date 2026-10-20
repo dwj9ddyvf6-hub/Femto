@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-20T22:48:10.588095+00:00",
- "generated_at_et": "2026-10-20T18:48:10.588095-04:00",
+ "generated_at_utc": "2026-10-20T22:56:06.720856+00:00",
+ "generated_at_et": "2026-10-20T18:56:06.720856-04:00",
  "account": {
-  "equity": "106353.6",
+  "equity": "106302.01",
   "cash": "-191424.28",
-  "buying_power": "1643",
+  "buying_power": "1457.67",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true,
@@ -1458,28 +1458,28 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 106353.6,
+  "equity": 106302.01,
   "gross_pct": 0.0,
   "position_count": 88,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 27974,
+  "total": 28057,
   "by_kind": {
    "journal": 27,
    "fill": 673,
    "outcome": 9,
    "import_position": 6,
-   "tick": 652,
-   "nightly_reconcile": 54,
+   "tick": 653,
+   "nightly_reconcile": 55,
    "import_open_order": 51,
    "signal_intent": 8923,
    "entry_rejected": 2100,
    "exit_skipped": 524,
    "intent_rejected": 184,
-   "slice_sync": 930,
+   "slice_sync": 932,
    "exit_submitted": 37,
-   "pass_watchdog": 63,
+   "pass_watchdog": 64,
    "entry_skipped": 6414,
    "entry_bp_breaker": 13,
    "exit_rejected": 44,
@@ -1496,13 +1496,13 @@
    "sleeve_attribution": 96,
    "ts_rebalance_stamp_repaired": 1,
    "ts_rebalance_starved": 18,
-   "protection_defect": 2170,
-   "evaluation_heartbeat": 4910,
-   "slice_rederive": 1,
+   "protection_defect": 2196,
+   "evaluation_heartbeat": 4961,
+   "slice_rederive": 2,
    "github_mirror_converged": 1
   }
  },
- "input_hash": "469bc5111bab41d16acf754dda6bc4f16ecde65984f510d6c8cadf826a79ccad",
+ "input_hash": "09c2831284fb523950f06db962555f524b716b30004a05e6d6a3d9a43288940a",
  "setups": [],
  "entered_setups": [
   {
@@ -1549,7 +1549,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T22:48:10.588095+00:00",
+   "scored_at": "2026-10-20T22:56:06.720856+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -1744,7 +1744,7 @@
      "hourly": {
       "state": "read",
       "stance": "higher",
-      "close": 67.3647,
+      "close": 67.33,
       "sma20": 65.74,
       "sma50": 66.4,
       "pivot_sequence": null,
@@ -1884,7 +1884,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T22:48:10.588095+00:00",
+    "scored_at": "2026-10-20T22:56:06.720856+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold TEM \u2014 the desk bought it at $66.07. The stop below is the stop staged with this trade.",
@@ -1962,18 +1962,18 @@
      },
      "expires_at": "2026-10-29T16:00:00-04:00",
      "expires_text": "Position plan horizon: 10 trading sessions from entry (to 2026-10-29), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 6:48 PM ET \u00b7 Prices checked 6:48 PM ET",
+     "as_of_text": "Plan as of 6:56 PM ET \u00b7 Prices checked 6:56 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-20-TEM-momentum_rotation-TEM",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-15",
-      "ingested_at": "2026-10-20T22:48:10.588095+00:00",
+      "ingested_at": "2026-10-20T22:56:06.720856+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-20",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 6:48 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its two-week horizon from entry (stated with the plan below), and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 6:56 PM ET."
      },
      "conviction": {
       "call": "strongly for",
@@ -3216,7 +3216,7 @@
       {
        "key": "breadth",
        "factor": "Market breadth",
-       "reading": "Across the desk's scanned universe (1831 names): 726 advancers / 1092 decliners; 30.7% above their 50-day averages (46.5% above 20-day, 42.5% above 200-day).",
+       "reading": "Across the desk's scanned universe (1831 names): 1375 advancers / 444 decliners; 38.4% above their 50-day averages (57.5% above 20-day, 45.8% above 200-day).",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -3225,7 +3225,7 @@
       {
        "key": "mood",
        "factor": "Mood ring (volatility structure)",
-       "reading": "The desk's mood ring reads 17.8 (RED) from VIX, the VIX term ratio, SKEW and VVIX.",
+       "reading": "The desk's mood ring reads 29.5 (RED) from VIX, the VIX term ratio, SKEW and VVIX.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -3235,7 +3235,7 @@
       {
        "key": "theme_rotation",
        "factor": "Theme rotation (RRG)",
-       "reading": "Across the desk's 41 sector/theme ETFs, 17 sit in the Leading quadrant and 19 in Lagging against SPY. TEM is not itself a theme ETF, so this is backdrop, not a vote on the name.",
+       "reading": "Across the desk's 41 sector/theme ETFs, 15 sit in the Leading quadrant and 12 in Lagging against SPY. TEM is not itself a theme ETF, so this is backdrop, not a vote on the name.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3254,7 +3254,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.15B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.30B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3717,7 +3717,7 @@
       {
        "key": "breadth",
        "factor": "Market breadth",
-       "reading": "Across the desk's scanned universe (1831 names): 726 advancers / 1092 decliners; 30.7% above their 50-day averages (46.5% above 20-day, 42.5% above 200-day).",
+       "reading": "Across the desk's scanned universe (1831 names): 1375 advancers / 444 decliners; 38.4% above their 50-day averages (57.5% above 20-day, 45.8% above 200-day).",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -3726,7 +3726,7 @@
       {
        "key": "mood",
        "factor": "Mood ring (volatility structure)",
-       "reading": "The desk's mood ring reads 17.8 (RED) from VIX, the VIX term ratio, SKEW and VVIX.",
+       "reading": "The desk's mood ring reads 29.5 (RED) from VIX, the VIX term ratio, SKEW and VVIX.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -3736,7 +3736,7 @@
       {
        "key": "theme_rotation",
        "factor": "Theme rotation (RRG)",
-       "reading": "Across the desk's 41 sector/theme ETFs, 17 sit in the Leading quadrant and 19 in Lagging against SPY. TEM is not itself a theme ETF, so this is backdrop, not a vote on the name.",
+       "reading": "Across the desk's 41 sector/theme ETFs, 15 sit in the Leading quadrant and 12 in Lagging against SPY. TEM is not itself a theme ETF, so this is backdrop, not a vote on the name.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3755,7 +3755,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.15B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.30B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -5668,7 +5668,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 80.9% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $67.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T22:16:47.902542+00:00.",
+       "fact": "Standing IV on the name: 80.9% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $67.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T22:52:26.061425+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 80.9,
@@ -5757,12 +5757,12 @@
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
        "status": "value",
-       "fact": "Short volume (FINRA Reg SHO, 2026-10-19): shorts were 35.7% of the day's volume (624,725 of 1,750,744 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 164,664 shares in total, most recently 1,582 on 2026-09-28. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-20): shorts were 43.1% of the day's volume (804,785 of 1,868,062 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 164,664 shares in total, most recently 1,582 on 2026-09-28. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
        "data": {
         "regsho": {
-         "short_volume": 624725.496042,
-         "total_volume": 1750743.542516,
-         "short_pct": 35.7
+         "short_volume": 804785.394968,
+         "total_volume": 1868061.944255,
+         "short_pct": 43.1
         },
         "ftd": {
          "last_date": "2026-09-28",
@@ -5776,7 +5776,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-19): shorts were 35.7% of the day's volume (624,725 of 1,750,744 shares)"
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-20): shorts were 43.1% of the day's volume (804,785 of 1,868,062 shares)"
       },
       {
        "key": "insider_buys",
@@ -5864,20 +5864,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 1 items naming the company in the last 7 days, 15 in the last 30. The latest, 2026-10-19 via benzinga: \u201cTempus AI To Present Results From Study Evaluating AI-Enabled Pre-Screening Panel For Patients With Advanced Non-Small Cell Lung Cancer, At ESMO Congress 2026\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 2 items naming the company in the last 7 days, 16 in the last 30. The latest, 2026-10-19 via fiscal.ai: \u201cTempus AI Presents Data on AI-Enabled Pre-Screening for NSCLC Biomarker Testing\u201d.",
        "data": {
-        "n7": 1,
-        "n30": 15,
+        "n7": 2,
+        "n30": 16,
         "capped": false,
         "latest_date": "2026-10-19",
-        "latest_headline": "Tempus AI To Present Results From Study Evaluating AI-Enabled Pre-Screening Panel For Patients With Advanced Non-Small Cell Lung Cancer, At ESMO Congress 2026",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-20T15:46:41.963294+00:00"
+        "latest_headline": "Tempus AI Presents Data on AI-Enabled Pre-Screening for NSCLC Biomarker Testing",
+        "latest_source": "fiscal.ai"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 1 items naming the company in the last 7 days, 15 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 2 items naming the company in the last 7 days, 16 in the last 30"
       },
       {
        "key": "earnings",
@@ -5975,39 +5974,39 @@
        "family": "company_market",
        "label": "Market breadth",
        "status": "value",
-       "fact": "Breadth (the desk's 1831-name scan universe, as of 2026-10-19): 46.5% of names above their 20-day average, 30.7% above the 50-day; advancers 726 vs decliners 1092.",
+       "fact": "Breadth (the desk's 1831-name scan universe, as of 2026-10-20): 57.5% of names above their 20-day average, 38.4% above the 50-day; advancers 1375 vs decliners 444.",
        "data": {
         "universe_count": 1831,
-        "pct_above_20": 46.5,
-        "pct_above_50": 30.7,
-        "pct_above_200": 42.5,
-        "advancers": 726,
-        "decliners": 1092,
-        "as_of": "2026-10-19"
+        "pct_above_20": 57.5,
+        "pct_above_50": 38.4,
+        "pct_above_200": 45.8,
+        "advancers": 1375,
+        "decliners": 444,
+        "as_of": "2026-10-20"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Breadth (the desk's 1831-name scan universe, as of 2026-10-19): 46.5% of names above their 20-day average, 30.7% above the 50-day; advancers 726 vs decliners 10"
+       "deciding": "considered \u2014 Breadth (the desk's 1831-name scan universe, as of 2026-10-20): 57.5% of names above their 20-day average, 38.4% above the 50-day; advancers 1375 vs decliners 4"
       },
       {
        "key": "market_rates_credit_dollar",
        "family": "company_market",
        "label": "Rates, credit & the dollar",
        "status": "value",
-       "fact": "Rates, credit and the dollar (the desk's own pair battery): IEF/LQD: risk-off (+1.0% over 1 month); HYG/SHY: risk-off (-2.2% over 1 month); QQQ/QQQE: risk-off (-0.3% over 1 month); the dollar (UUP) is above its 50-day average (+1.5% over 21 sessions). 0 of 6 pairs read risk-on.",
+       "fact": "Rates, credit and the dollar (the desk's own pair battery): IEF/LQD: risk-off (+0.8% over 1 month); HYG/SHY: risk-off (-2.4% over 1 month); QQQ/QQQE: risk-off (-1.5% over 1 month); the dollar (UUP) is above its 50-day average (+1.5% over 21 sessions). 0 of 6 pairs read risk-on.",
        "data": {
         "pairs": [
-         "IEF/LQD: risk-off (+1.0% over 1 month)",
-         "HYG/SHY: risk-off (-2.2% over 1 month)",
-         "QQQ/QQQE: risk-off (-0.3% over 1 month)",
+         "IEF/LQD: risk-off (+0.8% over 1 month)",
+         "HYG/SHY: risk-off (-2.4% over 1 month)",
+         "QQQ/QQQE: risk-off (-1.5% over 1 month)",
          "the dollar (UUP) is above its 50-day average (+1.5% over 21 sessions)"
         ]
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Rates, credit and the dollar (the desk's own pair battery): IEF/LQD: risk-off (+1.0% over 1 month); HYG/SHY: risk-off (-2.2% over 1 month); QQQ/QQQE: risk-off ("
+       "deciding": "considered \u2014 Rates, credit and the dollar (the desk's own pair battery): IEF/LQD: risk-off (+0.8% over 1 month); HYG/SHY: risk-off (-2.4% over 1 month); QQQ/QQQE: risk-off ("
       },
       {
        "key": "econ_calendar",
@@ -6807,7 +6806,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T22:48:10.588095+00:00",
+   "scored_at": "2026-10-20T22:56:06.720856+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-16"
@@ -7031,7 +7030,7 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-20T22:48:10.588095+00:00",
+    "scored_at": "2026-10-20T22:56:06.720856+00:00",
     "plan": null,
     "chart_read": {
      "pattern": "Selling climax + base",
@@ -8214,7 +8213,7 @@
       {
        "key": "breadth",
        "factor": "Market breadth",
-       "reading": "Across the desk's scanned universe (1831 names): 726 advancers / 1092 decliners; 30.7% above their 50-day averages (46.5% above 20-day, 42.5% above 200-day).",
+       "reading": "Across the desk's scanned universe (1831 names): 1375 advancers / 444 decliners; 38.4% above their 50-day averages (57.5% above 20-day, 45.8% above 200-day).",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -8223,7 +8222,7 @@
       {
        "key": "mood",
        "factor": "Mood ring (volatility structure)",
-       "reading": "The desk's mood ring reads 17.8 (RED) from VIX, the VIX term ratio, SKEW and VVIX.",
+       "reading": "The desk's mood ring reads 29.5 (RED) from VIX, the VIX term ratio, SKEW and VVIX.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -8233,7 +8232,7 @@
       {
        "key": "theme_rotation",
        "factor": "Theme rotation (RRG)",
-       "reading": "Across the desk's 41 sector/theme ETFs, 17 sit in the Leading quadrant and 19 in Lagging against SPY. CVNA is not itself a theme ETF, so this is backdrop, not a vote on the name.",
+       "reading": "Across the desk's 41 sector/theme ETFs, 15 sit in the Leading quadrant and 12 in Lagging against SPY. CVNA is not itself a theme ETF, so this is backdrop, not a vote on the name.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8252,7 +8251,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.15B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.30B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8697,7 +8696,7 @@
       {
        "key": "breadth",
        "factor": "Market breadth",
-       "reading": "Across the desk's scanned universe (1831 names): 726 advancers / 1092 decliners; 30.7% above their 50-day averages (46.5% above 20-day, 42.5% above 200-day).",
+       "reading": "Across the desk's scanned universe (1831 names): 1375 advancers / 444 decliners; 38.4% above their 50-day averages (57.5% above 20-day, 45.8% above 200-day).",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -8706,7 +8705,7 @@
       {
        "key": "mood",
        "factor": "Mood ring (volatility structure)",
-       "reading": "The desk's mood ring reads 17.8 (RED) from VIX, the VIX term ratio, SKEW and VVIX.",
+       "reading": "The desk's mood ring reads 29.5 (RED) from VIX, the VIX term ratio, SKEW and VVIX.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -8716,7 +8715,7 @@
       {
        "key": "theme_rotation",
        "factor": "Theme rotation (RRG)",
-       "reading": "Across the desk's 41 sector/theme ETFs, 17 sit in the Leading quadrant and 19 in Lagging against SPY. CVNA is not itself a theme ETF, so this is backdrop, not a vote on the name.",
+       "reading": "Across the desk's 41 sector/theme ETFs, 15 sit in the Leading quadrant and 12 in Lagging against SPY. CVNA is not itself a theme ETF, so this is backdrop, not a vote on the name.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -8735,7 +8734,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-3.15B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-3.30B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10523,11 +10522,11 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "This position is an options package; the implied move the desk priced at selection rides in the plan's own implied-range note. Standing IV on the name: 73.9% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $60.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T22:16:47.902542+00:00.",
+       "fact": "This position is an options package; the implied move the desk priced at selection rides in the plan's own implied-range note. Standing IV on the name: 74.0% \u2014 at the money on the 2026-11-27 expiry (38 days out, strike $60.00; Alpaca snapshot IV from the desk's options product, built 2026-10-20T22:52:26.061425+00:00.",
        "data": {
         "package": true,
         "atm_iv": {
-         "iv_pct": 73.9,
+         "iv_pct": 74.0,
          "expiry": "2026-11-27",
          "dte": 38,
          "strike": 60.0
@@ -10543,10 +10542,10 @@
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 50.7% annualized. IV 73.9% vs HV 50.7% \u2014 a spread of +23.2 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 50.7% annualized. IV 74.0% vs HV 50.7% \u2014 a spread of +23.3 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 50.7,
-        "iv_pct": 73.9,
+        "iv_pct": 74.0,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -10613,12 +10612,12 @@
        "family": "options",
        "label": "Short interest, days to cover, short volume, fails",
        "status": "value",
-       "fact": "Short volume (FINRA Reg SHO, 2026-10-19): shorts were 56.9% of the day's volume (1,218,582 of 2,143,460 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 9,417 shares in total, most recently 100 on 2026-09-28. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
+       "fact": "Short volume (FINRA Reg SHO, 2026-10-20): shorts were 54.4% of the day's volume (1,113,041 of 2,047,860 shares). fails-to-deliver (SEC CNS file 202609b): 7 settlement days carried fails in the file's half-month \u2014 9,417 shares in total, most recently 100 on 2026-09-28. Short interest itself \u2014 the settled position count, and days to cover, which divides it \u2014 remains unmeasured: no credential-free FINRA route exists (see the gap register).",
        "data": {
         "regsho": {
-         "short_volume": 1218581.501372,
-         "total_volume": 2143459.832829,
-         "short_pct": 56.9
+         "short_volume": 1113041.074788,
+         "total_volume": 2047859.794591,
+         "short_pct": 54.4
         },
         "ftd": {
          "last_date": "2026-09-28",
@@ -10632,7 +10631,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-19): shorts were 56.9% of the day's volume (1,218,582 of 2,143,460 shares)"
+       "deciding": "considered \u2014 Short volume (FINRA Reg SHO, 2026-10-20): shorts were 54.4% of the day's volume (1,113,041 of 2,047,860 shares)"
       },
       {
        "key": "insider_buys",
@@ -10722,8 +10721,7 @@
         "capped": false,
         "latest_date": "2026-10-19",
         "latest_headline": "10 Consumer Discretionary Stocks With Whale Alerts In Today\u2019s Session",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-20T15:46:41.963294+00:00"
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
@@ -10828,39 +10826,39 @@
        "family": "company_market",
        "label": "Market breadth",
        "status": "value",
-       "fact": "Breadth (the desk's 1831-name scan universe, as of 2026-10-19): 46.5% of names above their 20-day average, 30.7% above the 50-day; advancers 726 vs decliners 1092.",
+       "fact": "Breadth (the desk's 1831-name scan universe, as of 2026-10-20): 57.5% of names above their 20-day average, 38.4% above the 50-day; advancers 1375 vs decliners 444.",
        "data": {
         "universe_count": 1831,
-        "pct_above_20": 46.5,
-        "pct_above_50": 30.7,
-        "pct_above_200": 42.5,
-        "advancers": 726,
-        "decliners": 1092,
-        "as_of": "2026-10-19"
+        "pct_above_20": 57.5,
+        "pct_above_50": 38.4,
+        "pct_above_200": 45.8,
+        "advancers": 1375,
+        "decliners": 444,
+        "as_of": "2026-10-20"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Breadth (the desk's 1831-name scan universe, as of 2026-10-19): 46.5% of names above their 20-day average, 30.7% above the 50-day; advancers 726 vs decliners 10"
+       "deciding": "considered \u2014 Breadth (the desk's 1831-name scan universe, as of 2026-10-20): 57.5% of names above their 20-day average, 38.4% above the 50-day; advancers 1375 vs decliners 4"
       },
       {
        "key": "market_rates_credit_dollar",
        "family": "company_market",
        "label": "Rates, credit & the dollar",
        "status": "value",
-       "fact": "Rates, credit and the dollar (the desk's own pair battery): IEF/LQD: risk-off (+1.0% over 1 month); HYG/SHY: risk-off (-2.2% over 1 month); QQQ/QQQE: risk-off (-0.3% over 1 month); the dollar (UUP) is above its 50-day average (+1.5% over 21 sessions). 0 of 6 pairs read risk-on.",
+       "fact": "Rates, credit and the dollar (the desk's own pair battery): IEF/LQD: risk-off (+0.8% over 1 month); HYG/SHY: risk-off (-2.4% over 1 month); QQQ/QQQE: risk-off (-1.5% over 1 month); the dollar (UUP) is above its 50-day average (+1.5% over 21 sessions). 0 of 6 pairs read risk-on.",
        "data": {
         "pairs": [
-         "IEF/LQD: risk-off (+1.0% over 1 month)",
-         "HYG/SHY: risk-off (-2.2% over 1 month)",
-         "QQQ/QQQE: risk-off (-0.3% over 1 month)",
+         "IEF/LQD: risk-off (+0.8% over 1 month)",
+         "HYG/SHY: risk-off (-2.4% over 1 month)",
+         "QQQ/QQQE: risk-off (-1.5% over 1 month)",
          "the dollar (UUP) is above its 50-day average (+1.5% over 21 sessions)"
         ]
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Rates, credit and the dollar (the desk's own pair battery): IEF/LQD: risk-off (+1.0% over 1 month); HYG/SHY: risk-off (-2.2% over 1 month); QQQ/QQQE: risk-off ("
+       "deciding": "considered \u2014 Rates, credit and the dollar (the desk's own pair battery): IEF/LQD: risk-off (+0.8% over 1 month); HYG/SHY: risk-off (-2.4% over 1 month); QQQ/QQQE: risk-off ("
       },
       {
        "key": "econ_calendar",
@@ -11776,7 +11774,7 @@
    "stop_problem": null,
    "target_problem": null,
    "entry_source": "fill",
-   "scored_at": "2026-10-20T22:48:10.588095+00:00",
+   "scored_at": "2026-10-20T22:56:06.720856+00:00",
    "provenance": {
     "source_system": "ledger_fill",
     "source_timestamp": "2026-10-20"
@@ -17358,13 +17356,13 @@
    "qqq": "setup-charts/QQQ-2026-10-20.png"
   },
   "measurements": [
-   "Breadth (1831 names scanned): 726 advanced, 1092 declined; 30.7% sit above their 50-day average (46.5% above the 20-day, 42.5% above the 200-day); 63 names jumped 4%+ on the day against 34 down 4%+.",
-   "Mood ring (measured 2026-10-19): 17.8 \u2014 RED (VIX 18.44, term ratio 0.941, SKEW 161.86, VVIX 106.93).",
+   "Breadth (1831 names scanned): 1375 advanced, 444 declined; 38.4% sit above their 50-day average (57.5% above the 20-day, 45.8% above the 200-day); 102 names jumped 4%+ on the day against 19 down 4%+.",
+   "Mood ring: 29.5 \u2014 RED (VIX 17.31, term ratio 0.912, SKEW 160.4, VVIX 97.15).",
    "Risk appetite: 0 of 6 ratio pairs read risk-on.",
-   "Theme rotation vs SPY \u2014 leading: XLF, XLE, XLV, XLB, XLP, XLY; lagging: XLK, SMH, SOXX, IGV, ARKK, TAN.",
+   "Theme rotation vs SPY \u2014 leading: XLF, XLV, XLB, XLP, XLY, XLRE; lagging: XLK, XLC, SMH, SOXX, IGV, TAN.",
    "QQQ pulse YELLOW (3/5); SPY pulse YELLOW (3/5)."
   ],
-  "measurements_as_of": "2026-10-19"
+  "measurements_as_of": "2026-10-20"
  },
  "scoring_method": {
   "scale": "0-100",
@@ -17605,59 +17603,59 @@
  "lector_top": [
   {
    "symbol": "NOW",
-   "score": 91.2,
+   "score": 93.5,
    "rank": 1
   },
   {
    "symbol": "CRM",
-   "score": 87.7,
+   "score": 87.1,
    "rank": 2
   },
   {
    "symbol": "NTAP",
-   "score": 75.1,
+   "score": 75.2,
    "rank": 3
   },
   {
-   "symbol": "ADI",
-   "score": 69.4,
+   "symbol": "OKTA",
+   "score": 72.1,
    "rank": 4
   },
   {
-   "symbol": "OKTA",
-   "score": 68.7,
+   "symbol": "ADI",
+   "score": 69.8,
    "rank": 5
   },
   {
-   "symbol": "SPCX",
-   "score": 62.1,
+   "symbol": "QCOM",
+   "score": 65.0,
    "rank": 6
   },
   {
-   "symbol": "KEYS",
-   "score": 61.6,
+   "symbol": "SNOW",
+   "score": 61.8,
    "rank": 7
   },
   {
-   "symbol": "QCOM",
-   "score": 61.1,
+   "symbol": "SPCX",
+   "score": 61.2,
    "rank": 8
+  },
+  {
+   "symbol": "TSM",
+   "score": 60.5,
+   "rank": 9
   },
   {
    "symbol": "CRWD",
    "score": 60.3,
-   "rank": 9
-  },
-  {
-   "symbol": "MRVL",
-   "score": 58.5,
    "rank": 10
   }
  ],
  "notes": [
-  "ChartsLector ranks as of 2026-10-19 (1 trading day old)."
+  "ChartsLector ranks as of 2026-10-20."
  ],
- "lector_as_of": "2026-10-19",
+ "lector_as_of": "2026-10-20",
  "setups_as_of": "2026-10-20",
  "scorecard": {
   "as_of": "2026-10-20",
