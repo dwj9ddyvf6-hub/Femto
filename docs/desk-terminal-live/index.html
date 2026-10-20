@@ -624,7 +624,6 @@
       :fmtTime(d.generated_at_utc);
     $('statusbar').innerHTML='<span class="badge good"><span class="dot"></span>Paper account</span>'
       +'<span class="badge"><span class="dot"></span>'+esc(((d.desk||{}).sleeve_order||[]).length)+' strategies</span>'
-      +'<span class="badge">Paper only</span>'
       ;
     var a=d.account||{}, ex=d.exposure||{};
     var MICONS=['<circle cx="12" cy="12" r="9"/><path d="M12 7v10M15 9.5c-.6-1-1.7-1.5-3-1.5-1.7 0-3 .9-3 2.2 0 2.9 6 1.6 6 4.3 0 1.3-1.3 2.2-3 2.2-1.3 0-2.4-.5-3-1.5"/>','<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/>','<path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5z"/>','<path d="M4 19V5M4 19h16"/><path d="M8 16v-5M12 16V8M16 16v-3"/>'];
@@ -634,11 +633,11 @@
                  ['Cash',money(a.cash),'Money not currently invested',0],
                  ['Open positions',String(d.position_count),holdStrats+' strategies holding \u00b7 '+d.position_count+' position'+(d.position_count===1?'':'s'),0]];
     $('accountMetrics').innerHTML=metrics.map(function(m,i){return '<div class="metric'+(m[3]?' hero':'')+'"><span class="metric-label">'+micon(m[3]?0:(i+1))+'</span><span class="metric-value'+(m[3]?' hero-value':'')+'">'+esc(m[1])+'</span><span class="metric-sub">'+esc(m[2])+'</span></div>';}).join('');
-    var eb=$('exposureBand'); if(eb){var gp2=Number(ex.gross_pct); if(!isFinite(gp2))gp2=0; var scaleMax=gp2>100?Math.ceil(gp2/100)*100:100; var mw2=Math.max(0,gp2/scaleMax*100); eb.hidden=false; eb.innerHTML='<div class="eb-head"><span>Exposure \u2014 share of the account held in open positions</span><b>'+money(ex.gross_notional)+' \u00b7 '+pct(gp2,1)+'</b></div><div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(gp2,1))+'"><span style="width:'+mw2+'%"></span><i></i><i></i><i></i>'+(gp2<8?'<span class="endcap" style="left:'+mw2+'%"></span><span class="pctlab" style="left:'+mw2+'%">'+pct(gp2,1)+' held \u2014 almost all cash</span>':'')+'</div><div class="meter-scale"><span>0%</span><span>'+(scaleMax*0.25)+'%</span><span>'+(scaleMax*0.5)+'%</span><span>'+(scaleMax*0.75)+'%</span><span>'+scaleMax+'%</span></div>';}
+    var eb=$('exposureBand'); if(eb){var gp2=Number(ex.gross_pct); if(!isFinite(gp2))gp2=0; var scaleMax=gp2>100?Math.ceil(gp2/100)*100:100; var mw2=Math.max(0,gp2/scaleMax*100); eb.hidden=false; eb.innerHTML='<div class="eb-head"><span>Exposure \u2014 share of the account held in open positions</span><b>Gross exposure '+pct(gp2,1)+'</b></div><div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(gp2,1))+'"><span style="width:'+mw2+'%"></span><i></i><i></i><i></i>'+(gp2<8?'<span class="endcap" style="left:'+mw2+'%"></span><span class="pctlab" style="left:'+mw2+'%">'+pct(gp2,1)+' held \u2014 almost all cash</span>':'')+'</div><div class="meter-scale"><span>0%</span><span>'+(scaleMax*0.25)+'%</span><span>'+(scaleMax*0.5)+'%</span><span>'+(scaleMax*0.75)+'%</span><span>'+scaleMax+'%</span></div>';}
     var mwf=$('mastWaffle'); if(mwf&&typeof ALGO==='object'){mwf.innerHTML=sleeveOrder().map(function(k){var c=catColor((ALGO[k]||{}).category);var h=((d.sleeves||{})[k]||{}).position_count>0;return '<i style="border-color:'+c+';background:'+(h?c:'transparent')+'"></i>';}).join('');}
     var ft=$('footerTime'); if(ft)ft.textContent='Snapshot: '+fmtTime(d.generated_at_utc)+'.';
     var grossPct=Number(ex.gross_pct); if(!isFinite(grossPct))grossPct=0; var scaleMax2=grossPct>100?Math.ceil(grossPct/100)*100:100; var meterW=Math.max(0,grossPct/scaleMax2*100);
-    $('exposure').innerHTML='<div class="kv emphasis"><div>Total value held (long and short added together)</div><div>'+money(ex.gross_notional)+'</div>'
+    $('exposure').innerHTML='<div class="kv emphasis"><div>Gross (longs plus shorts)</div><div>'+money(ex.gross_notional)+'</div>'
       +'<div>Share of account</div><div>'+pct(ex.gross_pct,1)+'</div></div>'
       +'<div class="exposure-meter" role="img" aria-label="Share of account held in open positions: '+esc(pct(ex.gross_pct,1))+'"><span style="width:'+meterW+'%"></span><i></i><i></i><i></i></div>'
       +'<div class="meter-scale"><span>0%</span><span>'+(scaleMax2*0.25)+'%</span><span>'+(scaleMax2*0.5)+'%</span><span>'+(scaleMax2*0.75)+'%</span><span>'+scaleMax2+'%</span></div>'
@@ -655,16 +654,21 @@
       return '<div class="stack"><p style="margin:0 0 2px;font-size:13px;color:var(--muted)">Where the held value sits, by strategy:</p><div class="stack-bar" role="img" aria-label="Held value split by strategy">'+segs+'</div><ul class="stack-legend">'+leg+'</ul></div>';
     }
     var statusTxt=(String(a.status||'').toUpperCase()==='ACTIVE')?'Active — open and trading normally':(a.status||'—');
-    var eqN=Number(a.equity), cashN=Number(a.cash), heldN=Number(ex.gross_notional);
-    var heldNet=(isFinite(eqN)&&isFinite(cashN))?eqN-cashN:NaN;
+    var eqN=Number(a.equity), cashN=Number(a.cash);
+    var heldNet=Number(a.positions_value);
+    if(!isFinite(heldNet)){
+      var posRows=d.positions||[];
+      var rowsSum=posRows.reduce(function(s,p){return s+(p.market_value!=null?Number(p.market_value):0);},0);
+      heldNet=(posRows.length&&isFinite(rowsSum))?rowsSum:NaN;
+    }
     var acctHtml='<div class="kv"><div>Status</div><div style="font-family:var(--sans);font-size:13px">'+esc(statusTxt)+'</div>'
       +'<div>Cash held</div><div>'+money(a.cash)+'</div>'
       +'<div>Value held in positions</div><div>'+(isFinite(heldNet)?money(heldNet):'—')+'</div></div>';
     if(isFinite(cashN)&&isFinite(heldNet)&&(cashN+heldNet)>0){
       var tot=cashN+heldNet, cw=Math.max(0,Math.min(100,cashN/tot*100)), hw=Math.max(0,Math.min(100,heldNet/tot*100));
-      acctHtml+='<div class="stack"><div class="stack-bar" role="img" aria-label="Account made up of '+pct(cashN/eqN*100,1)+' cash and '+pct(heldN/eqN*100,1)+' held in positions"><span style="width:'+cw+'%;background:var(--accent)"></span><span style="width:'+hw+'%;background:var(--gold)"></span></div>'
+      acctHtml+='<div class="stack"><div class="stack-bar" role="img" aria-label="Account made up of '+pct(cashN/eqN*100,1)+' cash and '+pct(heldNet/eqN*100,1)+' held in positions"><span style="width:'+cw+'%;background:var(--accent)"></span><span style="width:'+hw+'%;background:var(--gold)"></span></div>'
         +'<ul class="stack-legend"><li><span class="sw" style="background:var(--accent)"></span>Cash<span class="sv">'+money(a.cash)+' \u00b7 '+pct(cashN/eqN*100,1)+' of account</span></li>'
-        +'<li><span class="sw" style="background:var(--gold)"></span>Held in positions<span class="sv">'+money(ex.gross_notional)+' \u00b7 '+pct(heldN/eqN*100,1)+' of account</span></li></ul></div>';
+        +'<li><span class="sw" style="background:var(--gold)"></span>Held in positions<span class="sv">'+money(heldNet)+' \u00b7 '+pct(heldNet/eqN*100,1)+' of account</span></li></ul></div>';
     }
     acctHtml+='<div class="kv" style="margin-top:12px"><div>Buying power</div><div>'+money(a.buying_power)+'</div></div><p class="footnote">Buying power is what is available to open new positions — the broker allows buying beyond the cash balance on this account.</p>';
     if(isFinite(eqN)&&isFinite(cashN)&&isFinite(heldNet)){
