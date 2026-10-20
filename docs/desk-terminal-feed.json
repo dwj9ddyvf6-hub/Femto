@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-20T03:08:08.775590+00:00",
- "generated_at_et": "2026-10-19T23:08:08.775590-04:00",
+ "generated_at_utc": "2026-10-20T03:18:05.294580+00:00",
+ "generated_at_et": "2026-10-19T23:18:05.294580-04:00",
  "account": {
   "equity": "100774.01",
   "cash": "-213043.52",
@@ -1151,7 +1151,7 @@
    "backstop_stop": null,
    "plan_sleeve": "momentum_rotation",
    "family_win_rate": null,
-   "scored_at": "2026-10-20T03:08:08.775590+00:00",
+   "scored_at": "2026-10-20T03:18:05.294580+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -1332,7 +1332,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T03:08:08.775590+00:00",
+    "scored_at": "2026-10-20T03:18:05.294580+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -1397,7 +1397,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -1752,7 +1752,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -2536,7 +2536,7 @@
        "family": "trend",
        "label": "10/20/50/200-day averages vs price",
        "status": "value",
-       "fact": "Averages: 10-day $65.83 (price below); 20-day average (exponential) $67.59 \u2014 the curator's reset reference.",
+       "fact": "Averages: 10-day $65.83 (price below); 20-day average (exponential) $67.59 \u2014 the average a contrary setup is priced from.",
        "data": {
         "sma10": 65.83,
         "detail": {
@@ -2548,7 +2548,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Averages: 10-day $65.83 (price below); 20-day average (exponential) $67.59 \u2014 the curator's reset reference"
+       "deciding": "considered \u2014 Averages: 10-day $65.83 (price below); 20-day average (exponential) $67.59 \u2014 the average a contrary setup is priced from"
       },
       {
        "key": "weinstein_stage",
@@ -4330,7 +4330,7 @@
      "last_exit": "2026-10-19"
     }
    },
-   "scored_at": "2026-10-20T03:08:08.775590+00:00",
+   "scored_at": "2026-10-20T03:18:05.294580+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -4376,7 +4376,7 @@
     ],
     "chart_plan": "setup-charts/LITE-2026-10-19-plan.png",
     "card": "setup-charts/LITE-2026-10-19-card.png",
-    "card_post": "$LITE is an exit.\n\nBought at $838.80; last close $834.51 (-0.5%).\n\nThe desk holds LITE against its own read \u2014 the stance is exit at the line, and strength toward the target is a place to trim, not to add.\n\nFirst target $883.69 \u2014 R 0.67 to first target. Target $965.16 \u2014 R 1.88 to final target. Invalidation: a close below $800.00.",
+    "card_post": "$LITE is an exit.\n\nBought at $838.80; last close $834.51 (-0.5%).\n\nThe desk holds LITE against its own read \u2014 the desk is holding it only to its exit line at $800.00, and strength toward the target is a place to trim, not to add.\n\nFirst target $883.69 \u2014 R 0.67 to first target. Target $965.16 \u2014 R 1.88 to final target. Invalidation: a close below $800.00.",
     "the_call": {
      "no_call": false,
      "contrary": false,
@@ -4393,8 +4393,8 @@
      "no_call_ends_reason": null,
      "direction": "long",
      "sleeve_direction": "long",
-     "expectation": "The desk holds LITE against its own read \u2014 the stance is exit at the line: a daily close below $800.00 ends the hold, and strength toward $965.16 is a place to trim, not to add.",
-     "post_sentence": "The desk holds LITE against its own read \u2014 the stance is exit at the line: a daily close below $800.00 ends the hold, and strength toward the target is a place to trim, not to add.",
+     "expectation": "The desk holds LITE against its own read \u2014 the desk is holding it only to its exit line at $800.00, and strength toward $965.16 is a place to trim, not to add.",
+     "post_sentence": "The desk holds LITE against its own read \u2014 the desk is holding it only to its exit line at $800.00, and strength toward the target is a place to trim, not to add.",
      "objective": {
       "price": 965.16,
       "label": "the next tested level on the chart",
@@ -4443,7 +4443,7 @@
        "text": ""
       },
       "expectancy": {
-       "text": "The desk holds LITE against its own read \u2014 the stance is exit at the line: a daily close below $800.00 ends the hold, and strength toward $965.16 is a place to trim, not to add.",
+       "text": "The desk holds LITE against its own read \u2014 the desk is holding it only to its exit line at $800.00, and strength toward $965.16 is a place to trim, not to add.",
        "horizon": "inside the position's one-week horizon"
       },
       "management": {
@@ -4477,7 +4477,7 @@
     "expectancy_set": {
      "filed_session": "2026-10-19",
      "symbol": "LITE",
-     "expectation": "The desk holds LITE against its own read \u2014 the stance is exit at the line: a daily close below $800.00 ends the hold, and strength toward $965.16 is a place to trim, not to add.",
+     "expectation": "The desk holds LITE against its own read \u2014 the desk is holding it only to its exit line at $800.00, and strength toward $965.16 is a place to trim, not to add.",
      "horizon": "inside the position's one-week horizon",
      "objective": {
       "price": 965.16,
@@ -4677,7 +4677,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T03:08:08.775590+00:00",
+    "scored_at": "2026-10-20T03:18:05.294580+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $838.80. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -4779,18 +4779,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:08 PM ET \u00b7 Prices checked 11:08 PM ET",
+     "as_of_text": "Plan as of 11:18 PM ET \u00b7 Prices checked 11:18 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-LITE-ema_vwap-LITE",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-19",
-      "ingested_at": "2026-10-20T03:08:08.775590+00:00",
+      "ingested_at": "2026-10-20T03:18:05.294580+00:00",
       "plan_version": 3,
       "change_note": "Plan updated to version 3 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:08 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:18 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -4863,7 +4863,7 @@
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (simple) $982.33 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising."
+       "text": "20-day average (exponential) $954.79 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising."
       },
       {
        "group": "Volume",
@@ -4925,7 +4925,7 @@
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (simple) $982.33 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising."
+       "text": "20-day average (exponential) $954.79 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising."
       },
       {
        "group": "Volume",
@@ -5945,6 +5945,12 @@
       },
       "wyckoff": null,
       "ma_structure": {
+       "ema20": {
+        "value": 954.79,
+        "slope_pct_5d": -5.14,
+        "relation": "below",
+        "distance_atr": -1.73
+       },
        "sma20": {
         "value": 982.33,
         "slope_pct_5d": -0.63,
@@ -5964,7 +5970,7 @@
         "distance_atr": 0.79
        },
        "golden_cross": true,
-       "summary": "20-day average (simple) $982.33 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising"
+       "summary": "20-day average (exponential) $954.79 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising"
       },
       "fib": {
        "swing": {
@@ -6018,7 +6024,7 @@
        "RSI regime: RSI is 39. In a bull regime it usually lives between 40-90, with the 40-50 support shelf as the zone that matters; it sits below the 40-50 support shelf \u2014 stretched for a bull regime, the zone where bull-regime RSI usually finds its footing.",
        "MACD: MACD (-10.74) sits below its signal line (19.88) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-13.",
        "Dominant swing: $111.20 on 2025-08-20 to $1,143.00 on 2026-10-09; retracements (confluence ingredients only, never standalone levels): 38.2% at $748.85, 50.0% at $627.10, 61.8% at $505.35.",
-       "Averages: 20-day average (simple) $982.33 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising.",
+       "Averages: 20-day average (exponential) $954.79 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising.",
        "Volume: volume in the pattern's second half is running at 1.06x its first half \u2014 roughly unchanged. the last 20 sessions average 0.97x the prior period's volume. no expansion-volume break in the last 10 sessions.",
        "Stacked-level zone $738.44\u2013$816.94 (4 independent items stack there: a pivot cluster at $806.53 tested in 12 separate episodes; the 200-day average; the 38.2% retracement of the 2025-08-20 \u2192 2026-10-09 swing; the round number $800.00).",
        "Invalidation: a daily close below the stacked-level zone's lower edge \u2014 the last support under price, where its tested levels stack \u2014 $738.44."
@@ -6096,7 +6102,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -6196,7 +6202,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (simple) $982.33 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising.",
+       "reading": "20-day average (exponential) $954.79 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising.",
        "stance": 1,
        "salience": 2.0,
        "disposition": "considered",
@@ -6667,7 +6673,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -6814,7 +6820,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (simple) $982.33 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising.",
+       "reading": "20-day average (exponential) $954.79 \u2014 price below it, average falling; 50-day average $930.55 \u2014 price below it, average rising; 200-day average $779.80 \u2014 price above it, average rising.",
        "stance": 1,
        "salience": 2.0,
        "disposition": "considered",
@@ -7988,7 +7994,7 @@
        "family": "trend",
        "label": "10/20/50/200-day averages vs price",
        "status": "value",
-       "fact": "Averages: 10-day $980.43 (price below); 20-day $982.33 (price below by -2.1 daily ranges, average falling); 50-day $930.55 (price below by -1.4 daily ranges, average rising); 200-day $779.80 (price above by +0.8 daily ranges, average rising); 20-day average (exponential) $954.79 \u2014 the curator's reset reference.",
+       "fact": "Averages: 10-day $980.43 (price below); 20-day $982.33 (price below by -2.1 daily ranges, average falling); 50-day $930.55 (price below by -1.4 daily ranges, average rising); 200-day $779.80 (price above by +0.8 daily ranges, average rising); 20-day average (exponential) $954.79 \u2014 the average a contrary setup is priced from.",
        "data": {
         "sma10": 980.43,
         "detail": {
@@ -10000,7 +10006,7 @@
      "last_exit": "2026-10-19"
     }
    },
-   "scored_at": "2026-10-20T03:08:08.775590+00:00",
+   "scored_at": "2026-10-20T03:18:05.294580+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -10179,7 +10185,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T03:08:08.775590+00:00",
+    "scored_at": "2026-10-20T03:18:05.294580+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -10253,7 +10259,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -10599,7 +10605,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -11420,7 +11426,7 @@
        "family": "trend",
        "label": "10/20/50/200-day averages vs price",
        "status": "value",
-       "fact": "Averages: 10-day $77.37 (price below); 20-day average (exponential) $83.07 \u2014 the curator's reset reference.",
+       "fact": "Averages: 10-day $77.37 (price below); 20-day average (exponential) $83.07 \u2014 the average a contrary setup is priced from.",
        "data": {
         "sma10": 77.37,
         "detail": {
@@ -11432,7 +11438,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Averages: 10-day $77.37 (price below); 20-day average (exponential) $83.07 \u2014 the curator's reset reference"
+       "deciding": "considered \u2014 Averages: 10-day $77.37 (price below); 20-day average (exponential) $83.07 \u2014 the average a contrary setup is priced from"
       },
       {
        "key": "weinstein_stage",
@@ -13236,7 +13242,7 @@
      "last_exit": "2026-10-19"
     }
    },
-   "scored_at": "2026-10-20T03:08:08.775590+00:00",
+   "scored_at": "2026-10-20T03:18:05.294580+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -13415,7 +13421,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T03:08:08.775590+00:00",
+    "scored_at": "2026-10-20T03:18:05.294580+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -13489,7 +13495,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -13835,7 +13841,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -14637,7 +14643,7 @@
        "family": "trend",
        "label": "10/20/50/200-day averages vs price",
        "status": "value",
-       "fact": "Averages: 10-day $1,498.24 (price below); 20-day average (exponential) $1,551.72 \u2014 the curator's reset reference.",
+       "fact": "Averages: 10-day $1,498.24 (price below); 20-day average (exponential) $1,551.72 \u2014 the average a contrary setup is priced from.",
        "data": {
         "sma10": 1498.24,
         "detail": {
@@ -14649,7 +14655,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Averages: 10-day $1,498.24 (price below); 20-day average (exponential) $1,551.72 \u2014 the curator's reset reference"
+       "deciding": "considered \u2014 Averages: 10-day $1,498.24 (price below); 20-day average (exponential) $1,551.72 \u2014 the average a contrary setup is priced from"
       },
       {
        "key": "weinstein_stage",
@@ -16486,7 +16492,7 @@
      "last_exit": "2026-10-19"
     }
    },
-   "scored_at": "2026-10-20T03:08:08.775590+00:00",
+   "scored_at": "2026-10-20T03:18:05.294580+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -16524,7 +16530,7 @@
     ],
     "chart_plan": "setup-charts/ALAB-2026-10-19-plan.png",
     "card": "setup-charts/ALAB-2026-10-19-card.png",
-    "card_post": "$ALAB is an exit.\n\nBought at $287.93; last close $286.58 (-0.5%).\n\nThe desk holds ALAB against its own read \u2014 the stance is exit at the line, and strength toward the target is a place to trim, not to add, inside the position's one-week horizon.\n\nTarget $300.33 \u2014 R 0.54 to final target. Invalidation: a close below $281.29.",
+    "card_post": "$ALAB is an exit.\n\nBought at $287.93; last close $286.58 (-0.5%).\n\nThe desk holds ALAB against its own read \u2014 the desk is holding it only to its exit line at $281.29, and strength toward the target is a place to trim, not to add.\n\nTarget $300.33 \u2014 R 0.54 to final target. Invalidation: a close below $281.29.",
     "the_call": {
      "no_call": false,
      "contrary": false,
@@ -16541,8 +16547,8 @@
      "no_call_ends_reason": null,
      "direction": "long",
      "sleeve_direction": "long",
-     "expectation": "The desk holds ALAB against its own read \u2014 the stance is exit at the line: a daily close below $281.29 ends the hold, and strength toward $300.33 is a place to trim, not to add.",
-     "post_sentence": "The desk holds ALAB against its own read \u2014 the stance is exit at the line: a daily close below $281.29 ends the hold, and strength toward the target is a place to trim, not to add.",
+     "expectation": "The desk holds ALAB against its own read \u2014 the desk is holding it only to its exit line at $281.29, and strength toward $300.33 is a place to trim, not to add.",
+     "post_sentence": "The desk holds ALAB against its own read \u2014 the desk is holding it only to its exit line at $281.29, and strength toward the target is a place to trim, not to add.",
      "objective": {
       "price": 300.33,
       "label": "the entering strategy's own exit target",
@@ -16591,7 +16597,7 @@
        "text": ""
       },
       "expectancy": {
-       "text": "The desk holds ALAB against its own read \u2014 the stance is exit at the line: a daily close below $281.29 ends the hold, and strength toward $300.33 is a place to trim, not to add.",
+       "text": "The desk holds ALAB against its own read \u2014 the desk is holding it only to its exit line at $281.29, and strength toward $300.33 is a place to trim, not to add.",
        "horizon": "inside the position's one-week horizon"
       },
       "management": {
@@ -16625,7 +16631,7 @@
     "expectancy_set": {
      "filed_session": "2026-10-19",
      "symbol": "ALAB",
-     "expectation": "The desk holds ALAB against its own read \u2014 the stance is exit at the line: a daily close below $281.29 ends the hold, and strength toward $300.33 is a place to trim, not to add.",
+     "expectation": "The desk holds ALAB against its own read \u2014 the desk is holding it only to its exit line at $281.29, and strength toward $300.33 is a place to trim, not to add.",
      "horizon": "inside the position's one-week horizon",
      "objective": {
       "price": 300.33,
@@ -16821,7 +16827,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-20T03:08:08.775590+00:00",
+    "scored_at": "2026-10-20T03:18:05.294580+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold ALAB \u2014 the desk bought it at $287.93. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order.",
@@ -16920,18 +16926,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 11:08 PM ET \u00b7 Prices checked 11:08 PM ET",
+     "as_of_text": "Plan as of 11:18 PM ET \u00b7 Prices checked 11:18 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-19-ALAB-rsi_meanrev-ALAB",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-19",
-      "ingested_at": "2026-10-20T03:08:08.775590+00:00",
+      "ingested_at": "2026-10-20T03:18:05.294580+00:00",
       "plan_version": 4,
       "change_note": "Plan updated to version 4 since the last publish: entry zone (high), entry zone (low) changed on the source record."
      },
      "valid": {
       "session": "2026-10-19",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:08 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 11:18 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -17004,7 +17010,7 @@
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (simple) $343.44 \u2014 price below it, average rising; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising."
+       "text": "20-day average (exponential) $324.70 \u2014 price below it, average falling; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising."
       },
       {
        "group": "Volume",
@@ -17066,7 +17072,7 @@
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (simple) $343.44 \u2014 price below it, average rising; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising."
+       "text": "20-day average (exponential) $324.70 \u2014 price below it, average falling; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising."
       },
       {
        "group": "Volume",
@@ -17755,6 +17761,12 @@
       },
       "wyckoff": null,
       "ma_structure": {
+       "ema20": {
+        "value": 324.7,
+        "slope_pct_5d": -5.03,
+        "relation": "below",
+        "distance_atr": -1.62
+       },
        "sma20": {
         "value": 343.44,
         "slope_pct_5d": 0.6,
@@ -17774,7 +17786,7 @@
         "distance_atr": 1.54
        },
        "golden_cross": true,
-       "summary": "20-day average (simple) $343.44 \u2014 price below it, average rising; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising"
+       "summary": "20-day average (exponential) $324.70 \u2014 price below it, average falling; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising"
       },
       "fib": {
        "swing": {
@@ -17829,7 +17841,7 @@
        "RSI regime: RSI is 38. In a bull regime it usually lives between 40-90, with the 40-50 support shelf as the zone that matters; it sits below the 40-50 support shelf \u2014 stretched for a bull regime, the zone where bull-regime RSI usually finds its footing.",
        "MACD: MACD (-5.37) sits below its signal line (4.70) and below zero; the histogram is expanding over the last three sessions; the last crossover was bearish on 2026-10-09.",
        "Dominant swing: $97.89 on 2026-03-30 to $499.48 on 2026-06-30; retracements (confluence ingredients only, never standalone levels): 38.2% at $346.07, 50.0% at $298.68, 61.8% at $251.30.",
-       "Averages: 20-day average (simple) $343.44 \u2014 price below it, average rising; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising.",
+       "Averages: 20-day average (exponential) $324.70 \u2014 price below it, average falling; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising.",
        "Volume: volume in the pattern's second half is running at 1.08x its first half \u2014 roughly unchanged. the last 20 sessions average 0.96x the prior period's volume. no expansion-volume break in the last 10 sessions.",
        "Stacked-level zone $241.09\u2013$255.14 (5 independent items stack there: a pivot cluster at $244.61 tested in 1 separate episode; a pivot cluster at $251.62 tested in 1 separate episode; the 200-day average; the 61.8% retracement of the 2026-03-30 \u2192 2026-06-30 swing; the round number $250.00).",
        "Invalidation: a daily close below the pattern's lower boundary \u2014 the support line through the 2026-08-24 and 2026-09-15 pivots \u2014 $229.79."
@@ -17907,7 +17919,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -18007,7 +18019,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (simple) $343.44 \u2014 price below it, average rising; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising.",
+       "reading": "20-day average (exponential) $324.70 \u2014 price below it, average falling; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising.",
        "stance": 1,
        "salience": 2.0,
        "disposition": "considered",
@@ -18379,7 +18391,7 @@
       },
       {
        "key": "regime_fit",
-       "factor": "Regime fit (curator)",
+       "factor": "Regime fit",
        "reading": "Market downtrend \u2014 only reversal-class setups keep support here.",
        "stance": 1,
        "salience": 2.5,
@@ -18535,7 +18547,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (simple) $343.44 \u2014 price below it, average rising; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising.",
+       "reading": "20-day average (exponential) $324.70 \u2014 price below it, average falling; 50-day average $314.38 \u2014 price below it, average falling; 200-day average $250.41 \u2014 price above it, average rising.",
        "stance": 1,
        "salience": 2.0,
        "disposition": "considered",
@@ -19573,7 +19585,7 @@
        "family": "trend",
        "label": "10/20/50/200-day averages vs price",
        "status": "value",
-       "fact": "Averages: 10-day $328.55 (price below); 20-day $343.44 (price below by -2.4 daily ranges, average rising); 50-day $314.38 (price below by -1.2 daily ranges, average falling); 200-day $250.41 (price above by +1.5 daily ranges, average rising); 20-day average (exponential) $324.70 \u2014 the curator's reset reference.",
+       "fact": "Averages: 10-day $328.55 (price below); 20-day $343.44 (price below by -2.4 daily ranges, average rising); 50-day $314.38 (price below by -1.2 daily ranges, average falling); 200-day $250.41 (price above by +1.5 daily ranges, average rising); 20-day average (exponential) $324.70 \u2014 the average a contrary setup is priced from.",
        "data": {
         "sma10": 328.55,
         "detail": {
