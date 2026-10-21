@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-21T12:44:46.362899+00:00",
- "generated_at_et": "2026-10-21T08:44:46.362899-04:00",
+ "generated_at_utc": "2026-10-21T12:49:58.630137+00:00",
+ "generated_at_et": "2026-10-21T08:49:58.630137-04:00",
  "account": {
-  "equity": "105594.1",
+  "equity": "105269.4",
   "cash": "-191425.15",
-  "buying_power": "1817.02",
+  "buying_power": "1044.26",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true,
@@ -1444,33 +1444,34 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 105594.1,
+  "equity": 105269.4,
   "gross_pct": 0.0,
   "position_count": 87,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 2837,
+  "total": 2991,
   "by_kind": {
    "journal": 13,
    "fill": 560,
    "outcome": 9,
    "import_position": 3,
-   "tick": 103,
+   "tick": 105,
    "nightly_reconcile": 46,
    "spx_settlement": 1,
    "unowned_position_adoption": 1,
    "slice_residue_disposition": 9,
    "sleeve_attribution": 89,
-   "protection_defect": 806,
-   "slice_sync": 62,
-   "evaluation_heartbeat": 1107,
-   "pass_watchdog": 26,
+   "protection_defect": 832,
+   "slice_sync": 64,
+   "evaluation_heartbeat": 1228,
+   "pass_watchdog": 27,
    "github_mirror_defect": 1,
-   "signal_intent": 1
+   "signal_intent": 2,
+   "entry_blocked_resting_order": 1
   }
  },
- "input_hash": "692d7812d442a440da2ca221b22b21d9eb1adf56f844ba7fc8acbb62f6ffc055",
+ "input_hash": "44272bd0dc1bfc8912f41af21fcdb35163a7d5e2b04574524c7676d0ab2e0fb1",
  "setups": [],
  "entered_setups": [],
  "departures": [
@@ -1520,12 +1521,12 @@
   "regime": "Downtrend",
   "regime_evidence": [
    "QQQ closed below its 50-day average (-1.2%) with a 20-day slope of -4.0% \u2014 the desk's regime rule reads downtrend.",
-   "VIX closed at 17.23 (-0.5% on the day) (VIX reading as of 2026-10-21).",
+   "VIX closed at 17.21 (-0.6% on the day) (VIX reading as of 2026-10-21).",
    "QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
   ],
   "vix": {
-   "close": 17.23,
-   "change_pct": -0.5,
+   "close": 17.21,
+   "change_pct": -0.6,
    "as_of": "2026-10-21"
   },
   "spy": {
