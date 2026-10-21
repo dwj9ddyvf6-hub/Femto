@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-21T22:09:36.396778+00:00",
- "generated_at_et": "2026-10-21T18:09:36.396778-04:00",
+ "generated_at_utc": "2026-10-21T22:16:03.628404+00:00",
+ "generated_at_et": "2026-10-21T18:16:03.628404-04:00",
  "account": {
   "equity": "104570.57",
   "cash": "-215294.3",
@@ -1418,7 +1418,7 @@
     },
     "family_label": "Tensor pattern engine"
    },
-   "scored_at": "2026-10-21T22:09:36.396778+00:00",
+   "scored_at": "2026-10-21T22:16:03.628404+00:00",
    "provenance": {
     "source_system": "signal_intent",
     "source_timestamp": "2026-10-21"
@@ -1710,7 +1710,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-21T22:09:36.396778+00:00",
+    "scored_at": "2026-10-21T22:16:03.628404+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy CRML in the entry zone below \u2014 the desk's strategies tried today and were turned away (buying power), so this is still a watch, not a holding. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders. The last close ($6.64) is inside the entry zone.",
@@ -1812,18 +1812,18 @@
      },
      "expires_at": "2026-10-22T16:00:00-04:00",
      "expires_text": "Plan expires at the next session's close (4:00 PM ET, 2026-10-22) \u2014 this pass ran after today's close, so the plan's validity starts with the next session; it re-validates on a later pass or leaves the list then.",
-     "as_of_text": "Plan as of 6:09 PM ET \u00b7 Prices checked 6:09 PM ET",
+     "as_of_text": "Plan as of 6:16 PM ET \u00b7 Prices checked 6:16 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-21-CRML-tensor_swing-CRML-2026-10-21-1",
       "source_system": "signal_intent",
       "source_timestamp": "2026-10-21",
-      "ingested_at": "2026-10-21T22:09:36.396778+00:00",
+      "ingested_at": "2026-10-21T22:16:03.628404+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-21",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:09 PM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:16 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -2893,7 +2893,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3359,7 +3359,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -4983,14 +4983,14 @@
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state bullish, votes 4 bull / 3 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state bullish, votes 5 bull / 2 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
         "slow": "mixed",
         "fast": "bullish",
         "bar_date": "2026-10-21",
-        "bull_votes": 4,
-        "bear_votes": 3
+        "bull_votes": 5,
+        "bear_votes": 2
        },
        "reason": null,
        "needs": null,
@@ -5136,10 +5136,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 105.0% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $6.50; Alpaca snapshot IV from the desk's options product, built 2026-10-21T19:50:21.561442+00:00.",
+       "fact": "Standing IV on the name: 102.4% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $6.50; Alpaca snapshot IV from the desk's options product, built 2026-10-21T22:14:48.757453+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 105.0,
+         "iv_pct": 102.4,
          "expiry": "2026-11-27",
          "dte": 37,
          "strike": 6.5
@@ -5148,17 +5148,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 105.0% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $6.50; Alpaca snapshot IV from the desk's options product, built 20"
+       "deciding": "considered \u2014 Standing IV on the name: 102.4% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $6.50; Alpaca snapshot IV from the desk's options product, built 20"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 68.3% annualized. IV 105.0% vs HV 68.3% \u2014 a spread of +36.7 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 68.3% annualized. IV 102.4% vs HV 68.3% \u2014 a spread of +34.1 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 68.3,
-        "iv_pct": 105.0,
+        "iv_pct": 102.4,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -5172,15 +5172,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-02-19: 378 contracts; open interest as published on the contracts themselves): calls carry 202,111 OI, puts 113,537 \u2014 a put/call OI ratio of 0.562. Today's traded volume ran 23,814 calls / 4,768 puts (ratio 0.2). The largest single open interest sits at the $10.00 call expiring 2026-11-20 (48,890 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-02-19: 378 contracts; open interest as published on the contracts themselves): calls carry 202,111 OI, puts 113,537 \u2014 a put/call OI ratio of 0.562. Today's traded volume ran 25,016 calls / 4,770 puts (ratio 0.191). The largest single open interest sits at the $10.00 call expiring 2026-11-20 (48,890 contracts).",
        "data": {
         "n_contracts": 378,
         "call_oi": 202111,
         "put_oi": 113537,
         "oi_put_call": 0.562,
-        "call_vol": 23814,
-        "put_vol": 4768,
-        "vol_put_call": 0.2,
+        "call_vol": 25016,
+        "put_vol": 4770,
+        "vol_put_call": 0.191,
         "expiries_through": "2027-02-19",
         "top_oi": [
          {
@@ -6818,36 +6818,36 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$2.22 by the IV form (IV 105.0%); \u00b1$1.48 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$2.16 by the IV form (IV 102.4%); \u00b1$1.44 by the 0.85x straddle form.",
        "data": {
         "spot": 6.64,
-        "iv_pct": 105.0,
+        "iv_pct": 102.4,
         "expiry": "2026-11-27",
         "dte": 37,
-        "iv_form": 2.22,
-        "straddle_form": 1.48
+        "iv_form": 2.16,
+        "straddle_form": 1.44
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$2.22 by the IV form (IV 105.0%); \u00b1$1.48 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$2.16 by the IV form (IV 102.4%); \u00b1$1.44 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
        "family": "options",
        "label": "Gamma flip, per name (addendum 12)",
        "status": "value",
-       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $7.50; net gamma $+0.00B per 1% move \u2014 price sits in the amplifying regime (below the flip).",
+       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $6.00; net gamma $+0.00B per 1% move \u2014 price sits in the stabilising regime (above the flip).",
        "data": {
-        "flip_strike": 7.5,
-        "net_gex": 241825.31,
-        "contracts_used": 82,
+        "flip_strike": 6.0,
+        "net_gex": 277836.0,
+        "contracts_used": 85,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $7.50; net gamma $+0.00B per 1% move \u2014 price sits in the ampli"
+       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $6.00; net gamma $+0.00B per 1% move \u2014 price sits in the stabi"
       },
       {
        "key": "gamma_walls_name",
@@ -6912,17 +6912,17 @@
        "family": "options",
        "label": "IV skew, per name (addendum 12)",
        "status": "value",
-       "fact": "IV skew (2026-11-27): ATM IV 1.3% vs the 5%-out put at 1.3% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
+       "fact": "IV skew (2026-11-27): ATM IV 1.2% vs the 5%-out put at 1.2% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 1.2595,
-        "put_iv_5pct_otm": 1.2595,
+        "atm_iv": 1.2409,
+        "put_iv_5pct_otm": 1.2409,
         "skew_pts": 0.0
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 IV skew (2026-11-27): ATM IV 1.3% vs the 5%-out put at 1.3% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such)"
+       "deciding": "considered \u2014 IV skew (2026-11-27): ATM IV 1.2% vs the 5%-out put at 1.2% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such)"
       },
       {
        "key": "iv_term_name",
@@ -7818,7 +7818,7 @@
     },
     "family_label": "Intraday pullback"
    },
-   "scored_at": "2026-10-21T22:09:36.396778+00:00",
+   "scored_at": "2026-10-21T22:16:03.628404+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-19"
@@ -8180,7 +8180,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-21T22:09:36.396778+00:00",
+    "scored_at": "2026-10-21T22:16:03.628404+00:00",
     "plan": {
      "status": "Entered",
      "action": "Hold LITE \u2014 the desk bought it at $838.80. The stop below is the stop staged with this trade; the objectives below \u2014 the strategy's own target first, then the chart's tested levels above it \u2014 are aims, not resting orders.",
@@ -8285,18 +8285,18 @@
      },
      "expires_at": "2026-10-26T16:00:00-04:00",
      "expires_text": "Position plan horizon: the entering strategy's own time stop \u2014 5 trading sessions from entry (to 2026-10-26), re-validated on every pass while held.",
-     "as_of_text": "Plan as of 6:09 PM ET \u00b7 Prices checked 6:09 PM ET",
+     "as_of_text": "Plan as of 6:16 PM ET \u00b7 Prices checked 6:16 PM ET",
      "provenance": {
       "plan_id": "plan-2026-10-21-LITE-ema_vwap-LITE",
       "source_system": "sleeve_position_record",
       "source_timestamp": "2026-10-19",
-      "ingested_at": "2026-10-21T22:09:36.396778+00:00",
+      "ingested_at": "2026-10-21T22:16:03.628404+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-21",
-      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 6:09 PM ET."
+      "text": "While the desk holds this position \u2014 the plan is re-validated on every pass inside its one-week horizon \u2014 the entering strategy's own time stop, stated with the plan below, and it leaves the list when the position closes or the horizon runs out. Prices and strategy reasons are from the desk's scoring pass at 6:16 PM ET."
      },
      "conviction": {
       "call": "against",
@@ -10028,7 +10028,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -10638,7 +10638,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -12264,14 +12264,14 @@
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state bullish, votes 5 bull / 2 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state bullish, votes 4 bull / 3 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
         "slow": "mixed",
         "fast": "bullish",
         "bar_date": "2026-10-21",
-        "bull_votes": 5,
-        "bear_votes": 2
+        "bull_votes": 4,
+        "bear_votes": 3
        },
        "reason": null,
        "needs": null,
@@ -12419,29 +12419,29 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 73.6% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $860.00; Alpaca snapshot IV from the desk's options product, built 2026-10-21T19:50:21.561442+00:00.",
+       "fact": "Standing IV on the name: 74.2% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $850.00; Alpaca snapshot IV from the desk's options product, built 2026-10-21T22:14:48.757453+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 73.6,
+         "iv_pct": 74.2,
          "expiry": "2026-11-27",
          "dte": 37,
-         "strike": 860.0
+         "strike": 850.0
         }
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 73.6% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $860.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 74.2% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $850.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 75.8% annualized. IV 73.6% vs HV 75.8% \u2014 a spread of -2.2 points. IV rank accrues from the desk's own daily readings \u2014 4 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 75.8% annualized. IV 74.2% vs HV 75.8% \u2014 a spread of -1.6 points. IV rank accrues from the desk's own daily readings \u2014 4 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 75.8,
-        "iv_pct": 73.6,
+        "iv_pct": 74.2,
         "iv_rank": null,
         "iv_readings": 4
        },
@@ -12455,15 +12455,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-04-16: 3214 contracts; open interest as published on the contracts themselves): calls carry 86,523 OI, puts 121,444 \u2014 a put/call OI ratio of 1.404. Today's traded volume ran 23,900 calls / 14,859 puts (ratio 0.622). The largest single open interest sits at the $600.00 put expiring 2026-12-18 (4,423 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-04-16: 3214 contracts; open interest as published on the contracts themselves): calls carry 86,523 OI, puts 121,444 \u2014 a put/call OI ratio of 1.404. Today's traded volume ran 24,713 calls / 15,342 puts (ratio 0.621). The largest single open interest sits at the $600.00 put expiring 2026-12-18 (4,423 contracts).",
        "data": {
         "n_contracts": 3214,
         "call_oi": 86523,
         "put_oi": 121444,
         "oi_put_call": 1.404,
-        "call_vol": 23900,
-        "put_vol": 14859,
-        "vol_put_call": 0.622,
+        "call_vol": 24713,
+        "put_vol": 15342,
+        "vol_put_call": 0.621,
         "expiries_through": "2027-04-16",
         "top_oi": [
          {
@@ -14171,19 +14171,19 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$199.35 by the IV form (IV 73.6%); \u00b1$135.76 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$200.97 by the IV form (IV 74.2%); \u00b1$135.19 by the 0.85x straddle form.",
        "data": {
         "spot": 850.7,
-        "iv_pct": 73.6,
+        "iv_pct": 74.2,
         "expiry": "2026-11-27",
         "dte": 37,
-        "iv_form": 199.35,
-        "straddle_form": 135.76
+        "iv_form": 200.97,
+        "straddle_form": 135.19
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$199.35 by the IV form (IV 73.6%); \u00b1$135.76 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$200.97 by the IV form (IV 74.2%); \u00b1$135.19 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
@@ -14193,8 +14193,8 @@
        "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.02B per 1% move \u2014 price sits with no flip inside the chain.",
        "data": {
         "flip_strike": null,
-        "net_gex": -16982121.04,
-        "contracts_used": 1096,
+        "net_gex": -22110626.06,
+        "contracts_used": 1012,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
@@ -14267,17 +14267,17 @@
        "family": "options",
        "label": "IV skew, per name (addendum 12)",
        "status": "value",
-       "fact": "IV skew (2026-11-27): ATM IV 0.7% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
+       "fact": "IV skew (2026-11-27): ATM IV 0.7% vs the 5%-out put at 0.7% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.7365,
-        "put_iv_5pct_otm": 0.7516,
-        "skew_pts": 0.02
+        "atm_iv": 0.7013,
+        "put_iv_5pct_otm": 0.7114,
+        "skew_pts": 0.01
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 IV skew (2026-11-27): ATM IV 0.7% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such)"
+       "deciding": "considered \u2014 IV skew (2026-11-27): ATM IV 0.7% vs the 5%-out put at 0.7% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such)"
       },
       {
        "key": "iv_term_name",
@@ -15214,7 +15214,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-21T22:09:36.396778+00:00",
+   "scored_at": "2026-10-21T22:16:03.628404+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-16"
@@ -15438,7 +15438,7 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-21T22:09:36.396778+00:00",
+    "scored_at": "2026-10-21T22:16:03.628404+00:00",
     "plan": null,
     "chart_read": {
      "pattern": "Selling climax + base",
@@ -16660,7 +16660,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -17144,7 +17144,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -18779,14 +18779,14 @@
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state bearish, votes 3 bull / 4 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state bearish, fast state bearish, votes 2 bull / 5 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
-        "slow": "mixed",
+        "slow": "bearish",
         "fast": "bearish",
         "bar_date": "2026-10-21",
-        "bull_votes": 3,
-        "bear_votes": 4
+        "bull_votes": 2,
+        "bear_votes": 5
        },
        "reason": null,
        "needs": null,
@@ -18923,14 +18923,14 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "This position is an options package; the implied move the desk priced at selection rides in the plan's own implied-range note. Standing IV on the name: 73.8% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $60.00; Alpaca snapshot IV from the desk's options product, built 2026-10-21T19:50:21.561442+00:00.",
+       "fact": "This position is an options package; the implied move the desk priced at selection rides in the plan's own implied-range note. Standing IV on the name: 76.1% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $59.00; Alpaca snapshot IV from the desk's options product, built 2026-10-21T22:14:48.757453+00:00.",
        "data": {
         "package": true,
         "atm_iv": {
-         "iv_pct": 73.8,
+         "iv_pct": 76.1,
          "expiry": "2026-11-27",
          "dte": 37,
-         "strike": 60.0
+         "strike": 59.0
         }
        },
        "reason": null,
@@ -18943,10 +18943,10 @@
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 50.6% annualized. IV 73.8% vs HV 50.6% \u2014 a spread of +23.2 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 50.6% annualized. IV 76.1% vs HV 50.6% \u2014 a spread of +25.5 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 50.6,
-        "iv_pct": 73.8,
+        "iv_pct": 76.1,
         "iv_rank": null,
         "iv_readings": 2
        },
@@ -18960,15 +18960,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-03-19: 1078 contracts; open interest as published on the contracts themselves): calls carry 340,296 OI, puts 381,968 \u2014 a put/call OI ratio of 1.122. Today's traded volume ran 36,359 calls / 18,754 puts (ratio 0.516). The largest single open interest sits at the $13.00 put expiring 2026-12-18 (37,009 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-03-19: 1078 contracts; open interest as published on the contracts themselves): calls carry 340,296 OI, puts 381,968 \u2014 a put/call OI ratio of 1.122. Today's traded volume ran 36,498 calls / 19,067 puts (ratio 0.522). The largest single open interest sits at the $13.00 put expiring 2026-12-18 (37,009 contracts).",
        "data": {
         "n_contracts": 1078,
         "call_oi": 340296,
         "put_oi": 381968,
         "oi_put_call": 1.122,
-        "call_vol": 36359,
-        "put_vol": 18754,
-        "vol_put_call": 0.516,
+        "call_vol": 36498,
+        "put_vol": 19067,
+        "vol_put_call": 0.522,
         "expiries_through": "2027-03-19",
         "top_oi": [
          {
@@ -20621,19 +20621,19 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$13.91 by the IV form (IV 73.8%); \u00b1$9.49 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$14.34 by the IV form (IV 76.1%); \u00b1$9.67 by the 0.85x straddle form.",
        "data": {
         "spot": 59.19,
-        "iv_pct": 73.8,
+        "iv_pct": 76.1,
         "expiry": "2026-11-27",
         "dte": 37,
-        "iv_form": 13.91,
-        "straddle_form": 9.49
+        "iv_form": 14.34,
+        "straddle_form": 9.67
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$13.91 by the IV form (IV 73.8%); \u00b1$9.49 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$14.34 by the IV form (IV 76.1%); \u00b1$9.67 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
@@ -20643,8 +20643,8 @@
        "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.00B per 1% move \u2014 price sits with no flip inside the chain.",
        "data": {
         "flip_strike": null,
-        "net_gex": -3055580.93,
-        "contracts_used": 393,
+        "net_gex": -3780448.1,
+        "contracts_used": 383,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
@@ -20716,17 +20716,17 @@
        "family": "options",
        "label": "IV skew, per name (addendum 12)",
        "status": "value",
-       "fact": "IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of -0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
+       "fact": "IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.7917,
-        "put_iv_5pct_otm": 0.7787,
-        "skew_pts": -0.01
+        "atm_iv": 0.7763,
+        "put_iv_5pct_otm": 0.7788,
+        "skew_pts": 0.0
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of -0.0 points (strike-axis approximation of the 25-delta point, filed as such)"
+       "deciding": "considered \u2014 IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such)"
       },
       {
        "key": "iv_term_name",
@@ -21709,7 +21709,7 @@
     },
     "family_label": "Momentum & trend"
    },
-   "scored_at": "2026-10-21T22:09:36.396778+00:00",
+   "scored_at": "2026-10-21T22:16:03.628404+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-15"
@@ -21887,7 +21887,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-21T22:09:36.396778+00:00",
+    "scored_at": "2026-10-21T22:16:03.628404+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -22208,7 +22208,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -22593,7 +22593,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -23710,32 +23710,32 @@
        "family": "tensor",
        "label": "Tensor votes & confidence",
        "status": "value",
-       "fact": "Tensor memo row: decision TRADE, phenotype RECLAIM, confidence 7, regime bearish \u2014 votes 5 bull / 1 bear; its own staged prices ride with the row (entry $13.29, stop $13.17, target $14.14).",
+       "fact": "Tensor memo row: decision TRADE, phenotype RECLAIM, confidence 6, regime bearish \u2014 votes 6 bull / 1 bear; its own staged prices ride with the row (entry $13.20, stop $13.20, target $13.46).",
        "data": {
         "decision": "TRADE",
-        "confidence": 7,
+        "confidence": 6,
         "phenotype": "RECLAIM",
         "regime": "bearish",
-        "bull_votes": 5,
+        "bull_votes": 6,
         "bear_votes": 1
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Tensor memo row: decision TRADE, phenotype RECLAIM, confidence 7, regime bearish \u2014 votes 5 bull / 1 bear; its own staged prices ride with the row (entry $13.29,"
+       "deciding": "considered \u2014 Tensor memo row: decision TRADE, phenotype RECLAIM, confidence 6, regime bearish \u2014 votes 6 bull / 1 bear; its own staged prices ride with the row (entry $13.20,"
       },
       {
        "key": "tensor_timeframes",
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state bullish, votes 5 bull / 1 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state bullish, votes 6 bull / 1 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
         "slow": "mixed",
         "fast": "bullish",
         "bar_date": "2026-10-21",
-        "bull_votes": 5,
+        "bull_votes": 6,
         "bear_votes": 1
        },
        "reason": null,
@@ -23864,10 +23864,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 96.4% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $13.00; Alpaca snapshot IV from the desk's options product, built 2026-10-21T19:50:21.561442+00:00.",
+       "fact": "Standing IV on the name: 98.2% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $13.00; Alpaca snapshot IV from the desk's options product, built 2026-10-21T22:14:48.757453+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 96.4,
+         "iv_pct": 98.2,
          "expiry": "2026-11-27",
          "dte": 37,
          "strike": 13.0
@@ -23876,17 +23876,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 96.4% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $13.00; Alpaca snapshot IV from the desk's options product, built 20"
+       "deciding": "considered \u2014 Standing IV on the name: 98.2% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $13.00; Alpaca snapshot IV from the desk's options product, built 20"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 105.9% annualized. IV 96.4% vs HV 105.9% \u2014 a spread of -9.5 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 105.9% annualized. IV 98.2% vs HV 105.9% \u2014 a spread of -7.7 points. IV rank accrues from the desk's own daily readings \u2014 1 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 105.9,
-        "iv_pct": 96.4,
+        "iv_pct": 98.2,
         "iv_rank": null,
         "iv_readings": 1
        },
@@ -23900,15 +23900,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-04-16: 656 contracts; open interest as published on the contracts themselves): calls carry 69,777 OI, puts 38,528 \u2014 a put/call OI ratio of 0.552. Today's traded volume ran 10,376 calls / 2,667 puts (ratio 0.257). The largest single open interest sits at the $20.00 call expiring 2027-01-15 (5,912 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-04-16: 656 contracts; open interest as published on the contracts themselves): calls carry 69,777 OI, puts 38,528 \u2014 a put/call OI ratio of 0.552. Today's traded volume ran 11,011 calls / 2,606 puts (ratio 0.237). The largest single open interest sits at the $20.00 call expiring 2027-01-15 (5,912 contracts).",
        "data": {
         "n_contracts": 656,
         "call_oi": 69777,
         "put_oi": 38528,
         "oi_put_call": 0.552,
-        "call_vol": 10376,
-        "put_vol": 2667,
-        "vol_put_call": 0.257,
+        "call_vol": 11011,
+        "put_vol": 2606,
+        "vol_put_call": 0.237,
         "expiries_through": "2027-04-16",
         "top_oi": [
          {
@@ -25626,19 +25626,19 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$4.05 by the IV form (IV 96.4%); \u00b1$2.72 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$4.13 by the IV form (IV 98.2%); \u00b1$2.77 by the 0.85x straddle form.",
        "data": {
         "spot": 13.2,
-        "iv_pct": 96.4,
+        "iv_pct": 98.2,
         "expiry": "2026-11-27",
         "dte": 37,
-        "iv_form": 4.05,
-        "straddle_form": 2.72
+        "iv_form": 4.13,
+        "straddle_form": 2.77
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$4.05 by the IV form (IV 96.4%); \u00b1$2.72 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$4.13 by the IV form (IV 98.2%); \u00b1$2.77 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
@@ -25648,8 +25648,8 @@
        "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.00B per 1% move \u2014 price sits with no flip inside the chain.",
        "data": {
         "flip_strike": null,
-        "net_gex": -356835.63,
-        "contracts_used": 150,
+        "net_gex": -345463.82,
+        "contracts_used": 152,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
@@ -25723,8 +25723,8 @@
        "fact": "IV skew (2026-11-27): ATM IV 1.0% vs the 5%-out put at 1.0% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.9984,
-        "put_iv_5pct_otm": 0.9984,
+        "atm_iv": 0.9562,
+        "put_iv_5pct_otm": 0.9562,
         "skew_pts": 0.0
        },
        "reason": null,
@@ -26551,7 +26551,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ts_momentum_decile",
    "family_win_rate": null,
-   "scored_at": "2026-10-21T22:09:36.396778+00:00",
+   "scored_at": "2026-10-21T22:16:03.628404+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-20"
@@ -26729,7 +26729,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-21T22:09:36.396778+00:00",
+    "scored_at": "2026-10-21T22:16:03.628404+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -27041,7 +27041,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -27417,7 +27417,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.55B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-6.23B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -28663,14 +28663,14 @@
        "family": "tensor",
        "label": "Tensor timeframes & agreement",
        "status": "value",
-       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state bullish, votes 5 bull / 1 bear on that bar.",
+       "fact": "Tensor publishes ONE canonical series for this name (hourly-anchored, Decision #108) \u2014 no separate weekly or daily engine reads exist, so timeframe agreement is not a measurement this desk makes. What exists is the state of that one series, from the engine's own newest diagnostics row (bar 2026-10-21): slow state mixed, fast state mixed, votes 2 bull / 4 bear on that bar.",
        "data": {
         "series": "canonical_hourly",
         "slow": "mixed",
-        "fast": "bullish",
+        "fast": "mixed",
         "bar_date": "2026-10-21",
-        "bull_votes": 5,
-        "bear_votes": 1
+        "bull_votes": 2,
+        "bear_votes": 4
        },
        "reason": null,
        "needs": null,
@@ -28807,19 +28807,19 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 71.2% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $1,385.00; Alpaca snapshot IV from the desk's options product, built 2026-10-21T19:50:21.561442+00:00.",
+       "fact": "Standing IV on the name: 71.2% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $1,380.00; Alpaca snapshot IV from the desk's options product, built 2026-10-21T22:14:48.757453+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 71.2,
          "expiry": "2026-11-27",
          "dte": 37,
-         "strike": 1385.0
+         "strike": 1380.0
         }
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 71.2% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $1,385.00; Alpaca snapshot IV from the desk's options product, built"
+       "deciding": "considered \u2014 Standing IV on the name: 71.2% \u2014 at the money on the 2026-11-27 expiry (37 days out, strike $1,380.00; Alpaca snapshot IV from the desk's options product, built"
       },
       {
        "key": "iv_rank_hv",
@@ -28843,15 +28843,15 @@
        "family": "options",
        "label": "Options positioning on the name",
        "status": "value",
-       "fact": "Options positioning (the name's chain through 2027-03-19: 6036 contracts; open interest as published on the contracts themselves): calls carry 288,783 OI, puts 344,957 \u2014 a put/call OI ratio of 1.195. Today's traded volume ran 72,950 calls / 48,878 puts (ratio 0.67). The largest single open interest sits at the $250.00 put expiring 2027-01-15 (13,238 contracts).",
+       "fact": "Options positioning (the name's chain through 2027-03-19: 6036 contracts; open interest as published on the contracts themselves): calls carry 288,783 OI, puts 344,957 \u2014 a put/call OI ratio of 1.195. Today's traded volume ran 76,152 calls / 50,410 puts (ratio 0.662). The largest single open interest sits at the $250.00 put expiring 2027-01-15 (13,238 contracts).",
        "data": {
         "n_contracts": 6036,
         "call_oi": 288783,
         "put_oi": 344957,
         "oi_put_call": 1.195,
-        "call_vol": 72950,
-        "put_vol": 48878,
-        "vol_put_call": 0.67,
+        "call_vol": 76152,
+        "put_vol": 50410,
+        "vol_put_call": 0.662,
         "expiries_through": "2027-03-19",
         "top_oi": [
          {
@@ -30505,36 +30505,36 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$312.43 by the IV form (IV 71.2%); \u00b1$211.57 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$312.43 by the IV form (IV 71.2%); \u00b1$209.87 by the 0.85x straddle form.",
        "data": {
         "spot": 1378.22,
         "iv_pct": 71.2,
         "expiry": "2026-11-27",
         "dte": 37,
         "iv_form": 312.43,
-        "straddle_form": 211.57
+        "straddle_form": 209.87
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$312.43 by the IV form (IV 71.2%); \u00b1$211.57 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$312.43 by the IV form (IV 71.2%); \u00b1$209.87 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
        "family": "options",
        "label": "Gamma flip, per name (addendum 12)",
        "status": "value",
-       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.03B per 1% move \u2014 price sits with no flip inside the chain.",
+       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.06B per 1% move \u2014 price sits with no flip inside the chain.",
        "data": {
         "flip_strike": null,
-        "net_gex": -28404789.02,
-        "contracts_used": 1901,
+        "net_gex": -56271262.47,
+        "contracts_used": 1692,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.03B per 1% move \u2014 price sits with no flip ins"
+       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.06B per 1% move \u2014 price sits with no flip ins"
       },
       {
        "key": "gamma_walls_name",
@@ -30603,8 +30603,8 @@
        "fact": "IV skew (2026-11-27): ATM IV 0.7% vs the 5%-out put at 0.7% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.6936,
-        "put_iv_5pct_otm": 0.6956,
+        "atm_iv": 0.65,
+        "put_iv_5pct_otm": 0.6508,
         "skew_pts": 0.0
        },
        "reason": null,
