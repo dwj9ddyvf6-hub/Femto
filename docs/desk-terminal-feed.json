@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-21T13:30:22.300276+00:00",
- "generated_at_et": "2026-10-21T09:30:22.300276-04:00",
+ "generated_at_utc": "2026-10-21T13:34:56.956037+00:00",
+ "generated_at_et": "2026-10-21T09:34:56.956037-04:00",
  "account": {
   "equity": "106130.57",
   "cash": "-191425.15",
@@ -1521,31 +1521,28 @@
  "market_context": {
   "regime": "Downtrend",
   "regime_evidence": [
-   "QQQ closed below its 50-day average (-1.2%) with a 20-day slope of -4.0% \u2014 the desk's regime rule reads downtrend.",
-   "VIX closed at 16.98 (-1.9% on the day) (VIX reading as of 2026-10-21).",
-   "QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
+   "QQQ closed below its 50-day average (-0.7%) with a 20-day slope of -2.6% \u2014 the desk's regime rule reads downtrend.",
+   "VIX closed at 16.96 (-2.0% on the day) (VIX reading as of 2026-10-21)."
   ],
   "vix": {
-   "close": 16.98,
-   "change_pct": -1.9,
+   "close": 16.96,
+   "change_pct": -2.0,
    "as_of": "2026-10-21"
   },
   "spy": {
-   "close": 769.32,
-   "day_pct": 0.37,
-   "vs_sma50_pct": 0.13
+   "close": 770.03,
+   "day_pct": 0.09,
+   "vs_sma50_pct": 0.23
   },
   "qqq": {
-   "close": 717.63,
-   "day_pct": -0.1,
-   "vs_sma50_pct": -1.24
+   "close": 721.75,
+   "day_pct": 0.57,
+   "vs_sma50_pct": -0.68
   },
   "fear_day": false,
-  "charts": {
-   "qqq": "setup-charts/QQQ-2026-10-21.png"
-  },
   "charts_withheld": [
-   "spy"
+   "spy",
+   "qqq"
   ],
   "measurements": [
    "Breadth (1831 names scanned): 1375 advanced, 444 declined; 38.4% sit above their 50-day average (57.5% above the 20-day, 45.8% above the 200-day); 102 names jumped 4%+ on the day against 19 down 4%+.",
