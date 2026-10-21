@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-21T15:05:05.577094+00:00",
- "generated_at_et": "2026-10-21T11:05:05.577094-04:00",
+ "generated_at_utc": "2026-10-21T15:09:53.209094+00:00",
+ "generated_at_et": "2026-10-21T11:09:53.209094-04:00",
  "account": {
   "equity": "104261.47",
   "cash": "-214779.11",
@@ -1354,12 +1354,12 @@
     "The desk holds a position in it \u2014 money already committed ranks above ideas that were only evaluated.",
     "Market downtrend \u2014 only reversal-class setups keep support here.",
     "The desk's position is an options spread, not shares \u2014 no stop or target is recorded for it. A spread's risk is defined by the debit it cost; the plan names the package, and any price levels shown are reference levels on the stock.",
-    "Price has reset near support \u2014 it closed $60.10, 3.1% below its 20-day average at $62.00. That is inside about a day's range of the average but outside the tight 1% reset test, so it earns a smaller credit."
+    "Price has reset near support \u2014 it closed $60.20, 2.9% below its 20-day average at $62.01. That is inside about a day's range of the average but outside the tight 1% reset test, so it earns a smaller credit."
    ],
    "entry": 59.7,
    "stop": null,
    "target": null,
-   "last_close": 60.1,
+   "last_close": 60.2,
    "lector_rank": null,
    "tensor": "confirmed_swing",
    "primary_sleeve": "ema_vwap_options",
@@ -1405,7 +1405,7 @@
    "backstop_stop": null,
    "plan_sleeve": "ema_vwap_options",
    "family_win_rate": null,
-   "scored_at": "2026-10-21T15:05:05.577094+00:00",
+   "scored_at": "2026-10-21T15:09:53.209094+00:00",
    "provenance": {
     "source_system": "sleeve_position_record",
     "source_timestamp": "2026-10-16"
@@ -1451,13 +1451,13 @@
     "ta_battery": {
      "state": "read",
      "stoch_rsi": {
-      "k": 69.9,
+      "k": 70.1,
       "d": 60.3
      },
-     "cci": -46.1,
+     "cci": -45.7,
      "cmf": -0.003,
      "mfi": 41.2,
-     "obv_slope": -664086.39,
+     "obv_slope": -666015.44,
      "session_vwap": null,
      "adx": 18.3,
      "hourly": {
@@ -1500,7 +1500,7 @@
      58.83,
      58.71,
      60.26,
-     60.105
+     60.14
     ],
     "levels": {
      "entry": 59.7,
@@ -1512,15 +1512,15 @@
      "recorded_target": null,
      "target_origin": null,
      "exit_rules_origin": null,
-     "last_close": 60.1,
-     "ema20": 61.99,
+     "last_close": 60.2,
+     "ema20": 62.0,
      "swing_low_20": 56.27,
      "atr14": 2.935
     },
     "setup_story": [
      "On Wednesday, October 21, 2026, CVNA was flagged by 1 of the desk's strategies across 1 independent family (Tensor pattern engine) and scored 38 of 100 \u2014 Watch tier on the desk's list.",
      "The desk bought CVNA 60/64 call spread expiring 2026-10-30 for a $1.96 debit (the stock was trading at $59.70 when the spread was bought). The position is still held. A spread can lose at most the debit paid for it \u2014 its risk is defined by the package, not by a stop order.",
-     "The picture as a whole: price closed $60.10, 3.0% below its 20-day average (exponential) at $61.99 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $56.27 is intact below price; its 10-session move is -4.2% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 16.78 (VIX as of 2026-10-21)."
+     "The picture as a whole: price closed $60.20, 3.0% below its 20-day average (exponential) at $62.00 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $56.27 is intact below price; its 10-session move is -4.2% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 16.82 (VIX as of 2026-10-21)."
     ],
     "lens_walkthrough": [
      {
@@ -1557,7 +1557,7 @@
       "key": "level",
       "lens": "Reset at a price level",
       "verdict": "At a level",
-      "evidence": "Price has reset near support \u2014 it closed $60.10, 3.1% below its 20-day average at $62.00. That is inside about a day's range of the average but outside the tight 1% reset test, so it earns a smaller credit."
+      "evidence": "Price has reset near support \u2014 it closed $60.20, 2.9% below its 20-day average at $62.01. That is inside about a day's range of the average but outside the tight 1% reset test, so it earns a smaller credit."
      },
      {
       "key": "geometry",
@@ -1575,7 +1575,7 @@
       "key": "invalidator_structure",
       "lens": "What would end it \u2014 price structure",
       "verdict": "Pass",
-      "evidence": "Price closed at $60.10, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact."
+      "evidence": "Price closed at $60.20, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact."
      },
      {
       "key": "chart_pattern",
@@ -1629,7 +1629,7 @@
      "credit": null,
      "entry_spot": 59.7
     },
-    "scored_at": "2026-10-21T15:05:05.577094+00:00",
+    "scored_at": "2026-10-21T15:09:53.209094+00:00",
     "plan": null,
     "chart_read": {
      "pattern": "Selling climax + base",
@@ -1692,11 +1692,11 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-2.10) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21."
+       "text": "MACD (-2.09) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21."
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (exponential) $61.99 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling."
+       "text": "20-day average (exponential) $62.00 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling."
       },
       {
        "group": "Volume",
@@ -1754,11 +1754,11 @@
       },
       {
        "group": "Momentum (MACD)",
-       "text": "MACD (-2.10) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21."
+       "text": "MACD (-2.09) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21."
       },
       {
        "group": "Moving averages",
-       "text": "20-day average (exponential) $61.99 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling."
+       "text": "20-day average (exponential) $62.00 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling."
       },
       {
        "group": "Volume",
@@ -1818,7 +1818,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -0.08
+        "distance_atr": -0.09
        },
        {
         "price": 58.92,
@@ -1831,7 +1831,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": -0.38
+        "distance_atr": -0.39
        },
        {
         "price": 61.84,
@@ -1844,7 +1844,7 @@
         "sources": [
          "pivot cluster \u2014 6 confirmed pivots in 6 separate tests"
         ],
-        "distance_atr": 0.56
+        "distance_atr": 0.55
        },
        {
         "price": 57.65,
@@ -1852,7 +1852,7 @@
         "sources": [
          "support trendline through the 2026-06-03 and 2026-10-14 pivots (9 touches) \u2014 an internal line, drawn through the swings' closes, spike wicks ignored \u2014 validated by three or more tests"
         ],
-        "distance_atr": -0.79
+        "distance_atr": -0.8
        },
        {
         "price": 63.63,
@@ -1865,7 +1865,7 @@
         "sources": [
          "pivot cluster \u2014 1 confirmed pivot in 1 separate test"
         ],
-        "distance_atr": 1.14
+        "distance_atr": 1.13
        },
        {
         "price": 56.47,
@@ -1878,7 +1878,7 @@
         "sources": [
          "pivot cluster \u2014 3 confirmed pivots in 3 separate tests"
         ],
-        "distance_atr": -1.17
+        "distance_atr": -1.18
        },
        {
         "price": 64.87,
@@ -1891,7 +1891,7 @@
         "sources": [
          "pivot cluster \u2014 3 confirmed pivots in 3 separate tests"
         ],
-        "distance_atr": 1.54
+        "distance_atr": 1.53
        },
        {
         "price": 54.77,
@@ -1904,7 +1904,7 @@
         "sources": [
          "pivot cluster \u2014 2 confirmed pivots in 2 separate tests"
         ],
-        "distance_atr": -1.72
+        "distance_atr": -1.73
        }
       ],
       "divergences": [
@@ -2296,14 +2296,14 @@
       ],
       "rsi_context": {
        "regime": "bear",
-       "rsi": 42.2,
+       "rsi": 42.3,
        "range": "10-60",
        "note": "RSI is 42. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime."
       },
       "macd": {
-       "line": -2.0956,
-       "signal": -2.1137,
-       "histogram": 0.0181,
+       "line": -2.0928,
+       "signal": -2.1132,
+       "histogram": 0.0204,
        "vs_signal": "above",
        "zero": "below",
        "hist_trend": "contracting",
@@ -2311,7 +2311,7 @@
         "t": "2026-10-21",
         "kind": "bullish"
        },
-       "note": "MACD (-2.10) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21"
+       "note": "MACD (-2.09) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21"
       },
       "wyckoff": {
        "events": [
@@ -2352,31 +2352,31 @@
       },
       "ma_structure": {
        "ema20": {
-        "value": 61.99,
-        "slope_pct_5d": -2.33,
+        "value": 62.0,
+        "slope_pct_5d": -2.32,
         "relation": "below",
-        "distance_atr": -0.61
+        "distance_atr": -0.6
        },
        "sma20": {
         "value": 61.82,
         "slope_pct_5d": -2.29,
         "relation": "below",
-        "distance_atr": -0.55
+        "distance_atr": -0.54
        },
        "sma50": {
         "value": 67.23,
         "slope_pct_5d": -1.65,
         "relation": "below",
-        "distance_atr": -2.3
+        "distance_atr": -2.29
        },
        "sma200": {
         "value": 70.23,
         "slope_pct_5d": -0.88,
         "relation": "below",
-        "distance_atr": -3.27
+        "distance_atr": -3.26
        },
        "golden_cross": false,
-       "summary": "20-day average (exponential) $61.99 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling"
+       "summary": "20-day average (exponential) $62.00 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling"
       },
       "fib": {
        "swing": {
@@ -2435,10 +2435,10 @@
        "RSI divergence (regular_bearish): price made a higher high while RSI made a lower high \u2014 $76.07 on 2026-08-14 (RSI 63) vs $76.80 on 2026-08-26 (RSI 56). Confirmed 2026-08-27 by its RSI trendline break \u2014 RSI closed under the line beneath its lows; formed at a tested level \u2014 it counts as evidence.",
        "Divergence ledger: 12 divergences measured across every confirmed pivot pair (RSI 6, MACD 6); the five most salient are listed above and the full ledger rides in the brief's Desk read.",
        "RSI regime: RSI is 42. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
-       "MACD: MACD (-2.10) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21.",
+       "MACD: MACD (-2.09) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21.",
        "Wyckoff base vocabulary applies here: SC \u2192 AR \u2192 ST \u2192 spring (climax low $58.92, base top $66.02); markup language is not earned until a sign of strength is followed by a last point of support..",
        "Dominant swing: $97.38 on 2026-01-23 to $54.46 on 2026-03-30; retracements (confluence ingredients only, never standalone levels): 38.2% at $70.86, 50.0% at $75.92, 61.8% at $80.98.",
-       "Averages: 20-day average (exponential) $61.99 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling.",
+       "Averages: 20-day average (exponential) $62.00 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling.",
        "Volume: the last 20 sessions average 0.91x the prior period's volume. volume expanded 1.9x on 2026-10-15 on a up move.",
        "Stacked-level zone $56.00\u2013$60.47 (5 independent items stack there: a pivot cluster at $56.47 tested in 3 separate episodes; a pivot cluster at $58.92 tested in 1 separate episode; a pivot cluster at $59.86 tested in 1 separate episode; the pattern's rising support line; the round number $60.00).",
        "Invalidation: a daily close below the selling-climax low \u2014 the base read fails there ($58.92) \u2014 $58.92."
@@ -2526,7 +2526,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "The nearest tested support is a pivot cluster (1 confirmed pivot in 1 separate test) at $59.86 \u2014 the close sits 0.4% above it.",
+       "reading": "The nearest tested support is a pivot cluster (1 confirmed pivot in 1 separate test) at $59.86 \u2014 the close sits 0.6% above it.",
        "stance": 1,
        "salience": 2.5,
        "disposition": "decisive",
@@ -2535,7 +2535,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $60.10, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact. Two lines are measured under price; the tighter one \u2014 the chart read's at $58.92 \u2014 governs, and the swing low at $56.27 sits deeper as context only.",
+       "reading": "Price closed at $60.20, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact. Two lines are measured under price; the tighter one \u2014 the chart read's at $58.92 \u2014 governs, and the swing low at $56.27 sits deeper as context only.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -2607,7 +2607,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (exponential) $61.99 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling.",
+       "reading": "20-day average (exponential) $62.00 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling.",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -2634,7 +2634,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-2.10) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21.",
+       "reading": "MACD (-2.09) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21.",
        "stance": 1,
        "salience": 1.0,
        "disposition": "considered",
@@ -2652,7 +2652,7 @@
       {
        "key": "divergence_top",
        "factor": "Strongest divergence",
-       "reading": "Confirmed 2026-02-05 \u2014 184 sessions before today \u2014 by its price trigger \u2014 a close below the swing low between the two highs: Regular Bearish (MACD): price made a higher high while MACD made a lower high \u2014 $97.07 on 2025-12-12 (MACD 6.75) vs $97.38 on 2026-01-23 (MACD 2.64); measured across the major swing pivots. It does not vote: the move it implied has already happened \u2014 the last close, $60.10, sits 12.7 daily ranges beyond the $97.38 high it formed on, past the six daily ranges this desk still reads a divergence at \u2014 so it is weighed as context.",
+       "reading": "Confirmed 2026-02-05 \u2014 184 sessions before today \u2014 by its price trigger \u2014 a close below the swing low between the two highs: Regular Bearish (MACD): price made a higher high while MACD made a lower high \u2014 $97.07 on 2025-12-12 (MACD 6.75) vs $97.38 on 2026-01-23 (MACD 2.64); measured across the major swing pivots. It does not vote: the move it implied has already happened \u2014 the last close, $60.20, sits 12.7 daily ranges beyond the $97.38 high it formed on, past the six daily ranges this desk still reads a divergence at \u2014 so it is weighed as context.",
        "stance": 0,
        "salience": 10.86,
        "disposition": "considered",
@@ -2787,7 +2787,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 16.78 (-3.1% on the day) (VIX reading as of 2026-10-21) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 16.82 (-2.8% on the day) (VIX reading as of 2026-10-21) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -2853,7 +2853,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.31B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $475. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-5.02B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -2972,7 +2972,7 @@
       {
        "key": "level",
        "factor": "Level position",
-       "reading": "The nearest tested support is a pivot cluster (1 confirmed pivot in 1 separate test) at $59.86 \u2014 the close sits 0.4% above it.",
+       "reading": "The nearest tested support is a pivot cluster (1 confirmed pivot in 1 separate test) at $59.86 \u2014 the close sits 0.6% above it.",
        "stance": 1,
        "salience": 2.5,
        "disposition": "decisive",
@@ -3028,7 +3028,7 @@
       {
        "key": "invalidation_structure",
        "factor": "What would end it \u2014 price structure",
-       "reading": "Price closed at $60.10, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact. Two lines are measured under price; the tighter one \u2014 the chart read's at $58.92 \u2014 governs, and the swing low at $56.27 sits deeper as context only.",
+       "reading": "Price closed at $60.20, above the recent swing low of $56.27 \u2014 the structure the setup rests on is intact. Two lines are measured under price; the tighter one \u2014 the chart read's at $58.92 \u2014 governs, and the swing low at $56.27 sits deeper as context only.",
        "stance": 0,
        "salience": 2.0,
        "disposition": "considered",
@@ -3100,7 +3100,7 @@
       {
        "key": "ma_structure",
        "factor": "Moving-average structure",
-       "reading": "20-day average (exponential) $61.99 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling.",
+       "reading": "20-day average (exponential) $62.00 \u2014 price below it, average falling; 50-day average $67.23 \u2014 price below it, average falling; 200-day average $70.23 \u2014 price below it, average falling.",
        "stance": -1,
        "salience": 2.0,
        "disposition": "considered",
@@ -3118,7 +3118,7 @@
       {
        "key": "macd_state",
        "factor": "MACD state",
-       "reading": "MACD (-2.10) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21.",
+       "reading": "MACD (-2.09) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21.",
        "stance": 1,
        "salience": 1.0,
        "disposition": "considered",
@@ -3136,7 +3136,7 @@
       {
        "key": "divergence_top",
        "factor": "Strongest divergence",
-       "reading": "Confirmed 2026-02-05 \u2014 184 sessions before today \u2014 by its price trigger \u2014 a close below the swing low between the two highs: Regular Bearish (MACD): price made a higher high while MACD made a lower high \u2014 $97.07 on 2025-12-12 (MACD 6.75) vs $97.38 on 2026-01-23 (MACD 2.64); measured across the major swing pivots. It does not vote: the move it implied has already happened \u2014 the last close, $60.10, sits 12.7 daily ranges beyond the $97.38 high it formed on, past the six daily ranges this desk still reads a divergence at \u2014 so it is weighed as context.",
+       "reading": "Confirmed 2026-02-05 \u2014 184 sessions before today \u2014 by its price trigger \u2014 a close below the swing low between the two highs: Regular Bearish (MACD): price made a higher high while MACD made a lower high \u2014 $97.07 on 2025-12-12 (MACD 6.75) vs $97.38 on 2026-01-23 (MACD 2.64); measured across the major swing pivots. It does not vote: the move it implied has already happened \u2014 the last close, $60.20, sits 12.7 daily ranges beyond the $97.38 high it formed on, past the six daily ranges this desk still reads a divergence at \u2014 so it is weighed as context.",
        "stance": 0,
        "salience": 10.86,
        "disposition": "considered",
@@ -3271,7 +3271,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 16.78 (-3.1% on the day) (VIX reading as of 2026-10-21) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 16.82 (-2.8% on the day) (VIX reading as of 2026-10-21) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -3337,7 +3337,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-5.31B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves; the model's flip level is $475. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-5.02B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3806,7 +3806,7 @@
          {
           "lo": 59.99,
           "hi": 60.64,
-          "share": 0.053
+          "share": 0.054
          },
          {
           "lo": 63.22,
@@ -4013,7 +4013,7 @@
        "family": "levels",
        "label": "52-week high & low",
        "status": "value",
-       "fact": "52-week range $54.46\u2013$97.38; price sits 13% of the way up it, 62.0% under the high.",
+       "fact": "52-week range $54.46\u2013$97.38; price sits 13% of the way up it, 61.9% under the high.",
        "data": {
         "hi": 97.38,
         "lo": 54.46,
@@ -4022,7 +4022,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 52-week range $54.46\u2013$97.38; price sits 13% of the way up it, 62.0% under the high"
+       "deciding": "considered \u2014 52-week range $54.46\u2013$97.38; price sits 13% of the way up it, 61.9% under the high"
       },
       {
        "key": "anchored_vwap",
@@ -4058,34 +4058,34 @@
        "family": "trend",
        "label": "10/20/50/200-day averages vs price",
        "status": "value",
-       "fact": "Averages: 10-day $60.33 (price below); 20-day $61.82 (price below by -0.6 daily ranges, average falling); 50-day $67.23 (price below by -2.3 daily ranges, average falling); 200-day $70.23 (price below by -3.3 daily ranges, average falling); 20-day average (exponential) $61.99 \u2014 the average a contrary setup is priced from.",
+       "fact": "Averages: 10-day $60.34 (price below); 20-day $61.82 (price below by -0.5 daily ranges, average falling); 50-day $67.23 (price below by -2.3 daily ranges, average falling); 200-day $70.23 (price below by -3.3 daily ranges, average falling); 20-day average (exponential) $62.00 \u2014 the average a contrary setup is priced from.",
        "data": {
-        "sma10": 60.33,
+        "sma10": 60.34,
         "detail": {
          "sma20": {
           "value": 61.82,
           "slope_pct_5d": -2.29,
           "relation": "below",
-          "distance_atr": -0.55
+          "distance_atr": -0.54
          },
          "sma50": {
           "value": 67.23,
           "slope_pct_5d": -1.65,
           "relation": "below",
-          "distance_atr": -2.3
+          "distance_atr": -2.29
          },
          "sma200": {
           "value": 70.23,
           "slope_pct_5d": -0.88,
           "relation": "below",
-          "distance_atr": -3.27
+          "distance_atr": -3.26
          }
         }
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Averages: 10-day $60.33 (price below); 20-day $61.82 (price below by -0.6 daily ranges, average falling); 50-day $67.23 (price below by -2.3 daily ranges, avera"
+       "deciding": "considered \u2014 Averages: 10-day $60.34 (price below); 20-day $61.82 (price below by -0.5 daily ranges, average falling); 50-day $67.23 (price below by -2.3 daily ranges, avera"
       },
       {
        "key": "weinstein_stage",
@@ -4169,7 +4169,7 @@
        "status": "value",
        "fact": "RSI is 42. In a bear regime it usually lives between 10-60, with the 50-60 resistance shelf as the zone that matters; it sits mid-range for a bear regime.",
        "data": {
-        "rsi": 42.2,
+        "rsi": 42.3,
         "regime": "bear"
        },
        "reason": null,
@@ -4182,7 +4182,7 @@
        "family": "momentum",
        "label": "MACD line / signal / histogram",
        "status": "value",
-       "fact": "MACD (-2.10) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21 Line vs signal: above; vs zero: below; histogram contracting.",
+       "fact": "MACD (-2.09) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 2026-10-21 Line vs signal: above; vs zero: below; histogram contracting.",
        "data": {
         "vs_signal": "above",
         "zero": "below",
@@ -4191,7 +4191,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 MACD (-2.10) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 202"
+       "deciding": "considered \u2014 MACD (-2.09) sits above its signal line (-2.11) and below zero; the histogram is contracting over the last three sessions; the last crossover was bullish on 202"
       },
       {
        "key": "macd_crossovers",
@@ -4223,7 +4223,7 @@
        "status": "value",
        "fact": "Slow stochastic: %K 35, %D 33 \u2014 mid-range; the last %K/%D cross was bullish on 2026-10-15 (4 sessions ago).",
        "data": {
-        "k": 35.1,
+        "k": 35.2,
         "d": 32.6,
         "cross": [
          "bullish",
@@ -4259,7 +4259,7 @@
        "status": "value",
        "fact": "6-month momentum: -27.9% over the last 126 sessions.",
        "data": {
-        "ret126_pct": -27.9,
+        "ret126_pct": -27.86,
         "book_pct": null
        },
        "reason": null,
@@ -4272,18 +4272,18 @@
        "family": "momentum",
        "label": "Relative strength vs SPX & sector (new)",
        "status": "value",
-       "fact": "Relative strength \u2014 vs the S&P 500: -7.8 points over 21 sessions, -4.6 over 63; vs its sector (XRT): -12.3 points over 21 sessions, -1.1 over 63.",
+       "fact": "Relative strength \u2014 vs the S&P 500: -7.7 points over 21 sessions, -4.5 over 63; vs its sector (XRT): -12.2 points over 21 sessions, -1.0 over 63.",
        "data": {
-        "spy21_spread": -7.79,
-        "spy63_spread": -4.59,
+        "spy21_spread": -7.74,
+        "spy63_spread": -4.53,
         "sector_etf": "XRT",
-        "sector21_spread": -12.34,
-        "sector63_spread": -1.11
+        "sector21_spread": -12.2,
+        "sector63_spread": -0.97
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Relative strength \u2014 vs the S&P 500: -7.8 points over 21 sessions, -4.6 over 63; vs its sector (XRT): -12.3 points over 21 sessions, -1.1 over 63"
+       "deciding": "considered \u2014 Relative strength \u2014 vs the S&P 500: -7.7 points over 21 sessions, -4.5 over 63; vs its sector (XRT): -12.2 points over 21 sessions, -1.0 over 63"
       },
       {
        "key": "relative_volume",
@@ -4314,8 +4314,8 @@
        "status": "value",
        "fact": "On-balance volume is above its 20-session average and below its 60-session high \u2014 the flow line does not confirm price's recent ground.",
        "data": {
-        "last": -116931097.0,
-        "chg_20": 15025762.0,
+        "last": -116966463.0,
+        "chg_20": 14990396.0,
         "at_60_high": false
        },
        "reason": null,
@@ -4330,7 +4330,7 @@
        "status": "value",
        "fact": "The accumulation/distribution line is rising (above its 20-session average) \u2014 money flow is accumulating on the daily tape.",
        "data": {
-        "last": -100247437.9,
+        "last": -100230946.1,
         "above_avg": true
        },
        "reason": null,
@@ -4374,15 +4374,15 @@
        "family": "volume",
        "label": "Liquidity & float (addendum 1)",
        "status": "value",
-       "fact": "Liquidity: average daily volume 8,083,472 shares ($485,857,114.61 a day at the last close); no EDGAR shares-outstanding record resolved for this name, so no market-cap or float fact is stated; the typical spread is not stated \u2014 the desk holds no equity quote snapshot at this boundary.",
+       "fact": "Liquidity: average daily volume 8,085,241 shares ($486,246,381.71 a day at the last close); no EDGAR shares-outstanding record resolved for this name, so no market-cap or float fact is stated; the typical spread is not stated \u2014 the desk holds no equity quote snapshot at this boundary.",
        "data": {
-        "adv20": 8083472,
-        "dollar_adv20": 485857115
+        "adv20": 8085241,
+        "dollar_adv20": 486246382
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Liquidity: average daily volume 8,083,472 shares ($485,857,114.61 a day at the last close); no EDGAR shares-outstanding record resolved for this name, so no mar"
+       "deciding": "considered \u2014 Liquidity: average daily volume 8,085,241 shares ($486,246,381.71 a day at the last close); no EDGAR shares-outstanding record resolved for this name, so no mar"
       },
       {
        "key": "div_daily_core",
@@ -4604,7 +4604,7 @@
        "fact": "ATR(14) is $3.10 \u2014 5.2% of price. Every distance on this read is measured in these ranges.",
        "data": {
         "atr": 3.1,
-        "atr_pct": 5.16
+        "atr_pct": 5.15
        },
        "reason": null,
        "needs": null,
@@ -4618,8 +4618,8 @@
        "status": "value",
        "fact": "Price sits 0.6 daily ranges below the 20-day average \u2014 the 34th percentile of its own last 252 sessions. Well inside its own normal stretch.",
        "data": {
-        "distance_atr": -0.61,
-        "own_year_pct": 34.3
+        "distance_atr": -0.6,
+        "own_year_pct": 33.9
        },
        "reason": null,
        "needs": null,
@@ -4812,7 +4812,7 @@
        "family": "candles_gaps",
        "label": "Gaps \u2014 taxonomy & unfilled gaps (addendum 8)",
        "status": "value",
-       "fact": "Gaps in the last 120 sessions: 10 (7 common, 3 runaway); 1 still unfilled and carried as levels \u2014 the nearest unfilled gap is the down gap of 2026-09-10 at $72.88\u2013$73.16 (21.5% away, common).",
+       "fact": "Gaps in the last 120 sessions: 10 (7 common, 3 runaway); 1 still unfilled and carried as levels \u2014 the nearest unfilled gap is the down gap of 2026-09-10 at $72.88\u2013$73.16 (21.4% away, common).",
        "data": {
         "recent": [
          {
@@ -4927,7 +4927,7 @@
          "filled": false,
          "kind": "common",
          "age": 29,
-         "dist_pct": 21.49,
+         "dist_pct": 21.42,
          "mid": 73.02
         }
        },
@@ -5024,7 +5024,7 @@
         },
         "entry": 59.7,
         "cap": 60.47,
-        "dist_to_cap_pct": 0.61,
+        "dist_to_cap_pct": 0.55,
         "in_zone": true
        },
        "reason": null,
@@ -5255,19 +5255,19 @@
        "family": "company_market",
        "label": "Peers' 21-day performance",
        "status": "value",
-       "fact": "Peers (the GICS Automotive Retail industry, 12 names with bars): the median peer moved +1.2% over 21 sessions; this name moved -8.1% \u2014 a spread of -9.2 points.",
+       "fact": "Peers (the GICS Automotive Retail industry, 12 names with bars): the median peer moved +1.2% over 21 sessions; this name moved -8.0% \u2014 a spread of -9.2 points.",
        "data": {
         "bucket": "Automotive Retail",
         "median_pct": 1.1531497188601803,
-        "mine_pct": -8.1,
-        "spread": -9.25,
+        "mine_pct": -8.04,
+        "spread": -9.2,
         "n_peers": 12,
         "source": "gics_industry"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Peers (the GICS Automotive Retail industry, 12 names with bars): the median peer moved +1.2% over 21 sessions; this name moved -8.1% \u2014 a spread of -9.2 points"
+       "deciding": "considered \u2014 Peers (the GICS Automotive Retail industry, 12 names with bars): the median peer moved +1.2% over 21 sessions; this name moved -8.0% \u2014 a spread of -9.2 points"
       },
       {
        "key": "filings_8k",
@@ -5409,7 +5409,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ 0.83% on the day, -0.44% vs its 50-day; VIX 16.78 (-3.1% on the day).",
+       "fact": "Market regime: Downtrend; QQQ 0.82% on the day, -0.44% vs its 50-day; VIX 16.82 (-2.8% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -5417,7 +5417,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ 0.83% on the day, -0.44% vs its 50-day; VIX 16.78 (-3.1% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ 0.82% on the day, -0.44% vs its 50-day; VIX 16.82 (-2.8% on the day)"
       },
       {
        "key": "market_breadth",
@@ -5497,7 +5497,7 @@
        "family": "company_market",
        "label": "Seasonality",
        "status": "value",
-       "fact": "Seasonality (this name's own history, 704 sessions): the current month (October) has averaged 0.254% a session over 3 year(s) of prints; its strongest month is May (0.757%/session), weakest December (-0.247%/session). Two-to-three years of history \u2014 a tendency, stated at its true depth.",
+       "fact": "Seasonality (this name's own history, 704 sessions): the current month (October) has averaged 0.255% a session over 3 year(s) of prints; its strongest month is May (0.757%/session), weakest December (-0.247%/session). Two-to-three years of history \u2014 a tendency, stated at its true depth.",
        "data": {
         "profile": {
          "01": {
@@ -5546,7 +5546,7 @@
           "n": 62
          },
          "10": {
-          "mean_daily_pct": 0.254,
+          "mean_daily_pct": 0.255,
           "years": 3,
           "n": 61
          },
@@ -5566,7 +5566,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Seasonality (this name's own history, 704 sessions): the current month (October) has averaged 0.254% a session over 3 year(s) of prints; its strongest month is "
+       "deciding": "considered \u2014 Seasonality (this name's own history, 704 sessions): the current month (October) has averaged 0.255% a session over 3 year(s) of prints; its strongest month is "
       },
       {
        "key": "echo_structure",
@@ -5632,7 +5632,7 @@
        "family": "patterns",
        "label": "VCP footprint sequence (addendum 12)",
        "status": "value",
-       "fact": "VCP footprints: 6 contraction(s) on the base (19%\u219219%\u219215%\u21928%\u219215%\u219214%) \u2014 no tightening VCP sequence (the depths do not halve into a tight final pullback); pivot $65.09, +8.3% from price.",
+       "fact": "VCP footprints: 6 contraction(s) on the base (19%\u219219%\u219215%\u21928%\u219215%\u219214%) \u2014 no tightening VCP sequence (the depths do not halve into a tight final pullback); pivot $65.09, +8.2% from price.",
        "data": {
         "depths": [
          18.83,
@@ -5645,7 +5645,7 @@
         "n": 6,
         "fires": false,
         "pivot": 65.09,
-        "dist_to_pivot_pct": 8.29,
+        "dist_to_pivot_pct": 8.23,
         "footprint": "19%\u219219%\u219215%\u21928%\u219215%\u219214%"
        },
        "reason": null,
@@ -5902,7 +5902,7 @@
        "status": "value",
        "fact": "Climax top: no climax-run sequence stands (acceleration -4% in 3 weeks, 3/8 up days, stretch -14%). The selling-climax side is read under the climax-base / Wyckoff items, not here.",
        "data": {
-        "accel_3wk_pct": -3.9,
+        "accel_3wk_pct": -3.8,
         "up_days_8": 3,
         "largest_gain_recent": 4.59,
         "stretch_vs_200d_pct": -14.4,
@@ -5968,7 +5968,7 @@
        "fact": "Regression channel (OLS over 60 sessions, Raff \u00b12\u03c3): the line ends at $61.64 (slope -0.31%/session); channel $53.78\u2013$69.50; price sits inside it.",
        "data": {
         "line_end": 61.64,
-        "slope_pct": -0.314,
+        "slope_pct": -0.313,
         "sd": 3.93,
         "upper": 69.5,
         "lower": 53.78
@@ -6229,16 +6229,16 @@
        "family": "levels",
        "label": "Distance to all-time high (addendum 12)",
        "status": "value",
-       "fact": "All-time high: $97.38 \u2014 price sits -38.3% from it.",
+       "fact": "All-time high: $97.38 \u2014 price sits -38.2% from it.",
        "data": {
         "ath": 97.38,
-        "dist_pct": -38.28,
+        "dist_pct": -38.24,
         "blue_sky": false
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 All-time high: $97.38 \u2014 price sits -38.3% from it"
+       "deciding": "considered \u2014 All-time high: $97.38 \u2014 price sits -38.2% from it"
       },
       {
        "key": "ichimoku",
@@ -6256,7 +6256,7 @@
         "cloud_state": "below_cloud",
         "tk_cross": null,
         "cross_strength": null,
-        "chikou_vs_price_26ago": -6.8
+        "chikou_vs_price_26ago": -6.76
        },
        "reason": null,
        "needs": null,
@@ -6288,17 +6288,17 @@
        "family": "trend",
        "label": "Parabolic SAR (addendum 12)",
        "status": "value",
-       "fact": "Parabolic SAR: $63.11 (above price short), -4.8% from price; flipped 7 session(s) ago. Filed read-only.",
+       "fact": "Parabolic SAR: $63.11 (above price short), -4.7% from price; flipped 7 session(s) ago. Filed read-only.",
        "data": {
         "sar": 63.11,
         "side": "above_price_short",
-        "dist_pct": -4.76,
+        "dist_pct": -4.7,
         "flip_age": 7
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Parabolic SAR: $63.11 (above price short), -4.8% from price; flipped 7 session(s) ago"
+       "deciding": "considered \u2014 Parabolic SAR: $63.11 (above price short), -4.7% from price; flipped 7 session(s) ago"
       },
       {
        "key": "supertrend",
@@ -6325,9 +6325,9 @@
        "fact": "GMMA ribbon (EMA kernels): short group fully below the long group (agreement, down); the short group's spread is 2.2% of its mean.",
        "data": {
         "state": "short group fully below the long group (agreement, down)",
-        "short_spread_pct": 2.22,
-        "short_mean": 60.39,
-        "long_mean": 64.43
+        "short_spread_pct": 2.21,
+        "short_mean": 60.4,
+        "long_mean": 64.44
        },
        "reason": null,
        "needs": null,
@@ -6339,14 +6339,14 @@
        "family": "momentum",
        "label": "Williams %R (addendum 12)",
        "status": "value",
-       "fact": "Williams %R(14) is -61 (mid-range).",
+       "fact": "Williams %R(14) is -60 (mid-range).",
        "data": {
-        "williams_r": -60.7
+        "williams_r": -60.3
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Williams %R(14) is -61 (mid-range)"
+       "deciding": "considered \u2014 Williams %R(14) is -60 (mid-range)"
       },
       {
        "key": "vortex",
@@ -6370,7 +6370,7 @@
        "status": "value",
        "fact": "TRIX(15) is -0.485% (below zero).",
        "data": {
-        "trix_pct": -0.4853
+        "trix_pct": -0.4852
        },
        "reason": null,
        "needs": null,
@@ -6384,7 +6384,7 @@
        "status": "value",
        "fact": "Ultimate Oscillator (7/14/28, 4/2/1) is 47.",
        "data": {
-        "uo": 46.8
+        "uo": 47.0
        },
        "reason": null,
        "needs": null,
@@ -6412,7 +6412,7 @@
        "status": "value",
        "fact": "CMO(14) is -17.",
        "data": {
-        "cmo": -17.4
+        "cmo": -17.3
        },
        "reason": null,
        "needs": null,
@@ -6426,7 +6426,7 @@
        "status": "value",
        "fact": "KST is -111.2 vs its signal -109.2 (below).",
        "data": {
-        "kst": -111.21,
+        "kst": -111.16,
         "signal": -109.21
        },
        "reason": null,
@@ -6495,9 +6495,9 @@
        "family": "momentum",
        "label": "RS line & RS-line new high (addendum 12, provisional)",
        "status": "value",
-       "fact": "RS line (PROVISIONAL \u2014 no cluster-grade study has calibrated this item): the line stands at 69.1 of its window start (high 123.1).",
+       "fact": "RS line (PROVISIONAL \u2014 no cluster-grade study has calibrated this item): the line stands at 69.2 of its window start (high 123.1).",
        "data": {
-        "rs_line": 69.12,
+        "rs_line": 69.16,
         "rs_line_high": 123.15,
         "rs_line_new_high": false,
         "provisional": true
@@ -6505,17 +6505,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 RS line (PROVISIONAL \u2014 no cluster-grade study has calibrated this item): the line stands at 69.1 of its window start (high 123.1)"
+       "deciding": "considered \u2014 RS line (PROVISIONAL \u2014 no cluster-grade study has calibrated this item): the line stands at 69.2 of its window start (high 123.1)"
       },
       {
        "key": "volume_dry_up",
        "family": "volume",
        "label": "Volume dry-up at the pivot (addendum 12)",
        "status": "value",
-       "fact": "Volume dry-up: the quietest of the last 10 sessions ran at 0.15x the 50-session mean (2 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
+       "fact": "Volume dry-up: the quietest of the last 10 sessions ran at 0.16x the 50-session mean (2 dry day(s) at or under 0.60x) \u2014 a dry-up stands.",
        "data": {
         "vol50": 8752092.9,
-        "min_ratio": 0.153,
+        "min_ratio": 0.157,
         "dry_days": 2,
         "dry_up": true,
         "vol_rank_120": 0.0,
@@ -6525,7 +6525,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Volume dry-up: the quietest of the last 10 sessions ran at 0.15x the 50-session mean (2 dry day(s) at or under 0.60x) \u2014 a dry-up stands"
+       "deciding": "considered \u2014 Volume dry-up: the quietest of the last 10 sessions ran at 0.16x the 50-session mean (2 dry day(s) at or under 0.60x) \u2014 a dry-up stands"
       },
       {
        "key": "vwap_bands",
@@ -6536,7 +6536,7 @@
        "data": {
         "vwap20": 61.66,
         "sd": 1.97,
-        "z": -0.79,
+        "z": -0.77,
         "bands": {
          "-3": 55.76,
          "-2": 57.73,
@@ -6569,59 +6569,59 @@
        "family": "volume",
        "label": "Chaikin Oscillator (addendum 12)",
        "status": "value",
-       "fact": "Chaikin Oscillator (EMA3-EMA10 of the A/D line) is 492,908; CMF(20) stands at -0.0032.",
+       "fact": "Chaikin Oscillator (EMA3-EMA10 of the A/D line) is 498,155; CMF(20) stands at -0.0031.",
        "data": {
-        "chaikin_osc": 492908.0,
-        "cmf20": -0.0032
+        "chaikin_osc": 498155.4,
+        "cmf20": -0.0031
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Chaikin Oscillator (EMA3-EMA10 of the A/D line) is 492,908; CMF(20) stands at -0.0032"
+       "deciding": "considered \u2014 Chaikin Oscillator (EMA3-EMA10 of the A/D line) is 498,155; CMF(20) stands at -0.0031"
       },
       {
        "key": "force_index",
        "family": "volume",
        "label": "Force Index (addendum 12)",
        "status": "value",
-       "fact": "Force Index (EMA13 of change x volume) is -1,572,789.",
+       "fact": "Force Index (EMA13 of change x volume) is -1,566,704.",
        "data": {
-        "force_index_13": -1572788.5,
+        "force_index_13": -1566704.2,
         "seat_score": 55,
         "seat_rule": "the Elder force-index pullback condition (trend up, force negative)"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Force Index (EMA13 of change x volume) is -1,572,789"
+       "deciding": "considered \u2014 Force Index (EMA13 of change x volume) is -1,566,704"
       },
       {
        "key": "ease_of_movement",
        "family": "volume",
        "label": "Ease of Movement (addendum 12)",
        "status": "value",
-       "fact": "Ease of Movement (14) is +14.035.",
+       "fact": "Ease of Movement (14) is +13.569.",
        "data": {
-        "emv14": 14.0353
+        "emv14": 13.5688
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Ease of Movement (14) is +14.035"
+       "deciding": "considered \u2014 Ease of Movement (14) is +13.569"
       },
       {
        "key": "klinger",
        "family": "volume",
        "label": "Klinger Oscillator (addendum 12)",
        "status": "value",
-       "fact": "Klinger Oscillator (EMA34-EMA55 of force volume) is -12,143,978.",
+       "fact": "Klinger Oscillator (EMA34-EMA55 of force volume) is -12,132,504.",
        "data": {
-        "klinger": -12143977.8
+        "klinger": -12132503.9
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Klinger Oscillator (EMA34-EMA55 of force volume) is -12,143,978"
+       "deciding": "considered \u2014 Klinger Oscillator (EMA34-EMA55 of force volume) is -12,132,504"
       },
       {
        "key": "vwma",
@@ -6643,16 +6643,16 @@
        "family": "volume",
        "label": "Up/down volume ratio (addendum 12)",
        "status": "value",
-       "fact": "Up/down volume (50 sessions): up-volume 187,569,109 vs down-volume 202,219,643 \u2014 a ratio of 0.93.",
+       "fact": "Up/down volume (50 sessions): up-volume 187,569,109 vs down-volume 202,255,009 \u2014 a ratio of 0.93.",
        "data": {
-        "ratio_50d": 0.928,
+        "ratio_50d": 0.927,
         "up_vol": 187569109.0,
-        "down_vol": 202219643.0
+        "down_vol": 202255009.0
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Up/down volume (50 sessions): up-volume 187,569,109 vs down-volume 202,219,643 \u2014 a ratio of 0.93"
+       "deciding": "considered \u2014 Up/down volume (50 sessions): up-volume 187,569,109 vs down-volume 202,255,009 \u2014 a ratio of 0.93"
       },
       {
        "key": "ad_rating_grade",
@@ -6673,35 +6673,35 @@
        "family": "volume",
        "label": "Minor volume lines \u2014 NVI/PVI/PVT/Williams A/D (addendum 12)",
        "status": "value",
-       "fact": "Minor volume lines (grouped): NVI 1955, PVI 437, PVT -20,046,988, Williams A/D -97,916,369.",
+       "fact": "Minor volume lines (grouped): NVI 1956, PVI 437, PVT -20,046,281, Williams A/D -97,899,878.",
        "data": {
-        "nvi": 1954.7,
+        "nvi": 1955.8,
         "pvi": 436.8,
-        "pvt": -20046987.8,
-        "williams_ad": -97916369.5
+        "pvt": -20046281.1,
+        "williams_ad": -97899877.7
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Minor volume lines (grouped): NVI 1955, PVI 437, PVT -20,046,988, Williams A/D -97,916,369"
+       "deciding": "considered \u2014 Minor volume lines (grouped): NVI 1956, PVI 437, PVT -20,046,281, Williams A/D -97,899,878"
       },
       {
        "key": "keltner",
        "family": "stretch",
        "label": "Keltner channels & the squeeze (addendum 12)",
        "status": "value",
-       "fact": "Keltner (EMA20 \u00b1 2xATR10): $55.87\u2013$68.11 around $61.99; the Bollinger squeeze is ON \u2014 the bands sit inside the Keltner channel (the true containment test).",
+       "fact": "Keltner (EMA20 \u00b1 2xATR10): $55.88\u2013$68.12 around $62.00; the Bollinger squeeze is ON \u2014 the bands sit inside the Keltner channel (the true containment test).",
        "data": {
-        "mid": 61.99,
-        "upper": 68.11,
-        "lower": 55.87,
+        "mid": 62.0,
+        "upper": 68.12,
+        "lower": 55.88,
         "squeeze_on": true,
         "squeeze_fired_age": null
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Keltner (EMA20 \u00b1 2xATR10): $55.87\u2013$68.11 around $61.99; the Bollinger squeeze is ON \u2014 the bands sit inside the Keltner channel (the true containment test)"
+       "deciding": "considered \u2014 Keltner (EMA20 \u00b1 2xATR10): $55.88\u2013$68.12 around $62.00; the Bollinger squeeze is ON \u2014 the bands sit inside the Keltner channel (the true containment test)"
       },
       {
        "key": "atr_trailing_levels",
@@ -6713,7 +6713,7 @@
         "chandelier_long": 59.6,
         "chandelier_short": 65.87,
         "atr22": 3.2,
-        "wilder_stop_long": 50.51
+        "wilder_stop_long": 50.54
        },
        "reason": null,
        "needs": null,
@@ -6813,7 +6813,7 @@
         "streak": 1,
         "ha_doji": false,
         "ha_open": 59.35,
-        "ha_close": 60.89
+        "ha_close": 60.9
        },
        "reason": null,
        "needs": null,
@@ -6825,19 +6825,19 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$13.91 by the IV form (IV 72.7%); \u00b1$9.39 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (37 days): \u00b1$13.92 by the IV form (IV 72.7%); \u00b1$9.39 by the 0.85x straddle form.",
        "data": {
-        "spot": 60.105,
+        "spot": 60.14,
         "iv_pct": 72.7,
         "expiry": "2026-11-27",
         "dte": 37,
-        "iv_form": 13.91,
+        "iv_form": 13.92,
         "straddle_form": 9.39
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$13.91 by the IV form (IV 72.7%); \u00b1$9.39 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (37 days): \u00b1$13.92 by the IV form (IV 72.7%); \u00b1$9.39 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
@@ -6847,7 +6847,7 @@
        "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $34.00; net gamma $-0.00B per 1% move \u2014 price sits in the stabilising regime (above the flip).",
        "data": {
         "flip_strike": 34.0,
-        "net_gex": -2127689.17,
+        "net_gex": -2130167.86,
         "contracts_used": 399,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
@@ -7179,22 +7179,22 @@
        "family": "company_market",
        "label": "Peer RS trail (addendum 12)",
        "status": "value",
-       "fact": "Peer RS trail: the spread vs peers runs 2.06 \u2192 -6.17 \u2192 -4.12 \u2192 -9.25 points over the last four weekly marks \u2014 a slope of -11.3.",
+       "fact": "Peer RS trail: the spread vs peers runs 2.06 \u2192 -6.17 \u2192 -4.12 \u2192 -9.2 points over the last four weekly marks \u2014 a slope of -11.3.",
        "data": {
         "trail": [
          2.06,
          -6.17,
          -4.12,
-         -9.25
+         -9.2
         ],
-        "spread": -9.25,
-        "slope": -11.31,
+        "spread": -9.2,
+        "slope": -11.26,
         "bucket": "Automotive Retail"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Peer RS trail: the spread vs peers runs 2.06 \u2192 -6.17 \u2192 -4.12 \u2192 -9.25 points over the last four weekly marks \u2014 a slope of -11.3"
+       "deciding": "considered \u2014 Peer RS trail: the spread vs peers runs 2.06 \u2192 -6.17 \u2192 -4.12 \u2192 -9.2 points over the last four weekly marks \u2014 a slope of -11.3"
       },
       {
        "key": "sentiment_surveys",
@@ -7842,7 +7842,7 @@
      "problems": []
     },
     "board_line": "held \u2014 the full evidence check for this name did not complete, so no call is published",
-    "last_close": 60.1
+    "last_close": 60.2
    },
    "held": {
     "state": "held",
@@ -7902,28 +7902,28 @@
   "regime": "Downtrend",
   "regime_evidence": [
    "QQQ closed below its 50-day average (-0.4%) with a 20-day slope of -2.4% \u2014 the desk's regime rule reads downtrend.",
-   "VIX closed at 16.78 (-3.1% on the day) (VIX reading as of 2026-10-21)."
+   "VIX closed at 16.82 (-2.8% on the day) (VIX reading as of 2026-10-21)."
   ],
   "vix": {
-   "close": 16.78,
-   "change_pct": -3.1,
+   "close": 16.82,
+   "change_pct": -2.8,
    "as_of": "2026-10-21"
   },
   "spy": {
-   "close": 771.01,
-   "day_pct": 0.22,
-   "vs_sma50_pct": 0.35
+   "close": 770.89,
+   "day_pct": 0.2,
+   "vs_sma50_pct": 0.34
   },
   "qqq": {
-   "close": 723.56,
-   "day_pct": 0.83,
+   "close": 723.5,
+   "day_pct": 0.82,
    "vs_sma50_pct": -0.44
   },
   "fear_day": false,
-  "charts": {
-   "spy": "setup-charts/SPY-2026-10-21.png",
-   "qqq": "setup-charts/QQQ-2026-10-21.png"
-  },
+  "charts_withheld": [
+   "spy",
+   "qqq"
+  ],
   "measurements": [
    "Breadth (1831 names scanned): 1375 advanced, 444 declined; 38.4% sit above their 50-day average (57.5% above the 20-day, 45.8% above the 200-day); 102 names jumped 4%+ on the day against 19 down 4%+.",
    "Mood ring (measured 2026-10-20): 29.5 \u2014 RED (VIX 17.31, term ratio 0.912, SKEW 160.4, VVIX 97.15).",
