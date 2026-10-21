@@ -441,7 +441,7 @@
         <div class="statusbar" id="statusbar"></div>
       </div>
       <div class="mast-tools">
-        <div class="mast-waffle" id="mastWaffle" aria-hidden="true"></div><div class="snapshot"><span>Snapshot</span><strong id="snapshotTime">—</strong><span>Updated every 5 minutes</span></div>
+        <div class="mast-waffle" id="mastWaffle" aria-hidden="true"></div><div class="snapshot"><span>Snapshot</span><strong id="snapshotTime">—</strong><span>Updated every 5 minutes in market hours</span></div>
       </div>
     </header>
     <noscript><div class="unavailable noscript-note"><strong>This page needs JavaScript to show the desk's figures.</strong><p>Every number on Muse Desk is loaded live from the desk's records. With JavaScript switched off, nothing here is current — please enable JavaScript and reload to see the desk as it stands.</p></div></noscript>
@@ -496,7 +496,7 @@
           <div id="setupDetailBody"></div>
           <div class="setup-method" id="setupMethod">
             <h3>How a setup earns its place</h3>
-            <p>No single signal is trusted on its own. A stock becomes a setup here when several independent ways of reading it point the same way at the same time &mdash; the desk reads the whole picture at once, never one indicator at a time. Traders call that kind of whole-pattern read a <em>gestalt</em>: the pattern means more than any of its parts. Every setup is scored out of 100 across the lenses below, and every point is explained on its brief &mdash; nothing is a black box.</p>
+            <p>No single signal is trusted on its own. A stock becomes a setup here when several different ways of reading it point the same way at the same time. The desk reads the whole picture at once, never one signal at a time. Every setup is scored out of 100 across the lenses below, and every point is explained on its brief &mdash; nothing is a black box.</p>
             <ul>
               <li><strong>Independent agreement.</strong> The desk runs dozens of strategies built on different ideas. When strategies that share nothing &mdash; different signals, different mathematics &mdash; select the same stock on the same day, that agreement is the strongest evidence the desk knows. Close cousins count once, so one family cannot stuff the ballot box.</li>
               <li><strong>The pattern engine.</strong> A dedicated engine grades swing patterns: the shapes prices make as they base, pull back and turn. A fresh, confirmed pattern adds serious weight. No pattern, no points from this lens.</li>
@@ -508,7 +508,7 @@
             </ul>
             <p>The brief above walks the lenses for this one stock: the chart as it looked when the setup fired, the evidence lens by lens, and the list of what would end the setup. The list itself is a research starting point &mdash; the evidence is published with every setup so you can check the desk&rsquo;s work and decide for yourself.</p>
             <h3>The whole-picture read</h3>
-            <p>On top of the score, every brief now carries a <strong>Desk read</strong>: a senior-trader-style weighing of <em>everything</em> the desk measures for the stock — the score&rsquo;s lenses, the full chart read (the pattern and its track record, every measured divergence on both oscillators, the moving-average structure, volume, Wyckoff events, momentum), the state of the wider market, and how fresh the data is. The few factors that decide it are named at the top; where strong evidence points both ways, the conflict itself is stated rather than averaged away; everything else is listed as considered and weighed, including anything the desk does <em>not</em> measure for this stock — an absence is written down, never passed over in silence. The read ends with what would change the call.</p>
+            <p>Every brief also carries a <strong>Desk read</strong>. It weighs everything the desk measures for the stock: the chart and its shape, volume, momentum, the wider market, and how fresh the data is. The few things that decide the call are named first. Where the evidence points both ways, the brief says so. Anything the desk does not measure for this stock is listed too. The read ends with what would change the call.</p>
             <p>The Desk read is a weighed judgment, and it is deliberately kept <strong>out</strong> of the score: the number above never moves because of it. Every read is written into a permanent ledger before the outcome can be known, and the desk scores its past reads against what prices did over the following one, five and ten sessions. Only if that recorded track record earns it — by review and ruling, not by default — would the read ever be given weight in the ranking. Until then it is published so its judgment can be checked like everything else here.</p>
             <p>The wider tape is measured the same way, every night, over the desk&rsquo;s own scanned universe: how many stocks are rising and how many sit above their own averages, the market&rsquo;s fear gauges combined into one mood reading, whether traders are reaching for risk or hiding from it across six benchmark pairings, which sectors and themes are leading and which are fading, and a five-check pulse on the two big index funds. Those readings sit in the market panel above and are weighed into every Desk read.</p>
           </div>
@@ -591,7 +591,7 @@
       <div class="panel-body" id="explainerBody"><p class="muted">Loading…</p></div></section>
     </section>
 
-    <div class="foot-rule" aria-hidden="true"><i></i><b></b></div><footer class="site-footer"><span class="foot-brand"><svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true" style="vertical-align:-4px;margin-right:7px"><rect width="64" height="64" rx="8" fill="#0d5243"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#c9a24d"/><circle cx="45" cy="42" r="3" fill="#e8f0ea"/></svg>Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#explainer" data-tablink="tab-explainer">How it&rsquo;s judged</a><a href="#top" id="footTop">Back to top</a></footer>
+    <div class="foot-rule" aria-hidden="true"><i></i><b></b></div><footer class="site-footer"><span class="foot-brand"><svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true" style="vertical-align:-4px;margin-right:7px"><rect width="64" height="64" rx="8" fill="#0d5243"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#c9a24d"/><circle cx="45" cy="42" r="3" fill="#e8f0ea"/></svg>Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes during market hours from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#explainer" data-tablink="tab-explainer">How it&rsquo;s judged</a><a href="#top" id="footTop">Back to top</a></footer>
     <button type="button" class="back-top" id="backTop" hidden>↑ Back to top</button>
   </main>
 
@@ -935,7 +935,7 @@
              ['Broker','The only part that talks to the broker — approved orders are sent to the paper account.'],
              ['Risk accounting','Keeps track of how much each strategy holds, and the desk in total.'],
              ['Ledger','Every fill is written into one permanent record.'],
-             ['Terminal','This page is built from that record and the live broker account, refreshed every 5 minutes.']];
+             ['Terminal','This page is built from that record and the live broker account, refreshed every 5 minutes during market hours.']];
   var pipe='<div class="pipeline" role="img" aria-label="The seven pieces of the desk, in flow order: Data, Scheduler, Strategies, Broker, Risk accounting, Ledger, Terminal">'
     + steps.map(function(s,i){return (i?'<span class="pipe-arrow" aria-hidden="true">\u2192</span>':'')+'<div class="pipe-step"><strong>'+esc(s[0])+'</strong><span>'+esc(s[1])+'</span></div>';}).join('')+'</div>';
   fetch('../architecture.json?t='+Date.now(),{cache:'no-store'})
@@ -1298,6 +1298,8 @@
         +'<span class="completed-sym">'+esc(s.symbol)+'</span>'
         +(what?'<span class="completed-facts">'+esc(what)+'</span>':'')
         +(brf&&brf.stale?'<span class="pill warn">Stale — awaiting refresh</span>':'')
+        +(s.held&&s.held.state==='held'?'<span class="pill warn">Held — no call published</span>'+((s.held.reason||s.held.board_line)?'<span class="completed-facts">'+esc(s.held.reason||s.held.board_line)+'</span>':''):'')
+        +(s.instrument&&s.instrument.type==='options_package'?'<span class="pill info">Options spread, not shares</span>':'')
         +'<span class="pill good">Position</span>'
         +(brf?'<button type="button" class="tool-btn" data-setup-detail="'+esc(s.symbol)+'">See the full setup</button>':'')
         +'</div>';
