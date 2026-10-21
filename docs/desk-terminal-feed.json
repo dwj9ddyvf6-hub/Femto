@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-21T08:09:48.837482+00:00",
- "generated_at_et": "2026-10-21T04:09:48.837482-04:00",
+ "generated_at_utc": "2026-10-21T08:14:53.519310+00:00",
+ "generated_at_et": "2026-10-21T04:14:53.519310-04:00",
  "account": {
-  "equity": "106249.73",
-  "cash": "-191424.28",
-  "buying_power": "0",
+  "equity": "105706.72",
+  "cash": "-191425.15",
+  "buying_power": "19538.86",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true,
@@ -25,7 +25,7 @@
   },
   {
    "symbol": "QQQ",
-   "qty": 112.0,
+   "qty": 80.0,
    "avg_entry": null,
    "current": null,
    "unrealized_pl": null,
@@ -1444,13 +1444,13 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 106249.73,
+  "equity": 105706.72,
   "gross_pct": 0.0,
   "position_count": 87,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 1729,
+  "total": 1799,
   "by_kind": {
    "journal": 13,
    "fill": 559,
@@ -1461,15 +1461,15 @@
    "spx_settlement": 1,
    "unowned_position_adoption": 1,
    "slice_residue_disposition": 9,
-   "sleeve_attribution": 87,
-   "protection_defect": 481,
-   "slice_sync": 37,
-   "evaluation_heartbeat": 370,
-   "pass_watchdog": 20,
+   "sleeve_attribution": 88,
+   "protection_defect": 494,
+   "slice_sync": 38,
+   "evaluation_heartbeat": 423,
+   "pass_watchdog": 22,
    "github_mirror_defect": 1
   }
  },
- "input_hash": "36bde3b5929a816eb1228920404697b86e4bd38e943dbce1dbf620bccdf92110",
+ "input_hash": "ba612eb84746956ad1860e036b2e9ae15f8716dd33f98bdf94e8dd6acc3291b4",
  "setups": [],
  "entered_setups": [],
  "departures": [
@@ -1519,12 +1519,12 @@
   "regime": "Downtrend",
   "regime_evidence": [
    "QQQ closed below its 50-day average (-1.2%) with a 20-day slope of -4.0% \u2014 the desk's regime rule reads downtrend.",
-   "VIX closed at 17.19 (-0.7% on the day) (VIX reading as of 2026-10-21).",
+   "VIX closed at 17.17 (-0.8% on the day) (VIX reading as of 2026-10-21).",
    "QQQ was slightly red today; the other index was green \u2014 a mixed, low-conviction tape."
   ],
   "vix": {
-   "close": 17.19,
-   "change_pct": -0.7,
+   "close": 17.17,
+   "change_pct": -0.8,
    "as_of": "2026-10-21"
   },
   "spy": {
