@@ -1,10 +1,10 @@
 {
- "generated_at_utc": "2026-10-21T00:54:10.934800+00:00",
- "generated_at_et": "2026-10-20T20:54:10.934800-04:00",
+ "generated_at_utc": "2026-10-21T00:59:12.694610+00:00",
+ "generated_at_et": "2026-10-20T20:59:12.694610-04:00",
  "account": {
-  "equity": "106419.53",
+  "equity": "106862.17",
   "cash": "-191424.28",
-  "buying_power": "2001.26",
+  "buying_power": "0",
   "status": "ACTIVE",
   "daytrade_count": null,
   "known": true,
@@ -224,6 +224,17 @@
   {
    "symbol": "SKYQ",
    "qty": 1319.0,
+   "avg_entry": null,
+   "current": null,
+   "unrealized_pl": null,
+   "unrealized_pl_pct": null,
+   "market_value": null,
+   "side": "long",
+   "sleeve": "ema_vwap"
+  },
+  {
+   "symbol": "SOXL",
+   "qty": 34.0,
    "avg_entry": null,
    "current": null,
    "unrealized_pl": null,
@@ -959,7 +970,7 @@
    "sleeve": "ts_momentum_decile"
   }
  ],
- "position_count": 86,
+ "position_count": 87,
  "sleeves": {
   "aurelia_gold": {
    "name": "aurelia_gold",
@@ -1043,9 +1054,10 @@
     "NBIS",
     "SHAZ",
     "SKYQ",
+    "SOXL",
     "WYFI"
    ],
-   "position_count": 6
+   "position_count": 7
   },
   "ema_vwap_options": {
    "name": "ema_vwap_options",
@@ -1432,13 +1444,13 @@
  },
  "exposure": {
   "gross_notional": 0.0,
-  "equity": 106419.53,
+  "equity": 106862.17,
   "gross_pct": 0.0,
-  "position_count": 86,
+  "position_count": 87,
   "by_sleeve": {}
  },
  "ledger_counts": {
-  "total": 6402,
+  "total": 6372,
   "by_kind": {
    "journal": 187,
    "fill": 5923,
@@ -1446,17 +1458,15 @@
    "import_position": 3,
    "tick": 92,
    "nightly_reconcile": 46,
-   "evaluation_heartbeat": 29,
-   "pass_watchdog": 2,
    "spx_settlement": 1,
    "unowned_position_adoption": 1,
    "slice_residue_disposition": 9,
-   "sleeve_attribution": 86,
+   "sleeve_attribution": 87,
    "protection_defect": 13,
    "slice_sync": 1
   }
  },
- "input_hash": "595a41d856ab3a552fe90a44319a3de57f0095890ffe1dca27498261acdf4ba2",
+ "input_hash": "71377a62aa63b7d6d131f12af1ce26f6e1085d9a4439e49d94ba58405b11c1fc",
  "setups": [],
  "entered_setups": [],
  "departures": [
