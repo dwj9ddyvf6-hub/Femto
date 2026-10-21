@@ -157,7 +157,10 @@ chain contains no rule for the pattern it was named for).
 A generated charter roll is the single cadence source of truth,
 built from the cron registry + the scheduler registrations parsed
 from code; a gate-wired diff test fails on drift. Current shape:
-17 external agent crons + 14 in-desk scheduler jobs.
+17 external agent crons + 15 in-desk scheduler jobs.
+The standing-queries job (§63) checks the followed universe
+against standing questions every 30 minutes and files a note
+only when a name newly matches.
 
 | Job | Cadence |
 |---|---|
@@ -166,6 +169,7 @@ from code; a gate-wired diff test fails on drift. Current shape:
 | Heartbeat / dead-man | every 5 min |
 | Top-tier reader pings | every 5 min |
 | Scan tick | every 30 min |
+| Standing queries | every 30 min |
 | Options / gap-data refresh | every 30 min |
 | Push-pairing poll | every 15 min |
 | Premarket digest / premarket | 08:30 / 08:46 Mon–Fri ET |
@@ -227,6 +231,19 @@ owner's ruling, recorded as numbered amendments.
 - **Dealer-positioning estimate (GEX):** a labeled model estimate
   (Black–Scholes gamma, stated convention), context class, stance 0,
   never decisive.
+- **Paid-data clones (§61):** copies of paid tools' published
+  methods (dealer-positioning and options-flow figures of the
+  DEX/VEX/CHEX kind) run as extra context voices. They are
+  background only — they can inform a call, they can never make
+  one. One of them reads executed options trades; no live record
+  of those trades reaches the desk, so it files no view at all
+  until one does.
+- **Freshness contracts (§62):** every data product the synthesis
+  consumes carries a written maximum age. Consumers check the
+  product's own date against it and file any breach by name in
+  their output — never silence, and never a block on a trade.
+  The board publisher asserts the briefs product's own 26-hour
+  contract at the board door.
 - **Scorekeeping of the judges:** per-voice, per-class scorecards;
   process grade and outcome grade kept separate; blind-first review;
   an automatic leash — a voice with ≥30 scored calls and expectancy
@@ -292,10 +309,10 @@ verified by read-back. Binding rail: Ink governs state integrity and
 never gates dispatch — proven by a named gate test asserting the
 trade path does not consult it.
 
-Other in-flight work, stated plainly: additional paid context modules
-have landed in the desk's code history as clones; their reader-facing
-role is limited to the background-context jobs described in §3/§8
-until a surface actually consumes more.
+Paid context modules (§61) are wired in, not in flight: the
+clones run as background context voices in the synthesis (§8).
+Freshness consumers (§62) and the standing-query job (§63) are
+likewise live; see §7 and §8.
 
 ## 11. Design rules (the non-negotiables)
 
