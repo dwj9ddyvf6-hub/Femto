@@ -262,6 +262,14 @@
     .arch-card h3 .secno{color:var(--gold-text);font-family:var(--mono);margin-right:9px}
     .arch-card p,.arch-card li{font-size:15.5px;line-height:1.65;color:var(--ink-dim)}
     .arch-card.safety{border-left:4px solid var(--warning);background:var(--warning-bg)}
+    .arch-card h4{font-size:14.5px;margin:16px 0 6px;color:var(--ink)}
+    .arch-card table.conn{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px}
+    .arch-card table.conn th,.arch-card table.conn td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top;line-height:1.5}
+    .arch-card table.conn th{background:var(--panel);font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+    .brief-card{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:3px;background:var(--panel);padding:18px 22px;margin:0 0 18px}
+    .brief-card h3{font-size:15px;margin:0 0 8px}
+    .brief-card p{font-size:15px;line-height:1.65;color:var(--ink-dim)}
+    .brief-card a{font-weight:700}
     .tl-time{display:block;font-family:var(--mono);font-size:11px;color:var(--gold-text);font-weight:700;margin-top:2px}
     .hub-note{text-align:center;color:var(--muted);font-size:12.5px;margin:2px 0 8px}
     td.symbol .sym-label{font-family:var(--sans);font-weight:700;font-size:13.5px;display:block}
@@ -442,6 +450,7 @@
       <button class="tab" role="tab" aria-selected="true" aria-controls="pulse" id="tab-pulse"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>OVERVIEW</button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="model" id="tab-model"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>STRATEGIES</button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="architecture" id="tab-architecture"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M2 21h20"/><path d="M10 21v-6h4v6"/></svg>ARCHITECTURE</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="explainer" id="tab-explainer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3c.2-1.2 1.2-2 2.5-2 1.4 0 2.5 1 2.5 2.2 0 1.7-2.4 1.9-2.4 3.5"/><circle cx="12" cy="17.2" r="0.6" fill="currentColor"/></svg>HOW IT&rsquo;S JUDGED</button>
     </nav>
 
     <section class="tabpanel" role="tabpanel" id="pulse" aria-labelledby="tab-pulse">
@@ -577,7 +586,12 @@
       <div class="panel-body" id="architectureBody"><p class="muted">Loading…</p></div></section>
     </section>
 
-    <div class="foot-rule" aria-hidden="true"><i></i><b></b></div><footer class="site-footer"><span class="foot-brand"><svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true" style="vertical-align:-4px;margin-right:7px"><rect width="64" height="64" rx="8" fill="#0d5243"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#c9a24d"/><circle cx="45" cy="42" r="3" fill="#e8f0ea"/></svg>Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#top" id="footTop">Back to top</a></footer>
+    <section class="tabpanel" role="tabpanel" id="explainer" aria-labelledby="tab-explainer" hidden>
+      <section class="panel"><div class="panel-head"><div><h2>How it&rsquo;s judged</h2><p>How the whole desk works, and how its calls are made — the long version, in plain English</p></div></div>
+      <div class="panel-body" id="explainerBody"><p class="muted">Loading…</p></div></section>
+    </section>
+
+    <div class="foot-rule" aria-hidden="true"><i></i><b></b></div><footer class="site-footer"><span class="foot-brand"><svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true" style="vertical-align:-4px;margin-right:7px"><rect width="64" height="64" rx="8" fill="#0d5243"/><path d="M40 10a20 20 0 1 0 14 33A23 23 0 0 1 40 10z" fill="#c9a24d"/><circle cx="45" cy="42" r="3" fill="#e8f0ea"/></svg>Muse Desk</span><span>Paper-trading research desk. Figures are updated every 5 minutes from the desk's own records.</span><span id="footerTime"></span><a href="#architecture" data-tablink="tab-architecture">How the desk works</a><a href="#explainer" data-tablink="tab-explainer">How it&rsquo;s judged</a><a href="#top" id="footTop">Back to top</a></footer>
     <button type="button" class="back-top" id="backTop" hidden>↑ Back to top</button>
   </main>
 
@@ -951,6 +965,45 @@
       }).join('');
     })
     .catch(function(){ var el=$('architectureBody'); if(el)el.innerHTML=pipe+'<div class="unavailable"><strong>Architecture notes unavailable right now.</strong><p>The notes could not be loaded, so nothing is shown here rather than an incomplete picture.</p></div>'; });
+  // --- How it's judged: the long explainer (static JSON, degrade gracefully) ---
+  function richFull(body, connHtml){
+    var lines=String(body||'').split('\n'), html='', list=null;
+    function closeList(){if(list){html+='</'+list+'>';list=null;}}
+    function fmt(t){return esc(t).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+?)\*/g,'<em>$1</em>');}
+    lines.forEach(function(ln){
+      var t=ln.trim();
+      if(!t){closeList();return;}
+      if(t==='[[CONNECTIONS]]'){closeList();html+=connHtml||'';return;}
+      var h=t.match(/^##\s+(.*)$/);
+      if(h){closeList();html+='<h4>'+fmt(h[1])+'</h4>';return;}
+      var bullet=t.match(/^-\s+(.*)$/), num=t.match(/^\d+\.\s+(.*)$/);
+      var item=bullet?bullet[1]:(num?num[1]:null), want=bullet?'ul':(num?'ol':null);
+      if(item!==null){ if(list!==want){closeList();html+='<'+want+'>';list=want;}
+        html+='<li>'+fmt(item)+'</li>'; return; }
+      closeList();
+      html+='<p>'+fmt(t)+'</p>';
+    });
+    closeList(); return html;
+  }
+  fetch('../explainer.json?t='+Date.now(),{cache:'no-store'})
+    .then(function(r){if(!r.ok)throw new Error('explainer http '+r.status);return r.json();})
+    .then(function(j){
+      var el=$('explainerBody'); if(!el)return;
+      var connHtml='';
+      if((j.connections||[]).length){
+        connHtml='<table class="conn"><thead><tr><th>Connection</th><th>What the desk uses it for</th><th>How it is reached</th><th>If it vanished</th></tr></thead><tbody>'
+          +j.connections.map(function(c){return '<tr><td><strong>'+esc(c.name)+'</strong></td><td>'+esc(c.use)+'</td><td>'+esc(c.access)+'</td><td>'+esc(c.if_gone)+'</td></tr>';}).join('')+'</tbody></table>';
+      }
+      var briefHtml='';
+      if(j.brief&&j.brief.href){
+        briefHtml='<div class="brief-card"><h3>'+esc(j.brief.heading||'The brief')+'</h3><p>'+esc(j.brief.body||'')+'</p><p><a href="./'+esc(j.brief.href)+'">'+esc(j.brief.label||'Read the brief')+'</a></p></div>';
+      }
+      el.innerHTML='<div class="arch-card"><p>'+esc(j.intro||'')+'</p></div>'
+        +(j.sections||[]).map(function(s,idx){
+          return '<div class="arch-card arch-section"><h3><span class="secno">'+String(idx+1).padStart(2,'0')+'</span>'+esc(s.heading)+'</h3>'+richFull(s.body,connHtml)+'</div>';
+        }).join('')+briefHtml;
+    })
+    .catch(function(){ var el=$('explainerBody'); if(el)el.innerHTML='<div class="unavailable"><strong>The long explanation is unavailable right now.</strong><p>It could not be loaded, so nothing is shown here rather than an incomplete picture.</p></div>'; });
   // --- Best setups + market context (feed-driven, degrade gracefully) ---
   function flashEl(el){ if(!el)return; el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); }
   function gotoStrategy(key){
