@@ -19,8 +19,8 @@ snapshot built only from broker state + the ledger. A synthesis layer
 ("the Courtroom", §8) turns candidates into Best Setups cards with a
 buy zone / invalidation / target, or publishes a held state with a
 plain reason. Quality machinery: a dated bug log, gate-wired
-regression blockers, twice-daily inspections, and an in-flight
-derived-state integrity layer ("Ink", §10).
+regression blockers, twice-daily inspections, and a derived-state
+integrity layer ("Ink", §10), live on the desk's main line.
 
 ## 2. Vocabulary map (internal → reader)
 
@@ -267,13 +267,16 @@ owner's ruling, recorded as numbered amendments.
 - Strategy standing is earned from the live forward record only —
   never from backtests of the strategies themselves.
 
-## 10. Ink — derived-state integrity layer (IN FLIGHT)
+## 10. Ink — derived-state integrity layer (LIVE)
 
-State today: implemented on a side branch/worktree with a kernel and
-adapters (desk, intent, board, study, execution, inspection, ledger,
-life), plus evidence files per landed wiring phase. It is **not** on
-the desk's main line and no public terminal surface consumes it yet.
-Describe it only as "being wired in".
+State today: landed on the desk's main line (merged 2026-10-21),
+with a kernel and adapters (desk, intent, board, study, execution,
+inspection, ledger, life), plus evidence files per landed wiring
+phase. The terminal snapshot itself is filed through it: every
+published total is an Ink desk-adapter keep derived from the
+published rows, and a snapshot whose totals disagree with its rows
+cannot be written or pushed (see §3, feed builder / §6). Describe it
+as live and wired in; it still never gates dispatch (below).
 
 Design: derived state is declared once as named definitions
 ("keeps"); the system maintains them; recomputation from sources is
