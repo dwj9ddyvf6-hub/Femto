@@ -76,6 +76,13 @@
   "instruments": "Stock options",
   "category": "Options \u2014 directional & hedges"
  },
+ "em_1587": {
+  "name": "The 15.87 Rule (SPY)",
+  "summary": "Draws five price lines for SPY each morning from yesterday's VIX using Azrael's 15.87 Rule; fades the outer lines on quiet days and trades joint SPY and QQQ breakouts on busier days, always flat by 11:30 a.m.",
+  "explainer": "This strategy trades S&P 500 index options using a system published by the trader Azrael, called the 15.87 Rule. The desk cannot trade the index itself, so the system runs on SPY, a fund that tracks the index, and every result is a SPY result. Before the open it uses yesterday's fear gauge (the VIX) divided by 15.87 to draw five price lines for the day: two outer walls, two inner shelves, and the middle magnet line. Quiet days, it buys near a wall expecting price to drift back to the magnet. Busier days, it trades only when SPY and QQQ break out of their opening ranges together. Every trade closes by 11:30 a.m.",
+  "instruments": "Index options",
+  "category": "Options \u2014 directional & hedges"
+ },
  "ema_vwap": {
   "name": "VWAP Pullback",
   "summary": "Buys stocks trading at least 2% below their 20-day average traded price (VWAP \u2014 the day's average traded price, weighted by how much traded at each price), expecting a snap back to that average.",
@@ -300,6 +307,13 @@
   "instruments": "US stocks",
   "category": "Breakout & momentum"
  },
+ "po10_qqq": {
+  "name": "PO10 Nasdaq Extremes (QQQ)",
+  "summary": "Buys or shorts QQQ shares when a momentum gauge on ten-minute bars closes past its extreme lines during the morning; exits when the gauge crosses the opposite extreme, or at the close.",
+  "explainer": "This is the trader Milkman's PO10 system, run here in QQQ shares. The original trades Nasdaq futures contracts, which this account cannot trade, so QQQ shares stand in for them and every result is a QQQ result. A momentum gauge (the Saty Phase Oscillator) is computed on ten-minute QQQ bars, premarket included. When a ten-minute bar closes above +100 the system buys; below -100 it shorts. Entries happen only between 9:30 and 11:00 a.m. Eastern. It exits when a bar closes past the opposite extreme, and whatever is still open is sold at 3:59 p.m. By design there is no stop-loss and no profit target. Each trade is sized to move like two micro Nasdaq futures contracts.",
+  "instruments": "US stocks",
+  "category": "Rule-based systems"
+ },
  "qqq_put_ladder": {
   "name": "QQQ Weekly Put Ladder",
   "summary": "Sells three cash-backed QQQ put options about once a week, far below the current price, and manages each layer as expiry \u2014 the date the option runs out \u2014 nears.",
@@ -376,6 +390,27 @@
   "explainer": "This strategy watches liquid U.S. stocks priced at $5 or more, with at least $1 million in average daily dollar trading over 20 days, for a weekly swing buy signal. It buys at the next session's close only when the stock tends to move much more than the broad market, moving at least 1.35 times as much as the S&P 500 fund (that market-sensitivity measure is called beta \u2014 high-beta stocks move more than the market), a momentum oscillator reading is at least 25.9, and a set of trend averages is rising with a slope of at least about 0.95%. It sells after 126 trading days, roughly six months. It holds at most ten positions and trades U.S. stocks.",
   "instruments": "US stocks",
   "category": "Rule-based systems"
+ },
+ "saty_day": {
+  "name": "Saty Day Trading",
+  "summary": "Trades SPY options intraday on a fixed set of price levels drawn from yesterday's close: buys when price reaches the day's gate level, sells at set targets, and is flat by the close.",
+  "explainer": "A day-trading system on one stock index fund. Before the open it draws a ladder of price levels from yesterday's close and the recent daily range. If the price climbs to the buying level above yesterday's close, it buys a call option expiring that same day; if it falls to the matching level below, it buys a put option. It sells half at the middle level and the rest at the higher targets, sells everything if a ten-minute bar closes back through the nearest level, and closes whatever is left before the end of the day. Nothing is held overnight.",
+  "instruments": "Index options",
+  "category": "Options \u2014 directional & hedges"
+ },
+ "saty_sol": {
+  "name": "Saty Day Trading \u2014 ChatGPT Design",
+  "summary": "The ChatGPT-designed version of the same Saty day system: trades SPY options intraday between fixed levels from yesterday's close, one position at a time, at most half a percent of its account in premium on a position, flat by the close.",
+  "explainer": "A second design of the Saty day-trading system, written by ChatGPT from the same research and run alongside the desk's own version. Before the open it draws a ladder from yesterday's close: a trigger level, buying levels above and below, and a target. It buys a call or put at the first crossing of a buying level, sells everything at the target, and sells everything if a ten-minute bar closes through the trigger. A bullish rule buys on a three-minute close above the trigger. One position at a time; trades stop for the day if down one percent. It trades SPY options expiring in two to four days. Its preferred index-options version cannot run here (no live index feed, no OPRA data), so it runs its named SPY research-book profile.",
+  "instruments": "Index options",
+  "category": "Options \u2014 directional & hedges"
+ },
+ "saty_sol_0dte": {
+  "name": "Saty Day Trading \u2014 ChatGPT Design, Same-Day Expiry",
+  "summary": "The ChatGPT-designed Saty day system in a same-day-expiry version: trades SPY options expiring that day between fixed levels from yesterday's close, one position at a time, at most half a percent of its account in premium on a position, flat by the close.",
+  "explainer": "A same-day-expiry version of the ChatGPT-designed Saty day system, added at the owner's request. Before the open it draws the same ladder from yesterday's close: a trigger level, buying levels above and below, and a target. It buys a call or put at the first crossing of a buying level, sells everything at the target, and sells everything if a ten-minute bar closes through the trigger. A bullish rule buys on a three-minute close above the trigger. One position at a time; trading stops for the day if down one percent. The original version, trading options expiring in two to four days, runs unchanged beside it.",
+  "instruments": "Index options",
+  "category": "Options \u2014 directional & hedges"
  },
  "snapback": {
   "name": "Beaten-Down Small-Cap Snapback",
