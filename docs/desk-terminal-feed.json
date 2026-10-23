@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-23T10:25:01.418527+00:00",
- "generated_at_et": "2026-10-23T06:25:01.418527-04:00",
+ "generated_at_utc": "2026-10-23T10:31:25.273189+00:00",
+ "generated_at_et": "2026-10-23T06:31:25.273189-04:00",
  "account": {
   "equity": "92425.29",
   "cash": "-138040.52",
@@ -1678,7 +1678,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -1887,7 +1887,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, NTAP was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 22 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $212.51, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $212.51, 1.2% below its 20-day average (exponential) at $215.16 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $192.96 is intact below price; its 10-session move is -8.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $212.51, 1.2% below its 20-day average (exponential) at $215.16 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $192.96 is intact below price; its 10-session move is -8.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -1918,7 +1918,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -1967,11 +1967,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy NTAP \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($212.51) is inside the entry zone.",
-     "why": "Price closed $212.51, 1.2% below its 20-day average (exponential) at $215.16 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $192.96 is intact below price; its 10-session move is -8.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $212.51, 1.2% below its 20-day average (exponential) at $215.16 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $192.96 is intact below price; its 10-session move is -8.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 212.51,
@@ -2044,18 +2044,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-NTAP-lector-NTAP",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "strongly for",
@@ -3000,7 +3000,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -3065,7 +3065,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -3429,7 +3429,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -3494,7 +3494,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -5254,7 +5254,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 50.0% \u2014 at the money on the 2026-11-20 expiry (28 days out, strike $210.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 50.0% \u2014 at the money on the 2026-11-20 expiry (28 days out, strike $210.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 50.0,
@@ -5456,8 +5456,7 @@
         "capped": false,
         "latest_date": "2026-10-21",
         "latest_headline": "NetApp Launches New Hybrid Multi-Cloud Capabilities and Data Sovereignty Services",
-        "latest_source": "fiscal.ai",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_source": "fiscal.ai"
        },
        "reason": null,
        "needs": null,
@@ -5575,7 +5574,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -5583,7 +5582,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -11731,7 +11730,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -11940,7 +11939,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, CRWD was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 13 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $237.94, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $237.94, 3.4% below its 20-day average (exponential) at $246.38 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $221.36 is intact below price; its 10-session move is -9.5% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $237.94, 3.4% below its 20-day average (exponential) at $246.38 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $221.36 is intact below price; its 10-session move is -9.5% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -11971,7 +11970,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -12020,11 +12019,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy CRWD \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($237.94) is inside the entry zone.",
-     "why": "Price closed $237.94, 3.4% below its 20-day average (exponential) at $246.38 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $221.36 is intact below price; its 10-session move is -9.5% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $237.94, 3.4% below its 20-day average (exponential) at $246.38 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $221.36 is intact below price; its 10-session move is -9.5% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 237.94,
@@ -12095,18 +12094,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-CRWD-lector-CRWD",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "strongly for",
@@ -13271,7 +13270,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -13336,7 +13335,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -13754,7 +13753,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -13819,7 +13818,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -15542,7 +15541,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 57.2% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $240.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 57.2% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $240.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 57.2,
@@ -15732,20 +15731,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 18 items naming the company in the last 7 days, 62 in the last 30. The latest, 2026-10-22 via benzinga: \u201cJensen Huang on Keeping AI Under Control: 'You Contain the Baby and You Monitor It'\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 16 items naming the company in the last 7 days, 60 in the last 30. The latest, 2026-10-22 via benzinga: \u201cJensen Huang on Keeping AI Under Control: 'You Contain the Baby and You Monitor It'\u201d.",
        "data": {
-        "n7": 18,
-        "n30": 62,
+        "n7": 16,
+        "n30": 60,
         "capped": false,
         "latest_date": "2026-10-22",
         "latest_headline": "Jensen Huang on Keeping AI Under Control: 'You Contain the Baby and You Monitor It'",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 18 items naming the company in the last 7 days, 62 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 16 items naming the company in the last 7 days, 60 in the last 30"
       },
       {
        "key": "earnings",
@@ -15841,7 +15839,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -15849,7 +15847,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -19433,17 +19431,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cCrowdStrike\u201d, resolved from the filer's EDGAR name): 663 views a day over the last 7 complete days vs 899 the week before (0.74\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cCrowdStrike\u201d, resolved from the filer's EDGAR name): 675 views a day over the last 7 complete days vs 821 the week before (0.82\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "CrowdStrike",
-        "avg7": 663.3,
-        "avg_prior7": 899.1,
-        "ratio": 0.74
+        "avg7": 674.6,
+        "avg_prior7": 821.3,
+        "ratio": 0.82
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cCrowdStrike\u201d, resolved from the filer's EDGAR name): 663 views a day over the last 7 complete days vs 899 the week before (0.74\u00d7)"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cCrowdStrike\u201d, resolved from the filer's EDGAR name): 675 views a day over the last 7 complete days vs 821 the week before (0.82\u00d7)"
       },
       {
        "key": "seasonality",
@@ -22101,7 +22099,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -22249,8 +22247,8 @@
      "adx": 23.3,
      "hourly": {
       "state": "read",
-      "stance": "lower",
-      "close": 145.8,
+      "stance": "higher",
+      "close": 145.9851,
       "sma20": 145.82,
       "sma50": 145.86,
       "pivot_sequence": "mixed",
@@ -22310,7 +22308,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, MSTR was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 13 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $145.80, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $145.80, 1.6% below its 20-day average (exponential) at $148.15 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $133.59 is intact below price; its 10-session move is -3.7% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $145.80, 1.6% below its 20-day average (exponential) at $148.15 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $133.59 is intact below price; its 10-session move is -3.7% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -22341,7 +22339,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -22390,11 +22388,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy MSTR \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($145.80) is inside the entry zone.",
-     "why": "Price closed $145.80, 1.6% below its 20-day average (exponential) at $148.15 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $133.59 is intact below price; its 10-session move is -3.7% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $145.80, 1.6% below its 20-day average (exponential) at $148.15 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $133.59 is intact below price; its 10-session move is -3.7% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 145.8,
@@ -22465,18 +22463,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-MSTR-lector-MSTR",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "for",
@@ -23805,7 +23803,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -23870,7 +23868,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -24315,7 +24313,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -24380,7 +24378,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -26277,10 +26275,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 70.4% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $145.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 70.6% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $145.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 70.4,
+         "iv_pct": 70.6,
          "expiry": "2026-11-27",
          "dte": 35,
          "strike": 145.0
@@ -26289,17 +26287,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 70.4% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $145.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 70.6% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $145.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 69.0% annualized. IV 70.4% vs HV 69.0% \u2014 a spread of +1.4 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 69.0% annualized. IV 70.6% vs HV 69.0% \u2014 a spread of +1.6 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 69.0,
-        "iv_pct": 70.4,
+        "iv_pct": 70.6,
         "iv_rank": null,
         "iv_readings": 2
        },
@@ -26561,20 +26559,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 29 items naming the company in the last 7 days, 91 in the last 30. The latest, 2026-10-22 via benzinga: \u201c'Cash Is A Melting Ice Cube,' Says Industry Executive as Bitcoin Adoption Poised to Surge\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 29 items naming the company in the last 7 days, 89 in the last 30. The latest, 2026-10-23 via benzinga: \u201cBitcoin, Ethereum, XRP, Dogecoin Sink as Iran War Fears Return: Analyst Says Deeper BTC Correction Won\u2019t Be \u2018Weird\u2019\u201d.",
        "data": {
         "n7": 29,
-        "n30": 91,
+        "n30": 89,
         "capped": false,
-        "latest_date": "2026-10-22",
-        "latest_headline": "'Cash Is A Melting Ice Cube,' Says Industry Executive as Bitcoin Adoption Poised to Surge",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_date": "2026-10-23",
+        "latest_headline": "Bitcoin, Ethereum, XRP, Dogecoin Sink as Iran War Fears Return: Analyst Says Deeper BTC Correction Won\u2019t Be \u2018Weird\u2019",
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 29 items naming the company in the last 7 days, 91 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 29 items naming the company in the last 7 days, 89 in the last 30"
       },
       {
        "key": "earnings",
@@ -26663,7 +26660,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -26671,7 +26668,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -30255,17 +30252,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cStrategy Inc\u201d, resolved from the filer's EDGAR name): 8 views a day over the last 7 complete days vs 10 the week before (0.8\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cStrategy Inc\u201d, resolved from the filer's EDGAR name): 7 views a day over the last 7 complete days vs 11 the week before (0.63\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Strategy Inc",
-        "avg7": 7.9,
-        "avg_prior7": 9.9,
-        "ratio": 0.8
+        "avg7": 6.9,
+        "avg_prior7": 10.9,
+        "ratio": 0.63
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cStrategy Inc\u201d, resolved from the filer's EDGAR name): 8 views a day over the last 7 complete days vs 10 the week before (0.8\u00d7)"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cStrategy Inc\u201d, resolved from the filer's EDGAR name): 7 views a day over the last 7 complete days vs 11 the week before (0.63\u00d7)"
       },
       {
        "key": "seasonality",
@@ -31613,36 +31610,36 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$31.78 by the IV form (IV 70.4%); \u00b1$21.50 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$31.87 by the IV form (IV 70.6%); \u00b1$21.50 by the 0.85x straddle form.",
        "data": {
         "spot": 145.8,
-        "iv_pct": 70.4,
+        "iv_pct": 70.6,
         "expiry": "2026-11-27",
         "dte": 35,
-        "iv_form": 31.78,
+        "iv_form": 31.87,
         "straddle_form": 21.5
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (35 days): \u00b1$31.78 by the IV form (IV 70.4%); \u00b1$21.50 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (35 days): \u00b1$31.87 by the IV form (IV 70.6%); \u00b1$21.50 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
        "family": "options",
        "label": "Gamma flip, per name (addendum 12)",
        "status": "value",
-       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $250.00; net gamma $+0.00B per 1% move \u2014 price sits in the amplifying regime (below the flip).",
+       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.00B per 1% move \u2014 price sits with no flip inside the chain.",
        "data": {
-        "flip_strike": 250.0,
-        "net_gex": 391238.36,
-        "contracts_used": 484,
+        "flip_strike": null,
+        "net_gex": -1065477.56,
+        "contracts_used": 481,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $250.00; net gamma $+0.00B per 1% move \u2014 price sits in the amp"
+       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.00B per 1% move \u2014 price sits with no flip ins"
       },
       {
        "key": "gamma_walls_name",
@@ -31712,8 +31709,8 @@
        "fact": "IV skew (2026-11-27): ATM IV 0.7% vs the 5%-out put at 0.7% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.7121,
-        "put_iv_5pct_otm": 0.726,
+        "atm_iv": 0.7059,
+        "put_iv_5pct_otm": 0.7205,
         "skew_pts": 0.01
        },
        "reason": null,
@@ -32035,27 +32032,27 @@
        "family": "paid_clones",
        "label": "Paid-clone context \u2014 dealer positioning suite (addendum 13)",
        "status": "value",
-       "fact": "Dealer positioning (model estimate): net gamma $+0.01B per 1% move, net delta $+4.45B per $1; call wall $135, put wall $160. A model estimate, filed as context only.",
+       "fact": "Dealer positioning (model estimate): net gamma $+0.00B per 1% move, net delta $+4.46B per $1; call wall $135, put wall $160. A model estimate, filed as context only.",
        "data": {
-        "net_gex": 5076643.3,
-        "net_dex": 4450963967.96,
-        "net_vex": 13112372.41,
-        "net_chex": -17932817.85,
+        "net_gex": 3466636.41,
+        "net_dex": 4455854407.6,
+        "net_vex": 13025980.84,
+        "net_chex": -17980377.56,
         "call_wall": 135.0,
         "put_wall": 160.0,
-        "contracts_used": 753,
+        "contracts_used": 748,
         "model": "model estimate \u2014 dealer gamma/delta/vanna/charm exposure, Black-Scholes greeks, dealers long calls / short puts convention; not a measurement",
-        "gamma_flip": 142.6762,
+        "gamma_flip": 143.5031,
         "gex_by_expiry": {
-         "2026-10-30": -6543456.59,
-         "2026-11-06": -2793885.25,
-         "2026-11-13": -2276055.51,
-         "2026-11-20": 13383106.52,
-         "2026-11-27": 46522.35,
-         "2026-12-18": -1424993.14,
-         "2027-01-15": 3640419.74,
-         "2027-03-19": 678231.38,
-         "2027-04-16": 366753.81
+         "2026-10-30": -7095732.21,
+         "2026-11-06": -2940815.93,
+         "2026-11-13": -2390591.68,
+         "2026-11-20": 12966728.87,
+         "2026-11-27": 25987.46,
+         "2026-12-18": -1631054.08,
+         "2027-01-15": 3554983.16,
+         "2027-03-19": 612611.17,
+         "2027-04-16": 364519.63
         }
        },
        "reason": null,
@@ -32065,7 +32062,7 @@
        "context_only": true,
        "clone_label": "dealer positioning suite (GEX/DEX/VEX/CHEX, model estimate)",
        "verdict": "considered",
-       "deciding": "considered \u2014 Dealer positioning (model estimate): net gamma $+0.01B per 1% move, net delta $+4.45B per $1; call wall $135, put wall $160"
+       "deciding": "considered \u2014 Dealer positioning (model estimate): net gamma $+0.00B per 1% move, net delta $+4.46B per $1; call wall $135, put wall $160"
       },
       {
        "key": "paid_flow_clone",
@@ -32088,15 +32085,15 @@
        "family": "paid_clones",
        "label": "Paid-clone context \u2014 payoff builder & expected move (addendum 13)",
        "status": "value",
-       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$25.31 ($120.49\u2013$171.11). Of the public templates enumerated, iron_condor ranks first on the blended return/chance ranking (modelled max profit $96, max loss $-4). Filed as context only \u2014 arithmetic, not advice.",
+       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$25.38 ($120.42\u2013$171.18). Of the public templates enumerated, iron_condor ranks first on the blended return/chance ranking (modelled max profit $96, max loss $-4). Filed as context only \u2014 arithmetic, not advice.",
        "data": {
         "expected_move": {
-         "straddle": 25.3104,
-         "move": 25.3104,
-         "upper": 171.1104,
-         "lower": 120.4896
+         "straddle": 25.382,
+         "move": 25.382,
+         "upper": 171.182,
+         "lower": 120.418
         },
-        "atm_iv_pct": 70.4,
+        "atm_iv_pct": 70.6,
         "dte": 35,
         "expiry": "2026-11-27",
         "optimizer_top": {
@@ -32106,36 +32103,36 @@
            "kind": "put",
            "strike": 145.0,
            "qty": -1,
-           "premium": 12.224470045156693
+           "premium": 12.260169795443417
           },
           {
            "kind": "put",
            "strike": 144.0,
            "qty": 1,
-           "premium": 11.697400557756445
+           "premium": 11.732930724485946
           },
           {
            "kind": "call",
            "strike": 147.0,
            "qty": -1,
-           "premium": 12.116210514238475
+           "premium": 12.15214170886928
           },
           {
            "kind": "call",
            "strike": 148.0,
            "qty": 1,
-           "premium": 11.680621021776851
+           "premium": 11.71661484977244
           }
          ],
-         "entry_cost": -96.27,
-         "max_profit": 96.27,
-         "max_loss": -3.73,
+         "entry_cost": -96.28,
+         "max_profit": 96.28,
+         "max_loss": -3.72,
          "breakevens": [
-          144.0373,
-          147.9627
+          144.0372,
+          147.9628
          ],
-         "chance_of_profit": 0.0489,
-         "return_ratio": 25.8097,
+         "chance_of_profit": 0.0487,
+         "return_ratio": 25.8817,
          "rank_score": 0.6667
         },
         "model": "Black-Scholes / expiry-payoff arithmetic (clone \u00a748c)"
@@ -32147,7 +32144,7 @@
        "context_only": true,
        "clone_label": "payoff builder & expected move (textbook arithmetic)",
        "verdict": "considered",
-       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$25.31 ($120.49\u2013$171.11)"
+       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$25.38 ($120.42\u2013$171.18)"
       },
       {
        "key": "paid_pac_clone",
@@ -32921,7 +32918,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -33017,7 +33014,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, OKTA was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 13 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $201.33, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $201.33, 1.3% below its 20-day average (exponential) at $204.05 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $183.60 is intact below price; its 10-session move is -8.6% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $201.33, 1.3% below its 20-day average (exponential) at $204.05 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $183.60 is intact below price; its 10-session move is -8.6% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -33048,7 +33045,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -33096,7 +33093,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -33341,7 +33338,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -33406,7 +33403,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -33725,7 +33722,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -33781,7 +33778,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -34999,7 +34996,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 61.2% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $200.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 61.2% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $200.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 61.2,
@@ -35190,20 +35187,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 3 items naming the company in the last 7 days, 43 in the last 30. The latest, 2026-10-21 via fiscal.ai: \u201cOkta Integrates Support for NVIDIA OpenShell Reference Architecture\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 2 items naming the company in the last 7 days, 41 in the last 30. The latest, 2026-10-21 via fiscal.ai: \u201cOkta Integrates Support for NVIDIA OpenShell Reference Architecture\u201d.",
        "data": {
-        "n7": 3,
-        "n30": 43,
+        "n7": 2,
+        "n30": 41,
         "capped": false,
         "latest_date": "2026-10-21",
         "latest_headline": "Okta Integrates Support for NVIDIA OpenShell Reference Architecture",
-        "latest_source": "fiscal.ai",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_source": "fiscal.ai"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 3 items naming the company in the last 7 days, 43 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 2 items naming the company in the last 7 days, 41 in the last 30"
       },
       {
        "key": "earnings",
@@ -35314,7 +35310,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -35322,7 +35318,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -38906,17 +38902,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cOkta, Inc.\u201d, resolved from the filer's EDGAR name): 349 views a day over the last 7 complete days vs 365 the week before (0.96\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cOkta, Inc.\u201d, resolved from the filer's EDGAR name): 347 views a day over the last 7 complete days vs 365 the week before (0.95\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Okta, Inc.",
-        "avg7": 348.6,
-        "avg_prior7": 364.7,
-        "ratio": 0.96
+        "avg7": 346.9,
+        "avg_prior7": 365.0,
+        "ratio": 0.95
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cOkta, Inc.\u201d, resolved from the filer's EDGAR name): 349 views a day over the last 7 complete days vs 365 the week before (0.96\u00d7)"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cOkta, Inc.\u201d, resolved from the filer's EDGAR name): 347 views a day over the last 7 complete days vs 365 the week before (0.95\u00d7)"
       },
       {
        "key": "seasonality",
@@ -41420,7 +41416,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -41629,7 +41625,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, NET was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 10 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $303.61, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $303.61, just above its recent swing low ($285.05) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -11.2% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $303.61, just above its recent swing low ($285.05) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -11.2% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -41660,7 +41656,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -41709,11 +41705,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy NET \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($303.61) is inside the entry zone.",
-     "why": "Price closed $303.61, just above its recent swing low ($285.05) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -11.2% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $303.61, just above its recent swing low ($285.05) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -11.2% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 303.61,
@@ -41784,18 +41780,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-NET-lector-NET",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "for",
@@ -43091,7 +43087,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -43156,7 +43152,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -43592,7 +43588,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -43657,7 +43653,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -45341,10 +45337,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 73.8% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $305.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 73.9% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $305.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 73.8,
+         "iv_pct": 73.9,
          "expiry": "2026-11-27",
          "dte": 35,
          "strike": 305.0
@@ -45353,17 +45349,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 73.8% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $305.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 73.9% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $305.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 50.2% annualized. IV 73.8% vs HV 50.2% \u2014 a spread of +23.6 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 50.2% annualized. IV 73.9% vs HV 50.2% \u2014 a spread of +23.7 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 50.2,
-        "iv_pct": 73.8,
+        "iv_pct": 73.9,
         "iv_rank": null,
         "iv_readings": 2
        },
@@ -45530,20 +45526,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 9 items naming the company in the last 7 days, 26 in the last 30. The latest, 2026-10-21 via fiscal.ai: \u201cCloudflare Announces Milestone of 10 Million Developers on Platform\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 9 items naming the company in the last 7 days, 23 in the last 30. The latest, 2026-10-21 via fiscal.ai: \u201cCloudflare Announces Milestone of 10 Million Developers on Platform\u201d.",
        "data": {
         "n7": 9,
-        "n30": 26,
+        "n30": 23,
         "capped": false,
         "latest_date": "2026-10-21",
         "latest_headline": "Cloudflare Announces Milestone of 10 Million Developers on Platform",
-        "latest_source": "fiscal.ai",
-        "built_at": "2026-10-22T22:41:58.556833+00:00"
+        "latest_source": "fiscal.ai"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 9 items naming the company in the last 7 days, 26 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 9 items naming the company in the last 7 days, 23 in the last 30"
       },
       {
        "key": "earnings",
@@ -45637,7 +45632,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -45645,7 +45640,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -49229,17 +49224,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cCloudflare, Inc.\u201d, resolved from the filer's EDGAR name): 4 views a day over the last 7 complete days vs 5 the week before (0.76\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cCloudflare, Inc.\u201d, resolved from the filer's EDGAR name): 3 views a day over the last 7 complete days vs 4 the week before (0.89\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Cloudflare, Inc.",
-        "avg7": 3.6,
-        "avg_prior7": 4.7,
-        "ratio": 0.76
+        "avg7": 3.4,
+        "avg_prior7": 3.9,
+        "ratio": 0.89
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cCloudflare, Inc.\u201d, resolved from the filer's EDGAR name): 4 views a day over the last 7 complete days vs 5 the week before (0.76\u00d7)"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cCloudflare, Inc.\u201d, resolved from the filer's EDGAR name): 3 views a day over the last 7 complete days vs 4 the week before (0.89\u00d7)"
       },
       {
        "key": "seasonality",
@@ -50581,19 +50576,19 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$69.38 by the IV form (IV 73.8%); \u00b1$47.81 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$69.48 by the IV form (IV 73.9%); \u00b1$47.81 by the 0.85x straddle form.",
        "data": {
         "spot": 303.61,
-        "iv_pct": 73.8,
+        "iv_pct": 73.9,
         "expiry": "2026-11-27",
         "dte": 35,
-        "iv_form": 69.38,
+        "iv_form": 69.48,
         "straddle_form": 47.81
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (35 days): \u00b1$69.38 by the IV form (IV 73.8%); \u00b1$47.81 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (35 days): \u00b1$69.48 by the IV form (IV 73.9%); \u00b1$47.81 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
@@ -50603,8 +50598,8 @@
        "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $335.00; net gamma $+0.01B per 1% move \u2014 price sits in the amplifying regime (below the flip).",
        "data": {
         "flip_strike": 335.0,
-        "net_gex": 6029144.73,
-        "contracts_used": 434,
+        "net_gex": 5806255.84,
+        "contracts_used": 435,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
@@ -50680,8 +50675,8 @@
        "fact": "IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.8225,
-        "put_iv_5pct_otm": 0.8253,
+        "atm_iv": 0.8175,
+        "put_iv_5pct_otm": 0.8209,
         "skew_pts": 0.0
        },
        "reason": null,
@@ -51005,25 +51000,25 @@
        "status": "value",
        "fact": "Dealer positioning (model estimate): net gamma $+0.01B per 1% move, net delta $+1.14B per $1; call wall $330, put wall $300. A model estimate, filed as context only.",
        "data": {
-        "net_gex": 7631999.83,
-        "net_dex": 1136583535.87,
-        "net_vex": 4787285.03,
-        "net_chex": -5765176.05,
+        "net_gex": 7352651.28,
+        "net_dex": 1138518245.05,
+        "net_vex": 4794608.88,
+        "net_chex": -5884654.3,
         "call_wall": 330.0,
         "put_wall": 300.0,
-        "contracts_used": 657,
+        "contracts_used": 661,
         "model": "model estimate \u2014 dealer gamma/delta/vanna/charm exposure, Black-Scholes greeks, dealers long calls / short puts convention; not a measurement",
-        "gamma_flip": 282.8444,
+        "gamma_flip": 283.7574,
         "gex_by_expiry": {
-         "2026-10-30": 3219961.08,
-         "2026-11-06": 542814.67,
-         "2026-11-13": -84353.03,
-         "2026-11-20": 1547473.94,
-         "2026-11-27": 98106.14,
-         "2026-12-18": 705141.94,
-         "2027-01-15": 1177126.24,
-         "2027-02-19": 348731.71,
-         "2027-03-19": 76997.15
+         "2026-10-30": 3068990.26,
+         "2026-11-06": 525816.85,
+         "2026-11-13": -89284.61,
+         "2026-11-20": 1522668.56,
+         "2026-11-27": 97046.08,
+         "2026-12-18": 681018.69,
+         "2027-01-15": 1151159.41,
+         "2027-02-19": 339338.67,
+         "2027-03-19": 55897.37
         }
        },
        "reason": null,
@@ -51056,15 +51051,15 @@
        "family": "paid_clones",
        "label": "Paid-clone context \u2014 payoff builder & expected move (addendum 13)",
        "status": "value",
-       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$55.24 ($248.37\u2013$358.85). Of the public templates enumerated, iron_condor ranks first on the blended return/chance ranking (modelled max profit $239, max loss $-11). Filed as context only \u2014 arithmetic, not advice.",
+       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$55.31 ($248.30\u2013$358.92). Of the public templates enumerated, iron_condor ranks first on the blended return/chance ranking (modelled max profit $239, max loss $-11). Filed as context only \u2014 arithmetic, not advice.",
        "data": {
         "expected_move": {
-         "straddle": 55.2403,
-         "move": 55.2403,
-         "upper": 358.8503,
-         "lower": 248.3697
+         "straddle": 55.3148,
+         "move": 55.3148,
+         "upper": 358.9248,
+         "lower": 248.2952
         },
-        "atm_iv_pct": 73.8,
+        "atm_iv_pct": 73.9,
         "dte": 35,
         "expiry": "2026-11-27",
         "optimizer_top": {
@@ -51074,36 +51069,36 @@
            "kind": "put",
            "strike": 300.0,
            "qty": -1,
-           "premium": 25.688369393716783
+           "premium": 25.725359297184298
           },
           {
            "kind": "put",
            "strike": 297.5,
            "qty": 1,
-           "premium": 24.39486013749959
+           "premium": 24.431600551201456
           },
           {
            "kind": "call",
            "strike": 305.0,
            "qty": -1,
-           "premium": 26.993869732188784
+           "premium": 27.031210216192278
           },
           {
            "kind": "call",
            "strike": 307.5,
            "qty": 1,
-           "premium": 25.895013774964923
+           "premium": 25.9324563945041
           }
          ],
-         "entry_cost": -239.24,
-         "max_profit": 239.24,
-         "max_loss": -10.76,
+         "entry_cost": -239.25,
+         "max_profit": 239.25,
+         "max_loss": -10.75,
          "breakevens": [
-          297.6076,
-          307.3924
+          297.6075,
+          307.3925
          ],
-         "chance_of_profit": 0.0562,
-         "return_ratio": 22.2342,
+         "chance_of_profit": 0.0561,
+         "return_ratio": 22.2558,
          "rank_score": 0.6667
         },
         "model": "Black-Scholes / expiry-payoff arithmetic (clone \u00a748c)"
@@ -51115,7 +51110,7 @@
        "context_only": true,
        "clone_label": "payoff builder & expected move (textbook arithmetic)",
        "verdict": "considered",
-       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$55.24 ($248.37\u2013$358.85)"
+       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$55.31 ($248.30\u2013$358.92)"
       },
       {
        "key": "paid_pac_clone",
@@ -51871,7 +51866,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -52110,7 +52105,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, PANW was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 10 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $354.92, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $354.92, 4.7% below its 20-day average (exponential) at $372.31 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $334.75 is intact below price; its 10-session move is -10.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $354.92, 4.7% below its 20-day average (exponential) at $372.31 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $334.75 is intact below price; its 10-session move is -10.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -52141,7 +52136,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -52190,11 +52185,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy PANW \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($354.92) is inside the entry zone.",
-     "why": "Price closed $354.92, 4.7% below its 20-day average (exponential) at $372.31 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $334.75 is intact below price; its 10-session move is -10.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $354.92, 4.7% below its 20-day average (exponential) at $372.31 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $334.75 is intact below price; its 10-session move is -10.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 354.92,
@@ -52267,18 +52262,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-PANW-lector-PANW",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "against",
@@ -53482,7 +53477,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -53547,7 +53542,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -53610,7 +53605,7 @@
       {
        "key": "consideration:expected_move",
        "factor": "Consideration \u2014 Expected move (addendum 12)",
-       "reading": "Expected move to 2026-11-27 (35 days): \u00b1$66.82 by the IV form (IV 60.8%); \u00b1$45.21 by the 0.85x straddle form.",
+       "reading": "Expected move to 2026-11-27 (35 days): \u00b1$67.04 by the IV form (IV 61.0%); \u00b1$45.21 by the 0.85x straddle form.",
        "stance": 0,
        "salience": 1.05,
        "disposition": "considered",
@@ -53983,7 +53978,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -54048,7 +54043,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -54111,7 +54106,7 @@
       {
        "key": "consideration:expected_move",
        "factor": "Consideration \u2014 Expected move (addendum 12)",
-       "reading": "Expected move to 2026-11-27 (35 days): \u00b1$66.82 by the IV form (IV 60.8%); \u00b1$45.21 by the 0.85x straddle form.",
+       "reading": "Expected move to 2026-11-27 (35 days): \u00b1$67.04 by the IV form (IV 61.0%); \u00b1$45.21 by the 0.85x straddle form.",
        "stance": 0,
        "salience": 1.05,
        "disposition": "considered",
@@ -54194,7 +54189,7 @@
       {
        "key": "expected_move",
        "family": "options",
-       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$66.82 by the IV form (IV 60.8%); \u00b1$45.21 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$67.04 by the IV form (IV 61.0%); \u00b1$45.21 by the 0.85x straddle form.",
        "rule": "the plan's target sits beyond the options-implied expected move band",
        "score": 65,
        "outcome_state": "standing"
@@ -55836,10 +55831,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 60.8% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $355.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 61.0% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $355.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 60.8,
+         "iv_pct": 61.0,
          "expiry": "2026-11-27",
          "dte": 35,
          "strike": 355.0
@@ -55848,17 +55843,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 60.8% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $355.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 61.0% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $355.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 54.0% annualized. IV 60.8% vs HV 54.0% \u2014 a spread of +6.8 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 54.0% annualized. IV 61.0% vs HV 54.0% \u2014 a spread of +7.0 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 54.0,
-        "iv_pct": 60.8,
+        "iv_pct": 61.0,
         "iv_rank": null,
         "iv_readings": 2
        },
@@ -56031,20 +56026,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 7 items naming the company in the last 7 days, 44 in the last 30. The latest, 2026-10-21 via fiscal.ai: \u201cPalo Alto Networks Joins NVIDIA OpenShell Reference Architecture Ecosystem\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 5 items naming the company in the last 7 days, 38 in the last 30. The latest, 2026-10-21 via fiscal.ai: \u201cPalo Alto Networks Joins NVIDIA OpenShell Reference Architecture Ecosystem\u201d.",
        "data": {
-        "n7": 7,
-        "n30": 44,
+        "n7": 5,
+        "n30": 38,
         "capped": false,
         "latest_date": "2026-10-21",
         "latest_headline": "Palo Alto Networks Joins NVIDIA OpenShell Reference Architecture Ecosystem",
-        "latest_source": "fiscal.ai",
-        "built_at": "2026-10-22T22:41:58.556833+00:00"
+        "latest_source": "fiscal.ai"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 7 items naming the company in the last 7 days, 44 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 5 items naming the company in the last 7 days, 38 in the last 30"
       },
       {
        "key": "earnings",
@@ -56144,7 +56138,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -56152,7 +56146,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -59736,17 +59730,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cPalo Alto Networks\u201d, resolved from the filer's EDGAR name): 1,650 views a day over the last 7 complete days vs 1,301 the week before (1.27\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cPalo Alto Networks\u201d, resolved from the filer's EDGAR name): 1,426 views a day over the last 7 complete days vs 1,534 the week before (0.93\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Palo Alto Networks",
-        "avg7": 1650.3,
-        "avg_prior7": 1301.1,
-        "ratio": 1.27
+        "avg7": 1425.6,
+        "avg_prior7": 1534.0,
+        "ratio": 0.93
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cPalo Alto Networks\u201d, resolved from the filer's EDGAR name): 1,650 views a day over the last 7 complete days vs 1,301 the week befo"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cPalo Alto Networks\u201d, resolved from the filer's EDGAR name): 1,426 views a day over the last 7 complete days vs 1,534 the week befo"
       },
       {
        "key": "seasonality",
@@ -61090,13 +61084,13 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$66.82 by the IV form (IV 60.8%); \u00b1$45.21 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$67.04 by the IV form (IV 61.0%); \u00b1$45.21 by the 0.85x straddle form.",
        "data": {
         "spot": 354.92,
-        "iv_pct": 60.8,
+        "iv_pct": 61.0,
         "expiry": "2026-11-27",
         "dte": 35,
-        "iv_form": 66.82,
+        "iv_form": 67.04,
         "straddle_form": 45.21,
         "seat_score": 65,
         "seat_rule": "the plan's target sits beyond the options-implied expected move band"
@@ -61111,17 +61105,17 @@
        "family": "options",
        "label": "Gamma flip, per name (addendum 12)",
        "status": "value",
-       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $285.00; net gamma $-0.01B per 1% move \u2014 price sits in the stabilising regime (above the flip).",
+       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $290.00; net gamma $-0.01B per 1% move \u2014 price sits in the stabilising regime (above the flip).",
        "data": {
-        "flip_strike": 285.0,
-        "net_gex": -11258748.56,
-        "contracts_used": 539,
+        "flip_strike": 290.0,
+        "net_gex": -14006341.89,
+        "contracts_used": 531,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $285.00; net gamma $-0.01B per 1% move \u2014 price sits in the sta"
+       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $290.00; net gamma $-0.01B per 1% move \u2014 price sits in the sta"
       },
       {
        "key": "gamma_walls_name",
@@ -61191,9 +61185,9 @@
        "fact": "IV skew (2026-11-27): ATM IV 0.6% vs the 5%-out put at 0.6% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.6194,
-        "put_iv_5pct_otm": 0.6217,
-        "skew_pts": 0.0
+        "atm_iv": 0.5986,
+        "put_iv_5pct_otm": 0.605,
+        "skew_pts": 0.01
        },
        "reason": null,
        "needs": null,
@@ -61526,27 +61520,27 @@
        "family": "paid_clones",
        "label": "Paid-clone context \u2014 dealer positioning suite (addendum 13)",
        "status": "value",
-       "fact": "Dealer positioning (model estimate): net gamma $-0.01B per 1% move, net delta $+3.79B per $1; call wall $400, put wall $350. A model estimate, filed as context only.",
+       "fact": "Dealer positioning (model estimate): net gamma $-0.01B per 1% move, net delta $+4.10B per $1; call wall $400, put wall $350. A model estimate, filed as context only.",
        "data": {
-        "net_gex": -5685763.95,
-        "net_dex": 3794868894.72,
-        "net_vex": 12917415.46,
-        "net_chex": -17124919.63,
+        "net_gex": -8280431.87,
+        "net_dex": 4101201013.97,
+        "net_vex": 12696346.4,
+        "net_chex": -17566359.33,
         "call_wall": 400.0,
         "put_wall": 350.0,
-        "contracts_used": 827,
+        "contracts_used": 826,
         "model": "model estimate \u2014 dealer gamma/delta/vanna/charm exposure, Black-Scholes greeks, dealers long calls / short puts convention; not a measurement",
-        "gamma_flip": 363.0631,
+        "gamma_flip": 364.1315,
         "gex_by_expiry": {
-         "2026-10-30": -14115455.55,
-         "2026-11-06": -732013.84,
-         "2026-11-13": 256345.3,
-         "2026-11-20": 534017.02,
-         "2026-11-27": -1131925.11,
-         "2026-12-18": 3930283.62,
-         "2027-01-15": 4118555.7,
-         "2027-03-19": 1461080.03,
-         "2027-04-16": -6651.12
+         "2026-10-30": -15623080.83,
+         "2026-11-06": -858095.42,
+         "2026-11-13": 17975.66,
+         "2026-11-20": -43408.64,
+         "2026-11-27": -1188585.61,
+         "2026-12-18": 3688852.96,
+         "2027-01-15": 4363072.59,
+         "2027-03-19": 1374061.2,
+         "2027-04-16": -11223.77
         }
        },
        "reason": null,
@@ -61556,7 +61550,7 @@
        "context_only": true,
        "clone_label": "dealer positioning suite (GEX/DEX/VEX/CHEX, model estimate)",
        "verdict": "considered",
-       "deciding": "considered \u2014 Dealer positioning (model estimate): net gamma $-0.01B per 1% move, net delta $+3.79B per $1; call wall $400, put wall $350"
+       "deciding": "considered \u2014 Dealer positioning (model estimate): net gamma $-0.01B per 1% move, net delta $+4.10B per $1; call wall $400, put wall $350"
       },
       {
        "key": "paid_flow_clone",
@@ -61579,15 +61573,15 @@
        "family": "paid_clones",
        "label": "Paid-clone context \u2014 payoff builder & expected move (addendum 13)",
        "status": "value",
-       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$53.24 ($301.68\u2013$408.16). Of the public templates enumerated, iron_condor ranks first on the blended return/chance ranking (modelled max profit $239, max loss $-11). Filed as context only \u2014 arithmetic, not advice.",
+       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$53.41 ($301.51\u2013$408.33). Of the public templates enumerated, iron_condor ranks first on the blended return/chance ranking (modelled max profit $239, max loss $-11). Filed as context only \u2014 arithmetic, not advice.",
        "data": {
         "expected_move": {
-         "straddle": 53.2379,
-         "move": 53.2379,
-         "upper": 408.1579,
-         "lower": 301.6821
+         "straddle": 53.4125,
+         "move": 53.4125,
+         "upper": 408.3325,
+         "lower": 301.5075
         },
-        "atm_iv_pct": 60.8,
+        "atm_iv_pct": 61.0,
         "dte": 35,
         "expiry": "2026-11-27",
         "optimizer_top": {
@@ -61597,36 +61591,36 @@
            "kind": "put",
            "strike": 352.5,
            "qty": -1,
-           "premium": 25.335645806805957
+           "premium": 25.42259308258585
           },
           {
            "kind": "put",
            "strike": 350.0,
            "qty": 1,
-           "premium": 24.046842542049347
+           "premium": 24.133300797034025
           },
           {
            "kind": "call",
            "strike": 357.5,
            "qty": -1,
-           "premium": 25.445391181565185
+           "premium": 25.532945977915574
           },
           {
            "kind": "call",
            "strike": 360.0,
            "qty": 1,
-           "premium": 24.34554668794786
+           "premium": 24.43322259871138
           }
          ],
-         "entry_cost": -238.86,
-         "max_profit": 238.86,
-         "max_loss": -11.14,
+         "entry_cost": -238.9,
+         "max_profit": 238.9,
+         "max_loss": -11.1,
          "breakevens": [
-          350.1114,
-          359.8886
+          350.111,
+          359.889
          ],
-         "chance_of_profit": 0.058,
-         "return_ratio": 21.4417,
+         "chance_of_profit": 0.0579,
+         "return_ratio": 21.5225,
          "rank_score": 0.6667
         },
         "model": "Black-Scholes / expiry-payoff arithmetic (clone \u00a748c)"
@@ -61638,7 +61632,7 @@
        "context_only": true,
        "clone_label": "payoff builder & expected move (textbook arithmetic)",
        "verdict": "considered",
-       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$53.24 ($301.68\u2013$408.16)"
+       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$53.41 ($301.51\u2013$408.33)"
       },
       {
        "key": "paid_pac_clone",
@@ -61855,7 +61849,7 @@
       {
        "key": "expected_move",
        "family": "options",
-       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$66.82 by the IV form (IV 60.8%); \u00b1$45.21 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$67.04 by the IV form (IV 61.0%); \u00b1$45.21 by the 0.85x straddle form.",
        "rule": "the plan's target sits beyond the options-implied expected move band",
        "score": 65
       }
@@ -62392,7 +62386,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -62540,9 +62534,9 @@
      "adx": 19.8,
      "hourly": {
       "state": "read",
-      "stance": "sideways",
-      "close": 22.7041,
-      "sma20": 22.64,
+      "stance": "lower",
+      "close": 22.6,
+      "sma20": 22.63,
       "sma50": 22.92,
       "pivot_sequence": null,
       "grade": "corroboration \u2014 the hourly frame is the same tape at a finer grain, not an independent witness (skill thesis 2.8)"
@@ -62601,7 +62595,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, BMNR was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 8 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $22.50, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $22.50, 5.8% below its 20-day average (exponential) at $23.89 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $20.55 is intact below price; its 10-session move is -6.4% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $22.50, 5.8% below its 20-day average (exponential) at $23.89 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $20.55 is intact below price; its 10-session move is -6.4% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -62632,7 +62626,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -62681,11 +62675,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy BMNR \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($22.50) is inside the entry zone.",
-     "why": "Price closed $22.50, 5.8% below its 20-day average (exponential) at $23.89 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $20.55 is intact below price; its 10-session move is -6.4% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $22.50, 5.8% below its 20-day average (exponential) at $23.89 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $20.55 is intact below price; its 10-session move is -6.4% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 22.5,
@@ -62756,18 +62750,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-BMNR-lector-BMNR",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "for",
@@ -63907,7 +63901,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -63972,7 +63966,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -64372,7 +64366,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -64437,7 +64431,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -66175,10 +66169,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 75.6% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $22.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 75.7% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $22.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 75.6,
+         "iv_pct": 75.7,
          "expiry": "2026-11-27",
          "dte": 35,
          "strike": 22.0
@@ -66187,17 +66181,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 75.6% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $22.00; Alpaca snapshot IV from the desk's options product, built 20"
+       "deciding": "considered \u2014 Standing IV on the name: 75.7% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $22.00; Alpaca snapshot IV from the desk's options product, built 20"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 57.8% annualized. IV 75.6% vs HV 57.8% \u2014 a spread of +17.8 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 57.8% annualized. IV 75.7% vs HV 57.8% \u2014 a spread of +17.9 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 57.8,
-        "iv_pct": 75.6,
+        "iv_pct": 75.7,
         "iv_rank": null,
         "iv_readings": 2
        },
@@ -66458,20 +66452,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 11 items naming the company in the last 7 days, 48 in the last 30. The latest, 2026-10-22 via benzinga: \u201cBitcoin, Ethereum, XRP, Dogecoin Rise as Scott Bessent Compares GENIUS Act to Lincoln's Currency Milestone: Analyst Notes BTC's Sentiment- Defying Move\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 11 items naming the company in the last 7 days, 47 in the last 30. The latest, 2026-10-23 via benzinga: \u201cBitcoin, Ethereum, XRP, Dogecoin Sink as Iran War Fears Return: Analyst Says Deeper BTC Correction Won\u2019t Be \u2018Weird\u2019\u201d.",
        "data": {
         "n7": 11,
-        "n30": 48,
+        "n30": 47,
         "capped": false,
-        "latest_date": "2026-10-22",
-        "latest_headline": "Bitcoin, Ethereum, XRP, Dogecoin Rise as Scott Bessent Compares GENIUS Act to Lincoln's Currency Milestone: Analyst Notes BTC's Sentiment- Defying Move",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_date": "2026-10-23",
+        "latest_headline": "Bitcoin, Ethereum, XRP, Dogecoin Sink as Iran War Fears Return: Analyst Says Deeper BTC Correction Won\u2019t Be \u2018Weird\u2019",
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 11 items naming the company in the last 7 days, 48 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 11 items naming the company in the last 7 days, 47 in the last 30"
       },
       {
        "key": "earnings",
@@ -66533,7 +66526,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -66541,7 +66534,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -71483,10 +71476,10 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$5.27 by the IV form (IV 75.6%); \u00b1$3.57 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$5.27 by the IV form (IV 75.7%); \u00b1$3.57 by the 0.85x straddle form.",
        "data": {
         "spot": 22.5,
-        "iv_pct": 75.6,
+        "iv_pct": 75.7,
         "expiry": "2026-11-27",
         "dte": 35,
         "iv_form": 5.27,
@@ -71497,24 +71490,24 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (35 days): \u00b1$5.27 by the IV form (IV 75.6%); \u00b1$3.57 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (35 days): \u00b1$5.27 by the IV form (IV 75.7%); \u00b1$3.57 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
        "family": "options",
        "label": "Gamma flip, per name (addendum 12)",
        "status": "value",
-       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $26.00; net gamma $+0.00B per 1% move \u2014 price sits in the amplifying regime (below the flip).",
+       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $27.00; net gamma $+0.00B per 1% move \u2014 price sits in the amplifying regime (below the flip).",
        "data": {
-        "flip_strike": 26.0,
-        "net_gex": 2011427.44,
-        "contracts_used": 258,
+        "flip_strike": 27.0,
+        "net_gex": 1594555.62,
+        "contracts_used": 261,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $26.00; net gamma $+0.00B per 1% move \u2014 price sits in the ampl"
+       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is $27.00; net gamma $+0.00B per 1% move \u2014 price sits in the ampl"
       },
       {
        "key": "gamma_walls_name",
@@ -71584,8 +71577,8 @@
        "fact": "IV skew (2026-11-27): ATM IV 0.8% vs the 5%-out put at 0.8% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.7952,
-        "put_iv_5pct_otm": 0.8181,
+        "atm_iv": 0.7913,
+        "put_iv_5pct_otm": 0.8147,
         "skew_pts": 0.02
        },
        "reason": null,
@@ -71909,25 +71902,25 @@
        "status": "value",
        "fact": "Dealer positioning (model estimate): net gamma $+0.01B per 1% move, net delta $+0.64B per $1; call wall $25, put wall $20. A model estimate, filed as context only.",
        "data": {
-        "net_gex": 6799081.63,
-        "net_dex": 637794020.7,
-        "net_vex": 3086337.54,
-        "net_chex": -3040629.37,
+        "net_gex": 6342014.42,
+        "net_dex": 640404757.13,
+        "net_vex": 3130721.16,
+        "net_chex": -3582292.6,
         "call_wall": 25.0,
         "put_wall": 20.0,
-        "contracts_used": 431,
+        "contracts_used": 433,
         "model": "model estimate \u2014 dealer gamma/delta/vanna/charm exposure, Black-Scholes greeks, dealers long calls / short puts convention; not a measurement",
         "gamma_flip": null,
         "gex_by_expiry": {
-         "2026-10-30": -150518.05,
-         "2026-11-06": 1625.52,
-         "2026-11-13": 139589.78,
-         "2026-11-20": 1823569.25,
-         "2026-11-27": 93647.19,
-         "2026-12-18": 103513.75,
-         "2027-01-15": 3170283.65,
-         "2027-02-19": 893694.62,
-         "2027-03-19": 723675.92
+         "2026-10-30": -533875.86,
+         "2026-11-06": -3667.38,
+         "2026-11-13": 134303.16,
+         "2026-11-20": 1801788.35,
+         "2026-11-27": 93467.93,
+         "2026-12-18": 102539.42,
+         "2027-01-15": 3135894.34,
+         "2027-02-19": 890070.27,
+         "2027-03-19": 721494.19
         }
        },
        "reason": null,
@@ -71960,15 +71953,15 @@
        "family": "paid_clones",
        "label": "Paid-clone context \u2014 payoff builder & expected move (addendum 13)",
        "status": "value",
-       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$4.19 ($18.31\u2013$26.69). Of the public templates enumerated, long_straddle ranks first on the blended return/chance ranking (modelled max profit $4,081, max loss $-414). Filed as context only \u2014 arithmetic, not advice.",
+       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$4.20 ($18.30\u2013$26.70). Of the public templates enumerated, long_straddle ranks first on the blended return/chance ranking (modelled max profit $4,080, max loss $-414). Filed as context only \u2014 arithmetic, not advice.",
        "data": {
         "expected_move": {
-         "straddle": 4.1932,
-         "move": 4.1932,
-         "upper": 26.6932,
-         "lower": 18.3068
+         "straddle": 4.1987,
+         "move": 4.1987,
+         "upper": 26.6987,
+         "lower": 18.3013
         },
-        "atm_iv_pct": 75.6,
+        "atm_iv_pct": 75.7,
         "dte": 35,
         "expiry": "2026-11-27",
         "optimizer_top": {
@@ -71978,24 +71971,24 @@
            "kind": "call",
            "strike": 22.5,
            "qty": 1,
-           "premium": 2.096578599645996
+           "premium": 2.099339184225844
           },
           {
            "kind": "put",
            "strike": 22.5,
            "qty": 1,
-           "premium": 2.096578599645998
+           "premium": 2.099339184225844
           }
          ],
-         "entry_cost": 419.32,
-         "max_profit": 4080.68,
-         "max_loss": -413.69,
+         "entry_cost": 419.87,
+         "max_profit": 4080.13,
+         "max_loss": -414.24,
          "breakevens": [
-          18.3068,
-          26.6932
+          18.3013,
+          26.6987
          ],
          "chance_of_profit": 0.4209,
-         "return_ratio": 9.8641,
+         "return_ratio": 9.8497,
          "rank_score": 0.8333
         },
         "model": "Black-Scholes / expiry-payoff arithmetic (clone \u00a748c)"
@@ -72007,7 +72000,7 @@
        "context_only": true,
        "clone_label": "payoff builder & expected move (textbook arithmetic)",
        "verdict": "considered",
-       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$4.19 ($18.31\u2013$26.69)"
+       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$4.20 ($18.30\u2013$26.70)"
       },
       {
        "key": "paid_pac_clone",
@@ -72767,7 +72760,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -72976,7 +72969,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, ADI was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 7 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $385.76, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $385.76, 3.1% below its 20-day average (exponential) at $398.07 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $377.40 is intact below price; its 10-session move is -5.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $385.76, 3.1% below its 20-day average (exponential) at $398.07 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $377.40 is intact below price; its 10-session move is -5.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -73007,7 +73000,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -73056,11 +73049,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy ADI \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($385.76) is inside the entry zone.",
-     "why": "Price closed $385.76, 3.1% below its 20-day average (exponential) at $398.07 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $377.40 is intact below price; its 10-session move is -5.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $385.76, 3.1% below its 20-day average (exponential) at $398.07 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $377.40 is intact below price; its 10-session move is -5.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 385.76,
@@ -73131,18 +73124,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-ADI-lector-ADI",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "for",
@@ -74482,7 +74475,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -74547,7 +74540,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -75019,7 +75012,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -75084,7 +75077,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -77016,7 +77009,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 46.1% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $385.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 46.1% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $385.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 46.1,
@@ -77226,20 +77219,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 12 items naming the company in the last 7 days, 30 in the last 30. The latest, 2026-10-22 via benzinga: \u201cIndustry Comparison: Evaluating Analog Devices Against Competitors In Semiconductors &amp; Semiconductor Equipment Industry\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 13 items naming the company in the last 7 days, 33 in the last 30. The latest, 2026-10-23 via benzinga: \u201cComparative Study: Analog Devices And Industry Competitors In Semiconductors &amp; Semiconductor Equipment Industry\u201d.",
        "data": {
-        "n7": 12,
-        "n30": 30,
+        "n7": 13,
+        "n30": 33,
         "capped": false,
-        "latest_date": "2026-10-22",
-        "latest_headline": "Industry Comparison: Evaluating Analog Devices Against Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_date": "2026-10-23",
+        "latest_headline": "Comparative Study: Analog Devices And Industry Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 12 items naming the company in the last 7 days, 30 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 13 items naming the company in the last 7 days, 33 in the last 30"
       },
       {
        "key": "earnings",
@@ -77342,7 +77334,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -77350,7 +77342,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -80934,17 +80926,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cAnalog Devices Inc\u201d, resolved from the filer's EDGAR name): 3 views a day over the last 7 complete days vs 7 the week before (0.47\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cAnalog Devices Inc\u201d, resolved from the filer's EDGAR name): 4 views a day over the last 7 complete days vs 7 the week before (0.61\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Analog Devices Inc",
-        "avg7": 3.3,
+        "avg7": 4.3,
         "avg_prior7": 7.0,
-        "ratio": 0.47
+        "ratio": 0.61
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cAnalog Devices Inc\u201d, resolved from the filer's EDGAR name): 3 views a day over the last 7 complete days vs 7 the week before (0.47"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cAnalog Devices Inc\u201d, resolved from the filer's EDGAR name): 4 views a day over the last 7 complete days vs 7 the week before (0.61"
       },
       {
        "key": "seasonality",
@@ -83586,7 +83578,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -83795,7 +83787,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, QCOM was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 4 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $172.83, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $172.83, 2.7% below its 20-day average (exponential) at $177.64 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $168.84 is intact below price; its 10-session move is -1.8% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $172.83, 2.7% below its 20-day average (exponential) at $177.64 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $168.84 is intact below price; its 10-session move is -1.8% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -83826,7 +83818,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -83875,11 +83867,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy QCOM \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($172.83) is inside the entry zone.",
-     "why": "Price closed $172.83, 2.7% below its 20-day average (exponential) at $177.64 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $168.84 is intact below price; its 10-session move is -1.8% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $172.83, 2.7% below its 20-day average (exponential) at $177.64 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $168.84 is intact below price; its 10-session move is -1.8% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 172.83,
@@ -83950,18 +83942,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-QCOM-lector-QCOM",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "for",
@@ -84828,7 +84820,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -84893,7 +84885,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -85248,7 +85240,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -85313,7 +85305,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -87088,7 +87080,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 54.4% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $175.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 54.4% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $175.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 54.4,
@@ -87288,20 +87280,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 11 items naming the company in the last 7 days, 47 in the last 30. The latest, 2026-10-22 via fiscal.ai: \u201cQualcomm Schedules Fourth Quarter and Fiscal 2026 Earnings Release and Conference Call\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 11 items naming the company in the last 7 days, 43 in the last 30. The latest, 2026-10-22 via fiscal.ai: \u201cQualcomm Schedules Fourth Quarter and Fiscal 2026 Earnings Release and Conference Call\u201d.",
        "data": {
         "n7": 11,
-        "n30": 47,
+        "n30": 43,
         "capped": false,
         "latest_date": "2026-10-22",
         "latest_headline": "Qualcomm Schedules Fourth Quarter and Fiscal 2026 Earnings Release and Conference Call",
-        "latest_source": "fiscal.ai",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_source": "fiscal.ai"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 11 items naming the company in the last 7 days, 47 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 11 items naming the company in the last 7 days, 43 in the last 30"
       },
       {
        "key": "earnings",
@@ -87405,7 +87396,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -87413,7 +87404,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -93685,7 +93676,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -93840,7 +93831,7 @@
      "hourly": {
       "state": "read",
       "stance": "lower",
-      "close": 148.1433,
+      "close": 148.17,
       "sma20": 150.04,
       "sma50": 153.01,
       "pivot_sequence": null,
@@ -93900,7 +93891,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, SPCX was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 4 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $144.75, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $144.75, 5.4% below its 20-day average (exponential) at $152.98 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $140.66 is intact below price; its 10-session move is -9.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $144.75, 5.4% below its 20-day average (exponential) at $152.98 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $140.66 is intact below price; its 10-session move is -9.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -93931,7 +93922,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -93980,11 +93971,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy SPCX \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($144.75) is inside the entry zone.",
-     "why": "Price closed $144.75, 5.4% below its 20-day average (exponential) at $152.98 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $140.66 is intact below price; its 10-session move is -9.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $144.75, 5.4% below its 20-day average (exponential) at $152.98 \u2014 pulled back near the average, reset rather than extended; the recent swing low at $140.66 is intact below price; its 10-session move is -9.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 144.75,
@@ -94055,18 +94046,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-SPCX-lector-SPCX",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "against",
@@ -94836,7 +94827,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -94901,7 +94892,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -95238,7 +95229,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -95303,7 +95294,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -96993,7 +96984,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 52.2% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $145.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 52.2% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $145.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 52.2,
@@ -97187,15 +97178,14 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 200 items naming the company in the last 7 days, 200 in the last 30. The latest, 2026-10-22 via benzinga: \u201c'Elon Musk Makes $1 Billion Investment In Ellison\u2019s Skydance' - Semafor Exclusive\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 200 items naming the company in the last 7 days, 200 in the last 30. The latest, 2026-10-23 via benzinga: \u201cAnthropic\u2019s Path to $1.5 Trillion Demands 30% Margins: Plausible, but Delivering Is Another Matter\u201d.",
        "data": {
         "n7": 200,
         "n30": 200,
         "capped": true,
-        "latest_date": "2026-10-22",
-        "latest_headline": "'Elon Musk Makes $1 Billion Investment In Ellison\u2019s Skydance' - Semafor Exclusive",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_date": "2026-10-23",
+        "latest_headline": "Anthropic\u2019s Path to $1.5 Trillion Demands 30% Margins: Plausible, but Delivering Is Another Matter",
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
@@ -97264,7 +97254,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -97272,7 +97262,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -102129,7 +102119,7 @@
        "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.01B per 1% move \u2014 price sits with no flip inside the chain.",
        "data": {
         "flip_strike": null,
-        "net_gex": -13445848.12,
+        "net_gex": -14391342.98,
         "contracts_used": 659,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
@@ -102211,8 +102201,8 @@
        "fact": "IV skew (2026-11-27): ATM IV 0.6% vs the 5%-out put at 0.6% \u2014 a skew of -0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.6184,
-        "put_iv_5pct_otm": 0.6116,
+        "atm_iv": 0.617,
+        "put_iv_5pct_otm": 0.6104,
         "skew_pts": -0.01
        },
        "reason": null,
@@ -102536,30 +102526,30 @@
        "status": "value",
        "fact": "Dealer positioning (model estimate): net gamma $-0.01B per 1% move, net delta $+8.83B per $1; call wall $150, put wall $150. A model estimate, filed as context only.",
        "data": {
-        "net_gex": -11679054.72,
-        "net_dex": 8829581568.9,
-        "net_vex": 72719654.72,
-        "net_chex": -46627311.48,
+        "net_gex": -12849031.14,
+        "net_dex": 8833735876.53,
+        "net_vex": 72706437.14,
+        "net_chex": -46693259.67,
         "call_wall": 150.0,
         "put_wall": 150.0,
         "contracts_used": 1043,
         "model": "model estimate \u2014 dealer gamma/delta/vanna/charm exposure, Black-Scholes greeks, dealers long calls / short puts convention; not a measurement",
-        "gamma_flip": 150.0628,
+        "gamma_flip": 150.1167,
         "gex_by_expiry": {
-         "2026-10-26": -2104309.85,
-         "2026-10-28": -5143594.28,
-         "2026-10-30": -5479348.62,
-         "2026-11-02": 662861.55,
-         "2026-11-04": 491649.78,
-         "2026-11-06": -3130386.17,
-         "2026-11-13": -668244.27,
-         "2026-11-20": 3481465.21,
-         "2026-11-27": 223903.27,
-         "2026-12-18": -1779844.76,
-         "2027-01-15": 3657730.74,
-         "2027-02-19": -2248375.48,
-         "2027-03-19": -835288.57,
-         "2027-04-16": 1192726.72
+         "2026-10-26": -2155036.01,
+         "2026-10-28": -5147357.36,
+         "2026-10-30": -5734860.93,
+         "2026-11-02": 648479.71,
+         "2026-11-04": 488412.61,
+         "2026-11-06": -3225586.23,
+         "2026-11-13": -724059.8,
+         "2026-11-20": 3148212.61,
+         "2026-11-27": 207631.51,
+         "2026-12-18": -1897179.11,
+         "2027-01-15": 3549760.09,
+         "2027-02-19": -2267402.5,
+         "2027-03-19": -906162.71,
+         "2027-04-16": 1166116.96
         }
        },
        "reason": null,
@@ -103437,7 +103427,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -103667,7 +103657,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, HPE was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 2 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $55.47, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $55.47, just above its recent swing low ($54.07) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -21.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $55.47, just above its recent swing low ($54.07) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -21.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -103698,7 +103688,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -103747,11 +103737,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy HPE \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($55.47) is inside the entry zone.",
-     "why": "Price closed $55.47, just above its recent swing low ($54.07) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -21.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $55.47, just above its recent swing low ($54.07) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -21.9% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 55.47,
@@ -103824,18 +103814,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-HPE-lector-HPE",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "against",
@@ -104957,7 +104947,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -105022,7 +105012,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -105449,7 +105439,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -105514,7 +105504,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -107290,7 +107280,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 65.3% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $55.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 65.3% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $55.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 65.3,
@@ -107502,8 +107492,7 @@
         "capped": false,
         "latest_date": "2026-10-22",
         "latest_headline": "Here's How Much $100 Invested In Hewlett Packard 10 Years Ago Would Be Worth Today",
-        "latest_source": "benzinga",
-        "built_at": "2026-10-22T22:41:58.556833+00:00"
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
@@ -107614,7 +107603,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -107622,7 +107611,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -111206,17 +111195,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cHewlett Packard Enterprise\u201d, resolved from the filer's EDGAR name): 785 views a day over the last 7 complete days vs 874 the week before (0.9\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cHewlett Packard Enterprise\u201d, resolved from the filer's EDGAR name): 783 views a day over the last 7 complete days vs 856 the week before (0.92\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Hewlett Packard Enterprise",
-        "avg7": 785.1,
-        "avg_prior7": 874.4,
-        "ratio": 0.9
+        "avg7": 783.0,
+        "avg_prior7": 855.7,
+        "ratio": 0.92
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cHewlett Packard Enterprise\u201d, resolved from the filer's EDGAR name): 785 views a day over the last 7 complete days vs 874 the week "
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cHewlett Packard Enterprise\u201d, resolved from the filer's EDGAR name): 783 views a day over the last 7 complete days vs 856 the week "
       },
       {
        "key": "seasonality",
@@ -113851,7 +113840,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -113947,7 +113936,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, SNOW was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 2 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $313.96, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $313.96, just above its recent swing low ($302.24) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -8.6% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $313.96, just above its recent swing low ($302.24) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -8.6% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -113978,7 +113967,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -114026,7 +114015,7 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": null,
     "chart_read": null,
     "visual_read": null,
@@ -114271,7 +114260,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -114336,7 +114325,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -114655,7 +114644,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -114711,7 +114700,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -115929,7 +115918,7 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 55.4% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $315.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 55.4% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $315.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
          "iv_pct": 55.4,
@@ -116127,20 +116116,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 5 items naming the company in the last 7 days, 26 in the last 30. The latest, 2026-10-21 via fiscal.ai: \u201cSnowflake Automation Integration Announced for AI Cost Management\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 6 items naming the company in the last 7 days, 27 in the last 30. The latest, 2026-10-23 via fiscal.ai: \u201cLiquibase Secure Now Available on Snowflake Marketplace\u201d.",
        "data": {
-        "n7": 5,
-        "n30": 26,
+        "n7": 6,
+        "n30": 27,
         "capped": false,
-        "latest_date": "2026-10-21",
-        "latest_headline": "Snowflake Automation Integration Announced for AI Cost Management",
-        "latest_source": "fiscal.ai",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_date": "2026-10-23",
+        "latest_headline": "Liquibase Secure Now Available on Snowflake Marketplace",
+        "latest_source": "fiscal.ai"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 5 items naming the company in the last 7 days, 26 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 6 items naming the company in the last 7 days, 27 in the last 30"
       },
       {
        "key": "earnings",
@@ -116227,7 +116215,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -116235,7 +116223,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -119819,17 +119807,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cSnowflake Inc.\u201d, resolved from the filer's EDGAR name): 877 views a day over the last 7 complete days vs 939 the week before (0.93\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cSnowflake Inc.\u201d, resolved from the filer's EDGAR name): 887 views a day over the last 7 complete days vs 926 the week before (0.96\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Snowflake Inc.",
-        "avg7": 877.1,
-        "avg_prior7": 939.3,
-        "ratio": 0.93
+        "avg7": 887.1,
+        "avg_prior7": 926.3,
+        "ratio": 0.96
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cSnowflake Inc.\u201d, resolved from the filer's EDGAR name): 877 views a day over the last 7 complete days vs 939 the week before (0.93"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cSnowflake Inc.\u201d, resolved from the filer's EDGAR name): 887 views a day over the last 7 complete days vs 926 the week before (0.96"
       },
       {
        "key": "seasonality",
@@ -122456,7 +122444,7 @@
    "backstop_stop": null,
    "plan_sleeve": null,
    "family_win_rate": null,
-   "scored_at": "2026-10-23T10:25:01.418527+00:00",
+   "scored_at": "2026-10-23T10:31:25.273189+00:00",
    "provenance": {
     "source_system": "market_screen_geometry",
     "source_timestamp": "2026-10-23"
@@ -122605,7 +122593,7 @@
      "hourly": {
       "state": "read",
       "stance": "sideways",
-      "close": 415.0303,
+      "close": 415,
       "sma20": 414.98,
       "sma50": 422.26,
       "pivot_sequence": null,
@@ -122665,7 +122653,7 @@
     "setup_story": [
      "On Friday, October 23, 2026, TSM was flagged by 0 of the desk's strategies across 0 independent families (one family) and scored 2 of 100 \u2014 Watch tier on the desk's list.",
      "A strategy recorded an entry level of $412.35, but no fill is in the record \u2014 treat this as a watch, not a holding.",
-     "The picture as a whole: price closed $412.35, just above its recent swing low ($407.13) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -10.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23)."
+     "The picture as a whole: price closed $412.35, just above its recent swing low ($407.13) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -10.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23)."
     ],
     "lens_walkthrough": [
      {
@@ -122696,7 +122684,7 @@
       "key": "regime",
       "lens": "Market regime",
       "verdict": "Neutral",
-      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
+      "evidence": "Market regime: Downtrend. QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend. VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23). Both indexes were red today."
      },
      {
       "key": "level",
@@ -122745,11 +122733,11 @@
     },
     "structure_conflict": null,
     "instrument": null,
-    "scored_at": "2026-10-23T10:25:01.418527+00:00",
+    "scored_at": "2026-10-23T10:31:25.273189+00:00",
     "plan": {
      "status": "Watching",
      "action": "Buy TSM \u2014 the desk's strategies are staged to buy it in the entry zone below. The stop below is the stop staged with this trade; the target below is an objective the strategy is aiming for, not a resting order. The last close ($412.35) is inside the entry zone.",
-     "why": "Price closed $412.35, just above its recent swing low ($407.13) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -10.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.56 (VIX as of 2026-10-23).",
+     "why": "Price closed $412.35, just above its recent swing low ($407.13) \u2014 reset onto the swing-low zone; the recent swing low is intact below price; its 10-session move is -10.0% \u2014 nowhere near the +25% spike the method rejects; the market read Downtrend, fear gauge at 19.55 (VIX as of 2026-10-23).",
      "instrument": null,
      "entry_zone": {
       "anchor": 412.35,
@@ -122820,18 +122808,18 @@
      },
      "expires_at": "2026-10-23T16:00:00-04:00",
      "expires_text": "Plan expires at today's close (4:00 PM ET) unless it re-validates on a later pass \u2014 a setup that stops being true leaves the list.",
-     "as_of_text": "Plan as of 6:25 AM ET \u00b7 Prices checked 6:25 AM ET",
+     "as_of_text": "Plan as of 6:31 AM ET \u00b7 Prices checked 6:31 AM ET",
      "provenance": {
       "plan_id": "plan-2026-10-23-TSM-lector-TSM",
       "source_system": "market_screen_geometry",
       "source_timestamp": "2026-10-23",
-      "ingested_at": "2026-10-23T10:25:01.418527+00:00",
+      "ingested_at": "2026-10-23T10:31:25.273189+00:00",
       "plan_version": 1,
       "change_note": null
      },
      "valid": {
       "session": "2026-10-23",
-      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:25 AM ET."
+      "text": "For today only \u2014 the board is rebuilt from fresh evidence on every pass, and a setup that stops being true leaves the list. Prices and strategy reasons are from the desk's scoring pass at 6:31 AM ET."
      },
      "conviction": {
       "call": "for",
@@ -123950,7 +123938,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -124015,7 +124003,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -124442,7 +124430,7 @@
       {
        "key": "volatility",
        "factor": "Volatility / fear",
-       "reading": "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
+       "reading": "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23) \u2014 no fear day by the desk's rule.",
        "stance": 0,
        "salience": 1.5,
        "disposition": "considered",
@@ -124507,7 +124495,7 @@
       {
        "key": "gex_context",
        "factor": "Gamma exposure (model estimate)",
-       "reading": "SPY dealer gamma (model estimate): net $-10.62B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
+       "reading": "SPY dealer gamma (model estimate): net $-10.73B per 1% move \u2014 dealers short gamma \u2014 hedging amplifies moves. A model estimate, filed as context only.",
        "stance": 0,
        "salience": 1.0,
        "disposition": "considered",
@@ -126340,10 +126328,10 @@
        "family": "options",
        "label": "Implied volatility on the name",
        "status": "value",
-       "fact": "Standing IV on the name: 34.0% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $410.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:22:16.088401+00:00.",
+       "fact": "Standing IV on the name: 34.1% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $410.00; Alpaca snapshot IV from the desk's options product, built 2026-10-23T10:26:42.849698+00:00.",
        "data": {
         "atm_iv": {
-         "iv_pct": 34.0,
+         "iv_pct": 34.1,
          "expiry": "2026-11-27",
          "dte": 35,
          "strike": 410.0
@@ -126352,17 +126340,17 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Standing IV on the name: 34.0% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $410.00; Alpaca snapshot IV from the desk's options product, built 2"
+       "deciding": "considered \u2014 Standing IV on the name: 34.1% \u2014 at the money on the 2026-11-27 expiry (35 days out, strike $410.00; Alpaca snapshot IV from the desk's options product, built 2"
       },
       {
        "key": "iv_rank_hv",
        "family": "options",
        "label": "IV rank & HV vs IV (addendum 5)",
        "status": "value",
-       "fact": "Realized volatility (20 sessions) is 33.0% annualized. IV 34.0% vs HV 33.0% \u2014 a spread of +1.0 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
+       "fact": "Realized volatility (20 sessions) is 33.0% annualized. IV 34.1% vs HV 33.0% \u2014 a spread of +1.1 points. IV rank accrues from the desk's own daily readings \u2014 2 daily readings so far; a rank prints at 20.",
        "data": {
         "hv20_pct": 33.0,
-        "iv_pct": 34.0,
+        "iv_pct": 34.1,
         "iv_rank": null,
         "iv_readings": 2
        },
@@ -126517,20 +126505,19 @@
        "family": "company_market",
        "label": "News counts",
        "status": "value",
-       "fact": "News (Alpaca News, the desk's product): 41 items naming the company in the last 7 days, 90 in the last 30. The latest, 2026-10-22 via fiscal.ai: \u201cTSMC Explores Rare Earth-Free Factory Equipment Amid China Supply Concerns\u201d.",
+       "fact": "News (Alpaca News, the desk's product): 23 items naming the company in the last 7 days, 91 in the last 30. The latest, 2026-10-23 via benzinga: \u201cAnthropic\u2019s Path to $1.5 Trillion Demands 30% Margins: Plausible, but Delivering Is Another Matter\u201d.",
        "data": {
-        "n7": 41,
-        "n30": 90,
+        "n7": 23,
+        "n30": 91,
         "capped": false,
-        "latest_date": "2026-10-22",
-        "latest_headline": "TSMC Explores Rare Earth-Free Factory Equipment Amid China Supply Concerns",
-        "latest_source": "fiscal.ai",
-        "built_at": "2026-10-22T16:27:38.700952+00:00"
+        "latest_date": "2026-10-23",
+        "latest_headline": "Anthropic\u2019s Path to $1.5 Trillion Demands 30% Margins: Plausible, but Delivering Is Another Matter",
+        "latest_source": "benzinga"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 41 items naming the company in the last 7 days, 90 in the last 30"
+       "deciding": "considered \u2014 News (Alpaca News, the desk's product): 23 items naming the company in the last 7 days, 91 in the last 30"
       },
       {
        "key": "earnings",
@@ -126580,7 +126567,7 @@
        "family": "company_market",
        "label": "Market regime & VIX",
        "status": "value",
-       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day).",
+       "fact": "Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day).",
        "data": {
         "regime": "Downtrend",
         "fear_day": false
@@ -126588,7 +126575,7 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.56 (2.8% on the day)"
+       "deciding": "considered \u2014 Market regime: Downtrend; QQQ -2.86% on the day, -3.01% vs its 50-day; VIX 19.55 (2.7% on the day)"
       },
       {
        "key": "market_breadth",
@@ -130172,17 +130159,17 @@
        "family": "company_market",
        "label": "Wikipedia & Reddit attention",
        "status": "value",
-       "fact": "Wikipedia attention (article \u201cTaiwan Semiconductor Manufacturing\u201d, resolved from the filer's EDGAR name): 14 views a day over the last 7 complete days vs 13 the week before (1.07\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
+       "fact": "Wikipedia attention (article \u201cTaiwan Semiconductor Manufacturing\u201d, resolved from the filer's EDGAR name): 15 views a day over the last 7 complete days vs 13 the week before (1.15\u00d7). Reddit mention counts remain unmeasured \u2014 no credential-free source reaches them (see the gap register).",
        "data": {
         "article": "Taiwan Semiconductor Manufacturing",
-        "avg7": 13.9,
+        "avg7": 15.0,
         "avg_prior7": 13.0,
-        "ratio": 1.07
+        "ratio": 1.15
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Wikipedia attention (article \u201cTaiwan Semiconductor Manufacturing\u201d, resolved from the filer's EDGAR name): 14 views a day over the last 7 complete days vs 13 the"
+       "deciding": "considered \u2014 Wikipedia attention (article \u201cTaiwan Semiconductor Manufacturing\u201d, resolved from the filer's EDGAR name): 15 views a day over the last 7 complete days vs 13 the"
       },
       {
        "key": "seasonality",
@@ -131505,13 +131492,13 @@
        "family": "options",
        "label": "Expected move (addendum 12)",
        "status": "value",
-       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$43.41 by the IV form (IV 34.0%); \u00b1$29.76 by the 0.85x straddle form.",
+       "fact": "Expected move to 2026-11-27 (35 days): \u00b1$43.54 by the IV form (IV 34.1%); \u00b1$29.76 by the 0.85x straddle form.",
        "data": {
         "spot": 412.35,
-        "iv_pct": 34.0,
+        "iv_pct": 34.1,
         "expiry": "2026-11-27",
         "dte": 35,
-        "iv_form": 43.41,
+        "iv_form": 43.54,
         "straddle_form": 29.76,
         "seat_score": 65,
         "seat_rule": "the plan's target sits beyond the options-implied expected move band"
@@ -131519,24 +131506,24 @@
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Expected move to 2026-11-27 (35 days): \u00b1$43.41 by the IV form (IV 34.0%); \u00b1$29.76 by the 0.85x straddle form"
+       "deciding": "considered \u2014 Expected move to 2026-11-27 (35 days): \u00b1$43.54 by the IV form (IV 34.1%); \u00b1$29.76 by the 0.85x straddle form"
       },
       {
        "key": "gamma_flip_name",
        "family": "options",
        "label": "Gamma flip, per name (addendum 12)",
        "status": "value",
-       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.07B per 1% move \u2014 price sits with no flip inside the chain.",
+       "fact": "Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.08B per 1% move \u2014 price sits with no flip inside the chain.",
        "data": {
         "flip_strike": null,
-        "net_gex": -70154500.61,
-        "contracts_used": 497,
+        "net_gex": -76605143.44,
+        "contracts_used": 503,
         "model": "model estimate \u2014 dealer gamma exposure, Black-Scholes gamma, dealers long calls / short puts convention; not a measurement"
        },
        "reason": null,
        "needs": null,
        "verdict": "considered",
-       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.07B per 1% move \u2014 price sits with no flip ins"
+       "deciding": "considered \u2014 Per-name gamma flip (model estimate, Ruling 1 \u2014 context only, never decisive): the flip strike is \u2014; net gamma $-0.08B per 1% move \u2014 price sits with no flip ins"
       },
       {
        "key": "gamma_walls_name",
@@ -131607,8 +131594,8 @@
        "fact": "IV skew (2026-11-27): ATM IV 0.4% vs the 5%-out put at 0.4% \u2014 a skew of +0.0 points (strike-axis approximation of the 25-delta point, filed as such).",
        "data": {
         "expiry": "2026-11-27",
-        "atm_iv": 0.3668,
-        "put_iv_5pct_otm": 0.374,
+        "atm_iv": 0.3614,
+        "put_iv_5pct_otm": 0.3699,
         "skew_pts": 0.01
        },
        "reason": null,
@@ -131930,28 +131917,28 @@
        "family": "paid_clones",
        "label": "Paid-clone context \u2014 dealer positioning suite (addendum 13)",
        "status": "value",
-       "fact": "Dealer positioning (model estimate): net gamma $-0.05B per 1% move, net delta $+11.35B per $1; call wall $450, put wall $400. A model estimate, filed as context only.",
+       "fact": "Dealer positioning (model estimate): net gamma $-0.06B per 1% move, net delta $+11.65B per $1; call wall $450, put wall $400. A model estimate, filed as context only.",
        "data": {
-        "net_gex": -48510261.67,
-        "net_dex": 11348925492.4,
-        "net_vex": 126473459.25,
-        "net_chex": -48534319.98,
+        "net_gex": -55810403.98,
+        "net_dex": 11646892080.62,
+        "net_vex": 125177201.24,
+        "net_chex": -48386303.48,
         "call_wall": 450.0,
         "put_wall": 400.0,
-        "contracts_used": 817,
+        "contracts_used": 833,
         "model": "model estimate \u2014 dealer gamma/delta/vanna/charm exposure, Black-Scholes greeks, dealers long calls / short puts convention; not a measurement",
-        "gamma_flip": 424.2734,
+        "gamma_flip": 424.6993,
         "gex_by_expiry": {
-         "2026-10-30": -15744314.45,
-         "2026-11-06": 677766.64,
-         "2026-11-13": -1100552.51,
-         "2026-11-20": -15257290.3,
-         "2026-11-27": -7743944.2,
-         "2026-12-18": -30986165.79,
-         "2027-01-15": 42118569.11,
-         "2027-02-19": -9551763.99,
-         "2027-03-19": -4387570.22,
-         "2027-04-16": -6534995.96
+         "2026-10-30": -17278058.81,
+         "2026-11-06": -80187.34,
+         "2026-11-13": -1431962.89,
+         "2026-11-20": -16792207.88,
+         "2026-11-27": -8028527.63,
+         "2026-12-18": -32994198.87,
+         "2027-01-15": 42026564.51,
+         "2027-02-19": -9827012.63,
+         "2027-03-19": -4778491.99,
+         "2027-04-16": -6626320.43
         }
        },
        "reason": null,
@@ -131961,7 +131948,7 @@
        "context_only": true,
        "clone_label": "dealer positioning suite (GEX/DEX/VEX/CHEX, model estimate)",
        "verdict": "considered",
-       "deciding": "considered \u2014 Dealer positioning (model estimate): net gamma $-0.05B per 1% move, net delta $+11.35B per $1; call wall $450, put wall $400"
+       "deciding": "considered \u2014 Dealer positioning (model estimate): net gamma $-0.06B per 1% move, net delta $+11.65B per $1; call wall $450, put wall $400"
       },
       {
        "key": "paid_flow_clone",
@@ -131984,15 +131971,15 @@
        "family": "paid_clones",
        "label": "Paid-clone context \u2014 payoff builder & expected move (addendum 13)",
        "status": "value",
-       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$34.62 ($377.73\u2013$446.97). Of the public templates enumerated, long_straddle ranks first on the blended return/chance ranking (modelled max profit $78,992, max loss $-3,345). Filed as context only \u2014 arithmetic, not advice.",
+       "fact": "Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$34.73 ($377.62\u2013$447.08). Of the public templates enumerated, long_straddle ranks first on the blended return/chance ranking (modelled max profit $78,982, max loss $-3,355). Filed as context only \u2014 arithmetic, not advice.",
        "data": {
         "expected_move": {
-         "straddle": 34.6236,
-         "move": 34.6236,
-         "upper": 446.9736,
-         "lower": 377.7264
+         "straddle": 34.7253,
+         "move": 34.7253,
+         "upper": 447.0753,
+         "lower": 377.6247
         },
-        "atm_iv_pct": 34.0,
+        "atm_iv_pct": 34.1,
         "dte": 35,
         "expiry": "2026-11-27",
         "optimizer_top": {
@@ -132002,24 +131989,24 @@
            "kind": "call",
            "strike": 412.5,
            "qty": 1,
-           "premium": 17.240043752703826
+           "premium": 17.29092251182351
           },
           {
            "kind": "put",
            "strike": 412.5,
            "qty": 1,
-           "premium": 17.390043752703775
+           "premium": 17.440922511823487
           }
          ],
-         "entry_cost": 3463.01,
-         "max_profit": 78991.99,
-         "max_loss": -3344.92,
+         "entry_cost": 3473.18,
+         "max_profit": 78981.82,
+         "max_loss": -3355.1,
          "breakevens": [
-          377.8699,
-          447.1301
+          377.7682,
+          447.2318
          ],
          "chance_of_profit": 0.4243,
-         "return_ratio": 23.6155,
+         "return_ratio": 23.5408,
          "rank_score": 0.8333
         },
         "model": "Black-Scholes / expiry-payoff arithmetic (clone \u00a748c)"
@@ -132031,7 +132018,7 @@
        "context_only": true,
        "clone_label": "payoff builder & expected move (textbook arithmetic)",
        "verdict": "considered",
-       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$34.62 ($377.73\u2013$446.97)"
+       "deciding": "considered \u2014 Options payoff context (textbook arithmetic): the ATM straddle into the 2026-11-27 expiry implies a move of \u00b1$34.73 ($377.62\u2013$447.08)"
       },
       {
        "key": "paid_pac_clone",
@@ -132847,7 +132834,7 @@
     "Defined stop 2.8\u00d7 the daily range below entry \u2014 wider than the desk's ideal band, so the position must ride out more noise to work."
    ],
    "shortfall": "Scored 34 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "CRM",
@@ -132872,7 +132859,7 @@
     "Defined stop 2.1\u00d7 the daily range below entry \u2014 inside the desk's 1.5\u20132.5 range band."
    ],
    "shortfall": "Scored 30 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "AAPL",
@@ -132896,7 +132883,7 @@
     "Defined stop 2.9\u00d7 the daily range below entry \u2014 wider than the desk's ideal band, so the position must ride out more noise to work."
    ],
    "shortfall": "Scored 17 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "FND",
@@ -132920,7 +132907,7 @@
     "Defined stop 6.1\u00d7 the daily range below entry \u2014 very wide: the level is defined, but a great deal of room sits between entry and exit."
    ],
    "shortfall": "Scored 13 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "HIW",
@@ -132944,7 +132931,7 @@
     "Defined stop 8.6\u00d7 the daily range below entry \u2014 very wide: the level is defined, but a great deal of room sits between entry and exit."
    ],
    "shortfall": "Scored 13 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "IIPR",
@@ -132968,7 +132955,7 @@
     "Defined stop 10.2\u00d7 the daily range below entry \u2014 very wide: the level is defined, but a great deal of room sits between entry and exit."
    ],
    "shortfall": "Scored 13 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "LITE",
@@ -132994,7 +132981,7 @@
     "Defined stop 2.1\u00d7 the daily range below entry \u2014 inside the desk's 1.5\u20132.5 range band."
    ],
    "shortfall": "Scored 13 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "LULU",
@@ -133018,7 +133005,7 @@
     "Defined stop 7.2\u00d7 the daily range below entry \u2014 very wide: the level is defined, but a great deal of room sits between entry and exit."
    ],
    "shortfall": "Scored 13 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "SHAZ",
@@ -133042,7 +133029,7 @@
     "Defined stop 1.6\u00d7 the daily range below entry \u2014 inside the desk's 1.5\u20132.5 range band."
    ],
    "shortfall": "Scored 13 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "FLO",
@@ -133066,7 +133053,7 @@
     "No target was recorded by the entering strategy \u2014 the plan shows no target rather than borrowing another strategy's."
    ],
    "shortfall": "Scored 12 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "MBC",
@@ -133090,7 +133077,7 @@
     "No target was recorded by the entering strategy \u2014 the plan shows no target rather than borrowing another strategy's."
    ],
    "shortfall": "Scored 12 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "NOW",
@@ -133109,7 +133096,7 @@
     "Defined stop 5.0\u00d7 the daily range below entry \u2014 very wide: the level is defined, but a great deal of room sits between entry and exit."
    ],
    "shortfall": "No complete plan could be built from its own price history \u2014 missing: target.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "SNDK",
@@ -133133,7 +133120,7 @@
     "Defined stop 3.3\u00d7 the daily range below entry \u2014 wider than the desk's ideal band, so the position must ride out more noise to work."
    ],
    "shortfall": "Scored 10 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "IREN",
@@ -133157,7 +133144,7 @@
     "Structure warning: price closed below its 20-session swing low \u2014 the desk's method treats broken structure as an invalidator."
    ],
    "shortfall": "Scored 5 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   },
   {
    "symbol": "ALAB",
@@ -133181,7 +133168,7 @@
     "Stop sits inside one day's normal range \u2014 very likely to be noise-stopped."
    ],
    "shortfall": "Scored 1 \u2014 under the board's 35-point bar.",
-   "scored_at": "2026-10-23T10:25:01.418527+00:00"
+   "scored_at": "2026-10-23T10:31:25.273189+00:00"
   }
  ],
  "entered_setups": [],
@@ -133208,12 +133195,12 @@
   "regime": "Downtrend",
   "regime_evidence": [
    "QQQ closed below its 50-day average (-3.0%) with a 20-day slope of -4.9% \u2014 the desk's regime rule reads downtrend.",
-   "VIX closed at 19.56 (+2.8% on the day) (VIX reading as of 2026-10-23).",
+   "VIX closed at 19.55 (+2.7% on the day) (VIX reading as of 2026-10-23).",
    "Both indexes were red today."
   ],
   "vix": {
-   "close": 19.56,
-   "change_pct": 2.8,
+   "close": 19.55,
+   "change_pct": 2.7,
    "as_of": "2026-10-23"
   },
   "spy": {
