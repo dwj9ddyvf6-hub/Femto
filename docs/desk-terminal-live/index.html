@@ -1820,6 +1820,18 @@
       body.textContent='';
       var stamp=h('p','muted','As of the close on '+d.as_of_session+' \u00b7 refreshed '+new Date(d.generated_at_utc).toLocaleString('en-US')+'.');
       body.appendChild(stamp);
+      if(d.scorecard){
+        body.appendChild(h('h3','completed-head','The record so far \u2014 graded in public'));
+        var sc=d.scorecard;
+        body.appendChild(h('p',null,sc.counters.units_published+' published units so far; '+sc.counters.units_graded+' have matured enough to grade. Every figure below is worked out from the written record at the moment this page loads \u2014 nothing is typed in by hand.'));
+        var qb=sc.board.qualified;
+        body.appendChild(h('p',null,'Qualified board rows ('+qb.n_logged+' logged) \u2014 1 day: '+qb.horizons['1d']+' \u00b7 5 days: '+qb.horizons['5d']+' \u00b7 21 days: '+qb.horizons['21d']));
+        if(sc.map.state==='graded'){
+          body.appendChild(h('p',null,'Map grades over '+sc.map.cards_graded+' graded cards: call wall held '+sc.map.call_wall_held_pct+'% of the time, put wall held '+sc.map.put_wall_held_pct+'%, flip level respected '+sc.map.flip_respected_pct+'%.'));
+        } else {
+          body.appendChild(h('p',null,'Map grades: '+sc.map.line+'.'));
+        }
+      }
       body.appendChild(h('h3','completed-head','The Map \u2014 dealer positioning'));
       var t1=h('table');
       var head=h('tr'); ['Fund','Price','Net exposure per 1%','Call wall','Put wall','Flip level','Short-sale ratio'].forEach(function(x){head.appendChild(h('th',null,x));}); t1.appendChild(head);
@@ -1846,6 +1858,34 @@
         t2.appendChild(tr);});
       body.appendChild(t2);
       body.appendChild(h('p','muted','A row is a measurement, not an instruction: the engine does not place trades, and a name appears only when its evidence passed every gate above.'));
+      var fullWrap=h('div');
+      var fullBtn=h('button',null,'Show the full ranked list \u2014 every scored name, rejects included');
+      fullBtn.setAttribute('type','button');
+      var fullDiv=h('div'); fullDiv.style.display='none'; fullDiv.style.maxHeight='480px'; fullDiv.style.overflowY='auto';
+      var fullLoaded=false;
+      fullBtn.addEventListener('click',function(){
+        var open=fullDiv.style.display!=='none';
+        fullDiv.style.display=open?'none':'block';
+        fullBtn.textContent=open?'Show the full ranked list \u2014 every scored name, rejects included':'Hide the full ranked list';
+        if(open||fullLoaded)return; fullLoaded=true;
+        fullDiv.appendChild(h('p','muted','Loading\u2026'));
+        fetch('../board-full.json?t='+Date.now(),{cache:'no-store'})
+          .then(function(r){if(!r.ok)throw new Error('full http '+r.status);return r.json();})
+          .then(function(f){
+            fullDiv.textContent='';
+            fullDiv.appendChild(h('p','muted','Full board as of the close on '+f.as_of_session+': '+f.rows.length+' names. Qualified names passed every gate; the rest show exactly which gate they failed. Names marked insufficient data had too little measurable evidence to score and were not guessed at.'));
+            var t3=h('table');
+            var hd=h('tr'); ['Stock','Close','Score','Groups confirming','Evidence measured','Qualified','Gate outcome'].forEach(function(x){hd.appendChild(h('th',null,x));}); t3.appendChild(hd);
+            f.rows.forEach(function(rw){var tr=h('tr');
+              if(rw.insufficient_data){[rw.symbol,'\u2014','\u2014','\u2014','\u2014','\u2014','insufficient data'].forEach(function(x){tr.appendChild(h('td',null,String(x)));});}
+              else{[rw.symbol, rw.close.toFixed(2), rw.score, rw.confirming+' of 8', rw.dc+'%', (rw.qualified?'yes':'no'), (rw.qualified?'passed every gate':rw.gate_fails.join('; '))].forEach(function(x){tr.appendChild(h('td',null,String(x)));});}
+              t3.appendChild(tr);});
+            fullDiv.appendChild(t3);
+          })
+          .catch(function(){fullDiv.textContent=''; fullDiv.appendChild(h('p','muted','The full list is not available right now.'));});
+      });
+      fullWrap.appendChild(fullBtn); fullWrap.appendChild(fullDiv);
+      body.appendChild(fullWrap);
     })
     .catch(function(){
       var body=document.getElementById('morgueBody'); if(!body)return;
