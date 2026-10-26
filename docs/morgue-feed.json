@@ -1,0 +1,382 @@
+{
+ "generated_at_utc": "2026-10-26T17:01:57.983155+00:00",
+ "as_of_session": "2026-10-23",
+ "map": [
+  {
+   "symbol": "SPY",
+   "spot": 765.39,
+   "net_gex_b": -7.9,
+   "call_wall": 800.0,
+   "put_wall": 760.0,
+   "flip": 774.0,
+   "dix": 0.535,
+   "dix_date": "2026-10-23",
+   "coverage": "7476/8722"
+  },
+  {
+   "symbol": "QQQ",
+   "spot": 712.74,
+   "net_gex_b": -6.05,
+   "call_wall": 725.0,
+   "put_wall": 700.0,
+   "flip": 731.4,
+   "dix": 0.4,
+   "dix_date": "2026-10-23",
+   "coverage": "6577/7441"
+  },
+  {
+   "symbol": "IWM",
+   "spot": 277.58,
+   "net_gex_b": -2.14,
+   "call_wall": 280.0,
+   "put_wall": 270.0,
+   "flip": 288.8,
+   "dix": 0.525,
+   "dix_date": "2026-10-23",
+   "coverage": "2825/3236"
+  }
+ ],
+ "tape": [
+  {
+   "symbol": "SPY",
+   "prints": 353760,
+   "total_premium_m": 536.9,
+   "net_premium_m": -125.9,
+   "golden_sweeps": 0,
+   "high_heat": 84,
+   "mean_heat": 3.87,
+   "top_alerts": [
+    {
+     "contract": "SPY261030P00755000",
+     "premium": 14489910.0,
+     "heat": 17.0,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "SPY261120P00750000",
+     "premium": 9604000.0,
+     "heat": 16.5,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "SPY261030P00745000",
+     "premium": 6360075.0,
+     "heat": 16.5,
+     "sentiment": "bearish",
+     "golden": false
+    }
+   ]
+  },
+  {
+   "symbol": "QQQ",
+   "prints": 269568,
+   "total_premium_m": 627.0,
+   "net_premium_m": -139.8,
+   "golden_sweeps": 0,
+   "high_heat": 112,
+   "mean_heat": 4.04,
+   "top_alerts": [
+    {
+     "contract": "QQQ261030P00700000",
+     "premium": 14268690.0,
+     "heat": 15.0,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "QQQ261106P00675000",
+     "premium": 11505788.0,
+     "heat": 18.5,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "QQQ261030P00690000",
+     "premium": 8882888.0,
+     "heat": 16.5,
+     "sentiment": "bearish",
+     "golden": false
+    }
+   ]
+  },
+  {
+   "symbol": "IWM",
+   "prints": 119859,
+   "total_premium_m": 99.0,
+   "net_premium_m": -26.9,
+   "golden_sweeps": 0,
+   "high_heat": 35,
+   "mean_heat": 3.77,
+   "top_alerts": [
+    {
+     "contract": "IWM261120P00264000",
+     "premium": 3298000.0,
+     "heat": 16.5,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "IWM261120P00264000",
+     "premium": 2910000.0,
+     "heat": 16.5,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "IWM261120P00262000",
+     "premium": 2822000.0,
+     "heat": 16.5,
+     "sentiment": "bearish",
+     "golden": false
+    }
+   ]
+  }
+ ],
+ "board": {
+  "summary": {
+   "universe": 1838,
+   "scored": 1832,
+   "insufficient_data": 6,
+   "qualified": 35,
+   "market_context": {
+    "marketRegime": 60.0,
+    "marketBreadth": 41.2,
+    "indexAccDist": 26.0,
+    "breakoutFollowThrough": 81.2,
+    "riskAppetite": 0.0,
+    "sectorRotation": 61.8,
+    "macroEventRisk": null,
+    "indexConfirmation": 0.0
+   }
+  },
+  "qualified": [
+   {
+    "symbol": "CART",
+    "sector": "Consumer Staples",
+    "close": 56.44,
+    "score": 72.9,
+    "confirming": 6,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 52.15,
+    "trigger_down": 51.21,
+    "support": 49.89,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "BKH",
+    "sector": "Utilities",
+    "close": 79.41,
+    "score": 72.6,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 79.72,
+    "trigger_down": 78.9,
+    "support": 75.33,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "NWE",
+    "sector": "Utilities",
+    "close": 77.59,
+    "score": 72.6,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 77.53,
+    "trigger_down": 76.73,
+    "support": 73.5,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "PR",
+    "sector": "Energy",
+    "close": 25.49,
+    "score": 71.5,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 24.58,
+    "trigger_down": 24.22,
+    "support": 23.37,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "BLFS",
+    "sector": "Health Care",
+    "close": 38.61,
+    "score": 71.0,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 37.57,
+    "trigger_down": 37.03,
+    "support": 36.7,
+    "resistance": 39.76,
+    "stage": 2
+   },
+   {
+    "symbol": "FTRE",
+    "sector": "Health Care",
+    "close": 23.63,
+    "score": 70.9,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 24.2,
+    "trigger_down": 23.64,
+    "support": 22.3,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "TALO",
+    "sector": "Energy",
+    "close": 18.39,
+    "score": 70.7,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 17.82,
+    "trigger_down": 17.5,
+    "support": 16.85,
+    "resistance": 18.4,
+    "stage": 2
+   },
+   {
+    "symbol": "PCRX",
+    "sector": "Health Care",
+    "close": 36.42,
+    "score": 70.5,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 36.52,
+    "trigger_down": 36.16,
+    "support": 36.3,
+    "resistance": 36.42,
+    "stage": 2
+   },
+   {
+    "symbol": "CHRD",
+    "sector": "Energy",
+    "close": 158.13,
+    "score": 70.3,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 151.66,
+    "trigger_down": 149.3,
+    "support": 147.25,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "HAS",
+    "sector": "Consumer Discretionary",
+    "close": 117.44,
+    "score": 70.3,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 118.0,
+    "trigger_down": 116.46,
+    "support": 96.89,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "MUR",
+    "sector": "Energy",
+    "close": 44.34,
+    "score": 70.0,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 42.73,
+    "trigger_down": 42.01,
+    "support": 39.58,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "AMN",
+    "sector": "Health Care",
+    "close": 48.01,
+    "score": 69.9,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 47.22,
+    "trigger_down": 46.42,
+    "support": 36.73,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "GKOS",
+    "sector": "Health Care",
+    "close": 178.88,
+    "score": 69.3,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 178.3,
+    "trigger_down": 175.08,
+    "support": 177.56,
+    "resistance": 182.28,
+    "stage": 2
+   },
+   {
+    "symbol": "URBN",
+    "sector": "Consumer Discretionary",
+    "close": 86.55,
+    "score": 69.0,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 88.9,
+    "trigger_down": 87.68,
+    "support": 85.43,
+    "resistance": 90.59,
+    "stage": 2
+   },
+   {
+    "symbol": "GO",
+    "sector": "Consumer Staples",
+    "close": 13.3,
+    "score": 68.9,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 14.02,
+    "trigger_down": 13.78,
+    "support": 13.29,
+    "resistance": 13.52,
+    "stage": 2
+   }
+  ]
+ }
+}

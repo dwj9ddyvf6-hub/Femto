@@ -492,6 +492,11 @@
         <div class="panel-head"><div><h2>Market and top-ranked stocks</h2><p>Where the market stands today, and the stocks the desk's chart-review board ranks highest.</p></div></div>
         <div class="panel-body" id="marketBody"></div><details class="explainer feature-explainer" data-explainer="market-readouts"><summary>What this is and how it is worked out</summary><div class="explainer-body"><p><strong>What this is:</strong> Where the market stands: index charts for the S&amp;P 500 and Nasdaq 100 funds, a label for the market&rsquo;s direction, a fear-day label, the fear gauge, and for each index the close, the day&rsquo;s move, and how far it sits from its 50-day average.</p><p><strong>How it is worked out:</strong> For each index: the close is the last daily close; the day move is the last day&rsquo;s percentage change; the distance from the 50-day average is (close divided by the 50-day average of closes, minus 1) times 100. Market direction is read from the Nasdaq 100 fund only: close above its 50-day average and a 20-day rise above +2% is a rising market; close below its average and a 20-day fall below &minus;2% is a falling market; anything else is sideways. The 20-day move is the percentage change over 20 trading days. A fear day is any day when the S&amp;P fund falls more than 1.5%, or the fear gauge rises more than 15% in a day, or the fear gauge closes at 25 or more, or either fund has a red day while the fear gauge is at 20 or more. The fear gauge is the VIX index, read from daily closes from a public data source because the broker does not carry it. The index charts are daily charts with the 20-, 50- and 200-day averages and the recent high and low drawn. A chart is held back when its own last close differs from the panel&rsquo;s close by more than 0.01, so the panel never shows two disagreeing numbers.</p></div></details>
       </section>
+      <section class="panel" id="morguePanel">
+        <div class="panel-head tint-green"><div><h2>Morgue Engine</h2><p>Three measuring instruments the desk built for itself: a map of dealer positioning in the big index funds, a scored feed of the day&rsquo;s options prints, and a ranked board of the strongest stock setups across 1,838 names. Every figure here was written into a permanent, add-only record before it was shown. The engine measures; it does not place trades.</p></div></div>
+        <div class="panel-body" id="morgueBody"><p class="muted">Loading&hellip;</p></div>
+        <details class="explainer feature-explainer" data-explainer="morgue-engine"><summary>What this is and how it is worked out</summary><div class="explainer-body"><p><strong>What this is:</strong> The desk&rsquo;s own positioning map, flow tape and setup board, rebuilt from measuring tools whose workings were published or recovered in full, and run on the desk&rsquo;s own market data. Nothing here is bought from a vendor, and no figure is shown that was not recorded first.</p><p><strong>How it is worked out:</strong> The Map adds up, for each index fund, the options dealers are likely holding: for every contract, its sensitivity to price moves times its open interest, with call contracts counted positive and put contracts negative. The total, in dollars per 1% move, says whether dealer hedging is likely to calm moves or amplify them; the walls are the strike prices with the largest call and put totals, and the flip is the price where the total changes sign. The short-sale ratio is the share of off-exchange volume sold short, from the free daily exchange file, a day behind. The Tape scores every options print of the day for the three funds: a heat score for size, urgency and unusualness, and a running total of premium, signed by whether each print lifted the offer or hit the bid. The Board scores all 1,838 names from eight groups of evidence &mdash; price action, relative strength, volume, trend, nearby support and resistance, sector strength, positioning and market conditions. A name qualifies only when at least five of the eight groups confirm, its score is at least 65 out of 100, at least 70% of the evidence could actually be measured, and it passes a liquidity and trend screen. A name with too little measurable evidence is left off the board rather than guessed at. The trigger prices come from an average-range ladder built on the previous close: the first trigger sits about a quarter of an average day&rsquo;s range above it.</p></div></details>
+      </section>
       <section class="panel" id="setupDetail" hidden>
         <div class="panel-head tint-green"><div><h2 id="setupDetailTitle">The full read</h2><p id="setupDetailSub"></p></div>
           <button type="button" class="tool-btn" id="setupDetailBack">&larr; Today&rsquo;s setups</button>
@@ -1802,6 +1807,50 @@
     .then(function(j){ALGO=j||{};ALGO_FAILED=false;})
     .catch(function(){ALGO={};ALGO_FAILED=true;})
     .then(function(){ poll(); setInterval(function(){if(!document.hidden)poll();},60000); });
+})();
+</script>
+<script>
+(function(){
+  function h(tag, cls, text){var e=document.createElement(tag); if(cls)e.className=cls; if(text!=null)e.textContent=text; return e;}
+  function money(v, unit){var s=(v<0?'\u2212$':'$')+Math.abs(v).toLocaleString('en-US')+unit; return s;}
+  fetch('../morgue-feed.json?t='+Date.now(),{cache:'no-store'})
+    .then(function(r){if(!r.ok)throw new Error('morgue http '+r.status);return r.json();})
+    .then(function(d){
+      var body=document.getElementById('morgueBody'); if(!body)return;
+      body.textContent='';
+      var stamp=h('p','muted','As of the close on '+d.as_of_session+' \u00b7 refreshed '+new Date(d.generated_at_utc).toLocaleString('en-US')+'.');
+      body.appendChild(stamp);
+      body.appendChild(h('h3','completed-head','The Map \u2014 dealer positioning'));
+      var t1=h('table');
+      var head=h('tr'); ['Fund','Price','Net exposure per 1%','Call wall','Put wall','Flip level','Short-sale ratio'].forEach(function(x){head.appendChild(h('th',null,x));}); t1.appendChild(head);
+      d.map.forEach(function(m){var tr=h('tr');
+        [m.symbol, m.spot.toFixed(2), money(m.net_gex_b,'B'), m.call_wall, m.put_wall, (m.flip==null?'\u2014':m.flip), (m.dix==null?'\u2014':m.dix.toFixed(3))].forEach(function(x){tr.appendChild(h('td',null,String(x)));});
+        t1.appendChild(tr);});
+      body.appendChild(t1);
+      body.appendChild(h('p','muted','Negative exposure means dealer hedging is likely to amplify moves rather than calm them. Short-sale ratio is from the exchange file dated '+(d.map[0]?d.map[0].dix_date:'')+'.'));
+      body.appendChild(h('h3','completed-head','The Tape \u2014 today\u2019s scored options prints'));
+      d.tape.forEach(function(tp){
+        var line=tp.symbol+': '+tp.prints.toLocaleString('en-US')+' prints, '+money(tp.total_premium_m,'M')+' total premium, '+money(tp.net_premium_m,'M')+' net signed premium, '+tp.high_heat+' high-heat prints, '+tp.golden_sweeps+' golden sweeps.';
+        body.appendChild(h('p',null,line));
+        tp.top_alerts.forEach(function(a){
+          body.appendChild(h('p','muted','Largest print: '+a.contract+' \u2014 $'+a.premium.toLocaleString('en-US')+', heat '+a.heat+', '+a.sentiment+'.'));
+        });
+      });
+      body.appendChild(h('h3','completed-head','The Board \u2014 qualified setups'));
+      var mc=d.board.summary.market_context;
+      body.appendChild(h('p',null,'Market conditions: regime '+mc.marketRegime+' of 100, breadth '+mc.marketBreadth+'%, breakout follow-through '+mc.breakoutFollowThrough+'%. '+d.board.summary.qualified+' of '+d.board.summary.scored+' scored names passed every gate; '+d.board.summary.insufficient_data+' had too little evidence to score.'));
+      var t2=h('table');
+      var head2=h('tr'); ['Stock','Sector','Close','Score','Groups confirming','Trigger','Trigger price','Support','Resistance'].forEach(function(x){head2.appendChild(h('th',null,x));}); t2.appendChild(head2);
+      d.board.qualified.forEach(function(rw){var tr=h('tr');
+        [rw.symbol, rw.sector||'\u2014', rw.close.toFixed(2), rw.score, rw.confirming+' of 8', (rw.triggers.length?rw.triggers.join('; '):'\u2014'), (rw.trigger_up==null?'\u2014':rw.trigger_up), (rw.support==null?'\u2014':rw.support), (rw.resistance==null?'\u2014':rw.resistance)].forEach(function(x){tr.appendChild(h('td',null,String(x)));});
+        t2.appendChild(tr);});
+      body.appendChild(t2);
+      body.appendChild(h('p','muted','A row is a measurement, not an instruction: the engine does not place trades, and a name appears only when its evidence passed every gate above.'));
+    })
+    .catch(function(){
+      var body=document.getElementById('morgueBody'); if(!body)return;
+      body.textContent=''; body.appendChild(h('p','muted','The Morgue Engine figures are not available right now. The rest of this page is unaffected.'));
+    });
 })();
 </script>
 </body>
