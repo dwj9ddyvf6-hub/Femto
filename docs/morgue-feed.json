@@ -1,42 +1,52 @@
 {
- "generated_at_utc": "2026-10-26T20:58:50.480822+00:00",
+ "generated_at_utc": "2026-10-26T20:59:43.523320+00:00",
  "as_of_session": "2026-10-23",
  "map": [
   {
    "symbol": "SPY",
-   "spot": 765.39,
-   "net_gex_b": -7.9,
+   "spot": 765.23,
+   "net_gex_b": -8.34,
    "call_wall": 800.0,
    "put_wall": 760.0,
-   "flip": 774.0,
+   "flip": 773.8,
    "dix": 0.535,
    "dix_date": "2026-10-23",
-   "dix_index": null,
-   "coverage": "7476/8722"
+   "dix_index": {
+    "construction": "constituent-weighted DIX (vendor definition A104: dollar-weighted average of constituent dark-pool short-sale ratios)",
+    "not_the_same_as": "per-ETF DIX ratio (the ETF's own FNQC short/total ratio) \u2014 a different construction; the two are never substituted for each other",
+    "date": "2026-10-23",
+    "state": "graded",
+    "value": 0.4365220910681904,
+    "constituents_used": 501,
+    "constituents_total": 503,
+    "coverage": 0.9960238568588469,
+    "weight_source": "session dollar volume (close x volume, Alpaca SIP) \u2014 OURS declared weight"
+   },
+   "coverage": "7499/8722"
   },
   {
    "symbol": "QQQ",
-   "spot": 712.74,
-   "net_gex_b": -6.05,
+   "spot": 712.42,
+   "net_gex_b": -6.2,
    "call_wall": 725.0,
    "put_wall": 700.0,
-   "flip": 731.4,
+   "flip": 733.5,
    "dix": 0.4,
    "dix_date": "2026-10-23",
    "dix_index": null,
-   "coverage": "6577/7441"
+   "coverage": "6453/7441"
   },
   {
    "symbol": "IWM",
-   "spot": 277.58,
-   "net_gex_b": -2.14,
+   "spot": 276.78,
+   "net_gex_b": -2.39,
    "call_wall": 280.0,
    "put_wall": 270.0,
-   "flip": 288.8,
+   "flip": 288.6,
    "dix": 0.525,
    "dix_date": "2026-10-23",
    "dix_index": null,
-   "coverage": "2825/3236"
+   "coverage": "2822/3236"
   }
  ],
  "tape": [
