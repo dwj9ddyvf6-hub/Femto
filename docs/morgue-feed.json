@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-26T18:41:26.160420+00:00",
+ "generated_at_utc": "2026-10-26T20:58:50.480822+00:00",
  "as_of_session": "2026-10-23",
  "map": [
   {
@@ -11,6 +11,7 @@
    "flip": 774.0,
    "dix": 0.535,
    "dix_date": "2026-10-23",
+   "dix_index": null,
    "coverage": "7476/8722"
   },
   {
@@ -22,6 +23,7 @@
    "flip": 731.4,
    "dix": 0.4,
    "dix_date": "2026-10-23",
+   "dix_index": null,
    "coverage": "6577/7441"
   },
   {
@@ -33,18 +35,19 @@
    "flip": 288.8,
    "dix": 0.525,
    "dix_date": "2026-10-23",
+   "dix_index": null,
    "coverage": "2825/3236"
   }
  ],
  "tape": [
   {
    "symbol": "SPY",
-   "prints": 353760,
-   "total_premium_m": 536.9,
-   "net_premium_m": -125.9,
+   "prints": 476025,
+   "total_premium_m": 765.2,
+   "net_premium_m": 25.0,
    "golden_sweeps": 0,
-   "high_heat": 84,
-   "mean_heat": 3.87,
+   "high_heat": 152,
+   "mean_heat": 3.91,
    "top_alerts": [
     {
      "contract": "SPY261030P00755000",
@@ -56,7 +59,7 @@
     {
      "contract": "SPY261120P00750000",
      "premium": 9604000.0,
-     "heat": 16.5,
+     "heat": 15.0,
      "sentiment": "bearish",
      "golden": false
     },
@@ -71,12 +74,12 @@
   },
   {
    "symbol": "QQQ",
-   "prints": 269568,
-   "total_premium_m": 627.0,
-   "net_premium_m": -139.8,
+   "prints": 387637,
+   "total_premium_m": 951.7,
+   "net_premium_m": -0.3,
    "golden_sweeps": 0,
-   "high_heat": 112,
-   "mean_heat": 4.04,
+   "high_heat": 262,
+   "mean_heat": 4.18,
    "top_alerts": [
     {
      "contract": "QQQ261030P00700000",
@@ -103,12 +106,12 @@
   },
   {
    "symbol": "IWM",
-   "prints": 119859,
-   "total_premium_m": 99.0,
-   "net_premium_m": -26.9,
+   "prints": 150320,
+   "total_premium_m": 123.7,
+   "net_premium_m": 57.8,
    "golden_sweeps": 0,
-   "high_heat": 35,
-   "mean_heat": 3.77,
+   "high_heat": 34,
+   "mean_heat": 3.81,
    "top_alerts": [
     {
      "contract": "IWM261120P00264000",
@@ -128,7 +131,7 @@
      "contract": "IWM261120P00262000",
      "premium": 2822000.0,
      "heat": 16.5,
-     "sentiment": "bearish",
+     "sentiment": "neutral",
      "golden": false
     }
    ]
@@ -158,11 +161,74 @@
    "line": "not yet graded \u2014 first grades land after the current session's close"
   },
   "counters": {
-   "units_published": 103,
+   "units_published": 178,
    "board_rows_logged": 25,
    "map_cards_of_record": 3,
    "units_graded": 0
   }
+ },
+ "studies": {
+  "gap_fill": {
+   "state": "no_data",
+   "n": 0,
+   "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+  },
+  "orb_ib": {
+   "5": {
+    "state": "no_data",
+    "n": 0,
+    "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+   },
+   "15": {
+    "state": "no_data",
+    "n": 0,
+    "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+   },
+   "30": {
+    "state": "no_data",
+    "n": 0,
+    "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+   },
+   "60": {
+    "state": "no_data",
+    "n": 0,
+    "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+   }
+  },
+  "earnings_dist": {
+   "state": "no_data",
+   "reason": "no earnings events on owned data"
+  },
+  "state_vectors": {
+   "state": "insufficient_history",
+   "history_sessions_accrued": 0,
+   "reason": "no accrued state history on disk yet"
+  }
+ },
+ "squeeze": {
+  "state": "no_data",
+  "as_of": "2026-10-26",
+  "formula_version": "squeeze_v6",
+  "rows": [],
+  "excluded": {},
+  "reason": "no names pass the published gate + A100 universe filters on owned data",
+  "vendor_calibration": {
+   "label": "vendor out-of-sample calibration (the vendor's figures)",
+   "top10_plus20_in_5_sessions": 0.166,
+   "top10_minus20_in_5_sessions": 0.12,
+   "base_plus20": 0.045,
+   "base_minus20": 0.023,
+   "top10_median_5d_return": -0.018
+  }
+ },
+ "wall_validation": {
+  "state": "not_yet_graded",
+  "cards_of_record": 3,
+  "cards_graded": 0,
+  "line": "not yet graded \u2014 3 Map card(s) of record accrued; grades land after their sessions complete",
+  "windows": {},
+  "by_underlying": {},
+  "by_regime": {}
  },
  "board": {
   "summary": {
