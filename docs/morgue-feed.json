@@ -1,52 +1,52 @@
 {
- "generated_at_utc": "2026-10-27T02:36:01.829079+00:00",
- "as_of_session": "2026-10-23",
+ "generated_at_utc": "2026-10-27T12:50:18.033905+00:00",
+ "as_of_session": "2026-10-26",
  "map": [
   {
    "symbol": "SPY",
-   "spot": 765.23,
-   "net_gex_b": -8.34,
+   "spot": 768.17,
+   "net_gex_b": -3.6,
    "call_wall": 800.0,
-   "put_wall": 760.0,
-   "flip": 773.8,
-   "dix": 0.535,
-   "dix_date": "2026-10-23",
+   "put_wall": 755.0,
+   "flip": 772.5,
+   "dix": 0.451,
+   "dix_date": "2026-10-26",
    "dix_index": {
     "construction": "constituent-weighted DIX (vendor definition A104: dollar-weighted average of constituent dark-pool short-sale ratios)",
     "not_the_same_as": "per-ETF DIX ratio (the ETF's own FNQC short/total ratio) \u2014 a different construction; the two are never substituted for each other",
-    "date": "2026-10-23",
+    "date": "2026-10-26",
     "state": "graded",
-    "value": 0.4365220910681904,
+    "value": 0.4728558263663592,
     "constituents_used": 501,
     "constituents_total": 503,
     "coverage": 0.9960238568588469,
     "weight_source": "session dollar volume (close x volume, Alpaca SIP) \u2014 OURS declared weight"
    },
-   "coverage": "7499/8722"
+   "coverage": "6922/8691"
   },
   {
    "symbol": "QQQ",
-   "spot": 712.42,
-   "net_gex_b": -6.2,
+   "spot": 716.14,
+   "net_gex_b": -3.56,
    "call_wall": 725.0,
    "put_wall": 700.0,
-   "flip": 733.5,
-   "dix": 0.4,
-   "dix_date": "2026-10-23",
+   "flip": 727.9,
+   "dix": 0.577,
+   "dix_date": "2026-10-26",
    "dix_index": null,
-   "coverage": "6453/7441"
+   "coverage": "6109/7418"
   },
   {
    "symbol": "IWM",
-   "spot": 276.78,
-   "net_gex_b": -2.39,
+   "spot": 278.04,
+   "net_gex_b": -1.84,
    "call_wall": 280.0,
    "put_wall": 270.0,
-   "flip": 288.6,
-   "dix": 0.525,
-   "dix_date": "2026-10-23",
+   "flip": 288.8,
+   "dix": 0.486,
+   "dix_date": "2026-10-26",
    "dix_index": null,
-   "coverage": "2822/3236"
+   "coverage": "2592/3223"
   }
  ],
  "tape": [
@@ -150,17 +150,17 @@
  "scorecard": {
   "board": {
    "published": {
-    "n_logged": 25,
+    "n_logged": 50,
     "horizons": {
-     "1d": "not yet graded \u2014 first grades land after the 2026-10-26 close",
+     "1d": "64% positive, average +1.18%, median +0.57% (n=22)",
      "5d": "not yet graded \u2014 first grades land after the 2026-10-30 close",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
    },
    "qualified": {
-    "n_logged": 13,
+    "n_logged": 27,
     "horizons": {
-     "1d": "not yet graded \u2014 first grades land after the 2026-10-26 close",
+     "1d": "67% positive, average +1.11%, median +0.86% (n=12)",
      "5d": "not yet graded \u2014 first grades land after the 2026-10-30 close",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
@@ -171,10 +171,10 @@
    "line": "not yet graded \u2014 first grades land after the current session's close"
   },
   "counters": {
-   "units_published": 178,
-   "board_rows_logged": 25,
-   "map_cards_of_record": 3,
-   "units_graded": 0
+   "units_published": 206,
+   "board_rows_logged": 50,
+   "map_cards_of_record": 6,
+   "units_graded": 22
   }
  },
  "studies": {
@@ -347,31 +347,47 @@
    "universe": 1838,
    "scored": 1832,
    "insufficient_data": 6,
-   "qualified": 35,
+   "qualified": 33,
    "market_context": {
     "marketRegime": 60.0,
-    "marketBreadth": 41.2,
-    "indexAccDist": 26.0,
-    "breakoutFollowThrough": 81.2,
+    "marketBreadth": 53.3,
+    "indexAccDist": 24.7,
+    "breakoutFollowThrough": 76.3,
     "riskAppetite": 0.0,
-    "sectorRotation": 61.8,
+    "sectorRotation": 76.4,
     "macroEventRisk": null,
     "indexConfirmation": 0.0
    }
   },
   "qualified": [
    {
-    "symbol": "CART",
-    "sector": "Consumer Staples",
-    "close": 56.44,
-    "score": 72.9,
-    "confirming": 6,
+    "symbol": "RRC",
+    "sector": "Energy",
+    "close": 53.56,
+    "score": 74.4,
+    "confirming": 5,
     "triggers": [
      "prior-day-high break",
      "resistance break (20-session)"
     ],
-    "trigger_up": 52.15,
-    "trigger_down": 51.21,
+    "trigger_up": 45.93,
+    "trigger_down": 45.11,
+    "support": 43.44,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "CART",
+    "sector": "Consumer Staples",
+    "close": 60.88,
+    "score": 74.1,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 57.04,
+    "trigger_down": 55.84,
     "support": 49.89,
     "resistance": null,
     "stage": 2
@@ -379,12 +395,15 @@
    {
     "symbol": "BKH",
     "sector": "Utilities",
-    "close": 79.41,
-    "score": 72.6,
+    "close": 80.2,
+    "score": 72.2,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 79.72,
-    "trigger_down": 78.9,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 79.81,
+    "trigger_down": 79.01,
     "support": 75.33,
     "resistance": null,
     "stage": 2
@@ -392,40 +411,39 @@
    {
     "symbol": "NWE",
     "sector": "Utilities",
-    "close": 77.59,
-    "score": 72.6,
+    "close": 78.45,
+    "score": 71.7,
     "confirming": 5,
     "triggers": [
      "prior-day-high break",
      "resistance break (20-session)"
     ],
-    "trigger_up": 77.53,
-    "trigger_down": 76.73,
+    "trigger_up": 77.99,
+    "trigger_down": 77.19,
     "support": 73.5,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "PR",
+    "symbol": "VLO",
     "sector": "Energy",
-    "close": 25.49,
-    "score": 71.5,
+    "close": 426.76,
+    "score": 71.3,
     "confirming": 5,
     "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
+     "support reclaim (20 EMA)"
     ],
-    "trigger_up": 24.58,
-    "trigger_down": 24.22,
-    "support": 23.37,
-    "resistance": null,
+    "trigger_up": 423.28,
+    "trigger_down": 415.28,
+    "support": 416.41,
+    "resistance": 461.52,
     "stage": 2
    },
    {
     "symbol": "BLFS",
     "sector": "Health Care",
     "close": 38.61,
-    "score": 71.0,
+    "score": 71.2,
     "confirming": 5,
     "triggers": [
      "prior-day-high break"
@@ -437,152 +455,129 @@
     "stage": 2
    },
    {
-    "symbol": "FTRE",
-    "sector": "Health Care",
-    "close": 23.63,
-    "score": 70.9,
+    "symbol": "PR",
+    "sector": "Energy",
+    "close": 25.77,
+    "score": 70.8,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)",
+     "holding retest"
+    ],
+    "trigger_up": 25.67,
+    "trigger_down": 25.31,
+    "support": 24.09,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "CBOE",
+    "sector": "Financials",
+    "close": 335.25,
+    "score": 70.2,
     "confirming": 5,
     "triggers": [],
-    "trigger_up": 24.2,
-    "trigger_down": 23.64,
-    "support": 22.3,
-    "resistance": null,
+    "trigger_up": 343.09,
+    "trigger_down": 337.75,
+    "support": 333.54,
+    "resistance": 346.48,
     "stage": 2
    },
    {
-    "symbol": "TALO",
-    "sector": "Energy",
-    "close": 18.39,
-    "score": 70.7,
-    "confirming": 5,
-    "triggers": [
-     "prior-day-high break"
-    ],
-    "trigger_up": 17.82,
-    "trigger_down": 17.5,
-    "support": 16.85,
-    "resistance": 18.4,
-    "stage": 2
-   },
-   {
-    "symbol": "PCRX",
-    "sector": "Health Care",
-    "close": 36.42,
-    "score": 70.5,
-    "confirming": 5,
-    "triggers": [
-     "prior-day-high break"
-    ],
-    "trigger_up": 36.52,
-    "trigger_down": 36.16,
-    "support": 36.3,
-    "resistance": 36.42,
-    "stage": 2
-   },
-   {
-    "symbol": "CHRD",
-    "sector": "Energy",
-    "close": 158.13,
-    "score": 70.3,
-    "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 151.66,
-    "trigger_down": 149.3,
-    "support": 147.25,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "HAS",
+    "symbol": "URBN",
     "sector": "Consumer Discretionary",
-    "close": 117.44,
-    "score": 70.3,
+    "close": 90.59,
+    "score": 70.0,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 87.21,
+    "trigger_down": 85.89,
+    "support": 85.43,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "APA",
+    "sector": "Energy",
+    "close": 51.66,
+    "score": 69.9,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 52.29,
+    "trigger_down": 51.51,
+    "support": 47.83,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "LW",
+    "sector": "Consumer Staples",
+    "close": 53.67,
+    "score": 69.8,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 54.26,
+    "trigger_down": 53.4,
+    "support": 52.66,
+    "resistance": 53.68,
+    "stage": 2
+   },
+   {
+    "symbol": "AMN",
+    "sector": "Health Care",
+    "close": 49,
+    "score": 69.7,
     "confirming": 5,
     "triggers": [
      "prior-day-high break",
      "resistance break (20-session)"
     ],
-    "trigger_up": 118.0,
-    "trigger_down": 116.46,
-    "support": 96.89,
+    "trigger_up": 48.42,
+    "trigger_down": 47.6,
+    "support": 37.21,
     "resistance": null,
     "stage": 2
    },
    {
     "symbol": "MUR",
     "sector": "Energy",
-    "close": 44.34,
-    "score": 70.0,
+    "close": 44.22,
+    "score": 69.6,
     "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 42.73,
-    "trigger_down": 42.01,
-    "support": 39.58,
+    "triggers": [],
+    "trigger_up": 44.7,
+    "trigger_down": 43.98,
+    "support": 41.16,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "AMN",
-    "sector": "Health Care",
-    "close": 48.01,
-    "score": 69.9,
+    "symbol": "ELF",
+    "sector": "Consumer Staples",
+    "close": 112.94,
+    "score": 69.4,
     "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 47.22,
-    "trigger_down": 46.42,
-    "support": 36.73,
-    "resistance": null,
+    "triggers": [],
+    "trigger_up": 115.14,
+    "trigger_down": 113.34,
+    "support": 112.42,
+    "resistance": 118.29,
     "stage": 2
    },
    {
     "symbol": "GKOS",
     "sector": "Health Care",
-    "close": 178.88,
-    "score": 69.3,
+    "close": 178.27,
+    "score": 69.4,
     "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 178.3,
-    "trigger_down": 175.08,
+    "triggers": [],
+    "trigger_up": 180.46,
+    "trigger_down": 177.3,
     "support": 177.56,
     "resistance": 182.28,
-    "stage": 2
-   },
-   {
-    "symbol": "URBN",
-    "sector": "Consumer Discretionary",
-    "close": 86.55,
-    "score": 69.0,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 88.9,
-    "trigger_down": 87.68,
-    "support": 85.43,
-    "resistance": 90.59,
-    "stage": 2
-   },
-   {
-    "symbol": "GO",
-    "sector": "Consumer Staples",
-    "close": 13.3,
-    "score": 68.9,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 14.02,
-    "trigger_down": 13.78,
-    "support": 13.29,
-    "resistance": 13.52,
     "stage": 2
    }
   ]
