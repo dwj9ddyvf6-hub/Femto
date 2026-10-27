@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-26T20:59:43.523320+00:00",
+ "generated_at_utc": "2026-10-27T02:36:01.829079+00:00",
  "as_of_session": "2026-10-23",
  "map": [
   {
@@ -179,35 +179,137 @@
  },
  "studies": {
   "gap_fill": {
-   "state": "no_data",
-   "n": 0,
-   "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+   "state": "graded",
+   "n": 186,
+   "fills": 85,
+   "frequency": 0.45698924731182794,
+   "fill_pct": 1.0,
+   "partitions": {
+    "by_band": {
+     "1-2%": {
+      "n": 19,
+      "fills": 2,
+      "frequency": 0.10526315789473684
+     },
+     "<1%": {
+      "n": 167,
+      "fills": 83,
+      "frequency": 0.49700598802395207
+     }
+    },
+    "by_weekday": {
+     "Fri": {
+      "n": 39,
+      "fills": 20,
+      "frequency": 0.5128205128205128
+     },
+     "Mon": {
+      "n": 33,
+      "fills": 12,
+      "frequency": 0.36363636363636365
+     },
+     "Thu": {
+      "n": 39,
+      "fills": 16,
+      "frequency": 0.41025641025641024
+     },
+     "Tue": {
+      "n": 36,
+      "fills": 17,
+      "frequency": 0.4722222222222222
+     },
+     "Wed": {
+      "n": 39,
+      "fills": 20,
+      "frequency": 0.5128205128205128
+     }
+    }
+   }
   },
   "orb_ib": {
    "5": {
-    "state": "no_data",
-    "n": 0,
-    "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+    "state": "graded",
+    "n": 186,
+    "window_min": 5,
+    "break_one_side": 63,
+    "break_both": 123,
+    "no_break": 0,
+    "break_one_side_rate": 0.3387096774193548,
+    "break_both_rate": 0.6612903225806451,
+    "no_break_rate": 0.0,
+    "extension_rates": {
+     "0.5": 0.978494623655914,
+     "1.0": 0.8548387096774194,
+     "1.5": 0.6935483870967742
+    },
+    "extension_n": 186
    },
    "15": {
-    "state": "no_data",
-    "n": 0,
-    "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+    "state": "graded",
+    "n": 186,
+    "window_min": 15,
+    "break_one_side": 84,
+    "break_both": 102,
+    "no_break": 0,
+    "break_one_side_rate": 0.45161290322580644,
+    "break_both_rate": 0.5483870967741935,
+    "no_break_rate": 0.0,
+    "extension_rates": {
+     "0.5": 0.8924731182795699,
+     "1.0": 0.6344086021505376,
+     "1.5": 0.41935483870967744
+    },
+    "extension_n": 186
    },
    "30": {
-    "state": "no_data",
-    "n": 0,
-    "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+    "state": "graded",
+    "n": 186,
+    "window_min": 30,
+    "break_one_side": 110,
+    "break_both": 75,
+    "no_break": 1,
+    "break_one_side_rate": 0.5913978494623656,
+    "break_both_rate": 0.4032258064516129,
+    "no_break_rate": 0.005376344086021506,
+    "extension_rates": {
+     "0.5": 0.7675675675675676,
+     "1.0": 0.4540540540540541,
+     "1.5": 0.2810810810810811
+    },
+    "extension_n": 185
    },
    "60": {
-    "state": "no_data",
-    "n": 0,
-    "reason": "Alpaca SIP intraday unavailable (401 / no data) \u2014 figure not imputed"
+    "state": "graded",
+    "n": 186,
+    "window_min": 60,
+    "break_one_side": 137,
+    "break_both": 39,
+    "no_break": 10,
+    "break_one_side_rate": 0.7365591397849462,
+    "break_both_rate": 0.20967741935483872,
+    "no_break_rate": 0.053763440860215055,
+    "extension_rates": {
+     "0.5": 0.5170454545454546,
+     "1.0": 0.2159090909090909,
+     "1.5": 0.10795454545454546
+    },
+    "extension_n": 176
    }
   },
   "earnings_dist": {
-   "state": "no_data",
-   "reason": "no earnings events on owned data"
+   "state": "graded",
+   "n": 35,
+   "mean": -0.0012834991997373528,
+   "median": -0.002757981060236392,
+   "std": 0.014649407616546721,
+   "share_positive": 0.42857142857142855,
+   "sharpe": -0.08761440962893417,
+   "label": "Sharpe = mean/std of underlying event moves (vendor definition, OURS adaptation to daily bars)",
+   "symbols": [
+    "AAPL",
+    "MSFT",
+    "NVDA"
+   ]
   },
   "state_vectors": {
    "state": "insufficient_history",
