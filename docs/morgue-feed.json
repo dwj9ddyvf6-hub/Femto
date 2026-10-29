@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-29T12:53:00.040076+00:00",
+ "generated_at_utc": "2026-10-29T20:51:17.076197+00:00",
  "as_of_session": "2026-10-28",
  "clocks": {
   "event_time": {
@@ -7,7 +7,7 @@
    "missing_reason": "the feed aggregates a session's cards; its event time is the session date in as_of_session, not a recorded instant"
   },
   "publication_time": {
-   "value": "2026-10-29T12:53:00.040076+00:00",
+   "value": "2026-10-29T20:51:17.076197+00:00",
    "missing_reason": null
   },
   "first_available_time": {
@@ -15,7 +15,7 @@
    "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
   },
   "ingestion_time": {
-   "value": "2026-10-29T12:53:00.040076+00:00",
+   "value": "2026-10-29T20:51:17.076197+00:00",
    "missing_reason": null
   },
   "decision_as_of": {
@@ -29,7 +29,7 @@
    "missing_reason": null
   },
   "tape_card.json": {
-   "sha256": "fc77d11c02fcc81dd39becddb35f9dafc288f4c957a8a8984734341adfc972a8",
+   "sha256": "c3b0146cbabcd4236f9284933927a5b820e43040e7c975bc5ce3b86e92d0c070",
    "missing_reason": null
   },
   "board_card.json": {
@@ -37,11 +37,11 @@
    "missing_reason": null
   },
   "scorecard.json": {
-   "sha256": "2b90c3c93aab01fd3c956e3b4603cf0860ad58c98365f02b3f23c346279e4751",
+   "sha256": "4c5ccfba1758a6af6a266e9f13578c7b6e23f3764419b73a27c00b081437d90d",
    "missing_reason": null
   },
   "studies_card.json": {
-   "sha256": "0b4d77ca2d6e4c950d349e2f302ffdb13a4afa5c9f2e845d3f924fb69cf4c462",
+   "sha256": "31a258a86b342c0a472d45fb5e22a0234af51ca355a634b3c28de35e3b37a2f6",
    "missing_reason": null
   },
   "ext_card.json": {
@@ -101,7 +101,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-29T12:53:00.040076+00:00",
+     "value": "2026-10-29T20:51:17.076197+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -109,7 +109,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-29T12:53:00.040076+00:00",
+     "value": "2026-10-29T20:51:17.076197+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -151,7 +151,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-29T12:53:00.040076+00:00",
+     "value": "2026-10-29T20:51:17.076197+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -159,7 +159,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-29T12:53:00.040076+00:00",
+     "value": "2026-10-29T20:51:17.076197+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -201,7 +201,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-29T12:53:00.040076+00:00",
+     "value": "2026-10-29T20:51:17.076197+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -209,7 +209,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-29T12:53:00.040076+00:00",
+     "value": "2026-10-29T20:51:17.076197+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -222,96 +222,96 @@
  "tape": [
   {
    "symbol": "SPY",
-   "prints": 474871,
-   "total_premium_m": 629.0,
-   "net_premium_m": -168.0,
+   "prints": 455245,
+   "total_premium_m": 883.9,
+   "net_premium_m": 639.9,
    "golden_sweeps": 0,
-   "high_heat": 121,
-   "mean_heat": 3.87,
+   "high_heat": 136,
+   "mean_heat": 4.02,
    "top_alerts": [
     {
-     "contract": "SPY261104P00767000",
-     "premium": 768222.0,
+     "contract": "SPY261120P00757000",
+     "premium": 3272500.0,
      "heat": 15.0,
-     "sentiment": "bearish",
+     "sentiment": "bullish",
      "golden": false
     },
     {
-     "contract": "SPY261102P00775000",
-     "premium": 625000.0,
-     "heat": 15.0,
-     "sentiment": "bearish",
+     "contract": "SPY261120P00732000",
+     "premium": 1420284.0,
+     "heat": 15.5,
+     "sentiment": "bullish",
      "golden": false
     },
     {
-     "contract": "SPY261102P00775000",
-     "premium": 562800.0,
-     "heat": 15.0,
-     "sentiment": "bearish",
+     "contract": "SPY261120P00730000",
+     "premium": 1340268.0,
+     "heat": 15.5,
+     "sentiment": "bullish",
      "golden": false
     }
    ]
   },
   {
    "symbol": "QQQ",
-   "prints": 359133,
-   "total_premium_m": 831.0,
-   "net_premium_m": 13.2,
+   "prints": 457803,
+   "total_premium_m": 1389.3,
+   "net_premium_m": 638.7,
    "golden_sweeps": 0,
-   "high_heat": 163,
-   "mean_heat": 4.18,
+   "high_heat": 242,
+   "mean_heat": 4.33,
    "top_alerts": [
     {
-     "contract": "QQQ261120P00680000",
-     "premium": 13496000.0,
-     "heat": 16.5,
+     "contract": "QQQ261030P00740000",
+     "premium": 44928000.0,
+     "heat": 15.0,
      "sentiment": "bearish",
      "golden": false
     },
     {
-     "contract": "QQQ261120P00705000",
-     "premium": 7768000.0,
-     "heat": 15.5,
-     "sentiment": "bearish",
+     "contract": "QQQ261030P00750000",
+     "premium": 27328080.0,
+     "heat": 15.0,
+     "sentiment": "bullish",
      "golden": false
     },
     {
-     "contract": "QQQ261106P00680000",
-     "premium": 3380000.0,
-     "heat": 17.5,
-     "sentiment": "bearish",
+     "contract": "QQQ261120P00700000",
+     "premium": 13980000.0,
+     "heat": 15.0,
+     "sentiment": "bullish",
      "golden": false
     }
    ]
   },
   {
    "symbol": "IWM",
-   "prints": 153549,
-   "total_premium_m": 110.9,
-   "net_premium_m": -41.8,
+   "prints": 176717,
+   "total_premium_m": 171.8,
+   "net_premium_m": -11.5,
    "golden_sweeps": 0,
-   "high_heat": 50,
-   "mean_heat": 3.88,
+   "high_heat": 152,
+   "mean_heat": 4.0,
    "top_alerts": [
     {
-     "contract": "IWM261120P00268000",
-     "premium": 8150714.0,
+     "contract": "IWM261120P00277000",
+     "premium": 8384604.0,
+     "heat": 17.5,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "IWM261120P00270000",
+     "premium": 4435334.0,
+     "heat": 16.5,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "IWM261120P00271000",
+     "premium": 3533040.0,
      "heat": 17.5,
      "sentiment": "bullish",
-     "golden": false
-    },
-    {
-     "contract": "IWM261120P00266000",
-     "premium": 6782762.0,
-     "heat": 18.5,
-     "sentiment": "bullish",
-     "golden": false
-    },
-    {
-     "contract": "IWM261120P00275000",
-     "premium": 1926000.0,
-     "heat": 15.5,
-     "sentiment": "bearish",
      "golden": false
     }
    ]
@@ -344,7 +344,7 @@
    "flip_respected_pct": 100
   },
   "counters": {
-   "units_published": 412,
+   "units_published": 487,
    "board_rows_logged": 100,
    "map_cards_of_record": 12,
    "units_graded": 75
@@ -360,21 +360,21 @@
    "partitions": {
     "by_band": {
      "1-2%": {
-      "n": 18,
-      "fills": 2,
-      "frequency": 0.1111111111111111
+      "n": 17,
+      "fills": 1,
+      "frequency": 0.058823529411764705
      },
      "<1%": {
-      "n": 168,
-      "fills": 82,
-      "frequency": 0.4880952380952381
+      "n": 169,
+      "fills": 83,
+      "frequency": 0.4911242603550296
      }
     },
     "by_weekday": {
      "Fri": {
-      "n": 39,
-      "fills": 20,
-      "frequency": 0.5128205128205128
+      "n": 36,
+      "fills": 17,
+      "frequency": 0.4722222222222222
      },
      "Mon": {
       "n": 36,
@@ -392,9 +392,9 @@
       "frequency": 0.48717948717948717
      },
      "Wed": {
-      "n": 36,
-      "fills": 17,
-      "frequency": 0.4722222222222222
+      "n": 39,
+      "fills": 20,
+      "frequency": 0.5128205128205128
      }
     }
    }
@@ -404,11 +404,11 @@
     "state": "graded",
     "n": 186,
     "window_min": 5,
-    "break_one_side": 65,
-    "break_both": 121,
+    "break_one_side": 64,
+    "break_both": 122,
     "no_break": 0,
-    "break_one_side_rate": 0.34946236559139787,
-    "break_both_rate": 0.6505376344086021,
+    "break_one_side_rate": 0.34408602150537637,
+    "break_both_rate": 0.6559139784946236,
     "no_break_rate": 0.0,
     "extension_rates": {
      "0.5": 0.978494623655914,
@@ -421,16 +421,16 @@
     "state": "graded",
     "n": 186,
     "window_min": 15,
-    "break_one_side": 86,
-    "break_both": 100,
+    "break_one_side": 84,
+    "break_both": 102,
     "no_break": 0,
-    "break_one_side_rate": 0.46236559139784944,
-    "break_both_rate": 0.5376344086021505,
+    "break_one_side_rate": 0.45161290322580644,
+    "break_both_rate": 0.5483870967741935,
     "no_break_rate": 0.0,
     "extension_rates": {
      "0.5": 0.8924731182795699,
-     "1.0": 0.6397849462365591,
-     "1.5": 0.41397849462365593
+     "1.0": 0.6290322580645161,
+     "1.5": 0.40860215053763443
     },
     "extension_n": 186
    },
@@ -455,28 +455,28 @@
     "state": "graded",
     "n": 186,
     "window_min": 60,
-    "break_one_side": 142,
-    "break_both": 34,
-    "no_break": 10,
-    "break_one_side_rate": 0.7634408602150538,
-    "break_both_rate": 0.1827956989247312,
-    "no_break_rate": 0.053763440860215055,
+    "break_one_side": 143,
+    "break_both": 35,
+    "no_break": 8,
+    "break_one_side_rate": 0.7688172043010753,
+    "break_both_rate": 0.1881720430107527,
+    "no_break_rate": 0.043010752688172046,
     "extension_rates": {
-     "0.5": 0.5284090909090909,
-     "1.0": 0.22727272727272727,
-     "1.5": 0.11363636363636363
+     "0.5": 0.5337078651685393,
+     "1.0": 0.2247191011235955,
+     "1.5": 0.11235955056179775
     },
-    "extension_n": 176
+    "extension_n": 178
    }
   },
   "earnings_dist": {
    "state": "graded",
-   "n": 35,
-   "mean": -0.0012834991997373528,
-   "median": -0.002757981060236392,
-   "std": 0.014649407616546721,
-   "share_positive": 0.42857142857142855,
-   "sharpe": -0.08761440962893417,
+   "n": 36,
+   "mean": -0.001264575951065969,
+   "median": -0.0018586333806726585,
+   "std": 0.014439060191126224,
+   "share_positive": 0.4166666666666667,
+   "sharpe": -0.08758021189240116,
    "label": "Sharpe = mean/std of underlying event moves (vendor definition, OURS adaptation to daily bars)",
    "symbols": [
     "AAPL",
@@ -492,7 +492,7 @@
  },
  "squeeze": {
   "state": "no_data",
-  "as_of": "2026-10-28",
+  "as_of": "2026-10-29",
   "formula_version": "squeeze_v6",
   "lineage": {
    "method_ref": "Tapeboard Squeeze Score v6, published in full (squeeze.py)",
@@ -514,9 +514,9 @@
  },
  "wall_validation": {
   "state": "not_yet_graded",
-  "cards_of_record": 9,
+  "cards_of_record": 12,
   "cards_graded": 0,
-  "line": "not yet graded \u2014 9 Map card(s) of record accrued; grades land after their sessions complete",
+  "line": "not yet graded \u2014 12 Map card(s) of record accrued; grades land after their sessions complete",
   "windows": {},
   "by_underlying": {},
   "by_regime": {}
