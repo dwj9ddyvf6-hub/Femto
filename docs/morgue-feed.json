@@ -1,13 +1,13 @@
 {
- "generated_at_utc": "2026-10-28T20:51:57.641566+00:00",
- "as_of_session": "2026-10-27",
+ "generated_at_utc": "2026-10-29T12:53:00.040076+00:00",
+ "as_of_session": "2026-10-28",
  "clocks": {
   "event_time": {
    "value": null,
    "missing_reason": "the feed aggregates a session's cards; its event time is the session date in as_of_session, not a recorded instant"
   },
   "publication_time": {
-   "value": "2026-10-28T20:51:57.641566+00:00",
+   "value": "2026-10-29T12:53:00.040076+00:00",
    "missing_reason": null
   },
   "first_available_time": {
@@ -15,7 +15,7 @@
    "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
   },
   "ingestion_time": {
-   "value": "2026-10-28T20:51:57.641566+00:00",
+   "value": "2026-10-29T12:53:00.040076+00:00",
    "missing_reason": null
   },
   "decision_as_of": {
@@ -25,7 +25,7 @@
  },
  "source_artifacts": {
   "map_card.json": {
-   "sha256": "927613c1c59756236d6908d4aa7ca711805124c29753e52613c91611e900489e",
+   "sha256": "3287b50aeb4a61eabc11c904828154531a1ae20ba18bf702c9a9fd32f356c947",
    "missing_reason": null
   },
   "tape_card.json": {
@@ -33,11 +33,11 @@
    "missing_reason": null
   },
   "board_card.json": {
-   "sha256": "b529cf168542cd734b9965c19087b4fff169a59ce8d3a03d2257230cc67182f1",
+   "sha256": "bf961d5483f12646b0b227ad6b86171e3198901cdff18980bd513efd2c9f45e5",
    "missing_reason": null
   },
   "scorecard.json": {
-   "sha256": "ce23a8be6a429c7328176933df7e6046c20c3dbab8a929427999a9f2d2c28145",
+   "sha256": "2b90c3c93aab01fd3c956e3b4603cf0860ad58c98365f02b3f23c346279e4751",
    "missing_reason": null
   },
   "studies_card.json": {
@@ -49,7 +49,7 @@
    "missing_reason": null
   },
   "board_full.json": {
-   "sha256": "491398cbafc7ac4ccf6fec2a958157502feaf694f178dcbf5c5c37c514be27dd",
+   "sha256": "0d4b4cde05005bcd5eaae481bb86dcfe4762284b5ed48552de2faf83b3c7f496",
    "missing_reason": null
   }
  },
@@ -60,25 +60,25 @@
  "map": [
   {
    "symbol": "SPY",
-   "spot": 771.65,
-   "net_gex_b": -1.78,
-   "call_wall": 780.0,
+   "spot": 769.23,
+   "net_gex_b": -5.16,
+   "call_wall": 800.0,
    "put_wall": 750.0,
-   "flip": 773.4,
-   "dix": 0.534,
-   "dix_date": "2026-10-27",
+   "flip": 774.3,
+   "dix": 0.527,
+   "dix_date": "2026-10-28",
    "dix_index": {
     "construction": "constituent-weighted DIX (vendor definition A104: dollar-weighted average of constituent dark-pool short-sale ratios)",
     "not_the_same_as": "per-ETF DIX ratio (the ETF's own FNQC short/total ratio) \u2014 a different construction; the two are never substituted for each other",
-    "date": "2026-10-27",
+    "date": "2026-10-28",
     "state": "graded",
-    "value": 0.4391652349464622,
-    "constituents_used": 501,
+    "value": 0.4417428149509604,
+    "constituents_used": 499,
     "constituents_total": 503,
-    "coverage": 0.9960238568588469,
+    "coverage": 0.9920477137176938,
     "weight_source": "session dollar volume (close x volume, Alpaca SIP) \u2014 OURS declared weight"
    },
-   "coverage": "7230/8683",
+   "coverage": "7401/8600",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -101,7 +101,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-28T20:51:57.641566+00:00",
+     "value": "2026-10-29T12:53:00.040076+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -109,7 +109,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-28T20:51:57.641566+00:00",
+     "value": "2026-10-29T12:53:00.040076+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -120,15 +120,15 @@
   },
   {
    "symbol": "QQQ",
-   "spot": 723.47,
-   "net_gex_b": -1.31,
-   "call_wall": 720.0,
-   "put_wall": 700.0,
-   "flip": 727.8,
-   "dix": 0.318,
-   "dix_date": "2026-10-27",
+   "spot": 716.74,
+   "net_gex_b": -6.55,
+   "call_wall": 725.0,
+   "put_wall": 720.0,
+   "flip": 730.9,
+   "dix": 0.672,
+   "dix_date": "2026-10-28",
    "dix_index": null,
-   "coverage": "6079/7296",
+   "coverage": "6078/7276",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -151,7 +151,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-28T20:51:57.641566+00:00",
+     "value": "2026-10-29T12:53:00.040076+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -159,7 +159,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-28T20:51:57.641566+00:00",
+     "value": "2026-10-29T12:53:00.040076+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -170,15 +170,15 @@
   },
   {
    "symbol": "IWM",
-   "spot": 280.2,
-   "net_gex_b": -1.56,
-   "call_wall": 280.0,
+   "spot": 281.93,
+   "net_gex_b": -1.17,
+   "call_wall": 290.0,
    "put_wall": 270.0,
-   "flip": 288.4,
-   "dix": 0.466,
-   "dix_date": "2026-10-27",
+   "flip": 288.5,
+   "dix": 0.442,
+   "dix_date": "2026-10-28",
    "dix_index": null,
-   "coverage": "2745/3211",
+   "coverage": "2635/3192",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -201,7 +201,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-28T20:51:57.641566+00:00",
+     "value": "2026-10-29T12:53:00.040076+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -209,7 +209,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-28T20:51:57.641566+00:00",
+     "value": "2026-10-29T12:53:00.040076+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -320,17 +320,17 @@
  "scorecard": {
   "board": {
    "published": {
-    "n_logged": 75,
+    "n_logged": 100,
     "horizons": {
-     "1d": "55% positive, average +0.05%, median +0.18% (n=44)",
+     "1d": "48% positive, average -0.05%, median -0.01% (n=66)",
      "5d": "not yet graded \u2014 first grades land after the 2026-10-30 close",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
    },
    "qualified": {
-    "n_logged": 38,
+    "n_logged": 51,
     "horizons": {
-     "1d": "56% positive, average -0.02%, median +0.20% (n=25)",
+     "1d": "51% positive, average -0.07%, median +0.15% (n=35)",
      "5d": "not yet graded \u2014 first grades land after the 2026-10-30 close",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
@@ -338,16 +338,16 @@
   },
   "map": {
    "state": "graded",
-   "cards_graded": 6,
-   "call_wall_held_pct": 67,
+   "cards_graded": 9,
+   "call_wall_held_pct": 56,
    "put_wall_held_pct": 100,
    "flip_respected_pct": 100
   },
   "counters": {
-   "units_published": 384,
-   "board_rows_logged": 75,
-   "map_cards_of_record": 9,
-   "units_graded": 50
+   "units_published": 412,
+   "board_rows_logged": 100,
+   "map_cards_of_record": 12,
+   "units_graded": 75
   }
  },
  "studies": {
@@ -977,74 +977,92 @@
    "universe": 1838,
    "scored": 1833,
    "insufficient_data": 5,
-   "qualified": 43,
+   "qualified": 44,
    "market_context": {
     "marketRegime": 100.0,
-    "marketBreadth": 53.4,
-    "indexAccDist": 22.0,
-    "breakoutFollowThrough": 53.0,
+    "marketBreadth": 48.4,
+    "indexAccDist": 25.2,
+    "breakoutFollowThrough": 55.8,
     "riskAppetite": 0.0,
-    "sectorRotation": 63.6,
+    "sectorRotation": 67.3,
     "macroEventRisk": null,
-    "indexConfirmation": 33.3
+    "indexConfirmation": 66.7
    }
   },
   "qualified": [
    {
-    "symbol": "NWE",
-    "sector": "Utilities",
-    "close": 79.87,
-    "score": 72.5,
-    "confirming": 5,
+    "symbol": "ETSY",
+    "sector": "Consumer Discretionary",
+    "close": 92.35,
+    "score": 74.1,
+    "confirming": 6,
     "triggers": [
      "prior-day-high break",
      "resistance break (20-session)"
     ],
-    "trigger_up": 78.84,
-    "trigger_down": 78.06,
+    "trigger_up": 88.54,
+    "trigger_down": 86.78,
+    "support": 81.61,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "NWE",
+    "sector": "Utilities",
+    "close": 78.65,
+    "score": 73.7,
+    "confirming": 6,
+    "triggers": [],
+    "trigger_up": 80.27,
+    "trigger_down": 79.47,
     "support": 73.5,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "CART",
-    "sector": "Consumer Staples",
-    "close": 60.08,
-    "score": 72.4,
+    "symbol": "FTRE",
+    "sector": "Health Care",
+    "close": 25.88,
+    "score": 73.1,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 61.47,
-    "trigger_down": 60.29,
-    "support": 49.89,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)",
+     "holding retest"
+    ],
+    "trigger_up": 24.71,
+    "trigger_down": 24.15,
+    "support": 22.3,
     "resistance": null,
     "stage": 2
    },
    {
     "symbol": "BKH",
     "sector": "Utilities",
-    "close": 81.75,
-    "score": 71.8,
+    "close": 80.79,
+    "score": 72.4,
     "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 80.61,
-    "trigger_down": 79.79,
+    "triggers": [],
+    "trigger_up": 82.16,
+    "trigger_down": 81.34,
     "support": 75.33,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "PR",
-    "sector": "Energy",
-    "close": 25.46,
-    "score": 71.8,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 25.94,
-    "trigger_down": 25.6,
-    "support": 24.09,
+    "symbol": "PEB",
+    "sector": "Real Estate",
+    "close": 21.47,
+    "score": 72.4,
+    "confirming": 6,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)",
+     "holding retest"
+    ],
+    "trigger_up": 21.46,
+    "trigger_down": 21.16,
+    "support": 20.3,
     "resistance": null,
     "stage": 2
    },
@@ -1052,7 +1070,7 @@
     "symbol": "BLFS",
     "sector": "Health Care",
     "close": 38.61,
-    "score": 71.6,
+    "score": 71.9,
     "confirming": 5,
     "triggers": [
      "prior-day-high break"
@@ -1064,139 +1082,132 @@
     "stage": 2
    },
    {
-    "symbol": "ACN",
-    "sector": "Information Technology",
-    "close": 235.16,
-    "score": 71.2,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 249.62,
-    "trigger_down": 244.84,
-    "support": 233.6,
-    "resistance": 243.6,
-    "stage": 2
-   },
-   {
-    "symbol": "WS",
+    "symbol": "IFF",
     "sector": "Materials",
-    "close": 42.71,
-    "score": 71.1,
+    "close": 90.66,
+    "score": 71.9,
     "confirming": 5,
     "triggers": [],
-    "trigger_up": 42.71,
-    "trigger_down": 41.75,
-    "support": 42.68,
-    "resistance": 44,
+    "trigger_up": 93.66,
+    "trigger_down": 92.76,
+    "support": 90.13,
+    "resistance": 94.65,
     "stage": 2
    },
    {
-    "symbol": "XOM",
-    "sector": "Energy",
-    "close": 179.91,
-    "score": 70.8,
+    "symbol": "LH",
+    "sector": "Health Care",
+    "close": 360.25,
+    "score": 71.9,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 185.46,
-    "trigger_down": 183.62,
-    "support": 174.63,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "OVV",
-    "sector": "Energy",
-    "close": 71.13,
-    "score": 70.7,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 73.04,
-    "trigger_down": 72.06,
-    "support": 67.98,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 333.42,
+    "trigger_down": 328.92,
+    "support": 326.51,
     "resistance": null,
     "stage": 2
    },
    {
     "symbol": "LW",
     "sector": "Consumer Staples",
-    "close": 53.78,
-    "score": 70.4,
+    "close": 53.49,
+    "score": 71.6,
     "confirming": 5,
     "triggers": [],
-    "trigger_up": 54.09,
-    "trigger_down": 53.25,
+    "trigger_up": 54.18,
+    "trigger_down": 53.38,
     "support": 52.66,
-    "resistance": 54,
+    "resistance": 53.5,
     "stage": 2
    },
    {
-    "symbol": "AMN",
+    "symbol": "WST",
     "sector": "Health Care",
-    "close": 46.81,
-    "score": 70.3,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 49.44,
-    "trigger_down": 48.56,
-    "support": 37.59,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "GO",
-    "sector": "Consumer Staples",
-    "close": 12.88,
-    "score": 69.9,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 13.18,
-    "trigger_down": 12.94,
-    "support": 12.7,
-    "resistance": 13.3,
-    "stage": 2
-   },
-   {
-    "symbol": "PEB",
-    "sector": "Real Estate",
-    "close": 21.31,
-    "score": 69.9,
+    "close": 403.64,
+    "score": 71.3,
     "confirming": 6,
     "triggers": [
      "prior-day-high break",
-     "resistance break (20-session)"
+     "resistance break (20-session)",
+     "holding retest"
     ],
-    "trigger_up": 21.2,
-    "trigger_down": 20.88,
-    "support": 20.3,
+    "trigger_up": 400.2,
+    "trigger_down": 396.38,
+    "support": 388.06,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "WAT",
+    "symbol": "HAS",
+    "sector": "Consumer Discretionary",
+    "close": 118.68,
+    "score": 71.2,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 119.07,
+    "trigger_down": 117.59,
+    "support": 97.79,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "KDP",
+    "sector": "Consumer Staples",
+    "close": 34.93,
+    "score": 71.1,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 35.04,
+    "trigger_down": 34.68,
+    "support": 34.49,
+    "resistance": 34.99,
+    "stage": 2
+   },
+   {
+    "symbol": "PRGO",
     "sector": "Health Care",
-    "close": 468.55,
-    "score": 69.8,
+    "close": 15.92,
+    "score": 70.7,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 16.17,
+    "trigger_down": 15.87,
+    "support": 15.58,
+    "resistance": 16.79,
+    "stage": 2
+   },
+   {
+    "symbol": "EL",
+    "sector": "Consumer Staples",
+    "close": 109.31,
+    "score": 70.4,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 109.14,
+    "trigger_down": 107.56,
+    "support": 104.33,
+    "resistance": 109.62,
+    "stage": 2
+   },
+   {
+    "symbol": "EXEL",
+    "sector": "Health Care",
+    "close": 66.28,
+    "score": 70.4,
     "confirming": 5,
     "triggers": [
      "prior-day-high break",
      "resistance break (20-session)"
     ],
-    "trigger_up": 459.29,
-    "trigger_down": 452.67,
-    "support": 427.97,
+    "trigger_up": 65.71,
+    "trigger_down": 64.99,
+    "support": 63.91,
     "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "HLX",
-    "sector": "Energy",
-    "close": 10.6,
-    "score": 69.7,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 10.39,
-    "trigger_down": 10.21,
-    "support": 10.01,
-    "resistance": 10.75,
     "stage": 2
    }
   ]
