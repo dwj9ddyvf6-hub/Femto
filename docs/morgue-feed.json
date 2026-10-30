@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-30T12:55:37.075679+00:00",
+ "generated_at_utc": "2026-10-30T20:58:49.132925+00:00",
  "as_of_session": "2026-10-29",
  "clocks": {
   "event_time": {
@@ -7,7 +7,7 @@
    "missing_reason": "the feed aggregates a session's cards; its event time is the session date in as_of_session, not a recorded instant"
   },
   "publication_time": {
-   "value": "2026-10-30T12:55:37.075679+00:00",
+   "value": "2026-10-30T20:58:49.132925+00:00",
    "missing_reason": null
   },
   "first_available_time": {
@@ -15,7 +15,7 @@
    "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
   },
   "ingestion_time": {
-   "value": "2026-10-30T12:55:37.075679+00:00",
+   "value": "2026-10-30T20:58:49.132925+00:00",
    "missing_reason": null
   },
   "decision_as_of": {
@@ -29,7 +29,7 @@
    "missing_reason": null
   },
   "tape_card.json": {
-   "sha256": "c3b0146cbabcd4236f9284933927a5b820e43040e7c975bc5ce3b86e92d0c070",
+   "sha256": "d0bb00b52193833365f0a6214540bf3683329b9b00f4834fa792c9ea7271fd65",
    "missing_reason": null
   },
   "board_card.json": {
@@ -37,15 +37,15 @@
    "missing_reason": null
   },
   "scorecard.json": {
-   "sha256": "b85d4f8730ea7c173fd8a9e76eb7dabdfe838daff9da6014277f63cd752fa4a3",
+   "sha256": "86253a1df8e71a9bb85ab210b83a5f33248fcc19245d6f6982459a3baff04213",
    "missing_reason": null
   },
   "studies_card.json": {
-   "sha256": "4208db6b43e24fed115499968a55fd43574e1d657e07a6f81ef347439aec026a",
+   "sha256": "dd3d3dc5276ce5ada890da92e0fc7fb86251618cf2912560e336ff8020bf0e15",
    "missing_reason": null
   },
   "ext_card.json": {
-   "sha256": "7d44084ccfb7235c97ad5c0cb7a3f51dd89b474d9cec0b5f16b34a7e3afd0321",
+   "sha256": "b9da6c1794ae59ed2aaa6c8bce5a2b1782a8591c2b9045bc2efc898f2336a9cd",
    "missing_reason": null
   },
   "board_full.json": {
@@ -101,7 +101,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-30T12:55:37.075679+00:00",
+     "value": "2026-10-30T20:58:49.132925+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -109,7 +109,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-30T12:55:37.075679+00:00",
+     "value": "2026-10-30T20:58:49.132925+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -151,7 +151,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-30T12:55:37.075679+00:00",
+     "value": "2026-10-30T20:58:49.132925+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -159,7 +159,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-30T12:55:37.075679+00:00",
+     "value": "2026-10-30T20:58:49.132925+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -201,7 +201,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-10-30T12:55:37.075679+00:00",
+     "value": "2026-10-30T20:58:49.132925+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -209,7 +209,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-10-30T12:55:37.075679+00:00",
+     "value": "2026-10-30T20:58:49.132925+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -222,96 +222,96 @@
  "tape": [
   {
    "symbol": "SPY",
-   "prints": 455245,
-   "total_premium_m": 883.9,
-   "net_premium_m": 639.9,
-   "golden_sweeps": 0,
-   "high_heat": 136,
-   "mean_heat": 4.02,
+   "prints": 691009,
+   "total_premium_m": 1679.5,
+   "net_premium_m": -244.2,
+   "golden_sweeps": 1,
+   "high_heat": 408,
+   "mean_heat": 4.05,
    "top_alerts": [
     {
-     "contract": "SPY261120P00757000",
-     "premium": 3272500.0,
-     "heat": 15.0,
-     "sentiment": "bullish",
+     "contract": "SPY261104P00740000",
+     "premium": 17310465.0,
+     "heat": 18.5,
+     "sentiment": "bearish",
      "golden": false
     },
     {
-     "contract": "SPY261120P00732000",
-     "premium": 1420284.0,
-     "heat": 15.5,
-     "sentiment": "bullish",
+     "contract": "SPY261104P00730000",
+     "premium": 8734338.0,
+     "heat": 18.5,
+     "sentiment": "bearish",
      "golden": false
     },
     {
-     "contract": "SPY261120P00730000",
-     "premium": 1340268.0,
-     "heat": 15.5,
-     "sentiment": "bullish",
+     "contract": "SPY261102P00745000",
+     "premium": 6935247.0,
+     "heat": 17.0,
+     "sentiment": "bearish",
      "golden": false
     }
    ]
   },
   {
    "symbol": "QQQ",
-   "prints": 457803,
-   "total_premium_m": 1389.3,
-   "net_premium_m": 638.7,
-   "golden_sweeps": 0,
-   "high_heat": 242,
-   "mean_heat": 4.33,
+   "prints": 586836,
+   "total_premium_m": 1879.2,
+   "net_premium_m": -205.4,
+   "golden_sweeps": 1,
+   "high_heat": 779,
+   "mean_heat": 4.54,
    "top_alerts": [
     {
-     "contract": "QQQ261030P00740000",
-     "premium": 44928000.0,
-     "heat": 15.0,
+     "contract": "QQQ261113P00725000",
+     "premium": 56529150.0,
+     "heat": 16.0,
      "sentiment": "bearish",
      "golden": false
     },
     {
-     "contract": "QQQ261030P00750000",
-     "premium": 27328080.0,
-     "heat": 15.0,
-     "sentiment": "bullish",
+     "contract": "QQQ261113P00685000",
+     "premium": 32333520.0,
+     "heat": 17.0,
+     "sentiment": "bearish",
      "golden": false
     },
     {
-     "contract": "QQQ261120P00700000",
-     "premium": 13980000.0,
-     "heat": 15.0,
-     "sentiment": "bullish",
+     "contract": "QQQ261113P00690000",
+     "premium": 23049000.0,
+     "heat": 16.0,
+     "sentiment": "bearish",
      "golden": false
     }
    ]
   },
   {
    "symbol": "IWM",
-   "prints": 176717,
-   "total_premium_m": 171.8,
-   "net_premium_m": -11.5,
+   "prints": 181854,
+   "total_premium_m": 241.4,
+   "net_premium_m": -39.5,
    "golden_sweeps": 0,
-   "high_heat": 152,
-   "mean_heat": 4.0,
+   "high_heat": 80,
+   "mean_heat": 4.14,
    "top_alerts": [
     {
-     "contract": "IWM261120P00277000",
-     "premium": 8384604.0,
-     "heat": 17.5,
-     "sentiment": "bearish",
-     "golden": false
-    },
-    {
-     "contract": "IWM261120P00270000",
-     "premium": 4435334.0,
+     "contract": "IWM261120P00269000",
+     "premium": 5735093.0,
      "heat": 16.5,
-     "sentiment": "bearish",
+     "sentiment": "bullish",
      "golden": false
     },
     {
-     "contract": "IWM261120P00271000",
-     "premium": 3533040.0,
+     "contract": "IWM261120P00266000",
+     "premium": 4545788.0,
      "heat": 17.5,
      "sentiment": "bullish",
+     "golden": false
+    },
+    {
+     "contract": "IWM261120P00268000",
+     "premium": 3009552.0,
+     "heat": 16.5,
+     "sentiment": "bearish",
      "golden": false
     }
    ]
@@ -344,7 +344,7 @@
    "flip_respected_pct": 100
   },
   "counters": {
-   "units_published": 515,
+   "units_published": 590,
    "board_rows_logged": 125,
    "map_cards_of_record": 15,
    "units_graded": 100
@@ -354,20 +354,20 @@
   "gap_fill": {
    "state": "graded",
    "n": 186,
-   "fills": 84,
-   "frequency": 0.45161290322580644,
+   "fills": 83,
+   "frequency": 0.44623655913978494,
    "fill_pct": 1.0,
    "partitions": {
     "by_band": {
      "1-2%": {
-      "n": 17,
+      "n": 18,
       "fills": 1,
-      "frequency": 0.058823529411764705
+      "frequency": 0.05555555555555555
      },
      "<1%": {
-      "n": 169,
-      "fills": 83,
-      "frequency": 0.4911242603550296
+      "n": 168,
+      "fills": 82,
+      "frequency": 0.4880952380952381
      }
     },
     "by_weekday": {
@@ -377,14 +377,14 @@
       "frequency": 0.4722222222222222
      },
      "Mon": {
-      "n": 36,
-      "fills": 12,
+      "n": 33,
+      "fills": 11,
       "frequency": 0.3333333333333333
      },
      "Thu": {
-      "n": 36,
+      "n": 39,
       "fills": 16,
-      "frequency": 0.4444444444444444
+      "frequency": 0.41025641025641024
      },
      "Tue": {
       "n": 39,
@@ -404,16 +404,16 @@
     "state": "graded",
     "n": 186,
     "window_min": 5,
-    "break_one_side": 64,
-    "break_both": 122,
+    "break_one_side": 62,
+    "break_both": 124,
     "no_break": 0,
-    "break_one_side_rate": 0.34408602150537637,
-    "break_both_rate": 0.6559139784946236,
+    "break_one_side_rate": 0.3333333333333333,
+    "break_both_rate": 0.6666666666666666,
     "no_break_rate": 0.0,
     "extension_rates": {
-     "0.5": 0.978494623655914,
-     "1.0": 0.8548387096774194,
-     "1.5": 0.6935483870967742
+     "0.5": 0.9731182795698925,
+     "1.0": 0.8494623655913979,
+     "1.5": 0.6827956989247311
     },
     "extension_n": 186
    },
@@ -421,16 +421,16 @@
     "state": "graded",
     "n": 186,
     "window_min": 15,
-    "break_one_side": 84,
-    "break_both": 102,
+    "break_one_side": 83,
+    "break_both": 103,
     "no_break": 0,
-    "break_one_side_rate": 0.45161290322580644,
-    "break_both_rate": 0.5483870967741935,
+    "break_one_side_rate": 0.44623655913978494,
+    "break_both_rate": 0.553763440860215,
     "no_break_rate": 0.0,
     "extension_rates": {
-     "0.5": 0.8924731182795699,
-     "1.0": 0.6290322580645161,
-     "1.5": 0.40860215053763443
+     "0.5": 0.8870967741935484,
+     "1.0": 0.6129032258064516,
+     "1.5": 0.3978494623655914
     },
     "extension_n": 186
    },
@@ -438,15 +438,15 @@
     "state": "graded",
     "n": 186,
     "window_min": 30,
-    "break_one_side": 112,
-    "break_both": 73,
+    "break_one_side": 111,
+    "break_both": 74,
     "no_break": 1,
-    "break_one_side_rate": 0.6021505376344086,
-    "break_both_rate": 0.3924731182795699,
+    "break_one_side_rate": 0.5967741935483871,
+    "break_both_rate": 0.3978494623655914,
     "no_break_rate": 0.005376344086021506,
     "extension_rates": {
-     "0.5": 0.772972972972973,
-     "1.0": 0.4648648648648649,
+     "0.5": 0.7621621621621621,
+     "1.0": 0.4540540540540541,
      "1.5": 0.2756756756756757
     },
     "extension_n": 185
@@ -455,14 +455,14 @@
     "state": "graded",
     "n": 186,
     "window_min": 60,
-    "break_one_side": 143,
-    "break_both": 35,
+    "break_one_side": 142,
+    "break_both": 36,
     "no_break": 8,
-    "break_one_side_rate": 0.7688172043010753,
-    "break_both_rate": 0.1881720430107527,
+    "break_one_side_rate": 0.7634408602150538,
+    "break_both_rate": 0.1935483870967742,
     "no_break_rate": 0.043010752688172046,
     "extension_rates": {
-     "0.5": 0.5337078651685393,
+     "0.5": 0.5224719101123596,
      "1.0": 0.2247191011235955,
      "1.5": 0.11235955056179775
     },
@@ -504,7 +504,7 @@
  },
  "squeeze": {
   "state": "no_data",
-  "as_of": "2026-10-29",
+  "as_of": "2026-10-30",
   "formula_version": "squeeze_v6",
   "lineage": {
    "method_ref": "Tapeboard Squeeze Score v6, published in full (squeeze.py)",
@@ -525,18 +525,97 @@
   }
  },
  "wall_validation": {
-  "state": "not_yet_graded",
-  "cards_of_record": 12,
-  "cards_graded": 0,
-  "line": "not yet graded \u2014 12 Map card(s) of record accrued; grades land after their sessions complete",
-  "windows": {},
-  "by_underlying": {},
-  "by_regime": {}
+  "state": "graded",
+  "cards_of_record": 15,
+  "cards_graded": 12,
+  "windows": {
+   "20": {
+    "state": "graded",
+    "n": 12,
+    "call_wall_held_rate": 0.6666666666666666,
+    "put_wall_held_rate": 0.9166666666666666,
+    "touched_and_held": 0,
+    "touched_and_held_rate": 0.0,
+    "blown_through": 5,
+    "blown_through_rate": 0.4166666666666667,
+    "flip_respected_rate": 1.0
+   },
+   "60": {
+    "state": "graded",
+    "n": 12,
+    "call_wall_held_rate": 0.6666666666666666,
+    "put_wall_held_rate": 0.9166666666666666,
+    "touched_and_held": 0,
+    "touched_and_held_rate": 0.0,
+    "blown_through": 5,
+    "blown_through_rate": 0.4166666666666667,
+    "flip_respected_rate": 1.0
+   },
+   "all": {
+    "state": "graded",
+    "n": 12,
+    "call_wall_held_rate": 0.6666666666666666,
+    "put_wall_held_rate": 0.9166666666666666,
+    "touched_and_held": 0,
+    "touched_and_held_rate": 0.0,
+    "blown_through": 5,
+    "blown_through_rate": 0.4166666666666667,
+    "flip_respected_rate": 1.0
+   }
+  },
+  "by_underlying": {
+   "IWM": {
+    "state": "graded",
+    "n": 4,
+    "call_wall_held_rate": 0.25,
+    "put_wall_held_rate": 1.0,
+    "touched_and_held": 0,
+    "touched_and_held_rate": 0.0,
+    "blown_through": 3,
+    "blown_through_rate": 0.75,
+    "flip_respected_rate": 1.0
+   },
+   "QQQ": {
+    "state": "graded",
+    "n": 4,
+    "call_wall_held_rate": 0.75,
+    "put_wall_held_rate": 0.75,
+    "touched_and_held": 0,
+    "touched_and_held_rate": 0.0,
+    "blown_through": 2,
+    "blown_through_rate": 0.5,
+    "flip_respected_rate": 1.0
+   },
+   "SPY": {
+    "state": "graded",
+    "n": 4,
+    "call_wall_held_rate": 1.0,
+    "put_wall_held_rate": 1.0,
+    "touched_and_held": 0,
+    "touched_and_held_rate": 0.0,
+    "blown_through": 0,
+    "blown_through_rate": 0.0,
+    "flip_respected_rate": 1.0
+   }
+  },
+  "by_regime": {
+   "negative": {
+    "state": "graded",
+    "n": 12,
+    "call_wall_held_rate": 0.6666666666666666,
+    "put_wall_held_rate": 0.9166666666666666,
+    "touched_and_held": 0,
+    "touched_and_held_rate": 0.0,
+    "blown_through": 5,
+    "blown_through_rate": 0.4166666666666667,
+    "flip_respected_rate": 1.0
+   }
+  }
  },
  "flow": {
   "for_session": "2026-10-30",
   "as_of": "2026-10-30",
-  "built_at": "2026-10-30T07:16:58-04:00",
+  "built_at": "2026-10-30T16:58:00-04:00",
   "labels": [
    "net drift: each five-minute bucket stands alone (net single-leg premium and volume by direction), never a running total",
    "repeat sweeps: the same contract swept three or more times inside ten minutes; the tier names are by the run's own span",
@@ -553,11 +632,11 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": 17.636,
-     "oi_net_gex_b": -2.704,
-     "call_wall": 770.0,
-     "put_wall": 765.0,
-     "contracts_used": 3447,
+     "net_gex_b": -20.251,
+     "oi_net_gex_b": -13.473,
+     "call_wall": 760.0,
+     "put_wall": 758.0,
+     "contracts_used": 3939,
      "label": "flow-GEX: each contract weighted by the latest daily volume in the snapshot (the previous session's before the open), beside the open-interest form; same signs"
     },
     "QQQ": {
@@ -567,11 +646,11 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": 7.479,
-     "oi_net_gex_b": -1.574,
-     "call_wall": 715.0,
-     "put_wall": 700.0,
-     "contracts_used": 2981,
+     "net_gex_b": -1.736,
+     "oi_net_gex_b": -8.356,
+     "call_wall": 700.0,
+     "put_wall": 690.0,
+     "contracts_used": 3331,
      "label": "flow-GEX: each contract weighted by the latest daily volume in the snapshot (the previous session's before the open), beside the open-interest form; same signs"
     },
     "IWM": {
@@ -581,11 +660,11 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": -0.64,
-     "oi_net_gex_b": -0.271,
-     "call_wall": 285.0,
-     "put_wall": 284.0,
-     "contracts_used": 1534,
+     "net_gex_b": -1.777,
+     "oi_net_gex_b": -2.198,
+     "call_wall": 280.0,
+     "put_wall": 278.0,
+     "contracts_used": 1500,
      "label": "flow-GEX: each contract weighted by the latest daily volume in the snapshot (the previous session's before the open), beside the open-interest form; same signs"
     }
    },
@@ -1360,12 +1439,12 @@
     "reason": "no board or watching names to read"
    }
   },
-  "inputs_hash": "3a01ff021c44469e3e313c3811a859ad489dc8091d8400b546a57574e0b0bb90"
+  "inputs_hash": "a7b87c8f17554ba23646ced21220b22dd8442000e1f94e3249cc82f1b3d55cfc"
  },
  "chain": {
   "for_session": "2026-10-30",
   "as_of": "2026-10-30",
-  "built_at": "2026-10-30T07:16:58-04:00",
+  "built_at": "2026-10-30T16:58:00-04:00",
   "cards": {
    "SPY": {
     "status": "ok",
@@ -1373,73 +1452,73 @@
     "source": "Alpaca options contracts and snapshots (the Map's own reads)",
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
-    "spot": 769.36,
-    "dex_b": -12.3148,
-    "dex_balance": 2.25,
-    "vex_b": 4.4687,
-    "charm_b_per_day": 3.9815,
-    "max_pain": 771.0,
+    "spot": 757.66,
+    "dex_b": -37.0863,
+    "dex_balance": 1.86,
+    "vex_b": 3.6546,
+    "charm_b_per_day": 2.1274,
+    "max_pain": 761.0,
     "max_pain_expiry": "2026-10-30",
-    "key_gamma_strike": 770.0,
+    "key_gamma_strike": 750.0,
     "anchor_strike": 750.0,
     "key_delta_strike": 750.0,
-    "g_coord": 0.4615,
-    "iv30": 0.133,
-    "iv60": 0.1414,
-    "slope_30_60": 0.0083,
-    "rr25": -0.0708,
-    "strangle15": 0.017,
-    "butterfly25": 0.0063,
+    "g_coord": 0.3041,
+    "iv30": 0.1561,
+    "iv60": 0.1591,
+    "slope_30_60": 0.0031,
+    "rr25": -0.0591,
+    "strangle15": 0.0134,
+    "butterfly25": 0.0026,
     "iv_rank": null,
     "iv_rank_n": 1,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.2594
+      "atm_iv": 0.1936
      },
      {
       "days": 3,
-      "atm_iv": 0.1225
+      "atm_iv": 0.1204
      },
      {
       "days": 4,
-      "atm_iv": 0.1256
+      "atm_iv": 0.1344
      },
      {
       "days": 5,
-      "atm_iv": 0.1359
+      "atm_iv": 0.1515
      },
      {
       "days": 6,
-      "atm_iv": 0.1361
+      "atm_iv": 0.1596
      },
      {
       "days": 7,
-      "atm_iv": 0.1407
+      "atm_iv": 0.1682
      },
      {
       "days": 10,
-      "atm_iv": 0.1278
+      "atm_iv": 0.1549
      },
      {
       "days": 11,
-      "atm_iv": 0.1335
+      "atm_iv": 0.1583
      },
      {
       "days": 12,
-      "atm_iv": 0.1319
+      "atm_iv": 0.1597
      },
      {
       "days": 14,
-      "atm_iv": 0.136
+      "atm_iv": 0.1639
      },
      {
       "days": 21,
-      "atm_iv": 0.1384
+      "atm_iv": 0.1628
      },
      {
       "days": 28,
-      "atm_iv": 0.1346
+      "atm_iv": 0.1589
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
@@ -1450,73 +1529,73 @@
     "source": "Alpaca options contracts and snapshots (the Map's own reads)",
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
-    "spot": 715.34,
-    "dex_b": -39.5291,
-    "dex_balance": 1.7,
-    "vex_b": 2.202,
-    "charm_b_per_day": 1.7032,
+    "spot": 685.39,
+    "dex_b": -85.0643,
+    "dex_balance": 1.11,
+    "vex_b": 0.9525,
+    "charm_b_per_day": -1.5723,
     "max_pain": 725.0,
     "max_pain_expiry": "2026-10-30",
-    "key_gamma_strike": 715.0,
-    "anchor_strike": 700.0,
-    "key_delta_strike": 700.0,
-    "g_coord": 0.4616,
-    "iv30": 0.2136,
-    "iv60": 0.2147,
-    "slope_30_60": 0.001,
-    "rr25": -0.1304,
-    "strangle15": 0.0191,
-    "butterfly25": 0.009,
+    "key_gamma_strike": 690.0,
+    "anchor_strike": 690.0,
+    "key_delta_strike": 690.0,
+    "g_coord": 0.2456,
+    "iv30": 0.2734,
+    "iv60": 0.2605,
+    "slope_30_60": -0.013,
+    "rr25": -0.092,
+    "strangle15": 0.0155,
+    "butterfly25": 0.004,
     "iv_rank": null,
     "iv_rank_n": 1,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.5674
+      "atm_iv": 0.4427
      },
      {
       "days": 3,
-      "atm_iv": 0.2449
+      "atm_iv": 0.259
      },
      {
       "days": 4,
-      "atm_iv": 0.2444
+      "atm_iv": 0.2903
      },
      {
       "days": 5,
-      "atm_iv": 0.2524
+      "atm_iv": 0.3204
      },
      {
       "days": 6,
-      "atm_iv": 0.2515
+      "atm_iv": 0.3278
      },
      {
       "days": 7,
-      "atm_iv": 0.2585
+      "atm_iv": 0.3354
      },
      {
       "days": 10,
-      "atm_iv": 0.2312
+      "atm_iv": 0.306
      },
      {
       "days": 11,
-      "atm_iv": 0.2339
+      "atm_iv": 0.3121
      },
      {
       "days": 12,
-      "atm_iv": 0.2355
+      "atm_iv": 0.3048
      },
      {
       "days": 14,
-      "atm_iv": 0.2326
+      "atm_iv": 0.3089
      },
      {
       "days": 21,
-      "atm_iv": 0.2277
+      "atm_iv": 0.2975
      },
      {
       "days": 28,
-      "atm_iv": 0.2184
+      "atm_iv": 0.2807
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
@@ -1527,84 +1606,84 @@
     "source": "Alpaca options contracts and snapshots (the Map's own reads)",
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
-    "spot": 284.01,
-    "dex_b": 2.4896,
-    "dex_balance": 2.66,
-    "vex_b": 0.8309,
-    "charm_b_per_day": 0.6156,
+    "spot": 277.52,
+    "dex_b": -11.7562,
+    "dex_balance": 1.78,
+    "vex_b": 0.6968,
+    "charm_b_per_day": 0.1564,
     "max_pain": 278.0,
     "max_pain_expiry": "2026-10-30",
-    "key_gamma_strike": 290.0,
+    "key_gamma_strike": 270.0,
     "anchor_strike": 270.0,
     "key_delta_strike": 290.0,
-    "g_coord": 0.4787,
-    "iv30": 0.1833,
-    "iv60": 0.1878,
-    "slope_30_60": 0.0044,
-    "rr25": -0.0323,
-    "strangle15": 0.0115,
-    "butterfly25": 0.0029,
+    "g_coord": 0.3208,
+    "iv30": 0.2137,
+    "iv60": 0.2082,
+    "slope_30_60": -0.0054,
+    "rr25": -0.059,
+    "strangle15": 0.0121,
+    "butterfly25": 0.0012,
     "iv_rank": null,
     "iv_rank_n": 1,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.3058
+      "atm_iv": 0.2944
      },
      {
       "days": 3,
-      "atm_iv": 0.1544
+      "atm_iv": 0.1663
      },
      {
       "days": 4,
-      "atm_iv": 0.1735
+      "atm_iv": 0.191
      },
      {
       "days": 5,
-      "atm_iv": 0.184
+      "atm_iv": 0.2182
      },
      {
       "days": 6,
-      "atm_iv": 0.1848
+      "atm_iv": 0.2258
      },
      {
       "days": 7,
-      "atm_iv": 0.196
+      "atm_iv": 0.2399
      },
      {
       "days": 10,
-      "atm_iv": 0.1823
+      "atm_iv": 0.2192
      },
      {
       "days": 11,
-      "atm_iv": 0.1819
+      "atm_iv": 0.2252
      },
      {
       "days": 12,
-      "atm_iv": 0.192
+      "atm_iv": 0.2256
      },
      {
       "days": 14,
-      "atm_iv": 0.1873
+      "atm_iv": 0.2306
      },
      {
       "days": 21,
-      "atm_iv": 0.1898
+      "atm_iv": 0.2238
      },
      {
       "days": 28,
-      "atm_iv": 0.181
+      "atm_iv": 0.2148
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
    }
   },
-  "inputs_hash": "d35f5ac5af646404cc9beb73781cd047ac7ed14781bcc5ff758a2dfce47e6e6b"
+  "inputs_hash": "5d1c19321f2e70214efe5d158b553d082ac221c98dca94ddc5aa16c1d1cc5b68"
  },
  "lanes": {
   "for_session": "2026-10-30",
   "as_of": "2026-10-30",
-  "built_at": "2026-10-30T07:16:58-04:00",
+  "built_at": "2026-10-30T16:58:00-04:00",
   "lanes": {
    "chain_archive": {
     "status": "ok",
@@ -1615,7 +1694,7 @@
     "days": 2,
     "first_date": "2026-10-29",
     "last_date": "2026-10-30",
-    "bytes": 315490
+    "bytes": 320497
    },
    "short_volume": {
     "status": "ok",
@@ -1623,8 +1702,8 @@
     "source": "FINRA FNQC daily short-sale volume files, kept per name",
     "delay": "a day's file posts after that day's close; the history is read for later sessions only",
     "source_family_id": "finra-fnqc",
-    "days": 683,
-    "first_date": "2024-02-09",
+    "days": 713,
+    "first_date": "2023-12-27",
     "last_date": "2026-10-29"
    },
    "sec_facts": {
@@ -1636,7 +1715,7 @@
     "names": 43
    }
   },
-  "inputs_hash": "bc24ae58abf763996cee8318c52017eaa01c06254c16992a345a9b88b2d0040c"
+  "inputs_hash": "cc14f272ecd8f5bdbaab6e8f45982d570e8a00449ef346139641bf2320585c5d"
  },
  "extras": {
   "ainvest": {
