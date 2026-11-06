@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-11-05T22:25:37.607767+00:00",
+ "generated_at_utc": "2026-11-06T13:52:11.404499+00:00",
  "as_of_session": "2026-11-05",
  "clocks": {
   "event_time": {
@@ -7,7 +7,7 @@
    "missing_reason": "the feed aggregates a session's cards; its event time is the session date in as_of_session, not a recorded instant"
   },
   "publication_time": {
-   "value": "2026-11-05T22:25:37.607767+00:00",
+   "value": "2026-11-06T13:52:11.404499+00:00",
    "missing_reason": null
   },
   "first_available_time": {
@@ -15,7 +15,7 @@
    "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
   },
   "ingestion_time": {
-   "value": "2026-11-05T22:25:37.607767+00:00",
+   "value": "2026-11-06T13:52:11.404499+00:00",
    "missing_reason": null
   },
   "decision_as_of": {
@@ -25,7 +25,7 @@
  },
  "source_artifacts": {
   "map_card.json": {
-   "sha256": "7049020c9771f1990d6b222d98cf86f779e0112eb7864922f38a8824b3d87c6f",
+   "sha256": "bfc31d3cde97235a24ed0e6f765fb8a05eac111f8ce4fadffbefad08a2d58381",
    "missing_reason": null
   },
   "tape_card.json": {
@@ -33,11 +33,11 @@
    "missing_reason": null
   },
   "board_card.json": {
-   "sha256": "f9c0dc780bd0d39d3a3ef1fdb520d962f5ccd7c58f9bd315cdfb2af5c92625c4",
+   "sha256": "55a5ba9bedfa647554669bbb41a27c8e85fc7dc17ea81ccba85420a4b1519838",
    "missing_reason": null
   },
   "scorecard.json": {
-   "sha256": "eeaa11fe3537685980fd7498c07fdc6841e3ea7b2c64b7409554c577409ab0c8",
+   "sha256": "830bd12dd78d24bdcc4a131a7a4824dcf09d094ffc5b82c0087debf31fe80150",
    "missing_reason": null
   },
   "studies_card.json": {
@@ -49,7 +49,7 @@
    "missing_reason": null
   },
   "board_full.json": {
-   "sha256": "5e9e633bfba21744d0f55f86a80c3d880d12dbed363b65c487596527225bd671",
+   "sha256": "a34c13f865a8236b674c971e5983ec6b2afd65a50eedfbce444496bd21840300",
    "missing_reason": null
   }
  },
@@ -60,11 +60,11 @@
  "map": [
   {
    "symbol": "SPY",
-   "spot": 730.52,
-   "net_gex_b": -14.92,
+   "spot": 734.32,
+   "net_gex_b": -11.09,
    "call_wall": 800.0,
    "put_wall": 740.0,
-   "flip": 766.0,
+   "flip": 765.7,
    "dix": 0.569,
    "dix_date": "2026-11-05",
    "dix_index": {
@@ -72,13 +72,13 @@
     "not_the_same_as": "per-ETF DIX ratio (the ETF's own FNQC short/total ratio) \u2014 a different construction; the two are never substituted for each other",
     "date": "2026-11-05",
     "state": "graded",
-    "value": 0.3390889587137863,
+    "value": 0.33902503146026325,
     "constituents_used": 500,
     "constituents_total": 503,
     "coverage": 0.9940357852882704,
     "weight_source": "session dollar volume (close x volume, Alpaca SIP) \u2014 OURS declared weight"
    },
-   "coverage": "7516/8810",
+   "coverage": "7464/8794",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -101,7 +101,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-05T22:25:37.607767+00:00",
+     "value": "2026-11-06T13:52:11.404499+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -109,7 +109,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-05T22:25:37.607767+00:00",
+     "value": "2026-11-06T13:52:11.404499+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -120,15 +120,15 @@
   },
   {
    "symbol": "QQQ",
-   "spot": 648.05,
-   "net_gex_b": -5.89,
+   "spot": 658.15,
+   "net_gex_b": -3.93,
    "call_wall": 700.0,
-   "put_wall": 650.0,
-   "flip": 699.1,
+   "put_wall": 680.0,
+   "flip": 689.5,
    "dix": 0.468,
    "dix_date": "2026-11-05",
    "dix_index": null,
-   "coverage": "6321/7361",
+   "coverage": "6256/7439",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -151,7 +151,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-05T22:25:37.607767+00:00",
+     "value": "2026-11-06T13:52:11.404499+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -159,7 +159,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-05T22:25:37.607767+00:00",
+     "value": "2026-11-06T13:52:11.404499+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -170,15 +170,15 @@
   },
   {
    "symbol": "IWM",
-   "spot": 271.01,
-   "net_gex_b": -4.2,
+   "spot": 272.03,
+   "net_gex_b": -3.36,
    "call_wall": 290.0,
    "put_wall": 270.0,
-   "flip": 294.3,
+   "flip": 295.3,
    "dix": 0.455,
    "dix_date": "2026-11-05",
    "dix_index": null,
-   "coverage": "2759/3264",
+   "coverage": "2681/3297",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -201,7 +201,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-05T22:25:37.607767+00:00",
+     "value": "2026-11-06T13:52:11.404499+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -209,7 +209,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-05T22:25:37.607767+00:00",
+     "value": "2026-11-06T13:52:11.404499+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -320,34 +320,34 @@
  "scorecard": {
   "board": {
    "published": {
-    "n_logged": 289,
+    "n_logged": 314,
     "horizons": {
-     "1d": "54% positive, average +0.25%, median +0.17% (n=191)",
-     "5d": "44% positive, average -0.66%, median -0.49% (n=88)",
+     "1d": "46% positive, average -0.40%, median -0.11% (n=239)",
+     "5d": "43% positive, average -1.03%, median -0.61% (n=110)",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
    },
    "qualified": {
-    "n_logged": 161,
+    "n_logged": 175,
     "horizons": {
-     "1d": "56% positive, average +0.32%, median +0.35% (n=108)",
-     "5d": "51% positive, average -0.13%, median +0.02% (n=47)",
+     "1d": "46% positive, average -0.64%, median -0.23% (n=141)",
+     "5d": "48% positive, average -0.86%, median -0.08% (n=63)",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
    }
   },
   "map": {
    "state": "graded",
-   "cards_graded": 24,
-   "call_wall_held_pct": 83,
-   "put_wall_held_pct": 92,
+   "cards_graded": 27,
+   "call_wall_held_pct": 85,
+   "put_wall_held_pct": 85,
    "flip_respected_pct": 100
   },
   "counters": {
-   "units_published": 1219,
-   "board_rows_logged": 289,
-   "map_cards_of_record": 30,
-   "units_graded": 215
+   "units_published": 1247,
+   "board_rows_logged": 314,
+   "map_cards_of_record": 33,
+   "units_graded": 266
   }
  },
  "studies": {
@@ -1909,11 +1909,11 @@
    "universe": 1838,
    "scored": 1833,
    "insufficient_data": 5,
-   "qualified": 107,
+   "qualified": 108,
    "market_context": {
     "marketRegime": 35.4,
     "marketBreadth": 31.3,
-    "indexAccDist": 4.8,
+    "indexAccDist": 4.6,
     "breakoutFollowThrough": 73.6,
     "riskAppetite": 0.0,
     "sectorRotation": 74.5,
@@ -1952,22 +1952,6 @@
     "stage": 2
    },
    {
-    "symbol": "VCEL",
-    "sector": "Health Care",
-    "close": 51.78,
-    "score": 72.2,
-    "confirming": 6,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 46.05,
-    "trigger_down": 44.91,
-    "support": 44.56,
-    "resistance": null,
-    "stage": 2
-   },
-   {
     "symbol": "BDX",
     "sector": "Health Care",
     "close": 213.55,
@@ -1980,6 +1964,22 @@
     "trigger_up": 210.27,
     "trigger_down": 208.11,
     "support": 203.13,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "VCEL",
+    "sector": "Health Care",
+    "close": 51.78,
+    "score": 72.1,
+    "confirming": 6,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 46.05,
+    "trigger_down": 44.91,
+    "support": 44.56,
     "resistance": null,
     "stage": 2
    },
@@ -2010,10 +2010,26 @@
     "stage": 2
    },
    {
+    "symbol": "WTRG",
+    "sector": "Utilities",
+    "close": 46.05,
+    "score": 70.8,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 45.37,
+    "trigger_down": 44.89,
+    "support": 42.12,
+    "resistance": null,
+    "stage": 2
+   },
+   {
     "symbol": "PSA",
     "sector": "Real Estate",
     "close": 340.5,
-    "score": 70.8,
+    "score": 70.7,
     "confirming": 6,
     "triggers": [],
     "trigger_up": 344.48,
@@ -2039,6 +2055,19 @@
     "stage": 2
    },
    {
+    "symbol": "XHR",
+    "sector": "Real Estate",
+    "close": 21.21,
+    "score": 70.6,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 22.03,
+    "trigger_down": 21.77,
+    "support": 20.89,
+    "resistance": 22.06,
+    "stage": 2
+   },
+   {
     "symbol": "BLFS",
     "sector": "Health Care",
     "close": 38.61,
@@ -2051,22 +2080,6 @@
     "trigger_down": 37.03,
     "support": 36.7,
     "resistance": 39.76,
-    "stage": 2
-   },
-   {
-    "symbol": "WTRG",
-    "sector": "Utilities",
-    "close": 46.05,
-    "score": 70.5,
-    "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 45.37,
-    "trigger_down": 44.89,
-    "support": 42.12,
-    "resistance": null,
     "stage": 2
    },
    {
@@ -2100,23 +2113,10 @@
     "stage": 2
    },
    {
-    "symbol": "XHR",
-    "sector": "Real Estate",
-    "close": 21.21,
-    "score": 70.4,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 22.03,
-    "trigger_down": 21.77,
-    "support": 20.89,
-    "resistance": 22.06,
-    "stage": 2
-   },
-   {
     "symbol": "LTH",
     "sector": "Consumer Discretionary",
     "close": 47.75,
-    "score": 70.3,
+    "score": 70.2,
     "confirming": 5,
     "triggers": [],
     "trigger_up": 47.81,
