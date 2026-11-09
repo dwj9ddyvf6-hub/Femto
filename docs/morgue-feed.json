@@ -1,13 +1,13 @@
 {
- "generated_at_utc": "2026-11-09T13:52:07.020555+00:00",
- "as_of_session": "2026-11-06",
+ "generated_at_utc": "2026-11-09T22:22:06.170028+00:00",
+ "as_of_session": "2026-11-09",
  "clocks": {
   "event_time": {
    "value": null,
    "missing_reason": "the feed aggregates a session's cards; its event time is the session date in as_of_session, not a recorded instant"
   },
   "publication_time": {
-   "value": "2026-11-09T13:52:07.020555+00:00",
+   "value": "2026-11-09T22:22:06.170028+00:00",
    "missing_reason": null
   },
   "first_available_time": {
@@ -15,7 +15,7 @@
    "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
   },
   "ingestion_time": {
-   "value": "2026-11-09T13:52:07.020555+00:00",
+   "value": "2026-11-09T22:22:06.170028+00:00",
    "missing_reason": null
   },
   "decision_as_of": {
@@ -25,31 +25,31 @@
  },
  "source_artifacts": {
   "map_card.json": {
-   "sha256": "3b693e849cb5cf18776fa9d19384ee00b4a59d4eb27f9fbed8cafc4d9ef179fb",
+   "sha256": "19118523ca415b06f268cd11fcbacae0b6464deaba6bf53cf9d2018a4f4fb404",
    "missing_reason": null
   },
   "tape_card.json": {
-   "sha256": "d245580839beb4e1bda89791f1c0f6b0a5eae7325e2f9cbb1330dc058bb45d44",
+   "sha256": "6e87e7f46e418b8a5f2f39b7eb1d5619e978ffb2261c74e6388e955271b41d90",
    "missing_reason": null
   },
   "board_card.json": {
-   "sha256": "91deefd23e6341c923e66b6d28d1c2b53f9c916cacf46a354399b87b3f92dbab",
+   "sha256": "d944e246cb7478e62d2f993c0448505d890777d28401f8850793cf18cfc5b621",
    "missing_reason": null
   },
   "scorecard.json": {
-   "sha256": "9f7ab075bb9820c2bebf82b049af2969d97aa76604fbb1b16497e962672b969f",
+   "sha256": "5edf00bc16781779d805163f9c8dfe971be5d25c3560b4242f448a4572bdc3a2",
    "missing_reason": null
   },
   "studies_card.json": {
-   "sha256": "a8404026c573b0a7f4006883d006b97e11ae78729bf77c765a1f8823ffd8e707",
+   "sha256": "e4083366585901e222f511bfd2f1aa63e80f8859f9fdb13335e3e3feb425c8d9",
    "missing_reason": null
   },
   "ext_card.json": {
-   "sha256": "85bb70f505ba0f7063ff17e3a885308b39e4d390aa108affcf21b97eb6e116ea",
+   "sha256": "89dd78b59916b13c4a3995058231231d1956398691a836f36cbb552035f5ebff",
    "missing_reason": null
   },
   "board_full.json": {
-   "sha256": "e563a361ca9b624ebf0de1a6fd36e4a5981eeacf1a542360e0da2cc2f6752154",
+   "sha256": "4a1f0f1ee71fe45bcd06e1b97765b2bccce5d75b23ed7aa6244a5ffed5cf15ae",
    "missing_reason": null
   }
  },
@@ -60,25 +60,25 @@
  "map": [
   {
    "symbol": "SPY",
-   "spot": 741.75,
-   "net_gex_b": -7.21,
+   "spot": 752.72,
+   "net_gex_b": -6.53,
    "call_wall": 750.0,
-   "put_wall": 740.0,
-   "flip": 758.2,
-   "dix": 0.284,
-   "dix_date": "2026-11-06",
+   "put_wall": 750.0,
+   "flip": 762.6,
+   "dix": null,
+   "dix_date": null,
    "dix_index": {
     "construction": "constituent-weighted DIX (vendor definition A104: dollar-weighted average of constituent dark-pool short-sale ratios)",
     "not_the_same_as": "per-ETF DIX ratio (the ETF's own FNQC short/total ratio) \u2014 a different construction; the two are never substituted for each other",
-    "date": "2026-11-06",
+    "date": "2026-11-09",
     "state": "graded",
-    "value": 0.41072159882460346,
-    "constituents_used": 500,
+    "value": 0.4602710811624763,
+    "constituents_used": 499,
     "constituents_total": 503,
-    "coverage": 0.9940357852882704,
+    "coverage": 0.9920477137176938,
     "weight_source": "session dollar volume (close x volume, Alpaca SIP) \u2014 OURS declared weight"
    },
-   "coverage": "6910/8896",
+   "coverage": "7606/8896",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -101,7 +101,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-09T13:52:07.020555+00:00",
+     "value": "2026-11-09T22:22:06.170028+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -109,26 +109,27 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-09T13:52:07.020555+00:00",
+     "value": "2026-11-09T22:22:06.170028+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
      "value": null,
      "missing_reason": "the feed's as-of is a session date (as_of_session), not a timezone-qualified decision instant"
     }
-   }
+   },
+   "dix_reason": "no FINRA FNQC short-sale ratio for this symbol on the latest file date, so there is no DIX ratio to publish"
   },
   {
    "symbol": "QQQ",
-   "spot": 663.1,
-   "net_gex_b": -3.44,
+   "spot": 679.76,
+   "net_gex_b": -3.37,
    "call_wall": 700.0,
-   "put_wall": 650.0,
-   "flip": 685.3,
-   "dix": 0.383,
-   "dix_date": "2026-11-06",
+   "put_wall": 680.0,
+   "flip": 696.6,
+   "dix": null,
+   "dix_date": null,
    "dix_index": null,
-   "coverage": "6376/7561",
+   "coverage": "6606/7561",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -151,7 +152,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-09T13:52:07.020555+00:00",
+     "value": "2026-11-09T22:22:06.170028+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -159,26 +160,27 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-09T13:52:07.020555+00:00",
+     "value": "2026-11-09T22:22:06.170028+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
      "value": null,
      "missing_reason": "the feed's as-of is a session date (as_of_session), not a timezone-qualified decision instant"
     }
-   }
+   },
+   "dix_reason": "no FINRA FNQC short-sale ratio for this symbol on the latest file date, so there is no DIX ratio to publish"
   },
   {
    "symbol": "IWM",
-   "spot": 277.22,
-   "net_gex_b": -2.04,
+   "spot": 282.3,
+   "net_gex_b": -1.86,
    "call_wall": 290.0,
    "put_wall": 270.0,
-   "flip": 291.3,
-   "dix": 0.192,
-   "dix_date": "2026-11-06",
+   "flip": 289.4,
+   "dix": null,
+   "dix_date": null,
    "dix_index": null,
-   "coverage": "2417/3331",
+   "coverage": "2909/3331",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -201,7 +203,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-09T13:52:07.020555+00:00",
+     "value": "2026-11-09T22:22:06.170028+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -209,107 +211,108 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-09T13:52:07.020555+00:00",
+     "value": "2026-11-09T22:22:06.170028+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
      "value": null,
      "missing_reason": "the feed's as-of is a session date (as_of_session), not a timezone-qualified decision instant"
     }
-   }
+   },
+   "dix_reason": "no FINRA FNQC short-sale ratio for this symbol on the latest file date, so there is no DIX ratio to publish"
   }
  ],
  "tape": [
   {
    "symbol": "SPY",
-   "prints": 533075,
-   "total_premium_m": 1716.5,
-   "net_premium_m": 675.9,
+   "prints": 545111,
+   "total_premium_m": 1214.7,
+   "net_premium_m": -492.6,
    "golden_sweeps": 0,
-   "high_heat": 616,
-   "mean_heat": 4.2,
+   "high_heat": 316,
+   "mean_heat": 3.98,
    "top_alerts": [
     {
      "contract": "SPY261120P00725000",
-     "premium": 138585072.0,
-     "heat": 17.0,
-     "sentiment": "bullish",
-     "golden": false
-    },
-    {
-     "contract": "SPY261120P00740000",
-     "premium": 78302798.0,
-     "heat": 15.0,
-     "sentiment": "bullish",
+     "premium": 26688810.0,
+     "heat": 17.5,
+     "sentiment": "bearish",
      "golden": false
     },
     {
      "contract": "SPY261120P00710000",
-     "premium": 50953874.0,
-     "heat": 19.5,
-     "sentiment": "bullish",
+     "premium": 16020432.0,
+     "heat": 18.5,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "SPY261218C00775000",
+     "premium": 11880000.0,
+     "heat": 15.5,
+     "sentiment": "bearish",
      "golden": false
     }
    ]
   },
   {
    "symbol": "QQQ",
-   "prints": 462675,
-   "total_premium_m": 2120.4,
-   "net_premium_m": 635.7,
+   "prints": 434250,
+   "total_premium_m": 1869.8,
+   "net_premium_m": -695.0,
    "golden_sweeps": 0,
-   "high_heat": 735,
-   "mean_heat": 4.53,
+   "high_heat": 451,
+   "mean_heat": 4.47,
    "top_alerts": [
     {
-     "contract": "QQQ261120C00640000",
-     "premium": 14760000.0,
-     "heat": 16.0,
-     "sentiment": "bullish",
-     "golden": false
-    },
-    {
-     "contract": "QQQ261127C00665000",
-     "premium": 12359700.0,
-     "heat": 16.0,
+     "contract": "QQQ261130P00675000",
+     "premium": 21280000.0,
+     "heat": 15.0,
      "sentiment": "bearish",
      "golden": false
     },
     {
-     "contract": "QQQ261127P00640000",
-     "premium": 9720306.0,
-     "heat": 17.5,
+     "contract": "QQQ261218C00705000",
+     "premium": 10820000.0,
+     "heat": 15.5,
      "sentiment": "bullish",
+     "golden": false
+    },
+    {
+     "contract": "QQQ261218C00715000",
+     "premium": 6870000.0,
+     "heat": 15.5,
+     "sentiment": "bearish",
      "golden": false
     }
    ]
   },
   {
    "symbol": "IWM",
-   "prints": 178691,
-   "total_premium_m": 258.5,
-   "net_premium_m": -30.8,
+   "prints": 158855,
+   "total_premium_m": 203.9,
+   "net_premium_m": -67.8,
    "golden_sweeps": 0,
-   "high_heat": 100,
-   "mean_heat": 4.02,
+   "high_heat": 98,
+   "mean_heat": 4.0,
    "top_alerts": [
     {
-     "contract": "IWM261120P00277000",
-     "premium": 20178730.0,
-     "heat": 15.0,
-     "sentiment": "bearish",
-     "golden": false
-    },
-    {
-     "contract": "IWM261127P00267000",
-     "premium": 10542554.0,
+     "contract": "IWM261204P00275000",
+     "premium": 8111727.0,
      "heat": 18.5,
      "sentiment": "bullish",
      "golden": false
     },
     {
-     "contract": "IWM261120P00267000",
-     "premium": 8325490.0,
+     "contract": "IWM261120C00285000",
+     "premium": 2375000.0,
+     "heat": 15.0,
+     "sentiment": "bearish",
+     "golden": false
+    },
+    {
+     "contract": "IWM261120P00266000",
+     "premium": 2141475.0,
      "heat": 16.5,
      "sentiment": "bearish",
      "golden": false
@@ -320,7 +323,7 @@
  "scorecard": {
   "board": {
    "published": {
-    "n_logged": 364,
+    "n_logged": 389,
     "horizons": {
      "1d": "43% positive, average -0.63%, median -0.33% (n=286)",
      "5d": "43% positive, average -1.20%, median -0.49% (n=134)",
@@ -328,7 +331,7 @@
     }
    },
    "qualified": {
-    "n_logged": 207,
+    "n_logged": 224,
     "horizons": {
      "1d": "46% positive, average -0.50%, median -0.24% (n=167)",
      "5d": "47% positive, average -0.87%, median -0.32% (n=76)",
@@ -344,8 +347,8 @@
    "flip_respected_pct": 100
   },
   "counters": {
-   "units_published": 1375,
-   "board_rows_logged": 364,
+   "units_published": 1475,
+   "board_rows_logged": 389,
    "map_cards_of_record": 36,
    "units_graded": 316
   }
@@ -354,20 +357,20 @@
   "gap_fill": {
    "state": "graded",
    "n": 186,
-   "fills": 79,
-   "frequency": 0.42473118279569894,
+   "fills": 78,
+   "frequency": 0.41935483870967744,
    "fill_pct": 1.0,
    "partitions": {
     "by_band": {
      "1-2%": {
-      "n": 21,
+      "n": 22,
       "fills": 1,
-      "frequency": 0.047619047619047616
+      "frequency": 0.045454545454545456
      },
      "<1%": {
-      "n": 164,
-      "fills": 78,
-      "frequency": 0.47560975609756095
+      "n": 163,
+      "fills": 77,
+      "frequency": 0.4723926380368098
      },
      ">=2%": {
       "n": 1,
@@ -377,9 +380,9 @@
     },
     "by_weekday": {
      "Fri": {
-      "n": 36,
-      "fills": 17,
-      "frequency": 0.4722222222222222
+      "n": 39,
+      "fills": 18,
+      "frequency": 0.46153846153846156
      },
      "Mon": {
       "n": 33,
@@ -392,9 +395,9 @@
       "frequency": 0.358974358974359
      },
      "Tue": {
-      "n": 39,
-      "fills": 19,
-      "frequency": 0.48717948717948717
+      "n": 36,
+      "fills": 17,
+      "frequency": 0.4722222222222222
      },
      "Wed": {
       "n": 39,
@@ -409,16 +412,16 @@
     "state": "graded",
     "n": 186,
     "window_min": 5,
-    "break_one_side": 66,
-    "break_both": 120,
+    "break_one_side": 65,
+    "break_both": 121,
     "no_break": 0,
-    "break_one_side_rate": 0.3548387096774194,
-    "break_both_rate": 0.6451612903225806,
+    "break_one_side_rate": 0.34946236559139787,
+    "break_both_rate": 0.6505376344086021,
     "no_break_rate": 0.0,
     "extension_rates": {
      "0.5": 0.9731182795698925,
-     "1.0": 0.8655913978494624,
-     "1.5": 0.7096774193548387
+     "1.0": 0.8709677419354839,
+     "1.5": 0.7150537634408602
     },
     "extension_n": 186
    },
@@ -433,9 +436,9 @@
     "break_both_rate": 0.5268817204301075,
     "no_break_rate": 0.0,
     "extension_rates": {
-     "0.5": 0.8817204301075269,
-     "1.0": 0.6344086021505376,
-     "1.5": 0.42473118279569894
+     "0.5": 0.8763440860215054,
+     "1.0": 0.6290322580645161,
+     "1.5": 0.41935483870967744
     },
     "extension_n": 186
    },
@@ -444,34 +447,34 @@
     "n": 186,
     "window_min": 30,
     "break_one_side": 115,
-    "break_both": 70,
-    "no_break": 1,
+    "break_both": 69,
+    "no_break": 2,
     "break_one_side_rate": 0.6182795698924731,
-    "break_both_rate": 0.3763440860215054,
-    "no_break_rate": 0.005376344086021506,
+    "break_both_rate": 0.3709677419354839,
+    "no_break_rate": 0.010752688172043012,
     "extension_rates": {
-     "0.5": 0.7675675675675676,
-     "1.0": 0.4648648648648649,
-     "1.5": 0.2864864864864865
+     "0.5": 0.7663043478260869,
+     "1.0": 0.46195652173913043,
+     "1.5": 0.2826086956521739
     },
-    "extension_n": 185
+    "extension_n": 184
    },
    "60": {
     "state": "graded",
     "n": 186,
     "window_min": 60,
-    "break_one_side": 141,
+    "break_one_side": 140,
     "break_both": 35,
-    "no_break": 10,
-    "break_one_side_rate": 0.7580645161290323,
+    "no_break": 11,
+    "break_one_side_rate": 0.7526881720430108,
     "break_both_rate": 0.1881720430107527,
-    "no_break_rate": 0.053763440860215055,
+    "no_break_rate": 0.05913978494623656,
     "extension_rates": {
-     "0.5": 0.5340909090909091,
-     "1.0": 0.2215909090909091,
-     "1.5": 0.10795454545454546
+     "0.5": 0.5257142857142857,
+     "1.0": 0.21714285714285714,
+     "1.5": 0.10285714285714286
     },
-    "extension_n": 176
+    "extension_n": 175
    }
   },
   "earnings_dist": {
@@ -492,16 +495,16 @@
   "state_vectors": {
    "state": "insufficient_history",
    "p_nn": null,
-   "history_sessions_accrued": 6,
+   "history_sessions_accrued": 7,
    "reason": "P_NN needs >=126 accrued state sessions with matured outcomes; none are imputed",
    "latest": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "vector": [
-     -0.05857775,
-     0.01220334,
+     -0.05121645,
+     0.01226217,
      null,
-     0.44990454,
-     0.01775173
+     0.48537581,
+     0.01615168
     ]
    },
    "source": "SPY daily closes (Alpaca SIP), the FINRA daily off-exchange file via the short-volume store, the morgue chain archive, and the VIX daily close (Yahoo)"
@@ -509,7 +512,7 @@
  },
  "squeeze": {
   "state": "no_data",
-  "as_of": "2026-11-06",
+  "as_of": "2026-11-09",
   "formula_version": "squeeze_v6",
   "lineage": {
    "method_ref": "Tapeboard Squeeze Score v6, published in full (squeeze.py)",
@@ -531,96 +534,96 @@
  },
  "wall_validation": {
   "state": "graded",
-  "cards_of_record": 33,
-  "cards_graded": 27,
+  "cards_of_record": 36,
+  "cards_graded": 30,
   "windows": {
    "20": {
     "state": "graded",
     "n": 20,
-    "call_wall_held_rate": 0.9,
-    "put_wall_held_rate": 0.8,
-    "touched_and_held": 4,
-    "touched_and_held_rate": 0.2,
-    "blown_through": 6,
-    "blown_through_rate": 0.3,
+    "call_wall_held_rate": 1.0,
+    "put_wall_held_rate": 0.75,
+    "touched_and_held": 5,
+    "touched_and_held_rate": 0.25,
+    "blown_through": 5,
+    "blown_through_rate": 0.25,
     "flip_respected_rate": 1.0
    },
    "60": {
     "state": "graded",
-    "n": 27,
-    "call_wall_held_rate": 0.8518518518518519,
-    "put_wall_held_rate": 0.8518518518518519,
-    "touched_and_held": 4,
-    "touched_and_held_rate": 0.14814814814814814,
-    "blown_through": 8,
-    "blown_through_rate": 0.2962962962962963,
+    "n": 30,
+    "call_wall_held_rate": 0.8666666666666667,
+    "put_wall_held_rate": 0.8333333333333334,
+    "touched_and_held": 5,
+    "touched_and_held_rate": 0.16666666666666666,
+    "blown_through": 9,
+    "blown_through_rate": 0.3,
     "flip_respected_rate": 1.0
    },
    "all": {
     "state": "graded",
-    "n": 27,
-    "call_wall_held_rate": 0.8518518518518519,
-    "put_wall_held_rate": 0.8518518518518519,
-    "touched_and_held": 4,
-    "touched_and_held_rate": 0.14814814814814814,
-    "blown_through": 8,
-    "blown_through_rate": 0.2962962962962963,
+    "n": 30,
+    "call_wall_held_rate": 0.8666666666666667,
+    "put_wall_held_rate": 0.8333333333333334,
+    "touched_and_held": 5,
+    "touched_and_held_rate": 0.16666666666666666,
+    "blown_through": 9,
+    "blown_through_rate": 0.3,
     "flip_respected_rate": 1.0
    }
   },
   "by_underlying": {
    "IWM": {
     "state": "graded",
-    "n": 9,
-    "call_wall_held_rate": 0.6666666666666666,
+    "n": 10,
+    "call_wall_held_rate": 0.7,
     "put_wall_held_rate": 1.0,
-    "touched_and_held": 1,
-    "touched_and_held_rate": 0.1111111111111111,
+    "touched_and_held": 2,
+    "touched_and_held_rate": 0.2,
     "blown_through": 3,
-    "blown_through_rate": 0.3333333333333333,
+    "blown_through_rate": 0.3,
     "flip_respected_rate": 1.0
    },
    "QQQ": {
     "state": "graded",
-    "n": 9,
-    "call_wall_held_rate": 0.8888888888888888,
-    "put_wall_held_rate": 0.6666666666666666,
+    "n": 10,
+    "call_wall_held_rate": 0.9,
+    "put_wall_held_rate": 0.7,
     "touched_and_held": 2,
-    "touched_and_held_rate": 0.2222222222222222,
+    "touched_and_held_rate": 0.2,
     "blown_through": 4,
-    "blown_through_rate": 0.4444444444444444,
+    "blown_through_rate": 0.4,
     "flip_respected_rate": 1.0
    },
    "SPY": {
     "state": "graded",
-    "n": 9,
+    "n": 10,
     "call_wall_held_rate": 1.0,
-    "put_wall_held_rate": 0.8888888888888888,
+    "put_wall_held_rate": 0.8,
     "touched_and_held": 1,
-    "touched_and_held_rate": 0.1111111111111111,
-    "blown_through": 1,
-    "blown_through_rate": 0.1111111111111111,
+    "touched_and_held_rate": 0.1,
+    "blown_through": 2,
+    "blown_through_rate": 0.2,
     "flip_respected_rate": 1.0
    }
   },
   "by_regime": {
    "negative": {
     "state": "graded",
-    "n": 27,
-    "call_wall_held_rate": 0.8518518518518519,
-    "put_wall_held_rate": 0.8518518518518519,
-    "touched_and_held": 4,
-    "touched_and_held_rate": 0.14814814814814814,
-    "blown_through": 8,
-    "blown_through_rate": 0.2962962962962963,
+    "n": 30,
+    "call_wall_held_rate": 0.8666666666666667,
+    "put_wall_held_rate": 0.8333333333333334,
+    "touched_and_held": 5,
+    "touched_and_held_rate": 0.16666666666666666,
+    "blown_through": 9,
+    "blown_through_rate": 0.3,
     "flip_respected_rate": 1.0
    }
   }
  },
  "flow": {
-  "for_session": "2026-11-08",
-  "as_of": "2026-11-08",
-  "built_at": "2026-11-08T19:17:10-05:00",
+  "for_session": "2026-11-09",
+  "as_of": "2026-11-09",
+  "built_at": "2026-11-09T16:56:00-05:00",
   "labels": [
    "net drift: each five-minute bucket stands alone (net single-leg premium and volume by direction), never a running total",
    "repeat sweeps: the same contract swept three or more times inside ten minutes; the tier names are by the run's own span",
@@ -632,74 +635,94 @@
    "flow_gex": {
     "SPY": {
      "status": "ok",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": -13.862,
-     "oi_net_gex_b": -15.285,
-     "call_wall": 740.0,
-     "put_wall": 735.0,
-     "contracts_used": 3972,
+     "net_gex_b": 20.494,
+     "oi_net_gex_b": -6.83,
+     "call_wall": 753.0,
+     "put_wall": 752.0,
+     "contracts_used": 4349,
      "label": "flow-GEX: each contract weighted by the latest daily volume in the snapshot (the previous session's before the open), beside the open-interest form; same signs"
     },
     "QQQ": {
      "status": "ok",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": -24.185,
-     "oi_net_gex_b": -6.029,
-     "call_wall": 660.0,
-     "put_wall": 657.0,
-     "contracts_used": 3289,
+     "net_gex_b": 13.801,
+     "oi_net_gex_b": -2.665,
+     "call_wall": 678.0,
+     "put_wall": 675.0,
+     "contracts_used": 3877,
      "label": "flow-GEX: each contract weighted by the latest daily volume in the snapshot (the previous session's before the open), beside the open-interest form; same signs"
     },
     "IWM": {
      "status": "ok",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": 0.697,
-     "oi_net_gex_b": -3.842,
-     "call_wall": 274.0,
-     "put_wall": 273.0,
-     "contracts_used": 1484,
+     "net_gex_b": 2.774,
+     "oi_net_gex_b": -0.989,
+     "call_wall": 283.0,
+     "put_wall": 282.0,
+     "contracts_used": 1602,
      "label": "flow-GEX: each contract weighted by the latest daily volume in the snapshot (the previous session's before the open), beside the open-interest form; same signs"
     }
    },
    "oi_change": {
     "SPY": {
      "status": "ok",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
-     "prev_date": "2026-11-05",
+     "prev_date": "2026-11-06",
      "rows": [
       {
-       "contract": "SPY261113P00745000",
+       "contract": "SPY261127P00700000",
        "kind": "put",
-       "strike": 745.0,
-       "expiry": "2026-11-13",
-       "oi": 32080.0,
-       "oi_prev": 72847.0,
-       "change": -40767.0,
+       "strike": 700.0,
+       "expiry": "2026-11-27",
+       "oi": 37871.0,
+       "oi_prev": 4336.0,
+       "change": 33535.0,
        "new": false
       },
       {
-       "contract": "SPY261113P00730000",
+       "contract": "SPY261109P00710000",
+       "kind": "put",
+       "strike": 710.0,
+       "expiry": "2026-11-09",
+       "oi": 34557.0,
+       "oi_prev": 1060.0,
+       "change": 33497.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261109P00725000",
+       "kind": "put",
+       "strike": 725.0,
+       "expiry": "2026-11-09",
+       "oi": 35819.0,
+       "oi_prev": 2354.0,
+       "change": 33465.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261127P00730000",
        "kind": "put",
        "strike": 730.0,
-       "expiry": "2026-11-13",
-       "oi": 27576.0,
-       "oi_prev": 64095.0,
-       "change": -36519.0,
+       "expiry": "2026-11-27",
+       "oi": 36507.0,
+       "oi_prev": 3359.0,
+       "change": 33148.0,
        "new": false
       },
       {
@@ -707,219 +730,179 @@
        "kind": "put",
        "strike": 728.0,
        "expiry": "2026-11-20",
-       "oi": 51015.0,
-       "oi_prev": 29586.0,
-       "change": 21429.0,
+       "oi": 32746.0,
+       "oi_prev": 51015.0,
+       "change": -18269.0,
        "new": false
       },
       {
-       "contract": "SPY261106P00760000",
+       "contract": "SPY261120P00740000",
        "kind": "put",
-       "strike": 760.0,
-       "expiry": "2026-11-06",
-       "oi": 23182.0,
-       "oi_prev": 11725.0,
-       "change": 11457.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261109P00680000",
-       "kind": "put",
-       "strike": 680.0,
-       "expiry": "2026-11-09",
-       "oi": 11507.0,
-       "oi_prev": 294.0,
-       "change": 11213.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261120P00725000",
-       "kind": "put",
-       "strike": 725.0,
+       "strike": 740.0,
        "expiry": "2026-11-20",
-       "oi": 115440.0,
-       "oi_prev": 126213.0,
-       "change": -10773.0,
+       "oi": 113612.0,
+       "oi_prev": 130765.0,
+       "change": -17153.0,
        "new": false
       },
       {
-       "contract": "SPY261218P00730000",
+       "contract": "SPY261120P00702000",
        "kind": "put",
-       "strike": 730.0,
-       "expiry": "2026-12-18",
-       "oi": 43724.0,
-       "oi_prev": 33151.0,
-       "change": 10573.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261218C00785000",
-       "kind": "call",
-       "strike": 785.0,
-       "expiry": "2026-12-18",
-       "oi": 46025.0,
-       "oi_prev": 36354.0,
-       "change": 9671.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261120P00718000",
-       "kind": "put",
-       "strike": 718.0,
+       "strike": 702.0,
        "expiry": "2026-11-20",
-       "oi": 35834.0,
-       "oi_prev": 44244.0,
-       "change": -8410.0,
+       "oi": 14970.0,
+       "oi_prev": 2430.0,
+       "change": 12540.0,
        "new": false
       },
       {
-       "contract": "SPY261106P00767000",
-       "kind": "put",
-       "strike": 767.0,
-       "expiry": "2026-11-06",
-       "oi": 9343.0,
-       "oi_prev": 1033.0,
-       "change": 8310.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261218P00750000",
+       "contract": "SPY261120P00750000",
        "kind": "put",
        "strike": 750.0,
-       "expiry": "2026-12-18",
-       "oi": 36579.0,
-       "oi_prev": 29176.0,
-       "change": 7403.0,
+       "expiry": "2026-11-20",
+       "oi": 64112.0,
+       "oi_prev": 76587.0,
+       "change": -12475.0,
        "new": false
       },
       {
-       "contract": "SPY261204P00590000",
-       "kind": "put",
-       "strike": 590.0,
-       "expiry": "2026-12-04",
-       "oi": 7328.0,
-       "oi_prev": 45.0,
-       "change": 7283.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261106P00765000",
-       "kind": "put",
-       "strike": 765.0,
-       "expiry": "2026-11-06",
-       "oi": 12575.0,
-       "oi_prev": 6355.0,
-       "change": 6220.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261109P00755000",
-       "kind": "put",
-       "strike": 755.0,
-       "expiry": "2026-11-09",
-       "oi": 9888.0,
-       "oi_prev": 3818.0,
-       "change": 6070.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261204P00645000",
-       "kind": "put",
-       "strike": 645.0,
-       "expiry": "2026-12-04",
-       "oi": 6014.0,
-       "oi_prev": 37.0,
-       "change": 5977.0,
-       "new": false
-      },
-      {
-       "contract": "SPY261106C00770000",
+       "contract": "SPY261110C00740000",
        "kind": "call",
-       "strike": 770.0,
-       "expiry": "2026-11-06",
-       "oi": 11796.0,
-       "oi_prev": 17674.0,
-       "change": -5878.0,
+       "strike": 740.0,
+       "expiry": "2026-11-10",
+       "oi": 11269.0,
+       "oi_prev": 43.0,
+       "change": 11226.0,
        "new": false
       },
       {
-       "contract": "SPY261204P00695000",
+       "contract": "SPY261231P00690000",
+       "kind": "put",
+       "strike": 690.0,
+       "expiry": "2026-12-31",
+       "oi": 14873.0,
+       "oi_prev": 3746.0,
+       "change": 11127.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261120P00730000",
+       "kind": "put",
+       "strike": 730.0,
+       "expiry": "2026-11-20",
+       "oi": 58324.0,
+       "oi_prev": 69112.0,
+       "change": -10788.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261231P00700000",
+       "kind": "put",
+       "strike": 700.0,
+       "expiry": "2026-12-31",
+       "oi": 34344.0,
+       "oi_prev": 23883.0,
+       "change": 10461.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261120P00775000",
+       "kind": "put",
+       "strike": 775.0,
+       "expiry": "2026-11-20",
+       "oi": 3718.0,
+       "oi_prev": 14162.0,
+       "change": -10444.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261113P00690000",
+       "kind": "put",
+       "strike": 690.0,
+       "expiry": "2026-11-13",
+       "oi": 13035.0,
+       "oi_prev": 2619.0,
+       "change": 10416.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261113P00695000",
        "kind": "put",
        "strike": 695.0,
-       "expiry": "2026-12-04",
-       "oi": 6895.0,
-       "oi_prev": 1022.0,
-       "change": 5873.0,
+       "expiry": "2026-11-13",
+       "oi": 15280.0,
+       "oi_prev": 5041.0,
+       "change": 10239.0,
        "new": false
       },
       {
-       "contract": "SPY261110P00764000",
+       "contract": "SPY261110P00734000",
        "kind": "put",
-       "strike": 764.0,
+       "strike": 734.0,
        "expiry": "2026-11-10",
-       "oi": 5804.0,
-       "oi_prev": 7.0,
-       "change": 5797.0,
+       "oi": 9911.0,
+       "oi_prev": 210.0,
+       "change": 9701.0,
        "new": false
       },
       {
-       "contract": "SPY261231C00788000",
-       "kind": "call",
-       "strike": 788.0,
+       "contract": "SPY261218P00660000",
+       "kind": "put",
+       "strike": 660.0,
+       "expiry": "2026-12-18",
+       "oi": 39216.0,
+       "oi_prev": 29582.0,
+       "change": 9634.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261120P00780000",
+       "kind": "put",
+       "strike": 780.0,
+       "expiry": "2026-11-20",
+       "oi": 1018.0,
+       "oi_prev": 10640.0,
+       "change": -9622.0,
+       "new": false
+      },
+      {
+       "contract": "SPY261231P00730000",
+       "kind": "put",
+       "strike": 730.0,
        "expiry": "2026-12-31",
-       "oi": 6407.0,
-       "oi_prev": 613.0,
-       "change": 5794.0,
+       "oi": 26145.0,
+       "oi_prev": 16624.0,
+       "change": 9521.0,
        "new": false
       },
       {
-       "contract": "SPY261110P00772000",
+       "contract": "SPY261109P00675000",
        "kind": "put",
-       "strike": 772.0,
-       "expiry": "2026-11-10",
-       "oi": 5638.0,
-       "oi_prev": 1.0,
-       "change": 5637.0,
+       "strike": 675.0,
+       "expiry": "2026-11-09",
+       "oi": 8790.0,
+       "oi_prev": 78.0,
+       "change": 8712.0,
        "new": false
       }
      ]
     },
     "QQQ": {
      "status": "ok",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
-     "prev_date": "2026-11-05",
+     "prev_date": "2026-11-06",
      "rows": [
       {
-       "contract": "QQQ261106C00705000",
+       "contract": "QQQ261218C00700000",
        "kind": "call",
-       "strike": 705.0,
-       "expiry": "2026-11-06",
-       "oi": 29663.0,
-       "oi_prev": 6697.0,
-       "change": 22966.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261218P00690000",
-       "kind": "put",
-       "strike": 690.0,
+       "strike": 700.0,
        "expiry": "2026-12-18",
-       "oi": 50382.0,
-       "oi_prev": 72021.0,
-       "change": -21639.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261106P00691000",
-       "kind": "put",
-       "strike": 691.0,
-       "expiry": "2026-11-06",
-       "oi": 31866.0,
-       "oi_prev": 17527.0,
-       "change": 14339.0,
+       "oi": 71413.0,
+       "oi_prev": 36768.0,
+       "change": 34645.0,
        "new": false
       },
       {
@@ -927,309 +910,219 @@
        "kind": "put",
        "strike": 650.0,
        "expiry": "2026-11-13",
-       "oi": 32092.0,
-       "oi_prev": 42250.0,
-       "change": -10158.0,
+       "oi": 61638.0,
+       "oi_prev": 32092.0,
+       "change": 29546.0,
        "new": false
       },
       {
-       "contract": "QQQ261120C00710000",
+       "contract": "QQQ261120C00680000",
        "kind": "call",
-       "strike": 710.0,
+       "strike": 680.0,
        "expiry": "2026-11-20",
-       "oi": 28792.0,
-       "oi_prev": 18911.0,
-       "change": 9881.0,
+       "oi": 23996.0,
+       "oi_prev": 657.0,
+       "change": 23339.0,
        "new": false
       },
       {
-       "contract": "QQQ261218P00550000",
-       "kind": "put",
-       "strike": 550.0,
-       "expiry": "2026-12-18",
-       "oi": 33073.0,
-       "oi_prev": 42245.0,
-       "change": -9172.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261113P00685000",
-       "kind": "put",
-       "strike": 685.0,
-       "expiry": "2026-11-13",
-       "oi": 30486.0,
-       "oi_prev": 39245.0,
-       "change": -8759.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261109P00635000",
-       "kind": "put",
-       "strike": 635.0,
-       "expiry": "2026-11-09",
-       "oi": 9441.0,
-       "oi_prev": 902.0,
-       "change": 8539.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261106C00713000",
+       "contract": "QQQ261120C00670000",
        "kind": "call",
-       "strike": 713.0,
-       "expiry": "2026-11-06",
-       "oi": 19278.0,
-       "oi_prev": 10788.0,
-       "change": 8490.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261218C00710000",
-       "kind": "call",
-       "strike": 710.0,
-       "expiry": "2026-12-18",
-       "oi": 23750.0,
-       "oi_prev": 15720.0,
-       "change": 8030.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261218P00535000",
-       "kind": "put",
-       "strike": 535.0,
-       "expiry": "2026-12-18",
-       "oi": 16642.0,
-       "oi_prev": 8656.0,
-       "change": 7986.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ270115P00650000",
-       "kind": "put",
-       "strike": 650.0,
-       "expiry": "2027-01-15",
-       "oi": 59342.0,
-       "oi_prev": 52355.0,
-       "change": 6987.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261120P00675000",
-       "kind": "put",
-       "strike": 675.0,
-       "expiry": "2026-11-20",
-       "oi": 26132.0,
-       "oi_prev": 19365.0,
-       "change": 6767.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261106P00710000",
-       "kind": "put",
-       "strike": 710.0,
-       "expiry": "2026-11-06",
-       "oi": 13415.0,
-       "oi_prev": 20154.0,
-       "change": -6739.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261113C00725000",
-       "kind": "call",
-       "strike": 725.0,
-       "expiry": "2026-11-13",
-       "oi": 10312.0,
-       "oi_prev": 3712.0,
-       "change": 6600.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261106P00625000",
-       "kind": "put",
-       "strike": 625.0,
-       "expiry": "2026-11-06",
-       "oi": 11054.0,
-       "oi_prev": 4458.0,
-       "change": 6596.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261120P00745000",
-       "kind": "put",
-       "strike": 745.0,
-       "expiry": "2026-11-20",
-       "oi": 3925.0,
-       "oi_prev": 10221.0,
-       "change": -6296.0,
-       "new": false
-      },
-      {
-       "contract": "QQQ261120P00670000",
-       "kind": "put",
        "strike": 670.0,
        "expiry": "2026-11-20",
-       "oi": 44870.0,
-       "oi_prev": 51098.0,
-       "change": -6228.0,
+       "oi": 17992.0,
+       "oi_prev": 797.0,
+       "change": 17195.0,
        "new": false
       },
       {
-       "contract": "QQQ261218P00560000",
+       "contract": "QQQ261231P00750000",
        "kind": "put",
-       "strike": 560.0,
+       "strike": 750.0,
+       "expiry": "2026-12-31",
+       "oi": 723.0,
+       "oi_prev": 17333.0,
+       "change": -16610.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261218C00725000",
+       "kind": "call",
+       "strike": 725.0,
        "expiry": "2026-12-18",
-       "oi": 22967.0,
-       "oi_prev": 16792.0,
-       "change": 6175.0,
+       "oi": 39041.0,
+       "oi_prev": 22514.0,
+       "change": 16527.0,
        "new": false
       },
       {
-       "contract": "QQQ261109P00560000",
+       "contract": "QQQ261218P00630000",
        "kind": "put",
-       "strike": 560.0,
-       "expiry": "2026-11-09",
-       "oi": 5845.0,
-       "oi_prev": 0.0,
-       "change": 5845.0,
-       "new": true
+       "strike": 630.0,
+       "expiry": "2026-12-18",
+       "oi": 31427.0,
+       "oi_prev": 15692.0,
+       "change": 15735.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261113P00725000",
+       "kind": "put",
+       "strike": 725.0,
+       "expiry": "2026-11-13",
+       "oi": 289.0,
+       "oi_prev": 14709.0,
+       "change": -14420.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261113P00605000",
+       "kind": "put",
+       "strike": 605.0,
+       "expiry": "2026-11-13",
+       "oi": 17296.0,
+       "oi_prev": 3765.0,
+       "change": 13531.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261120P00640000",
+       "kind": "put",
+       "strike": 640.0,
+       "expiry": "2026-11-20",
+       "oi": 42319.0,
+       "oi_prev": 29785.0,
+       "change": 12534.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261120C00695000",
+       "kind": "call",
+       "strike": 695.0,
+       "expiry": "2026-11-20",
+       "oi": 16348.0,
+       "oi_prev": 4155.0,
+       "change": 12193.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261120P00590000",
+       "kind": "put",
+       "strike": 590.0,
+       "expiry": "2026-11-20",
+       "oi": 16887.0,
+       "oi_prev": 5260.0,
+       "change": 11627.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261120P00680000",
+       "kind": "put",
+       "strike": 680.0,
+       "expiry": "2026-11-20",
+       "oi": 83273.0,
+       "oi_prev": 94326.0,
+       "change": -11053.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261218P00640000",
+       "kind": "put",
+       "strike": 640.0,
+       "expiry": "2026-12-18",
+       "oi": 41504.0,
+       "oi_prev": 32042.0,
+       "change": 9462.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261120C00698000",
+       "kind": "call",
+       "strike": 698.0,
+       "expiry": "2026-11-20",
+       "oi": 9839.0,
+       "oi_prev": 449.0,
+       "change": 9390.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261113C00700000",
+       "kind": "call",
+       "strike": 700.0,
+       "expiry": "2026-11-13",
+       "oi": 12454.0,
+       "oi_prev": 3282.0,
+       "change": 9172.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261120P00650000",
+       "kind": "put",
+       "strike": 650.0,
+       "expiry": "2026-11-20",
+       "oi": 49831.0,
+       "oi_prev": 41460.0,
+       "change": 8371.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261218P00750000",
+       "kind": "put",
+       "strike": 750.0,
+       "expiry": "2026-12-18",
+       "oi": 1852.0,
+       "oi_prev": 9936.0,
+       "change": -8084.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261218C00810000",
+       "kind": "call",
+       "strike": 810.0,
+       "expiry": "2026-12-18",
+       "oi": 30495.0,
+       "oi_prev": 22489.0,
+       "change": 8006.0,
+       "new": false
+      },
+      {
+       "contract": "QQQ261120P00730000",
+       "kind": "put",
+       "strike": 730.0,
+       "expiry": "2026-11-20",
+       "oi": 12685.0,
+       "oi_prev": 20645.0,
+       "change": -7960.0,
+       "new": false
       }
      ]
     },
     "IWM": {
      "status": "ok",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
-     "prev_date": "2026-11-05",
+     "prev_date": "2026-11-06",
      "rows": [
       {
        "contract": "IWM261120P00270000",
        "kind": "put",
        "strike": 270.0,
        "expiry": "2026-11-20",
-       "oi": 201852.0,
-       "oi_prev": 165296.0,
-       "change": 36556.0,
+       "oi": 167514.0,
+       "oi_prev": 201852.0,
+       "change": -34338.0,
        "new": false
       },
       {
-       "contract": "IWM261218P00275000",
+       "contract": "IWM261120P00259000",
        "kind": "put",
-       "strike": 275.0,
-       "expiry": "2026-12-18",
-       "oi": 89544.0,
-       "oi_prev": 57969.0,
-       "change": 31575.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261120P00266000",
-       "kind": "put",
-       "strike": 266.0,
+       "strike": 259.0,
        "expiry": "2026-11-20",
-       "oi": 67904.0,
-       "oi_prev": 84913.0,
-       "change": -17009.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261106C00290000",
-       "kind": "call",
-       "strike": 290.0,
-       "expiry": "2026-11-06",
-       "oi": 25317.0,
-       "oi_prev": 10028.0,
-       "change": 15289.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261120P00271000",
-       "kind": "put",
-       "strike": 271.0,
-       "expiry": "2026-11-20",
-       "oi": 50468.0,
-       "oi_prev": 36892.0,
-       "change": 13576.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261120P00272000",
-       "kind": "put",
-       "strike": 272.0,
-       "expiry": "2026-11-20",
-       "oi": 20009.0,
-       "oi_prev": 6791.0,
-       "change": 13218.0,
-       "new": false
-      },
-      {
-       "contract": "IWM270115C00325000",
-       "kind": "call",
-       "strike": 325.0,
-       "expiry": "2027-01-15",
-       "oi": 21286.0,
-       "oi_prev": 8800.0,
-       "change": 12486.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261218P00270000",
-       "kind": "put",
-       "strike": 270.0,
-       "expiry": "2026-12-18",
-       "oi": 98015.0,
-       "oi_prev": 86566.0,
-       "change": 11449.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261120P00277000",
-       "kind": "put",
-       "strike": 277.0,
-       "expiry": "2026-11-20",
-       "oi": 45789.0,
-       "oi_prev": 35280.0,
-       "change": 10509.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261109P00283000",
-       "kind": "put",
-       "strike": 283.0,
-       "expiry": "2026-11-09",
-       "oi": 10470.0,
-       "oi_prev": 241.0,
-       "change": 10229.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261120C00294000",
-       "kind": "call",
-       "strike": 294.0,
-       "expiry": "2026-11-20",
-       "oi": 25550.0,
-       "oi_prev": 15605.0,
-       "change": 9945.0,
-       "new": false
-      },
-      {
-       "contract": "IWM270115P00245000",
-       "kind": "put",
-       "strike": 245.0,
-       "expiry": "2027-01-15",
-       "oi": 30511.0,
-       "oi_prev": 22865.0,
-       "change": 7646.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261218P00250000",
-       "kind": "put",
-       "strike": 250.0,
-       "expiry": "2026-12-18",
-       "oi": 71492.0,
-       "oi_prev": 78358.0,
-       "change": -6866.0,
+       "oi": 54508.0,
+       "oi_prev": 21547.0,
+       "change": 32961.0,
        "new": false
       },
       {
@@ -1237,69 +1130,179 @@
        "kind": "put",
        "strike": 267.0,
        "expiry": "2026-11-20",
-       "oi": 59624.0,
-       "oi_prev": 53037.0,
-       "change": 6587.0,
+       "oi": 45591.0,
+       "oi_prev": 59624.0,
+       "change": -14033.0,
        "new": false
       },
       {
-       "contract": "IWM261120P00255000",
+       "contract": "IWM261120P00250000",
        "kind": "put",
-       "strike": 255.0,
+       "strike": 250.0,
        "expiry": "2026-11-20",
-       "oi": 44398.0,
-       "oi_prev": 50962.0,
-       "change": -6564.0,
+       "oi": 70145.0,
+       "oi_prev": 56933.0,
+       "change": 13212.0,
        "new": false
       },
       {
-       "contract": "IWM261106C00288000",
+       "contract": "IWM261218P00265000",
+       "kind": "put",
+       "strike": 265.0,
+       "expiry": "2026-12-18",
+       "oi": 66745.0,
+       "oi_prev": 58442.0,
+       "change": 8303.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261109P00283000",
+       "kind": "put",
+       "strike": 283.0,
+       "expiry": "2026-11-09",
+       "oi": 2936.0,
+       "oi_prev": 10470.0,
+       "change": -7534.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261218P00263000",
+       "kind": "put",
+       "strike": 263.0,
+       "expiry": "2026-12-18",
+       "oi": 18563.0,
+       "oi_prev": 11663.0,
+       "change": 6900.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261218P00267000",
+       "kind": "put",
+       "strike": 267.0,
+       "expiry": "2026-12-18",
+       "oi": 8495.0,
+       "oi_prev": 1760.0,
+       "change": 6735.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261120P00272000",
+       "kind": "put",
+       "strike": 272.0,
+       "expiry": "2026-11-20",
+       "oi": 13455.0,
+       "oi_prev": 20009.0,
+       "change": -6554.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261120P00271000",
+       "kind": "put",
+       "strike": 271.0,
+       "expiry": "2026-11-20",
+       "oi": 44640.0,
+       "oi_prev": 50468.0,
+       "change": -5828.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261120P00277000",
+       "kind": "put",
+       "strike": 277.0,
+       "expiry": "2026-11-20",
+       "oi": 39967.0,
+       "oi_prev": 45789.0,
+       "change": -5822.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261218P00270000",
+       "kind": "put",
+       "strike": 270.0,
+       "expiry": "2026-12-18",
+       "oi": 92597.0,
+       "oi_prev": 98015.0,
+       "change": -5418.0,
+       "new": false
+      },
+      {
+       "contract": "IWM270219C00295000",
        "kind": "call",
-       "strike": 288.0,
-       "expiry": "2026-11-06",
-       "oi": 9698.0,
-       "oi_prev": 3879.0,
-       "change": 5819.0,
+       "strike": 295.0,
+       "expiry": "2027-02-19",
+       "oi": 6572.0,
+       "oi_prev": 1438.0,
+       "change": 5134.0,
        "new": false
       },
       {
-       "contract": "IWM270115P00255000",
+       "contract": "IWM261120C00275000",
+       "kind": "call",
+       "strike": 275.0,
+       "expiry": "2026-11-20",
+       "oi": 9761.0,
+       "oi_prev": 4761.0,
+       "change": 5000.0,
+       "new": false
+      },
+      {
+       "contract": "IWM270219P00255000",
        "kind": "put",
        "strike": 255.0,
-       "expiry": "2027-01-15",
-       "oi": 55315.0,
-       "oi_prev": 49824.0,
-       "change": 5491.0,
+       "expiry": "2027-02-19",
+       "oi": 12989.0,
+       "oi_prev": 8102.0,
+       "change": 4887.0,
        "new": false
       },
       {
-       "contract": "IWM270115C00340000",
-       "kind": "call",
-       "strike": 340.0,
-       "expiry": "2027-01-15",
-       "oi": 13824.0,
-       "oi_prev": 9176.0,
-       "change": 4648.0,
-       "new": false
-      },
-      {
-       "contract": "IWM261113P00260000",
+       "contract": "IWM261218P00259000",
        "kind": "put",
-       "strike": 260.0,
-       "expiry": "2026-11-13",
-       "oi": 9358.0,
-       "oi_prev": 13646.0,
-       "change": -4288.0,
+       "strike": 259.0,
+       "expiry": "2026-12-18",
+       "oi": 5330.0,
+       "oi_prev": 534.0,
+       "change": 4796.0,
        "new": false
       },
       {
-       "contract": "IWM261204P00262000",
+       "contract": "IWM261218P00275000",
        "kind": "put",
-       "strike": 262.0,
-       "expiry": "2026-12-04",
-       "oi": 4517.0,
-       "oi_prev": 468.0,
-       "change": 4049.0,
+       "strike": 275.0,
+       "expiry": "2026-12-18",
+       "oi": 85065.0,
+       "oi_prev": 89544.0,
+       "change": -4479.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261111P00255000",
+       "kind": "put",
+       "strike": 255.0,
+       "expiry": "2026-11-11",
+       "oi": 4453.0,
+       "oi_prev": 2.0,
+       "change": 4451.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261111P00266000",
+       "kind": "put",
+       "strike": 266.0,
+       "expiry": "2026-11-11",
+       "oi": 4498.0,
+       "oi_prev": 111.0,
+       "change": 4387.0,
+       "new": false
+      },
+      {
+       "contract": "IWM261218P00235000",
+       "kind": "put",
+       "strike": 235.0,
+       "expiry": "2026-12-18",
+       "oi": 54693.0,
+       "oi_prev": 50369.0,
+       "change": 4324.0,
        "new": false
       }
      ]
@@ -1308,7 +1311,7 @@
    "oi_confirm": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1316,7 +1319,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1324,7 +1327,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1334,7 +1337,7 @@
    "net_drift": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1342,7 +1345,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1350,7 +1353,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1360,7 +1363,7 @@
    "repeat_sweeps": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1368,7 +1371,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1376,7 +1379,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1386,7 +1389,7 @@
    "flow_ratio": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1394,7 +1397,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1402,7 +1405,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1412,7 +1415,7 @@
    "hiro": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1420,7 +1423,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1428,7 +1431,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-08",
+     "as_of": "2026-11-09",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1437,273 +1440,273 @@
    },
    "premium_ratio": {
     "status": "no_data",
-    "as_of": "2026-11-08",
+    "as_of": "2026-11-09",
     "source": "Alpaca option trades and chain snapshots",
     "delay": "the session's prints to the run; open interest posts the next morning",
     "source_family_id": "alpaca-options",
     "reason": "no board or watching names to read"
    }
   },
-  "inputs_hash": "0f0cf2efb238e8499bde99a902e45f02b8f4bbd54fcd458888e820f1c0de9db4"
+  "inputs_hash": "e84e216c24acec47fa72b390b1da288d8b6add3cec66b54749a6915ef1adddf0"
  },
  "chain": {
-  "for_session": "2026-11-08",
-  "as_of": "2026-11-08",
-  "built_at": "2026-11-08T19:17:10-05:00",
+  "for_session": "2026-11-09",
+  "as_of": "2026-11-09",
+  "built_at": "2026-11-09T16:56:00-05:00",
   "cards": {
    "SPY": {
     "status": "ok",
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-09",
     "source": "Alpaca options contracts and snapshots (the Map's own reads)",
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
-    "spot": 735.28,
-    "dex_b": -89.1755,
-    "dex_balance": 1.05,
-    "vex_b": 2.0197,
-    "charm_b_per_day": -0.2023,
-    "max_pain": 770.0,
-    "max_pain_expiry": "2026-11-06",
-    "key_gamma_strike": 735.0,
-    "anchor_strike": 735.0,
-    "key_delta_strike": 740.0,
-    "g_coord": 0.1976,
-    "iv30": 0.2065,
-    "iv60": 0.1945,
-    "slope_30_60": -0.0121,
-    "rr25": -0.0818,
-    "strangle15": 0.0118,
-    "butterfly25": -0.0006,
+    "spot": 753.15,
+    "dex_b": -17.6819,
+    "dex_balance": 2.18,
+    "vex_b": 3.7617,
+    "charm_b_per_day": 0.9729,
+    "max_pain": 750.0,
+    "max_pain_expiry": "2026-11-09",
+    "key_gamma_strike": 750.0,
+    "anchor_strike": 740.0,
+    "key_delta_strike": 730.0,
+    "g_coord": 0.3912,
+    "iv30": 0.1619,
+    "iv60": 0.161,
+    "slope_30_60": -0.0009,
+    "rr25": -0.054,
+    "strangle15": 0.014,
+    "butterfly25": 0.0023,
     "iv_rank": null,
-    "iv_rank_n": 6,
+    "iv_rank_n": 7,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.178
+      "atm_iv": 0.163
      },
      {
       "days": 2,
-      "atm_iv": 0.2192
+      "atm_iv": 0.1867
      },
      {
       "days": 3,
-      "atm_iv": 0.2251
+      "atm_iv": 0.184
      },
      {
       "days": 4,
-      "atm_iv": 0.232
+      "atm_iv": 0.1839
      },
      {
-      "days": 5,
-      "atm_iv": 0.2347
+      "days": 7,
+      "atm_iv": 0.1568
      },
      {
       "days": 8,
-      "atm_iv": 0.2124
+      "atm_iv": 0.1619
      },
      {
       "days": 9,
-      "atm_iv": 0.2141
+      "atm_iv": 0.1685
      },
      {
       "days": 10,
-      "atm_iv": 0.2215
+      "atm_iv": 0.169
      },
      {
-      "days": 12,
-      "atm_iv": 0.2243
+      "days": 11,
+      "atm_iv": 0.1711
      },
      {
-      "days": 19,
-      "atm_iv": 0.2079
+      "days": 18,
+      "atm_iv": 0.1589
      },
      {
-      "days": 22,
-      "atm_iv": 0.1993
+      "days": 21,
+      "atm_iv": 0.154
      },
      {
-      "days": 26,
-      "atm_iv": 0.2063
+      "days": 25,
+      "atm_iv": 0.1599
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
    },
    "QQQ": {
     "status": "ok",
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-09",
     "source": "Alpaca options contracts and snapshots (the Map's own reads)",
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
-    "spot": 656.33,
-    "dex_b": -88.5708,
-    "dex_balance": 0.87,
-    "vex_b": 0.4816,
-    "charm_b_per_day": -1.588,
-    "max_pain": 740.0,
-    "max_pain_expiry": "2026-11-06",
+    "spot": 681.65,
+    "dex_b": -32.7668,
+    "dex_balance": 1.89,
+    "vex_b": 1.4144,
+    "charm_b_per_day": -0.1289,
+    "max_pain": 676.0,
+    "max_pain_expiry": "2026-11-09",
     "key_gamma_strike": 680.0,
     "anchor_strike": 680.0,
     "key_delta_strike": 680.0,
-    "g_coord": 0.2329,
-    "iv30": 0.2958,
-    "iv60": 0.2782,
-    "slope_30_60": -0.0176,
-    "rr25": -0.095,
-    "strangle15": 0.0166,
-    "butterfly25": 0.0023,
+    "g_coord": 0.4206,
+    "iv30": 0.2492,
+    "iv60": 0.2424,
+    "slope_30_60": -0.0068,
+    "rr25": -0.0779,
+    "strangle15": 0.0171,
+    "butterfly25": 0.0042,
     "iv_rank": null,
-    "iv_rank_n": 6,
+    "iv_rank_n": 7,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.2235
+      "atm_iv": 0.2974
      },
      {
       "days": 2,
-      "atm_iv": 0.3181
+      "atm_iv": 0.3027
      },
      {
       "days": 3,
-      "atm_iv": 0.3365
+      "atm_iv": 0.2921
      },
      {
       "days": 4,
-      "atm_iv": 0.3405
+      "atm_iv": 0.2936
      },
      {
-      "days": 5,
-      "atm_iv": 0.3451
+      "days": 7,
+      "atm_iv": 0.2534
      },
      {
       "days": 8,
-      "atm_iv": 0.3151
+      "atm_iv": 0.2671
      },
      {
       "days": 9,
-      "atm_iv": 0.3248
+      "atm_iv": 0.2699
      },
      {
       "days": 10,
-      "atm_iv": 0.3316
+      "atm_iv": 0.2728
      },
      {
-      "days": 12,
-      "atm_iv": 0.3353
+      "days": 11,
+      "atm_iv": 0.2769
      },
      {
-      "days": 19,
-      "atm_iv": 0.3096
+      "days": 18,
+      "atm_iv": 0.2547
      },
      {
-      "days": 22,
-      "atm_iv": 0.2996
+      "days": 21,
+      "atm_iv": 0.2448
      },
      {
-      "days": 26,
-      "atm_iv": 0.2995
+      "days": 25,
+      "atm_iv": 0.2508
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
    },
    "IWM": {
     "status": "ok",
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-09",
     "source": "Alpaca options contracts and snapshots (the Map's own reads)",
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
-    "spot": 273.73,
-    "dex_b": -23.6031,
-    "dex_balance": 1.21,
-    "vex_b": 0.547,
-    "charm_b_per_day": -0.0513,
-    "max_pain": 282.0,
-    "max_pain_expiry": "2026-11-06",
-    "key_gamma_strike": 270.0,
+    "spot": 283.43,
+    "dex_b": -0.204,
+    "dex_balance": 2.49,
+    "vex_b": 0.7877,
+    "charm_b_per_day": 0.4063,
+    "max_pain": 275.0,
+    "max_pain_expiry": "2026-11-09",
+    "key_gamma_strike": 290.0,
     "anchor_strike": 270.0,
-    "key_delta_strike": 270.0,
-    "g_coord": 0.2084,
-    "iv30": 0.2313,
-    "iv60": 0.2239,
-    "slope_30_60": -0.0074,
-    "rr25": -0.0701,
-    "strangle15": 0.0149,
-    "butterfly25": 0.0037,
+    "key_delta_strike": 290.0,
+    "g_coord": 0.4182,
+    "iv30": 0.1947,
+    "iv60": 0.1937,
+    "slope_30_60": -0.0011,
+    "rr25": -0.0397,
+    "strangle15": 0.0143,
+    "butterfly25": 0.0033,
     "iv_rank": null,
-    "iv_rank_n": 6,
+    "iv_rank_n": 7,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.1909
+      "atm_iv": 0.2474
      },
      {
       "days": 2,
-      "atm_iv": 0.2372
+      "atm_iv": 0.2295
      },
      {
       "days": 3,
-      "atm_iv": 0.2421
+      "atm_iv": 0.2153
      },
      {
       "days": 4,
-      "atm_iv": 0.2473
+      "atm_iv": 0.2127
      },
      {
-      "days": 5,
-      "atm_iv": 0.2482
+      "days": 7,
+      "atm_iv": 0.1846
      },
      {
       "days": 8,
-      "atm_iv": 0.2312
+      "atm_iv": 0.1868
      },
      {
       "days": 9,
-      "atm_iv": 0.2385
+      "atm_iv": 0.1931
      },
      {
       "days": 10,
-      "atm_iv": 0.2365
+      "atm_iv": 0.1965
      },
      {
-      "days": 12,
-      "atm_iv": 0.2463
+      "days": 11,
+      "atm_iv": 0.2015
      },
      {
-      "days": 19,
-      "atm_iv": 0.2296
+      "days": 18,
+      "atm_iv": 0.1875
      },
      {
-      "days": 26,
-      "atm_iv": 0.2285
+      "days": 25,
+      "atm_iv": 0.1903
      },
      {
-      "days": 33,
-      "atm_iv": 0.2333
+      "days": 32,
+      "atm_iv": 0.1965
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
    }
   },
-  "inputs_hash": "787c8eb48a9a19d5cc751f09af1f4683808f93d29b6db033f15afae2f60633c2"
+  "inputs_hash": "e79889dbd36c179798baf7fc37c285a208d24241a24e8af6ebe7bd2be21f4376"
  },
  "lanes": {
-  "for_session": "2026-11-08",
-  "as_of": "2026-11-08",
-  "built_at": "2026-11-08T19:17:10-05:00",
+  "for_session": "2026-11-09",
+  "as_of": "2026-11-09",
+  "built_at": "2026-11-09T16:56:00-05:00",
   "lanes": {
    "chain_archive": {
     "status": "ok",
-    "as_of": "2026-11-08",
+    "as_of": "2026-11-09",
     "source": "the desk's own Map reads",
     "delay": "one file a session; kept 400 sessions",
     "source_family_id": "alpaca-options",
-    "days": 7,
+    "days": 8,
     "first_date": "2026-10-29",
-    "last_date": "2026-11-06",
-    "bytes": 1172433
+    "last_date": "2026-11-09",
+    "bytes": 1353768
    },
    "short_volume": {
     "status": "ok",
-    "as_of": "2026-11-08",
+    "as_of": "2026-11-09",
     "source": "FINRA FNQC daily short-sale volume files, kept per name",
     "delay": "a day's file posts after that day's close; the history is read for later sessions only",
     "source_family_id": "finra-fnqc",
@@ -1713,14 +1716,14 @@
    },
    "sec_facts": {
     "status": "ok",
-    "as_of": "2026-11-08",
+    "as_of": "2026-11-09",
     "source": "SEC EDGAR companyfacts (XBRL), point in time by filing date",
     "delay": "a fact is visible from the day its filing was accepted",
     "source_family_id": "sec-edgar",
     "names": 83
    }
   },
-  "inputs_hash": "1e4065310ad4feea472bbf9dcbe881b2b1dc767a10252e16a78432ea6287b7e2"
+  "inputs_hash": "c3a4032964494316b9aa21f097175261810934b6ce94dcc7da4b6b59c05d5db1"
  },
  "extras": {
   "ainvest": {
@@ -1909,76 +1912,147 @@
    "universe": 1838,
    "scored": 1833,
    "insufficient_data": 5,
-   "qualified": 72,
+   "qualified": 79,
    "market_context": {
-    "marketRegime": 35.6,
-    "marketBreadth": 46.7,
-    "indexAccDist": 10.0,
-    "breakoutFollowThrough": 73.4,
+    "marketRegime": 33.5,
+    "marketBreadth": 71.3,
+    "indexAccDist": 7.1,
+    "breakoutFollowThrough": 60.9,
     "riskAppetite": 0.0,
-    "sectorRotation": 67.3,
+    "sectorRotation": 69.1,
     "macroEventRisk": null,
-    "indexConfirmation": 0.0
+    "indexConfirmation": 33.3
    }
   },
   "qualified": [
    {
-    "symbol": "KDP",
-    "sector": "Consumer Staples",
-    "close": 36.63,
-    "score": 73.0,
+    "symbol": "VCEL",
+    "sector": "Health Care",
+    "close": 58.39,
+    "score": 74.1,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 37.14,
-    "trigger_down": 36.64,
-    "support": 34.49,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 55.25,
+    "trigger_down": 53.99,
+    "support": 44.56,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "VCEL",
-    "sector": "Health Care",
-    "close": 54.62,
-    "score": 72.2,
+    "symbol": "APLE",
+    "sector": "Real Estate",
+    "close": 19.68,
+    "score": 73.8,
+    "confirming": 6,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 19.0,
+    "trigger_down": 18.76,
+    "support": 18.38,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "ASO",
+    "sector": "Consumer Discretionary",
+    "close": 71.18,
+    "score": 73.3,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 52.37,
-    "trigger_down": 51.19,
-    "support": 44.56,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 67.88,
+    "trigger_down": 66.65,
+    "support": 58.28,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "EL",
+    "sector": "Consumer Staples",
+    "close": 113.16,
+    "score": 72.6,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 111.14,
+    "trigger_down": 108.98,
+    "support": 112.5,
+    "resistance": 117.57,
+    "stage": 2
+   },
+   {
+    "symbol": "MHK",
+    "sector": "Consumer Discretionary",
+    "close": 156.6,
+    "score": 72.4,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 151.95,
+    "trigger_down": 149.09,
+    "support": 134.11,
     "resistance": null,
     "stage": 2
    },
    {
     "symbol": "HAS",
     "sector": "Consumer Discretionary",
-    "close": 118.91,
-    "score": 71.9,
+    "close": 120.92,
+    "score": 72.0,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 120.31,
-    "trigger_down": 118.77,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 119.69,
+    "trigger_down": 118.13,
     "support": 117.17,
     "resistance": 121.04,
     "stage": 2
    },
    {
-    "symbol": "MHK",
-    "sector": "Consumer Discretionary",
-    "close": 150.52,
+    "symbol": "PGNY",
+    "sector": "Health Care",
+    "close": 35.95,
+    "score": 71.9,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 35.14,
+    "trigger_down": 34.54,
+    "support": 31.25,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "CCI",
+    "sector": "Real Estate",
+    "close": 87.83,
     "score": 71.6,
     "confirming": 5,
     "triggers": [],
-    "trigger_up": 152.27,
-    "trigger_down": 149.49,
-    "support": 134.11,
-    "resistance": null,
+    "trigger_up": 89.33,
+    "trigger_down": 87.87,
+    "support": 87.82,
+    "resistance": 88.69,
     "stage": 2
    },
    {
     "symbol": "BLFS",
     "sector": "Health Care",
     "close": 38.61,
-    "score": 71.0,
+    "score": 71.5,
     "confirming": 5,
     "triggers": [
      "prior-day-high break"
@@ -1990,140 +2064,98 @@
     "stage": 2
    },
    {
-    "symbol": "ACHC",
+    "symbol": "VTRS",
     "sector": "Health Care",
-    "close": 37,
-    "score": 70.7,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 35.26,
-    "trigger_down": 34.32,
-    "support": 30.33,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "APLE",
-    "sector": "Real Estate",
-    "close": 18.88,
-    "score": 70.7,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 18.26,
-    "trigger_down": 18.04,
-    "support": 18.38,
-    "resistance": 18.98,
-    "stage": 2
-   },
-   {
-    "symbol": "CPAY",
-    "sector": "Financials",
-    "close": 455.16,
-    "score": 70.6,
+    "close": 20.49,
+    "score": 71.4,
     "confirming": 6,
-    "triggers": [],
-    "trigger_up": 450.43,
-    "trigger_down": 443.57,
-    "support": 405.02,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "G",
-    "sector": "Industrials",
-    "close": 42.27,
-    "score": 70.4,
-    "confirming": 5,
     "triggers": [
      "prior-day-high break",
      "resistance break (20-session)"
     ],
-    "trigger_up": 41.44,
-    "trigger_down": 40.76,
-    "support": 42.22,
-    "resistance": 42.76,
-    "stage": 2
-   },
-   {
-    "symbol": "EXEL",
-    "sector": "Health Care",
-    "close": 69.57,
-    "score": 70.3,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 69.25,
-    "trigger_down": 68.17,
-    "support": 63.91,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "PGNY",
-    "sector": "Health Care",
-    "close": 34.84,
-    "score": 70.2,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 34.67,
-    "trigger_down": 34.07,
-    "support": 31.25,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "VTRS",
-    "sector": "Health Care",
-    "close": 19.91,
-    "score": 70.2,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 19.11,
-    "trigger_down": 18.83,
+    "trigger_up": 20.05,
+    "trigger_down": 19.77,
     "support": 18.64,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "VIR",
-    "sector": "Health Care",
-    "close": 12.21,
-    "score": 69.9,
+    "symbol": "BBY",
+    "sector": "Consumer Discretionary",
+    "close": 106.28,
+    "score": 71.0,
     "confirming": 5,
     "triggers": [
      "prior-day-high break",
-     "resistance break (20-session)",
-     "support reclaim (20 EMA)"
+     "resistance break (20-session)"
     ],
-    "trigger_up": 11.19,
-    "trigger_down": 10.85,
-    "support": 11,
+    "trigger_up": 100.57,
+    "trigger_down": 98.69,
+    "support": 93.18,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "RHP",
-    "sector": "Real Estate",
-    "close": 132.05,
-    "score": 69.8,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 132.45,
-    "trigger_down": 130.89,
-    "support": 131.95,
-    "resistance": 132.41,
-    "stage": 2
-   },
-   {
-    "symbol": "CON",
+    "symbol": "DGX",
     "sector": "Health Care",
-    "close": 42.22,
-    "score": 69.7,
+    "close": 259.67,
+    "score": 70.9,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 42.46,
-    "trigger_down": 41.84,
-    "support": 39.61,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 257.18,
+    "trigger_down": 254.08,
+    "support": 244.58,
     "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "TMO",
+    "sector": "Health Care",
+    "close": 721.63,
+    "score": 70.6,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 700.16,
+    "trigger_down": 689.36,
+    "support": 671.99,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "LFST",
+    "sector": "Health Care",
+    "close": 14.6,
+    "score": 70.4,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 13.93,
+    "trigger_down": 13.61,
+    "support": 13.18,
+    "resistance": 15.66,
+    "stage": 2
+   },
+   {
+    "symbol": "PRGO",
+    "sector": "Health Care",
+    "close": 16.95,
+    "score": 70.3,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 16.02,
+    "trigger_down": 15.68,
+    "support": 15.58,
+    "resistance": 21.93,
     "stage": 2
    }
   ]
