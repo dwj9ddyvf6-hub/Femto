@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-11-06T22:21:46.599848+00:00",
+ "generated_at_utc": "2026-11-09T13:52:07.020555+00:00",
  "as_of_session": "2026-11-06",
  "clocks": {
   "event_time": {
@@ -7,7 +7,7 @@
    "missing_reason": "the feed aggregates a session's cards; its event time is the session date in as_of_session, not a recorded instant"
   },
   "publication_time": {
-   "value": "2026-11-06T22:21:46.599848+00:00",
+   "value": "2026-11-09T13:52:07.020555+00:00",
    "missing_reason": null
   },
   "first_available_time": {
@@ -15,7 +15,7 @@
    "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
   },
   "ingestion_time": {
-   "value": "2026-11-06T22:21:46.599848+00:00",
+   "value": "2026-11-09T13:52:07.020555+00:00",
    "missing_reason": null
   },
   "decision_as_of": {
@@ -25,7 +25,7 @@
  },
  "source_artifacts": {
   "map_card.json": {
-   "sha256": "b644f610a4b41cd9b90bc84e23e0b378ae60964a5acac332532879620c4c79a1",
+   "sha256": "3b693e849cb5cf18776fa9d19384ee00b4a59d4eb27f9fbed8cafc4d9ef179fb",
    "missing_reason": null
   },
   "tape_card.json": {
@@ -33,11 +33,11 @@
    "missing_reason": null
   },
   "board_card.json": {
-   "sha256": "08b1cb3a2084fa7035637d228ddcf5d7651a66b2eda9e0ccaf3dd4cbd40a66a3",
+   "sha256": "91deefd23e6341c923e66b6d28d1c2b53f9c916cacf46a354399b87b3f92dbab",
    "missing_reason": null
   },
   "scorecard.json": {
-   "sha256": "003ac5ef79f70984207539e521f821d7fbb2591ee67567d752445539690a6a23",
+   "sha256": "9f7ab075bb9820c2bebf82b049af2969d97aa76604fbb1b16497e962672b969f",
    "missing_reason": null
   },
   "studies_card.json": {
@@ -45,11 +45,11 @@
    "missing_reason": null
   },
   "ext_card.json": {
-   "sha256": "beaf7d45367819314b29b7f23fbd84fb69ea32cf402427a6e9d9cb6b86e03811",
+   "sha256": "85bb70f505ba0f7063ff17e3a885308b39e4d390aa108affcf21b97eb6e116ea",
    "missing_reason": null
   },
   "board_full.json": {
-   "sha256": "0d18aeaa44ab131ec09241b57c47e6d81f7063a74b614d0bdf2b8d08dbc03e21",
+   "sha256": "e563a361ca9b624ebf0de1a6fd36e4a5981eeacf1a542360e0da2cc2f6752154",
    "missing_reason": null
   }
  },
@@ -60,11 +60,11 @@
  "map": [
   {
    "symbol": "SPY",
-   "spot": 736.07,
-   "net_gex_b": -13.63,
-   "call_wall": 800.0,
+   "spot": 741.75,
+   "net_gex_b": -7.21,
+   "call_wall": 750.0,
    "put_wall": 740.0,
-   "flip": 769.4,
+   "flip": 758.2,
    "dix": 0.284,
    "dix_date": "2026-11-06",
    "dix_index": {
@@ -72,13 +72,13 @@
     "not_the_same_as": "per-ETF DIX ratio (the ETF's own FNQC short/total ratio) \u2014 a different construction; the two are never substituted for each other",
     "date": "2026-11-06",
     "state": "graded",
-    "value": 0.4106942329571218,
+    "value": 0.41072159882460346,
     "constituents_used": 500,
     "constituents_total": 503,
     "coverage": 0.9940357852882704,
     "weight_source": "session dollar volume (close x volume, Alpaca SIP) \u2014 OURS declared weight"
    },
-   "coverage": "7543/8794",
+   "coverage": "6910/8896",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -101,7 +101,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-06T22:21:46.599848+00:00",
+     "value": "2026-11-09T13:52:07.020555+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -109,7 +109,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-06T22:21:46.599848+00:00",
+     "value": "2026-11-09T13:52:07.020555+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -120,15 +120,15 @@
   },
   {
    "symbol": "QQQ",
-   "spot": 656.87,
-   "net_gex_b": -6.19,
+   "spot": 663.1,
+   "net_gex_b": -3.44,
    "call_wall": 700.0,
-   "put_wall": 680.0,
-   "flip": 707.3,
+   "put_wall": 650.0,
+   "flip": 685.3,
    "dix": 0.383,
    "dix_date": "2026-11-06",
    "dix_index": null,
-   "coverage": "6577/7439",
+   "coverage": "6376/7561",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -151,7 +151,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-06T22:21:46.599848+00:00",
+     "value": "2026-11-09T13:52:07.020555+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -159,7 +159,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-06T22:21:46.599848+00:00",
+     "value": "2026-11-09T13:52:07.020555+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -170,15 +170,15 @@
   },
   {
    "symbol": "IWM",
-   "spot": 273.67,
-   "net_gex_b": -3.75,
+   "spot": 277.22,
+   "net_gex_b": -2.04,
    "call_wall": 290.0,
    "put_wall": 270.0,
-   "flip": 293.7,
+   "flip": 291.3,
    "dix": 0.192,
    "dix_date": "2026-11-06",
    "dix_index": null,
-   "coverage": "2768/3297",
+   "coverage": "2417/3331",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -201,7 +201,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-06T22:21:46.599848+00:00",
+     "value": "2026-11-09T13:52:07.020555+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -209,7 +209,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-06T22:21:46.599848+00:00",
+     "value": "2026-11-09T13:52:07.020555+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -320,34 +320,34 @@
  "scorecard": {
   "board": {
    "published": {
-    "n_logged": 339,
+    "n_logged": 364,
     "horizons": {
-     "1d": "46% positive, average -0.40%, median -0.11% (n=239)",
-     "5d": "43% positive, average -1.03%, median -0.61% (n=110)",
+     "1d": "43% positive, average -0.63%, median -0.33% (n=286)",
+     "5d": "43% positive, average -1.20%, median -0.49% (n=134)",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
    },
    "qualified": {
-    "n_logged": 191,
+    "n_logged": 207,
     "horizons": {
-     "1d": "46% positive, average -0.64%, median -0.23% (n=141)",
-     "5d": "48% positive, average -0.86%, median -0.08% (n=63)",
+     "1d": "46% positive, average -0.50%, median -0.24% (n=167)",
+     "5d": "47% positive, average -0.87%, median -0.32% (n=76)",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
    }
   },
   "map": {
    "state": "graded",
-   "cards_graded": 27,
-   "call_wall_held_pct": 85,
-   "put_wall_held_pct": 85,
+   "cards_graded": 30,
+   "call_wall_held_pct": 87,
+   "put_wall_held_pct": 83,
    "flip_respected_pct": 100
   },
   "counters": {
-   "units_published": 1347,
-   "board_rows_logged": 339,
-   "map_cards_of_record": 33,
-   "units_graded": 266
+   "units_published": 1375,
+   "board_rows_logged": 364,
+   "map_cards_of_record": 36,
+   "units_graded": 316
   }
  },
  "studies": {
@@ -618,9 +618,9 @@
   }
  },
  "flow": {
-  "for_session": "2026-11-06",
-  "as_of": "2026-11-06",
-  "built_at": "2026-11-06T16:55:55-05:00",
+  "for_session": "2026-11-08",
+  "as_of": "2026-11-08",
+  "built_at": "2026-11-08T19:17:10-05:00",
   "labels": [
    "net drift: each five-minute bucket stands alone (net single-leg premium and volume by direction), never a running total",
    "repeat sweeps: the same contract swept three or more times inside ten minutes; the tier names are by the run's own span",
@@ -637,8 +637,8 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": -11.599,
-     "oi_net_gex_b": -14.372,
+     "net_gex_b": -13.862,
+     "oi_net_gex_b": -15.285,
      "call_wall": 740.0,
      "put_wall": 735.0,
      "contracts_used": 3972,
@@ -651,8 +651,8 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": -23.1,
-     "oi_net_gex_b": -5.757,
+     "net_gex_b": -24.185,
+     "oi_net_gex_b": -6.029,
      "call_wall": 660.0,
      "put_wall": 657.0,
      "contracts_used": 3289,
@@ -665,8 +665,8 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": 0.713,
-     "oi_net_gex_b": -3.632,
+     "net_gex_b": 0.697,
+     "oi_net_gex_b": -3.842,
      "call_wall": 274.0,
      "put_wall": 273.0,
      "contracts_used": 1484,
@@ -1334,7 +1334,7 @@
    "net_drift": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1342,7 +1342,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1350,7 +1350,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1360,7 +1360,7 @@
    "repeat_sweeps": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1368,7 +1368,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1376,7 +1376,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1386,7 +1386,7 @@
    "flow_ratio": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1394,7 +1394,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1402,7 +1402,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1412,7 +1412,7 @@
    "hiro": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1420,7 +1420,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1428,7 +1428,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-08",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1437,19 +1437,19 @@
    },
    "premium_ratio": {
     "status": "no_data",
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-08",
     "source": "Alpaca option trades and chain snapshots",
     "delay": "the session's prints to the run; open interest posts the next morning",
     "source_family_id": "alpaca-options",
     "reason": "no board or watching names to read"
    }
   },
-  "inputs_hash": "be2bdf639c0cb4432be4f94d054336fe0d9951980a37e658f7472b786f7f2ea9"
+  "inputs_hash": "0f0cf2efb238e8499bde99a902e45f02b8f4bbd54fcd458888e820f1c0de9db4"
  },
  "chain": {
-  "for_session": "2026-11-06",
-  "as_of": "2026-11-06",
-  "built_at": "2026-11-06T16:55:55-05:00",
+  "for_session": "2026-11-08",
+  "as_of": "2026-11-08",
+  "built_at": "2026-11-08T19:17:10-05:00",
   "cards": {
    "SPY": {
     "status": "ok",
@@ -1458,72 +1458,72 @@
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
     "spot": 735.28,
-    "dex_b": -89.2144,
-    "dex_balance": 1.07,
-    "vex_b": 2.1641,
-    "charm_b_per_day": -0.2377,
+    "dex_b": -89.1755,
+    "dex_balance": 1.05,
+    "vex_b": 2.0197,
+    "charm_b_per_day": -0.2023,
     "max_pain": 770.0,
     "max_pain_expiry": "2026-11-06",
     "key_gamma_strike": 735.0,
     "anchor_strike": 735.0,
     "key_delta_strike": 740.0,
-    "g_coord": 0.2111,
-    "iv30": 0.2064,
-    "iv60": 0.1949,
-    "slope_30_60": -0.0115,
-    "rr25": -0.0848,
-    "strangle15": 0.0126,
-    "butterfly25": 0.0006,
+    "g_coord": 0.1976,
+    "iv30": 0.2065,
+    "iv60": 0.1945,
+    "slope_30_60": -0.0121,
+    "rr25": -0.0818,
+    "strangle15": 0.0118,
+    "butterfly25": -0.0006,
     "iv_rank": null,
     "iv_rank_n": 6,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.1735
+      "atm_iv": 0.178
      },
      {
-      "days": 3,
-      "atm_iv": 0.1836
-     },
-     {
-      "days": 4,
+      "days": 2,
       "atm_iv": 0.2192
      },
      {
-      "days": 5,
+      "days": 3,
       "atm_iv": 0.2251
      },
      {
-      "days": 6,
+      "days": 4,
       "atm_iv": 0.232
      },
      {
-      "days": 7,
+      "days": 5,
       "atm_iv": 0.2347
      },
      {
-      "days": 10,
+      "days": 8,
       "atm_iv": 0.2124
      },
      {
-      "days": 11,
+      "days": 9,
       "atm_iv": 0.2141
      },
      {
-      "days": 12,
+      "days": 10,
       "atm_iv": 0.2215
      },
      {
-      "days": 14,
+      "days": 12,
       "atm_iv": 0.2243
      },
      {
-      "days": 21,
+      "days": 19,
       "atm_iv": 0.2079
      },
      {
-      "days": 24,
+      "days": 22,
       "atm_iv": 0.1993
+     },
+     {
+      "days": 26,
+      "atm_iv": 0.2063
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
@@ -1535,72 +1535,72 @@
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
     "spot": 656.33,
-    "dex_b": -87.4035,
-    "dex_balance": 0.89,
-    "vex_b": 0.5501,
-    "charm_b_per_day": -1.6065,
+    "dex_b": -88.5708,
+    "dex_balance": 0.87,
+    "vex_b": 0.4816,
+    "charm_b_per_day": -1.588,
     "max_pain": 740.0,
     "max_pain_expiry": "2026-11-06",
     "key_gamma_strike": 680.0,
     "anchor_strike": 680.0,
     "key_delta_strike": 680.0,
-    "g_coord": 0.2453,
-    "iv30": 0.2977,
-    "iv60": 0.2787,
-    "slope_30_60": -0.0189,
-    "rr25": -0.0983,
-    "strangle15": 0.0177,
-    "butterfly25": 0.0026,
+    "g_coord": 0.2329,
+    "iv30": 0.2958,
+    "iv60": 0.2782,
+    "slope_30_60": -0.0176,
+    "rr25": -0.095,
+    "strangle15": 0.0166,
+    "butterfly25": 0.0023,
     "iv_rank": null,
     "iv_rank_n": 6,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.1864
+      "atm_iv": 0.2235
      },
      {
-      "days": 3,
-      "atm_iv": 0.267
-     },
-     {
-      "days": 4,
+      "days": 2,
       "atm_iv": 0.3181
      },
      {
-      "days": 5,
+      "days": 3,
       "atm_iv": 0.3365
      },
      {
-      "days": 6,
+      "days": 4,
       "atm_iv": 0.3405
      },
      {
-      "days": 7,
+      "days": 5,
       "atm_iv": 0.3451
      },
      {
-      "days": 10,
+      "days": 8,
       "atm_iv": 0.3151
      },
      {
-      "days": 11,
+      "days": 9,
       "atm_iv": 0.3248
      },
      {
-      "days": 12,
+      "days": 10,
       "atm_iv": 0.3316
      },
      {
-      "days": 14,
+      "days": 12,
       "atm_iv": 0.3353
      },
      {
-      "days": 21,
+      "days": 19,
       "atm_iv": 0.3096
      },
      {
-      "days": 24,
+      "days": 22,
       "atm_iv": 0.2996
+     },
+     {
+      "days": 26,
+      "atm_iv": 0.2995
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
@@ -1612,87 +1612,87 @@
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
     "spot": 273.73,
-    "dex_b": -23.8541,
-    "dex_balance": 1.22,
-    "vex_b": 0.5583,
-    "charm_b_per_day": -0.0962,
+    "dex_b": -23.6031,
+    "dex_balance": 1.21,
+    "vex_b": 0.547,
+    "charm_b_per_day": -0.0513,
     "max_pain": 282.0,
     "max_pain_expiry": "2026-11-06",
     "key_gamma_strike": 270.0,
     "anchor_strike": 270.0,
     "key_delta_strike": 270.0,
-    "g_coord": 0.2183,
-    "iv30": 0.2299,
-    "iv60": 0.2238,
-    "slope_30_60": -0.0061,
-    "rr25": -0.0704,
-    "strangle15": 0.0173,
+    "g_coord": 0.2084,
+    "iv30": 0.2313,
+    "iv60": 0.2239,
+    "slope_30_60": -0.0074,
+    "rr25": -0.0701,
+    "strangle15": 0.0149,
     "butterfly25": 0.0037,
     "iv_rank": null,
     "iv_rank_n": 6,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.1813
+      "atm_iv": 0.1909
      },
      {
-      "days": 3,
-      "atm_iv": 0.2011
-     },
-     {
-      "days": 4,
+      "days": 2,
       "atm_iv": 0.2372
      },
      {
-      "days": 5,
+      "days": 3,
       "atm_iv": 0.2421
      },
      {
-      "days": 6,
+      "days": 4,
       "atm_iv": 0.2473
      },
      {
-      "days": 7,
+      "days": 5,
       "atm_iv": 0.2482
      },
      {
-      "days": 10,
+      "days": 8,
       "atm_iv": 0.2312
      },
      {
-      "days": 11,
+      "days": 9,
       "atm_iv": 0.2385
      },
      {
-      "days": 12,
+      "days": 10,
       "atm_iv": 0.2365
      },
      {
-      "days": 14,
+      "days": 12,
       "atm_iv": 0.2463
      },
      {
-      "days": 21,
+      "days": 19,
       "atm_iv": 0.2296
      },
      {
-      "days": 28,
+      "days": 26,
       "atm_iv": 0.2285
+     },
+     {
+      "days": 33,
+      "atm_iv": 0.2333
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
    }
   },
-  "inputs_hash": "e5062401151a691890aaa9aecfd8f72e7ac070a013edc1d0ad999653dcac67b0"
+  "inputs_hash": "787c8eb48a9a19d5cc751f09af1f4683808f93d29b6db033f15afae2f60633c2"
  },
  "lanes": {
-  "for_session": "2026-11-06",
-  "as_of": "2026-11-06",
-  "built_at": "2026-11-06T16:55:55-05:00",
+  "for_session": "2026-11-08",
+  "as_of": "2026-11-08",
+  "built_at": "2026-11-08T19:17:10-05:00",
   "lanes": {
    "chain_archive": {
     "status": "ok",
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-08",
     "source": "the desk's own Map reads",
     "delay": "one file a session; kept 400 sessions",
     "source_family_id": "alpaca-options",
@@ -1703,24 +1703,24 @@
    },
    "short_volume": {
     "status": "ok",
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-08",
     "source": "FINRA FNQC daily short-sale volume files, kept per name",
     "delay": "a day's file posts after that day's close; the history is read for later sessions only",
     "source_family_id": "finra-fnqc",
-    "days": 779,
+    "days": 780,
     "first_date": "2023-09-29",
-    "last_date": "2026-11-05"
+    "last_date": "2026-11-06"
    },
    "sec_facts": {
     "status": "ok",
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-08",
     "source": "SEC EDGAR companyfacts (XBRL), point in time by filing date",
     "delay": "a fact is visible from the day its filing was accepted",
     "source_family_id": "sec-edgar",
-    "names": 43
+    "names": 83
    }
   },
-  "inputs_hash": "05696b557e848d41ed1b7d0bd48786e1b6488b7a4d1890efeec10d6b5914be9a"
+  "inputs_hash": "1e4065310ad4feea472bbf9dcbe881b2b1dc767a10252e16a78432ea6287b7e2"
  },
  "extras": {
   "ainvest": {
@@ -1909,11 +1909,11 @@
    "universe": 1838,
    "scored": 1833,
    "insufficient_data": 5,
-   "qualified": 70,
+   "qualified": 72,
    "market_context": {
     "marketRegime": 35.6,
     "marketBreadth": 46.7,
-    "indexAccDist": 9.8,
+    "indexAccDist": 10.0,
     "breakoutFollowThrough": 73.4,
     "riskAppetite": 0.0,
     "sectorRotation": 67.3,
@@ -1952,7 +1952,7 @@
     "symbol": "HAS",
     "sector": "Consumer Discretionary",
     "close": 118.91,
-    "score": 71.8,
+    "score": 71.9,
     "confirming": 5,
     "triggers": [],
     "trigger_up": 120.31,
@@ -1990,6 +1990,19 @@
     "stage": 2
    },
    {
+    "symbol": "ACHC",
+    "sector": "Health Care",
+    "close": 37,
+    "score": 70.7,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 35.26,
+    "trigger_down": 34.32,
+    "support": 30.33,
+    "resistance": null,
+    "stage": 2
+   },
+   {
     "symbol": "APLE",
     "sector": "Real Estate",
     "close": 18.88,
@@ -2016,16 +2029,19 @@
     "stage": 2
    },
    {
-    "symbol": "ACHC",
-    "sector": "Health Care",
-    "close": 37,
-    "score": 70.5,
+    "symbol": "G",
+    "sector": "Industrials",
+    "close": 42.27,
+    "score": 70.4,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 35.26,
-    "trigger_down": 34.32,
-    "support": 30.33,
-    "resistance": null,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 41.44,
+    "trigger_down": 40.76,
+    "support": 42.22,
+    "resistance": 42.76,
     "stage": 2
    },
    {
@@ -2042,19 +2058,16 @@
     "stage": 2
    },
    {
-    "symbol": "G",
-    "sector": "Industrials",
-    "close": 42.27,
-    "score": 70.3,
+    "symbol": "PGNY",
+    "sector": "Health Care",
+    "close": 34.84,
+    "score": 70.2,
     "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 41.44,
-    "trigger_down": 40.76,
-    "support": 42.22,
-    "resistance": 42.76,
+    "triggers": [],
+    "trigger_up": 34.67,
+    "trigger_down": 34.07,
+    "support": 31.25,
+    "resistance": null,
     "stage": 2
    },
    {
@@ -2067,19 +2080,6 @@
     "trigger_up": 19.11,
     "trigger_down": 18.83,
     "support": 18.64,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "PGNY",
-    "sector": "Health Care",
-    "close": 34.84,
-    "score": 69.9,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 34.67,
-    "trigger_down": 34.07,
-    "support": 31.25,
     "resistance": null,
     "stage": 2
    },
