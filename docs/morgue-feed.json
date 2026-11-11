@@ -1,13 +1,13 @@
 {
- "generated_at_utc": "2026-11-11T13:53:20.599807+00:00",
- "as_of_session": "2026-11-10",
+ "generated_at_utc": "2026-11-11T22:22:47.507679+00:00",
+ "as_of_session": "2026-11-11",
  "clocks": {
   "event_time": {
    "value": null,
    "missing_reason": "the feed aggregates a session's cards; its event time is the session date in as_of_session, not a recorded instant"
   },
   "publication_time": {
-   "value": "2026-11-11T13:53:20.599807+00:00",
+   "value": "2026-11-11T22:22:47.507679+00:00",
    "missing_reason": null
   },
   "first_available_time": {
@@ -15,7 +15,7 @@
    "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
   },
   "ingestion_time": {
-   "value": "2026-11-11T13:53:20.599807+00:00",
+   "value": "2026-11-11T22:22:47.507679+00:00",
    "missing_reason": null
   },
   "decision_as_of": {
@@ -25,31 +25,31 @@
  },
  "source_artifacts": {
   "map_card.json": {
-   "sha256": "cc87399e050f846020775c96c208ff19abb68360b2cf630310d9919d40f6b764",
+   "sha256": "3544148df31f7be19d3730c98c61c4457cd49bb0b6db089fd4e00505e08c899f",
    "missing_reason": null
   },
   "tape_card.json": {
-   "sha256": "e1d90760a4fc8390c790acd111e610733366ce197d651f0d8fdf2f04f04c3842",
+   "sha256": "27ee90e9ef4ddea9300c39c8b0189eaa11d7fb4ce9c8160cfb834a78e2ed6f49",
    "missing_reason": null
   },
   "board_card.json": {
-   "sha256": "b8801d386465abd53c66b2a314af23365349c655d4b3db2eb8a1dc024b9488d5",
+   "sha256": "e0e877d8c5e7202e93cbb0718da15b9eaa13bb437cb5df0f0902873375782e6b",
    "missing_reason": null
   },
   "scorecard.json": {
-   "sha256": "39ee5b46efbc0c88f049305e0dd343cf9f97d9b6cb9c0fbf5b40a1415f205eb5",
+   "sha256": "ba1d941215bb542f99c8ef7881e6eb31cc3f398a250d6ae2ce6f0764e782cb49",
    "missing_reason": null
   },
   "studies_card.json": {
-   "sha256": "1fcfd65de37578ff882cbd36ee8f8c89e472742c1b9a308549fb6bcea61a63bd",
+   "sha256": "4569042fc20c7c2026291a8ffb46d56700dbafd71236571b2f2540350093844b",
    "missing_reason": null
   },
   "ext_card.json": {
-   "sha256": "116dac55811bf4568c404a3a0efefdf13a97c4cf61b7a474d1071fd46c03ecbc",
+   "sha256": "0eebd71bc7e47d8d6e270eb9bbb8be6f7b92530346dc9c4005d9ce4c81bd649b",
    "missing_reason": null
   },
   "board_full.json": {
-   "sha256": "f56af60825320a547d26c04580d714bbabec870f41100c9e5f7fff2c249e4ec7",
+   "sha256": "bde46b8bd4fd60395d22a652159f0cf6eab8167602388c590cef19473b3dc2df",
    "missing_reason": null
   }
  },
@@ -60,25 +60,25 @@
  "map": [
   {
    "symbol": "SPY",
-   "spot": 757.23,
-   "net_gex_b": -0.89,
-   "call_wall": 760.0,
+   "spot": 760.13,
+   "net_gex_b": -2.76,
+   "call_wall": 770.0,
    "put_wall": 750.0,
-   "flip": 758.4,
-   "dix": 0.497,
-   "dix_date": "2026-11-10",
+   "flip": 762.4,
+   "dix": 0.502,
+   "dix_date": "2026-11-11",
    "dix_index": {
     "construction": "constituent-weighted DIX (vendor definition A104: dollar-weighted average of constituent dark-pool short-sale ratios)",
     "not_the_same_as": "per-ETF DIX ratio (the ETF's own FNQC short/total ratio) \u2014 a different construction; the two are never substituted for each other",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "state": "graded",
-    "value": 0.42922592332829024,
-    "constituents_used": 499,
+    "value": 0.42589695978435993,
+    "constituents_used": 500,
     "constituents_total": 503,
-    "coverage": 0.9920477137176938,
+    "coverage": 0.9940357852882704,
     "weight_source": "session dollar volume (close x volume, Alpaca SIP) \u2014 OURS declared weight"
    },
-   "coverage": "6655/8972",
+   "coverage": "7772/8972",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -101,7 +101,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-11T13:53:20.599807+00:00",
+     "value": "2026-11-11T22:22:47.507679+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -109,7 +109,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-11T13:53:20.599807+00:00",
+     "value": "2026-11-11T22:22:47.507679+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -120,15 +120,15 @@
   },
   {
    "symbol": "QQQ",
-   "spot": 675.12,
-   "net_gex_b": 1.63,
+   "spot": 689.28,
+   "net_gex_b": -1.72,
    "call_wall": 700.0,
    "put_wall": 680.0,
-   "flip": 682.4,
-   "dix": 0.48,
-   "dix_date": "2026-11-10",
+   "flip": 695.3,
+   "dix": 0.533,
+   "dix_date": "2026-11-11",
    "dix_index": null,
-   "coverage": "6110/8153",
+   "coverage": "7111/8153",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -151,7 +151,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-11T13:53:20.599807+00:00",
+     "value": "2026-11-11T22:22:47.507679+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -159,7 +159,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-11T13:53:20.599807+00:00",
+     "value": "2026-11-11T22:22:47.507679+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -170,15 +170,15 @@
   },
   {
    "symbol": "IWM",
-   "spot": 283.1,
-   "net_gex_b": -0.87,
+   "spot": 283.05,
+   "net_gex_b": -1.16,
    "call_wall": 285.0,
    "put_wall": 270.0,
    "flip": 286.8,
-   "dix": 0.716,
-   "dix_date": "2026-11-10",
+   "dix": 0.756,
+   "dix_date": "2026-11-11",
    "dix_index": null,
-   "coverage": "2433/3375",
+   "coverage": "2846/3375",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -201,7 +201,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-11T13:53:20.599807+00:00",
+     "value": "2026-11-11T22:22:47.507679+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -209,7 +209,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-11T13:53:20.599807+00:00",
+     "value": "2026-11-11T22:22:47.507679+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -222,95 +222,95 @@
  "tape": [
   {
    "symbol": "SPY",
-   "prints": 527996,
-   "total_premium_m": 988.0,
-   "net_premium_m": -650.7,
-   "golden_sweeps": 1,
-   "high_heat": 183,
-   "mean_heat": 3.94,
+   "prints": 519527,
+   "total_premium_m": 1027.2,
+   "net_premium_m": -244.7,
+   "golden_sweeps": 0,
+   "high_heat": 268,
+   "mean_heat": 3.91,
    "top_alerts": [
     {
-     "contract": "SPY261218C00775000",
-     "premium": 8779561.0,
-     "heat": 15.5,
-     "sentiment": "bearish",
+     "contract": "SPY261127C00775000",
+     "premium": 15853410.0,
+     "heat": 17.0,
+     "sentiment": "bullish",
      "golden": false
     },
     {
-     "contract": "SPY261218P00670000",
-     "premium": 2394400.0,
-     "heat": 16.0,
-     "sentiment": "bearish",
+     "contract": "SPY261204C00775000",
+     "premium": 10539386.0,
+     "heat": 17.0,
+     "sentiment": "bullish",
      "golden": false
     },
     {
-     "contract": "SPY261218P00716000",
-     "premium": 2191644.0,
-     "heat": 15.5,
-     "sentiment": "bearish",
-     "golden": true
+     "contract": "SPY261218C00810000",
+     "premium": 8406056.0,
+     "heat": 16.5,
+     "sentiment": "bullish",
+     "golden": false
     }
    ]
   },
   {
    "symbol": "QQQ",
-   "prints": 485662,
-   "total_premium_m": 948.7,
-   "net_premium_m": -434.5,
+   "prints": 515960,
+   "total_premium_m": 1199.9,
+   "net_premium_m": 149.2,
    "golden_sweeps": 0,
-   "high_heat": 363,
-   "mean_heat": 4.21,
+   "high_heat": 524,
+   "mean_heat": 4.29,
    "top_alerts": [
     {
-     "contract": "QQQ261218C00715000",
-     "premium": 4820000.0,
-     "heat": 15.5,
-     "sentiment": "bearish",
-     "golden": false
-    },
-    {
-     "contract": "QQQ261218P00600000",
-     "premium": 1605000.0,
+     "contract": "QQQ261127P00690000",
+     "premium": 9367500.0,
      "heat": 15.0,
-     "sentiment": "bearish",
+     "sentiment": "bullish",
      "golden": false
     },
     {
-     "contract": "QQQ261211P00580000",
-     "premium": 1325000.0,
-     "heat": 19.0,
-     "sentiment": "bearish",
+     "contract": "QQQ261218C00744000",
+     "premium": 3530000.0,
+     "heat": 17.5,
+     "sentiment": "bullish",
+     "golden": false
+    },
+    {
+     "contract": "QQQ261218P00610000",
+     "premium": 2394000.0,
+     "heat": 16.0,
+     "sentiment": "bullish",
      "golden": false
     }
    ]
   },
   {
    "symbol": "IWM",
-   "prints": 151530,
-   "total_premium_m": 162.5,
-   "net_premium_m": -67.9,
+   "prints": 144552,
+   "total_premium_m": 118.7,
+   "net_premium_m": -24.4,
    "golden_sweeps": 0,
-   "high_heat": 48,
-   "mean_heat": 3.86,
+   "high_heat": 60,
+   "mean_heat": 3.78,
    "top_alerts": [
     {
-     "contract": "IWM261127P00275000",
-     "premium": 4889630.0,
-     "heat": 18.5,
+     "contract": "IWM261218P00250000",
+     "premium": 474584.0,
+     "heat": 16.0,
      "sentiment": "bearish",
      "golden": false
     },
     {
-     "contract": "IWM261127P00275000",
-     "premium": 3755030.0,
-     "heat": 18.5,
+     "contract": "IWM261127P00268000",
+     "premium": 296000.0,
+     "heat": 15.5,
      "sentiment": "bearish",
      "golden": false
     },
     {
-     "contract": "IWM261120C00285000",
-     "premium": 3260000.0,
-     "heat": 15.0,
+     "contract": "IWM261120P00270000",
+     "premium": 245000.0,
+     "heat": 15.5,
      "sentiment": "bearish",
      "golden": false
     }
@@ -320,7 +320,7 @@
  "scorecard": {
   "board": {
    "published": {
-    "n_logged": 447,
+    "n_logged": 472,
     "horizons": {
      "1d": "50% positive, average -0.20%, median +0.01% (n=372)",
      "5d": "49% positive, average -0.69%, median -0.03% (n=189)",
@@ -328,7 +328,7 @@
     }
    },
    "qualified": {
-    "n_logged": 259,
+    "n_logged": 273,
     "horizons": {
      "1d": "53% positive, average +0.04%, median +0.20% (n=230)",
      "5d": "52% positive, average -0.50%, median +0.21% (n=108)",
@@ -344,8 +344,8 @@
    "flip_respected_pct": 100
   },
   "counters": {
-   "units_published": 1614,
-   "board_rows_logged": 447,
+   "units_published": 1714,
+   "board_rows_logged": 472,
    "map_cards_of_record": 42,
    "units_graded": 408
   }
@@ -354,8 +354,8 @@
   "gap_fill": {
    "state": "graded",
    "n": 186,
-   "fills": 77,
-   "frequency": 0.41397849462365593,
+   "fills": 78,
+   "frequency": 0.41935483870967744,
    "fill_pct": 1.0,
    "partitions": {
     "by_band": {
@@ -366,8 +366,8 @@
      },
      "<1%": {
       "n": 163,
-      "fills": 76,
-      "frequency": 0.4662576687116564
+      "fills": 77,
+      "frequency": 0.4723926380368098
      },
      ">=2%": {
       "n": 1,
@@ -387,14 +387,14 @@
       "frequency": 0.3333333333333333
      },
      "Thu": {
-      "n": 39,
+      "n": 36,
       "fills": 14,
-      "frequency": 0.358974358974359
+      "frequency": 0.3888888888888889
      },
      "Tue": {
-      "n": 36,
-      "fills": 17,
-      "frequency": 0.4722222222222222
+      "n": 39,
+      "fills": 18,
+      "frequency": 0.46153846153846156
      },
      "Wed": {
       "n": 36,
@@ -409,11 +409,11 @@
     "state": "graded",
     "n": 186,
     "window_min": 5,
-    "break_one_side": 65,
-    "break_both": 121,
+    "break_one_side": 63,
+    "break_both": 123,
     "no_break": 0,
-    "break_one_side_rate": 0.34946236559139787,
-    "break_both_rate": 0.6505376344086021,
+    "break_one_side_rate": 0.3387096774193548,
+    "break_both_rate": 0.6612903225806451,
     "no_break_rate": 0.0,
     "extension_rates": {
      "0.5": 0.978494623655914,
@@ -426,15 +426,15 @@
     "state": "graded",
     "n": 186,
     "window_min": 15,
-    "break_one_side": 88,
-    "break_both": 98,
+    "break_one_side": 86,
+    "break_both": 100,
     "no_break": 0,
-    "break_one_side_rate": 0.4731182795698925,
-    "break_both_rate": 0.5268817204301075,
+    "break_one_side_rate": 0.46236559139784944,
+    "break_both_rate": 0.5376344086021505,
     "no_break_rate": 0.0,
     "extension_rates": {
      "0.5": 0.8870967741935484,
-     "1.0": 0.6397849462365591,
+     "1.0": 0.6344086021505376,
      "1.5": 0.42473118279569894
     },
     "extension_n": 186
@@ -443,14 +443,14 @@
     "state": "graded",
     "n": 186,
     "window_min": 30,
-    "break_one_side": 115,
-    "break_both": 69,
+    "break_one_side": 113,
+    "break_both": 71,
     "no_break": 2,
-    "break_one_side_rate": 0.6182795698924731,
-    "break_both_rate": 0.3709677419354839,
+    "break_one_side_rate": 0.6075268817204301,
+    "break_both_rate": 0.3817204301075269,
     "no_break_rate": 0.010752688172043012,
     "extension_rates": {
-     "0.5": 0.7771739130434783,
+     "0.5": 0.782608695652174,
      "1.0": 0.47282608695652173,
      "1.5": 0.28804347826086957
     },
@@ -492,16 +492,16 @@
   "state_vectors": {
    "state": "insufficient_history",
    "p_nn": null,
-   "history_sessions_accrued": 8,
+   "history_sessions_accrued": 9,
    "reason": "P_NN needs >=126 accrued state sessions with matured outcomes; none are imputed",
    "latest": {
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "vector": [
-     -0.03380545,
-     0.01334409,
+     -0.03688852,
+     0.01334917,
      null,
-     0.43792094,
-     0.01254842
+     0.4341425,
+     0.01225865
     ]
    },
    "source": "SPY daily closes (Alpaca SIP), the FINRA daily off-exchange file via the short-volume store, the morgue chain archive, and the VIX daily close (Yahoo)"
@@ -509,7 +509,7 @@
  },
  "squeeze": {
   "state": "no_data",
-  "as_of": "2026-11-10",
+  "as_of": "2026-11-11",
   "formula_version": "squeeze_v6",
   "lineage": {
    "method_ref": "Tapeboard Squeeze Score v6, published in full (squeeze.py)",
@@ -531,96 +531,96 @@
  },
  "wall_validation": {
   "state": "graded",
-  "cards_of_record": 39,
-  "cards_graded": 33,
+  "cards_of_record": 42,
+  "cards_graded": 36,
   "windows": {
    "20": {
     "state": "graded",
     "n": 20,
-    "call_wall_held_rate": 1.0,
-    "put_wall_held_rate": 0.75,
+    "call_wall_held_rate": 0.95,
+    "put_wall_held_rate": 0.7,
     "touched_and_held": 5,
     "touched_and_held_rate": 0.25,
-    "blown_through": 5,
-    "blown_through_rate": 0.25,
+    "blown_through": 6,
+    "blown_through_rate": 0.3,
     "flip_respected_rate": 1.0
    },
    "60": {
     "state": "graded",
-    "n": 33,
-    "call_wall_held_rate": 0.8787878787878788,
-    "put_wall_held_rate": 0.8181818181818182,
+    "n": 36,
+    "call_wall_held_rate": 0.8611111111111112,
+    "put_wall_held_rate": 0.7777777777777778,
     "touched_and_held": 6,
-    "touched_and_held_rate": 0.18181818181818182,
-    "blown_through": 10,
-    "blown_through_rate": 0.30303030303030304,
+    "touched_and_held_rate": 0.16666666666666666,
+    "blown_through": 12,
+    "blown_through_rate": 0.3333333333333333,
     "flip_respected_rate": 1.0
    },
    "all": {
     "state": "graded",
-    "n": 33,
-    "call_wall_held_rate": 0.8787878787878788,
-    "put_wall_held_rate": 0.8181818181818182,
+    "n": 36,
+    "call_wall_held_rate": 0.8611111111111112,
+    "put_wall_held_rate": 0.7777777777777778,
     "touched_and_held": 6,
-    "touched_and_held_rate": 0.18181818181818182,
-    "blown_through": 10,
-    "blown_through_rate": 0.30303030303030304,
+    "touched_and_held_rate": 0.16666666666666666,
+    "blown_through": 12,
+    "blown_through_rate": 0.3333333333333333,
     "flip_respected_rate": 1.0
    }
   },
   "by_underlying": {
    "IWM": {
     "state": "graded",
-    "n": 11,
-    "call_wall_held_rate": 0.7272727272727273,
+    "n": 12,
+    "call_wall_held_rate": 0.75,
     "put_wall_held_rate": 1.0,
     "touched_and_held": 2,
-    "touched_and_held_rate": 0.18181818181818182,
+    "touched_and_held_rate": 0.16666666666666666,
     "blown_through": 3,
-    "blown_through_rate": 0.2727272727272727,
+    "blown_through_rate": 0.25,
     "flip_respected_rate": 1.0
    },
    "QQQ": {
     "state": "graded",
-    "n": 11,
-    "call_wall_held_rate": 0.9090909090909091,
-    "put_wall_held_rate": 0.6363636363636364,
+    "n": 12,
+    "call_wall_held_rate": 0.9166666666666666,
+    "put_wall_held_rate": 0.5833333333333334,
     "touched_and_held": 2,
-    "touched_and_held_rate": 0.18181818181818182,
-    "blown_through": 5,
-    "blown_through_rate": 0.45454545454545453,
+    "touched_and_held_rate": 0.16666666666666666,
+    "blown_through": 6,
+    "blown_through_rate": 0.5,
     "flip_respected_rate": 1.0
    },
    "SPY": {
     "state": "graded",
-    "n": 11,
-    "call_wall_held_rate": 1.0,
-    "put_wall_held_rate": 0.8181818181818182,
+    "n": 12,
+    "call_wall_held_rate": 0.9166666666666666,
+    "put_wall_held_rate": 0.75,
     "touched_and_held": 2,
-    "touched_and_held_rate": 0.18181818181818182,
-    "blown_through": 2,
-    "blown_through_rate": 0.18181818181818182,
+    "touched_and_held_rate": 0.16666666666666666,
+    "blown_through": 3,
+    "blown_through_rate": 0.25,
     "flip_respected_rate": 1.0
    }
   },
   "by_regime": {
    "negative": {
     "state": "graded",
-    "n": 33,
-    "call_wall_held_rate": 0.8787878787878788,
-    "put_wall_held_rate": 0.8181818181818182,
+    "n": 36,
+    "call_wall_held_rate": 0.8611111111111112,
+    "put_wall_held_rate": 0.7777777777777778,
     "touched_and_held": 6,
-    "touched_and_held_rate": 0.18181818181818182,
-    "blown_through": 10,
-    "blown_through_rate": 0.30303030303030304,
+    "touched_and_held_rate": 0.16666666666666666,
+    "blown_through": 12,
+    "blown_through_rate": 0.3333333333333333,
     "flip_respected_rate": 1.0
    }
   }
  },
  "flow": {
-  "for_session": "2026-11-10",
-  "as_of": "2026-11-10",
-  "built_at": "2026-11-10T19:41:45-05:00",
+  "for_session": "2026-11-11",
+  "as_of": "2026-11-11",
+  "built_at": "2026-11-11T17:22:45-05:00",
   "labels": [
    "net drift: each five-minute bucket stands alone (net single-leg premium and volume by direction), never a running total",
    "repeat sweeps: the same contract swept three or more times inside ten minutes; the tier names are by the run's own span",
@@ -637,8 +637,8 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": 34.426,
-     "oi_net_gex_b": -7.68,
+     "net_gex_b": 34.511,
+     "oi_net_gex_b": -7.783,
      "call_wall": 750.0,
      "put_wall": 748.0,
      "contracts_used": 4164,
@@ -651,8 +651,8 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": -0.258,
-     "oi_net_gex_b": -2.902,
+     "net_gex_b": -0.293,
+     "oi_net_gex_b": -3.023,
      "call_wall": 674.0,
      "put_wall": 670.0,
      "contracts_used": 4096,
@@ -665,8 +665,8 @@
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
      "weight": "volume",
-     "net_gex_b": -0.114,
-     "oi_net_gex_b": -1.509,
+     "net_gex_b": -0.112,
+     "oi_net_gex_b": -1.449,
      "call_wall": 285.0,
      "put_wall": 280.0,
      "contracts_used": 1561,
@@ -1334,7 +1334,7 @@
    "net_drift": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1342,7 +1342,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1350,7 +1350,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1360,7 +1360,7 @@
    "repeat_sweeps": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1368,7 +1368,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1376,7 +1376,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1386,7 +1386,7 @@
    "flow_ratio": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1394,7 +1394,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1402,7 +1402,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1412,7 +1412,7 @@
    "hiro": {
     "SPY": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1420,7 +1420,7 @@
     },
     "QQQ": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1428,7 +1428,7 @@
     },
     "IWM": {
      "status": "no_data",
-     "as_of": "2026-11-10",
+     "as_of": "2026-11-11",
      "source": "Alpaca option trades and chain snapshots",
      "delay": "the session's prints to the run; open interest posts the next morning",
      "source_family_id": "alpaca-options",
@@ -1437,19 +1437,19 @@
    },
    "premium_ratio": {
     "status": "no_data",
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "source": "Alpaca option trades and chain snapshots",
     "delay": "the session's prints to the run; open interest posts the next morning",
     "source_family_id": "alpaca-options",
     "reason": "no board or watching names to read"
    }
   },
-  "inputs_hash": "902fb910cd3eb43d43e982f2a45163f31eaac267f4ed3420e3e87a83542faade"
+  "inputs_hash": "53ab57269ee2bc012d895caa1bb427abaeeb870b5aa8f1c6352e2f24675734be"
  },
  "chain": {
-  "for_session": "2026-11-10",
-  "as_of": "2026-11-10",
-  "built_at": "2026-11-10T19:41:45-05:00",
+  "for_session": "2026-11-11",
+  "as_of": "2026-11-11",
+  "built_at": "2026-11-11T17:22:45-05:00",
   "cards": {
    "SPY": {
     "status": "ok",
@@ -1458,72 +1458,72 @@
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
     "spot": 750.13,
-    "dex_b": -21.7502,
-    "dex_balance": 2.1,
-    "vex_b": 3.7087,
-    "charm_b_per_day": 1.3187,
+    "dex_b": -20.6441,
+    "dex_balance": 2.11,
+    "vex_b": 3.5451,
+    "charm_b_per_day": 1.439,
     "max_pain": 740.0,
     "max_pain_expiry": "2026-11-10",
     "key_gamma_strike": 750.0,
     "anchor_strike": 730.0,
     "key_delta_strike": 760.0,
-    "g_coord": 0.3803,
-    "iv30": 0.1575,
-    "iv60": 0.1581,
-    "slope_30_60": 0.0006,
-    "rr25": -0.0508,
-    "strangle15": 0.0131,
-    "butterfly25": 0.0037,
+    "g_coord": 0.3786,
+    "iv30": 0.1579,
+    "iv60": 0.1584,
+    "slope_30_60": 0.0005,
+    "rr25": -0.0499,
+    "strangle15": 0.0128,
+    "butterfly25": 0.0034,
     "iv_rank": null,
     "iv_rank_n": 8,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.156
+      "atm_iv": 0.1595
      },
      {
       "days": 2,
-      "atm_iv": 0.1665
-     },
-     {
-      "days": 3,
       "atm_iv": 0.1701
      },
      {
-      "days": 6,
+      "days": 5,
       "atm_iv": 0.1435
      },
      {
-      "days": 7,
+      "days": 6,
       "atm_iv": 0.1515
      },
      {
-      "days": 8,
+      "days": 7,
       "atm_iv": 0.159
      },
      {
-      "days": 9,
+      "days": 8,
       "atm_iv": 0.1614
      },
      {
-      "days": 10,
+      "days": 9,
       "atm_iv": 0.1629
      },
      {
-      "days": 17,
+      "days": 16,
       "atm_iv": 0.1533
      },
      {
-      "days": 20,
+      "days": 19,
       "atm_iv": 0.1465
      },
      {
-      "days": 24,
+      "days": 23,
       "atm_iv": 0.1546
      },
      {
-      "days": 31,
+      "days": 30,
       "atm_iv": 0.1579
+     },
+     {
+      "days": 37,
+      "atm_iv": 0.1614
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
@@ -1535,72 +1535,72 @@
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
     "spot": 675.07,
-    "dex_b": -39.5981,
-    "dex_balance": 1.76,
-    "vex_b": 1.2994,
-    "charm_b_per_day": -0.3733,
+    "dex_b": -39.9404,
+    "dex_balance": 1.75,
+    "vex_b": 1.2413,
+    "charm_b_per_day": -0.3778,
     "max_pain": 675.0,
     "max_pain_expiry": "2026-11-10",
     "key_gamma_strike": 680.0,
     "anchor_strike": 650.0,
     "key_delta_strike": 680.0,
-    "g_coord": 0.4122,
-    "iv30": 0.2533,
-    "iv60": 0.2439,
-    "slope_30_60": -0.0094,
-    "rr25": -0.0751,
-    "strangle15": 0.0155,
-    "butterfly25": 0.0029,
+    "g_coord": 0.4087,
+    "iv30": 0.2529,
+    "iv60": 0.2437,
+    "slope_30_60": -0.0092,
+    "rr25": -0.0743,
+    "strangle15": 0.0154,
+    "butterfly25": 0.003,
     "iv_rank": null,
     "iv_rank_n": 8,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.2401
+      "atm_iv": 0.2584
      },
      {
       "days": 2,
-      "atm_iv": 0.2951
-     },
-     {
-      "days": 3,
       "atm_iv": 0.2967
      },
      {
-      "days": 6,
+      "days": 5,
       "atm_iv": 0.2471
      },
      {
-      "days": 7,
+      "days": 6,
       "atm_iv": 0.2626
      },
      {
-      "days": 8,
+      "days": 7,
       "atm_iv": 0.2733
      },
      {
-      "days": 9,
+      "days": 8,
       "atm_iv": 0.2755
      },
      {
-      "days": 10,
+      "days": 9,
       "atm_iv": 0.2844
      },
      {
-      "days": 17,
+      "days": 16,
       "atm_iv": 0.2569
      },
      {
-      "days": 20,
+      "days": 19,
       "atm_iv": 0.2518
      },
      {
-      "days": 24,
+      "days": 23,
       "atm_iv": 0.2557
      },
      {
-      "days": 31,
+      "days": 30,
       "atm_iv": 0.2529
+     },
+     {
+      "days": 37,
+      "atm_iv": 0.2532
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
@@ -1612,87 +1612,87 @@
     "delay": "prior-close open interest; snapshots at the run",
     "source_family_id": "alpaca-options",
     "spot": 280.57,
-    "dex_b": -4.7129,
-    "dex_balance": 2.16,
-    "vex_b": 0.7814,
-    "charm_b_per_day": 0.3823,
+    "dex_b": -4.3751,
+    "dex_balance": 2.18,
+    "vex_b": 0.7553,
+    "charm_b_per_day": 0.3982,
     "max_pain": 282.0,
     "max_pain_expiry": "2026-11-10",
     "key_gamma_strike": 290.0,
     "anchor_strike": 270.0,
     "key_delta_strike": 290.0,
-    "g_coord": 0.3773,
-    "iv30": 0.1963,
+    "g_coord": 0.3818,
+    "iv30": 0.1974,
     "iv60": 0.1964,
-    "slope_30_60": 0.0,
-    "rr25": -0.0454,
-    "strangle15": 0.0122,
+    "slope_30_60": -0.0011,
+    "rr25": -0.0452,
+    "strangle15": 0.0116,
     "butterfly25": 0.0024,
     "iv_rank": null,
     "iv_rank_n": 8,
     "atm_by_expiry": [
      {
       "days": 1,
-      "atm_iv": 0.2015
+      "atm_iv": 0.1997
      },
      {
       "days": 2,
-      "atm_iv": 0.198
-     },
-     {
-      "days": 3,
       "atm_iv": 0.2039
      },
      {
-      "days": 6,
+      "days": 5,
       "atm_iv": 0.1698
      },
      {
-      "days": 7,
+      "days": 6,
       "atm_iv": 0.178
      },
      {
-      "days": 8,
+      "days": 7,
       "atm_iv": 0.1849
      },
      {
-      "days": 9,
+      "days": 8,
       "atm_iv": 0.189
      },
      {
-      "days": 10,
+      "days": 9,
       "atm_iv": 0.1969
      },
      {
-      "days": 17,
+      "days": 16,
       "atm_iv": 0.1831
      },
      {
-      "days": 24,
+      "days": 23,
       "atm_iv": 0.1897
      },
      {
-      "days": 31,
+      "days": 30,
       "atm_iv": 0.1974
      },
      {
-      "days": 38,
+      "days": 37,
       "atm_iv": 0.1977
+     },
+     {
+      "days": 43,
+      "atm_iv": 0.1952
      }
     ],
     "label": "convention-signed: calls positive, puts negative; prior-close open interest"
    }
   },
-  "inputs_hash": "9d18282e4b8caed41ae81eb179293e516b8eb8a9f064aaa34fbc9a41862e8dcb"
+  "inputs_hash": "673865bdf98503f962340962d3d5d9ce0233c66671f2131780c6e5751cf4afdd"
  },
  "lanes": {
-  "for_session": "2026-11-10",
-  "as_of": "2026-11-10",
-  "built_at": "2026-11-10T19:41:45-05:00",
+  "for_session": "2026-11-11",
+  "as_of": "2026-11-11",
+  "built_at": "2026-11-11T17:22:45-05:00",
   "lanes": {
    "chain_archive": {
     "status": "ok",
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "source": "the desk's own Map reads",
     "delay": "one file a session; kept 400 sessions",
     "source_family_id": "alpaca-options",
@@ -1703,24 +1703,24 @@
    },
    "short_volume": {
     "status": "ok",
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "source": "FINRA FNQC daily short-sale volume files, kept per name",
     "delay": "a day's file posts after that day's close; the history is read for later sessions only",
     "source_family_id": "finra-fnqc",
-    "days": 782,
+    "days": 783,
     "first_date": "2023-09-29",
-    "last_date": "2026-11-10"
+    "last_date": "2026-11-11"
    },
    "sec_facts": {
     "status": "ok",
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "source": "SEC EDGAR companyfacts (XBRL), point in time by filing date",
     "delay": "a fact is visible from the day its filing was accepted",
     "source_family_id": "sec-edgar",
     "names": 83
    }
   },
-  "inputs_hash": "5455584b4c99298c1d2999e47ec39cdabb024b4f371059080b815c835c10cf30"
+  "inputs_hash": "2e100e08edbea035e46ad6d3465a2e23c68655ed3af8c42da79db8085cabaafe"
  },
  "extras": {
   "ainvest": {
@@ -1909,136 +1909,100 @@
    "universe": 1838,
    "scored": 1833,
    "insufficient_data": 5,
-   "qualified": 50,
+   "qualified": 58,
    "market_context": {
-    "marketRegime": 33.5,
-    "marketBreadth": 46.6,
-    "indexAccDist": 5.7,
-    "breakoutFollowThrough": 67.0,
+    "marketRegime": 53.2,
+    "marketBreadth": 57.8,
+    "indexAccDist": 4.9,
+    "breakoutFollowThrough": 83.8,
     "riskAppetite": 0.0,
-    "sectorRotation": 72.7,
+    "sectorRotation": 54.5,
     "macroEventRisk": null,
-    "indexConfirmation": 0.0
+    "indexConfirmation": 33.3
    }
   },
   "qualified": [
    {
+    "symbol": "HAS",
+    "sector": "Consumer Discretionary",
+    "close": 124.02,
+    "score": 73.9,
+    "confirming": 6,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 122.6,
+    "trigger_down": 121.04,
+    "support": 117.17,
+    "resistance": null,
+    "stage": 2
+   },
+   {
     "symbol": "TGTX",
     "sector": "Health Care",
-    "close": 64.26,
-    "score": 73.5,
-    "confirming": 6,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 64.15,
-    "trigger_down": 62.61,
-    "support": 56.26,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "SPNT",
-    "sector": "Financials",
-    "close": 27.38,
-    "score": 73.4,
-    "confirming": 6,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 26.58,
-    "trigger_down": 26.24,
-    "support": 25.26,
-    "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "SBH",
-    "sector": "Consumer Discretionary",
-    "close": 20.54,
-    "score": 73.1,
+    "close": 65.76,
+    "score": 71.9,
     "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 19.69,
-    "trigger_down": 19.29,
-    "support": 18.24,
+    "triggers": [],
+    "trigger_up": 65.03,
+    "trigger_down": 63.49,
+    "support": 56.63,
     "resistance": null,
     "stage": 2
    },
    {
     "symbol": "VCEL",
     "sector": "Health Care",
-    "close": 59.03,
-    "score": 72.5,
+    "close": 59.45,
+    "score": 71.9,
     "confirming": 5,
     "triggers": [],
-    "trigger_up": 59.01,
-    "trigger_down": 57.77,
+    "trigger_up": 59.64,
+    "trigger_down": 58.42,
     "support": 44.56,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "MHK",
-    "sector": "Consumer Discretionary",
-    "close": 151.73,
-    "score": 72.0,
+    "symbol": "VTRS",
+    "sector": "Health Care",
+    "close": 21.06,
+    "score": 71.7,
     "confirming": 5,
-    "triggers": [],
-    "trigger_up": 158.02,
-    "trigger_down": 155.18,
-    "support": 146.51,
+    "triggers": [
+     "prior-day-high break",
+     "resistance break (20-session)"
+    ],
+    "trigger_up": 20.99,
+    "trigger_down": 20.71,
+    "support": 18.64,
     "resistance": null,
     "stage": 2
    },
    {
     "symbol": "XHR",
     "sector": "Real Estate",
-    "close": 22.22,
-    "score": 70.8,
+    "close": 22.11,
+    "score": 71.6,
     "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)",
-     "holding retest"
-    ],
-    "trigger_up": 22.08,
-    "trigger_down": 21.8,
+    "triggers": [],
+    "trigger_up": 22.35,
+    "trigger_down": 22.09,
     "support": 21.0,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "EL",
-    "sector": "Consumer Staples",
-    "close": 113.43,
-    "score": 70.7,
+    "symbol": "SPNT",
+    "sector": "Financials",
+    "close": 27.05,
+    "score": 71.5,
     "confirming": 5,
     "triggers": [],
-    "trigger_up": 114.2,
-    "trigger_down": 112.12,
-    "support": 112.5,
-    "resistance": 117.57,
-    "stage": 2
-   },
-   {
-    "symbol": "GPN",
-    "sector": "Financials",
-    "close": 101.59,
-    "score": 70.6,
-    "confirming": 6,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 98.65,
-    "trigger_down": 96.89,
-    "support": 93.29,
+    "trigger_up": 27.55,
+    "trigger_down": 27.21,
+    "support": 25.43,
     "resistance": null,
     "stage": 2
    },
@@ -2046,7 +2010,7 @@
     "symbol": "BLFS",
     "sector": "Health Care",
     "close": 38.61,
-    "score": 70.5,
+    "score": 71.0,
     "confirming": 5,
     "triggers": [
      "prior-day-high break"
@@ -2060,88 +2024,113 @@
    {
     "symbol": "DGX",
     "sector": "Health Care",
-    "close": 258.44,
-    "score": 70.5,
+    "close": 258.69,
+    "score": 70.8,
     "confirming": 5,
     "triggers": [],
-    "trigger_up": 261.19,
-    "trigger_down": 258.15,
+    "trigger_up": 259.93,
+    "trigger_down": 256.95,
     "support": 244.58,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "HAS",
-    "sector": "Consumer Discretionary",
-    "close": 121.82,
-    "score": 70.4,
+    "symbol": "RYAN",
+    "sector": "Financials",
+    "close": 46.87,
+    "score": 70.6,
     "confirming": 5,
     "triggers": [],
-    "trigger_up": 121.69,
-    "trigger_down": 120.15,
-    "support": 117.17,
-    "resistance": 124,
+    "trigger_up": 47.58,
+    "trigger_down": 46.82,
+    "support": 46.32,
+    "resistance": 48.21,
     "stage": 2
    },
    {
     "symbol": "APLE",
     "sector": "Real Estate",
-    "close": 20.16,
-    "score": 69.9,
+    "close": 19.8,
+    "score": 70.5,
     "confirming": 5,
-    "triggers": [
-     "prior-day-high break",
-     "resistance break (20-session)"
-    ],
-    "trigger_up": 19.8,
-    "trigger_down": 19.56,
+    "triggers": [],
+    "trigger_up": 20.28,
+    "trigger_down": 20.04,
     "support": 18.38,
     "resistance": null,
     "stage": 2
    },
    {
-    "symbol": "VTRS",
-    "sector": "Health Care",
-    "close": 20.85,
-    "score": 69.7,
+    "symbol": "KDP",
+    "sector": "Consumer Staples",
+    "close": 38.25,
+    "score": 70.5,
     "confirming": 5,
     "triggers": [
      "prior-day-high break",
      "resistance break (20-session)"
     ],
-    "trigger_up": 20.63,
-    "trigger_down": 20.35,
-    "support": 18.64,
+    "trigger_up": 37.84,
+    "trigger_down": 37.34,
+    "support": 34.49,
     "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "NWE",
+    "sector": "Utilities",
+    "close": 84.97,
+    "score": 69.8,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 85.34,
+    "trigger_down": 84.5,
+    "support": 75.88,
+    "resistance": null,
+    "stage": 2
+   },
+   {
+    "symbol": "WEN",
+    "sector": "Consumer Discretionary",
+    "close": 8.34,
+    "score": 69.4,
+    "confirming": 5,
+    "triggers": [],
+    "trigger_up": 8.41,
+    "trigger_down": 8.27,
+    "support": 8.16,
+    "resistance": 8.35,
+    "stage": 2
+   },
+   {
+    "symbol": "KMPR",
+    "sector": "Financials",
+    "close": 34.76,
+    "score": 69.2,
+    "confirming": 5,
+    "triggers": [
+     "prior-day-high break"
+    ],
+    "trigger_up": 34.74,
+    "trigger_down": 34.04,
+    "support": 33.91,
+    "resistance": 36.58,
     "stage": 2
    },
    {
     "symbol": "RHP",
     "sector": "Real Estate",
-    "close": 138.53,
-    "score": 69.3,
+    "close": 138.91,
+    "score": 69.2,
     "confirming": 5,
     "triggers": [
      "prior-day-high break",
      "resistance break (20-session)"
     ],
-    "trigger_up": 136.25,
-    "trigger_down": 134.59,
+    "trigger_up": 139.33,
+    "trigger_down": 137.73,
     "support": 131.95,
     "resistance": null,
-    "stage": 2
-   },
-   {
-    "symbol": "IDXX",
-    "sector": "Health Care",
-    "close": 696.64,
-    "score": 68.8,
-    "confirming": 5,
-    "triggers": [],
-    "trigger_up": 712.83,
-    "trigger_down": 700.47,
-    "support": 694,
-    "resistance": 705.82,
     "stage": 2
    }
   ]
