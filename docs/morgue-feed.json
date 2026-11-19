@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-11-18T22:32:06.421994+00:00",
+ "generated_at_utc": "2026-11-19T13:52:33.908755+00:00",
  "as_of_session": "2026-11-18",
  "clocks": {
   "event_time": {
@@ -7,7 +7,7 @@
    "missing_reason": "the feed aggregates a session's cards; its event time is the session date in as_of_session, not a recorded instant"
   },
   "publication_time": {
-   "value": "2026-11-18T22:32:06.421994+00:00",
+   "value": "2026-11-19T13:52:33.908755+00:00",
    "missing_reason": null
   },
   "first_available_time": {
@@ -15,7 +15,7 @@
    "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
   },
   "ingestion_time": {
-   "value": "2026-11-18T22:32:06.421994+00:00",
+   "value": "2026-11-19T13:52:33.908755+00:00",
    "missing_reason": null
   },
   "decision_as_of": {
@@ -25,7 +25,7 @@
  },
  "source_artifacts": {
   "map_card.json": {
-   "sha256": "7810b278058353a4c0409179979e86708bba26f187a679c2f4c01bf8868e8cd5",
+   "sha256": "4256ec4abcbc465d20c114ff1f80eae514f1c54149984a9297e3fd6e1f402bb1",
    "missing_reason": null
   },
   "tape_card.json": {
@@ -33,15 +33,15 @@
    "missing_reason": null
   },
   "board_card.json": {
-   "sha256": "6a096325f0dda7dbd8307714b795d674fab69916e496fe03e4d162413b673bfe",
+   "sha256": "466412668ed2e42b873fb2aaa50f538b4d304b8acecb3d66e0e0539d37d20531",
    "missing_reason": null
   },
   "scorecard.json": {
-   "sha256": "d68eba733d4cc02bfb363c4798d2d5c8cddd2ad41c3686ae5722d8cdc5989ecb",
+   "sha256": "ecda92b84ee1b957516d6c33bf25d8a9ca1f0cd3b1aa00db220e81924b643c37",
    "missing_reason": null
   },
   "studies_card.json": {
-   "sha256": "e7450bf0118fb7df0e1f98387120f989e061be0df3e625f041db24676a60f51b",
+   "sha256": "aa1b679324ccd5cc1e0a4365b00b75527feb1e453cfa2ab8b6683423db415afe",
    "missing_reason": null
   },
   "ext_card.json": {
@@ -49,7 +49,7 @@
    "missing_reason": null
   },
   "board_full.json": {
-   "sha256": "3a17c15dbea375bf6f6eb85c4f2891a9883ce0de57dfb1a8db827ced4021771d",
+   "sha256": "0661b0c14fabde677eb50111eaf321a6739346e36d36dc7cbf380fa94278c5d7",
    "missing_reason": null
   }
  },
@@ -60,11 +60,11 @@
  "map": [
   {
    "symbol": "SPY",
-   "spot": 731.12,
-   "net_gex_b": -17.17,
-   "call_wall": 775.0,
-   "put_wall": 725.0,
-   "flip": 755.4,
+   "spot": 738.89,
+   "net_gex_b": -8.7,
+   "call_wall": 750.0,
+   "put_wall": 700.0,
+   "flip": 749.3,
    "dix": 0.589,
    "dix_date": "2026-11-18",
    "dix_index": {
@@ -72,13 +72,13 @@
     "not_the_same_as": "per-ETF DIX ratio (the ETF's own FNQC short/total ratio) \u2014 a different construction; the two are never substituted for each other",
     "date": "2026-11-18",
     "state": "graded",
-    "value": 0.4121086450948121,
+    "value": 0.4118300403280974,
     "constituents_used": 499,
     "constituents_total": 503,
     "coverage": 0.9920477137176938,
     "weight_source": "session dollar volume (close x volume, Alpaca SIP) \u2014 OURS declared weight"
    },
-   "coverage": "7433/8629",
+   "coverage": "6537/8572",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -101,7 +101,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-18T22:32:06.421994+00:00",
+     "value": "2026-11-19T13:52:33.908755+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -109,7 +109,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-18T22:32:06.421994+00:00",
+     "value": "2026-11-19T13:52:33.908755+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -120,15 +120,15 @@
   },
   {
    "symbol": "QQQ",
-   "spot": 659.98,
-   "net_gex_b": -5.04,
-   "call_wall": 700.0,
+   "spot": 670.78,
+   "net_gex_b": 0.7,
+   "call_wall": 680.0,
    "put_wall": 680.0,
-   "flip": 685.1,
+   "flip": 668.1,
    "dix": 0.511,
    "dix_date": "2026-11-18",
    "dix_index": null,
-   "coverage": "6531/7511",
+   "coverage": "5616/7442",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -151,7 +151,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-18T22:32:06.421994+00:00",
+     "value": "2026-11-19T13:52:33.908755+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -159,7 +159,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-18T22:32:06.421994+00:00",
+     "value": "2026-11-19T13:52:33.908755+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -171,14 +171,14 @@
   {
    "symbol": "IWM",
    "spot": 270.1,
-   "net_gex_b": -6.01,
+   "net_gex_b": -5.66,
    "call_wall": 280.0,
    "put_wall": 270.0,
-   "flip": 293.2,
+   "flip": 293.7,
    "dix": 0.723,
    "dix_date": "2026-11-18",
    "dix_index": null,
-   "coverage": "2467/3113",
+   "coverage": "2445/3111",
    "venue": null,
    "venue_reason": "the morgue's sources (Alpaca chain/OI reads and the FINRA FNQC file) do not record an execution venue per observation, so no venue is claimed",
    "units": {
@@ -201,7 +201,7 @@
      "missing_reason": "the row's event time is its session (dix_date / as_of_session), a date, not a recorded instant"
     },
     "publication_time": {
-     "value": "2026-11-18T22:32:06.421994+00:00",
+     "value": "2026-11-19T13:52:33.908755+00:00",
      "missing_reason": null
     },
     "first_available_time": {
@@ -209,7 +209,7 @@
      "missing_reason": "first availability is modelled per lane (SEC filing acceptance, SqueezeMetrics VISIBLE_AT), not at the aggregate feed level"
     },
     "ingestion_time": {
-     "value": "2026-11-18T22:32:06.421994+00:00",
+     "value": "2026-11-19T13:52:33.908755+00:00",
      "missing_reason": null
     },
     "decision_as_of": {
@@ -320,34 +320,34 @@
  "scorecard": {
   "board": {
    "published": {
-    "n_logged": 664,
+    "n_logged": 671,
     "horizons": {
-     "1d": "47% positive, average -0.29%, median -0.11% (n=517)",
-     "5d": "43% positive, average -1.19%, median -0.57% (n=397)",
+     "1d": "49% positive, average -0.18%, median +0.00% (n=558)",
+     "5d": "43% positive, average -1.22%, median -0.58% (n=419)",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
    },
    "qualified": {
-    "n_logged": 365,
+    "n_logged": 369,
     "horizons": {
-     "1d": "49% positive, average -0.08%, median -0.05% (n=318)",
-     "5d": "46% positive, average -0.98%, median -0.58% (n=246)",
+     "1d": "51% positive, average +0.03%, median +0.17% (n=334)",
+     "5d": "46% positive, average -0.99%, median -0.62% (n=260)",
      "21d": "not yet graded \u2014 first grades land after the 2026-11-23 close"
     }
    }
   },
   "map": {
    "state": "graded",
-   "cards_graded": 51,
-   "call_wall_held_pct": 86,
-   "put_wall_held_pct": 69,
+   "cards_graded": 54,
+   "call_wall_held_pct": 87,
+   "put_wall_held_pct": 65,
    "flip_respected_pct": 100
   },
   "counters": {
-   "units_published": 2446,
-   "board_rows_logged": 664,
-   "map_cards_of_record": 57,
-   "units_graded": 568
+   "units_published": 2456,
+   "board_rows_logged": 671,
+   "map_cards_of_record": 60,
+   "units_graded": 612
   }
  },
  "studies": {
@@ -1926,7 +1926,7 @@
     "symbol": "MHK",
     "sector": "Consumer Discretionary",
     "close": 148.44,
-    "score": 72.9,
+    "score": 72.8,
     "confirming": 6,
     "triggers": [],
     "trigger_up": 145.75,
